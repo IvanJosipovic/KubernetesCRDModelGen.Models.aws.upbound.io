@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>KubernetesCRDModelGen.Models.aws.upbound.io</PackageId>
+    <RepositoryUrl>https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models.aws.upbound.io</RepositoryUrl>
+  </PropertyGroup>
+</Project>
