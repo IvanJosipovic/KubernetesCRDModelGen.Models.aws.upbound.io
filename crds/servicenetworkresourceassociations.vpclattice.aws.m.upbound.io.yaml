@@ -57,6 +57,9 @@ spec:
             properties:
               forProvider:
                 properties:
+                  privateDnsEnabled:
+                    description: Boolean indicating whether private DNS is enabled for the service network resource association. Defaults to false. When set to true, the resource configuration identified by resource_configuration_identifier must have a custom domain name or a group domain for private DNS.
+                    type: boolean
                   region:
                     description: |-
                       Region where this resource will be managed. Defaults to the Region set in the provider configuration.
@@ -248,6 +251,9 @@ spec:
                   for example because of an external controller is managing them, like an
                   autoscaler.
                 properties:
+                  privateDnsEnabled:
+                    description: Boolean indicating whether private DNS is enabled for the service network resource association. Defaults to false. When set to true, the resource configuration identified by resource_configuration_identifier must have a custom domain name or a group domain for private DNS.
+                    type: boolean
                   resourceConfigurationIdentifier:
                     description: Identifier of Resource Configuration to associate to the Service Network.
                     type: string
@@ -500,6 +506,9 @@ spec:
                   id:
                     description: ID of the association.
                     type: string
+                  privateDnsEnabled:
+                    description: Boolean indicating whether private DNS is enabled for the service network resource association. Defaults to false. When set to true, the resource configuration identified by resource_configuration_identifier must have a custom domain name or a group domain for private DNS.
+                    type: boolean
                   region:
                     description: |-
                       Region where this resource will be managed. Defaults to the Region set in the provider configuration.

@@ -57,6 +57,9 @@ spec:
             properties:
               forProvider:
                 properties:
+                  enableMonitoringDashboard:
+                    description: Whether to enable the detailed firewall monitoring dashboard on the firewall. Defaults to false.
+                    type: boolean
                   firewallArn:
                     description: The Amazon Resource Name (ARN) of the Network Firewall firewall.
                     type: string
@@ -182,6 +185,9 @@ spec:
                   for example because of an external controller is managing them, like an
                   autoscaler.
                 properties:
+                  enableMonitoringDashboard:
+                    description: Whether to enable the detailed firewall monitoring dashboard on the firewall. Defaults to false.
+                    type: boolean
                   firewallArn:
                     description: The Amazon Resource Name (ARN) of the Network Firewall firewall.
                     type: string
@@ -353,6 +359,9 @@ spec:
             properties:
               atProvider:
                 properties:
+                  enableMonitoringDashboard:
+                    description: Whether to enable the detailed firewall monitoring dashboard on the firewall. Defaults to false.
+                    type: boolean
                   firewallArn:
                     description: The Amazon Resource Name (ARN) of the Network Firewall firewall.
                     type: string

@@ -361,7 +361,7 @@ spec:
                                 - namespace
                                 type: object
                               issuer:
-                                description: The OIDC issuer identifier of the IdP.
+                                description: Issuer of the JWT.
                                 type: string
                               onUnauthenticatedRequest:
                                 description: 'The behavior if the user is not authenticated. Valid values: deny, allow and authenticate'
@@ -504,6 +504,36 @@ spec:
                                 type: array
                             type: object
                           type: array
+                        jwtValidation:
+                          description: Information for creating a JWT validation action. Required if type is jwt-validation.
+                          items:
+                            properties:
+                              additionalClaim:
+                                description: Repeatable configuration block for additional claims to validate.
+                                items:
+                                  properties:
+                                    format:
+                                      description: Format of the claim value. Valid values are single-string, string-array and space-separated-values.
+                                      type: string
+                                    name:
+                                      description: Name of the claim to validate. exp, iss, nbf, or iat cannot be specified because they are validated by default.
+                                      type: string
+                                    values:
+                                      description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                                      items:
+                                        type: string
+                                      type: array
+                                      x-kubernetes-list-type: set
+                                  type: object
+                                type: array
+                              issuer:
+                                description: Issuer of the JWT.
+                                type: string
+                              jwksEndpoint:
+                                description: JSON Web Key Set (JWKS) endpoint. This endpoint contains JSON Web Keys (JWK) that are used to validate signatures from the provider. This must be a full URL, including the HTTPS protocol, the domain, and the path.
+                                type: string
+                            type: object
+                          type: array
                         order:
                           description: |-
                             Order for the action.
@@ -616,7 +646,7 @@ spec:
                               type: object
                           type: object
                         type:
-                          description: The type of routing action. Valid values are forward, redirect, fixed-response, authenticate-cognito and authenticate-oidc.
+                          description: The type of routing action. Valid values are forward, redirect, fixed-response, authenticate-cognito, authenticate-oidc and jwt-validation.
                           type: string
                       type: object
                     type: array
@@ -625,11 +655,17 @@ spec:
                     items:
                       properties:
                         hostHeader:
-                          description: 'Contains a single values item which is a list of host header patterns to match. The maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied.'
+                          description: Host header patterns to match. Host Header block fields documented below.
                           items:
                             properties:
+                              regexValues:
+                                description: List of regular expressions to compare against the host header. The maximum length of each string is 128 characters. Conflicts with values.
+                                items:
+                                  type: string
+                                type: array
+                                x-kubernetes-list-type: set
                               values:
-                                description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                                description: 'List of host header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case-insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Conflicts with regex_values.'
                                 items:
                                   type: string
                                 type: array
@@ -641,10 +677,16 @@ spec:
                           items:
                             properties:
                               httpHeaderName:
-                                description: Name of HTTP header to search. The maximum size is 40 characters. Comparison is case insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a host-header condition instead.
+                                description: Name of HTTP header to search. The maximum size is 40 characters. Comparison is case-insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a host-header condition instead.
                                 type: string
+                              regexValues:
+                                description: List of regular expressions to compare against the request URL. The maximum length of each string is 128 characters. Conflicts with values.
+                                items:
+                                  type: string
+                                type: array
+                                x-kubernetes-list-type: set
                               values:
-                                description: 'List of header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). If the same header appears multiple times in the request they will be searched in order until a match is found. Only one pattern needs to match for the condition to be satisfied. To require that all of the strings are a match, create one condition block per string.'
+                                description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
                                 items:
                                   type: string
                                 type: array
@@ -664,9 +706,15 @@ spec:
                             type: object
                           type: array
                         pathPattern:
-                          description: 'Contains a single values item which is a list of path patterns to match against the request URL. Maximum size of each pattern is 128 characters. Comparison is case sensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Path pattern is compared only to the path of the URL, not to its query string. To compare against the query string, use a query_string condition.'
+                          description: Path patterns to match against the request URL. Path Pattern block fields documented below.
                           items:
                             properties:
+                              regexValues:
+                                description: List of regular expressions to compare against the request URL. The maximum length of each string is 128 characters. Conflicts with values.
+                                items:
+                                  type: string
+                                type: array
+                                x-kubernetes-list-type: set
                               values:
                                 description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
                                 items:
@@ -791,6 +839,51 @@ spec:
                     description: Key-value map of resource tags.
                     type: object
                     x-kubernetes-map-type: granular
+                  transform:
+                    description: Configuration block that defines the transform to apply to requests matching this rule. See Transform Blocks below for more details. Once specified, to remove the transform from the rule, remove the transform block from the configuration.
+                    items:
+                      properties:
+                        hostHeaderRewriteConfig:
+                          description: Configuration block for host header rewrite. Required if type is host-header-rewrite. See Host Header Rewrite Config Blocks below.
+                          items:
+                            properties:
+                              rewrite:
+                                description: Block for host header rewrite configuration. Only one block is accepted. See Rewrite Blocks below.
+                                items:
+                                  properties:
+                                    regex:
+                                      description: 'Regular expression to match in the input string. Length constraints: Between 1 and 1024 characters.'
+                                      type: string
+                                    replace:
+                                      description: 'Replacement string to use when rewriting the matched input. Capture groups in the regular expression (for example, $1 and $2) can be specified. Length constraints: Between 0 and 1024 characters.'
+                                      type: string
+                                  type: object
+                                type: array
+                            type: object
+                          type: array
+                        type:
+                          description: Type of transform. Valid values are host-header-rewrite and url-rewrite.
+                          type: string
+                        urlRewriteConfig:
+                          description: Configuration block for URL rewrite. Required if type is url-rewrite. See URL Rewrite Config Blocks below.
+                          items:
+                            properties:
+                              rewrite:
+                                description: Block for URL rewrite configuration. Only one block is accepted. See Rewrite Blocks below.
+                                items:
+                                  properties:
+                                    regex:
+                                      description: 'Regular expression to match in the input string. Length constraints: Between 1 and 1024 characters.'
+                                      type: string
+                                    replace:
+                                      description: 'Replacement string to use when rewriting the matched input. Capture groups in the regular expression (for example, $1 and $2) can be specified. Length constraints: Between 0 and 1024 characters.'
+                                      type: string
+                                  type: object
+                                type: array
+                            type: object
+                          type: array
+                      type: object
+                    type: array
                 required:
                 - region
                 type: object
@@ -1097,7 +1190,7 @@ spec:
                                 - namespace
                                 type: object
                               issuer:
-                                description: The OIDC issuer identifier of the IdP.
+                                description: Issuer of the JWT.
                                 type: string
                               onUnauthenticatedRequest:
                                 description: 'The behavior if the user is not authenticated. Valid values: deny, allow and authenticate'
@@ -1242,6 +1335,36 @@ spec:
                                 type: array
                             type: object
                           type: array
+                        jwtValidation:
+                          description: Information for creating a JWT validation action. Required if type is jwt-validation.
+                          items:
+                            properties:
+                              additionalClaim:
+                                description: Repeatable configuration block for additional claims to validate.
+                                items:
+                                  properties:
+                                    format:
+                                      description: Format of the claim value. Valid values are single-string, string-array and space-separated-values.
+                                      type: string
+                                    name:
+                                      description: Name of the claim to validate. exp, iss, nbf, or iat cannot be specified because they are validated by default.
+                                      type: string
+                                    values:
+                                      description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                                      items:
+                                        type: string
+                                      type: array
+                                      x-kubernetes-list-type: set
+                                  type: object
+                                type: array
+                              issuer:
+                                description: Issuer of the JWT.
+                                type: string
+                              jwksEndpoint:
+                                description: JSON Web Key Set (JWKS) endpoint. This endpoint contains JSON Web Keys (JWK) that are used to validate signatures from the provider. This must be a full URL, including the HTTPS protocol, the domain, and the path.
+                                type: string
+                            type: object
+                          type: array
                         order:
                           description: |-
                             Order for the action.
@@ -1354,7 +1477,7 @@ spec:
                               type: object
                           type: object
                         type:
-                          description: The type of routing action. Valid values are forward, redirect, fixed-response, authenticate-cognito and authenticate-oidc.
+                          description: The type of routing action. Valid values are forward, redirect, fixed-response, authenticate-cognito, authenticate-oidc and jwt-validation.
                           type: string
                       type: object
                     type: array
@@ -1363,11 +1486,17 @@ spec:
                     items:
                       properties:
                         hostHeader:
-                          description: 'Contains a single values item which is a list of host header patterns to match. The maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied.'
+                          description: Host header patterns to match. Host Header block fields documented below.
                           items:
                             properties:
+                              regexValues:
+                                description: List of regular expressions to compare against the host header. The maximum length of each string is 128 characters. Conflicts with values.
+                                items:
+                                  type: string
+                                type: array
+                                x-kubernetes-list-type: set
                               values:
-                                description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                                description: 'List of host header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case-insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Conflicts with regex_values.'
                                 items:
                                   type: string
                                 type: array
@@ -1379,10 +1508,16 @@ spec:
                           items:
                             properties:
                               httpHeaderName:
-                                description: Name of HTTP header to search. The maximum size is 40 characters. Comparison is case insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a host-header condition instead.
+                                description: Name of HTTP header to search. The maximum size is 40 characters. Comparison is case-insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a host-header condition instead.
                                 type: string
+                              regexValues:
+                                description: List of regular expressions to compare against the request URL. The maximum length of each string is 128 characters. Conflicts with values.
+                                items:
+                                  type: string
+                                type: array
+                                x-kubernetes-list-type: set
                               values:
-                                description: 'List of header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). If the same header appears multiple times in the request they will be searched in order until a match is found. Only one pattern needs to match for the condition to be satisfied. To require that all of the strings are a match, create one condition block per string.'
+                                description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
                                 items:
                                   type: string
                                 type: array
@@ -1402,9 +1537,15 @@ spec:
                             type: object
                           type: array
                         pathPattern:
-                          description: 'Contains a single values item which is a list of path patterns to match against the request URL. Maximum size of each pattern is 128 characters. Comparison is case sensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Path pattern is compared only to the path of the URL, not to its query string. To compare against the query string, use a query_string condition.'
+                          description: Path patterns to match against the request URL. Path Pattern block fields documented below.
                           items:
                             properties:
+                              regexValues:
+                                description: List of regular expressions to compare against the request URL. The maximum length of each string is 128 characters. Conflicts with values.
+                                items:
+                                  type: string
+                                type: array
+                                x-kubernetes-list-type: set
                               values:
                                 description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
                                 items:
@@ -1524,6 +1665,51 @@ spec:
                     description: Key-value map of resource tags.
                     type: object
                     x-kubernetes-map-type: granular
+                  transform:
+                    description: Configuration block that defines the transform to apply to requests matching this rule. See Transform Blocks below for more details. Once specified, to remove the transform from the rule, remove the transform block from the configuration.
+                    items:
+                      properties:
+                        hostHeaderRewriteConfig:
+                          description: Configuration block for host header rewrite. Required if type is host-header-rewrite. See Host Header Rewrite Config Blocks below.
+                          items:
+                            properties:
+                              rewrite:
+                                description: Block for host header rewrite configuration. Only one block is accepted. See Rewrite Blocks below.
+                                items:
+                                  properties:
+                                    regex:
+                                      description: 'Regular expression to match in the input string. Length constraints: Between 1 and 1024 characters.'
+                                      type: string
+                                    replace:
+                                      description: 'Replacement string to use when rewriting the matched input. Capture groups in the regular expression (for example, $1 and $2) can be specified. Length constraints: Between 0 and 1024 characters.'
+                                      type: string
+                                  type: object
+                                type: array
+                            type: object
+                          type: array
+                        type:
+                          description: Type of transform. Valid values are host-header-rewrite and url-rewrite.
+                          type: string
+                        urlRewriteConfig:
+                          description: Configuration block for URL rewrite. Required if type is url-rewrite. See URL Rewrite Config Blocks below.
+                          items:
+                            properties:
+                              rewrite:
+                                description: Block for URL rewrite configuration. Only one block is accepted. See Rewrite Blocks below.
+                                items:
+                                  properties:
+                                    regex:
+                                      description: 'Regular expression to match in the input string. Length constraints: Between 1 and 1024 characters.'
+                                      type: string
+                                    replace:
+                                      description: 'Replacement string to use when rewriting the matched input. Capture groups in the regular expression (for example, $1 and $2) can be specified. Length constraints: Between 0 and 1024 characters.'
+                                      type: string
+                                  type: object
+                                type: array
+                            type: object
+                          type: array
+                      type: object
+                    type: array
                 type: object
               managementPolicies:
                 default:
@@ -1675,7 +1861,7 @@ spec:
                                 description: The OAuth 2.0 client identifier.
                                 type: string
                               issuer:
-                                description: The OIDC issuer identifier of the IdP.
+                                description: Issuer of the JWT.
                                 type: string
                               onUnauthenticatedRequest:
                                 description: 'The behavior if the user is not authenticated. Valid values: deny, allow and authenticate'
@@ -1745,6 +1931,36 @@ spec:
                                 type: array
                             type: object
                           type: array
+                        jwtValidation:
+                          description: Information for creating a JWT validation action. Required if type is jwt-validation.
+                          items:
+                            properties:
+                              additionalClaim:
+                                description: Repeatable configuration block for additional claims to validate.
+                                items:
+                                  properties:
+                                    format:
+                                      description: Format of the claim value. Valid values are single-string, string-array and space-separated-values.
+                                      type: string
+                                    name:
+                                      description: Name of the claim to validate. exp, iss, nbf, or iat cannot be specified because they are validated by default.
+                                      type: string
+                                    values:
+                                      description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                                      items:
+                                        type: string
+                                      type: array
+                                      x-kubernetes-list-type: set
+                                  type: object
+                                type: array
+                              issuer:
+                                description: Issuer of the JWT.
+                                type: string
+                              jwksEndpoint:
+                                description: JSON Web Key Set (JWKS) endpoint. This endpoint contains JSON Web Keys (JWK) that are used to validate signatures from the provider. This must be a full URL, including the HTTPS protocol, the domain, and the path.
+                                type: string
+                            type: object
+                          type: array
                         order:
                           description: |-
                             Order for the action.
@@ -1784,7 +2000,7 @@ spec:
                             Cannot be specified with forward.
                           type: string
                         type:
-                          description: The type of routing action. Valid values are forward, redirect, fixed-response, authenticate-cognito and authenticate-oidc.
+                          description: The type of routing action. Valid values are forward, redirect, fixed-response, authenticate-cognito, authenticate-oidc and jwt-validation.
                           type: string
                       type: object
                     type: array
@@ -1796,11 +2012,17 @@ spec:
                     items:
                       properties:
                         hostHeader:
-                          description: 'Contains a single values item which is a list of host header patterns to match. The maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied.'
+                          description: Host header patterns to match. Host Header block fields documented below.
                           items:
                             properties:
+                              regexValues:
+                                description: List of regular expressions to compare against the host header. The maximum length of each string is 128 characters. Conflicts with values.
+                                items:
+                                  type: string
+                                type: array
+                                x-kubernetes-list-type: set
                               values:
-                                description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                                description: 'List of host header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case-insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Conflicts with regex_values.'
                                 items:
                                   type: string
                                 type: array
@@ -1812,10 +2034,16 @@ spec:
                           items:
                             properties:
                               httpHeaderName:
-                                description: Name of HTTP header to search. The maximum size is 40 characters. Comparison is case insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a host-header condition instead.
+                                description: Name of HTTP header to search. The maximum size is 40 characters. Comparison is case-insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a host-header condition instead.
                                 type: string
+                              regexValues:
+                                description: List of regular expressions to compare against the request URL. The maximum length of each string is 128 characters. Conflicts with values.
+                                items:
+                                  type: string
+                                type: array
+                                x-kubernetes-list-type: set
                               values:
-                                description: 'List of header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). If the same header appears multiple times in the request they will be searched in order until a match is found. Only one pattern needs to match for the condition to be satisfied. To require that all of the strings are a match, create one condition block per string.'
+                                description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
                                 items:
                                   type: string
                                 type: array
@@ -1835,9 +2063,15 @@ spec:
                             type: object
                           type: array
                         pathPattern:
-                          description: 'Contains a single values item which is a list of path patterns to match against the request URL. Maximum size of each pattern is 128 characters. Comparison is case sensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Path pattern is compared only to the path of the URL, not to its query string. To compare against the query string, use a query_string condition.'
+                          description: Path patterns to match against the request URL. Path Pattern block fields documented below.
                           items:
                             properties:
+                              regexValues:
+                                description: List of regular expressions to compare against the request URL. The maximum length of each string is 128 characters. Conflicts with values.
+                                items:
+                                  type: string
+                                type: array
+                                x-kubernetes-list-type: set
                               values:
                                 description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
                                 items:
@@ -1898,6 +2132,51 @@ spec:
                     description: A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
+                  transform:
+                    description: Configuration block that defines the transform to apply to requests matching this rule. See Transform Blocks below for more details. Once specified, to remove the transform from the rule, remove the transform block from the configuration.
+                    items:
+                      properties:
+                        hostHeaderRewriteConfig:
+                          description: Configuration block for host header rewrite. Required if type is host-header-rewrite. See Host Header Rewrite Config Blocks below.
+                          items:
+                            properties:
+                              rewrite:
+                                description: Block for host header rewrite configuration. Only one block is accepted. See Rewrite Blocks below.
+                                items:
+                                  properties:
+                                    regex:
+                                      description: 'Regular expression to match in the input string. Length constraints: Between 1 and 1024 characters.'
+                                      type: string
+                                    replace:
+                                      description: 'Replacement string to use when rewriting the matched input. Capture groups in the regular expression (for example, $1 and $2) can be specified. Length constraints: Between 0 and 1024 characters.'
+                                      type: string
+                                  type: object
+                                type: array
+                            type: object
+                          type: array
+                        type:
+                          description: Type of transform. Valid values are host-header-rewrite and url-rewrite.
+                          type: string
+                        urlRewriteConfig:
+                          description: Configuration block for URL rewrite. Required if type is url-rewrite. See URL Rewrite Config Blocks below.
+                          items:
+                            properties:
+                              rewrite:
+                                description: Block for URL rewrite configuration. Only one block is accepted. See Rewrite Blocks below.
+                                items:
+                                  properties:
+                                    regex:
+                                      description: 'Regular expression to match in the input string. Length constraints: Between 1 and 1024 characters.'
+                                      type: string
+                                    replace:
+                                      description: 'Replacement string to use when rewriting the matched input. Capture groups in the regular expression (for example, $1 and $2) can be specified. Length constraints: Between 0 and 1024 characters.'
+                                      type: string
+                                  type: object
+                                type: array
+                            type: object
+                          type: array
+                      type: object
+                    type: array
                 type: object
               conditions:
                 description: Conditions of the resource.
@@ -2299,7 +2578,7 @@ spec:
                               - namespace
                               type: object
                             issuer:
-                              description: The OIDC issuer identifier of the IdP.
+                              description: Issuer of the JWT.
                               type: string
                             onUnauthenticatedRequest:
                               description: 'The behavior if the user is not authenticated. Valid values: deny, allow and authenticate'
@@ -2435,6 +2714,34 @@ spec:
                                 type: object
                               type: array
                           type: object
+                        jwtValidation:
+                          description: Information for creating a JWT validation action. Required if type is jwt-validation.
+                          properties:
+                            additionalClaim:
+                              description: Repeatable configuration block for additional claims to validate.
+                              items:
+                                properties:
+                                  format:
+                                    description: Format of the claim value. Valid values are single-string, string-array and space-separated-values.
+                                    type: string
+                                  name:
+                                    description: Name of the claim to validate. exp, iss, nbf, or iat cannot be specified because they are validated by default.
+                                    type: string
+                                  values:
+                                    description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                                    items:
+                                      type: string
+                                    type: array
+                                    x-kubernetes-list-type: set
+                                type: object
+                              type: array
+                            issuer:
+                              description: Issuer of the JWT.
+                              type: string
+                            jwksEndpoint:
+                              description: JSON Web Key Set (JWKS) endpoint. This endpoint contains JSON Web Keys (JWK) that are used to validate signatures from the provider. This must be a full URL, including the HTTPS protocol, the domain, and the path.
+                              type: string
+                          type: object
                         order:
                           description: |-
                             Order for the action.
@@ -2545,7 +2852,7 @@ spec:
                               type: object
                           type: object
                         type:
-                          description: The type of routing action. Valid values are forward, redirect, fixed-response, authenticate-cognito and authenticate-oidc.
+                          description: The type of routing action. Valid values are forward, redirect, fixed-response, authenticate-cognito, authenticate-oidc and jwt-validation.
                           type: string
                       type: object
                     type: array
@@ -2554,10 +2861,16 @@ spec:
                     items:
                       properties:
                         hostHeader:
-                          description: 'Contains a single values item which is a list of host header patterns to match. The maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied.'
+                          description: Host header patterns to match. Host Header block fields documented below.
                           properties:
+                            regexValues:
+                              description: List of regular expressions to compare against the host header. The maximum length of each string is 128 characters. Conflicts with values.
+                              items:
+                                type: string
+                              type: array
+                              x-kubernetes-list-type: set
                             values:
-                              description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                              description: 'List of host header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case-insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Conflicts with regex_values.'
                               items:
                                 type: string
                               type: array
@@ -2567,10 +2880,16 @@ spec:
                           description: HTTP headers to match. HTTP Header block fields documented below.
                           properties:
                             httpHeaderName:
-                              description: Name of HTTP header to search. The maximum size is 40 characters. Comparison is case insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a host-header condition instead.
+                              description: Name of HTTP header to search. The maximum size is 40 characters. Comparison is case-insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a host-header condition instead.
                               type: string
+                            regexValues:
+                              description: List of regular expressions to compare against the request URL. The maximum length of each string is 128 characters. Conflicts with values.
+                              items:
+                                type: string
+                              type: array
+                              x-kubernetes-list-type: set
                             values:
-                              description: 'List of header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). If the same header appears multiple times in the request they will be searched in order until a match is found. Only one pattern needs to match for the condition to be satisfied. To require that all of the strings are a match, create one condition block per string.'
+                              description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
                               items:
                                 type: string
                               type: array
@@ -2587,8 +2906,14 @@ spec:
                               x-kubernetes-list-type: set
                           type: object
                         pathPattern:
-                          description: 'Contains a single values item which is a list of path patterns to match against the request URL. Maximum size of each pattern is 128 characters. Comparison is case sensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Path pattern is compared only to the path of the URL, not to its query string. To compare against the query string, use a query_string condition.'
+                          description: Path patterns to match against the request URL. Path Pattern block fields documented below.
                           properties:
+                            regexValues:
+                              description: List of regular expressions to compare against the request URL. The maximum length of each string is 128 characters. Conflicts with values.
+                              items:
+                                type: string
+                              type: array
+                              x-kubernetes-list-type: set
                             values:
                               description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
                               items:
@@ -2710,6 +3035,43 @@ spec:
                     description: Key-value map of resource tags.
                     type: object
                     x-kubernetes-map-type: granular
+                  transform:
+                    description: Configuration block that defines the transform to apply to requests matching this rule. See Transform Blocks below for more details. Once specified, to remove the transform from the rule, remove the transform block from the configuration.
+                    items:
+                      properties:
+                        hostHeaderRewriteConfig:
+                          description: Configuration block for host header rewrite. Required if type is host-header-rewrite. See Host Header Rewrite Config Blocks below.
+                          properties:
+                            rewrite:
+                              description: Block for host header rewrite configuration. Only one block is accepted. See Rewrite Blocks below.
+                              properties:
+                                regex:
+                                  description: 'Regular expression to match in the input string. Length constraints: Between 1 and 1024 characters.'
+                                  type: string
+                                replace:
+                                  description: 'Replacement string to use when rewriting the matched input. Capture groups in the regular expression (for example, $1 and $2) can be specified. Length constraints: Between 0 and 1024 characters.'
+                                  type: string
+                              type: object
+                          type: object
+                        type:
+                          description: Type of transform. Valid values are host-header-rewrite and url-rewrite.
+                          type: string
+                        urlRewriteConfig:
+                          description: Configuration block for URL rewrite. Required if type is url-rewrite. See URL Rewrite Config Blocks below.
+                          properties:
+                            rewrite:
+                              description: Block for URL rewrite configuration. Only one block is accepted. See Rewrite Blocks below.
+                              properties:
+                                regex:
+                                  description: 'Regular expression to match in the input string. Length constraints: Between 1 and 1024 characters.'
+                                  type: string
+                                replace:
+                                  description: 'Replacement string to use when rewriting the matched input. Capture groups in the regular expression (for example, $1 and $2) can be specified. Length constraints: Between 0 and 1024 characters.'
+                                  type: string
+                              type: object
+                          type: object
+                      type: object
+                    type: array
                 required:
                 - region
                 type: object
@@ -3013,7 +3375,7 @@ spec:
                               - namespace
                               type: object
                             issuer:
-                              description: The OIDC issuer identifier of the IdP.
+                              description: Issuer of the JWT.
                               type: string
                             onUnauthenticatedRequest:
                               description: 'The behavior if the user is not authenticated. Valid values: deny, allow and authenticate'
@@ -3151,6 +3513,34 @@ spec:
                                 type: object
                               type: array
                           type: object
+                        jwtValidation:
+                          description: Information for creating a JWT validation action. Required if type is jwt-validation.
+                          properties:
+                            additionalClaim:
+                              description: Repeatable configuration block for additional claims to validate.
+                              items:
+                                properties:
+                                  format:
+                                    description: Format of the claim value. Valid values are single-string, string-array and space-separated-values.
+                                    type: string
+                                  name:
+                                    description: Name of the claim to validate. exp, iss, nbf, or iat cannot be specified because they are validated by default.
+                                    type: string
+                                  values:
+                                    description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                                    items:
+                                      type: string
+                                    type: array
+                                    x-kubernetes-list-type: set
+                                type: object
+                              type: array
+                            issuer:
+                              description: Issuer of the JWT.
+                              type: string
+                            jwksEndpoint:
+                              description: JSON Web Key Set (JWKS) endpoint. This endpoint contains JSON Web Keys (JWK) that are used to validate signatures from the provider. This must be a full URL, including the HTTPS protocol, the domain, and the path.
+                              type: string
+                          type: object
                         order:
                           description: |-
                             Order for the action.
@@ -3261,7 +3651,7 @@ spec:
                               type: object
                           type: object
                         type:
-                          description: The type of routing action. Valid values are forward, redirect, fixed-response, authenticate-cognito and authenticate-oidc.
+                          description: The type of routing action. Valid values are forward, redirect, fixed-response, authenticate-cognito, authenticate-oidc and jwt-validation.
                           type: string
                       type: object
                     type: array
@@ -3270,10 +3660,16 @@ spec:
                     items:
                       properties:
                         hostHeader:
-                          description: 'Contains a single values item which is a list of host header patterns to match. The maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied.'
+                          description: Host header patterns to match. Host Header block fields documented below.
                           properties:
+                            regexValues:
+                              description: List of regular expressions to compare against the host header. The maximum length of each string is 128 characters. Conflicts with values.
+                              items:
+                                type: string
+                              type: array
+                              x-kubernetes-list-type: set
                             values:
-                              description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                              description: 'List of host header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case-insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Conflicts with regex_values.'
                               items:
                                 type: string
                               type: array
@@ -3283,10 +3679,16 @@ spec:
                           description: HTTP headers to match. HTTP Header block fields documented below.
                           properties:
                             httpHeaderName:
-                              description: Name of HTTP header to search. The maximum size is 40 characters. Comparison is case insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a host-header condition instead.
+                              description: Name of HTTP header to search. The maximum size is 40 characters. Comparison is case-insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a host-header condition instead.
                               type: string
+                            regexValues:
+                              description: List of regular expressions to compare against the request URL. The maximum length of each string is 128 characters. Conflicts with values.
+                              items:
+                                type: string
+                              type: array
+                              x-kubernetes-list-type: set
                             values:
-                              description: 'List of header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). If the same header appears multiple times in the request they will be searched in order until a match is found. Only one pattern needs to match for the condition to be satisfied. To require that all of the strings are a match, create one condition block per string.'
+                              description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
                               items:
                                 type: string
                               type: array
@@ -3303,8 +3705,14 @@ spec:
                               x-kubernetes-list-type: set
                           type: object
                         pathPattern:
-                          description: 'Contains a single values item which is a list of path patterns to match against the request URL. Maximum size of each pattern is 128 characters. Comparison is case sensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Path pattern is compared only to the path of the URL, not to its query string. To compare against the query string, use a query_string condition.'
+                          description: Path patterns to match against the request URL. Path Pattern block fields documented below.
                           properties:
+                            regexValues:
+                              description: List of regular expressions to compare against the request URL. The maximum length of each string is 128 characters. Conflicts with values.
+                              items:
+                                type: string
+                              type: array
+                              x-kubernetes-list-type: set
                             values:
                               description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
                               items:
@@ -3421,6 +3829,43 @@ spec:
                     description: Key-value map of resource tags.
                     type: object
                     x-kubernetes-map-type: granular
+                  transform:
+                    description: Configuration block that defines the transform to apply to requests matching this rule. See Transform Blocks below for more details. Once specified, to remove the transform from the rule, remove the transform block from the configuration.
+                    items:
+                      properties:
+                        hostHeaderRewriteConfig:
+                          description: Configuration block for host header rewrite. Required if type is host-header-rewrite. See Host Header Rewrite Config Blocks below.
+                          properties:
+                            rewrite:
+                              description: Block for host header rewrite configuration. Only one block is accepted. See Rewrite Blocks below.
+                              properties:
+                                regex:
+                                  description: 'Regular expression to match in the input string. Length constraints: Between 1 and 1024 characters.'
+                                  type: string
+                                replace:
+                                  description: 'Replacement string to use when rewriting the matched input. Capture groups in the regular expression (for example, $1 and $2) can be specified. Length constraints: Between 0 and 1024 characters.'
+                                  type: string
+                              type: object
+                          type: object
+                        type:
+                          description: Type of transform. Valid values are host-header-rewrite and url-rewrite.
+                          type: string
+                        urlRewriteConfig:
+                          description: Configuration block for URL rewrite. Required if type is url-rewrite. See URL Rewrite Config Blocks below.
+                          properties:
+                            rewrite:
+                              description: Block for URL rewrite configuration. Only one block is accepted. See Rewrite Blocks below.
+                              properties:
+                                regex:
+                                  description: 'Regular expression to match in the input string. Length constraints: Between 1 and 1024 characters.'
+                                  type: string
+                                replace:
+                                  description: 'Replacement string to use when rewriting the matched input. Capture groups in the regular expression (for example, $1 and $2) can be specified. Length constraints: Between 0 and 1024 characters.'
+                                  type: string
+                              type: object
+                          type: object
+                      type: object
+                    type: array
                 type: object
               managementPolicies:
                 default:
@@ -3569,7 +4014,7 @@ spec:
                               description: The OAuth 2.0 client identifier.
                               type: string
                             issuer:
-                              description: The OIDC issuer identifier of the IdP.
+                              description: Issuer of the JWT.
                               type: string
                             onUnauthenticatedRequest:
                               description: 'The behavior if the user is not authenticated. Valid values: deny, allow and authenticate'
@@ -3632,6 +4077,34 @@ spec:
                                 type: object
                               type: array
                           type: object
+                        jwtValidation:
+                          description: Information for creating a JWT validation action. Required if type is jwt-validation.
+                          properties:
+                            additionalClaim:
+                              description: Repeatable configuration block for additional claims to validate.
+                              items:
+                                properties:
+                                  format:
+                                    description: Format of the claim value. Valid values are single-string, string-array and space-separated-values.
+                                    type: string
+                                  name:
+                                    description: Name of the claim to validate. exp, iss, nbf, or iat cannot be specified because they are validated by default.
+                                    type: string
+                                  values:
+                                    description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                                    items:
+                                      type: string
+                                    type: array
+                                    x-kubernetes-list-type: set
+                                type: object
+                              type: array
+                            issuer:
+                              description: Issuer of the JWT.
+                              type: string
+                            jwksEndpoint:
+                              description: JSON Web Key Set (JWKS) endpoint. This endpoint contains JSON Web Keys (JWK) that are used to validate signatures from the provider. This must be a full URL, including the HTTPS protocol, the domain, and the path.
+                              type: string
+                          type: object
                         order:
                           description: |-
                             Order for the action.
@@ -3669,7 +4142,7 @@ spec:
                             Cannot be specified with forward.
                           type: string
                         type:
-                          description: The type of routing action. Valid values are forward, redirect, fixed-response, authenticate-cognito and authenticate-oidc.
+                          description: The type of routing action. Valid values are forward, redirect, fixed-response, authenticate-cognito, authenticate-oidc and jwt-validation.
                           type: string
                       type: object
                     type: array
@@ -3681,10 +4154,16 @@ spec:
                     items:
                       properties:
                         hostHeader:
-                          description: 'Contains a single values item which is a list of host header patterns to match. The maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied.'
+                          description: Host header patterns to match. Host Header block fields documented below.
                           properties:
+                            regexValues:
+                              description: List of regular expressions to compare against the host header. The maximum length of each string is 128 characters. Conflicts with values.
+                              items:
+                                type: string
+                              type: array
+                              x-kubernetes-list-type: set
                             values:
-                              description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
+                              description: 'List of host header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case-insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Conflicts with regex_values.'
                               items:
                                 type: string
                               type: array
@@ -3694,10 +4173,16 @@ spec:
                           description: HTTP headers to match. HTTP Header block fields documented below.
                           properties:
                             httpHeaderName:
-                              description: Name of HTTP header to search. The maximum size is 40 characters. Comparison is case insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a host-header condition instead.
+                              description: Name of HTTP header to search. The maximum size is 40 characters. Comparison is case-insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a host-header condition instead.
                               type: string
+                            regexValues:
+                              description: List of regular expressions to compare against the request URL. The maximum length of each string is 128 characters. Conflicts with values.
+                              items:
+                                type: string
+                              type: array
+                              x-kubernetes-list-type: set
                             values:
-                              description: 'List of header value patterns to match. Maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). If the same header appears multiple times in the request they will be searched in order until a match is found. Only one pattern needs to match for the condition to be satisfied. To require that all of the strings are a match, create one condition block per string.'
+                              description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
                               items:
                                 type: string
                               type: array
@@ -3714,8 +4199,14 @@ spec:
                               x-kubernetes-list-type: set
                           type: object
                         pathPattern:
-                          description: 'Contains a single values item which is a list of path patterns to match against the request URL. Maximum size of each pattern is 128 characters. Comparison is case sensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied. Path pattern is compared only to the path of the URL, not to its query string. To compare against the query string, use a query_string condition.'
+                          description: Path patterns to match against the request URL. Path Pattern block fields documented below.
                           properties:
+                            regexValues:
+                              description: List of regular expressions to compare against the request URL. The maximum length of each string is 128 characters. Conflicts with values.
+                              items:
+                                type: string
+                              type: array
+                              x-kubernetes-list-type: set
                             values:
                               description: "Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal '*' or '?' character in a query string, escape the character with a backslash (\\). Only one pair needs to match for the condition to be satisfied."
                               items:
@@ -3773,6 +4264,43 @@ spec:
                     description: A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
+                  transform:
+                    description: Configuration block that defines the transform to apply to requests matching this rule. See Transform Blocks below for more details. Once specified, to remove the transform from the rule, remove the transform block from the configuration.
+                    items:
+                      properties:
+                        hostHeaderRewriteConfig:
+                          description: Configuration block for host header rewrite. Required if type is host-header-rewrite. See Host Header Rewrite Config Blocks below.
+                          properties:
+                            rewrite:
+                              description: Block for host header rewrite configuration. Only one block is accepted. See Rewrite Blocks below.
+                              properties:
+                                regex:
+                                  description: 'Regular expression to match in the input string. Length constraints: Between 1 and 1024 characters.'
+                                  type: string
+                                replace:
+                                  description: 'Replacement string to use when rewriting the matched input. Capture groups in the regular expression (for example, $1 and $2) can be specified. Length constraints: Between 0 and 1024 characters.'
+                                  type: string
+                              type: object
+                          type: object
+                        type:
+                          description: Type of transform. Valid values are host-header-rewrite and url-rewrite.
+                          type: string
+                        urlRewriteConfig:
+                          description: Configuration block for URL rewrite. Required if type is url-rewrite. See URL Rewrite Config Blocks below.
+                          properties:
+                            rewrite:
+                              description: Block for URL rewrite configuration. Only one block is accepted. See Rewrite Blocks below.
+                              properties:
+                                regex:
+                                  description: 'Regular expression to match in the input string. Length constraints: Between 1 and 1024 characters.'
+                                  type: string
+                                replace:
+                                  description: 'Replacement string to use when rewriting the matched input. Capture groups in the regular expression (for example, $1 and $2) can be specified. Length constraints: Between 0 and 1024 characters.'
+                                  type: string
+                              type: object
+                          type: object
+                      type: object
+                    type: array
                 type: object
               conditions:
                 description: Conditions of the resource.

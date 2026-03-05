@@ -78,6 +78,9 @@ spec:
                   finalSnapshotName:
                     description: Name of the final cluster snapshot to be created when this resource is deleted. If omitted, no final snapshot will be made.
                     type: string
+                  ipDiscovery:
+                    description: Mechanism that the cluster uses to discover IP addresses. Valid values are ipv4 and ipv6. Defaults to ipv4. To specify ipv6, network_type must be ipv6 or dual_stack.
+                    type: string
                   kmsKeyArn:
                     description: ARN of the KMS key used to encrypt the cluster at rest.
                     type: string
@@ -165,6 +168,9 @@ spec:
                     type: string
                   multiRegionClusterName:
                     description: The multi region cluster identifier specified on aws_memorydb_multi_region_cluster.
+                    type: string
+                  networkType:
+                    description: IP address type for the cluster. Valid values are ipv4, ipv6 and dual_stack. Defaults to ipv4.
                     type: string
                   nodeType:
                     description: The compute and memory capacity of the nodes in the cluster. See AWS documentation on supported node types as well as vertical scaling.
@@ -419,6 +425,9 @@ spec:
                   finalSnapshotName:
                     description: Name of the final cluster snapshot to be created when this resource is deleted. If omitted, no final snapshot will be made.
                     type: string
+                  ipDiscovery:
+                    description: Mechanism that the cluster uses to discover IP addresses. Valid values are ipv4 and ipv6. Defaults to ipv4. To specify ipv6, network_type must be ipv6 or dual_stack.
+                    type: string
                   kmsKeyArn:
                     description: ARN of the KMS key used to encrypt the cluster at rest.
                     type: string
@@ -506,6 +515,9 @@ spec:
                     type: string
                   multiRegionClusterName:
                     description: The multi region cluster identifier specified on aws_memorydb_multi_region_cluster.
+                    type: string
+                  networkType:
+                    description: IP address type for the cluster. Valid values are ipv4, ipv6 and dual_stack. Defaults to ipv4.
                     type: string
                   nodeType:
                     description: The compute and memory capacity of the nodes in the cluster. See AWS documentation on supported node types as well as vertical scaling.
@@ -828,6 +840,9 @@ spec:
                   id:
                     description: Same as name.
                     type: string
+                  ipDiscovery:
+                    description: Mechanism that the cluster uses to discover IP addresses. Valid values are ipv4 and ipv6. Defaults to ipv4. To specify ipv6, network_type must be ipv6 or dual_stack.
+                    type: string
                   kmsKeyArn:
                     description: ARN of the KMS key used to encrypt the cluster at rest.
                     type: string
@@ -836,6 +851,9 @@ spec:
                     type: string
                   multiRegionClusterName:
                     description: The multi region cluster identifier specified on aws_memorydb_multi_region_cluster.
+                    type: string
+                  networkType:
+                    description: IP address type for the cluster. Valid values are ipv4, ipv6 and dual_stack. Defaults to ipv4.
                     type: string
                   nodeType:
                     description: The compute and memory capacity of the nodes in the cluster. See AWS documentation on supported node types as well as vertical scaling.

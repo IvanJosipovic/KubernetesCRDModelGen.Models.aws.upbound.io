@@ -169,13 +169,13 @@ spec:
                           description: A unique name for this Template.
                           type: string
                         namespace:
-                          description: unique namespace identifying the option's associated AWS resource
+                          description: Unique namespace identifying the option's associated AWS resource
                           type: string
                         resource:
                           description: resource name for scheduled action
                           type: string
                         value:
-                          description: value for the configuration option
+                          description: Value for the configuration option
                           type: string
                       type: object
                     type: array
@@ -293,13 +293,13 @@ spec:
                           description: A unique name for this Template.
                           type: string
                         namespace:
-                          description: unique namespace identifying the option's associated AWS resource
+                          description: Unique namespace identifying the option's associated AWS resource
                           type: string
                         resource:
                           description: resource name for scheduled action
                           type: string
                         value:
-                          description: value for the configuration option
+                          description: Value for the configuration option
                           type: string
                       type: object
                     type: array
@@ -427,13 +427,13 @@ spec:
                           description: A unique name for this Template.
                           type: string
                         namespace:
-                          description: unique namespace identifying the option's associated AWS resource
+                          description: Unique namespace identifying the option's associated AWS resource
                           type: string
                         resource:
                           description: resource name for scheduled action
                           type: string
                         value:
-                          description: value for the configuration option
+                          description: Value for the configuration option
                           type: string
                       type: object
                     type: array

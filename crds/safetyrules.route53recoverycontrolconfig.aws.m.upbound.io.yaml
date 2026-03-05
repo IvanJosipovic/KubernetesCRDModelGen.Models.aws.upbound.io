@@ -329,6 +329,12 @@ spec:
                         description: Rule type. Valid values are ATLEAST, AND, and OR.
                         type: string
                     type: object
+                  tags:
+                    additionalProperties:
+                      type: string
+                    description: Key-value map of resource tags.
+                    type: object
+                    x-kubernetes-map-type: granular
                   targetControls:
                     description: Routing controls that can only be set or unset if the specified rule_config evaluates to true for the specified gating_controls.
                     items:
@@ -705,6 +711,12 @@ spec:
                         description: Rule type. Valid values are ATLEAST, AND, and OR.
                         type: string
                     type: object
+                  tags:
+                    additionalProperties:
+                      type: string
+                    description: Key-value map of resource tags.
+                    type: object
+                    x-kubernetes-map-type: granular
                   targetControls:
                     description: Routing controls that can only be set or unset if the specified rule_config evaluates to true for the specified gating_controls.
                     items:
@@ -903,6 +915,18 @@ spec:
                   status:
                     description: Status of the safety rule. PENDING when it is being created/updated, PENDING_DELETION when it is being deleted, and DEPLOYED otherwise.
                     type: string
+                  tags:
+                    additionalProperties:
+                      type: string
+                    description: Key-value map of resource tags.
+                    type: object
+                    x-kubernetes-map-type: granular
+                  tagsAll:
+                    additionalProperties:
+                      type: string
+                    description: A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
+                    type: object
+                    x-kubernetes-map-type: granular
                   targetControls:
                     description: Routing controls that can only be set or unset if the specified rule_config evaluates to true for the specified gating_controls.
                     items:

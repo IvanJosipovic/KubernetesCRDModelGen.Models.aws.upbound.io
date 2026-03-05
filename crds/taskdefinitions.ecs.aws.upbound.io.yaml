@@ -169,16 +169,16 @@ spec:
                     description: A unique name for your task definition.
                     type: string
                   ipcMode:
-                    description: IPC resource namespace to be used for the containers in the task The valid values are host, task, and none.
+                    description: 'IPC resource namespace to be used for the containers in the task. Valid values: host, task, none.'
                     type: string
                   memory:
                     description: Amount (in MiB) of memory used by the task. If the requires_compatibilities is FARGATE this field is required.
                     type: string
                   networkMode:
-                    description: Docker networking mode to use for the containers in the task. Valid values are none, bridge, awsvpc, and host.
+                    description: 'Docker networking mode to use for the containers in the task. Valid values: awsvpc, bridge, host, and none.'
                     type: string
                   pidMode:
-                    description: Process namespace to use for the containers in the task. The valid values are host and task.
+                    description: 'Process namespace to use for the containers in the task. Valid values: host, task`.'
                     type: string
                   placementConstraints:
                     description: Configuration block for rules that are taken into consideration during task placement. Maximum number of placement_constraints is 10. Detailed below.
@@ -216,7 +216,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   requiresCompatibilities:
-                    description: Set of launch types required by the task. The valid values are EC2 and FARGATE.
+                    description: 'Set of launch types required by the task. Valid values: EC2, EXTERNAL, FARGATE, MANAGED_INSTANCES.'
                     items:
                       type: string
                     type: array
@@ -249,7 +249,7 @@ spec:
                     description: Whether should track latest ACTIVE task definition on AWS or the one created with the resource stored in state. Default is false. Useful in the event the task definition is modified outside of this resource.
                     type: boolean
                   volume:
-                    description: Configuration block for volumes that containers in your task may use. Detailed below.
+                    description: Repeatable configuration block for volumes that containers in your task may use. Detailed below.
                     items:
                       properties:
                         configureAtLaunch:
@@ -460,16 +460,16 @@ spec:
                     description: A unique name for your task definition.
                     type: string
                   ipcMode:
-                    description: IPC resource namespace to be used for the containers in the task The valid values are host, task, and none.
+                    description: 'IPC resource namespace to be used for the containers in the task. Valid values: host, task, none.'
                     type: string
                   memory:
                     description: Amount (in MiB) of memory used by the task. If the requires_compatibilities is FARGATE this field is required.
                     type: string
                   networkMode:
-                    description: Docker networking mode to use for the containers in the task. Valid values are none, bridge, awsvpc, and host.
+                    description: 'Docker networking mode to use for the containers in the task. Valid values: awsvpc, bridge, host, and none.'
                     type: string
                   pidMode:
-                    description: Process namespace to use for the containers in the task. The valid values are host and task.
+                    description: 'Process namespace to use for the containers in the task. Valid values: host, task`.'
                     type: string
                   placementConstraints:
                     description: Configuration block for rules that are taken into consideration during task placement. Maximum number of placement_constraints is 10. Detailed below.
@@ -502,7 +502,7 @@ spec:
                       type: object
                     type: array
                   requiresCompatibilities:
-                    description: Set of launch types required by the task. The valid values are EC2 and FARGATE.
+                    description: 'Set of launch types required by the task. Valid values: EC2, EXTERNAL, FARGATE, MANAGED_INSTANCES.'
                     items:
                       type: string
                     type: array
@@ -535,7 +535,7 @@ spec:
                     description: Whether should track latest ACTIVE task definition on AWS or the one created with the resource stored in state. Default is false. Useful in the event the task definition is modified outside of this resource.
                     type: boolean
                   volume:
-                    description: Configuration block for volumes that containers in your task may use. Detailed below.
+                    description: Repeatable configuration block for volumes that containers in your task may use. Detailed below.
                     items:
                       properties:
                         configureAtLaunch:
@@ -762,16 +762,16 @@ spec:
                   id:
                     type: string
                   ipcMode:
-                    description: IPC resource namespace to be used for the containers in the task The valid values are host, task, and none.
+                    description: 'IPC resource namespace to be used for the containers in the task. Valid values: host, task, none.'
                     type: string
                   memory:
                     description: Amount (in MiB) of memory used by the task. If the requires_compatibilities is FARGATE this field is required.
                     type: string
                   networkMode:
-                    description: Docker networking mode to use for the containers in the task. Valid values are none, bridge, awsvpc, and host.
+                    description: 'Docker networking mode to use for the containers in the task. Valid values: awsvpc, bridge, host, and none.'
                     type: string
                   pidMode:
-                    description: Process namespace to use for the containers in the task. The valid values are host and task.
+                    description: 'Process namespace to use for the containers in the task. Valid values: host, task`.'
                     type: string
                   placementConstraints:
                     description: Configuration block for rules that are taken into consideration during task placement. Maximum number of placement_constraints is 10. Detailed below.
@@ -809,7 +809,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   requiresCompatibilities:
-                    description: Set of launch types required by the task. The valid values are EC2 and FARGATE.
+                    description: 'Set of launch types required by the task. Valid values: EC2, EXTERNAL, FARGATE, MANAGED_INSTANCES.'
                     items:
                       type: string
                     type: array
@@ -851,7 +851,7 @@ spec:
                     description: Whether should track latest ACTIVE task definition on AWS or the one created with the resource stored in state. Default is false. Useful in the event the task definition is modified outside of this resource.
                     type: boolean
                   volume:
-                    description: Configuration block for volumes that containers in your task may use. Detailed below.
+                    description: Repeatable configuration block for volumes that containers in your task may use. Detailed below.
                     items:
                       properties:
                         configureAtLaunch:
@@ -1158,16 +1158,16 @@ spec:
                     description: A unique name for your task definition.
                     type: string
                   ipcMode:
-                    description: IPC resource namespace to be used for the containers in the task The valid values are host, task, and none.
+                    description: 'IPC resource namespace to be used for the containers in the task. Valid values: host, task, none.'
                     type: string
                   memory:
                     description: Amount (in MiB) of memory used by the task. If the requires_compatibilities is FARGATE this field is required.
                     type: string
                   networkMode:
-                    description: Docker networking mode to use for the containers in the task. Valid values are none, bridge, awsvpc, and host.
+                    description: 'Docker networking mode to use for the containers in the task. Valid values: awsvpc, bridge, host, and none.'
                     type: string
                   pidMode:
-                    description: Process namespace to use for the containers in the task. The valid values are host and task.
+                    description: 'Process namespace to use for the containers in the task. Valid values: host, task`.'
                     type: string
                   placementConstraints:
                     description: Configuration block for rules that are taken into consideration during task placement. Maximum number of placement_constraints is 10. Detailed below.
@@ -1203,7 +1203,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   requiresCompatibilities:
-                    description: Set of launch types required by the task. The valid values are EC2 and FARGATE.
+                    description: 'Set of launch types required by the task. Valid values: EC2, EXTERNAL, FARGATE, MANAGED_INSTANCES.'
                     items:
                       type: string
                     type: array
@@ -1234,7 +1234,7 @@ spec:
                     description: Whether should track latest ACTIVE task definition on AWS or the one created with the resource stored in state. Default is false. Useful in the event the task definition is modified outside of this resource.
                     type: boolean
                   volume:
-                    description: Configuration block for volumes that containers in your task may use. Detailed below.
+                    description: Repeatable configuration block for volumes that containers in your task may use. Detailed below.
                     items:
                       properties:
                         configureAtLaunch:
@@ -1433,16 +1433,16 @@ spec:
                     description: A unique name for your task definition.
                     type: string
                   ipcMode:
-                    description: IPC resource namespace to be used for the containers in the task The valid values are host, task, and none.
+                    description: 'IPC resource namespace to be used for the containers in the task. Valid values: host, task, none.'
                     type: string
                   memory:
                     description: Amount (in MiB) of memory used by the task. If the requires_compatibilities is FARGATE this field is required.
                     type: string
                   networkMode:
-                    description: Docker networking mode to use for the containers in the task. Valid values are none, bridge, awsvpc, and host.
+                    description: 'Docker networking mode to use for the containers in the task. Valid values: awsvpc, bridge, host, and none.'
                     type: string
                   pidMode:
-                    description: Process namespace to use for the containers in the task. The valid values are host and task.
+                    description: 'Process namespace to use for the containers in the task. Valid values: host, task`.'
                     type: string
                   placementConstraints:
                     description: Configuration block for rules that are taken into consideration during task placement. Maximum number of placement_constraints is 10. Detailed below.
@@ -1473,7 +1473,7 @@ spec:
                         type: string
                     type: object
                   requiresCompatibilities:
-                    description: Set of launch types required by the task. The valid values are EC2 and FARGATE.
+                    description: 'Set of launch types required by the task. Valid values: EC2, EXTERNAL, FARGATE, MANAGED_INSTANCES.'
                     items:
                       type: string
                     type: array
@@ -1504,7 +1504,7 @@ spec:
                     description: Whether should track latest ACTIVE task definition on AWS or the one created with the resource stored in state. Default is false. Useful in the event the task definition is modified outside of this resource.
                     type: boolean
                   volume:
-                    description: Configuration block for volumes that containers in your task may use. Detailed below.
+                    description: Repeatable configuration block for volumes that containers in your task may use. Detailed below.
                     items:
                       properties:
                         configureAtLaunch:
@@ -1719,16 +1719,16 @@ spec:
                   id:
                     type: string
                   ipcMode:
-                    description: IPC resource namespace to be used for the containers in the task The valid values are host, task, and none.
+                    description: 'IPC resource namespace to be used for the containers in the task. Valid values: host, task, none.'
                     type: string
                   memory:
                     description: Amount (in MiB) of memory used by the task. If the requires_compatibilities is FARGATE this field is required.
                     type: string
                   networkMode:
-                    description: Docker networking mode to use for the containers in the task. Valid values are none, bridge, awsvpc, and host.
+                    description: 'Docker networking mode to use for the containers in the task. Valid values: awsvpc, bridge, host, and none.'
                     type: string
                   pidMode:
-                    description: Process namespace to use for the containers in the task. The valid values are host and task.
+                    description: 'Process namespace to use for the containers in the task. Valid values: host, task`.'
                     type: string
                   placementConstraints:
                     description: Configuration block for rules that are taken into consideration during task placement. Maximum number of placement_constraints is 10. Detailed below.
@@ -1764,7 +1764,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   requiresCompatibilities:
-                    description: Set of launch types required by the task. The valid values are EC2 and FARGATE.
+                    description: 'Set of launch types required by the task. Valid values: EC2, EXTERNAL, FARGATE, MANAGED_INSTANCES.'
                     items:
                       type: string
                     type: array
@@ -1804,7 +1804,7 @@ spec:
                     description: Whether should track latest ACTIVE task definition on AWS or the one created with the resource stored in state. Default is false. Useful in the event the task definition is modified outside of this resource.
                     type: boolean
                   volume:
-                    description: Configuration block for volumes that containers in your task may use. Detailed below.
+                    description: Repeatable configuration block for volumes that containers in your task may use. Detailed below.
                     items:
                       properties:
                         configureAtLaunch:

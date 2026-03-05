@@ -94,8 +94,20 @@ spec:
                     items:
                       properties:
                         hashKey:
-                          description: Name of the hash key in the index; must be defined as an attribute in the resource.
+                          description: Name of the hash key in the index; must be defined as an attribute in the resource. Mutually exclusive with key_schema. Use key_schema instead.
                           type: string
+                        keySchema:
+                          description: Configuration block(s) for the key schema. Mutually exclusive with hash_key and range_key. Required if hash_key is not specified. Supports multi-attribute keys for the Multi-Attribute Keys design pattern. See below.
+                          items:
+                            properties:
+                              attributeName:
+                                description: Name of the attribute; must be defined as an attribute in the resource.
+                                type: string
+                              keyType:
+                                description: The type of key. Valid values are HASH (partition key) or RANGE (sort key). You can specify up to 4 attributes with key_type = "HASH" and up to 4 attributes with key_type = "RANGE".
+                                type: string
+                            type: object
+                          type: array
                         name:
                           description: Name of the index.
                           type: string
@@ -118,10 +130,10 @@ spec:
                             type: object
                           type: array
                         projectionType:
-                          description: One of ALL, INCLUDE or KEYS_ONLY where ALL projects every attribute into the index, KEYS_ONLY projects  into the index only the table and index hash_key and sort_key attributes ,  INCLUDE projects into the index all of the attributes that are defined in non_key_attributes in addition to the attributes that thatKEYS_ONLY project.
+                          description: One of ALL, INCLUDE or KEYS_ONLY where ALL projects every attribute into the index, KEYS_ONLY projects into the index only the table and index hash_key and sort_key attributes, INCLUDE projects into the index all of the attributes that are defined in non_key_attributes in addition to the attributes that KEYS_ONLY project.
                           type: string
                         rangeKey:
-                          description: Name of the range key; must be defined
+                          description: Name of the range key; must be defined as an attribute in the resource. Mutually exclusive with key_schema. Use key_schema instead.
                           type: string
                         readCapacity:
                           description: Number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
@@ -141,6 +153,15 @@ spec:
                         writeCapacity:
                           description: Number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
                           type: number
+                      type: object
+                    type: array
+                  globalTableWitness:
+                    description: Witness Region in a Multi-Region Strong Consistency deployment. Note This must be used alongside a single replica with consistency_mode set to STRONG. Other combinations will fail to provision. See below.
+                    items:
+                      properties:
+                        regionName:
+                          description: Name of the AWS Region that serves as a witness for the MRSC global table.
+                          type: string
                       type: object
                     type: array
                   hashKey:
@@ -320,7 +341,10 @@ spec:
                     description: Whether Streams are enabled.
                     type: boolean
                   streamViewType:
-                    description: When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are KEYS_ONLY, NEW_IMAGE, OLD_IMAGE, NEW_AND_OLD_IMAGES.
+                    description: |-
+                      When an item in the table is modified, StreamViewType determines what information is written to the table's stream.
+                      Valid values are KEYS_ONLY, NEW_IMAGE, OLD_IMAGE, NEW_AND_OLD_IMAGES.
+                      Only valid when stream_enabled is true.
                     type: string
                   tableClass:
                     description: |-
@@ -404,8 +428,20 @@ spec:
                     items:
                       properties:
                         hashKey:
-                          description: Name of the hash key in the index; must be defined as an attribute in the resource.
+                          description: Name of the hash key in the index; must be defined as an attribute in the resource. Mutually exclusive with key_schema. Use key_schema instead.
                           type: string
+                        keySchema:
+                          description: Configuration block(s) for the key schema. Mutually exclusive with hash_key and range_key. Required if hash_key is not specified. Supports multi-attribute keys for the Multi-Attribute Keys design pattern. See below.
+                          items:
+                            properties:
+                              attributeName:
+                                description: Name of the attribute; must be defined as an attribute in the resource.
+                                type: string
+                              keyType:
+                                description: The type of key. Valid values are HASH (partition key) or RANGE (sort key). You can specify up to 4 attributes with key_type = "HASH" and up to 4 attributes with key_type = "RANGE".
+                                type: string
+                            type: object
+                          type: array
                         name:
                           description: Name of the index.
                           type: string
@@ -428,10 +464,10 @@ spec:
                             type: object
                           type: array
                         projectionType:
-                          description: One of ALL, INCLUDE or KEYS_ONLY where ALL projects every attribute into the index, KEYS_ONLY projects  into the index only the table and index hash_key and sort_key attributes ,  INCLUDE projects into the index all of the attributes that are defined in non_key_attributes in addition to the attributes that thatKEYS_ONLY project.
+                          description: One of ALL, INCLUDE or KEYS_ONLY where ALL projects every attribute into the index, KEYS_ONLY projects into the index only the table and index hash_key and sort_key attributes, INCLUDE projects into the index all of the attributes that are defined in non_key_attributes in addition to the attributes that KEYS_ONLY project.
                           type: string
                         rangeKey:
-                          description: Name of the range key; must be defined
+                          description: Name of the range key; must be defined as an attribute in the resource. Mutually exclusive with key_schema. Use key_schema instead.
                           type: string
                         readCapacity:
                           description: Number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
@@ -451,6 +487,15 @@ spec:
                         writeCapacity:
                           description: Number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
                           type: number
+                      type: object
+                    type: array
+                  globalTableWitness:
+                    description: Witness Region in a Multi-Region Strong Consistency deployment. Note This must be used alongside a single replica with consistency_mode set to STRONG. Other combinations will fail to provision. See below.
+                    items:
+                      properties:
+                        regionName:
+                          description: Name of the AWS Region that serves as a witness for the MRSC global table.
+                          type: string
                       type: object
                     type: array
                   hashKey:
@@ -625,7 +670,10 @@ spec:
                     description: Whether Streams are enabled.
                     type: boolean
                   streamViewType:
-                    description: When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are KEYS_ONLY, NEW_IMAGE, OLD_IMAGE, NEW_AND_OLD_IMAGES.
+                    description: |-
+                      When an item in the table is modified, StreamViewType determines what information is written to the table's stream.
+                      Valid values are KEYS_ONLY, NEW_IMAGE, OLD_IMAGE, NEW_AND_OLD_IMAGES.
+                      Only valid when stream_enabled is true.
                     type: string
                   tableClass:
                     description: |-
@@ -788,8 +836,20 @@ spec:
                     items:
                       properties:
                         hashKey:
-                          description: Name of the hash key in the index; must be defined as an attribute in the resource.
+                          description: Name of the hash key in the index; must be defined as an attribute in the resource. Mutually exclusive with key_schema. Use key_schema instead.
                           type: string
+                        keySchema:
+                          description: Configuration block(s) for the key schema. Mutually exclusive with hash_key and range_key. Required if hash_key is not specified. Supports multi-attribute keys for the Multi-Attribute Keys design pattern. See below.
+                          items:
+                            properties:
+                              attributeName:
+                                description: Name of the attribute; must be defined as an attribute in the resource.
+                                type: string
+                              keyType:
+                                description: The type of key. Valid values are HASH (partition key) or RANGE (sort key). You can specify up to 4 attributes with key_type = "HASH" and up to 4 attributes with key_type = "RANGE".
+                                type: string
+                            type: object
+                          type: array
                         name:
                           description: Name of the index.
                           type: string
@@ -812,10 +872,10 @@ spec:
                             type: object
                           type: array
                         projectionType:
-                          description: One of ALL, INCLUDE or KEYS_ONLY where ALL projects every attribute into the index, KEYS_ONLY projects  into the index only the table and index hash_key and sort_key attributes ,  INCLUDE projects into the index all of the attributes that are defined in non_key_attributes in addition to the attributes that thatKEYS_ONLY project.
+                          description: One of ALL, INCLUDE or KEYS_ONLY where ALL projects every attribute into the index, KEYS_ONLY projects into the index only the table and index hash_key and sort_key attributes, INCLUDE projects into the index all of the attributes that are defined in non_key_attributes in addition to the attributes that KEYS_ONLY project.
                           type: string
                         rangeKey:
-                          description: Name of the range key; must be defined
+                          description: Name of the range key; must be defined as an attribute in the resource. Mutually exclusive with key_schema. Use key_schema instead.
                           type: string
                         readCapacity:
                           description: Number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
@@ -835,6 +895,15 @@ spec:
                         writeCapacity:
                           description: Number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
                           type: number
+                      type: object
+                    type: array
+                  globalTableWitness:
+                    description: Witness Region in a Multi-Region Strong Consistency deployment. Note This must be used alongside a single replica with consistency_mode set to STRONG. Other combinations will fail to provision. See below.
+                    items:
+                      properties:
+                        regionName:
+                          description: Name of the AWS Region that serves as a witness for the MRSC global table.
+                          type: string
                       type: object
                     type: array
                   hashKey:
@@ -1032,7 +1101,10 @@ spec:
                     description: Timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not a unique identifier for the stream on its own. However, the combination of AWS customer ID, table name and this field is guaranteed to be unique. It can be used for creating CloudWatch Alarms. Only available when stream_enabled = true.
                     type: string
                   streamViewType:
-                    description: When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are KEYS_ONLY, NEW_IMAGE, OLD_IMAGE, NEW_AND_OLD_IMAGES.
+                    description: |-
+                      When an item in the table is modified, StreamViewType determines what information is written to the table's stream.
+                      Valid values are KEYS_ONLY, NEW_IMAGE, OLD_IMAGE, NEW_AND_OLD_IMAGES.
+                      Only valid when stream_enabled is true.
                     type: string
                   tableClass:
                     description: |-
@@ -1220,8 +1292,20 @@ spec:
                     items:
                       properties:
                         hashKey:
-                          description: Name of the hash key in the index; must be defined as an attribute in the resource.
+                          description: Name of the hash key in the index; must be defined as an attribute in the resource. Mutually exclusive with key_schema. Use key_schema instead.
                           type: string
+                        keySchema:
+                          description: Configuration block(s) for the key schema. Mutually exclusive with hash_key and range_key. Required if hash_key is not specified. Supports multi-attribute keys for the Multi-Attribute Keys design pattern. See below.
+                          items:
+                            properties:
+                              attributeName:
+                                description: Name of the attribute; must be defined as an attribute in the resource.
+                                type: string
+                              keyType:
+                                description: The type of key. Valid values are HASH (partition key) or RANGE (sort key). You can specify up to 4 attributes with key_type = "HASH" and up to 4 attributes with key_type = "RANGE".
+                                type: string
+                            type: object
+                          type: array
                         name:
                           description: Name of the index.
                           type: string
@@ -1242,10 +1326,10 @@ spec:
                               type: number
                           type: object
                         projectionType:
-                          description: One of ALL, INCLUDE or KEYS_ONLY where ALL projects every attribute into the index, KEYS_ONLY projects  into the index only the table and index hash_key and sort_key attributes ,  INCLUDE projects into the index all of the attributes that are defined in non_key_attributes in addition to the attributes that thatKEYS_ONLY project.
+                          description: One of ALL, INCLUDE or KEYS_ONLY where ALL projects every attribute into the index, KEYS_ONLY projects into the index only the table and index hash_key and sort_key attributes, INCLUDE projects into the index all of the attributes that are defined in non_key_attributes in addition to the attributes that KEYS_ONLY project.
                           type: string
                         rangeKey:
-                          description: Name of the range key; must be defined
+                          description: Name of the range key; must be defined as an attribute in the resource. Mutually exclusive with key_schema. Use key_schema instead.
                           type: string
                         readCapacity:
                           description: Number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
@@ -1265,6 +1349,13 @@ spec:
                           type: number
                       type: object
                     type: array
+                  globalTableWitness:
+                    description: Witness Region in a Multi-Region Strong Consistency deployment. Note This must be used alongside a single replica with consistency_mode set to STRONG. Other combinations will fail to provision. See below.
+                    properties:
+                      regionName:
+                        description: Name of the AWS Region that serves as a witness for the MRSC global table.
+                        type: string
+                    type: object
                   hashKey:
                     description: Attribute to use as the hash (partition) key. Must also be defined as an attribute. See below.
                     type: string
@@ -1428,7 +1519,10 @@ spec:
                     description: Whether Streams are enabled.
                     type: boolean
                   streamViewType:
-                    description: When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are KEYS_ONLY, NEW_IMAGE, OLD_IMAGE, NEW_AND_OLD_IMAGES.
+                    description: |-
+                      When an item in the table is modified, StreamViewType determines what information is written to the table's stream.
+                      Valid values are KEYS_ONLY, NEW_IMAGE, OLD_IMAGE, NEW_AND_OLD_IMAGES.
+                      Only valid when stream_enabled is true.
                     type: string
                   tableClass:
                     description: |-
@@ -1508,8 +1602,20 @@ spec:
                     items:
                       properties:
                         hashKey:
-                          description: Name of the hash key in the index; must be defined as an attribute in the resource.
+                          description: Name of the hash key in the index; must be defined as an attribute in the resource. Mutually exclusive with key_schema. Use key_schema instead.
                           type: string
+                        keySchema:
+                          description: Configuration block(s) for the key schema. Mutually exclusive with hash_key and range_key. Required if hash_key is not specified. Supports multi-attribute keys for the Multi-Attribute Keys design pattern. See below.
+                          items:
+                            properties:
+                              attributeName:
+                                description: Name of the attribute; must be defined as an attribute in the resource.
+                                type: string
+                              keyType:
+                                description: The type of key. Valid values are HASH (partition key) or RANGE (sort key). You can specify up to 4 attributes with key_type = "HASH" and up to 4 attributes with key_type = "RANGE".
+                                type: string
+                            type: object
+                          type: array
                         name:
                           description: Name of the index.
                           type: string
@@ -1530,10 +1636,10 @@ spec:
                               type: number
                           type: object
                         projectionType:
-                          description: One of ALL, INCLUDE or KEYS_ONLY where ALL projects every attribute into the index, KEYS_ONLY projects  into the index only the table and index hash_key and sort_key attributes ,  INCLUDE projects into the index all of the attributes that are defined in non_key_attributes in addition to the attributes that thatKEYS_ONLY project.
+                          description: One of ALL, INCLUDE or KEYS_ONLY where ALL projects every attribute into the index, KEYS_ONLY projects into the index only the table and index hash_key and sort_key attributes, INCLUDE projects into the index all of the attributes that are defined in non_key_attributes in addition to the attributes that KEYS_ONLY project.
                           type: string
                         rangeKey:
-                          description: Name of the range key; must be defined
+                          description: Name of the range key; must be defined as an attribute in the resource. Mutually exclusive with key_schema. Use key_schema instead.
                           type: string
                         readCapacity:
                           description: Number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
@@ -1553,6 +1659,13 @@ spec:
                           type: number
                       type: object
                     type: array
+                  globalTableWitness:
+                    description: Witness Region in a Multi-Region Strong Consistency deployment. Note This must be used alongside a single replica with consistency_mode set to STRONG. Other combinations will fail to provision. See below.
+                    properties:
+                      regionName:
+                        description: Name of the AWS Region that serves as a witness for the MRSC global table.
+                        type: string
+                    type: object
                   hashKey:
                     description: Attribute to use as the hash (partition) key. Must also be defined as an attribute. See below.
                     type: string
@@ -1711,7 +1824,10 @@ spec:
                     description: Whether Streams are enabled.
                     type: boolean
                   streamViewType:
-                    description: When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are KEYS_ONLY, NEW_IMAGE, OLD_IMAGE, NEW_AND_OLD_IMAGES.
+                    description: |-
+                      When an item in the table is modified, StreamViewType determines what information is written to the table's stream.
+                      Valid values are KEYS_ONLY, NEW_IMAGE, OLD_IMAGE, NEW_AND_OLD_IMAGES.
+                      Only valid when stream_enabled is true.
                     type: string
                   tableClass:
                     description: |-
@@ -1870,8 +1986,20 @@ spec:
                     items:
                       properties:
                         hashKey:
-                          description: Name of the hash key in the index; must be defined as an attribute in the resource.
+                          description: Name of the hash key in the index; must be defined as an attribute in the resource. Mutually exclusive with key_schema. Use key_schema instead.
                           type: string
+                        keySchema:
+                          description: Configuration block(s) for the key schema. Mutually exclusive with hash_key and range_key. Required if hash_key is not specified. Supports multi-attribute keys for the Multi-Attribute Keys design pattern. See below.
+                          items:
+                            properties:
+                              attributeName:
+                                description: Name of the attribute; must be defined as an attribute in the resource.
+                                type: string
+                              keyType:
+                                description: The type of key. Valid values are HASH (partition key) or RANGE (sort key). You can specify up to 4 attributes with key_type = "HASH" and up to 4 attributes with key_type = "RANGE".
+                                type: string
+                            type: object
+                          type: array
                         name:
                           description: Name of the index.
                           type: string
@@ -1892,10 +2020,10 @@ spec:
                               type: number
                           type: object
                         projectionType:
-                          description: One of ALL, INCLUDE or KEYS_ONLY where ALL projects every attribute into the index, KEYS_ONLY projects  into the index only the table and index hash_key and sort_key attributes ,  INCLUDE projects into the index all of the attributes that are defined in non_key_attributes in addition to the attributes that thatKEYS_ONLY project.
+                          description: One of ALL, INCLUDE or KEYS_ONLY where ALL projects every attribute into the index, KEYS_ONLY projects into the index only the table and index hash_key and sort_key attributes, INCLUDE projects into the index all of the attributes that are defined in non_key_attributes in addition to the attributes that KEYS_ONLY project.
                           type: string
                         rangeKey:
-                          description: Name of the range key; must be defined
+                          description: Name of the range key; must be defined as an attribute in the resource. Mutually exclusive with key_schema. Use key_schema instead.
                           type: string
                         readCapacity:
                           description: Number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
@@ -1915,6 +2043,13 @@ spec:
                           type: number
                       type: object
                     type: array
+                  globalTableWitness:
+                    description: Witness Region in a Multi-Region Strong Consistency deployment. Note This must be used alongside a single replica with consistency_mode set to STRONG. Other combinations will fail to provision. See below.
+                    properties:
+                      regionName:
+                        description: Name of the AWS Region that serves as a witness for the MRSC global table.
+                        type: string
+                    type: object
                   hashKey:
                     description: Attribute to use as the hash (partition) key. Must also be defined as an attribute. See below.
                     type: string
@@ -2096,7 +2231,10 @@ spec:
                     description: Timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not a unique identifier for the stream on its own. However, the combination of AWS customer ID, table name and this field is guaranteed to be unique. It can be used for creating CloudWatch Alarms. Only available when stream_enabled = true.
                     type: string
                   streamViewType:
-                    description: When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are KEYS_ONLY, NEW_IMAGE, OLD_IMAGE, NEW_AND_OLD_IMAGES.
+                    description: |-
+                      When an item in the table is modified, StreamViewType determines what information is written to the table's stream.
+                      Valid values are KEYS_ONLY, NEW_IMAGE, OLD_IMAGE, NEW_AND_OLD_IMAGES.
+                      Only valid when stream_enabled is true.
                     type: string
                   tableClass:
                     description: |-

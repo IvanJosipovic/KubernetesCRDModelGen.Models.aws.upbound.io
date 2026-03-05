@@ -254,6 +254,18 @@ spec:
                                 type: string
                             type: object
                           type: array
+                        applicationEncryptionConfiguration:
+                          description: The encryption configuration for the application. This can be used to encrypt data at rest in the application.
+                          items:
+                            properties:
+                              keyId:
+                                description: The ARN of the KMS key to use for encryption. Required when key_type is set to CUSTOMER_MANAGED_KEY. The KMS key must be in the same region as the application.
+                                type: string
+                              keyType:
+                                description: 'The type of encryption key to use. Valid values: CUSTOMER_MANAGED_KEY, AWS_OWNED_KEY.'
+                                type: string
+                            type: object
+                          type: array
                         applicationSnapshotConfiguration:
                           description: Describes whether snapshots are enabled for a Flink-based application.
                           items:
@@ -1183,7 +1195,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   runtimeEnvironment:
-                    description: 'The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19.'
+                    description: 'The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19, FLINK-1_20.'
                     type: string
                   serviceExecutionRole:
                     description: The ARN of the IAM role used by the application to access Kinesis data streams, Kinesis Data Firehose delivery streams, Amazon S3 objects, and other external resources.
@@ -1466,6 +1478,18 @@ spec:
                                 type: array
                               codeContentType:
                                 description: 'Specifies whether the code content is in text or zip format. Valid values: PLAINTEXT, ZIPFILE.'
+                                type: string
+                            type: object
+                          type: array
+                        applicationEncryptionConfiguration:
+                          description: The encryption configuration for the application. This can be used to encrypt data at rest in the application.
+                          items:
+                            properties:
+                              keyId:
+                                description: The ARN of the KMS key to use for encryption. Required when key_type is set to CUSTOMER_MANAGED_KEY. The KMS key must be in the same region as the application.
+                                type: string
+                              keyType:
+                                description: 'The type of encryption key to use. Valid values: CUSTOMER_MANAGED_KEY, AWS_OWNED_KEY.'
                                 type: string
                             type: object
                           type: array
@@ -2393,7 +2417,7 @@ spec:
                     description: Whether to force stop an unresponsive Flink-based application.
                     type: boolean
                   runtimeEnvironment:
-                    description: 'The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19.'
+                    description: 'The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19, FLINK-1_20.'
                     type: string
                   serviceExecutionRole:
                     description: The ARN of the IAM role used by the application to access Kinesis data streams, Kinesis Data Firehose delivery streams, Amazon S3 objects, and other external resources.
@@ -2609,6 +2633,18 @@ spec:
                                 type: array
                               codeContentType:
                                 description: 'Specifies whether the code content is in text or zip format. Valid values: PLAINTEXT, ZIPFILE.'
+                                type: string
+                            type: object
+                          type: array
+                        applicationEncryptionConfiguration:
+                          description: The encryption configuration for the application. This can be used to encrypt data at rest in the application.
+                          items:
+                            properties:
+                              keyId:
+                                description: The ARN of the KMS key to use for encryption. Required when key_type is set to CUSTOMER_MANAGED_KEY. The KMS key must be in the same region as the application.
+                                type: string
+                              keyType:
+                                description: 'The type of encryption key to use. Valid values: CUSTOMER_MANAGED_KEY, AWS_OWNED_KEY.'
                                 type: string
                             type: object
                           type: array
@@ -3058,7 +3094,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   runtimeEnvironment:
-                    description: 'The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19.'
+                    description: 'The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19, FLINK-1_20.'
                     type: string
                   serviceExecutionRole:
                     description: The ARN of the IAM role used by the application to access Kinesis data streams, Kinesis Data Firehose delivery streams, Amazon S3 objects, and other external resources.
@@ -3372,6 +3408,16 @@ spec:
                             type: object
                           codeContentType:
                             description: 'Specifies whether the code content is in text or zip format. Valid values: PLAINTEXT, ZIPFILE.'
+                            type: string
+                        type: object
+                      applicationEncryptionConfiguration:
+                        description: The encryption configuration for the application. This can be used to encrypt data at rest in the application.
+                        properties:
+                          keyId:
+                            description: The ARN of the KMS key to use for encryption. Required when key_type is set to CUSTOMER_MANAGED_KEY. The KMS key must be in the same region as the application.
+                            type: string
+                          keyType:
+                            description: 'The type of encryption key to use. Valid values: CUSTOMER_MANAGED_KEY, AWS_OWNED_KEY.'
                             type: string
                         type: object
                       applicationSnapshotConfiguration:
@@ -4234,7 +4280,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   runtimeEnvironment:
-                    description: 'The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19.'
+                    description: 'The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19, FLINK-1_20.'
                     type: string
                   serviceExecutionRole:
                     description: The ARN of the IAM role used by the application to access Kinesis data streams, Kinesis Data Firehose delivery streams, Amazon S3 objects, and other external resources.
@@ -4511,6 +4557,16 @@ spec:
                             type: object
                           codeContentType:
                             description: 'Specifies whether the code content is in text or zip format. Valid values: PLAINTEXT, ZIPFILE.'
+                            type: string
+                        type: object
+                      applicationEncryptionConfiguration:
+                        description: The encryption configuration for the application. This can be used to encrypt data at rest in the application.
+                        properties:
+                          keyId:
+                            description: The ARN of the KMS key to use for encryption. Required when key_type is set to CUSTOMER_MANAGED_KEY. The KMS key must be in the same region as the application.
+                            type: string
+                          keyType:
+                            description: 'The type of encryption key to use. Valid values: CUSTOMER_MANAGED_KEY, AWS_OWNED_KEY.'
                             type: string
                         type: object
                       applicationSnapshotConfiguration:
@@ -5368,7 +5424,7 @@ spec:
                     description: Whether to force stop an unresponsive Flink-based application.
                     type: boolean
                   runtimeEnvironment:
-                    description: 'The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19.'
+                    description: 'The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19, FLINK-1_20.'
                     type: string
                   serviceExecutionRole:
                     description: The ARN of the IAM role used by the application to access Kinesis data streams, Kinesis Data Firehose delivery streams, Amazon S3 objects, and other external resources.
@@ -5578,6 +5634,16 @@ spec:
                             type: object
                           codeContentType:
                             description: 'Specifies whether the code content is in text or zip format. Valid values: PLAINTEXT, ZIPFILE.'
+                            type: string
+                        type: object
+                      applicationEncryptionConfiguration:
+                        description: The encryption configuration for the application. This can be used to encrypt data at rest in the application.
+                        properties:
+                          keyId:
+                            description: The ARN of the KMS key to use for encryption. Required when key_type is set to CUSTOMER_MANAGED_KEY. The KMS key must be in the same region as the application.
+                            type: string
+                          keyType:
+                            description: 'The type of encryption key to use. Valid values: CUSTOMER_MANAGED_KEY, AWS_OWNED_KEY.'
                             type: string
                         type: object
                       applicationSnapshotConfiguration:
@@ -5957,7 +6023,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   runtimeEnvironment:
-                    description: 'The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19.'
+                    description: 'The runtime environment for the application. Valid values: SQL-1_0, FLINK-1_6, FLINK-1_8, FLINK-1_11, FLINK-1_13, FLINK-1_15, FLINK-1_18, FLINK-1_19, FLINK-1_20.'
                     type: string
                   serviceExecutionRole:
                     description: The ARN of the IAM role used by the application to access Kinesis data streams, Kinesis Data Firehose delivery streams, Amazon S3 objects, and other external resources.

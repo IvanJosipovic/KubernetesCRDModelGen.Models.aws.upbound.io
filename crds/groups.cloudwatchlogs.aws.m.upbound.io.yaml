@@ -57,6 +57,9 @@ spec:
             properties:
               forProvider:
                 properties:
+                  deletionProtectionEnabled:
+                    description: –  Boolean to indicate whether deletion protection is enabled. Defaults to false. Once set, switching to false requires explicitly specifying false rather than removing this argument.
+                    type: boolean
                   kmsKeyId:
                     description: |-
                       The ARN of the KMS Key to use when encrypting log data. Please note, after the AWS KMS CMK is disassociated from the log group,
@@ -180,6 +183,9 @@ spec:
                   for example because of an external controller is managing them, like an
                   autoscaler.
                 properties:
+                  deletionProtectionEnabled:
+                    description: –  Boolean to indicate whether deletion protection is enabled. Defaults to false. Once set, switching to false requires explicitly specifying false rather than removing this argument.
+                    type: boolean
                   kmsKeyId:
                     description: |-
                       The ARN of the KMS Key to use when encrypting log data. Please note, after the AWS KMS CMK is disassociated from the log group,
@@ -349,6 +355,9 @@ spec:
                   arn:
                     description: The Amazon Resource Name (ARN) specifying the log group. Any :* suffix added by the API, denoting all CloudWatch Log Streams under the CloudWatch Log Group, is removed for greater compatibility with other AWS services that do not accept the suffix.
                     type: string
+                  deletionProtectionEnabled:
+                    description: –  Boolean to indicate whether deletion protection is enabled. Defaults to false. Once set, switching to false requires explicitly specifying false rather than removing this argument.
+                    type: boolean
                   id:
                     type: string
                   kmsKeyId:

@@ -301,7 +301,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   serverSideEncryption:
-                    description: Server-side encryption of the object in S3. Valid values are "AES256" and "aws:kms".
+                    description: Server-side encryption of the object in S3. Valid values are "AES256", "aws:kms", "aws:kms:dsse", and "aws:fsx".
                     type: string
                   source:
                     description: Path to a file that will be read and uploaded as raw bytes for the object content.
@@ -562,7 +562,7 @@ spec:
                       type: object
                     type: array
                   serverSideEncryption:
-                    description: Server-side encryption of the object in S3. Valid values are "AES256" and "aws:kms".
+                    description: Server-side encryption of the object in S3. Valid values are "AES256", "aws:kms", "aws:kms:dsse", and "aws:fsx".
                     type: string
                   source:
                     description: Path to a file that will be read and uploaded as raw bytes for the object content.
@@ -781,7 +781,7 @@ spec:
                       Region is the region you'd like your resource to be created in.
                     type: string
                   serverSideEncryption:
-                    description: Server-side encryption of the object in S3. Valid values are "AES256" and "aws:kms".
+                    description: Server-side encryption of the object in S3. Valid values are "AES256", "aws:kms", "aws:kms:dsse", and "aws:fsx".
                     type: string
                   source:
                     description: Path to a file that will be read and uploaded as raw bytes for the object content.

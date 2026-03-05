@@ -78,6 +78,39 @@ spec:
                         consumerGroupId:
                           description: Kafka consumer group ID between 1 and 200 characters for use when creating this event source mapping. If one is not specified, this value will be automatically generated. See AmazonManagedKafkaEventSourceConfig Syntax.
                           type: string
+                        schemaRegistryConfig:
+                          description: Block for a Kafka schema registry setting. See below.
+                          items:
+                            properties:
+                              accessConfig:
+                                description: Configuration block for authentication Lambda uses to access the schema registry.
+                                items:
+                                  properties:
+                                    type:
+                                      description: Authentication type Lambda uses to access the schema registry.
+                                      type: string
+                                    uri:
+                                      description: URI of the secret (Secrets Manager secret ARN) used to authenticate with the schema registry.
+                                      type: string
+                                  type: object
+                                type: array
+                              eventRecordFormat:
+                                description: 'Record format that Lambda delivers to the function after schema validation. Valid values: JSON, SOURCE.'
+                                type: string
+                              schemaRegistryUri:
+                                description: URI of the schema registry. For AWS Glue schema registries, use the ARN of the registry. For Confluent schema registries, use the registry URL.
+                                type: string
+                              schemaValidationConfig:
+                                description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.
+                                items:
+                                  properties:
+                                    attribute:
+                                      description: 'Message attribute to validate. Valid values: KEY, VALUE.'
+                                      type: string
+                                  type: object
+                                type: array
+                            type: object
+                          type: array
                       type: object
                     type: array
                   batchSize:
@@ -95,7 +128,7 @@ spec:
                           items:
                             properties:
                               destinationArn:
-                                description: ARN of the destination resource.
+                                description: ARN of the destination resource, or kafka://your-topic-name for Amazon MSK and self-managed Apache Kafka destinations.
                                 type: string
                               destinationArnRef:
                                 description: Reference to a Queue in sqs to populate destinationArn.
@@ -402,6 +435,9 @@ spec:
                         minimumPollers:
                           description: Minimum number of event pollers this event source can scale down to. The range is between 1 and 200.
                           type: number
+                        pollerGroupName:
+                          description: The name of the provisioned poller group used to group multiple ESMs within the event source's VPC to share Event Poller Unit (EPU) capacity. You can use this option to optimize Provisioned mode costs for your ESMs. You can group up to 100 ESMs per poller group and aggregate maximum pollers across all ESMs in a group cannot exceed 2000.
+                          type: string
                       type: object
                     type: array
                   queues:
@@ -442,6 +478,39 @@ spec:
                         consumerGroupId:
                           description: Kafka consumer group ID between 1 and 200 characters for use when creating this event source mapping. If one is not specified, this value will be automatically generated. See SelfManagedKafkaEventSourceConfig Syntax.
                           type: string
+                        schemaRegistryConfig:
+                          description: Block for a Kafka schema registry setting. See below.
+                          items:
+                            properties:
+                              accessConfig:
+                                description: Configuration block for authentication Lambda uses to access the schema registry.
+                                items:
+                                  properties:
+                                    type:
+                                      description: Authentication type Lambda uses to access the schema registry.
+                                      type: string
+                                    uri:
+                                      description: URI of the secret (Secrets Manager secret ARN) used to authenticate with the schema registry.
+                                      type: string
+                                  type: object
+                                type: array
+                              eventRecordFormat:
+                                description: 'Record format that Lambda delivers to the function after schema validation. Valid values: JSON, SOURCE.'
+                                type: string
+                              schemaRegistryUri:
+                                description: URI of the schema registry. For AWS Glue schema registries, use the ARN of the registry. For Confluent schema registries, use the registry URL.
+                                type: string
+                              schemaValidationConfig:
+                                description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.
+                                items:
+                                  properties:
+                                    attribute:
+                                      description: 'Message attribute to validate. Valid values: KEY, VALUE.'
+                                      type: string
+                                  type: object
+                                type: array
+                            type: object
+                          type: array
                       type: object
                     type: array
                   sourceAccessConfiguration:
@@ -500,6 +569,39 @@ spec:
                         consumerGroupId:
                           description: Kafka consumer group ID between 1 and 200 characters for use when creating this event source mapping. If one is not specified, this value will be automatically generated. See AmazonManagedKafkaEventSourceConfig Syntax.
                           type: string
+                        schemaRegistryConfig:
+                          description: Block for a Kafka schema registry setting. See below.
+                          items:
+                            properties:
+                              accessConfig:
+                                description: Configuration block for authentication Lambda uses to access the schema registry.
+                                items:
+                                  properties:
+                                    type:
+                                      description: Authentication type Lambda uses to access the schema registry.
+                                      type: string
+                                    uri:
+                                      description: URI of the secret (Secrets Manager secret ARN) used to authenticate with the schema registry.
+                                      type: string
+                                  type: object
+                                type: array
+                              eventRecordFormat:
+                                description: 'Record format that Lambda delivers to the function after schema validation. Valid values: JSON, SOURCE.'
+                                type: string
+                              schemaRegistryUri:
+                                description: URI of the schema registry. For AWS Glue schema registries, use the ARN of the registry. For Confluent schema registries, use the registry URL.
+                                type: string
+                              schemaValidationConfig:
+                                description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.
+                                items:
+                                  properties:
+                                    attribute:
+                                      description: 'Message attribute to validate. Valid values: KEY, VALUE.'
+                                      type: string
+                                  type: object
+                                type: array
+                            type: object
+                          type: array
                       type: object
                     type: array
                   batchSize:
@@ -517,7 +619,7 @@ spec:
                           items:
                             properties:
                               destinationArn:
-                                description: ARN of the destination resource.
+                                description: ARN of the destination resource, or kafka://your-topic-name for Amazon MSK and self-managed Apache Kafka destinations.
                                 type: string
                               destinationArnRef:
                                 description: Reference to a Queue in sqs to populate destinationArn.
@@ -824,6 +926,9 @@ spec:
                         minimumPollers:
                           description: Minimum number of event pollers this event source can scale down to. The range is between 1 and 200.
                           type: number
+                        pollerGroupName:
+                          description: The name of the provisioned poller group used to group multiple ESMs within the event source's VPC to share Event Poller Unit (EPU) capacity. You can use this option to optimize Provisioned mode costs for your ESMs. You can group up to 100 ESMs per poller group and aggregate maximum pollers across all ESMs in a group cannot exceed 2000.
+                          type: string
                       type: object
                     type: array
                   queues:
@@ -859,6 +964,39 @@ spec:
                         consumerGroupId:
                           description: Kafka consumer group ID between 1 and 200 characters for use when creating this event source mapping. If one is not specified, this value will be automatically generated. See SelfManagedKafkaEventSourceConfig Syntax.
                           type: string
+                        schemaRegistryConfig:
+                          description: Block for a Kafka schema registry setting. See below.
+                          items:
+                            properties:
+                              accessConfig:
+                                description: Configuration block for authentication Lambda uses to access the schema registry.
+                                items:
+                                  properties:
+                                    type:
+                                      description: Authentication type Lambda uses to access the schema registry.
+                                      type: string
+                                    uri:
+                                      description: URI of the secret (Secrets Manager secret ARN) used to authenticate with the schema registry.
+                                      type: string
+                                  type: object
+                                type: array
+                              eventRecordFormat:
+                                description: 'Record format that Lambda delivers to the function after schema validation. Valid values: JSON, SOURCE.'
+                                type: string
+                              schemaRegistryUri:
+                                description: URI of the schema registry. For AWS Glue schema registries, use the ARN of the registry. For Confluent schema registries, use the registry URL.
+                                type: string
+                              schemaValidationConfig:
+                                description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.
+                                items:
+                                  properties:
+                                    attribute:
+                                      description: 'Message attribute to validate. Valid values: KEY, VALUE.'
+                                      type: string
+                                  type: object
+                                type: array
+                            type: object
+                          type: array
                       type: object
                     type: array
                   sourceAccessConfiguration:
@@ -993,6 +1131,39 @@ spec:
                         consumerGroupId:
                           description: Kafka consumer group ID between 1 and 200 characters for use when creating this event source mapping. If one is not specified, this value will be automatically generated. See AmazonManagedKafkaEventSourceConfig Syntax.
                           type: string
+                        schemaRegistryConfig:
+                          description: Block for a Kafka schema registry setting. See below.
+                          items:
+                            properties:
+                              accessConfig:
+                                description: Configuration block for authentication Lambda uses to access the schema registry.
+                                items:
+                                  properties:
+                                    type:
+                                      description: Authentication type Lambda uses to access the schema registry.
+                                      type: string
+                                    uri:
+                                      description: URI of the secret (Secrets Manager secret ARN) used to authenticate with the schema registry.
+                                      type: string
+                                  type: object
+                                type: array
+                              eventRecordFormat:
+                                description: 'Record format that Lambda delivers to the function after schema validation. Valid values: JSON, SOURCE.'
+                                type: string
+                              schemaRegistryUri:
+                                description: URI of the schema registry. For AWS Glue schema registries, use the ARN of the registry. For Confluent schema registries, use the registry URL.
+                                type: string
+                              schemaValidationConfig:
+                                description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.
+                                items:
+                                  properties:
+                                    attribute:
+                                      description: 'Message attribute to validate. Valid values: KEY, VALUE.'
+                                      type: string
+                                  type: object
+                                type: array
+                            type: object
+                          type: array
                       type: object
                     type: array
                   arn:
@@ -1013,7 +1184,7 @@ spec:
                           items:
                             properties:
                               destinationArn:
-                                description: ARN of the destination resource.
+                                description: ARN of the destination resource, or kafka://your-topic-name for Amazon MSK and self-managed Apache Kafka destinations.
                                 type: string
                             type: object
                           type: array
@@ -1112,6 +1283,9 @@ spec:
                         minimumPollers:
                           description: Minimum number of event pollers this event source can scale down to. The range is between 1 and 200.
                           type: number
+                        pollerGroupName:
+                          description: The name of the provisioned poller group used to group multiple ESMs within the event source's VPC to share Event Poller Unit (EPU) capacity. You can use this option to optimize Provisioned mode costs for your ESMs. You can group up to 100 ESMs per poller group and aggregate maximum pollers across all ESMs in a group cannot exceed 2000.
+                          type: string
                       type: object
                     type: array
                   queues:
@@ -1152,6 +1326,39 @@ spec:
                         consumerGroupId:
                           description: Kafka consumer group ID between 1 and 200 characters for use when creating this event source mapping. If one is not specified, this value will be automatically generated. See SelfManagedKafkaEventSourceConfig Syntax.
                           type: string
+                        schemaRegistryConfig:
+                          description: Block for a Kafka schema registry setting. See below.
+                          items:
+                            properties:
+                              accessConfig:
+                                description: Configuration block for authentication Lambda uses to access the schema registry.
+                                items:
+                                  properties:
+                                    type:
+                                      description: Authentication type Lambda uses to access the schema registry.
+                                      type: string
+                                    uri:
+                                      description: URI of the secret (Secrets Manager secret ARN) used to authenticate with the schema registry.
+                                      type: string
+                                  type: object
+                                type: array
+                              eventRecordFormat:
+                                description: 'Record format that Lambda delivers to the function after schema validation. Valid values: JSON, SOURCE.'
+                                type: string
+                              schemaRegistryUri:
+                                description: URI of the schema registry. For AWS Glue schema registries, use the ARN of the registry. For Confluent schema registries, use the registry URL.
+                                type: string
+                              schemaValidationConfig:
+                                description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.
+                                items:
+                                  properties:
+                                    attribute:
+                                      description: 'Message attribute to validate. Valid values: KEY, VALUE.'
+                                      type: string
+                                  type: object
+                                type: array
+                            type: object
+                          type: array
                       type: object
                     type: array
                   sourceAccessConfiguration:
@@ -1322,6 +1529,37 @@ spec:
                       consumerGroupId:
                         description: Kafka consumer group ID between 1 and 200 characters for use when creating this event source mapping. If one is not specified, this value will be automatically generated. See AmazonManagedKafkaEventSourceConfig Syntax.
                         type: string
+                      schemaRegistryConfig:
+                        description: Block for a Kafka schema registry setting. See below.
+                        properties:
+                          accessConfig:
+                            description: Configuration block for authentication Lambda uses to access the schema registry.
+                            items:
+                              properties:
+                                type:
+                                  description: Authentication type Lambda uses to access the schema registry.
+                                  type: string
+                                uri:
+                                  description: URI of the secret (Secrets Manager secret ARN) used to authenticate with the schema registry.
+                                  type: string
+                              type: object
+                            type: array
+                          eventRecordFormat:
+                            description: 'Record format that Lambda delivers to the function after schema validation. Valid values: JSON, SOURCE.'
+                            type: string
+                          schemaRegistryUri:
+                            description: URI of the schema registry. For AWS Glue schema registries, use the ARN of the registry. For Confluent schema registries, use the registry URL.
+                            type: string
+                          schemaValidationConfig:
+                            description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.
+                            items:
+                              properties:
+                                attribute:
+                                  description: 'Message attribute to validate. Valid values: KEY, VALUE.'
+                                  type: string
+                              type: object
+                            type: array
+                        type: object
                     type: object
                   batchSize:
                     description: Largest number of records that Lambda will retrieve from your event source at the time of invocation. Defaults to 100 for DynamoDB, Kinesis, MQ and MSK, 10 for SQS.
@@ -1336,7 +1574,7 @@ spec:
                         description: Destination configuration for failed invocations. See below.
                         properties:
                           destinationArn:
-                            description: ARN of the destination resource.
+                            description: ARN of the destination resource, or kafka://your-topic-name for Amazon MSK and self-managed Apache Kafka destinations.
                             type: string
                           destinationArnRef:
                             description: Reference to a Queue in sqs to populate destinationArn.
@@ -1634,6 +1872,9 @@ spec:
                       minimumPollers:
                         description: Minimum number of event pollers this event source can scale down to. The range is between 1 and 200.
                         type: number
+                      pollerGroupName:
+                        description: The name of the provisioned poller group used to group multiple ESMs within the event source's VPC to share Event Poller Unit (EPU) capacity. You can use this option to optimize Provisioned mode costs for your ESMs. You can group up to 100 ESMs per poller group and aggregate maximum pollers across all ESMs in a group cannot exceed 2000.
+                        type: string
                     type: object
                   queues:
                     description: Name of the Amazon MQ broker destination queue to consume. Only available for MQ sources. The list must contain exactly one queue name.
@@ -1668,6 +1909,37 @@ spec:
                       consumerGroupId:
                         description: Kafka consumer group ID between 1 and 200 characters for use when creating this event source mapping. If one is not specified, this value will be automatically generated. See SelfManagedKafkaEventSourceConfig Syntax.
                         type: string
+                      schemaRegistryConfig:
+                        description: Block for a Kafka schema registry setting. See below.
+                        properties:
+                          accessConfig:
+                            description: Configuration block for authentication Lambda uses to access the schema registry.
+                            items:
+                              properties:
+                                type:
+                                  description: Authentication type Lambda uses to access the schema registry.
+                                  type: string
+                                uri:
+                                  description: URI of the secret (Secrets Manager secret ARN) used to authenticate with the schema registry.
+                                  type: string
+                              type: object
+                            type: array
+                          eventRecordFormat:
+                            description: 'Record format that Lambda delivers to the function after schema validation. Valid values: JSON, SOURCE.'
+                            type: string
+                          schemaRegistryUri:
+                            description: URI of the schema registry. For AWS Glue schema registries, use the ARN of the registry. For Confluent schema registries, use the registry URL.
+                            type: string
+                          schemaValidationConfig:
+                            description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.
+                            items:
+                              properties:
+                                attribute:
+                                  description: 'Message attribute to validate. Valid values: KEY, VALUE.'
+                                  type: string
+                              type: object
+                            type: array
+                        type: object
                     type: object
                   sourceAccessConfiguration:
                     description: For Self Managed Kafka sources, the access configuration for the source. If set, configuration must also include self_managed_event_source. See below.
@@ -1724,6 +1996,37 @@ spec:
                       consumerGroupId:
                         description: Kafka consumer group ID between 1 and 200 characters for use when creating this event source mapping. If one is not specified, this value will be automatically generated. See AmazonManagedKafkaEventSourceConfig Syntax.
                         type: string
+                      schemaRegistryConfig:
+                        description: Block for a Kafka schema registry setting. See below.
+                        properties:
+                          accessConfig:
+                            description: Configuration block for authentication Lambda uses to access the schema registry.
+                            items:
+                              properties:
+                                type:
+                                  description: Authentication type Lambda uses to access the schema registry.
+                                  type: string
+                                uri:
+                                  description: URI of the secret (Secrets Manager secret ARN) used to authenticate with the schema registry.
+                                  type: string
+                              type: object
+                            type: array
+                          eventRecordFormat:
+                            description: 'Record format that Lambda delivers to the function after schema validation. Valid values: JSON, SOURCE.'
+                            type: string
+                          schemaRegistryUri:
+                            description: URI of the schema registry. For AWS Glue schema registries, use the ARN of the registry. For Confluent schema registries, use the registry URL.
+                            type: string
+                          schemaValidationConfig:
+                            description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.
+                            items:
+                              properties:
+                                attribute:
+                                  description: 'Message attribute to validate. Valid values: KEY, VALUE.'
+                                  type: string
+                              type: object
+                            type: array
+                        type: object
                     type: object
                   batchSize:
                     description: Largest number of records that Lambda will retrieve from your event source at the time of invocation. Defaults to 100 for DynamoDB, Kinesis, MQ and MSK, 10 for SQS.
@@ -1738,7 +2041,7 @@ spec:
                         description: Destination configuration for failed invocations. See below.
                         properties:
                           destinationArn:
-                            description: ARN of the destination resource.
+                            description: ARN of the destination resource, or kafka://your-topic-name for Amazon MSK and self-managed Apache Kafka destinations.
                             type: string
                           destinationArnRef:
                             description: Reference to a Queue in sqs to populate destinationArn.
@@ -2036,6 +2339,9 @@ spec:
                       minimumPollers:
                         description: Minimum number of event pollers this event source can scale down to. The range is between 1 and 200.
                         type: number
+                      pollerGroupName:
+                        description: The name of the provisioned poller group used to group multiple ESMs within the event source's VPC to share Event Poller Unit (EPU) capacity. You can use this option to optimize Provisioned mode costs for your ESMs. You can group up to 100 ESMs per poller group and aggregate maximum pollers across all ESMs in a group cannot exceed 2000.
+                        type: string
                     type: object
                   queues:
                     description: Name of the Amazon MQ broker destination queue to consume. Only available for MQ sources. The list must contain exactly one queue name.
@@ -2065,6 +2371,37 @@ spec:
                       consumerGroupId:
                         description: Kafka consumer group ID between 1 and 200 characters for use when creating this event source mapping. If one is not specified, this value will be automatically generated. See SelfManagedKafkaEventSourceConfig Syntax.
                         type: string
+                      schemaRegistryConfig:
+                        description: Block for a Kafka schema registry setting. See below.
+                        properties:
+                          accessConfig:
+                            description: Configuration block for authentication Lambda uses to access the schema registry.
+                            items:
+                              properties:
+                                type:
+                                  description: Authentication type Lambda uses to access the schema registry.
+                                  type: string
+                                uri:
+                                  description: URI of the secret (Secrets Manager secret ARN) used to authenticate with the schema registry.
+                                  type: string
+                              type: object
+                            type: array
+                          eventRecordFormat:
+                            description: 'Record format that Lambda delivers to the function after schema validation. Valid values: JSON, SOURCE.'
+                            type: string
+                          schemaRegistryUri:
+                            description: URI of the schema registry. For AWS Glue schema registries, use the ARN of the registry. For Confluent schema registries, use the registry URL.
+                            type: string
+                          schemaValidationConfig:
+                            description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.
+                            items:
+                              properties:
+                                attribute:
+                                  description: 'Message attribute to validate. Valid values: KEY, VALUE.'
+                                  type: string
+                              type: object
+                            type: array
+                        type: object
                     type: object
                   sourceAccessConfiguration:
                     description: For Self Managed Kafka sources, the access configuration for the source. If set, configuration must also include self_managed_event_source. See below.
@@ -2197,6 +2534,37 @@ spec:
                       consumerGroupId:
                         description: Kafka consumer group ID between 1 and 200 characters for use when creating this event source mapping. If one is not specified, this value will be automatically generated. See AmazonManagedKafkaEventSourceConfig Syntax.
                         type: string
+                      schemaRegistryConfig:
+                        description: Block for a Kafka schema registry setting. See below.
+                        properties:
+                          accessConfig:
+                            description: Configuration block for authentication Lambda uses to access the schema registry.
+                            items:
+                              properties:
+                                type:
+                                  description: Authentication type Lambda uses to access the schema registry.
+                                  type: string
+                                uri:
+                                  description: URI of the secret (Secrets Manager secret ARN) used to authenticate with the schema registry.
+                                  type: string
+                              type: object
+                            type: array
+                          eventRecordFormat:
+                            description: 'Record format that Lambda delivers to the function after schema validation. Valid values: JSON, SOURCE.'
+                            type: string
+                          schemaRegistryUri:
+                            description: URI of the schema registry. For AWS Glue schema registries, use the ARN of the registry. For Confluent schema registries, use the registry URL.
+                            type: string
+                          schemaValidationConfig:
+                            description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.
+                            items:
+                              properties:
+                                attribute:
+                                  description: 'Message attribute to validate. Valid values: KEY, VALUE.'
+                                  type: string
+                              type: object
+                            type: array
+                        type: object
                     type: object
                   arn:
                     description: Event source mapping ARN.
@@ -2214,7 +2582,7 @@ spec:
                         description: Destination configuration for failed invocations. See below.
                         properties:
                           destinationArn:
-                            description: ARN of the destination resource.
+                            description: ARN of the destination resource, or kafka://your-topic-name for Amazon MSK and self-managed Apache Kafka destinations.
                             type: string
                         type: object
                     type: object
@@ -2304,6 +2672,9 @@ spec:
                       minimumPollers:
                         description: Minimum number of event pollers this event source can scale down to. The range is between 1 and 200.
                         type: number
+                      pollerGroupName:
+                        description: The name of the provisioned poller group used to group multiple ESMs within the event source's VPC to share Event Poller Unit (EPU) capacity. You can use this option to optimize Provisioned mode costs for your ESMs. You can group up to 100 ESMs per poller group and aggregate maximum pollers across all ESMs in a group cannot exceed 2000.
+                        type: string
                     type: object
                   queues:
                     description: Name of the Amazon MQ broker destination queue to consume. Only available for MQ sources. The list must contain exactly one queue name.
@@ -2338,6 +2709,37 @@ spec:
                       consumerGroupId:
                         description: Kafka consumer group ID between 1 and 200 characters for use when creating this event source mapping. If one is not specified, this value will be automatically generated. See SelfManagedKafkaEventSourceConfig Syntax.
                         type: string
+                      schemaRegistryConfig:
+                        description: Block for a Kafka schema registry setting. See below.
+                        properties:
+                          accessConfig:
+                            description: Configuration block for authentication Lambda uses to access the schema registry.
+                            items:
+                              properties:
+                                type:
+                                  description: Authentication type Lambda uses to access the schema registry.
+                                  type: string
+                                uri:
+                                  description: URI of the secret (Secrets Manager secret ARN) used to authenticate with the schema registry.
+                                  type: string
+                              type: object
+                            type: array
+                          eventRecordFormat:
+                            description: 'Record format that Lambda delivers to the function after schema validation. Valid values: JSON, SOURCE.'
+                            type: string
+                          schemaRegistryUri:
+                            description: URI of the schema registry. For AWS Glue schema registries, use the ARN of the registry. For Confluent schema registries, use the registry URL.
+                            type: string
+                          schemaValidationConfig:
+                            description: Repeatable block that defines schema validation settings. These specify the message attributes that Lambda should validate and filter using the schema registry.
+                            items:
+                              properties:
+                                attribute:
+                                  description: 'Message attribute to validate. Valid values: KEY, VALUE.'
+                                  type: string
+                              type: object
+                            type: array
+                        type: object
                     type: object
                   sourceAccessConfiguration:
                     description: For Self Managed Kafka sources, the access configuration for the source. If set, configuration must also include self_managed_event_source. See below.

@@ -91,10 +91,14 @@ spec:
                           description: Approximate amount of time, in seconds, between health checks of an individual target. The range is 5-300. For lambda target groups, it needs to be greater than the timeout of the underlying lambda. Defaults to 30.
                           type: number
                         matcher:
-                          description: separated individual values (e.g., "200,202") or a range of values (e.g., "200-299").
+                          description: |-
+                            separated individual values (e.g., "200,202") or a range of values (e.g., "200-299").
+                            Once the value has been set, removing it has no effect. To unset it, set it to an empty string "".
                           type: string
                         path:
-                          description: (May be required) Destination for the health check request. Required for HTTP/HTTPS ALB and HTTP NLB. Only applies to HTTP/HTTPS.
+                          description: |-
+                            (May be required) Destination for the health check request. Required for HTTP/HTTPS ALB and HTTP NLB. Only applies to HTTP/HTTPS.
+                            Once the value has been set, removing it has no effect. To unset it, set it to an empty string "".
                           type: string
                         port:
                           description: |-
@@ -145,7 +149,7 @@ spec:
                   protocol:
                     description: |-
                       (May be required, Forces new resource) Protocol to use for routing traffic to the targets.
-                      Should be one of GENEVE, HTTP, HTTPS, TCP, TCP_UDP, TLS, or UDP.
+                      Should be one of GENEVE, HTTP, HTTPS, TCP, TCP_UDP, TLS, UDP, QUIC, or TCP_QUIC.
                       Required when target_type is instance, ip, or alb.
                       Does not apply when target_type is lambda.
                     type: string
@@ -187,6 +191,9 @@ spec:
                     description: Key-value map of resource tags.
                     type: object
                     x-kubernetes-map-type: granular
+                  targetControlPort:
+                    description: Port on which the target control agent and application load balancer exchange management traffic for the target optimizer feature. Only applicable for Application Load Balancer target groups when target_type is instance or ip.
+                    type: number
                   targetFailover:
                     description: Target failover block. Only applicable for Gateway Load Balancer target groups. See target_failover for more information.
                     items:
@@ -359,10 +366,14 @@ spec:
                           description: Approximate amount of time, in seconds, between health checks of an individual target. The range is 5-300. For lambda target groups, it needs to be greater than the timeout of the underlying lambda. Defaults to 30.
                           type: number
                         matcher:
-                          description: separated individual values (e.g., "200,202") or a range of values (e.g., "200-299").
+                          description: |-
+                            separated individual values (e.g., "200,202") or a range of values (e.g., "200-299").
+                            Once the value has been set, removing it has no effect. To unset it, set it to an empty string "".
                           type: string
                         path:
-                          description: (May be required) Destination for the health check request. Required for HTTP/HTTPS ALB and HTTP NLB. Only applies to HTTP/HTTPS.
+                          description: |-
+                            (May be required) Destination for the health check request. Required for HTTP/HTTPS ALB and HTTP NLB. Only applies to HTTP/HTTPS.
+                            Once the value has been set, removing it has no effect. To unset it, set it to an empty string "".
                           type: string
                         port:
                           description: |-
@@ -413,7 +424,7 @@ spec:
                   protocol:
                     description: |-
                       (May be required, Forces new resource) Protocol to use for routing traffic to the targets.
-                      Should be one of GENEVE, HTTP, HTTPS, TCP, TCP_UDP, TLS, or UDP.
+                      Should be one of GENEVE, HTTP, HTTPS, TCP, TCP_UDP, TLS, UDP, QUIC, or TCP_QUIC.
                       Required when target_type is instance, ip, or alb.
                       Does not apply when target_type is lambda.
                     type: string
@@ -450,6 +461,9 @@ spec:
                     description: Key-value map of resource tags.
                     type: object
                     x-kubernetes-map-type: granular
+                  targetControlPort:
+                    description: Port on which the target control agent and application load balancer exchange management traffic for the target optimizer feature. Only applicable for Application Load Balancer target groups when target_type is instance or ip.
+                    type: number
                   targetFailover:
                     description: Target failover block. Only applicable for Gateway Load Balancer target groups. See target_failover for more information.
                     items:
@@ -707,10 +721,14 @@ spec:
                           description: Approximate amount of time, in seconds, between health checks of an individual target. The range is 5-300. For lambda target groups, it needs to be greater than the timeout of the underlying lambda. Defaults to 30.
                           type: number
                         matcher:
-                          description: separated individual values (e.g., "200,202") or a range of values (e.g., "200-299").
+                          description: |-
+                            separated individual values (e.g., "200,202") or a range of values (e.g., "200-299").
+                            Once the value has been set, removing it has no effect. To unset it, set it to an empty string "".
                           type: string
                         path:
-                          description: (May be required) Destination for the health check request. Required for HTTP/HTTPS ALB and HTTP NLB. Only applies to HTTP/HTTPS.
+                          description: |-
+                            (May be required) Destination for the health check request. Required for HTTP/HTTPS ALB and HTTP NLB. Only applies to HTTP/HTTPS.
+                            Once the value has been set, removing it has no effect. To unset it, set it to an empty string "".
                           type: string
                         port:
                           description: |-
@@ -770,7 +788,7 @@ spec:
                   protocol:
                     description: |-
                       (May be required, Forces new resource) Protocol to use for routing traffic to the targets.
-                      Should be one of GENEVE, HTTP, HTTPS, TCP, TCP_UDP, TLS, or UDP.
+                      Should be one of GENEVE, HTTP, HTTPS, TCP, TCP_UDP, TLS, UDP, QUIC, or TCP_QUIC.
                       Required when target_type is instance, ip, or alb.
                       Does not apply when target_type is lambda.
                     type: string
@@ -818,6 +836,9 @@ spec:
                     description: A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
+                  targetControlPort:
+                    description: Port on which the target control agent and application load balancer exchange management traffic for the target optimizer feature. Only applicable for Application Load Balancer target groups when target_type is instance or ip.
+                    type: number
                   targetFailover:
                     description: Target failover block. Only applicable for Gateway Load Balancer target groups. See target_failover for more information.
                     items:
@@ -1014,10 +1035,14 @@ spec:
                         description: Approximate amount of time, in seconds, between health checks of an individual target. The range is 5-300. For lambda target groups, it needs to be greater than the timeout of the underlying lambda. Defaults to 30.
                         type: number
                       matcher:
-                        description: separated individual values (e.g., "200,202") or a range of values (e.g., "200-299").
+                        description: |-
+                          separated individual values (e.g., "200,202") or a range of values (e.g., "200-299").
+                          Once the value has been set, removing it has no effect. To unset it, set it to an empty string "".
                         type: string
                       path:
-                        description: (May be required) Destination for the health check request. Required for HTTP/HTTPS ALB and HTTP NLB. Only applies to HTTP/HTTPS.
+                        description: |-
+                          (May be required) Destination for the health check request. Required for HTTP/HTTPS ALB and HTTP NLB. Only applies to HTTP/HTTPS.
+                          Once the value has been set, removing it has no effect. To unset it, set it to an empty string "".
                         type: string
                       port:
                         description: |-
@@ -1067,7 +1092,7 @@ spec:
                   protocol:
                     description: |-
                       (May be required, Forces new resource) Protocol to use for routing traffic to the targets.
-                      Should be one of GENEVE, HTTP, HTTPS, TCP, TCP_UDP, TLS, or UDP.
+                      Should be one of GENEVE, HTTP, HTTPS, TCP, TCP_UDP, TLS, UDP, QUIC, or TCP_QUIC.
                       Required when target_type is instance, ip, or alb.
                       Does not apply when target_type is lambda.
                     type: string
@@ -1107,6 +1132,9 @@ spec:
                     description: Key-value map of resource tags.
                     type: object
                     x-kubernetes-map-type: granular
+                  targetControlPort:
+                    description: Port on which the target control agent and application load balancer exchange management traffic for the target optimizer feature. Only applicable for Application Load Balancer target groups when target_type is instance or ip.
+                    type: number
                   targetFailover:
                     description: Target failover block. Only applicable for Gateway Load Balancer target groups. See target_failover for more information.
                     items:
@@ -1272,10 +1300,14 @@ spec:
                         description: Approximate amount of time, in seconds, between health checks of an individual target. The range is 5-300. For lambda target groups, it needs to be greater than the timeout of the underlying lambda. Defaults to 30.
                         type: number
                       matcher:
-                        description: separated individual values (e.g., "200,202") or a range of values (e.g., "200-299").
+                        description: |-
+                          separated individual values (e.g., "200,202") or a range of values (e.g., "200-299").
+                          Once the value has been set, removing it has no effect. To unset it, set it to an empty string "".
                         type: string
                       path:
-                        description: (May be required) Destination for the health check request. Required for HTTP/HTTPS ALB and HTTP NLB. Only applies to HTTP/HTTPS.
+                        description: |-
+                          (May be required) Destination for the health check request. Required for HTTP/HTTPS ALB and HTTP NLB. Only applies to HTTP/HTTPS.
+                          Once the value has been set, removing it has no effect. To unset it, set it to an empty string "".
                         type: string
                       port:
                         description: |-
@@ -1325,7 +1357,7 @@ spec:
                   protocol:
                     description: |-
                       (May be required, Forces new resource) Protocol to use for routing traffic to the targets.
-                      Should be one of GENEVE, HTTP, HTTPS, TCP, TCP_UDP, TLS, or UDP.
+                      Should be one of GENEVE, HTTP, HTTPS, TCP, TCP_UDP, TLS, UDP, QUIC, or TCP_QUIC.
                       Required when target_type is instance, ip, or alb.
                       Does not apply when target_type is lambda.
                     type: string
@@ -1360,6 +1392,9 @@ spec:
                     description: Key-value map of resource tags.
                     type: object
                     x-kubernetes-map-type: granular
+                  targetControlPort:
+                    description: Port on which the target control agent and application load balancer exchange management traffic for the target optimizer feature. Only applicable for Application Load Balancer target groups when target_type is instance or ip.
+                    type: number
                   targetFailover:
                     description: Target failover block. Only applicable for Gateway Load Balancer target groups. See target_failover for more information.
                     items:
@@ -1610,10 +1645,14 @@ spec:
                         description: Approximate amount of time, in seconds, between health checks of an individual target. The range is 5-300. For lambda target groups, it needs to be greater than the timeout of the underlying lambda. Defaults to 30.
                         type: number
                       matcher:
-                        description: separated individual values (e.g., "200,202") or a range of values (e.g., "200-299").
+                        description: |-
+                          separated individual values (e.g., "200,202") or a range of values (e.g., "200-299").
+                          Once the value has been set, removing it has no effect. To unset it, set it to an empty string "".
                         type: string
                       path:
-                        description: (May be required) Destination for the health check request. Required for HTTP/HTTPS ALB and HTTP NLB. Only applies to HTTP/HTTPS.
+                        description: |-
+                          (May be required) Destination for the health check request. Required for HTTP/HTTPS ALB and HTTP NLB. Only applies to HTTP/HTTPS.
+                          Once the value has been set, removing it has no effect. To unset it, set it to an empty string "".
                         type: string
                       port:
                         description: |-
@@ -1672,7 +1711,7 @@ spec:
                   protocol:
                     description: |-
                       (May be required, Forces new resource) Protocol to use for routing traffic to the targets.
-                      Should be one of GENEVE, HTTP, HTTPS, TCP, TCP_UDP, TLS, or UDP.
+                      Should be one of GENEVE, HTTP, HTTPS, TCP, TCP_UDP, TLS, UDP, QUIC, or TCP_QUIC.
                       Required when target_type is instance, ip, or alb.
                       Does not apply when target_type is lambda.
                     type: string
@@ -1718,6 +1757,9 @@ spec:
                     description: A map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
+                  targetControlPort:
+                    description: Port on which the target control agent and application load balancer exchange management traffic for the target optimizer feature. Only applicable for Application Load Balancer target groups when target_type is instance or ip.
+                    type: number
                   targetFailover:
                     description: Target failover block. Only applicable for Gateway Load Balancer target groups. See target_failover for more information.
                     items:
