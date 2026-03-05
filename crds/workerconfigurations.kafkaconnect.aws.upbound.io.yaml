@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kafkaconnect.aws.upbound.io
   names:
+    kind: WorkerConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: WorkerConfiguration
     listKind: WorkerConfigurationList
     plural: workerconfigurations
     singular: workerconfiguration

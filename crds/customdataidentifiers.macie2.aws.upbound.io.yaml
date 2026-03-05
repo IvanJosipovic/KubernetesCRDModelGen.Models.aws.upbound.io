@@ -7,11 +7,11 @@ metadata:
 spec:
   group: macie2.aws.upbound.io
   names:
+    kind: CustomDataIdentifier
     categories:
     - crossplane
     - managed
     - aws
-    kind: CustomDataIdentifier
     listKind: CustomDataIdentifierList
     plural: customdataidentifiers
     singular: customdataidentifier

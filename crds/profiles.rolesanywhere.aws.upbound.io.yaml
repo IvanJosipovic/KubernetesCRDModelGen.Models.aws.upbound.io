@@ -7,11 +7,11 @@ metadata:
 spec:
   group: rolesanywhere.aws.upbound.io
   names:
+    kind: Profile
     categories:
     - crossplane
     - managed
     - aws
-    kind: Profile
     listKind: ProfileList
     plural: profiles
     singular: profile

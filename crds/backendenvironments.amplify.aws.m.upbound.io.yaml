@@ -7,11 +7,11 @@ metadata:
 spec:
   group: amplify.aws.m.upbound.io
   names:
+    kind: BackendEnvironment
     categories:
     - crossplane
     - managed
     - aws
-    kind: BackendEnvironment
     listKind: BackendEnvironmentList
     plural: backendenvironments
     singular: backendenvironment

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appconfig.aws.m.upbound.io
   names:
+    kind: DeploymentStrategy
     categories:
     - crossplane
     - managed
     - aws
-    kind: DeploymentStrategy
     listKind: DeploymentStrategyList
     plural: deploymentstrategies
     singular: deploymentstrategy

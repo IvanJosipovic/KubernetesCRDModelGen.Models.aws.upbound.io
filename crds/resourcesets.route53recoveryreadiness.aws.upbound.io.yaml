@@ -7,11 +7,11 @@ metadata:
 spec:
   group: route53recoveryreadiness.aws.upbound.io
   names:
+    kind: ResourceSet
     categories:
     - crossplane
     - managed
     - aws
-    kind: ResourceSet
     listKind: ResourceSetList
     plural: resourcesets
     singular: resourceset

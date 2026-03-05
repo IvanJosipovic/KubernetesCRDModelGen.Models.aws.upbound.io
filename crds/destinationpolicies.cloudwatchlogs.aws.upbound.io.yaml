@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudwatchlogs.aws.upbound.io
   names:
+    kind: DestinationPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: DestinationPolicy
     listKind: DestinationPolicyList
     plural: destinationpolicies
     singular: destinationpolicy

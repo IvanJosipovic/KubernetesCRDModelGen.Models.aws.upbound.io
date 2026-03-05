@@ -7,11 +7,11 @@ metadata:
 spec:
   group: macie2.aws.upbound.io
   names:
+    kind: InvitationAccepter
     categories:
     - crossplane
     - managed
     - aws
-    kind: InvitationAccepter
     listKind: InvitationAccepterList
     plural: invitationaccepters
     singular: invitationaccepter

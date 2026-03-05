@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networkmanager.aws.upbound.io
   names:
+    kind: TransitGatewayConnectPeerAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: TransitGatewayConnectPeerAssociation
     listKind: TransitGatewayConnectPeerAssociationList
     plural: transitgatewayconnectpeerassociations
     singular: transitgatewayconnectpeerassociation

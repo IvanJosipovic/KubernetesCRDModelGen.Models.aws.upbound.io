@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudwatchevents.aws.m.upbound.io
   names:
+    kind: Bus
     categories:
     - crossplane
     - managed
     - aws
-    kind: Bus
     listKind: BusList
     plural: buses
     singular: bus

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: efs.aws.m.upbound.io
   names:
+    kind: BackupPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: BackupPolicy
     listKind: BackupPolicyList
     plural: backuppolicies
     singular: backuppolicy

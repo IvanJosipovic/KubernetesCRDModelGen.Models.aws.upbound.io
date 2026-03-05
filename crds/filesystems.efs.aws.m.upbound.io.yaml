@@ -7,11 +7,11 @@ metadata:
 spec:
   group: efs.aws.m.upbound.io
   names:
+    kind: FileSystem
     categories:
     - crossplane
     - managed
     - aws
-    kind: FileSystem
     listKind: FileSystemList
     plural: filesystems
     singular: filesystem

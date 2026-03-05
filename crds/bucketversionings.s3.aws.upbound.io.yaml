@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3.aws.upbound.io
   names:
+    kind: BucketVersioning
     categories:
     - crossplane
     - managed
     - aws
-    kind: BucketVersioning
     listKind: BucketVersioningList
     plural: bucketversionings
     singular: bucketversioning

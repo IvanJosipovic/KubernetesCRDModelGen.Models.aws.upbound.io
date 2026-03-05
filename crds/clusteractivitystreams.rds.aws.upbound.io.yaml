@@ -7,11 +7,11 @@ metadata:
 spec:
   group: rds.aws.upbound.io
   names:
+    kind: ClusterActivityStream
     categories:
     - crossplane
     - managed
     - aws
-    kind: ClusterActivityStream
     listKind: ClusterActivityStreamList
     plural: clusteractivitystreams
     singular: clusteractivitystream

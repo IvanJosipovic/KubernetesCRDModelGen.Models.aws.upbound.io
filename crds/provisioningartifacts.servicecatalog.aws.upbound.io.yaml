@@ -7,11 +7,11 @@ metadata:
 spec:
   group: servicecatalog.aws.upbound.io
   names:
+    kind: ProvisioningArtifact
     categories:
     - crossplane
     - managed
     - aws
-    kind: ProvisioningArtifact
     listKind: ProvisioningArtifactList
     plural: provisioningartifacts
     singular: provisioningartifact

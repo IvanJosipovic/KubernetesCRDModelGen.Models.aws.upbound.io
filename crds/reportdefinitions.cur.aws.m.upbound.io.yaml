@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cur.aws.m.upbound.io
   names:
+    kind: ReportDefinition
     categories:
     - crossplane
     - managed
     - aws
-    kind: ReportDefinition
     listKind: ReportDefinitionList
     plural: reportdefinitions
     singular: reportdefinition

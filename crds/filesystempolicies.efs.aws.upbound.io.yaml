@@ -7,11 +7,11 @@ metadata:
 spec:
   group: efs.aws.upbound.io
   names:
+    kind: FileSystemPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: FileSystemPolicy
     listKind: FileSystemPolicyList
     plural: filesystempolicies
     singular: filesystempolicy

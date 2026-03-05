@@ -7,11 +7,11 @@ metadata:
 spec:
   group: waf.aws.upbound.io
   names:
+    kind: WebACL
     categories:
     - crossplane
     - managed
     - aws
-    kind: WebACL
     listKind: WebACLList
     plural: webacls
     singular: webacl

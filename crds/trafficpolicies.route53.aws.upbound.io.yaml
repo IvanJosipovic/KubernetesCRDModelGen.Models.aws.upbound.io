@@ -7,11 +7,11 @@ metadata:
 spec:
   group: route53.aws.upbound.io
   names:
+    kind: TrafficPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: TrafficPolicy
     listKind: TrafficPolicyList
     plural: trafficpolicies
     singular: trafficpolicy

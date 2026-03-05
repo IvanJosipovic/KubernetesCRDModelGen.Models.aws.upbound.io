@@ -7,11 +7,11 @@ metadata:
 spec:
   group: connect.aws.m.upbound.io
   names:
+    kind: ContactFlowModule
     categories:
     - crossplane
     - managed
     - aws
-    kind: ContactFlowModule
     listKind: ContactFlowModuleList
     plural: contactflowmodules
     singular: contactflowmodule

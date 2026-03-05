@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3.aws.upbound.io
   names:
+    kind: BucketWebsiteConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: BucketWebsiteConfiguration
     listKind: BucketWebsiteConfigurationList
     plural: bucketwebsiteconfigurations
     singular: bucketwebsiteconfiguration

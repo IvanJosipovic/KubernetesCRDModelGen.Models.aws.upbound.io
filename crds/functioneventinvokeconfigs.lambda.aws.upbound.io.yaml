@@ -7,11 +7,11 @@ metadata:
 spec:
   group: lambda.aws.upbound.io
   names:
+    kind: FunctionEventInvokeConfig
     categories:
     - crossplane
     - managed
     - aws
-    kind: FunctionEventInvokeConfig
     listKind: FunctionEventInvokeConfigList
     plural: functioneventinvokeconfigs
     singular: functioneventinvokeconfig

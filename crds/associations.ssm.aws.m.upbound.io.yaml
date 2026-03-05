@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ssm.aws.m.upbound.io
   names:
+    kind: Association
     categories:
     - crossplane
     - managed
     - aws
-    kind: Association
     listKind: AssociationList
     plural: associations
     singular: association

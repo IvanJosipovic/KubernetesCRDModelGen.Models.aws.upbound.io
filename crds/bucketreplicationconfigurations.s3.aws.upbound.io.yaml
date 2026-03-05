@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3.aws.upbound.io
   names:
+    kind: BucketReplicationConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: BucketReplicationConfiguration
     listKind: BucketReplicationConfigurationList
     plural: bucketreplicationconfigurations
     singular: bucketreplicationconfiguration

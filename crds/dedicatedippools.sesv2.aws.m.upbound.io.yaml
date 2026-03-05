@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sesv2.aws.m.upbound.io
   names:
+    kind: DedicatedIPPool
     categories:
     - crossplane
     - managed
     - aws
-    kind: DedicatedIPPool
     listKind: DedicatedIPPoolList
     plural: dedicatedippools
     singular: dedicatedippool

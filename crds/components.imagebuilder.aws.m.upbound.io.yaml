@@ -7,11 +7,11 @@ metadata:
 spec:
   group: imagebuilder.aws.m.upbound.io
   names:
+    kind: Component
     categories:
     - crossplane
     - managed
     - aws
-    kind: Component
     listKind: ComponentList
     plural: components
     singular: component

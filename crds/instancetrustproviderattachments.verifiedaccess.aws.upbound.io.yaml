@@ -7,11 +7,11 @@ metadata:
 spec:
   group: verifiedaccess.aws.upbound.io
   names:
+    kind: InstanceTrustProviderAttachment
     categories:
     - crossplane
     - managed
     - aws
-    kind: InstanceTrustProviderAttachment
     listKind: InstanceTrustProviderAttachmentList
     plural: instancetrustproviderattachments
     singular: instancetrustproviderattachment

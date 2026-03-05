@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kms.aws.m.upbound.io
   names:
+    kind: Alias
     categories:
     - crossplane
     - managed
     - aws
-    kind: Alias
     listKind: AliasList
     plural: aliases
     singular: alias

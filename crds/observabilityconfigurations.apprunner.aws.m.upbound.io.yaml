@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apprunner.aws.m.upbound.io
   names:
+    kind: ObservabilityConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: ObservabilityConfiguration
     listKind: ObservabilityConfigurationList
     plural: observabilityconfigurations
     singular: observabilityconfiguration

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: codeguruprofiler.aws.upbound.io
   names:
+    kind: ProfilingGroup
     categories:
     - crossplane
     - managed
     - aws
-    kind: ProfilingGroup
     listKind: ProfilingGroupList
     plural: profilinggroups
     singular: profilinggroup

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iam.aws.m.upbound.io
   names:
+    kind: ServerCertificate
     categories:
     - crossplane
     - managed
     - aws
-    kind: ServerCertificate
     listKind: ServerCertificateList
     plural: servercertificates
     singular: servercertificate

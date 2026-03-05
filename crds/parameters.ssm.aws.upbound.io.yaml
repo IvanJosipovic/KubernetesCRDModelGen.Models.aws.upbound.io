@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ssm.aws.upbound.io
   names:
+    kind: Parameter
     categories:
     - crossplane
     - managed
     - aws
-    kind: Parameter
     listKind: ParameterList
     plural: parameters
     singular: parameter

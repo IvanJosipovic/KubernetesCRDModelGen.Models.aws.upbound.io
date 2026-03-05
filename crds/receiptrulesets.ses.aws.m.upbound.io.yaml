@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ses.aws.m.upbound.io
   names:
+    kind: ReceiptRuleSet
     categories:
     - crossplane
     - managed
     - aws
-    kind: ReceiptRuleSet
     listKind: ReceiptRuleSetList
     plural: receiptrulesets
     singular: receiptruleset

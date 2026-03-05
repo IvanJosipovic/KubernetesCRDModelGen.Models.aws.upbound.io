@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: EIP
     categories:
     - crossplane
     - managed
     - aws
-    kind: EIP
     listKind: EIPList
     plural: eips
     singular: eip

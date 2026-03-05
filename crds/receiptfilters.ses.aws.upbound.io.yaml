@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ses.aws.upbound.io
   names:
+    kind: ReceiptFilter
     categories:
     - crossplane
     - managed
     - aws
-    kind: ReceiptFilter
     listKind: ReceiptFilterList
     plural: receiptfilters
     singular: receiptfilter

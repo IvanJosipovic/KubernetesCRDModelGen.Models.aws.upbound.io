@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: Host
     categories:
     - crossplane
     - managed
     - aws
-    kind: Host
     listKind: HostList
     plural: hosts
     singular: host

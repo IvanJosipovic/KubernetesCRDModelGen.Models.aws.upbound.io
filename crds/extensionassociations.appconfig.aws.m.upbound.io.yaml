@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appconfig.aws.m.upbound.io
   names:
+    kind: ExtensionAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: ExtensionAssociation
     listKind: ExtensionAssociationList
     plural: extensionassociations
     singular: extensionassociation

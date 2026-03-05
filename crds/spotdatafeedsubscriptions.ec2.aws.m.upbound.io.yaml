@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: SpotDatafeedSubscription
     categories:
     - crossplane
     - managed
     - aws
-    kind: SpotDatafeedSubscription
     listKind: SpotDatafeedSubscriptionList
     plural: spotdatafeedsubscriptions
     singular: spotdatafeedsubscription

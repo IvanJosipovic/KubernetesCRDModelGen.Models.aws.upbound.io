@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: DefaultSubnet
     categories:
     - crossplane
     - managed
     - aws
-    kind: DefaultSubnet
     listKind: DefaultSubnetList
     plural: defaultsubnets
     singular: defaultsubnet

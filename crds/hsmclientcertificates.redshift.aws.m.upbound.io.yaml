@@ -7,11 +7,11 @@ metadata:
 spec:
   group: redshift.aws.m.upbound.io
   names:
+    kind: HSMClientCertificate
     categories:
     - crossplane
     - managed
     - aws
-    kind: HSMClientCertificate
     listKind: HSMClientCertificateList
     plural: hsmclientcertificates
     singular: hsmclientcertificate

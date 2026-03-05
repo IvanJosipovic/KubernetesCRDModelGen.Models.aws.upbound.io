@@ -7,11 +7,11 @@ metadata:
 spec:
   group: codestarnotifications.aws.upbound.io
   names:
+    kind: NotificationRule
     categories:
     - crossplane
     - managed
     - aws
-    kind: NotificationRule
     listKind: NotificationRuleList
     plural: notificationrules
     singular: notificationrule

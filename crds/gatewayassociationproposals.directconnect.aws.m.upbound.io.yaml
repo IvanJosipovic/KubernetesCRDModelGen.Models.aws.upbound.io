@@ -7,11 +7,11 @@ metadata:
 spec:
   group: directconnect.aws.m.upbound.io
   names:
+    kind: GatewayAssociationProposal
     categories:
     - crossplane
     - managed
     - aws
-    kind: GatewayAssociationProposal
     listKind: GatewayAssociationProposalList
     plural: gatewayassociationproposals
     singular: gatewayassociationproposal

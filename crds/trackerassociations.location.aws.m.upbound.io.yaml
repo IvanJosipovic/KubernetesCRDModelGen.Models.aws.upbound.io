@@ -7,11 +7,11 @@ metadata:
 spec:
   group: location.aws.m.upbound.io
   names:
+    kind: TrackerAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: TrackerAssociation
     listKind: TrackerAssociationList
     plural: trackerassociations
     singular: trackerassociation

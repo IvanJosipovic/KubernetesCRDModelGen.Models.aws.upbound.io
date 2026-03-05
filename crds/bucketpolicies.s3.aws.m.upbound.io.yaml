@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3.aws.m.upbound.io
   names:
+    kind: BucketPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: BucketPolicy
     listKind: BucketPolicyList
     plural: bucketpolicies
     singular: bucketpolicy

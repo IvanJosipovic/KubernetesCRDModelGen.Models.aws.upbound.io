@@ -7,11 +7,11 @@ metadata:
 spec:
   group: fsx.aws.m.upbound.io
   names:
+    kind: LustreFileSystem
     categories:
     - crossplane
     - managed
     - aws
-    kind: LustreFileSystem
     listKind: LustreFileSystemList
     plural: lustrefilesystems
     singular: lustrefilesystem

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: accessanalyzer.aws.upbound.io
   names:
+    kind: Analyzer
     categories:
     - crossplane
     - managed
     - aws
-    kind: Analyzer
     listKind: AnalyzerList
     plural: analyzers
     singular: analyzer

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: fsx.aws.upbound.io
   names:
+    kind: WindowsFileSystem
     categories:
     - crossplane
     - managed
     - aws
-    kind: WindowsFileSystem
     listKind: WindowsFileSystemList
     plural: windowsfilesystems
     singular: windowsfilesystem

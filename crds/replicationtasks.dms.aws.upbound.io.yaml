@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dms.aws.upbound.io
   names:
+    kind: ReplicationTask
     categories:
     - crossplane
     - managed
     - aws
-    kind: ReplicationTask
     listKind: ReplicationTaskList
     plural: replicationtasks
     singular: replicationtask

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: VPCEndpointRouteTableAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: VPCEndpointRouteTableAssociation
     listKind: VPCEndpointRouteTableAssociationList
     plural: vpcendpointroutetableassociations
     singular: vpcendpointroutetableassociation

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: deploy.aws.upbound.io
   names:
+    kind: App
     categories:
     - crossplane
     - managed
     - aws
-    kind: App
     listKind: AppList
     plural: apps
     singular: app

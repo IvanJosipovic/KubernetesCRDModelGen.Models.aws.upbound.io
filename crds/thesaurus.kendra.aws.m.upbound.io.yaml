@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kendra.aws.m.upbound.io
   names:
+    kind: Thesaurus
     categories:
     - crossplane
     - managed
     - aws
-    kind: Thesaurus
     listKind: ThesaurusList
     plural: thesaurus
     singular: thesaurus

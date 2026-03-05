@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kendra.aws.upbound.io
   names:
+    kind: Experience
     categories:
     - crossplane
     - managed
     - aws
-    kind: Experience
     listKind: ExperienceList
     plural: experiences
     singular: experience

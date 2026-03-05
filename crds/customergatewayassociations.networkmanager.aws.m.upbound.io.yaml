@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networkmanager.aws.m.upbound.io
   names:
+    kind: CustomerGatewayAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: CustomerGatewayAssociation
     listKind: CustomerGatewayAssociationList
     plural: customergatewayassociations
     singular: customergatewayassociation

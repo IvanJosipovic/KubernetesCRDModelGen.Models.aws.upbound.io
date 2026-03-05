@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: TransitGatewayPrefixListReference
     categories:
     - crossplane
     - managed
     - aws
-    kind: TransitGatewayPrefixListReference
     listKind: TransitGatewayPrefixListReferenceList
     plural: transitgatewayprefixlistreferences
     singular: transitgatewayprefixlistreference

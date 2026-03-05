@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iam.aws.upbound.io
   names:
+    kind: InstanceProfile
     categories:
     - crossplane
     - managed
     - aws
-    kind: InstanceProfile
     listKind: InstanceProfileList
     plural: instanceprofiles
     singular: instanceprofile

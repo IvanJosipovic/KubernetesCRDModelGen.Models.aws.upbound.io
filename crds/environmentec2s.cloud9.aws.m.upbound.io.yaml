@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloud9.aws.m.upbound.io
   names:
+    kind: EnvironmentEC2
     categories:
     - crossplane
     - managed
     - aws
-    kind: EnvironmentEC2
     listKind: EnvironmentEC2List
     plural: environmentec2s
     singular: environmentec2

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iam.aws.m.upbound.io
   names:
+    kind: GroupPolicyAttachment
     categories:
     - crossplane
     - managed
     - aws
-    kind: GroupPolicyAttachment
     listKind: GroupPolicyAttachmentList
     plural: grouppolicyattachments
     singular: grouppolicyattachment

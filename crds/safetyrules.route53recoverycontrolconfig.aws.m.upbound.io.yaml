@@ -7,11 +7,11 @@ metadata:
 spec:
   group: route53recoverycontrolconfig.aws.m.upbound.io
   names:
+    kind: SafetyRule
     categories:
     - crossplane
     - managed
     - aws
-    kind: SafetyRule
     listKind: SafetyRuleList
     plural: safetyrules
     singular: safetyrule

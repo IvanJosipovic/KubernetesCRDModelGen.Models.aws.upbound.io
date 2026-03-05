@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudtrail.aws.upbound.io
   names:
+    kind: EventDataStore
     categories:
     - crossplane
     - managed
     - aws
-    kind: EventDataStore
     listKind: EventDataStoreList
     plural: eventdatastores
     singular: eventdatastore

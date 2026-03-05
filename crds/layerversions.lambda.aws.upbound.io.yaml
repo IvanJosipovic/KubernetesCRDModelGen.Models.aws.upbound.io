@@ -7,11 +7,11 @@ metadata:
 spec:
   group: lambda.aws.upbound.io
   names:
+    kind: LayerVersion
     categories:
     - crossplane
     - managed
     - aws
-    kind: LayerVersion
     listKind: LayerVersionList
     plural: layerversions
     singular: layerversion

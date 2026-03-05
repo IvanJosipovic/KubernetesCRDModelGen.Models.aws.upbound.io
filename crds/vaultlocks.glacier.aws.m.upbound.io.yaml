@@ -7,11 +7,11 @@ metadata:
 spec:
   group: glacier.aws.m.upbound.io
   names:
+    kind: VaultLock
     categories:
     - crossplane
     - managed
     - aws
-    kind: VaultLock
     listKind: VaultLockList
     plural: vaultlocks
     singular: vaultlock

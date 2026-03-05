@@ -7,11 +7,11 @@ metadata:
 spec:
   group: glue.aws.upbound.io
   names:
+    kind: SecurityConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: SecurityConfiguration
     listKind: SecurityConfigurationList
     plural: securityconfigurations
     singular: securityconfiguration

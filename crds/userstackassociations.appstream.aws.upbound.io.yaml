@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appstream.aws.upbound.io
   names:
+    kind: UserStackAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: UserStackAssociation
     listKind: UserStackAssociationList
     plural: userstackassociations
     singular: userstackassociation

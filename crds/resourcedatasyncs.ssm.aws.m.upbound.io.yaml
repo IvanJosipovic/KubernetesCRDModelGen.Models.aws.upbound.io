@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ssm.aws.m.upbound.io
   names:
+    kind: ResourceDataSync
     categories:
     - crossplane
     - managed
     - aws
-    kind: ResourceDataSync
     listKind: ResourceDataSyncList
     plural: resourcedatasyncs
     singular: resourcedatasync

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networkmanager.aws.upbound.io
   names:
+    kind: Device
     categories:
     - crossplane
     - managed
     - aws
-    kind: Device
     listKind: DeviceList
     plural: devices
     singular: device

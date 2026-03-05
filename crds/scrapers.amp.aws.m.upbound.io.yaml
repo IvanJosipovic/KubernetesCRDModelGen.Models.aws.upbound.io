@@ -7,11 +7,11 @@ metadata:
 spec:
   group: amp.aws.m.upbound.io
   names:
+    kind: Scraper
     categories:
     - crossplane
     - managed
     - aws
-    kind: Scraper
     listKind: ScraperList
     plural: scrapers
     singular: scraper

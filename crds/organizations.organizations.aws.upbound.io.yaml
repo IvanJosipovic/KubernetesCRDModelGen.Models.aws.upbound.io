@@ -7,11 +7,11 @@ metadata:
 spec:
   group: organizations.aws.upbound.io
   names:
+    kind: Organization
     categories:
     - crossplane
     - managed
     - aws
-    kind: Organization
     listKind: OrganizationList
     plural: organizations
     singular: organization

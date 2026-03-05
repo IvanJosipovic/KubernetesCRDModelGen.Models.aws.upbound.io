@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sfn.aws.m.upbound.io
   names:
+    kind: Activity
     categories:
     - crossplane
     - managed
     - aws
-    kind: Activity
     listKind: ActivityList
     plural: activities
     singular: activity

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: connect.aws.m.upbound.io
   names:
+    kind: InstanceStorageConfig
     categories:
     - crossplane
     - managed
     - aws
-    kind: InstanceStorageConfig
     listKind: InstanceStorageConfigList
     plural: instancestorageconfigs
     singular: instancestorageconfig

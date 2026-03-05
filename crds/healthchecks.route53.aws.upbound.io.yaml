@@ -7,11 +7,11 @@ metadata:
 spec:
   group: route53.aws.upbound.io
   names:
+    kind: HealthCheck
     categories:
     - crossplane
     - managed
     - aws
-    kind: HealthCheck
     listKind: HealthCheckList
     plural: healthchecks
     singular: healthcheck

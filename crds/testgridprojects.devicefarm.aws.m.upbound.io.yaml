@@ -7,11 +7,11 @@ metadata:
 spec:
   group: devicefarm.aws.m.upbound.io
   names:
+    kind: TestGridProject
     categories:
     - crossplane
     - managed
     - aws
-    kind: TestGridProject
     listKind: TestGridProjectList
     plural: testgridprojects
     singular: testgridproject

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: fsx.aws.m.upbound.io
   names:
+    kind: OntapStorageVirtualMachine
     categories:
     - crossplane
     - managed
     - aws
-    kind: OntapStorageVirtualMachine
     listKind: OntapStorageVirtualMachineList
     plural: ontapstoragevirtualmachines
     singular: ontapstoragevirtualmachine

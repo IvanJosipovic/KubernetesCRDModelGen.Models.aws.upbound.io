@@ -7,11 +7,11 @@ metadata:
 spec:
   group: xray.aws.m.upbound.io
   names:
+    kind: EncryptionConfig
     categories:
     - crossplane
     - managed
     - aws
-    kind: EncryptionConfig
     listKind: EncryptionConfigList
     plural: encryptionconfigs
     singular: encryptionconfig

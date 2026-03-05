@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appmesh.aws.m.upbound.io
   names:
+    kind: VirtualNode
     categories:
     - crossplane
     - managed
     - aws
-    kind: VirtualNode
     listKind: VirtualNodeList
     plural: virtualnodes
     singular: virtualnode

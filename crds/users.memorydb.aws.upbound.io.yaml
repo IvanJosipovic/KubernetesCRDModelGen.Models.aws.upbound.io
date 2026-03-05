@@ -7,11 +7,11 @@ metadata:
 spec:
   group: memorydb.aws.upbound.io
   names:
+    kind: User
     categories:
     - crossplane
     - managed
     - aws
-    kind: User
     listKind: UserList
     plural: users
     singular: user

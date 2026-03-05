@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apprunner.aws.upbound.io
   names:
+    kind: Service
     categories:
     - crossplane
     - managed
     - aws
-    kind: Service
     listKind: ServiceList
     plural: services
     singular: service

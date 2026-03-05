@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3.aws.m.upbound.io
   names:
+    kind: ObjectCopy
     categories:
     - crossplane
     - managed
     - aws
-    kind: ObjectCopy
     listKind: ObjectCopyList
     plural: objectcopies
     singular: objectcopy

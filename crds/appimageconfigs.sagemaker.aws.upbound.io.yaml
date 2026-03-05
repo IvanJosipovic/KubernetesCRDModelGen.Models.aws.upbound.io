@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sagemaker.aws.upbound.io
   names:
+    kind: AppImageConfig
     categories:
     - crossplane
     - managed
     - aws
-    kind: AppImageConfig
     listKind: AppImageConfigList
     plural: appimageconfigs
     singular: appimageconfig

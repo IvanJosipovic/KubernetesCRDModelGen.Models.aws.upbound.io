@@ -7,11 +7,11 @@ metadata:
 spec:
   group: globalaccelerator.aws.m.upbound.io
   names:
+    kind: Accelerator
     categories:
     - crossplane
     - managed
     - aws
-    kind: Accelerator
     listKind: AcceleratorList
     plural: accelerators
     singular: accelerator

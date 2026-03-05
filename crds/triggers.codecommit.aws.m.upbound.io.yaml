@@ -7,11 +7,11 @@ metadata:
 spec:
   group: codecommit.aws.m.upbound.io
   names:
+    kind: Trigger
     categories:
     - crossplane
     - managed
     - aws
-    kind: Trigger
     listKind: TriggerList
     plural: triggers
     singular: trigger

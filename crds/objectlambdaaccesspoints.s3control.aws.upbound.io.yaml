@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3control.aws.upbound.io
   names:
+    kind: ObjectLambdaAccessPoint
     categories:
     - crossplane
     - managed
     - aws
-    kind: ObjectLambdaAccessPoint
     listKind: ObjectLambdaAccessPointList
     plural: objectlambdaaccesspoints
     singular: objectlambdaaccesspoint

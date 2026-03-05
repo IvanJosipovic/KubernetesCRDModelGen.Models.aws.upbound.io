@@ -7,11 +7,11 @@ metadata:
 spec:
   group: vpclattice.aws.m.upbound.io
   names:
+    kind: ServiceNetworkVPCAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: ServiceNetworkVPCAssociation
     listKind: ServiceNetworkVPCAssociationList
     plural: servicenetworkvpcassociations
     singular: servicenetworkvpcassociation

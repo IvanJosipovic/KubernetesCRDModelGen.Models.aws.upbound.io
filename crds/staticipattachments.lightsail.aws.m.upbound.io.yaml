@@ -7,11 +7,11 @@ metadata:
 spec:
   group: lightsail.aws.m.upbound.io
   names:
+    kind: StaticIPAttachment
     categories:
     - crossplane
     - managed
     - aws
-    kind: StaticIPAttachment
     listKind: StaticIPAttachmentList
     plural: staticipattachments
     singular: staticipattachment

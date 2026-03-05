@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kinesisanalyticsv2.aws.upbound.io
   names:
+    kind: ApplicationSnapshot
     categories:
     - crossplane
     - managed
     - aws
-    kind: ApplicationSnapshot
     listKind: ApplicationSnapshotList
     plural: applicationsnapshots
     singular: applicationsnapshot

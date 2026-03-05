@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networkfirewall.aws.upbound.io
   names:
+    kind: Firewall
     categories:
     - crossplane
     - managed
     - aws
-    kind: Firewall
     listKind: FirewallList
     plural: firewalls
     singular: firewall

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: waf.aws.m.upbound.io
   names:
+    kind: RegexMatchSet
     categories:
     - crossplane
     - managed
     - aws
-    kind: RegexMatchSet
     listKind: RegexMatchSetList
     plural: regexmatchsets
     singular: regexmatchset

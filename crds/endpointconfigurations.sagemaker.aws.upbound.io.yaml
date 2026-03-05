@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sagemaker.aws.upbound.io
   names:
+    kind: EndpointConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: EndpointConfiguration
     listKind: EndpointConfigurationList
     plural: endpointconfigurations
     singular: endpointconfiguration

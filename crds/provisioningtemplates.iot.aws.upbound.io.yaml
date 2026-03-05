@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iot.aws.upbound.io
   names:
+    kind: ProvisioningTemplate
     categories:
     - crossplane
     - managed
     - aws
-    kind: ProvisioningTemplate
     listKind: ProvisioningTemplateList
     plural: provisioningtemplates
     singular: provisioningtemplate

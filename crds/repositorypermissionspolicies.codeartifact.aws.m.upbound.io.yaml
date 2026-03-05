@@ -7,11 +7,11 @@ metadata:
 spec:
   group: codeartifact.aws.m.upbound.io
   names:
+    kind: RepositoryPermissionsPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: RepositoryPermissionsPolicy
     listKind: RepositoryPermissionsPolicyList
     plural: repositorypermissionspolicies
     singular: repositorypermissionspolicy

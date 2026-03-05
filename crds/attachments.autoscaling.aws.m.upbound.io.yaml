@@ -7,11 +7,11 @@ metadata:
 spec:
   group: autoscaling.aws.m.upbound.io
   names:
+    kind: Attachment
     categories:
     - crossplane
     - managed
     - aws
-    kind: Attachment
     listKind: AttachmentList
     plural: attachments
     singular: attachment

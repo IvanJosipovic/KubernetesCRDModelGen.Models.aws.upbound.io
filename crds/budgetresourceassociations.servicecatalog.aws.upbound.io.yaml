@@ -7,11 +7,11 @@ metadata:
 spec:
   group: servicecatalog.aws.upbound.io
   names:
+    kind: BudgetResourceAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: BudgetResourceAssociation
     listKind: BudgetResourceAssociationList
     plural: budgetresourceassociations
     singular: budgetresourceassociation

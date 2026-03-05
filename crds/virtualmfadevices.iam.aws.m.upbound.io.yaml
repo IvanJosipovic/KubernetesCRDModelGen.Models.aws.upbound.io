@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iam.aws.m.upbound.io
   names:
+    kind: VirtualMfaDevice
     categories:
     - crossplane
     - managed
     - aws
-    kind: VirtualMfaDevice
     listKind: VirtualMfaDeviceList
     plural: virtualmfadevices
     singular: virtualmfadevice

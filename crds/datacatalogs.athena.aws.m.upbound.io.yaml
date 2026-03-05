@@ -7,11 +7,11 @@ metadata:
 spec:
   group: athena.aws.m.upbound.io
   names:
+    kind: DataCatalog
     categories:
     - crossplane
     - managed
     - aws
-    kind: DataCatalog
     listKind: DataCatalogList
     plural: datacatalogs
     singular: datacatalog

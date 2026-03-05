@@ -7,11 +7,11 @@ metadata:
 spec:
   group: route53recoveryreadiness.aws.upbound.io
   names:
+    kind: RecoveryGroup
     categories:
     - crossplane
     - managed
     - aws
-    kind: RecoveryGroup
     listKind: RecoveryGroupList
     plural: recoverygroups
     singular: recoverygroup

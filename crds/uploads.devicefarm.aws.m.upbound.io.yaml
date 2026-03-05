@@ -7,11 +7,11 @@ metadata:
 spec:
   group: devicefarm.aws.m.upbound.io
   names:
+    kind: Upload
     categories:
     - crossplane
     - managed
     - aws
-    kind: Upload
     listKind: UploadList
     plural: uploads
     singular: upload

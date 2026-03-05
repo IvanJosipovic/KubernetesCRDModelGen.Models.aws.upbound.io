@@ -7,11 +7,11 @@ metadata:
 spec:
   group: vpclattice.aws.upbound.io
   names:
+    kind: TargetGroup
     categories:
     - crossplane
     - managed
     - aws
-    kind: TargetGroup
     listKind: TargetGroupList
     plural: targetgroups
     singular: targetgroup

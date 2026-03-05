@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: VPCIpamPoolCidr
     categories:
     - crossplane
     - managed
     - aws
-    kind: VPCIpamPoolCidr
     listKind: VPCIpamPoolCidrList
     plural: vpcipampoolcidrs
     singular: vpcipampoolcidr

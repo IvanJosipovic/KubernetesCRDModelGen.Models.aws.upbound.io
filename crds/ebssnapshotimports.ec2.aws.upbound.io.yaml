@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: EBSSnapshotImport
     categories:
     - crossplane
     - managed
     - aws
-    kind: EBSSnapshotImport
     listKind: EBSSnapshotImportList
     plural: ebssnapshotimports
     singular: ebssnapshotimport

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: SnapshotCreateVolumePermission
     categories:
     - crossplane
     - managed
     - aws
-    kind: SnapshotCreateVolumePermission
     listKind: SnapshotCreateVolumePermissionList
     plural: snapshotcreatevolumepermissions
     singular: snapshotcreatevolumepermission

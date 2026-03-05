@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: NetworkInterface
     categories:
     - crossplane
     - managed
     - aws
-    kind: NetworkInterface
     listKind: NetworkInterfaceList
     plural: networkinterfaces
     singular: networkinterface

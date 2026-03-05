@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: VPCIpamPool
     categories:
     - crossplane
     - managed
     - aws
-    kind: VPCIpamPool
     listKind: VPCIpamPoolList
     plural: vpcipampools
     singular: vpcipampool

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cognitoidentity.aws.m.upbound.io
   names:
+    kind: PoolRolesAttachment
     categories:
     - crossplane
     - managed
     - aws
-    kind: PoolRolesAttachment
     listKind: PoolRolesAttachmentList
     plural: poolrolesattachments
     singular: poolrolesattachment

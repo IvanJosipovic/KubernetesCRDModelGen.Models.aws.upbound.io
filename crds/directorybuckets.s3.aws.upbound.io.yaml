@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3.aws.upbound.io
   names:
+    kind: DirectoryBucket
     categories:
     - crossplane
     - managed
     - aws
-    kind: DirectoryBucket
     listKind: DirectoryBucketList
     plural: directorybuckets
     singular: directorybucket

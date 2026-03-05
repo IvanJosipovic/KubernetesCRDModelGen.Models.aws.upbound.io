@@ -7,11 +7,11 @@ metadata:
 spec:
   group: signer.aws.m.upbound.io
   names:
+    kind: SigningProfile
     categories:
     - crossplane
     - managed
     - aws
-    kind: SigningProfile
     listKind: SigningProfileList
     plural: signingprofiles
     singular: signingprofile

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: oam.aws.upbound.io
   names:
+    kind: Sink
     categories:
     - crossplane
     - managed
     - aws
-    kind: Sink
     listKind: SinkList
     plural: sinks
     singular: sink

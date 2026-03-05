@@ -7,11 +7,11 @@ metadata:
 spec:
   group: vpclattice.aws.m.upbound.io
   names:
+    kind: AuthPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: AuthPolicy
     listKind: AuthPolicyList
     plural: authpolicies
     singular: authpolicy

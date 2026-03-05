@@ -7,11 +7,11 @@ metadata:
 spec:
   group: redshift.aws.m.upbound.io
   names:
+    kind: AuthenticationProfile
     categories:
     - crossplane
     - managed
     - aws
-    kind: AuthenticationProfile
     listKind: AuthenticationProfileList
     plural: authenticationprofiles
     singular: authenticationprofile

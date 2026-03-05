@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigateway.aws.m.upbound.io
   names:
+    kind: RequestValidator
     categories:
     - crossplane
     - managed
     - aws
-    kind: RequestValidator
     listKind: RequestValidatorList
     plural: requestvalidators
     singular: requestvalidator

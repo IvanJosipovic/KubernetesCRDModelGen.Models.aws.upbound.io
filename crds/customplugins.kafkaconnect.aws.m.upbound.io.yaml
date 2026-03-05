@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kafkaconnect.aws.m.upbound.io
   names:
+    kind: CustomPlugin
     categories:
     - crossplane
     - managed
     - aws
-    kind: CustomPlugin
     listKind: CustomPluginList
     plural: customplugins
     singular: customplugin

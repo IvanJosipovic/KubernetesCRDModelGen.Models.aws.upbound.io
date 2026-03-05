@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ivs.aws.m.upbound.io
   names:
+    kind: RecordingConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: RecordingConfiguration
     listKind: RecordingConfigurationList
     plural: recordingconfigurations
     singular: recordingconfiguration

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ssm.aws.m.upbound.io
   names:
+    kind: MaintenanceWindow
     categories:
     - crossplane
     - managed
     - aws
-    kind: MaintenanceWindow
     listKind: MaintenanceWindowList
     plural: maintenancewindows
     singular: maintenancewindow

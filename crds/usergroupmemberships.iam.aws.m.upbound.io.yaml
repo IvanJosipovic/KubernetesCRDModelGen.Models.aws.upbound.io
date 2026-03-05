@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iam.aws.m.upbound.io
   names:
+    kind: UserGroupMembership
     categories:
     - crossplane
     - managed
     - aws
-    kind: UserGroupMembership
     listKind: UserGroupMembershipList
     plural: usergroupmemberships
     singular: usergroupmembership

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: CarrierGateway
     categories:
     - crossplane
     - managed
     - aws
-    kind: CarrierGateway
     listKind: CarrierGatewayList
     plural: carriergateways
     singular: carriergateway

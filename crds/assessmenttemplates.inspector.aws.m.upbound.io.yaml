@@ -7,11 +7,11 @@ metadata:
 spec:
   group: inspector.aws.m.upbound.io
   names:
+    kind: AssessmentTemplate
     categories:
     - crossplane
     - managed
     - aws
-    kind: AssessmentTemplate
     listKind: AssessmentTemplateList
     plural: assessmenttemplates
     singular: assessmenttemplate

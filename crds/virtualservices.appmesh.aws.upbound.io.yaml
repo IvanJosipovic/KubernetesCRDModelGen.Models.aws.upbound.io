@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appmesh.aws.upbound.io
   names:
+    kind: VirtualService
     categories:
     - crossplane
     - managed
     - aws
-    kind: VirtualService
     listKind: VirtualServiceList
     plural: virtualservices
     singular: virtualservice

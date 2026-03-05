@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kafka.aws.m.upbound.io
   names:
+    kind: ServerlessCluster
     categories:
     - crossplane
     - managed
     - aws
-    kind: ServerlessCluster
     listKind: ServerlessClusterList
     plural: serverlessclusters
     singular: serverlesscluster

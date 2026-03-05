@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iot.aws.m.upbound.io
   names:
+    kind: PolicyAttachment
     categories:
     - crossplane
     - managed
     - aws
-    kind: PolicyAttachment
     listKind: PolicyAttachmentList
     plural: policyattachments
     singular: policyattachment

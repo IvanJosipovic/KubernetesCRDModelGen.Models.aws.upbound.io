@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iot.aws.m.upbound.io
   names:
+    kind: ThingGroupMembership
     categories:
     - crossplane
     - managed
     - aws
-    kind: ThingGroupMembership
     listKind: ThingGroupMembershipList
     plural: thinggroupmemberships
     singular: thinggroupmembership

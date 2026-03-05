@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudtrail.aws.upbound.io
   names:
+    kind: Trail
     categories:
     - crossplane
     - managed
     - aws
-    kind: Trail
     listKind: TrailList
     plural: trails
     singular: trail

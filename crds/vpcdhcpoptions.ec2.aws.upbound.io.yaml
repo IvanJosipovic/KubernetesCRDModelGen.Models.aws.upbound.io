@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: VPCDHCPOptions
     categories:
     - crossplane
     - managed
     - aws
-    kind: VPCDHCPOptions
     listKind: VPCDHCPOptionsList
     plural: vpcdhcpoptions
     singular: vpcdhcpoptions

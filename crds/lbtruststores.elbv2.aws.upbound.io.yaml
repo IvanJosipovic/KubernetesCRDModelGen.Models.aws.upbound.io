@@ -7,11 +7,11 @@ metadata:
 spec:
   group: elbv2.aws.upbound.io
   names:
+    kind: LBTrustStore
     categories:
     - crossplane
     - managed
     - aws
-    kind: LBTrustStore
     listKind: LBTrustStoreList
     plural: lbtruststores
     singular: lbtruststore

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: configservice.aws.m.upbound.io
   names:
+    kind: ConformancePack
     categories:
     - crossplane
     - managed
     - aws
-    kind: ConformancePack
     listKind: ConformancePackList
     plural: conformancepacks
     singular: conformancepack

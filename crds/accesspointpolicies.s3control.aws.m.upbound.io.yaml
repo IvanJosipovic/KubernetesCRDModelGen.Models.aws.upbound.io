@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3control.aws.m.upbound.io
   names:
+    kind: AccessPointPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: AccessPointPolicy
     listKind: AccessPointPolicyList
     plural: accesspointpolicies
     singular: accesspointpolicy

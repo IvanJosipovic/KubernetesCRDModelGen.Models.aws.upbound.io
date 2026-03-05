@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sesv2.aws.upbound.io
   names:
+    kind: EmailIdentityFeedbackAttributes
     categories:
     - crossplane
     - managed
     - aws
-    kind: EmailIdentityFeedbackAttributes
     listKind: EmailIdentityFeedbackAttributesList
     plural: emailidentityfeedbackattributes
     singular: emailidentityfeedbackattributes

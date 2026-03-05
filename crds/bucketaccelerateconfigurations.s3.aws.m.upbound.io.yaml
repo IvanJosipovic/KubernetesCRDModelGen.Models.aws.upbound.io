@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3.aws.m.upbound.io
   names:
+    kind: BucketAccelerateConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: BucketAccelerateConfiguration
     listKind: BucketAccelerateConfigurationList
     plural: bucketaccelerateconfigurations
     singular: bucketaccelerateconfiguration

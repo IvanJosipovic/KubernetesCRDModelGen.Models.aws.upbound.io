@@ -7,11 +7,11 @@ metadata:
 spec:
   group: servicediscovery.aws.m.upbound.io
   names:
+    kind: HTTPNamespace
     categories:
     - crossplane
     - managed
     - aws
-    kind: HTTPNamespace
     listKind: HTTPNamespaceList
     plural: httpnamespaces
     singular: httpnamespace

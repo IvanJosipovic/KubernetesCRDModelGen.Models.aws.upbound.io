@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudwatchevents.aws.m.upbound.io
   names:
+    kind: Target
     categories:
     - crossplane
     - managed
     - aws
-    kind: Target
     listKind: TargetList
     plural: targets
     singular: target

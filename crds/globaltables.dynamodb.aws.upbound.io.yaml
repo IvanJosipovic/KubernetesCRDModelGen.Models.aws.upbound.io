@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dynamodb.aws.upbound.io
   names:
+    kind: GlobalTable
     categories:
     - crossplane
     - managed
     - aws
-    kind: GlobalTable
     listKind: GlobalTableList
     plural: globaltables
     singular: globaltable

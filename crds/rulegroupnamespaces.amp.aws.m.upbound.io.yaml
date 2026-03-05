@@ -7,11 +7,11 @@ metadata:
 spec:
   group: amp.aws.m.upbound.io
   names:
+    kind: RuleGroupNamespace
     categories:
     - crossplane
     - managed
     - aws
-    kind: RuleGroupNamespace
     listKind: RuleGroupNamespaceList
     plural: rulegroupnamespaces
     singular: rulegroupnamespace

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ssoadmin.aws.m.upbound.io
   names:
+    kind: PermissionSetInlinePolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: PermissionSetInlinePolicy
     listKind: PermissionSetInlinePolicyList
     plural: permissionsetinlinepolicies
     singular: permissionsetinlinepolicy

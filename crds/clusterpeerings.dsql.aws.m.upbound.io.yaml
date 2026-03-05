@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dsql.aws.m.upbound.io
   names:
+    kind: ClusterPeering
     categories:
     - crossplane
     - managed
     - aws
-    kind: ClusterPeering
     listKind: ClusterPeeringList
     plural: clusterpeerings
     singular: clusterpeering

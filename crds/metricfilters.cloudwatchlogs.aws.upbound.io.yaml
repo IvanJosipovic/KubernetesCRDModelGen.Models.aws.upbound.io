@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudwatchlogs.aws.upbound.io
   names:
+    kind: MetricFilter
     categories:
     - crossplane
     - managed
     - aws
-    kind: MetricFilter
     listKind: MetricFilterList
     plural: metricfilters
     singular: metricfilter

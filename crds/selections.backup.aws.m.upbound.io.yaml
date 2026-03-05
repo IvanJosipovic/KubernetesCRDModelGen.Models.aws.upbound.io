@@ -7,11 +7,11 @@ metadata:
 spec:
   group: backup.aws.m.upbound.io
   names:
+    kind: Selection
     categories:
     - crossplane
     - managed
     - aws
-    kind: Selection
     listKind: SelectionList
     plural: selections
     singular: selection

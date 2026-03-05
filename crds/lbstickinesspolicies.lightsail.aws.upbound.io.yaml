@@ -7,11 +7,11 @@ metadata:
 spec:
   group: lightsail.aws.upbound.io
   names:
+    kind: LBStickinessPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: LBStickinessPolicy
     listKind: LBStickinessPolicyList
     plural: lbstickinesspolicies
     singular: lbstickinesspolicy

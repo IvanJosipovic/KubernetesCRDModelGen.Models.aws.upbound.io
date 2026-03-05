@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: VPCIPv4CidrBlockAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: VPCIPv4CidrBlockAssociation
     listKind: VPCIPv4CidrBlockAssociationList
     plural: vpcipv4cidrblockassociations
     singular: vpcipv4cidrblockassociation

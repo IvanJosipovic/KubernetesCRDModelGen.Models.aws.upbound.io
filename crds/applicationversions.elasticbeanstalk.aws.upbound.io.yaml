@@ -7,11 +7,11 @@ metadata:
 spec:
   group: elasticbeanstalk.aws.upbound.io
   names:
+    kind: ApplicationVersion
     categories:
     - crossplane
     - managed
     - aws
-    kind: ApplicationVersion
     listKind: ApplicationVersionList
     plural: applicationversions
     singular: applicationversion

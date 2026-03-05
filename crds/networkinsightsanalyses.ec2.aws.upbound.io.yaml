@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: NetworkInsightsAnalysis
     categories:
     - crossplane
     - managed
     - aws
-    kind: NetworkInsightsAnalysis
     listKind: NetworkInsightsAnalysisList
     plural: networkinsightsanalyses
     singular: networkinsightsanalysis

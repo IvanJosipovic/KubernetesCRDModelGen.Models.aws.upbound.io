@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cognitoidp.aws.upbound.io
   names:
+    kind: UserPool
     categories:
     - crossplane
     - managed
     - aws
-    kind: UserPool
     listKind: UserPoolList
     plural: userpools
     singular: userpool

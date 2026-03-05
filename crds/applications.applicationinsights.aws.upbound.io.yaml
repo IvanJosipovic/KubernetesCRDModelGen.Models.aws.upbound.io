@@ -7,11 +7,11 @@ metadata:
 spec:
   group: applicationinsights.aws.upbound.io
   names:
+    kind: Application
     categories:
     - crossplane
     - managed
     - aws
-    kind: Application
     listKind: ApplicationList
     plural: applications
     singular: application

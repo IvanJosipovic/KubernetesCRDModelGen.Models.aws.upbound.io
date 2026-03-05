@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dynamodb.aws.m.upbound.io
   names:
+    kind: TableReplica
     categories:
     - crossplane
     - managed
     - aws
-    kind: TableReplica
     listKind: TableReplicaList
     plural: tablereplicas
     singular: tablereplica

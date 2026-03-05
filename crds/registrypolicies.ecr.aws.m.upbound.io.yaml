@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ecr.aws.m.upbound.io
   names:
+    kind: RegistryPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: RegistryPolicy
     listKind: RegistryPolicyList
     plural: registrypolicies
     singular: registrypolicy

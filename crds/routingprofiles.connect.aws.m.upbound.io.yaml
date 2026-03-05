@@ -7,11 +7,11 @@ metadata:
 spec:
   group: connect.aws.m.upbound.io
   names:
+    kind: RoutingProfile
     categories:
     - crossplane
     - managed
     - aws
-    kind: RoutingProfile
     listKind: RoutingProfileList
     plural: routingprofiles
     singular: routingprofile

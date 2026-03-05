@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: EBSDefaultKMSKey
     categories:
     - crossplane
     - managed
     - aws
-    kind: EBSDefaultKMSKey
     listKind: EBSDefaultKMSKeyList
     plural: ebsdefaultkmskeys
     singular: ebsdefaultkmskey

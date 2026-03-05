@@ -7,11 +7,11 @@ metadata:
 spec:
   group: firehose.aws.upbound.io
   names:
+    kind: DeliveryStream
     categories:
     - crossplane
     - managed
     - aws
-    kind: DeliveryStream
     listKind: DeliveryStreamList
     plural: deliverystreams
     singular: deliverystream

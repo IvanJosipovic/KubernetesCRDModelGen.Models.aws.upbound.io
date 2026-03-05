@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iot.aws.m.upbound.io
   names:
+    kind: IndexingConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: IndexingConfiguration
     listKind: IndexingConfigurationList
     plural: indexingconfigurations
     singular: indexingconfiguration

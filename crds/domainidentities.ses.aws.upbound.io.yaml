@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ses.aws.upbound.io
   names:
+    kind: DomainIdentity
     categories:
     - crossplane
     - managed
     - aws
-    kind: DomainIdentity
     listKind: DomainIdentityList
     plural: domainidentities
     singular: domainidentity

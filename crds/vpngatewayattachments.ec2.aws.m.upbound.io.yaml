@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: VPNGatewayAttachment
     categories:
     - crossplane
     - managed
     - aws
-    kind: VPNGatewayAttachment
     listKind: VPNGatewayAttachmentList
     plural: vpngatewayattachments
     singular: vpngatewayattachment

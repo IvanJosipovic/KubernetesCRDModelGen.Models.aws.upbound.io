@@ -7,11 +7,11 @@ metadata:
 spec:
   group: codeartifact.aws.upbound.io
   names:
+    kind: DomainPermissionsPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: DomainPermissionsPolicy
     listKind: DomainPermissionsPolicyList
     plural: domainpermissionspolicies
     singular: domainpermissionspolicy

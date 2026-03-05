@@ -7,11 +7,11 @@ metadata:
 spec:
   group: vpc.aws.upbound.io
   names:
+    kind: NetworkPerformanceMetricSubscription
     categories:
     - crossplane
     - managed
     - aws
-    kind: NetworkPerformanceMetricSubscription
     listKind: NetworkPerformanceMetricSubscriptionList
     plural: networkperformancemetricsubscriptions
     singular: networkperformancemetricsubscription

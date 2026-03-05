@@ -7,11 +7,11 @@ metadata:
 spec:
   group: imagebuilder.aws.upbound.io
   names:
+    kind: ImagePipeline
     categories:
     - crossplane
     - managed
     - aws
-    kind: ImagePipeline
     listKind: ImagePipelineList
     plural: imagepipelines
     singular: imagepipeline

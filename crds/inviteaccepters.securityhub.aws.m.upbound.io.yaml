@@ -7,11 +7,11 @@ metadata:
 spec:
   group: securityhub.aws.m.upbound.io
   names:
+    kind: InviteAccepter
     categories:
     - crossplane
     - managed
     - aws
-    kind: InviteAccepter
     listKind: InviteAccepterList
     plural: inviteaccepters
     singular: inviteaccepter

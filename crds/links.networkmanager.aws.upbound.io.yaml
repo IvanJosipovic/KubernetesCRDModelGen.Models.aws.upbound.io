@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networkmanager.aws.upbound.io
   names:
+    kind: Link
     categories:
     - crossplane
     - managed
     - aws
-    kind: Link
     listKind: LinkList
     plural: links
     singular: link

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iam.aws.m.upbound.io
   names:
+    kind: UserSSHKey
     categories:
     - crossplane
     - managed
     - aws
-    kind: UserSSHKey
     listKind: UserSSHKeyList
     plural: usersshkeys
     singular: usersshkey

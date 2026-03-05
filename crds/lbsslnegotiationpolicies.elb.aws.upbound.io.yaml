@@ -7,11 +7,11 @@ metadata:
 spec:
   group: elb.aws.upbound.io
   names:
+    kind: LBSSLNegotiationPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: LBSSLNegotiationPolicy
     listKind: LBSSLNegotiationPolicyList
     plural: lbsslnegotiationpolicies
     singular: lbsslnegotiationpolicy

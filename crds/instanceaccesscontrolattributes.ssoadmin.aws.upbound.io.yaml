@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ssoadmin.aws.upbound.io
   names:
+    kind: InstanceAccessControlAttributes
     categories:
     - crossplane
     - managed
     - aws
-    kind: InstanceAccessControlAttributes
     listKind: InstanceAccessControlAttributesList
     plural: instanceaccesscontrolattributes
     singular: instanceaccesscontrolattributes

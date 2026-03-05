@@ -7,11 +7,11 @@ metadata:
 spec:
   group: mediastore.aws.m.upbound.io
   names:
+    kind: ContainerPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: ContainerPolicy
     listKind: ContainerPolicyList
     plural: containerpolicies
     singular: containerpolicy

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: lambda.aws.m.upbound.io
   names:
+    kind: CodeSigningConfig
     categories:
     - crossplane
     - managed
     - aws
-    kind: CodeSigningConfig
     listKind: CodeSigningConfigList
     plural: codesigningconfigs
     singular: codesigningconfig

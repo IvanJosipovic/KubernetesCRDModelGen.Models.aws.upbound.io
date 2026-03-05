@@ -7,11 +7,11 @@ metadata:
 spec:
   group: gamelift.aws.upbound.io
   names:
+    kind: Build
     categories:
     - crossplane
     - managed
     - aws
-    kind: Build
     listKind: BuildList
     plural: builds
     singular: build

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apprunner.aws.m.upbound.io
   names:
+    kind: AutoScalingConfigurationVersion
     categories:
     - crossplane
     - managed
     - aws
-    kind: AutoScalingConfigurationVersion
     listKind: AutoScalingConfigurationVersionList
     plural: autoscalingconfigurationversions
     singular: autoscalingconfigurationversion

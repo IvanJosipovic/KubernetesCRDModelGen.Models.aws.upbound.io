@@ -7,11 +7,11 @@ metadata:
 spec:
   group: neptune.aws.m.upbound.io
   names:
+    kind: ClusterEndpoint
     categories:
     - crossplane
     - managed
     - aws
-    kind: ClusterEndpoint
     listKind: ClusterEndpointList
     plural: clusterendpoints
     singular: clusterendpoint

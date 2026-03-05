@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudfront.aws.m.upbound.io
   names:
+    kind: OriginRequestPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: OriginRequestPolicy
     listKind: OriginRequestPolicyList
     plural: originrequestpolicies
     singular: originrequestpolicy

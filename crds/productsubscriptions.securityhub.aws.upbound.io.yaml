@@ -7,11 +7,11 @@ metadata:
 spec:
   group: securityhub.aws.upbound.io
   names:
+    kind: ProductSubscription
     categories:
     - crossplane
     - managed
     - aws
-    kind: ProductSubscription
     listKind: ProductSubscriptionList
     plural: productsubscriptions
     singular: productsubscription

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: RouteTable
     categories:
     - crossplane
     - managed
     - aws
-    kind: RouteTable
     listKind: RouteTableList
     plural: routetables
     singular: routetable

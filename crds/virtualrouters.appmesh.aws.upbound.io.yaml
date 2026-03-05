@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appmesh.aws.upbound.io
   names:
+    kind: VirtualRouter
     categories:
     - crossplane
     - managed
     - aws
-    kind: VirtualRouter
     listKind: VirtualRouterList
     plural: virtualrouters
     singular: virtualrouter

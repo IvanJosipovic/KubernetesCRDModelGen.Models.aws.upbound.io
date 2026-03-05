@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iam.aws.m.upbound.io
   names:
+    kind: AccountAlias
     categories:
     - crossplane
     - managed
     - aws
-    kind: AccountAlias
     listKind: AccountAliasList
     plural: accountaliases
     singular: accountalias

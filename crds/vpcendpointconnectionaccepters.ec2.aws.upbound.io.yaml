@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: VPCEndpointConnectionAccepter
     categories:
     - crossplane
     - managed
     - aws
-    kind: VPCEndpointConnectionAccepter
     listKind: VPCEndpointConnectionAccepterList
     plural: vpcendpointconnectionaccepters
     singular: vpcendpointconnectionaccepter

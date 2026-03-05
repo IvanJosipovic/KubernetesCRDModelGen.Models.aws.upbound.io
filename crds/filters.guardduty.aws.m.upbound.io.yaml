@@ -7,11 +7,11 @@ metadata:
 spec:
   group: guardduty.aws.m.upbound.io
   names:
+    kind: Filter
     categories:
     - crossplane
     - managed
     - aws
-    kind: Filter
     listKind: FilterList
     plural: filters
     singular: filter

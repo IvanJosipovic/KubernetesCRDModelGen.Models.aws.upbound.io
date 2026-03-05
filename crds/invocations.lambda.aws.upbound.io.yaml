@@ -7,11 +7,11 @@ metadata:
 spec:
   group: lambda.aws.upbound.io
   names:
+    kind: Invocation
     categories:
     - crossplane
     - managed
     - aws
-    kind: Invocation
     listKind: InvocationList
     plural: invocations
     singular: invocation

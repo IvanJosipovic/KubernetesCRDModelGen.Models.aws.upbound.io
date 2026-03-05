@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: DefaultVPC
     categories:
     - crossplane
     - managed
     - aws
-    kind: DefaultVPC
     listKind: DefaultVPCList
     plural: defaultvpcs
     singular: defaultvpc

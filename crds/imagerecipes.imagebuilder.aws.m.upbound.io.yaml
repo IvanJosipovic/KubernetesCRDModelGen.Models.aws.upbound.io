@@ -7,11 +7,11 @@ metadata:
 spec:
   group: imagebuilder.aws.m.upbound.io
   names:
+    kind: ImageRecipe
     categories:
     - crossplane
     - managed
     - aws
-    kind: ImageRecipe
     listKind: ImageRecipeList
     plural: imagerecipes
     singular: imagerecipe

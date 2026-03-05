@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigateway.aws.upbound.io
   names:
+    kind: Deployment
     categories:
     - crossplane
     - managed
     - aws
-    kind: Deployment
     listKind: DeploymentList
     plural: deployments
     singular: deployment

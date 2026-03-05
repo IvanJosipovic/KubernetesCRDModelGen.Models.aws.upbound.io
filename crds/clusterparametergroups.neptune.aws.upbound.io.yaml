@@ -7,11 +7,11 @@ metadata:
 spec:
   group: neptune.aws.upbound.io
   names:
+    kind: ClusterParameterGroup
     categories:
     - crossplane
     - managed
     - aws
-    kind: ClusterParameterGroup
     listKind: ClusterParameterGroupList
     plural: clusterparametergroups
     singular: clusterparametergroup

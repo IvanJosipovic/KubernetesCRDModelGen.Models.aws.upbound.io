@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ses.aws.m.upbound.io
   names:
+    kind: ConfigurationSet
     categories:
     - crossplane
     - managed
     - aws
-    kind: ConfigurationSet
     listKind: ConfigurationSetList
     plural: configurationsets
     singular: configurationset

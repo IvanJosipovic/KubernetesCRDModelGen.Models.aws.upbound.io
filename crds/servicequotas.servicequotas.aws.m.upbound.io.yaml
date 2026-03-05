@@ -7,11 +7,11 @@ metadata:
 spec:
   group: servicequotas.aws.m.upbound.io
   names:
+    kind: ServiceQuota
     categories:
     - crossplane
     - managed
     - aws
-    kind: ServiceQuota
     listKind: ServiceQuotaList
     plural: servicequotas
     singular: servicequota

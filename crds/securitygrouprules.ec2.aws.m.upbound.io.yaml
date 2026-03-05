@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: SecurityGroupRule
     categories:
     - crossplane
     - managed
     - aws
-    kind: SecurityGroupRule
     listKind: SecurityGroupRuleList
     plural: securitygrouprules
     singular: securitygrouprule

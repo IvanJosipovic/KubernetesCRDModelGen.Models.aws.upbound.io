@@ -7,11 +7,11 @@ metadata:
 spec:
   group: rds.aws.m.upbound.io
   names:
+    kind: ClusterInstance
     categories:
     - crossplane
     - managed
     - aws
-    kind: ClusterInstance
     listKind: ClusterInstanceList
     plural: clusterinstances
     singular: clusterinstance

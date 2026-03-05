@@ -7,11 +7,11 @@ metadata:
 spec:
   group: route53resolver.aws.upbound.io
   names:
+    kind: Endpoint
     categories:
     - crossplane
     - managed
     - aws
-    kind: Endpoint
     listKind: EndpointList
     plural: endpoints
     singular: endpoint

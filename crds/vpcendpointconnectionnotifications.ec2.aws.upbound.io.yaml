@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: VPCEndpointConnectionNotification
     categories:
     - crossplane
     - managed
     - aws
-    kind: VPCEndpointConnectionNotification
     listKind: VPCEndpointConnectionNotificationList
     plural: vpcendpointconnectionnotifications
     singular: vpcendpointconnectionnotification

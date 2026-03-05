@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudwatchevents.aws.m.upbound.io
   names:
+    kind: Archive
     categories:
     - crossplane
     - managed
     - aws
-    kind: Archive
     listKind: ArchiveList
     plural: archives
     singular: archive

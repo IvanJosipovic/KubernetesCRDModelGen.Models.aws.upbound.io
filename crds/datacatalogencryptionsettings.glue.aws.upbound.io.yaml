@@ -7,11 +7,11 @@ metadata:
 spec:
   group: glue.aws.upbound.io
   names:
+    kind: DataCatalogEncryptionSettings
     categories:
     - crossplane
     - managed
     - aws
-    kind: DataCatalogEncryptionSettings
     listKind: DataCatalogEncryptionSettingsList
     plural: datacatalogencryptionsettings
     singular: datacatalogencryptionsettings

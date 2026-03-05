@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ssm.aws.m.upbound.io
   names:
+    kind: Activation
     categories:
     - crossplane
     - managed
     - aws
-    kind: Activation
     listKind: ActivationList
     plural: activations
     singular: activation

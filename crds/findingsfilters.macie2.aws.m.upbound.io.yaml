@@ -7,11 +7,11 @@ metadata:
 spec:
   group: macie2.aws.m.upbound.io
   names:
+    kind: FindingsFilter
     categories:
     - crossplane
     - managed
     - aws
-    kind: FindingsFilter
     listKind: FindingsFilterList
     plural: findingsfilters
     singular: findingsfilter

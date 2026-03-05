@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigateway.aws.m.upbound.io
   names:
+    kind: DomainName
     categories:
     - crossplane
     - managed
     - aws
-    kind: DomainName
     listKind: DomainNameList
     plural: domainnames
     singular: domainname

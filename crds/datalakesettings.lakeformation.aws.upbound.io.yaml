@@ -7,11 +7,11 @@ metadata:
 spec:
   group: lakeformation.aws.upbound.io
   names:
+    kind: DataLakeSettings
     categories:
     - crossplane
     - managed
     - aws
-    kind: DataLakeSettings
     listKind: DataLakeSettingsList
     plural: datalakesettings
     singular: datalakesettings

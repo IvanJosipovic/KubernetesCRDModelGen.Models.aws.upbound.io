@@ -7,11 +7,11 @@ metadata:
 spec:
   group: codepipeline.aws.m.upbound.io
   names:
+    kind: Codepipeline
     categories:
     - crossplane
     - managed
     - aws
-    kind: Codepipeline
     listKind: CodepipelineList
     plural: codepipelines
     singular: codepipeline

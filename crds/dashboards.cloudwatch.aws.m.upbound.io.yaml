@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudwatch.aws.m.upbound.io
   names:
+    kind: Dashboard
     categories:
     - crossplane
     - managed
     - aws
-    kind: Dashboard
     listKind: DashboardList
     plural: dashboards
     singular: dashboard

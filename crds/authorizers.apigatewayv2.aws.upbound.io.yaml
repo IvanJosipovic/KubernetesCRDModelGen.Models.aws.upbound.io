@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigatewayv2.aws.upbound.io
   names:
+    kind: Authorizer
     categories:
     - crossplane
     - managed
     - aws
-    kind: Authorizer
     listKind: AuthorizerList
     plural: authorizers
     singular: authorizer

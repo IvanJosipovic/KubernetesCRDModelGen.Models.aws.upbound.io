@@ -7,11 +7,11 @@ metadata:
 spec:
   group: pipes.aws.upbound.io
   names:
+    kind: Pipe
     categories:
     - crossplane
     - managed
     - aws
-    kind: Pipe
     listKind: PipeList
     plural: pipes
     singular: pipe

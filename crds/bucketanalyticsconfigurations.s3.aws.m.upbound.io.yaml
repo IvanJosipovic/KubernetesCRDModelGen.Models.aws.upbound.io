@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3.aws.m.upbound.io
   names:
+    kind: BucketAnalyticsConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: BucketAnalyticsConfiguration
     listKind: BucketAnalyticsConfigurationList
     plural: bucketanalyticsconfigurations
     singular: bucketanalyticsconfiguration

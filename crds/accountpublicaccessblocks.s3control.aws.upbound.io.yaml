@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3control.aws.upbound.io
   names:
+    kind: AccountPublicAccessBlock
     categories:
     - crossplane
     - managed
     - aws
-    kind: AccountPublicAccessBlock
     listKind: AccountPublicAccessBlockList
     plural: accountpublicaccessblocks
     singular: accountpublicaccessblock

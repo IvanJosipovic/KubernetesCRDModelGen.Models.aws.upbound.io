@@ -7,11 +7,11 @@ metadata:
 spec:
   group: connect.aws.m.upbound.io
   names:
+    kind: PhoneNumber
     categories:
     - crossplane
     - managed
     - aws
-    kind: PhoneNumber
     listKind: PhoneNumberList
     plural: phonenumbers
     singular: phonenumber

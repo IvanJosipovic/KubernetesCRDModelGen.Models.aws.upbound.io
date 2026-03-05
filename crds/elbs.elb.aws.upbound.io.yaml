@@ -7,11 +7,11 @@ metadata:
 spec:
   group: elb.aws.upbound.io
   names:
+    kind: ELB
     categories:
     - crossplane
     - managed
     - aws
-    kind: ELB
     listKind: ELBList
     plural: elbs
     singular: elb

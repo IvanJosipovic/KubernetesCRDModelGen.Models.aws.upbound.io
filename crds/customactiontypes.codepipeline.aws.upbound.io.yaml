@@ -7,11 +7,11 @@ metadata:
 spec:
   group: codepipeline.aws.upbound.io
   names:
+    kind: CustomActionType
     categories:
     - crossplane
     - managed
     - aws
-    kind: CustomActionType
     listKind: CustomActionTypeList
     plural: customactiontypes
     singular: customactiontype

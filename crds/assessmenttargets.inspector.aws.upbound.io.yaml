@@ -7,11 +7,11 @@ metadata:
 spec:
   group: inspector.aws.upbound.io
   names:
+    kind: AssessmentTarget
     categories:
     - crossplane
     - managed
     - aws
-    kind: AssessmentTarget
     listKind: AssessmentTargetList
     plural: assessmenttargets
     singular: assessmenttarget

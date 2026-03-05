@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudwatchlogs.aws.upbound.io
   names:
+    kind: SubscriptionFilter
     categories:
     - crossplane
     - managed
     - aws
-    kind: SubscriptionFilter
     listKind: SubscriptionFilterList
     plural: subscriptionfilters
     singular: subscriptionfilter

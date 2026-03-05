@@ -7,11 +7,11 @@ metadata:
 spec:
   group: mq.aws.m.upbound.io
   names:
+    kind: Broker
     categories:
     - crossplane
     - managed
     - aws
-    kind: Broker
     listKind: BrokerList
     plural: brokers
     singular: broker

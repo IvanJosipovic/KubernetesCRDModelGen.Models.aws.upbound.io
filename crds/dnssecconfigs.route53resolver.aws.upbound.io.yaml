@@ -7,11 +7,11 @@ metadata:
 spec:
   group: route53resolver.aws.upbound.io
   names:
+    kind: DNSSECConfig
     categories:
     - crossplane
     - managed
     - aws
-    kind: DNSSECConfig
     listKind: DNSSECConfigList
     plural: dnssecconfigs
     singular: dnssecconfig

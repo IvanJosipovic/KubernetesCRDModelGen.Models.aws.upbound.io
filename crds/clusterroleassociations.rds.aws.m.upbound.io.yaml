@@ -7,11 +7,11 @@ metadata:
 spec:
   group: rds.aws.m.upbound.io
   names:
+    kind: ClusterRoleAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: ClusterRoleAssociation
     listKind: ClusterRoleAssociationList
     plural: clusterroleassociations
     singular: clusterroleassociation

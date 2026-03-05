@@ -7,11 +7,11 @@ metadata:
 spec:
   group: rds.aws.upbound.io
   names:
+    kind: DBInstanceAutomatedBackupsReplication
     categories:
     - crossplane
     - managed
     - aws
-    kind: DBInstanceAutomatedBackupsReplication
     listKind: DBInstanceAutomatedBackupsReplicationList
     plural: dbinstanceautomatedbackupsreplications
     singular: dbinstanceautomatedbackupsreplication

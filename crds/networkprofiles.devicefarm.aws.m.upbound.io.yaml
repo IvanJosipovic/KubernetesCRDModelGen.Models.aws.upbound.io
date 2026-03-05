@@ -7,11 +7,11 @@ metadata:
 spec:
   group: devicefarm.aws.m.upbound.io
   names:
+    kind: NetworkProfile
     categories:
     - crossplane
     - managed
     - aws
-    kind: NetworkProfile
     listKind: NetworkProfileList
     plural: networkprofiles
     singular: networkprofile

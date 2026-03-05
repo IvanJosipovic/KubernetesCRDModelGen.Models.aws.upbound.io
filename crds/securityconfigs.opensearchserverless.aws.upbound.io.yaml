@@ -7,11 +7,11 @@ metadata:
 spec:
   group: opensearchserverless.aws.upbound.io
   names:
+    kind: SecurityConfig
     categories:
     - crossplane
     - managed
     - aws
-    kind: SecurityConfig
     listKind: SecurityConfigList
     plural: securityconfigs
     singular: securityconfig

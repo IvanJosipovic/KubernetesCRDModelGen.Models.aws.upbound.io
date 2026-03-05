@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: DefaultVPCDHCPOptions
     categories:
     - crossplane
     - managed
     - aws
-    kind: DefaultVPCDHCPOptions
     listKind: DefaultVPCDHCPOptionsList
     plural: defaultvpcdhcpoptions
     singular: defaultvpcdhcpoptions

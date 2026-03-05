@@ -7,11 +7,11 @@ metadata:
 spec:
   group: fsx.aws.upbound.io
   names:
+    kind: OntapFileSystem
     categories:
     - crossplane
     - managed
     - aws
-    kind: OntapFileSystem
     listKind: OntapFileSystemList
     plural: ontapfilesystems
     singular: ontapfilesystem

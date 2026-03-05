@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigateway.aws.m.upbound.io
   names:
+    kind: RestAPI
     categories:
     - crossplane
     - managed
     - aws
-    kind: RestAPI
     listKind: RestAPIList
     plural: restapis
     singular: restapi

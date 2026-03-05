@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dms.aws.upbound.io
   names:
+    kind: ReplicationSubnetGroup
     categories:
     - crossplane
     - managed
     - aws
-    kind: ReplicationSubnetGroup
     listKind: ReplicationSubnetGroupList
     plural: replicationsubnetgroups
     singular: replicationsubnetgroup

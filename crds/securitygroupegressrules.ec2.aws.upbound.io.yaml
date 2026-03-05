@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: SecurityGroupEgressRule
     categories:
     - crossplane
     - managed
     - aws
-    kind: SecurityGroupEgressRule
     listKind: SecurityGroupEgressRuleList
     plural: securitygroupegressrules
     singular: securitygroupegressrule

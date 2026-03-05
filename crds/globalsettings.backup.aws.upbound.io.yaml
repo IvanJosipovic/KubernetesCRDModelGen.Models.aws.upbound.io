@@ -7,11 +7,11 @@ metadata:
 spec:
   group: backup.aws.upbound.io
   names:
+    kind: GlobalSettings
     categories:
     - crossplane
     - managed
     - aws
-    kind: GlobalSettings
     listKind: GlobalSettingsList
     plural: globalsettings
     singular: globalsettings

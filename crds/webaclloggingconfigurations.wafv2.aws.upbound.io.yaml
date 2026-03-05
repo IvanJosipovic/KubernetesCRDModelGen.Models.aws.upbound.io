@@ -7,11 +7,11 @@ metadata:
 spec:
   group: wafv2.aws.upbound.io
   names:
+    kind: WebACLLoggingConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: WebACLLoggingConfiguration
     listKind: WebACLLoggingConfigurationList
     plural: webaclloggingconfigurations
     singular: webaclloggingconfiguration

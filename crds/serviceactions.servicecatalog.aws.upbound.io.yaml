@@ -7,11 +7,11 @@ metadata:
 spec:
   group: servicecatalog.aws.upbound.io
   names:
+    kind: ServiceAction
     categories:
     - crossplane
     - managed
     - aws
-    kind: ServiceAction
     listKind: ServiceActionList
     plural: serviceactions
     singular: serviceaction

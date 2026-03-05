@@ -7,11 +7,11 @@ metadata:
 spec:
   group: guardduty.aws.m.upbound.io
   names:
+    kind: Detector
     categories:
     - crossplane
     - managed
     - aws
-    kind: Detector
     listKind: DetectorList
     plural: detectors
     singular: detector

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: workspaces.aws.m.upbound.io
   names:
+    kind: Directory
     categories:
     - crossplane
     - managed
     - aws
-    kind: Directory
     listKind: DirectoryList
     plural: directories
     singular: directory

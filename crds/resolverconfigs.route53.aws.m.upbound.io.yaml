@@ -7,11 +7,11 @@ metadata:
 spec:
   group: route53.aws.m.upbound.io
   names:
+    kind: ResolverConfig
     categories:
     - crossplane
     - managed
     - aws
-    kind: ResolverConfig
     listKind: ResolverConfigList
     plural: resolverconfigs
     singular: resolverconfig

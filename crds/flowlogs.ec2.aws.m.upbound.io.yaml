@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: FlowLog
     categories:
     - crossplane
     - managed
     - aws
-    kind: FlowLog
     listKind: FlowLogList
     plural: flowlogs
     singular: flowlog

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kinesis.aws.upbound.io
   names:
+    kind: StreamConsumer
     categories:
     - crossplane
     - managed
     - aws
-    kind: StreamConsumer
     listKind: StreamConsumerList
     plural: streamconsumers
     singular: streamconsumer

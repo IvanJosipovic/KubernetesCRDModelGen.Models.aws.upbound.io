@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dynamodb.aws.upbound.io
   names:
+    kind: KinesisStreamingDestination
     categories:
     - crossplane
     - managed
     - aws
-    kind: KinesisStreamingDestination
     listKind: KinesisStreamingDestinationList
     plural: kinesisstreamingdestinations
     singular: kinesisstreamingdestination

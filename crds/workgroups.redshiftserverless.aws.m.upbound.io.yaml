@@ -7,11 +7,11 @@ metadata:
 spec:
   group: redshiftserverless.aws.m.upbound.io
   names:
+    kind: Workgroup
     categories:
     - crossplane
     - managed
     - aws
-    kind: Workgroup
     listKind: WorkgroupList
     plural: workgroups
     singular: workgroup

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sagemaker.aws.upbound.io
   names:
+    kind: Workteam
     categories:
     - crossplane
     - managed
     - aws
-    kind: Workteam
     listKind: WorkteamList
     plural: workteams
     singular: workteam

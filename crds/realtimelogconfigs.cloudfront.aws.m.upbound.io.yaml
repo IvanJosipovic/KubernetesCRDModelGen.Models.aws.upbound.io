@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudfront.aws.m.upbound.io
   names:
+    kind: RealtimeLogConfig
     categories:
     - crossplane
     - managed
     - aws
-    kind: RealtimeLogConfig
     listKind: RealtimeLogConfigList
     plural: realtimelogconfigs
     singular: realtimelogconfig

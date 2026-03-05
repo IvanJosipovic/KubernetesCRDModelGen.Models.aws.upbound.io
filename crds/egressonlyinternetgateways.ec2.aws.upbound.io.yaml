@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: EgressOnlyInternetGateway
     categories:
     - crossplane
     - managed
     - aws
-    kind: EgressOnlyInternetGateway
     listKind: EgressOnlyInternetGatewayList
     plural: egressonlyinternetgateways
     singular: egressonlyinternetgateway

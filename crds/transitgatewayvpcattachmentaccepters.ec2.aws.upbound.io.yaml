@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: TransitGatewayVPCAttachmentAccepter
     categories:
     - crossplane
     - managed
     - aws
-    kind: TransitGatewayVPCAttachmentAccepter
     listKind: TransitGatewayVPCAttachmentAccepterList
     plural: transitgatewayvpcattachmentaccepters
     singular: transitgatewayvpcattachmentaccepter

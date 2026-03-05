@@ -7,11 +7,11 @@ metadata:
 spec:
   group: route53.aws.m.upbound.io
   names:
+    kind: Record
     categories:
     - crossplane
     - managed
     - aws
-    kind: Record
     listKind: RecordList
     plural: records
     singular: record

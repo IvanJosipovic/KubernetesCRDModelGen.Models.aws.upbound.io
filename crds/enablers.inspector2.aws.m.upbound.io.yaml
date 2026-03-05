@@ -7,11 +7,11 @@ metadata:
 spec:
   group: inspector2.aws.m.upbound.io
   names:
+    kind: Enabler
     categories:
     - crossplane
     - managed
     - aws
-    kind: Enabler
     listKind: EnablerList
     plural: enablers
     singular: enabler

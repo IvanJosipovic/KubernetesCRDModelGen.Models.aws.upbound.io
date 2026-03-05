@@ -7,11 +7,11 @@ metadata:
 spec:
   group: lightsail.aws.m.upbound.io
   names:
+    kind: Disk
     categories:
     - crossplane
     - managed
     - aws
-    kind: Disk
     listKind: DiskList
     plural: disks
     singular: disk

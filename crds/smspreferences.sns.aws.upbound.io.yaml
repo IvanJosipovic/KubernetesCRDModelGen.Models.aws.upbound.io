@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sns.aws.upbound.io
   names:
+    kind: SMSPreferences
     categories:
     - crossplane
     - managed
     - aws
-    kind: SMSPreferences
     listKind: SMSPreferencesList
     plural: smspreferences
     singular: smspreferences

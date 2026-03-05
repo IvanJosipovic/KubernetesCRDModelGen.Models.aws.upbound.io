@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigateway.aws.m.upbound.io
   names:
+    kind: IntegrationResponse
     categories:
     - crossplane
     - managed
     - aws
-    kind: IntegrationResponse
     listKind: IntegrationResponseList
     plural: integrationresponses
     singular: integrationresponse

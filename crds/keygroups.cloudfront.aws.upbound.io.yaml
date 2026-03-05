@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudfront.aws.upbound.io
   names:
+    kind: KeyGroup
     categories:
     - crossplane
     - managed
     - aws
-    kind: KeyGroup
     listKind: KeyGroupList
     plural: keygroups
     singular: keygroup

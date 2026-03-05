@@ -7,11 +7,11 @@ metadata:
 spec:
   group: codeartifact.aws.m.upbound.io
   names:
+    kind: Repository
     categories:
     - crossplane
     - managed
     - aws
-    kind: Repository
     listKind: RepositoryList
     plural: repositories
     singular: repository

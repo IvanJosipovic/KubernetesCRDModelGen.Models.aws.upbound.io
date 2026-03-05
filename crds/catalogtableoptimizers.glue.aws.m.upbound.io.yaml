@@ -7,11 +7,11 @@ metadata:
 spec:
   group: glue.aws.m.upbound.io
   names:
+    kind: CatalogTableOptimizer
     categories:
     - crossplane
     - managed
     - aws
-    kind: CatalogTableOptimizer
     listKind: CatalogTableOptimizerList
     plural: catalogtableoptimizers
     singular: catalogtableoptimizer

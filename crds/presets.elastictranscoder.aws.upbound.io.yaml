@@ -7,11 +7,11 @@ metadata:
 spec:
   group: elastictranscoder.aws.upbound.io
   names:
+    kind: Preset
     categories:
     - crossplane
     - managed
     - aws
-    kind: Preset
     listKind: PresetList
     plural: presets
     singular: preset

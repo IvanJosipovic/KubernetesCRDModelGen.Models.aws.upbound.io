@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sagemaker.aws.upbound.io
   names:
+    kind: DeviceFleet
     categories:
     - crossplane
     - managed
     - aws
-    kind: DeviceFleet
     listKind: DeviceFleetList
     plural: devicefleet
     singular: devicefleet

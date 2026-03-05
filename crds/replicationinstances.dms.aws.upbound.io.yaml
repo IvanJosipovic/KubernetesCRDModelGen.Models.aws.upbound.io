@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dms.aws.upbound.io
   names:
+    kind: ReplicationInstance
     categories:
     - crossplane
     - managed
     - aws
-    kind: ReplicationInstance
     listKind: ReplicationInstanceList
     plural: replicationinstances
     singular: replicationinstance

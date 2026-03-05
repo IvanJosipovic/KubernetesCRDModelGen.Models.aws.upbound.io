@@ -7,11 +7,11 @@ metadata:
 spec:
   group: backup.aws.upbound.io
   names:
+    kind: VaultPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: VaultPolicy
     listKind: VaultPolicyList
     plural: vaultpolicies
     singular: vaultpolicy

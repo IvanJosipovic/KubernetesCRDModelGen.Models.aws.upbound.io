@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ds.aws.m.upbound.io
   names:
+    kind: SharedDirectory
     categories:
     - crossplane
     - managed
     - aws
-    kind: SharedDirectory
     listKind: SharedDirectoryList
     plural: shareddirectories
     singular: shareddirectory

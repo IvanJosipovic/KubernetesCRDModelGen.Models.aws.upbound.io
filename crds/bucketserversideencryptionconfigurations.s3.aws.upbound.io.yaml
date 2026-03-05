@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3.aws.upbound.io
   names:
+    kind: BucketServerSideEncryptionConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: BucketServerSideEncryptionConfiguration
     listKind: BucketServerSideEncryptionConfigurationList
     plural: bucketserversideencryptionconfigurations
     singular: bucketserversideencryptionconfiguration

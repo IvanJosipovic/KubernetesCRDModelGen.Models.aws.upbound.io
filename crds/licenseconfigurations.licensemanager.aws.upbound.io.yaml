@@ -7,11 +7,11 @@ metadata:
 spec:
   group: licensemanager.aws.upbound.io
   names:
+    kind: LicenseConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: LicenseConfiguration
     listKind: LicenseConfigurationList
     plural: licenseconfigurations
     singular: licenseconfiguration

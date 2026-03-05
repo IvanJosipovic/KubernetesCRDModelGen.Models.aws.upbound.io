@@ -7,11 +7,11 @@ metadata:
 spec:
   group: evidently.aws.m.upbound.io
   names:
+    kind: Feature
     categories:
     - crossplane
     - managed
     - aws
-    kind: Feature
     listKind: FeatureList
     plural: features
     singular: feature

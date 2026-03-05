@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dataexchange.aws.upbound.io
   names:
+    kind: DataSet
     categories:
     - crossplane
     - managed
     - aws
-    kind: DataSet
     listKind: DataSetList
     plural: datasets
     singular: dataset

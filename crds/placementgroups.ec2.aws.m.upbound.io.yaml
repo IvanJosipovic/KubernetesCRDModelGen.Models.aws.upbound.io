@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: PlacementGroup
     categories:
     - crossplane
     - managed
     - aws
-    kind: PlacementGroup
     listKind: PlacementGroupList
     plural: placementgroups
     singular: placementgroup

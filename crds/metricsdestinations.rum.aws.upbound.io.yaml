@@ -7,11 +7,11 @@ metadata:
 spec:
   group: rum.aws.upbound.io
   names:
+    kind: MetricsDestination
     categories:
     - crossplane
     - managed
     - aws
-    kind: MetricsDestination
     listKind: MetricsDestinationList
     plural: metricsdestinations
     singular: metricsdestination

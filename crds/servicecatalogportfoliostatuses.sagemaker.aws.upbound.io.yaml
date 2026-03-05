@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sagemaker.aws.upbound.io
   names:
+    kind: ServicecatalogPortfolioStatus
     categories:
     - crossplane
     - managed
     - aws
-    kind: ServicecatalogPortfolioStatus
     listKind: ServicecatalogPortfolioStatusList
     plural: servicecatalogportfoliostatuses
     singular: servicecatalogportfoliostatus

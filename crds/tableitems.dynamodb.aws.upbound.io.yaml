@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dynamodb.aws.upbound.io
   names:
+    kind: TableItem
     categories:
     - crossplane
     - managed
     - aws
-    kind: TableItem
     listKind: TableItemList
     plural: tableitems
     singular: tableitem
