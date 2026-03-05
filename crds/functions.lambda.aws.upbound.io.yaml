@@ -76,6 +76,30 @@ spec:
                     items:
                       type: string
                     type: array
+                  capacityProviderConfig:
+                    description: Configuration block for Lambda Capacity Provider. See below.
+                    items:
+                      properties:
+                        lambdaManagedInstancesCapacityProviderConfig:
+                          description: Configuration block for Lambda Managed Instances Capacity Provider. See below.
+                          items:
+                            properties:
+                              capacityProviderArn:
+                                description: ARN of the Capacity Provider.
+                                type: string
+                              executionEnvironmentMemoryGibPerVcpu:
+                                description: Memory GiB per vCPU for the execution environment.
+                                type: number
+                              perExecutionEnvironmentMaxConcurrency:
+                                description: Maximum concurrency per execution environment.
+                                type: number
+                            type: object
+                          type: array
+                      type: object
+                    type: array
+                  codeSha256:
+                    description: Base64-encoded representation the source code package file. Use this argument to trigger updates when the function source code changes. For OCI, this value is relayed directly from the image digest. For zip files, this value is the Base64 encoded SHA-256 hash of the .zip file. Layers are not included in the calculation. To trigger updates using a non-standard hashing algorithm, use the source_code_hash argument instead.
+                    type: string
                   codeSigningConfigArn:
                     description: ARN of a code-signing configuration to enable code signing for this function.
                     type: string
@@ -164,6 +188,18 @@ spec:
                   description:
                     description: Description of what your Lambda Function does.
                     type: string
+                  durableConfig:
+                    description: Configuration block for durable function settings. See below. durable_config may only be available in limited regions, including us-east-2.
+                    items:
+                      properties:
+                        executionTimeout:
+                          description: Maximum execution time in seconds for the durable function. Valid value between 1 and 31622400 (366 days).
+                          type: number
+                        retentionPeriod:
+                          description: Number of days to retain the function's execution state. Valid value between 1 and 90. If not specified, the function's execution state is not retained. Defaults to 14.
+                          type: number
+                      type: object
+                    type: array
                   environment:
                     description: Configuration block for environment variables. See below.
                     items:
@@ -544,7 +580,7 @@ spec:
                       type: object
                     type: array
                   memorySize:
-                    description: Amount of memory in MB your Lambda Function can use at runtime. Valid value between 128 MB to 10,240 MB (10 GB), in 1 MB increments. Defaults to 128.
+                    description: Amount of memory in MB your Lambda Function can use at runtime. Valid value between 128 MB to 32,768 MB (32 GB), in 1 MB increments. Defaults to 128.
                     type: number
                   packageType:
                     description: Lambda deployment package type. Valid values are Zip and Image. Defaults to Zip.
@@ -552,6 +588,9 @@ spec:
                   publish:
                     description: Whether to publish creation/change as new Lambda Function Version. Defaults to false.
                     type: boolean
+                  publishTo:
+                    description: Whether to publish to a alias or version number. Omit for regular version publishing. Option is LATEST_PUBLISHED.
+                    type: string
                   region:
                     description: |-
                       Region where this resource will be managed. Defaults to the Region set in the provider configuration.
@@ -830,6 +869,15 @@ spec:
                     description: Key-value map of resource tags.
                     type: object
                     x-kubernetes-map-type: granular
+                  tenancyConfig:
+                    description: Configuration block for Tenancy. See below.
+                    items:
+                      properties:
+                        tenantIsolationMode:
+                          description: 'Tenant Isolation Mode. Valid values: PER_TENANT.'
+                          type: string
+                      type: object
+                    type: array
                   timeout:
                     description: Amount of time your Lambda Function has to run in seconds. Defaults to 3. Valid between 1 and 900.
                     type: number
@@ -1036,6 +1084,30 @@ spec:
                     items:
                       type: string
                     type: array
+                  capacityProviderConfig:
+                    description: Configuration block for Lambda Capacity Provider. See below.
+                    items:
+                      properties:
+                        lambdaManagedInstancesCapacityProviderConfig:
+                          description: Configuration block for Lambda Managed Instances Capacity Provider. See below.
+                          items:
+                            properties:
+                              capacityProviderArn:
+                                description: ARN of the Capacity Provider.
+                                type: string
+                              executionEnvironmentMemoryGibPerVcpu:
+                                description: Memory GiB per vCPU for the execution environment.
+                                type: number
+                              perExecutionEnvironmentMaxConcurrency:
+                                description: Maximum concurrency per execution environment.
+                                type: number
+                            type: object
+                          type: array
+                      type: object
+                    type: array
+                  codeSha256:
+                    description: Base64-encoded representation the source code package file. Use this argument to trigger updates when the function source code changes. For OCI, this value is relayed directly from the image digest. For zip files, this value is the Base64 encoded SHA-256 hash of the .zip file. Layers are not included in the calculation. To trigger updates using a non-standard hashing algorithm, use the source_code_hash argument instead.
+                    type: string
                   codeSigningConfigArn:
                     description: ARN of a code-signing configuration to enable code signing for this function.
                     type: string
@@ -1124,6 +1196,18 @@ spec:
                   description:
                     description: Description of what your Lambda Function does.
                     type: string
+                  durableConfig:
+                    description: Configuration block for durable function settings. See below. durable_config may only be available in limited regions, including us-east-2.
+                    items:
+                      properties:
+                        executionTimeout:
+                          description: Maximum execution time in seconds for the durable function. Valid value between 1 and 31622400 (366 days).
+                          type: number
+                        retentionPeriod:
+                          description: Number of days to retain the function's execution state. Valid value between 1 and 90. If not specified, the function's execution state is not retained. Defaults to 14.
+                          type: number
+                      type: object
+                    type: array
                   environment:
                     description: Configuration block for environment variables. See below.
                     items:
@@ -1504,7 +1588,7 @@ spec:
                       type: object
                     type: array
                   memorySize:
-                    description: Amount of memory in MB your Lambda Function can use at runtime. Valid value between 128 MB to 10,240 MB (10 GB), in 1 MB increments. Defaults to 128.
+                    description: Amount of memory in MB your Lambda Function can use at runtime. Valid value between 128 MB to 32,768 MB (32 GB), in 1 MB increments. Defaults to 128.
                     type: number
                   packageType:
                     description: Lambda deployment package type. Valid values are Zip and Image. Defaults to Zip.
@@ -1512,6 +1596,9 @@ spec:
                   publish:
                     description: Whether to publish creation/change as new Lambda Function Version. Defaults to false.
                     type: boolean
+                  publishTo:
+                    description: Whether to publish to a alias or version number. Omit for regular version publishing. Option is LATEST_PUBLISHED.
+                    type: string
                   replaceSecurityGroupsOnDestroy:
                     description: Whether to replace the security groups on the function's VPC configuration prior to destruction. Default is false.
                     type: boolean
@@ -1785,6 +1872,15 @@ spec:
                     description: Key-value map of resource tags.
                     type: object
                     x-kubernetes-map-type: granular
+                  tenancyConfig:
+                    description: Configuration block for Tenancy. See below.
+                    items:
+                      properties:
+                        tenantIsolationMode:
+                          description: 'Tenant Isolation Mode. Valid values: PER_TENANT.'
+                          type: string
+                      type: object
+                    type: array
                   timeout:
                     description: Amount of time your Lambda Function has to run in seconds. Defaults to 3. Valid between 1 and 900.
                     type: number
@@ -2070,8 +2166,29 @@ spec:
                   arn:
                     description: ARN identifying your Lambda Function.
                     type: string
+                  capacityProviderConfig:
+                    description: Configuration block for Lambda Capacity Provider. See below.
+                    items:
+                      properties:
+                        lambdaManagedInstancesCapacityProviderConfig:
+                          description: Configuration block for Lambda Managed Instances Capacity Provider. See below.
+                          items:
+                            properties:
+                              capacityProviderArn:
+                                description: ARN of the Capacity Provider.
+                                type: string
+                              executionEnvironmentMemoryGibPerVcpu:
+                                description: Memory GiB per vCPU for the execution environment.
+                                type: number
+                              perExecutionEnvironmentMaxConcurrency:
+                                description: Maximum concurrency per execution environment.
+                                type: number
+                            type: object
+                          type: array
+                      type: object
+                    type: array
                   codeSha256:
-                    description: Base64-encoded representation of raw SHA-256 sum of the zip file.
+                    description: Base64-encoded representation the source code package file. Use this argument to trigger updates when the function source code changes. For OCI, this value is relayed directly from the image digest. For zip files, this value is the Base64 encoded SHA-256 hash of the .zip file. Layers are not included in the calculation. To trigger updates using a non-standard hashing algorithm, use the source_code_hash argument instead.
                     type: string
                   codeSigningConfigArn:
                     description: ARN of a code-signing configuration to enable code signing for this function.
@@ -2088,6 +2205,18 @@ spec:
                   description:
                     description: Description of what your Lambda Function does.
                     type: string
+                  durableConfig:
+                    description: Configuration block for durable function settings. See below. durable_config may only be available in limited regions, including us-east-2.
+                    items:
+                      properties:
+                        executionTimeout:
+                          description: Maximum execution time in seconds for the durable function. Valid value between 1 and 31622400 (366 days).
+                          type: number
+                        retentionPeriod:
+                          description: Number of days to retain the function's execution state. Valid value between 1 and 90. If not specified, the function's execution state is not retained. Defaults to 14.
+                          type: number
+                      type: object
+                    type: array
                   environment:
                     description: Configuration block for environment variables. See below.
                     items:
@@ -2181,7 +2310,7 @@ spec:
                       type: object
                     type: array
                   memorySize:
-                    description: Amount of memory in MB your Lambda Function can use at runtime. Valid value between 128 MB to 10,240 MB (10 GB), in 1 MB increments. Defaults to 128.
+                    description: Amount of memory in MB your Lambda Function can use at runtime. Valid value between 128 MB to 32,768 MB (32 GB), in 1 MB increments. Defaults to 128.
                     type: number
                   packageType:
                     description: Lambda deployment package type. Valid values are Zip and Image. Defaults to Zip.
@@ -2189,6 +2318,9 @@ spec:
                   publish:
                     description: Whether to publish creation/change as new Lambda Function Version. Defaults to false.
                     type: boolean
+                  publishTo:
+                    description: Whether to publish to a alias or version number. Omit for regular version publishing. Option is LATEST_PUBLISHED.
+                    type: string
                   qualifiedArn:
                     description: ARN identifying your Lambda Function Version (if versioning is enabled via publish = true).
                     type: string
@@ -2212,6 +2344,9 @@ spec:
                   reservedConcurrentExecutions:
                     description: Amount of reserved concurrent executions for this lambda function. A value of 0 disables lambda from being triggered and -1 removes any concurrency limitations. Defaults to Unreserved Concurrency Limits -1.
                     type: number
+                  responseStreamingInvokeArn:
+                    description: ARN to be used for invoking Lambda Function from API Gateway with response streaming - to be used in aws_api_gateway_integration's uri.
+                    type: string
                   role:
                     description: ARN of the function's execution role. The role provides the function's identity and access to AWS services and resources.
                     type: string
@@ -2269,6 +2404,15 @@ spec:
                     description: Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
+                  tenancyConfig:
+                    description: Configuration block for Tenancy. See below.
+                    items:
+                      properties:
+                        tenantIsolationMode:
+                          description: 'Tenant Isolation Mode. Valid values: PER_TENANT.'
+                          type: string
+                      type: object
+                    type: array
                   timeout:
                     description: Amount of time your Lambda Function has to run in seconds. Defaults to 3. Valid between 1 and 900.
                     type: number
@@ -2427,6 +2571,26 @@ spec:
                     items:
                       type: string
                     type: array
+                  capacityProviderConfig:
+                    description: Configuration block for Lambda Capacity Provider. See below.
+                    properties:
+                      lambdaManagedInstancesCapacityProviderConfig:
+                        description: Configuration block for Lambda Managed Instances Capacity Provider. See below.
+                        properties:
+                          capacityProviderArn:
+                            description: ARN of the Capacity Provider.
+                            type: string
+                          executionEnvironmentMemoryGibPerVcpu:
+                            description: Memory GiB per vCPU for the execution environment.
+                            type: number
+                          perExecutionEnvironmentMaxConcurrency:
+                            description: Maximum concurrency per execution environment.
+                            type: number
+                        type: object
+                    type: object
+                  codeSha256:
+                    description: Base64-encoded representation the source code package file. Use this argument to trigger updates when the function source code changes. For OCI, this value is relayed directly from the image digest. For zip files, this value is the Base64 encoded SHA-256 hash of the .zip file. Layers are not included in the calculation. To trigger updates using a non-standard hashing algorithm, use the source_code_hash argument instead.
+                    type: string
                   codeSigningConfigArn:
                     description: ARN of a code-signing configuration to enable code signing for this function.
                     type: string
@@ -2513,6 +2677,16 @@ spec:
                   description:
                     description: Description of what your Lambda Function does.
                     type: string
+                  durableConfig:
+                    description: Configuration block for durable function settings. See below. durable_config may only be available in limited regions, including us-east-2.
+                    properties:
+                      executionTimeout:
+                        description: Maximum execution time in seconds for the durable function. Valid value between 1 and 31622400 (366 days).
+                        type: number
+                      retentionPeriod:
+                        description: Number of days to retain the function's execution state. Valid value between 1 and 90. If not specified, the function's execution state is not retained. Defaults to 14.
+                        type: number
+                    type: object
                   environment:
                     description: Configuration block for environment variables. See below.
                     properties:
@@ -2883,7 +3057,7 @@ spec:
                         type: string
                     type: object
                   memorySize:
-                    description: Amount of memory in MB your Lambda Function can use at runtime. Valid value between 128 MB to 10,240 MB (10 GB), in 1 MB increments. Defaults to 128.
+                    description: Amount of memory in MB your Lambda Function can use at runtime. Valid value between 128 MB to 32,768 MB (32 GB), in 1 MB increments. Defaults to 128.
                     type: number
                   packageType:
                     description: Lambda deployment package type. Valid values are Zip and Image. Defaults to Zip.
@@ -2891,6 +3065,9 @@ spec:
                   publish:
                     description: Whether to publish creation/change as new Lambda Function Version. Defaults to false.
                     type: boolean
+                  publishTo:
+                    description: Whether to publish to a alias or version number. Omit for regular version publishing. Option is LATEST_PUBLISHED.
+                    type: string
                   region:
                     description: |-
                       Region where this resource will be managed. Defaults to the Region set in the provider configuration.
@@ -3167,6 +3344,13 @@ spec:
                     description: Key-value map of resource tags.
                     type: object
                     x-kubernetes-map-type: granular
+                  tenancyConfig:
+                    description: Configuration block for Tenancy. See below.
+                    properties:
+                      tenantIsolationMode:
+                        description: 'Tenant Isolation Mode. Valid values: PER_TENANT.'
+                        type: string
+                    type: object
                   timeout:
                     description: Amount of time your Lambda Function has to run in seconds. Defaults to 3. Valid between 1 and 900.
                     type: number
@@ -3369,6 +3553,26 @@ spec:
                     items:
                       type: string
                     type: array
+                  capacityProviderConfig:
+                    description: Configuration block for Lambda Capacity Provider. See below.
+                    properties:
+                      lambdaManagedInstancesCapacityProviderConfig:
+                        description: Configuration block for Lambda Managed Instances Capacity Provider. See below.
+                        properties:
+                          capacityProviderArn:
+                            description: ARN of the Capacity Provider.
+                            type: string
+                          executionEnvironmentMemoryGibPerVcpu:
+                            description: Memory GiB per vCPU for the execution environment.
+                            type: number
+                          perExecutionEnvironmentMaxConcurrency:
+                            description: Maximum concurrency per execution environment.
+                            type: number
+                        type: object
+                    type: object
+                  codeSha256:
+                    description: Base64-encoded representation the source code package file. Use this argument to trigger updates when the function source code changes. For OCI, this value is relayed directly from the image digest. For zip files, this value is the Base64 encoded SHA-256 hash of the .zip file. Layers are not included in the calculation. To trigger updates using a non-standard hashing algorithm, use the source_code_hash argument instead.
+                    type: string
                   codeSigningConfigArn:
                     description: ARN of a code-signing configuration to enable code signing for this function.
                     type: string
@@ -3455,6 +3659,16 @@ spec:
                   description:
                     description: Description of what your Lambda Function does.
                     type: string
+                  durableConfig:
+                    description: Configuration block for durable function settings. See below. durable_config may only be available in limited regions, including us-east-2.
+                    properties:
+                      executionTimeout:
+                        description: Maximum execution time in seconds for the durable function. Valid value between 1 and 31622400 (366 days).
+                        type: number
+                      retentionPeriod:
+                        description: Number of days to retain the function's execution state. Valid value between 1 and 90. If not specified, the function's execution state is not retained. Defaults to 14.
+                        type: number
+                    type: object
                   environment:
                     description: Configuration block for environment variables. See below.
                     properties:
@@ -3825,7 +4039,7 @@ spec:
                         type: string
                     type: object
                   memorySize:
-                    description: Amount of memory in MB your Lambda Function can use at runtime. Valid value between 128 MB to 10,240 MB (10 GB), in 1 MB increments. Defaults to 128.
+                    description: Amount of memory in MB your Lambda Function can use at runtime. Valid value between 128 MB to 32,768 MB (32 GB), in 1 MB increments. Defaults to 128.
                     type: number
                   packageType:
                     description: Lambda deployment package type. Valid values are Zip and Image. Defaults to Zip.
@@ -3833,6 +4047,9 @@ spec:
                   publish:
                     description: Whether to publish creation/change as new Lambda Function Version. Defaults to false.
                     type: boolean
+                  publishTo:
+                    description: Whether to publish to a alias or version number. Omit for regular version publishing. Option is LATEST_PUBLISHED.
+                    type: string
                   replaceSecurityGroupsOnDestroy:
                     description: Whether to replace the security groups on the function's VPC configuration prior to destruction. Default is false.
                     type: boolean
@@ -4104,6 +4321,13 @@ spec:
                     description: Key-value map of resource tags.
                     type: object
                     x-kubernetes-map-type: granular
+                  tenancyConfig:
+                    description: Configuration block for Tenancy. See below.
+                    properties:
+                      tenantIsolationMode:
+                        description: 'Tenant Isolation Mode. Valid values: PER_TENANT.'
+                        type: string
+                    type: object
                   timeout:
                     description: Amount of time your Lambda Function has to run in seconds. Defaults to 3. Valid between 1 and 900.
                     type: number
@@ -4385,8 +4609,25 @@ spec:
                   arn:
                     description: ARN identifying your Lambda Function.
                     type: string
+                  capacityProviderConfig:
+                    description: Configuration block for Lambda Capacity Provider. See below.
+                    properties:
+                      lambdaManagedInstancesCapacityProviderConfig:
+                        description: Configuration block for Lambda Managed Instances Capacity Provider. See below.
+                        properties:
+                          capacityProviderArn:
+                            description: ARN of the Capacity Provider.
+                            type: string
+                          executionEnvironmentMemoryGibPerVcpu:
+                            description: Memory GiB per vCPU for the execution environment.
+                            type: number
+                          perExecutionEnvironmentMaxConcurrency:
+                            description: Maximum concurrency per execution environment.
+                            type: number
+                        type: object
+                    type: object
                   codeSha256:
-                    description: Base64-encoded representation of raw SHA-256 sum of the zip file.
+                    description: Base64-encoded representation the source code package file. Use this argument to trigger updates when the function source code changes. For OCI, this value is relayed directly from the image digest. For zip files, this value is the Base64 encoded SHA-256 hash of the .zip file. Layers are not included in the calculation. To trigger updates using a non-standard hashing algorithm, use the source_code_hash argument instead.
                     type: string
                   codeSigningConfigArn:
                     description: ARN of a code-signing configuration to enable code signing for this function.
@@ -4401,6 +4642,16 @@ spec:
                   description:
                     description: Description of what your Lambda Function does.
                     type: string
+                  durableConfig:
+                    description: Configuration block for durable function settings. See below. durable_config may only be available in limited regions, including us-east-2.
+                    properties:
+                      executionTimeout:
+                        description: Maximum execution time in seconds for the durable function. Valid value between 1 and 31622400 (366 days).
+                        type: number
+                      retentionPeriod:
+                        description: Number of days to retain the function's execution state. Valid value between 1 and 90. If not specified, the function's execution state is not retained. Defaults to 14.
+                        type: number
+                    type: object
                   environment:
                     description: Configuration block for environment variables. See below.
                     properties:
@@ -4484,7 +4735,7 @@ spec:
                         type: string
                     type: object
                   memorySize:
-                    description: Amount of memory in MB your Lambda Function can use at runtime. Valid value between 128 MB to 10,240 MB (10 GB), in 1 MB increments. Defaults to 128.
+                    description: Amount of memory in MB your Lambda Function can use at runtime. Valid value between 128 MB to 32,768 MB (32 GB), in 1 MB increments. Defaults to 128.
                     type: number
                   packageType:
                     description: Lambda deployment package type. Valid values are Zip and Image. Defaults to Zip.
@@ -4492,6 +4743,9 @@ spec:
                   publish:
                     description: Whether to publish creation/change as new Lambda Function Version. Defaults to false.
                     type: boolean
+                  publishTo:
+                    description: Whether to publish to a alias or version number. Omit for regular version publishing. Option is LATEST_PUBLISHED.
+                    type: string
                   qualifiedArn:
                     description: ARN identifying your Lambda Function Version (if versioning is enabled via publish = true).
                     type: string
@@ -4515,6 +4769,9 @@ spec:
                   reservedConcurrentExecutions:
                     description: Amount of reserved concurrent executions for this lambda function. A value of 0 disables lambda from being triggered and -1 removes any concurrency limitations. Defaults to Unreserved Concurrency Limits -1.
                     type: number
+                  responseStreamingInvokeArn:
+                    description: ARN to be used for invoking Lambda Function from API Gateway with response streaming - to be used in aws_api_gateway_integration's uri.
+                    type: string
                   role:
                     description: ARN of the function's execution role. The role provides the function's identity and access to AWS services and resources.
                     type: string
@@ -4570,6 +4827,13 @@ spec:
                     description: Map of tags assigned to the resource, including those inherited from the provider default_tags configuration block.
                     type: object
                     x-kubernetes-map-type: granular
+                  tenancyConfig:
+                    description: Configuration block for Tenancy. See below.
+                    properties:
+                      tenantIsolationMode:
+                        description: 'Tenant Isolation Mode. Valid values: PER_TENANT.'
+                        type: string
+                    type: object
                   timeout:
                     description: Amount of time your Lambda Function has to run in seconds. Defaults to 3. Valid between 1 and 900.
                     type: number

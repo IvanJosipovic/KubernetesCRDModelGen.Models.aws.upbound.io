@@ -77,7 +77,7 @@ spec:
                     description: ECS automatically redistributes tasks within a service across Availability Zones (AZs) to mitigate the risk of impaired application availability due to underlying infrastructure failures and task lifecycle activities. The valid values are ENABLED and DISABLED. When creating a new service, if no value is specified, it defaults to ENABLED if the service is compatible with AvailabilityZoneRebalancing. When updating an existing service, if no value is specified it defaults to the existing service's AvailabilityZoneRebalancing value. If the service never had an AvailabilityZoneRebalancing value set, Amazon ECS treats this as DISABLED.
                     type: string
                   capacityProviderStrategy:
-                    description: Capacity provider strategies to use for the service. Can be one or more. These can be updated without destroying and recreating the service only if force_new_deployment = true and not changing from 0 capacity_provider_strategy blocks to greater than 0, or vice versa. See below. Conflicts with launch_type.
+                    description: Capacity provider strategies to use for the service. Can be one or more. Updating this argument requires force_new_deployment = true. See below. Conflicts with launch_type.
                     items:
                       properties:
                         base:
@@ -187,12 +187,25 @@ spec:
                     description: Configuration block for deployment settings. See below.
                     properties:
                       bakeTimeInMinutes:
-                        description: Number of minutes to wait after a new deployment is fully provisioned before terminating the old deployment. Only used when strategy is set to BLUE_GREEN.
+                        description: 'Number of minutes to wait after a new deployment is fully provisioned before terminating the old deployment. Valid range: 0-1440 minutes. Used with BLUE_GREEN, LINEAR, and CANARY strategies.'
                         type: string
+                      canaryConfiguration:
+                        description: Configuration block for canary deployment strategy. Required when strategy is set to CANARY. See below.
+                        properties:
+                          canaryBakeTimeInMinutes:
+                            description: 'Number of minutes to wait before shifting all traffic to the new deployment. Valid range: 0-1440 minutes.'
+                            type: string
+                          canaryPercent:
+                            description: 'Percentage of traffic to route to the canary deployment. Valid range: 0.1-100.0.'
+                            type: number
+                        type: object
                       lifecycleHook:
                         description: Configuration block for lifecycle hooks that are invoked during deployments. See below.
                         items:
                           properties:
+                            hookDetails:
+                              description: Custom parameters that Amazon ECS will pass to the hook target invocations (such as a Lambda function).
+                              type: string
                             hookTargetArn:
                               description: ARN of the Lambda function to invoke for the lifecycle hook.
                               type: string
@@ -206,8 +219,18 @@ spec:
                               type: string
                           type: object
                         type: array
+                      linearConfiguration:
+                        description: Configuration block for linear deployment strategy. Required when strategy is set to LINEAR. See below.
+                        properties:
+                          stepBakeTimeInMinutes:
+                            description: 'Number of minutes to wait between each step during a linear deployment. Valid range: 0-1440 minutes.'
+                            type: string
+                          stepPercent:
+                            description: 'Percentage of traffic to shift in each step during a linear deployment. Valid range: 3.0-100.0.'
+                            type: number
+                        type: object
                       strategy:
-                        description: 'Type of deployment strategy. Valid values: ROLLING, BLUE_GREEN. Default: ROLLING.'
+                        description: 'Type of deployment strategy. Valid values: ROLLING, BLUE_GREEN, LINEAR, CANARY. Default: ROLLING.'
                         type: string
                     type: object
                   deploymentController:
@@ -627,11 +650,7 @@ spec:
                     items:
                       properties:
                         field:
-                          description: |-
-                            For the spread placement strategy, valid values are instanceId (or host,
-                            which has the same effect), or any platform or custom attribute that is applied to a container instance.
-                            For the binpack type, valid values are memory and cpu. For the random type, this attribute is not
-                            needed. For more information, see Placement Strategy.
+                          description: For the spread placement strategy, valid values are instanceId (or host, which has the same effect), or any platform or custom attribute that is applied to a container instance. For the binpack type, valid values are memory and cpu. For the random type, this attribute is not needed. For more information, see Placement Strategy.
                           type: string
                         type:
                           description: 'Type of placement strategy. Must be one of: binpack, random, or spread'
@@ -667,6 +686,16 @@ spec:
                   serviceConnectConfiguration:
                     description: ECS Service Connect configuration for this service to discover and connect to services, and be discovered by, and connected from, other services within a namespace. See below.
                     properties:
+                      accessLogConfiguration:
+                        description: Configuration for Service Connect access logs. See below.
+                        properties:
+                          format:
+                            description: 'The format for Service Connect access log output. Valid values: TEXT, JSON. See AWS documentation for format details.'
+                            type: string
+                          includeQueryParameters:
+                            description: 'Specifies whether to include query parameters in Service Connect access logs. Valid values: ENABLED, DISABLED. Default: DISABLED. Query parameters may contain sensitive information.'
+                            type: string
+                        type: object
                       enabled:
                         description: Whether to use Service Connect with this service.
                         type: boolean
@@ -997,7 +1026,7 @@ spec:
                     description: ECS automatically redistributes tasks within a service across Availability Zones (AZs) to mitigate the risk of impaired application availability due to underlying infrastructure failures and task lifecycle activities. The valid values are ENABLED and DISABLED. When creating a new service, if no value is specified, it defaults to ENABLED if the service is compatible with AvailabilityZoneRebalancing. When updating an existing service, if no value is specified it defaults to the existing service's AvailabilityZoneRebalancing value. If the service never had an AvailabilityZoneRebalancing value set, Amazon ECS treats this as DISABLED.
                     type: string
                   capacityProviderStrategy:
-                    description: Capacity provider strategies to use for the service. Can be one or more. These can be updated without destroying and recreating the service only if force_new_deployment = true and not changing from 0 capacity_provider_strategy blocks to greater than 0, or vice versa. See below. Conflicts with launch_type.
+                    description: Capacity provider strategies to use for the service. Can be one or more. Updating this argument requires force_new_deployment = true. See below. Conflicts with launch_type.
                     items:
                       properties:
                         base:
@@ -1025,12 +1054,25 @@ spec:
                     description: Configuration block for deployment settings. See below.
                     properties:
                       bakeTimeInMinutes:
-                        description: Number of minutes to wait after a new deployment is fully provisioned before terminating the old deployment. Only used when strategy is set to BLUE_GREEN.
+                        description: 'Number of minutes to wait after a new deployment is fully provisioned before terminating the old deployment. Valid range: 0-1440 minutes. Used with BLUE_GREEN, LINEAR, and CANARY strategies.'
                         type: string
+                      canaryConfiguration:
+                        description: Configuration block for canary deployment strategy. Required when strategy is set to CANARY. See below.
+                        properties:
+                          canaryBakeTimeInMinutes:
+                            description: 'Number of minutes to wait before shifting all traffic to the new deployment. Valid range: 0-1440 minutes.'
+                            type: string
+                          canaryPercent:
+                            description: 'Percentage of traffic to route to the canary deployment. Valid range: 0.1-100.0.'
+                            type: number
+                        type: object
                       lifecycleHook:
                         description: Configuration block for lifecycle hooks that are invoked during deployments. See below.
                         items:
                           properties:
+                            hookDetails:
+                              description: Custom parameters that Amazon ECS will pass to the hook target invocations (such as a Lambda function).
+                              type: string
                             hookTargetArn:
                               description: ARN of the Lambda function to invoke for the lifecycle hook.
                               type: string
@@ -1044,8 +1086,18 @@ spec:
                               type: string
                           type: object
                         type: array
+                      linearConfiguration:
+                        description: Configuration block for linear deployment strategy. Required when strategy is set to LINEAR. See below.
+                        properties:
+                          stepBakeTimeInMinutes:
+                            description: 'Number of minutes to wait between each step during a linear deployment. Valid range: 0-1440 minutes.'
+                            type: string
+                          stepPercent:
+                            description: 'Percentage of traffic to shift in each step during a linear deployment. Valid range: 3.0-100.0.'
+                            type: number
+                        type: object
                       strategy:
-                        description: 'Type of deployment strategy. Valid values: ROLLING, BLUE_GREEN. Default: ROLLING.'
+                        description: 'Type of deployment strategy. Valid values: ROLLING, BLUE_GREEN, LINEAR, CANARY. Default: ROLLING.'
                         type: string
                     type: object
                   deploymentController:
@@ -1465,11 +1517,7 @@ spec:
                     items:
                       properties:
                         field:
-                          description: |-
-                            For the spread placement strategy, valid values are instanceId (or host,
-                            which has the same effect), or any platform or custom attribute that is applied to a container instance.
-                            For the binpack type, valid values are memory and cpu. For the random type, this attribute is not
-                            needed. For more information, see Placement Strategy.
+                          description: For the spread placement strategy, valid values are instanceId (or host, which has the same effect), or any platform or custom attribute that is applied to a container instance. For the binpack type, valid values are memory and cpu. For the random type, this attribute is not needed. For more information, see Placement Strategy.
                           type: string
                         type:
                           description: 'Type of placement strategy. Must be one of: binpack, random, or spread'
@@ -1500,6 +1548,16 @@ spec:
                   serviceConnectConfiguration:
                     description: ECS Service Connect configuration for this service to discover and connect to services, and be discovered by, and connected from, other services within a namespace. See below.
                     properties:
+                      accessLogConfiguration:
+                        description: Configuration for Service Connect access logs. See below.
+                        properties:
+                          format:
+                            description: 'The format for Service Connect access log output. Valid values: TEXT, JSON. See AWS documentation for format details.'
+                            type: string
+                          includeQueryParameters:
+                            description: 'Specifies whether to include query parameters in Service Connect access logs. Valid values: ENABLED, DISABLED. Default: DISABLED. Query parameters may contain sensitive information.'
+                            type: string
+                        type: object
                       enabled:
                         description: Whether to use Service Connect with this service.
                         type: boolean
@@ -1881,7 +1939,7 @@ spec:
                     description: ECS automatically redistributes tasks within a service across Availability Zones (AZs) to mitigate the risk of impaired application availability due to underlying infrastructure failures and task lifecycle activities. The valid values are ENABLED and DISABLED. When creating a new service, if no value is specified, it defaults to ENABLED if the service is compatible with AvailabilityZoneRebalancing. When updating an existing service, if no value is specified it defaults to the existing service's AvailabilityZoneRebalancing value. If the service never had an AvailabilityZoneRebalancing value set, Amazon ECS treats this as DISABLED.
                     type: string
                   capacityProviderStrategy:
-                    description: Capacity provider strategies to use for the service. Can be one or more. These can be updated without destroying and recreating the service only if force_new_deployment = true and not changing from 0 capacity_provider_strategy blocks to greater than 0, or vice versa. See below. Conflicts with launch_type.
+                    description: Capacity provider strategies to use for the service. Can be one or more. Updating this argument requires force_new_deployment = true. See below. Conflicts with launch_type.
                     items:
                       properties:
                         base:
@@ -1912,12 +1970,25 @@ spec:
                     description: Configuration block for deployment settings. See below.
                     properties:
                       bakeTimeInMinutes:
-                        description: Number of minutes to wait after a new deployment is fully provisioned before terminating the old deployment. Only used when strategy is set to BLUE_GREEN.
+                        description: 'Number of minutes to wait after a new deployment is fully provisioned before terminating the old deployment. Valid range: 0-1440 minutes. Used with BLUE_GREEN, LINEAR, and CANARY strategies.'
                         type: string
+                      canaryConfiguration:
+                        description: Configuration block for canary deployment strategy. Required when strategy is set to CANARY. See below.
+                        properties:
+                          canaryBakeTimeInMinutes:
+                            description: 'Number of minutes to wait before shifting all traffic to the new deployment. Valid range: 0-1440 minutes.'
+                            type: string
+                          canaryPercent:
+                            description: 'Percentage of traffic to route to the canary deployment. Valid range: 0.1-100.0.'
+                            type: number
+                        type: object
                       lifecycleHook:
                         description: Configuration block for lifecycle hooks that are invoked during deployments. See below.
                         items:
                           properties:
+                            hookDetails:
+                              description: Custom parameters that Amazon ECS will pass to the hook target invocations (such as a Lambda function).
+                              type: string
                             hookTargetArn:
                               description: ARN of the Lambda function to invoke for the lifecycle hook.
                               type: string
@@ -1931,8 +2002,18 @@ spec:
                               type: string
                           type: object
                         type: array
+                      linearConfiguration:
+                        description: Configuration block for linear deployment strategy. Required when strategy is set to LINEAR. See below.
+                        properties:
+                          stepBakeTimeInMinutes:
+                            description: 'Number of minutes to wait between each step during a linear deployment. Valid range: 0-1440 minutes.'
+                            type: string
+                          stepPercent:
+                            description: 'Percentage of traffic to shift in each step during a linear deployment. Valid range: 3.0-100.0.'
+                            type: number
+                        type: object
                       strategy:
-                        description: 'Type of deployment strategy. Valid values: ROLLING, BLUE_GREEN. Default: ROLLING.'
+                        description: 'Type of deployment strategy. Valid values: ROLLING, BLUE_GREEN, LINEAR, CANARY. Default: ROLLING.'
                         type: string
                     type: object
                   deploymentController:
@@ -2032,11 +2113,7 @@ spec:
                     items:
                       properties:
                         field:
-                          description: |-
-                            For the spread placement strategy, valid values are instanceId (or host,
-                            which has the same effect), or any platform or custom attribute that is applied to a container instance.
-                            For the binpack type, valid values are memory and cpu. For the random type, this attribute is not
-                            needed. For more information, see Placement Strategy.
+                          description: For the spread placement strategy, valid values are instanceId (or host, which has the same effect), or any platform or custom attribute that is applied to a container instance. For the binpack type, valid values are memory and cpu. For the random type, this attribute is not needed. For more information, see Placement Strategy.
                           type: string
                         type:
                           description: 'Type of placement strategy. Must be one of: binpack, random, or spread'
@@ -2072,6 +2149,16 @@ spec:
                   serviceConnectConfiguration:
                     description: ECS Service Connect configuration for this service to discover and connect to services, and be discovered by, and connected from, other services within a namespace. See below.
                     properties:
+                      accessLogConfiguration:
+                        description: Configuration for Service Connect access logs. See below.
+                        properties:
+                          format:
+                            description: 'The format for Service Connect access log output. Valid values: TEXT, JSON. See AWS documentation for format details.'
+                            type: string
+                          includeQueryParameters:
+                            description: 'Specifies whether to include query parameters in Service Connect access logs. Valid values: ENABLED, DISABLED. Default: DISABLED. Query parameters may contain sensitive information.'
+                            type: string
+                        type: object
                       enabled:
                         description: Whether to use Service Connect with this service.
                         type: boolean

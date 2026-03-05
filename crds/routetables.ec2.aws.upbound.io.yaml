@@ -79,7 +79,7 @@ spec:
                   tags:
                     additionalProperties:
                       type: string
-                    description: Key-value map of resource tags.
+                    description: A map of tags to assign to the resource. If configured with a provider default_tags configuration block present, tags with matching keys will overwrite those defined at the provider-level.
                     type: object
                     x-kubernetes-map-type: granular
                   vpcId:
@@ -177,7 +177,7 @@ spec:
                   tags:
                     additionalProperties:
                       type: string
-                    description: Key-value map of resource tags.
+                    description: A map of tags to assign to the resource. If configured with a provider default_tags configuration block present, tags with matching keys will overwrite those defined at the provider-level.
                     type: object
                     x-kubernetes-map-type: granular
                   vpcId:
@@ -418,7 +418,7 @@ spec:
                   tags:
                     additionalProperties:
                       type: string
-                    description: Key-value map of resource tags.
+                    description: A map of tags to assign to the resource. If configured with a provider default_tags configuration block present, tags with matching keys will overwrite those defined at the provider-level.
                     type: object
                     x-kubernetes-map-type: granular
                   tagsAll:

@@ -80,6 +80,12 @@ spec:
                   automationTargetParameterName:
                     description: Specify the target for the association. This target is required for associations that use an Automation document and target resources by using rate controls. This should be set to the SSM document parameter that will define how your automation will branch out.
                     type: string
+                  calendarNames:
+                    description: One or more Systems Manager Change Calendar names. The association runs only when the Change Calendar is open.
+                    items:
+                      type: string
+                    type: array
+                    x-kubernetes-list-type: set
                   complianceSeverity:
                     description: 'The compliance severity for the association. Can be one of the following: UNSPECIFIED, LOW, MEDIUM, HIGH or CRITICAL'
                     type: string
@@ -211,10 +217,10 @@ spec:
                     items:
                       properties:
                         key:
-                          description: Either InstanceIds or tag:Tag Name to specify an EC2 tag.
+                          description: User-defined criteria for sending commands that target managed nodes that meet the criteria. See the AWS documentation for the list of available keys.
                           type: string
                         values:
-                          description: User-defined criteria that maps to Key. A list of instance IDs or tag values.
+                          description: List of values that correspond to the specified key. See the AWS documentation for details.
                           items:
                             type: string
                           type: array
@@ -324,6 +330,12 @@ spec:
                   automationTargetParameterName:
                     description: Specify the target for the association. This target is required for associations that use an Automation document and target resources by using rate controls. This should be set to the SSM document parameter that will define how your automation will branch out.
                     type: string
+                  calendarNames:
+                    description: One or more Systems Manager Change Calendar names. The association runs only when the Change Calendar is open.
+                    items:
+                      type: string
+                    type: array
+                    x-kubernetes-list-type: set
                   complianceSeverity:
                     description: 'The compliance severity for the association. Can be one of the following: UNSPECIFIED, LOW, MEDIUM, HIGH or CRITICAL'
                     type: string
@@ -450,10 +462,10 @@ spec:
                     items:
                       properties:
                         key:
-                          description: Either InstanceIds or tag:Tag Name to specify an EC2 tag.
+                          description: User-defined criteria for sending commands that target managed nodes that meet the criteria. See the AWS documentation for the list of available keys.
                           type: string
                         values:
-                          description: User-defined criteria that maps to Key. A list of instance IDs or tag values.
+                          description: List of values that correspond to the specified key. See the AWS documentation for details.
                           items:
                             type: string
                           type: array
@@ -645,6 +657,12 @@ spec:
                   automationTargetParameterName:
                     description: Specify the target for the association. This target is required for associations that use an Automation document and target resources by using rate controls. This should be set to the SSM document parameter that will define how your automation will branch out.
                     type: string
+                  calendarNames:
+                    description: One or more Systems Manager Change Calendar names. The association runs only when the Change Calendar is open.
+                    items:
+                      type: string
+                    type: array
+                    x-kubernetes-list-type: set
                   complianceSeverity:
                     description: 'The compliance severity for the association. Can be one of the following: UNSPECIFIED, LOW, MEDIUM, HIGH or CRITICAL'
                     type: string
@@ -711,10 +729,10 @@ spec:
                     items:
                       properties:
                         key:
-                          description: Either InstanceIds or tag:Tag Name to specify an EC2 tag.
+                          description: User-defined criteria for sending commands that target managed nodes that meet the criteria. See the AWS documentation for the list of available keys.
                           type: string
                         values:
-                          description: User-defined criteria that maps to Key. A list of instance IDs or tag values.
+                          description: List of values that correspond to the specified key. See the AWS documentation for details.
                           items:
                             type: string
                           type: array
@@ -846,6 +864,12 @@ spec:
                   automationTargetParameterName:
                     description: Specify the target for the association. This target is required for associations that use an Automation document and target resources by using rate controls. This should be set to the SSM document parameter that will define how your automation will branch out.
                     type: string
+                  calendarNames:
+                    description: One or more Systems Manager Change Calendar names. The association runs only when the Change Calendar is open.
+                    items:
+                      type: string
+                    type: array
+                    x-kubernetes-list-type: set
                   complianceSeverity:
                     description: 'The compliance severity for the association. Can be one of the following: UNSPECIFIED, LOW, MEDIUM, HIGH or CRITICAL'
                     type: string
@@ -975,10 +999,10 @@ spec:
                     items:
                       properties:
                         key:
-                          description: Either InstanceIds or tag:Tag Name to specify an EC2 tag.
+                          description: User-defined criteria for sending commands that target managed nodes that meet the criteria. See the AWS documentation for the list of available keys.
                           type: string
                         values:
-                          description: User-defined criteria that maps to Key. A list of instance IDs or tag values.
+                          description: List of values that correspond to the specified key. See the AWS documentation for details.
                           items:
                             type: string
                           type: array
@@ -1088,6 +1112,12 @@ spec:
                   automationTargetParameterName:
                     description: Specify the target for the association. This target is required for associations that use an Automation document and target resources by using rate controls. This should be set to the SSM document parameter that will define how your automation will branch out.
                     type: string
+                  calendarNames:
+                    description: One or more Systems Manager Change Calendar names. The association runs only when the Change Calendar is open.
+                    items:
+                      type: string
+                    type: array
+                    x-kubernetes-list-type: set
                   complianceSeverity:
                     description: 'The compliance severity for the association. Can be one of the following: UNSPECIFIED, LOW, MEDIUM, HIGH or CRITICAL'
                     type: string
@@ -1212,10 +1242,10 @@ spec:
                     items:
                       properties:
                         key:
-                          description: Either InstanceIds or tag:Tag Name to specify an EC2 tag.
+                          description: User-defined criteria for sending commands that target managed nodes that meet the criteria. See the AWS documentation for the list of available keys.
                           type: string
                         values:
-                          description: User-defined criteria that maps to Key. A list of instance IDs or tag values.
+                          description: List of values that correspond to the specified key. See the AWS documentation for details.
                           items:
                             type: string
                           type: array
@@ -1407,6 +1437,12 @@ spec:
                   automationTargetParameterName:
                     description: Specify the target for the association. This target is required for associations that use an Automation document and target resources by using rate controls. This should be set to the SSM document parameter that will define how your automation will branch out.
                     type: string
+                  calendarNames:
+                    description: One or more Systems Manager Change Calendar names. The association runs only when the Change Calendar is open.
+                    items:
+                      type: string
+                    type: array
+                    x-kubernetes-list-type: set
                   complianceSeverity:
                     description: 'The compliance severity for the association. Can be one of the following: UNSPECIFIED, LOW, MEDIUM, HIGH or CRITICAL'
                     type: string
@@ -1471,10 +1507,10 @@ spec:
                     items:
                       properties:
                         key:
-                          description: Either InstanceIds or tag:Tag Name to specify an EC2 tag.
+                          description: User-defined criteria for sending commands that target managed nodes that meet the criteria. See the AWS documentation for the list of available keys.
                           type: string
                         values:
-                          description: User-defined criteria that maps to Key. A list of instance IDs or tag values.
+                          description: List of values that correspond to the specified key. See the AWS documentation for details.
                           items:
                             type: string
                           type: array

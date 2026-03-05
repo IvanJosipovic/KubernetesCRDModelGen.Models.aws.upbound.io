@@ -219,7 +219,7 @@ spec:
                             description: Behavior when encountering instances protected from scale in are found. Available behaviors are Refresh, Ignore, and Wait. Default is Ignore.
                             type: string
                           skipMatching:
-                            description: Replace instances that already have your desired configuration. Defaults to false.
+                            description: Skip replacing instances that already have your desired configuration. Defaults to false.
                             type: boolean
                           standbyInstances:
                             description: Behavior when encountering instances in the Standby state in are found. Available behaviors are Terminate, Ignore, and Wait. Default is Ignore.
@@ -1342,7 +1342,7 @@ spec:
                             description: Behavior when encountering instances protected from scale in are found. Available behaviors are Refresh, Ignore, and Wait. Default is Ignore.
                             type: string
                           skipMatching:
-                            description: Replace instances that already have your desired configuration. Defaults to false.
+                            description: Skip replacing instances that already have your desired configuration. Defaults to false.
                             type: boolean
                           standbyInstances:
                             description: Behavior when encountering instances in the Standby state in are found. Available behaviors are Terminate, Ignore, and Wait. Default is Ignore.
@@ -2519,7 +2519,7 @@ spec:
                             description: Behavior when encountering instances protected from scale in are found. Available behaviors are Refresh, Ignore, and Wait. Default is Ignore.
                             type: string
                           skipMatching:
-                            description: Replace instances that already have your desired configuration. Defaults to false.
+                            description: Skip replacing instances that already have your desired configuration. Defaults to false.
                             type: boolean
                           standbyInstances:
                             description: Behavior when encountering instances in the Standby state in are found. Available behaviors are Terminate, Ignore, and Wait. Default is Ignore.
@@ -2857,7 +2857,7 @@ spec:
                       type: object
                     type: array
                   targetGroupArns:
-                    description: Set of aws_alb_target_group ARNs, for use with Application or Network Load Balancing. To remove all target group attachments an empty list should be specified.
+                    description: Set of aws_lb_target_group ARNs, for use with Application or Network Load Balancing. To remove all target group attachments an empty list should be specified.
                     items:
                       type: string
                     type: array

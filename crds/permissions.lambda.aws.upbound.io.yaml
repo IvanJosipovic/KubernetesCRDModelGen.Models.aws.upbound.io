@@ -156,6 +156,9 @@ spec:
                   functionUrlAuthType:
                     description: 'Lambda Function URL authentication type. Valid values: AWS_IAM or NONE. Only valid with lambda:InvokeFunctionUrl action'
                     type: string
+                  invokedViaFunctionUrl:
+                    description: Lambda Function URL invoke permission. Only valid with lambda:InvokeFunction action
+                    type: boolean
                   principal:
                     description: AWS service or account that invokes the function (e.g., s3.amazonaws.com, sns.amazonaws.com, AWS account ID, or AWS IAM principal)
                     type: string
@@ -356,6 +359,9 @@ spec:
                   functionUrlAuthType:
                     description: 'Lambda Function URL authentication type. Valid values: AWS_IAM or NONE. Only valid with lambda:InvokeFunctionUrl action'
                     type: string
+                  invokedViaFunctionUrl:
+                    description: Lambda Function URL invoke permission. Only valid with lambda:InvokeFunction action
+                    type: boolean
                   principal:
                     description: AWS service or account that invokes the function (e.g., s3.amazonaws.com, sns.amazonaws.com, AWS account ID, or AWS IAM principal)
                     type: string
@@ -561,6 +567,9 @@ spec:
                     type: string
                   id:
                     type: string
+                  invokedViaFunctionUrl:
+                    description: Lambda Function URL invoke permission. Only valid with lambda:InvokeFunction action
+                    type: boolean
                   principal:
                     description: AWS service or account that invokes the function (e.g., s3.amazonaws.com, sns.amazonaws.com, AWS account ID, or AWS IAM principal)
                     type: string

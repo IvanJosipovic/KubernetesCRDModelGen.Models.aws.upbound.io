@@ -60,7 +60,7 @@ spec:
                   globalSettings:
                     additionalProperties:
                       type: string
-                    description: A list of resources along with the opt-in preferences for the account.
+                    description: A list of resources along with the opt-in preferences for the account. For a list of inputs, see UpdateGlobalSettings in the AWS Backup Developer Guide.
                     type: object
                     x-kubernetes-map-type: granular
                 type: object
@@ -80,7 +80,7 @@ spec:
                   globalSettings:
                     additionalProperties:
                       type: string
-                    description: A list of resources along with the opt-in preferences for the account.
+                    description: A list of resources along with the opt-in preferences for the account. For a list of inputs, see UpdateGlobalSettings in the AWS Backup Developer Guide.
                     type: object
                     x-kubernetes-map-type: granular
                 type: object
@@ -153,7 +153,7 @@ spec:
                   globalSettings:
                     additionalProperties:
                       type: string
-                    description: A list of resources along with the opt-in preferences for the account.
+                    description: A list of resources along with the opt-in preferences for the account. For a list of inputs, see UpdateGlobalSettings in the AWS Backup Developer Guide.
                     type: object
                     x-kubernetes-map-type: granular
                   id:

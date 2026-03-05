@@ -162,7 +162,7 @@ spec:
                       type: object
                     type: array
                   emailMfaConfiguration:
-                    description: Configuration block for configuring email Multi-Factor Authentication (MFA); requires at least 2 account_recovery_setting entries; requires an email_configuration configuration block. Detailed below.
+                    description: Configuration block for configuring email Multi-Factor Authentication (MFA); requires at least 2 account_recovery_setting entries; requires an email_configuration configuration block. Effective only when mfa_configuration is ON or OPTIONAL. Detailed below.
                     items:
                       properties:
                         message:
@@ -1204,7 +1204,7 @@ spec:
                       type: object
                     type: array
                   mfaConfiguration:
-                    description: Multi-Factor Authentication (MFA) configuration for the User Pool. Defaults of OFF. Valid values are OFF (MFA Tokens are not required), ON (MFA is required for all users to sign in; requires at least one of sms_configuration or software_token_mfa_configuration to be configured), or OPTIONAL (MFA Will be required only for individual users who have MFA Enabled; requires at least one of sms_configuration or software_token_mfa_configuration to be configured).
+                    description: Multi-Factor Authentication (MFA) configuration for the User Pool. Defaults of OFF. Valid values are OFF (MFA Tokens are not required), ON (MFA is required for all users to sign in; requires at least one of email_mfa_configuration, sms_configuration or software_token_mfa_configuration to be configured), or OPTIONAL (MFA Will be required only for individual users who have MFA Enabled; requires at least one of email_mfa_configuration, sms_configuration or software_token_mfa_configuration to be configured).
                     type: string
                   name:
                     description: Name of the user pool.
@@ -1302,7 +1302,7 @@ spec:
                     description: String representing the SMS authentication message. The Message must contain the {####} placeholder, which will be replaced with the code.
                     type: string
                   smsConfiguration:
-                    description: Configuration block for Short Message Service (SMS) settings. Detailed below. These settings apply to SMS user verification and SMS Multi-Factor Authentication (MFA). Due to Cognito API restrictions, the SMS configuration cannot be removed without recreating the Cognito User Pool. For user data safety, this resource will ignore the removal of this configuration by disabling drift detection. To force resource recreation after this configuration has been applied, see the taint command.
+                    description: Configuration block for Short Message Service (SMS) settings. Detailed below. These settings apply to SMS user verification and SMS Multi-Factor Authentication (MFA). SMS MFA is activated only when mfa_configuration is set to ON or OPTIONAL along with this block. Due to Cognito API restrictions, the SMS configuration cannot be removed without recreating the Cognito User Pool. For user data safety, this resource will ignore the removal of this configuration by disabling drift detection. To force resource recreation after this configuration has been applied, see the taint command.
                     items:
                       properties:
                         externalId:
@@ -1393,7 +1393,7 @@ spec:
                     description: String representing the SMS verification message. Conflicts with verification_message_template configuration block sms_message argument.
                     type: string
                   softwareTokenMfaConfiguration:
-                    description: Configuration block for software token Mult-Factor Authentication (MFA) settings. Detailed below.
+                    description: Configuration block for software token Mult-Factor Authentication (MFA) settings. Effective only when mfa_configuration is ON or OPTIONAL. Detailed below.
                     items:
                       properties:
                         enabled:
@@ -1598,7 +1598,7 @@ spec:
                       type: object
                     type: array
                   emailMfaConfiguration:
-                    description: Configuration block for configuring email Multi-Factor Authentication (MFA); requires at least 2 account_recovery_setting entries; requires an email_configuration configuration block. Detailed below.
+                    description: Configuration block for configuring email Multi-Factor Authentication (MFA); requires at least 2 account_recovery_setting entries; requires an email_configuration configuration block. Effective only when mfa_configuration is ON or OPTIONAL. Detailed below.
                     items:
                       properties:
                         message:
@@ -2640,7 +2640,7 @@ spec:
                       type: object
                     type: array
                   mfaConfiguration:
-                    description: Multi-Factor Authentication (MFA) configuration for the User Pool. Defaults of OFF. Valid values are OFF (MFA Tokens are not required), ON (MFA is required for all users to sign in; requires at least one of sms_configuration or software_token_mfa_configuration to be configured), or OPTIONAL (MFA Will be required only for individual users who have MFA Enabled; requires at least one of sms_configuration or software_token_mfa_configuration to be configured).
+                    description: Multi-Factor Authentication (MFA) configuration for the User Pool. Defaults of OFF. Valid values are OFF (MFA Tokens are not required), ON (MFA is required for all users to sign in; requires at least one of email_mfa_configuration, sms_configuration or software_token_mfa_configuration to be configured), or OPTIONAL (MFA Will be required only for individual users who have MFA Enabled; requires at least one of email_mfa_configuration, sms_configuration or software_token_mfa_configuration to be configured).
                     type: string
                   name:
                     description: Name of the user pool.
@@ -2733,7 +2733,7 @@ spec:
                     description: String representing the SMS authentication message. The Message must contain the {####} placeholder, which will be replaced with the code.
                     type: string
                   smsConfiguration:
-                    description: Configuration block for Short Message Service (SMS) settings. Detailed below. These settings apply to SMS user verification and SMS Multi-Factor Authentication (MFA). Due to Cognito API restrictions, the SMS configuration cannot be removed without recreating the Cognito User Pool. For user data safety, this resource will ignore the removal of this configuration by disabling drift detection. To force resource recreation after this configuration has been applied, see the taint command.
+                    description: Configuration block for Short Message Service (SMS) settings. Detailed below. These settings apply to SMS user verification and SMS Multi-Factor Authentication (MFA). SMS MFA is activated only when mfa_configuration is set to ON or OPTIONAL along with this block. Due to Cognito API restrictions, the SMS configuration cannot be removed without recreating the Cognito User Pool. For user data safety, this resource will ignore the removal of this configuration by disabling drift detection. To force resource recreation after this configuration has been applied, see the taint command.
                     items:
                       properties:
                         externalId:
@@ -2824,7 +2824,7 @@ spec:
                     description: String representing the SMS verification message. Conflicts with verification_message_template configuration block sms_message argument.
                     type: string
                   softwareTokenMfaConfiguration:
-                    description: Configuration block for software token Mult-Factor Authentication (MFA) settings. Detailed below.
+                    description: Configuration block for software token Mult-Factor Authentication (MFA) settings. Effective only when mfa_configuration is ON or OPTIONAL. Detailed below.
                     items:
                       properties:
                         enabled:
@@ -3120,7 +3120,7 @@ spec:
                       type: object
                     type: array
                   emailMfaConfiguration:
-                    description: Configuration block for configuring email Multi-Factor Authentication (MFA); requires at least 2 account_recovery_setting entries; requires an email_configuration configuration block. Detailed below.
+                    description: Configuration block for configuring email Multi-Factor Authentication (MFA); requires at least 2 account_recovery_setting entries; requires an email_configuration configuration block. Effective only when mfa_configuration is ON or OPTIONAL. Detailed below.
                     items:
                       properties:
                         message:
@@ -3225,7 +3225,7 @@ spec:
                     description: Date the user pool was last modified.
                     type: string
                   mfaConfiguration:
-                    description: Multi-Factor Authentication (MFA) configuration for the User Pool. Defaults of OFF. Valid values are OFF (MFA Tokens are not required), ON (MFA is required for all users to sign in; requires at least one of sms_configuration or software_token_mfa_configuration to be configured), or OPTIONAL (MFA Will be required only for individual users who have MFA Enabled; requires at least one of sms_configuration or software_token_mfa_configuration to be configured).
+                    description: Multi-Factor Authentication (MFA) configuration for the User Pool. Defaults of OFF. Valid values are OFF (MFA Tokens are not required), ON (MFA is required for all users to sign in; requires at least one of email_mfa_configuration, sms_configuration or software_token_mfa_configuration to be configured), or OPTIONAL (MFA Will be required only for individual users who have MFA Enabled; requires at least one of email_mfa_configuration, sms_configuration or software_token_mfa_configuration to be configured).
                     type: string
                   name:
                     description: Name of the user pool.
@@ -3323,7 +3323,7 @@ spec:
                     description: String representing the SMS authentication message. The Message must contain the {####} placeholder, which will be replaced with the code.
                     type: string
                   smsConfiguration:
-                    description: Configuration block for Short Message Service (SMS) settings. Detailed below. These settings apply to SMS user verification and SMS Multi-Factor Authentication (MFA). Due to Cognito API restrictions, the SMS configuration cannot be removed without recreating the Cognito User Pool. For user data safety, this resource will ignore the removal of this configuration by disabling drift detection. To force resource recreation after this configuration has been applied, see the taint command.
+                    description: Configuration block for Short Message Service (SMS) settings. Detailed below. These settings apply to SMS user verification and SMS Multi-Factor Authentication (MFA). SMS MFA is activated only when mfa_configuration is set to ON or OPTIONAL along with this block. Due to Cognito API restrictions, the SMS configuration cannot be removed without recreating the Cognito User Pool. For user data safety, this resource will ignore the removal of this configuration by disabling drift detection. To force resource recreation after this configuration has been applied, see the taint command.
                     items:
                       properties:
                         externalId:
@@ -3341,7 +3341,7 @@ spec:
                     description: String representing the SMS verification message. Conflicts with verification_message_template configuration block sms_message argument.
                     type: string
                   softwareTokenMfaConfiguration:
-                    description: Configuration block for software token Mult-Factor Authentication (MFA) settings. Detailed below.
+                    description: Configuration block for software token Mult-Factor Authentication (MFA) settings. Effective only when mfa_configuration is ON or OPTIONAL. Detailed below.
                     items:
                       properties:
                         enabled:

@@ -290,6 +290,15 @@ spec:
                           description: Options for sending VPN tunnel logs to CloudWatch. See CloudWatch Log Options below for more details.
                           items:
                             properties:
+                              bgpLogEnabled:
+                                description: Enable or disable BGP logging feature. The default is false.
+                                type: boolean
+                              bgpLogGroupArn:
+                                description: The Amazon Resource Name (ARN) of the CloudWatch log group to send BGP logs to.
+                                type: string
+                              bgpLogOutputFormat:
+                                description: 'Set BGP log format. Default format is json. Possible values are: json and text. The default is json.'
+                                type: string
                               logEnabled:
                                 description: Enable or disable VPN tunnel logging feature. The default is false.
                                 type: boolean
@@ -403,6 +412,15 @@ spec:
                           description: Options for sending VPN tunnel logs to CloudWatch. See CloudWatch Log Options below for more details.
                           items:
                             properties:
+                              bgpLogEnabled:
+                                description: Enable or disable BGP logging feature. The default is false.
+                                type: boolean
+                              bgpLogGroupArn:
+                                description: The Amazon Resource Name (ARN) of the CloudWatch log group to send BGP logs to.
+                                type: string
+                              bgpLogOutputFormat:
+                                description: 'Set BGP log format. Default format is json. Possible values are: json and text. The default is json.'
+                                type: string
                               logEnabled:
                                 description: Enable or disable VPN tunnel logging feature. The default is false.
                                 type: boolean
@@ -487,6 +505,9 @@ spec:
                   tunnel2StartupAction:
                     description: The action to take when the establishing the tunnel for the second VPN connection. By default, your customer gateway device must initiate the IKE negotiation and bring up the tunnel. Specify start for AWS to initiate the IKE negotiation. Valid values are add | start.
                     type: string
+                  tunnelBandwidth:
+                    description: Desired bandwidth specification for the VPN tunnel. Valid values are standard | large. standard supports up to 1.25 Gbps per tunnel, while large supports up to 5 Gbps per tunnel. Not supported when vpn_gateway_id is specified, or enable_acceleration is true.
+                    type: string
                   tunnelInsideIpVersion:
                     description: Indicate whether the VPN tunnels process IPv4 or IPv6 traffic. Valid values are ipv4 | ipv6. ipv6 Supports only EC2 Transit Gateway.
                     type: string
@@ -566,6 +587,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  vpnConcentratorId:
+                    description: ID of the VPN concentrator to associate with the VPN connection.
+                    type: string
                   vpnGatewayId:
                     description: The ID of the Virtual Private Gateway.
                     type: string
@@ -872,6 +896,15 @@ spec:
                           description: Options for sending VPN tunnel logs to CloudWatch. See CloudWatch Log Options below for more details.
                           items:
                             properties:
+                              bgpLogEnabled:
+                                description: Enable or disable BGP logging feature. The default is false.
+                                type: boolean
+                              bgpLogGroupArn:
+                                description: The Amazon Resource Name (ARN) of the CloudWatch log group to send BGP logs to.
+                                type: string
+                              bgpLogOutputFormat:
+                                description: 'Set BGP log format. Default format is json. Possible values are: json and text. The default is json.'
+                                type: string
                               logEnabled:
                                 description: Enable or disable VPN tunnel logging feature. The default is false.
                                 type: boolean
@@ -985,6 +1018,15 @@ spec:
                           description: Options for sending VPN tunnel logs to CloudWatch. See CloudWatch Log Options below for more details.
                           items:
                             properties:
+                              bgpLogEnabled:
+                                description: Enable or disable BGP logging feature. The default is false.
+                                type: boolean
+                              bgpLogGroupArn:
+                                description: The Amazon Resource Name (ARN) of the CloudWatch log group to send BGP logs to.
+                                type: string
+                              bgpLogOutputFormat:
+                                description: 'Set BGP log format. Default format is json. Possible values are: json and text. The default is json.'
+                                type: string
                               logEnabled:
                                 description: Enable or disable VPN tunnel logging feature. The default is false.
                                 type: boolean
@@ -1069,6 +1111,9 @@ spec:
                   tunnel2StartupAction:
                     description: The action to take when the establishing the tunnel for the second VPN connection. By default, your customer gateway device must initiate the IKE negotiation and bring up the tunnel. Specify start for AWS to initiate the IKE negotiation. Valid values are add | start.
                     type: string
+                  tunnelBandwidth:
+                    description: Desired bandwidth specification for the VPN tunnel. Valid values are standard | large. standard supports up to 1.25 Gbps per tunnel, while large supports up to 5 Gbps per tunnel. Not supported when vpn_gateway_id is specified, or enable_acceleration is true.
+                    type: string
                   tunnelInsideIpVersion:
                     description: Indicate whether the VPN tunnels process IPv4 or IPv6 traffic. Valid values are ipv4 | ipv6. ipv6 Supports only EC2 Transit Gateway.
                     type: string
@@ -1148,6 +1193,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  vpnConcentratorId:
+                    description: ID of the VPN concentrator to associate with the VPN connection.
+                    type: string
                   vpnGatewayId:
                     description: The ID of the Virtual Private Gateway.
                     type: string
@@ -1440,6 +1488,15 @@ spec:
                           description: Options for sending VPN tunnel logs to CloudWatch. See CloudWatch Log Options below for more details.
                           items:
                             properties:
+                              bgpLogEnabled:
+                                description: Enable or disable BGP logging feature. The default is false.
+                                type: boolean
+                              bgpLogGroupArn:
+                                description: The Amazon Resource Name (ARN) of the CloudWatch log group to send BGP logs to.
+                                type: string
+                              bgpLogOutputFormat:
+                                description: 'Set BGP log format. Default format is json. Possible values are: json and text. The default is json.'
+                                type: string
                               logEnabled:
                                 description: Enable or disable VPN tunnel logging feature. The default is false.
                                 type: boolean
@@ -1551,6 +1608,15 @@ spec:
                           description: Options for sending VPN tunnel logs to CloudWatch. See CloudWatch Log Options below for more details.
                           items:
                             properties:
+                              bgpLogEnabled:
+                                description: Enable or disable BGP logging feature. The default is false.
+                                type: boolean
+                              bgpLogGroupArn:
+                                description: The Amazon Resource Name (ARN) of the CloudWatch log group to send BGP logs to.
+                                type: string
+                              bgpLogOutputFormat:
+                                description: 'Set BGP log format. Default format is json. Possible values are: json and text. The default is json.'
+                                type: string
                               logEnabled:
                                 description: Enable or disable VPN tunnel logging feature. The default is false.
                                 type: boolean
@@ -1621,6 +1687,9 @@ spec:
                   tunnel2VgwInsideAddress:
                     description: The RFC 6890 link-local address of the second VPN tunnel (VPN Gateway Side).
                     type: string
+                  tunnelBandwidth:
+                    description: Desired bandwidth specification for the VPN tunnel. Valid values are standard | large. standard supports up to 1.25 Gbps per tunnel, while large supports up to 5 Gbps per tunnel. Not supported when vpn_gateway_id is specified, or enable_acceleration is true.
+                    type: string
                   tunnelInsideIpVersion:
                     description: Indicate whether the VPN tunnels process IPv4 or IPv6 traffic. Valid values are ipv4 | ipv6. ipv6 Supports only EC2 Transit Gateway.
                     type: string
@@ -1651,6 +1720,9 @@ spec:
                           type: string
                       type: object
                     type: array
+                  vpnConcentratorId:
+                    description: ID of the VPN concentrator to associate with the VPN connection.
+                    type: string
                   vpnGatewayId:
                     description: The ID of the Virtual Private Gateway.
                     type: string
@@ -1985,6 +2057,15 @@ spec:
                       cloudwatchLogOptions:
                         description: Options for sending VPN tunnel logs to CloudWatch. See CloudWatch Log Options below for more details.
                         properties:
+                          bgpLogEnabled:
+                            description: Enable or disable BGP logging feature. The default is false.
+                            type: boolean
+                          bgpLogGroupArn:
+                            description: The Amazon Resource Name (ARN) of the CloudWatch log group to send BGP logs to.
+                            type: string
+                          bgpLogOutputFormat:
+                            description: 'Set BGP log format. Default format is json. Possible values are: json and text. The default is json.'
+                            type: string
                           logEnabled:
                             description: Enable or disable VPN tunnel logging feature. The default is false.
                             type: boolean
@@ -2094,6 +2175,15 @@ spec:
                       cloudwatchLogOptions:
                         description: Options for sending VPN tunnel logs to CloudWatch. See CloudWatch Log Options below for more details.
                         properties:
+                          bgpLogEnabled:
+                            description: Enable or disable BGP logging feature. The default is false.
+                            type: boolean
+                          bgpLogGroupArn:
+                            description: The Amazon Resource Name (ARN) of the CloudWatch log group to send BGP logs to.
+                            type: string
+                          bgpLogOutputFormat:
+                            description: 'Set BGP log format. Default format is json. Possible values are: json and text. The default is json.'
+                            type: string
                           logEnabled:
                             description: Enable or disable VPN tunnel logging feature. The default is false.
                             type: boolean
@@ -2176,6 +2266,9 @@ spec:
                   tunnel2StartupAction:
                     description: The action to take when the establishing the tunnel for the second VPN connection. By default, your customer gateway device must initiate the IKE negotiation and bring up the tunnel. Specify start for AWS to initiate the IKE negotiation. Valid values are add | start.
                     type: string
+                  tunnelBandwidth:
+                    description: Desired bandwidth specification for the VPN tunnel. Valid values are standard | large. standard supports up to 1.25 Gbps per tunnel, while large supports up to 5 Gbps per tunnel. Not supported when vpn_gateway_id is specified, or enable_acceleration is true.
+                    type: string
                   tunnelInsideIpVersion:
                     description: Indicate whether the VPN tunnels process IPv4 or IPv6 traffic. Valid values are ipv4 | ipv6. ipv6 Supports only EC2 Transit Gateway.
                     type: string
@@ -2255,6 +2348,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  vpnConcentratorId:
+                    description: ID of the VPN concentrator to associate with the VPN connection.
+                    type: string
                   vpnGatewayId:
                     description: The ID of the Virtual Private Gateway.
                     type: string
@@ -2559,6 +2655,15 @@ spec:
                       cloudwatchLogOptions:
                         description: Options for sending VPN tunnel logs to CloudWatch. See CloudWatch Log Options below for more details.
                         properties:
+                          bgpLogEnabled:
+                            description: Enable or disable BGP logging feature. The default is false.
+                            type: boolean
+                          bgpLogGroupArn:
+                            description: The Amazon Resource Name (ARN) of the CloudWatch log group to send BGP logs to.
+                            type: string
+                          bgpLogOutputFormat:
+                            description: 'Set BGP log format. Default format is json. Possible values are: json and text. The default is json.'
+                            type: string
                           logEnabled:
                             description: Enable or disable VPN tunnel logging feature. The default is false.
                             type: boolean
@@ -2668,6 +2773,15 @@ spec:
                       cloudwatchLogOptions:
                         description: Options for sending VPN tunnel logs to CloudWatch. See CloudWatch Log Options below for more details.
                         properties:
+                          bgpLogEnabled:
+                            description: Enable or disable BGP logging feature. The default is false.
+                            type: boolean
+                          bgpLogGroupArn:
+                            description: The Amazon Resource Name (ARN) of the CloudWatch log group to send BGP logs to.
+                            type: string
+                          bgpLogOutputFormat:
+                            description: 'Set BGP log format. Default format is json. Possible values are: json and text. The default is json.'
+                            type: string
                           logEnabled:
                             description: Enable or disable VPN tunnel logging feature. The default is false.
                             type: boolean
@@ -2750,6 +2864,9 @@ spec:
                   tunnel2StartupAction:
                     description: The action to take when the establishing the tunnel for the second VPN connection. By default, your customer gateway device must initiate the IKE negotiation and bring up the tunnel. Specify start for AWS to initiate the IKE negotiation. Valid values are add | start.
                     type: string
+                  tunnelBandwidth:
+                    description: Desired bandwidth specification for the VPN tunnel. Valid values are standard | large. standard supports up to 1.25 Gbps per tunnel, while large supports up to 5 Gbps per tunnel. Not supported when vpn_gateway_id is specified, or enable_acceleration is true.
+                    type: string
                   tunnelInsideIpVersion:
                     description: Indicate whether the VPN tunnels process IPv4 or IPv6 traffic. Valid values are ipv4 | ipv6. ipv6 Supports only EC2 Transit Gateway.
                     type: string
@@ -2829,6 +2946,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  vpnConcentratorId:
+                    description: ID of the VPN concentrator to associate with the VPN connection.
+                    type: string
                   vpnGatewayId:
                     description: The ID of the Virtual Private Gateway.
                     type: string
@@ -3119,6 +3239,15 @@ spec:
                       cloudwatchLogOptions:
                         description: Options for sending VPN tunnel logs to CloudWatch. See CloudWatch Log Options below for more details.
                         properties:
+                          bgpLogEnabled:
+                            description: Enable or disable BGP logging feature. The default is false.
+                            type: boolean
+                          bgpLogGroupArn:
+                            description: The Amazon Resource Name (ARN) of the CloudWatch log group to send BGP logs to.
+                            type: string
+                          bgpLogOutputFormat:
+                            description: 'Set BGP log format. Default format is json. Possible values are: json and text. The default is json.'
+                            type: string
                           logEnabled:
                             description: Enable or disable VPN tunnel logging feature. The default is false.
                             type: boolean
@@ -3226,6 +3355,15 @@ spec:
                       cloudwatchLogOptions:
                         description: Options for sending VPN tunnel logs to CloudWatch. See CloudWatch Log Options below for more details.
                         properties:
+                          bgpLogEnabled:
+                            description: Enable or disable BGP logging feature. The default is false.
+                            type: boolean
+                          bgpLogGroupArn:
+                            description: The Amazon Resource Name (ARN) of the CloudWatch log group to send BGP logs to.
+                            type: string
+                          bgpLogOutputFormat:
+                            description: 'Set BGP log format. Default format is json. Possible values are: json and text. The default is json.'
+                            type: string
                           logEnabled:
                             description: Enable or disable VPN tunnel logging feature. The default is false.
                             type: boolean
@@ -3294,6 +3432,9 @@ spec:
                   tunnel2VgwInsideAddress:
                     description: The RFC 6890 link-local address of the second VPN tunnel (VPN Gateway Side).
                     type: string
+                  tunnelBandwidth:
+                    description: Desired bandwidth specification for the VPN tunnel. Valid values are standard | large. standard supports up to 1.25 Gbps per tunnel, while large supports up to 5 Gbps per tunnel. Not supported when vpn_gateway_id is specified, or enable_acceleration is true.
+                    type: string
                   tunnelInsideIpVersion:
                     description: Indicate whether the VPN tunnels process IPv4 or IPv6 traffic. Valid values are ipv4 | ipv6. ipv6 Supports only EC2 Transit Gateway.
                     type: string
@@ -3324,6 +3465,9 @@ spec:
                           type: string
                       type: object
                     type: array
+                  vpnConcentratorId:
+                    description: ID of the VPN concentrator to associate with the VPN connection.
+                    type: string
                   vpnGatewayId:
                     description: The ID of the Virtual Private Gateway.
                     type: string

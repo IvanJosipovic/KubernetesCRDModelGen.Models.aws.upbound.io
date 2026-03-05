@@ -142,6 +142,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  enableAcceleratedRecovery:
+                    description: Boolean to indicate whether to enable accelerated recovery for the hosted zone. Defaults to false. Once set, switching to false requires explicitly specifying false rather than removing the argument.
+                    type: boolean
                   forceDestroy:
                     type: boolean
                   name:
@@ -343,6 +346,9 @@ spec:
                             type: string
                         type: object
                     type: object
+                  enableAcceleratedRecovery:
+                    description: Boolean to indicate whether to enable accelerated recovery for the hosted zone. Defaults to false. Once set, switching to false requires explicitly specifying false rather than removing the argument.
+                    type: boolean
                   forceDestroy:
                     type: boolean
                   name:
@@ -521,6 +527,9 @@ spec:
                   delegationSetId:
                     description: The ID of the reusable delegation set whose NS records you want to assign to the hosted zone. Conflicts with vpc as delegation sets can only be used for public zones.
                     type: string
+                  enableAcceleratedRecovery:
+                    description: Boolean to indicate whether to enable accelerated recovery for the hosted zone. Defaults to false. Once set, switching to false requires explicitly specifying false rather than removing the argument.
+                    type: boolean
                   forceDestroy:
                     type: boolean
                   id:

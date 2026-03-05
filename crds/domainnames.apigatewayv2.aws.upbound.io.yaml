@@ -182,6 +182,9 @@ spec:
                       Region where this resource will be managed. Defaults to the Region set in the provider configuration.
                       Region is the region you'd like your resource to be created in.
                     type: string
+                  routingMode:
+                    description: 'Mode to route traffic for the domain name. Valid values: API_MAPPING_ONLY, ROUTING_RULE_ONLY, ROUTING_RULE_THEN_API_MAPPING.'
+                    type: string
                   tags:
                     additionalProperties:
                       type: string
@@ -310,6 +313,9 @@ spec:
                           type: string
                       type: object
                     type: array
+                  routingMode:
+                    description: 'Mode to route traffic for the domain name. Valid values: API_MAPPING_ONLY, ROUTING_RULE_ONLY, ROUTING_RULE_THEN_API_MAPPING.'
+                    type: string
                   tags:
                     additionalProperties:
                       type: string
@@ -463,6 +469,9 @@ spec:
                     description: |-
                       Region where this resource will be managed. Defaults to the Region set in the provider configuration.
                       Region is the region you'd like your resource to be created in.
+                    type: string
+                  routingMode:
+                    description: 'Mode to route traffic for the domain name. Valid values: API_MAPPING_ONLY, ROUTING_RULE_ONLY, ROUTING_RULE_THEN_API_MAPPING.'
                     type: string
                   tags:
                     additionalProperties:
@@ -697,6 +706,9 @@ spec:
                       Region where this resource will be managed. Defaults to the Region set in the provider configuration.
                       Region is the region you'd like your resource to be created in.
                     type: string
+                  routingMode:
+                    description: 'Mode to route traffic for the domain name. Valid values: API_MAPPING_ONLY, ROUTING_RULE_ONLY, ROUTING_RULE_THEN_API_MAPPING.'
+                    type: string
                   tags:
                     additionalProperties:
                       type: string
@@ -821,6 +833,9 @@ spec:
                         description: Version of the S3 object that contains the truststore. To specify a version, you must have versioning enabled for the S3 bucket.
                         type: string
                     type: object
+                  routingMode:
+                    description: 'Mode to route traffic for the domain name. Valid values: API_MAPPING_ONLY, ROUTING_RULE_ONLY, ROUTING_RULE_THEN_API_MAPPING.'
+                    type: string
                   tags:
                     additionalProperties:
                       type: string
@@ -970,6 +985,9 @@ spec:
                     description: |-
                       Region where this resource will be managed. Defaults to the Region set in the provider configuration.
                       Region is the region you'd like your resource to be created in.
+                    type: string
+                  routingMode:
+                    description: 'Mode to route traffic for the domain name. Valid values: API_MAPPING_ONLY, ROUTING_RULE_ONLY, ROUTING_RULE_THEN_API_MAPPING.'
                     type: string
                   tags:
                     additionalProperties:

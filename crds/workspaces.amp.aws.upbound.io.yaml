@@ -155,7 +155,7 @@ spec:
                     items:
                       properties:
                         logGroupArn:
-                          description: The ARN of the CloudWatch log group to which the vended log data will be published. This log group must exist.
+                          description: The ARN of the CloudWatch log group to which the vended log data will be published. This log group must exist. The ARN must end with :*
                           type: string
                       type: object
                     type: array
@@ -270,7 +270,7 @@ spec:
                     items:
                       properties:
                         logGroupArn:
-                          description: The ARN of the CloudWatch log group to which the vended log data will be published. This log group must exist.
+                          description: The ARN of the CloudWatch log group to which the vended log data will be published. This log group must exist. The ARN must end with :*
                           type: string
                       type: object
                     type: array
@@ -389,7 +389,7 @@ spec:
                     items:
                       properties:
                         logGroupArn:
-                          description: The ARN of the CloudWatch log group to which the vended log data will be published. This log group must exist.
+                          description: The ARN of the CloudWatch log group to which the vended log data will be published. This log group must exist. The ARN must end with :*
                           type: string
                       type: object
                     type: array
@@ -610,7 +610,7 @@ spec:
                     description: Logging configuration for the workspace. See Logging Configuration below for details.
                     properties:
                       logGroupArn:
-                        description: The ARN of the CloudWatch log group to which the vended log data will be published. This log group must exist.
+                        description: The ARN of the CloudWatch log group to which the vended log data will be published. This log group must exist. The ARN must end with :*
                         type: string
                     type: object
                   region:
@@ -723,7 +723,7 @@ spec:
                     description: Logging configuration for the workspace. See Logging Configuration below for details.
                     properties:
                       logGroupArn:
-                        description: The ARN of the CloudWatch log group to which the vended log data will be published. This log group must exist.
+                        description: The ARN of the CloudWatch log group to which the vended log data will be published. This log group must exist. The ARN must end with :*
                         type: string
                     type: object
                   tags:
@@ -840,7 +840,7 @@ spec:
                     description: Logging configuration for the workspace. See Logging Configuration below for details.
                     properties:
                       logGroupArn:
-                        description: The ARN of the CloudWatch log group to which the vended log data will be published. This log group must exist.
+                        description: The ARN of the CloudWatch log group to which the vended log data will be published. This log group must exist. The ARN must end with :*
                         type: string
                     type: object
                   prometheusEndpoint:

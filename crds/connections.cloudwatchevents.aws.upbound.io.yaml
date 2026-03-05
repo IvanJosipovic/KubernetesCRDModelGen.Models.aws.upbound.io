@@ -127,6 +127,21 @@ spec:
                                 type: string
                             type: object
                           type: array
+                        connectivityParameters:
+                          description: Parameters used for oauth with private API. Documented below.
+                          items:
+                            properties:
+                              resourceParameters:
+                                description: The parameters for EventBridge to use when invoking the resource endpoint. Documented below.
+                                items:
+                                  properties:
+                                    resourceConfigurationArn:
+                                      description: ARN of the Amazon VPC Lattice resource configuration for the resource endpoint.
+                                      type: string
+                                  type: object
+                                type: array
+                            type: object
+                          type: array
                         invocationHttpParameters:
                           description: Invocation Http Parameters are additional credentials used to sign each Invocation of the ApiDestination created from this Connection. If the ApiDestination Rule Target has additional HttpParameters, the values will be merged together, with the Connection Invocation Http Parameters taking precedence. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.
                           items:
@@ -529,6 +544,21 @@ spec:
                                 type: string
                             required:
                             - passwordSecretRef
+                            type: object
+                          type: array
+                        connectivityParameters:
+                          description: Parameters used for oauth with private API. Documented below.
+                          items:
+                            properties:
+                              resourceParameters:
+                                description: The parameters for EventBridge to use when invoking the resource endpoint. Documented below.
+                                items:
+                                  properties:
+                                    resourceConfigurationArn:
+                                      description: ARN of the Amazon VPC Lattice resource configuration for the resource endpoint.
+                                      type: string
+                                  type: object
+                                type: array
                             type: object
                           type: array
                         invocationHttpParameters:
@@ -978,6 +1008,24 @@ spec:
                                 type: string
                             type: object
                           type: array
+                        connectivityParameters:
+                          description: Parameters used for oauth with private API. Documented below.
+                          items:
+                            properties:
+                              resourceParameters:
+                                description: The parameters for EventBridge to use when invoking the resource endpoint. Documented below.
+                                items:
+                                  properties:
+                                    resourceAssociationArn:
+                                      description: The Amazon Resource Name (ARN) of the connection.
+                                      type: string
+                                    resourceConfigurationArn:
+                                      description: ARN of the Amazon VPC Lattice resource configuration for the resource endpoint.
+                                      type: string
+                                  type: object
+                                type: array
+                            type: object
+                          type: array
                         invocationHttpParameters:
                           description: Invocation Http Parameters are additional credentials used to sign each Invocation of the ApiDestination created from this Connection. If the ApiDestination Rule Target has additional HttpParameters, the values will be merged together, with the Connection Invocation Http Parameters taking precedence. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.
                           items:
@@ -1286,6 +1334,17 @@ spec:
                           username:
                             description: A username for the authorization.
                             type: string
+                        type: object
+                      connectivityParameters:
+                        description: Parameters used for oauth with private API. Documented below.
+                        properties:
+                          resourceParameters:
+                            description: The parameters for EventBridge to use when invoking the resource endpoint. Documented below.
+                            properties:
+                              resourceConfigurationArn:
+                                description: ARN of the Amazon VPC Lattice resource configuration for the resource endpoint.
+                                type: string
+                            type: object
                         type: object
                       invocationHttpParameters:
                         description: Invocation Http Parameters are additional credentials used to sign each Invocation of the ApiDestination created from this Connection. If the ApiDestination Rule Target has additional HttpParameters, the values will be merged together, with the Connection Invocation Http Parameters taking precedence. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.
@@ -1672,6 +1731,17 @@ spec:
                             type: string
                         required:
                         - passwordSecretRef
+                        type: object
+                      connectivityParameters:
+                        description: Parameters used for oauth with private API. Documented below.
+                        properties:
+                          resourceParameters:
+                            description: The parameters for EventBridge to use when invoking the resource endpoint. Documented below.
+                            properties:
+                              resourceConfigurationArn:
+                                description: ARN of the Amazon VPC Lattice resource configuration for the resource endpoint.
+                                type: string
+                            type: object
                         type: object
                       invocationHttpParameters:
                         description: Invocation Http Parameters are additional credentials used to sign each Invocation of the ApiDestination created from this Connection. If the ApiDestination Rule Target has additional HttpParameters, the values will be merged together, with the Connection Invocation Http Parameters taking precedence. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.
@@ -2101,6 +2171,20 @@ spec:
                           username:
                             description: A username for the authorization.
                             type: string
+                        type: object
+                      connectivityParameters:
+                        description: Parameters used for oauth with private API. Documented below.
+                        properties:
+                          resourceParameters:
+                            description: The parameters for EventBridge to use when invoking the resource endpoint. Documented below.
+                            properties:
+                              resourceAssociationArn:
+                                description: The Amazon Resource Name (ARN) of the connection.
+                                type: string
+                              resourceConfigurationArn:
+                                description: ARN of the Amazon VPC Lattice resource configuration for the resource endpoint.
+                                type: string
+                            type: object
                         type: object
                       invocationHttpParameters:
                         description: Invocation Http Parameters are additional credentials used to sign each Invocation of the ApiDestination created from this Connection. If the ApiDestination Rule Target has additional HttpParameters, the values will be merged together, with the Connection Invocation Http Parameters taking precedence. Secret values are stored and managed by AWS Secrets Manager. A maximum of 1 are allowed. Documented below.
