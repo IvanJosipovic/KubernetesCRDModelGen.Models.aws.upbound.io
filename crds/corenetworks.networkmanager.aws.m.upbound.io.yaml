@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networkmanager.aws.m.upbound.io
   names:
+    kind: CoreNetwork
     categories:
     - crossplane
     - managed
     - aws
-    kind: CoreNetwork
     listKind: CoreNetworkList
     plural: corenetworks
     singular: corenetwork

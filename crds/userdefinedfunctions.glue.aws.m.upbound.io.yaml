@@ -7,11 +7,11 @@ metadata:
 spec:
   group: glue.aws.m.upbound.io
   names:
+    kind: UserDefinedFunction
     categories:
     - crossplane
     - managed
     - aws
-    kind: UserDefinedFunction
     listKind: UserDefinedFunctionList
     plural: userdefinedfunctions
     singular: userdefinedfunction

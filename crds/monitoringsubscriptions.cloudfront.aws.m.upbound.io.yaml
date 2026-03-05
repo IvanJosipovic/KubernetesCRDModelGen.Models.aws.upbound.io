@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudfront.aws.m.upbound.io
   names:
+    kind: MonitoringSubscription
     categories:
     - crossplane
     - managed
     - aws
-    kind: MonitoringSubscription
     listKind: MonitoringSubscriptionList
     plural: monitoringsubscriptions
     singular: monitoringsubscription

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: grafana.aws.upbound.io
   names:
+    kind: LicenseAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: LicenseAssociation
     listKind: LicenseAssociationList
     plural: licenseassociations
     singular: licenseassociation

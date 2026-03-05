@@ -7,11 +7,11 @@ metadata:
 spec:
   group: eks.aws.m.upbound.io
   names:
+    kind: AccessPolicyAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: AccessPolicyAssociation
     listKind: AccessPolicyAssociationList
     plural: accesspolicyassociations
     singular: accesspolicyassociation

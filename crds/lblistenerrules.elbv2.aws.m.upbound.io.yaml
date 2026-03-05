@@ -7,11 +7,11 @@ metadata:
 spec:
   group: elbv2.aws.m.upbound.io
   names:
+    kind: LBListenerRule
     categories:
     - crossplane
     - managed
     - aws
-    kind: LBListenerRule
     listKind: LBListenerRuleList
     plural: lblistenerrules
     singular: lblistenerrule

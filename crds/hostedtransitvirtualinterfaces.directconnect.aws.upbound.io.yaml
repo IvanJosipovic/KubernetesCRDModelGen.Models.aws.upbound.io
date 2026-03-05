@@ -7,11 +7,11 @@ metadata:
 spec:
   group: directconnect.aws.upbound.io
   names:
+    kind: HostedTransitVirtualInterface
     categories:
     - crossplane
     - managed
     - aws
-    kind: HostedTransitVirtualInterface
     listKind: HostedTransitVirtualInterfaceList
     plural: hostedtransitvirtualinterfaces
     singular: hostedtransitvirtualinterface

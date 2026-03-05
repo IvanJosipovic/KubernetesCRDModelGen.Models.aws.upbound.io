@@ -7,11 +7,11 @@ metadata:
 spec:
   group: securityhub.aws.m.upbound.io
   names:
+    kind: Insight
     categories:
     - crossplane
     - managed
     - aws
-    kind: Insight
     listKind: InsightList
     plural: insights
     singular: insight

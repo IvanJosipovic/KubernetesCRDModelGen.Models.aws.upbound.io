@@ -7,11 +7,11 @@ metadata:
 spec:
   group: signer.aws.upbound.io
   names:
+    kind: SigningJob
     categories:
     - crossplane
     - managed
     - aws
-    kind: SigningJob
     listKind: SigningJobList
     plural: signingjobs
     singular: signingjob

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: waf.aws.m.upbound.io
   names:
+    kind: SizeConstraintSet
     categories:
     - crossplane
     - managed
     - aws
-    kind: SizeConstraintSet
     listKind: SizeConstraintSetList
     plural: sizeconstraintsets
     singular: sizeconstraintset

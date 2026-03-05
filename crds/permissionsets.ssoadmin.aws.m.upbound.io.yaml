@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ssoadmin.aws.m.upbound.io
   names:
+    kind: PermissionSet
     categories:
     - crossplane
     - managed
     - aws
-    kind: PermissionSet
     listKind: PermissionSetList
     plural: permissionsets
     singular: permissionset

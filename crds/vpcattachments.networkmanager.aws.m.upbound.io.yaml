@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networkmanager.aws.m.upbound.io
   names:
+    kind: VPCAttachment
     categories:
     - crossplane
     - managed
     - aws
-    kind: VPCAttachment
     listKind: VPCAttachmentList
     plural: vpcattachments
     singular: vpcattachment

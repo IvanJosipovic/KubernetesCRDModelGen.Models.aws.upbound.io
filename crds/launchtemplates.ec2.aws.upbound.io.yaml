@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: LaunchTemplate
     categories:
     - crossplane
     - managed
     - aws
-    kind: LaunchTemplate
     listKind: LaunchTemplateList
     plural: launchtemplates
     singular: launchtemplate

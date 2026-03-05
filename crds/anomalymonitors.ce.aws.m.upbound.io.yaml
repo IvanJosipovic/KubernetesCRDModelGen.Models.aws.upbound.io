@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ce.aws.m.upbound.io
   names:
+    kind: AnomalyMonitor
     categories:
     - crossplane
     - managed
     - aws
-    kind: AnomalyMonitor
     listKind: AnomalyMonitorList
     plural: anomalymonitors
     singular: anomalymonitor

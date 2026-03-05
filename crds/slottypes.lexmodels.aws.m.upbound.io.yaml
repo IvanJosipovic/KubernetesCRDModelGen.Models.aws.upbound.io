@@ -7,11 +7,11 @@ metadata:
 spec:
   group: lexmodels.aws.m.upbound.io
   names:
+    kind: SlotType
     categories:
     - crossplane
     - managed
     - aws
-    kind: SlotType
     listKind: SlotTypeList
     plural: slottypes
     singular: slottype

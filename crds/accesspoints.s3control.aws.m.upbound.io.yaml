@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3control.aws.m.upbound.io
   names:
+    kind: AccessPoint
     categories:
     - crossplane
     - managed
     - aws
-    kind: AccessPoint
     listKind: AccessPointList
     plural: accesspoints
     singular: accesspoint

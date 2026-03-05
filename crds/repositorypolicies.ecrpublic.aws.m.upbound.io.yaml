@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ecrpublic.aws.m.upbound.io
   names:
+    kind: RepositoryPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: RepositoryPolicy
     listKind: RepositoryPolicyList
     plural: repositorypolicies
     singular: repositorypolicy

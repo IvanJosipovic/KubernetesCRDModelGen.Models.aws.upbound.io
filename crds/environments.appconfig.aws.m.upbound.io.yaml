@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appconfig.aws.m.upbound.io
   names:
+    kind: Environment
     categories:
     - crossplane
     - managed
     - aws
-    kind: Environment
     listKind: EnvironmentList
     plural: environments
     singular: environment

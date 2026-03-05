@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudformation.aws.m.upbound.io
   names:
+    kind: StackSetInstance
     categories:
     - crossplane
     - managed
     - aws
-    kind: StackSetInstance
     listKind: StackSetInstanceList
     plural: stacksetinstances
     singular: stacksetinstance

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: backup.aws.m.upbound.io
   names:
+    kind: VaultNotifications
     categories:
     - crossplane
     - managed
     - aws
-    kind: VaultNotifications
     listKind: VaultNotificationsList
     plural: vaultnotifications
     singular: vaultnotifications

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: verifiedaccess.aws.upbound.io
   names:
+    kind: TrustProvider
     categories:
     - crossplane
     - managed
     - aws
-    kind: TrustProvider
     listKind: TrustProviderList
     plural: trustproviders
     singular: trustprovider

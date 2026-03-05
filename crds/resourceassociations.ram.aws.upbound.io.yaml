@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ram.aws.upbound.io
   names:
+    kind: ResourceAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: ResourceAssociation
     listKind: ResourceAssociationList
     plural: resourceassociations
     singular: resourceassociation

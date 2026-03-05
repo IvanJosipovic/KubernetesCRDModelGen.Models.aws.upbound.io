@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appstream.aws.m.upbound.io
   names:
+    kind: FleetStackAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: FleetStackAssociation
     listKind: FleetStackAssociationList
     plural: fleetstackassociations
     singular: fleetstackassociation

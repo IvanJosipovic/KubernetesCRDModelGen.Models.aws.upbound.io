@@ -7,11 +7,11 @@ metadata:
 spec:
   group: amp.aws.m.upbound.io
   names:
+    kind: AlertManagerDefinition
     categories:
     - crossplane
     - managed
     - aws
-    kind: AlertManagerDefinition
     listKind: AlertManagerDefinitionList
     plural: alertmanagerdefinitions
     singular: alertmanagerdefinition

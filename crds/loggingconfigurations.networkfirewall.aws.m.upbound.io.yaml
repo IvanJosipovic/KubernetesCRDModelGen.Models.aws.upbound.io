@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networkfirewall.aws.m.upbound.io
   names:
+    kind: LoggingConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: LoggingConfiguration
     listKind: LoggingConfigurationList
     plural: loggingconfigurations
     singular: loggingconfiguration

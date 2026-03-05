@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appstream.aws.upbound.io
   names:
+    kind: DirectoryConfig
     categories:
     - crossplane
     - managed
     - aws
-    kind: DirectoryConfig
     listKind: DirectoryConfigList
     plural: directoryconfigs
     singular: directoryconfig

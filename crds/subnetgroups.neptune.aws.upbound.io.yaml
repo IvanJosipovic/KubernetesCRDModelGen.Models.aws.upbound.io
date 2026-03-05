@@ -7,11 +7,11 @@ metadata:
 spec:
   group: neptune.aws.upbound.io
   names:
+    kind: SubnetGroup
     categories:
     - crossplane
     - managed
     - aws
-    kind: SubnetGroup
     listKind: SubnetGroupList
     plural: subnetgroups
     singular: subnetgroup

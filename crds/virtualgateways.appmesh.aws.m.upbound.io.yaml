@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appmesh.aws.m.upbound.io
   names:
+    kind: VirtualGateway
     categories:
     - crossplane
     - managed
     - aws
-    kind: VirtualGateway
     listKind: VirtualGatewayList
     plural: virtualgateways
     singular: virtualgateway

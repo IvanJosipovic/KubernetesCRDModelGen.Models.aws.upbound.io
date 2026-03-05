@@ -7,11 +7,11 @@ metadata:
 spec:
   group: acm.aws.upbound.io
   names:
+    kind: CertificateValidation
     categories:
     - crossplane
     - managed
     - aws
-    kind: CertificateValidation
     listKind: CertificateValidationList
     plural: certificatevalidations
     singular: certificatevalidation

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: batch.aws.upbound.io
   names:
+    kind: SchedulingPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: SchedulingPolicy
     listKind: SchedulingPolicyList
     plural: schedulingpolicies
     singular: schedulingpolicy

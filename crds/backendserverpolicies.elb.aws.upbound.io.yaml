@@ -7,11 +7,11 @@ metadata:
 spec:
   group: elb.aws.upbound.io
   names:
+    kind: BackendServerPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: BackendServerPolicy
     listKind: BackendServerPolicyList
     plural: backendserverpolicies
     singular: backendserverpolicy

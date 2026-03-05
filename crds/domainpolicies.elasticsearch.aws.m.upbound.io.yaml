@@ -7,11 +7,11 @@ metadata:
 spec:
   group: elasticsearch.aws.m.upbound.io
   names:
+    kind: DomainPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: DomainPolicy
     listKind: DomainPolicyList
     plural: domainpolicies
     singular: domainpolicy

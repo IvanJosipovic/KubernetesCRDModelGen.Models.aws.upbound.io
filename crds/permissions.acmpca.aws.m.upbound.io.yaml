@@ -7,11 +7,11 @@ metadata:
 spec:
   group: acmpca.aws.m.upbound.io
   names:
+    kind: Permission
     categories:
     - crossplane
     - managed
     - aws
-    kind: Permission
     listKind: PermissionList
     plural: permissions
     singular: permission

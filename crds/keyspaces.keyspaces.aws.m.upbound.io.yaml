@@ -7,11 +7,11 @@ metadata:
 spec:
   group: keyspaces.aws.m.upbound.io
   names:
+    kind: Keyspace
     categories:
     - crossplane
     - managed
     - aws
-    kind: Keyspace
     listKind: KeyspaceList
     plural: keyspaces
     singular: keyspace

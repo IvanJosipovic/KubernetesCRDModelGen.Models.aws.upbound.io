@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cognitoidp.aws.m.upbound.io
   names:
+    kind: UserGroup
     categories:
     - crossplane
     - managed
     - aws
-    kind: UserGroup
     listKind: UserGroupList
     plural: usergroups
     singular: usergroup

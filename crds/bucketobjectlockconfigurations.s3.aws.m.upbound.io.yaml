@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3.aws.m.upbound.io
   names:
+    kind: BucketObjectLockConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: BucketObjectLockConfiguration
     listKind: BucketObjectLockConfigurationList
     plural: bucketobjectlockconfigurations
     singular: bucketobjectlockconfiguration

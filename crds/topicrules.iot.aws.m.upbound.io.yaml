@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iot.aws.m.upbound.io
   names:
+    kind: TopicRule
     categories:
     - crossplane
     - managed
     - aws
-    kind: TopicRule
     listKind: TopicRuleList
     plural: topicrules
     singular: topicrule

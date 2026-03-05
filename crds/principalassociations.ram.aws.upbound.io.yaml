@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ram.aws.upbound.io
   names:
+    kind: PrincipalAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: PrincipalAssociation
     listKind: PrincipalAssociationList
     plural: principalassociations
     singular: principalassociation

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudwatchevents.aws.upbound.io
   names:
+    kind: APIDestination
     categories:
     - crossplane
     - managed
     - aws
-    kind: APIDestination
     listKind: APIDestinationList
     plural: apidestinations
     singular: apidestination

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: elbv2.aws.m.upbound.io
   names:
+    kind: LBListenerCertificate
     categories:
     - crossplane
     - managed
     - aws
-    kind: LBListenerCertificate
     listKind: LBListenerCertificateList
     plural: lblistenercertificates
     singular: lblistenercertificate

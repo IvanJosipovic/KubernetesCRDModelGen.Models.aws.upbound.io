@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networkmanager.aws.m.upbound.io
   names:
+    kind: ConnectAttachment
     categories:
     - crossplane
     - managed
     - aws
-    kind: ConnectAttachment
     listKind: ConnectAttachmentList
     plural: connectattachments
     singular: connectattachment

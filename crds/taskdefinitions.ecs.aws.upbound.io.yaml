@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ecs.aws.upbound.io
   names:
+    kind: TaskDefinition
     categories:
     - crossplane
     - managed
     - aws
-    kind: TaskDefinition
     listKind: TaskDefinitionList
     plural: taskdefinitions
     singular: taskdefinition

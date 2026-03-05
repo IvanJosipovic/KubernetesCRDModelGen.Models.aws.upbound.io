@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigateway.aws.m.upbound.io
   names:
+    kind: MethodSettings
     categories:
     - crossplane
     - managed
     - aws
-    kind: MethodSettings
     listKind: MethodSettingsList
     plural: methodsettings
     singular: methodsettings

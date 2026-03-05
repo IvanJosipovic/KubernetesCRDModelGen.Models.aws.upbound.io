@@ -7,11 +7,11 @@ metadata:
 spec:
   group: gamelift.aws.m.upbound.io
   names:
+    kind: GameSessionQueue
     categories:
     - crossplane
     - managed
     - aws
-    kind: GameSessionQueue
     listKind: GameSessionQueueList
     plural: gamesessionqueues
     singular: gamesessionqueue

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: SpotInstanceRequest
     categories:
     - crossplane
     - managed
     - aws
-    kind: SpotInstanceRequest
     listKind: SpotInstanceRequestList
     plural: spotinstancerequests
     singular: spotinstancerequest

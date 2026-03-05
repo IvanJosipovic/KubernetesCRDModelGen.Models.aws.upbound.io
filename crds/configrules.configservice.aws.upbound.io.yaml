@@ -7,11 +7,11 @@ metadata:
 spec:
   group: configservice.aws.upbound.io
   names:
+    kind: ConfigRule
     categories:
     - crossplane
     - managed
     - aws
-    kind: ConfigRule
     listKind: ConfigRuleList
     plural: configrules
     singular: configrule

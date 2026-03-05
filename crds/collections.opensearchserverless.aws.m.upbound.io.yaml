@@ -7,11 +7,11 @@ metadata:
 spec:
   group: opensearchserverless.aws.m.upbound.io
   names:
+    kind: Collection
     categories:
     - crossplane
     - managed
     - aws
-    kind: Collection
     listKind: CollectionList
     plural: collections
     singular: collection

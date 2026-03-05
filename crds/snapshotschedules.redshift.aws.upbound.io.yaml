@@ -7,11 +7,11 @@ metadata:
 spec:
   group: redshift.aws.upbound.io
   names:
+    kind: SnapshotSchedule
     categories:
     - crossplane
     - managed
     - aws
-    kind: SnapshotSchedule
     listKind: SnapshotScheduleList
     plural: snapshotschedules
     singular: snapshotschedule

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: redshiftserverless.aws.m.upbound.io
   names:
+    kind: RedshiftServerlessNamespace
     categories:
     - crossplane
     - managed
     - aws
-    kind: RedshiftServerlessNamespace
     listKind: RedshiftServerlessNamespaceList
     plural: redshiftserverlessnamespaces
     singular: redshiftserverlessnamespace

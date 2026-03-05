@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networkmanager.aws.m.upbound.io
   names:
+    kind: Site
     categories:
     - crossplane
     - managed
     - aws
-    kind: Site
     listKind: SiteList
     plural: sites
     singular: site

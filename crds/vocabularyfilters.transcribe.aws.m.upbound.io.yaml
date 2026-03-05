@@ -7,11 +7,11 @@ metadata:
 spec:
   group: transcribe.aws.m.upbound.io
   names:
+    kind: VocabularyFilter
     categories:
     - crossplane
     - managed
     - aws
-    kind: VocabularyFilter
     listKind: VocabularyFilterList
     plural: vocabularyfilters
     singular: vocabularyfilter

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3.aws.m.upbound.io
   names:
+    kind: BucketInventory
     categories:
     - crossplane
     - managed
     - aws
-    kind: BucketInventory
     listKind: BucketInventoryList
     plural: bucketinventories
     singular: bucketinventory

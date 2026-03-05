@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networkfirewall.aws.upbound.io
   names:
+    kind: RuleGroup
     categories:
     - crossplane
     - managed
     - aws
-    kind: RuleGroup
     listKind: RuleGroupList
     plural: rulegroups
     singular: rulegroup

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: acmpca.aws.upbound.io
   names:
+    kind: CertificateAuthorityCertificate
     categories:
     - crossplane
     - managed
     - aws
-    kind: CertificateAuthorityCertificate
     listKind: CertificateAuthorityCertificateList
     plural: certificateauthoritycertificates
     singular: certificateauthoritycertificate

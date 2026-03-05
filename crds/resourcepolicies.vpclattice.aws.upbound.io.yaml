@@ -7,11 +7,11 @@ metadata:
 spec:
   group: vpclattice.aws.upbound.io
   names:
+    kind: ResourcePolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: ResourcePolicy
     listKind: ResourcePolicyList
     plural: resourcepolicies
     singular: resourcepolicy

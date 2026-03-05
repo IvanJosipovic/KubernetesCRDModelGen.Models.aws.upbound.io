@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: VPNGatewayRoutePropagation
     categories:
     - crossplane
     - managed
     - aws
-    kind: VPNGatewayRoutePropagation
     listKind: VPNGatewayRoutePropagationList
     plural: vpngatewayroutepropagations
     singular: vpngatewayroutepropagation

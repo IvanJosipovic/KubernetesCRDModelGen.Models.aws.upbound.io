@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appmesh.aws.m.upbound.io
   names:
+    kind: Mesh
     categories:
     - crossplane
     - managed
     - aws
-    kind: Mesh
     listKind: MeshList
     plural: meshes
     singular: mesh

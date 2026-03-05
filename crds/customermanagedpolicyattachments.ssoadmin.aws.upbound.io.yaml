@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ssoadmin.aws.upbound.io
   names:
+    kind: CustomerManagedPolicyAttachment
     categories:
     - crossplane
     - managed
     - aws
-    kind: CustomerManagedPolicyAttachment
     listKind: CustomerManagedPolicyAttachmentList
     plural: customermanagedpolicyattachments
     singular: customermanagedpolicyattachment

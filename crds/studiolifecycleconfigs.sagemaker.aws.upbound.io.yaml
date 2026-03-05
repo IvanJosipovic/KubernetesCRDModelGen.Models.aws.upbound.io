@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sagemaker.aws.upbound.io
   names:
+    kind: StudioLifecycleConfig
     categories:
     - crossplane
     - managed
     - aws
-    kind: StudioLifecycleConfig
     listKind: StudioLifecycleConfigList
     plural: studiolifecycleconfigs
     singular: studiolifecycleconfig

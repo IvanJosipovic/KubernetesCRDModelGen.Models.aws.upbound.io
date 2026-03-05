@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigateway.aws.upbound.io
   names:
+    kind: ClientCertificate
     categories:
     - crossplane
     - managed
     - aws
-    kind: ClientCertificate
     listKind: ClientCertificateList
     plural: clientcertificates
     singular: clientcertificate

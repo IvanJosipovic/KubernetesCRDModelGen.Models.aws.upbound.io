@@ -7,11 +7,11 @@ metadata:
 spec:
   group: elasticache.aws.upbound.io
   names:
+    kind: ReplicationGroup
     categories:
     - crossplane
     - managed
     - aws
-    kind: ReplicationGroup
     listKind: ReplicationGroupList
     plural: replicationgroups
     singular: replicationgroup

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apprunner.aws.m.upbound.io
   names:
+    kind: VPCConnector
     categories:
     - crossplane
     - managed
     - aws
-    kind: VPCConnector
     listKind: VPCConnectorList
     plural: vpcconnectors
     singular: vpcconnector

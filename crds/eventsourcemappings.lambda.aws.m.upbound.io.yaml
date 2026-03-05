@@ -7,11 +7,11 @@ metadata:
 spec:
   group: lambda.aws.m.upbound.io
   names:
+    kind: EventSourceMapping
     categories:
     - crossplane
     - managed
     - aws
-    kind: EventSourceMapping
     listKind: EventSourceMappingList
     plural: eventsourcemappings
     singular: eventsourcemapping

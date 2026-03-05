@@ -7,11 +7,11 @@ metadata:
 spec:
   group: bedrockagent.aws.upbound.io
   names:
+    kind: Agent
     categories:
     - crossplane
     - managed
     - aws
-    kind: Agent
     listKind: AgentList
     plural: agents
     singular: agent

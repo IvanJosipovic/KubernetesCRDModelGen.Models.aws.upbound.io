@@ -7,11 +7,11 @@ metadata:
 spec:
   group: grafana.aws.upbound.io
   names:
+    kind: WorkspaceAPIKey
     categories:
     - crossplane
     - managed
     - aws
-    kind: WorkspaceAPIKey
     listKind: WorkspaceAPIKeyList
     plural: workspaceapikeys
     singular: workspaceapikey

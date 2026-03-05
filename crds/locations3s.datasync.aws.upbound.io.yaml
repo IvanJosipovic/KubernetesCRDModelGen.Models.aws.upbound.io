@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datasync.aws.upbound.io
   names:
+    kind: LocationS3
     categories:
     - crossplane
     - managed
     - aws
-    kind: LocationS3
     listKind: LocationS3List
     plural: locations3s
     singular: locations3

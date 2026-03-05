@@ -7,11 +7,11 @@ metadata:
 spec:
   group: rds.aws.m.upbound.io
   names:
+    kind: DBSnapshotCopy
     categories:
     - crossplane
     - managed
     - aws
-    kind: DBSnapshotCopy
     listKind: DBSnapshotCopyList
     plural: dbsnapshotcopies
     singular: dbsnapshotcopy

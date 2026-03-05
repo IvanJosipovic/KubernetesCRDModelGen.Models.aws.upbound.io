@@ -7,11 +7,11 @@ metadata:
 spec:
   group: imagebuilder.aws.m.upbound.io
   names:
+    kind: DistributionConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: DistributionConfiguration
     listKind: DistributionConfigurationList
     plural: distributionconfigurations
     singular: distributionconfiguration

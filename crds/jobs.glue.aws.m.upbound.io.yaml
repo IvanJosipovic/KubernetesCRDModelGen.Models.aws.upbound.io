@@ -7,11 +7,11 @@ metadata:
 spec:
   group: glue.aws.m.upbound.io
   names:
+    kind: Job
     categories:
     - crossplane
     - managed
     - aws
-    kind: Job
     listKind: JobList
     plural: jobs
     singular: job

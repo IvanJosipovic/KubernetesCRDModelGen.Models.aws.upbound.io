@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3.aws.upbound.io
   names:
+    kind: BucketOwnershipControls
     categories:
     - crossplane
     - managed
     - aws
-    kind: BucketOwnershipControls
     listKind: BucketOwnershipControlsList
     plural: bucketownershipcontrols
     singular: bucketownershipcontrols

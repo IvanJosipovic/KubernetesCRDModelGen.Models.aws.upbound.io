@@ -7,11 +7,11 @@ metadata:
 spec:
   group: transcribe.aws.m.upbound.io
   names:
+    kind: LanguageModel
     categories:
     - crossplane
     - managed
     - aws
-    kind: LanguageModel
     listKind: LanguageModelList
     plural: languagemodels
     singular: languagemodel

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: elb.aws.m.upbound.io
   names:
+    kind: ListenerPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: ListenerPolicy
     listKind: ListenerPolicyList
     plural: listenerpolicies
     singular: listenerpolicy

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: glacier.aws.m.upbound.io
   names:
+    kind: Vault
     categories:
     - crossplane
     - managed
     - aws
-    kind: Vault
     listKind: VaultList
     plural: vaults
     singular: vault

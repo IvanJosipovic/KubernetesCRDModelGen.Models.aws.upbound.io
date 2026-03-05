@@ -7,11 +7,11 @@ metadata:
 spec:
   group: route53recoverycontrolconfig.aws.m.upbound.io
   names:
+    kind: ControlPanel
     categories:
     - crossplane
     - managed
     - aws
-    kind: ControlPanel
     listKind: ControlPanelList
     plural: controlpanels
     singular: controlpanel

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: connect.aws.upbound.io
   names:
+    kind: BotAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: BotAssociation
     listKind: BotAssociationList
     plural: botassociations
     singular: botassociation

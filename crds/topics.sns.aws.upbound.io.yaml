@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sns.aws.upbound.io
   names:
+    kind: Topic
     categories:
     - crossplane
     - managed
     - aws
-    kind: Topic
     listKind: TopicList
     plural: topics
     singular: topic

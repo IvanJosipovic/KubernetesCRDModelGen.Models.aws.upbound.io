@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: VPCEndpointServiceAllowedPrincipal
     categories:
     - crossplane
     - managed
     - aws
-    kind: VPCEndpointServiceAllowedPrincipal
     listKind: VPCEndpointServiceAllowedPrincipalList
     plural: vpcendpointserviceallowedprincipals
     singular: vpcendpointserviceallowedprincipal

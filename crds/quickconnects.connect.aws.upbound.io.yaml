@@ -7,11 +7,11 @@ metadata:
 spec:
   group: connect.aws.upbound.io
   names:
+    kind: QuickConnect
     categories:
     - crossplane
     - managed
     - aws
-    kind: QuickConnect
     listKind: QuickConnectList
     plural: quickconnects
     singular: quickconnect

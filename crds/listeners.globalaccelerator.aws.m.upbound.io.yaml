@@ -7,11 +7,11 @@ metadata:
 spec:
   group: globalaccelerator.aws.m.upbound.io
   names:
+    kind: Listener
     categories:
     - crossplane
     - managed
     - aws
-    kind: Listener
     listKind: ListenerList
     plural: listeners
     singular: listener

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigatewayv2.aws.upbound.io
   names:
+    kind: RouteResponse
     categories:
     - crossplane
     - managed
     - aws
-    kind: RouteResponse
     listKind: RouteResponseList
     plural: routeresponses
     singular: routeresponse

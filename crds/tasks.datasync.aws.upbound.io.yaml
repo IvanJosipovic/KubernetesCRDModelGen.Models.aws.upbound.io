@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datasync.aws.upbound.io
   names:
+    kind: Task
     categories:
     - crossplane
     - managed
     - aws
-    kind: Task
     listKind: TaskList
     plural: tasks
     singular: task

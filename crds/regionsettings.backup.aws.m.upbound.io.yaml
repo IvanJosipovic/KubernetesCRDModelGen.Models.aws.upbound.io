@@ -7,11 +7,11 @@ metadata:
 spec:
   group: backup.aws.m.upbound.io
   names:
+    kind: RegionSettings
     categories:
     - crossplane
     - managed
     - aws
-    kind: RegionSettings
     listKind: RegionSettingsList
     plural: regionsettings
     singular: regionsettings

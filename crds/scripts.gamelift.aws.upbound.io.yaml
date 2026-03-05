@@ -7,11 +7,11 @@ metadata:
 spec:
   group: gamelift.aws.upbound.io
   names:
+    kind: Script
     categories:
     - crossplane
     - managed
     - aws
-    kind: Script
     listKind: ScriptList
     plural: scripts
     singular: script

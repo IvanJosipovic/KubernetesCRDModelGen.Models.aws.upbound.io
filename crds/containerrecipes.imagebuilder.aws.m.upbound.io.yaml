@@ -7,11 +7,11 @@ metadata:
 spec:
   group: imagebuilder.aws.m.upbound.io
   names:
+    kind: ContainerRecipe
     categories:
     - crossplane
     - managed
     - aws
-    kind: ContainerRecipe
     listKind: ContainerRecipeList
     plural: containerrecipes
     singular: containerrecipe

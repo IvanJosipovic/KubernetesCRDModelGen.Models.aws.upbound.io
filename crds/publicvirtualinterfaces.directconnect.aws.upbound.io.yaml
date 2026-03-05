@@ -7,11 +7,11 @@ metadata:
 spec:
   group: directconnect.aws.upbound.io
   names:
+    kind: PublicVirtualInterface
     categories:
     - crossplane
     - managed
     - aws
-    kind: PublicVirtualInterface
     listKind: PublicVirtualInterfaceList
     plural: publicvirtualinterfaces
     singular: publicvirtualinterface

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: lightsail.aws.m.upbound.io
   names:
+    kind: DomainEntry
     categories:
     - crossplane
     - managed
     - aws
-    kind: DomainEntry
     listKind: DomainEntryList
     plural: domainentries
     singular: domainentry

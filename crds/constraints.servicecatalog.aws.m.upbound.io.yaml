@@ -7,11 +7,11 @@ metadata:
 spec:
   group: servicecatalog.aws.m.upbound.io
   names:
+    kind: Constraint
     categories:
     - crossplane
     - managed
     - aws
-    kind: Constraint
     listKind: ConstraintList
     plural: constraints
     singular: constraint

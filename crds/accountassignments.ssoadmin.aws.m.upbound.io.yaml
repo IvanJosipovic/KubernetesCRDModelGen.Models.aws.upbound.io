@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ssoadmin.aws.m.upbound.io
   names:
+    kind: AccountAssignment
     categories:
     - crossplane
     - managed
     - aws
-    kind: AccountAssignment
     listKind: AccountAssignmentList
     plural: accountassignments
     singular: accountassignment

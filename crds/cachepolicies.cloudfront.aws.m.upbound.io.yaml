@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudfront.aws.m.upbound.io
   names:
+    kind: CachePolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: CachePolicy
     listKind: CachePolicyList
     plural: cachepolicies
     singular: cachepolicy

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigateway.aws.upbound.io
   names:
+    kind: DocumentationVersion
     categories:
     - crossplane
     - managed
     - aws
-    kind: DocumentationVersion
     listKind: DocumentationVersionList
     plural: documentationversions
     singular: documentationversion

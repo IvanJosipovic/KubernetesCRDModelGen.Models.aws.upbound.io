@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ssm.aws.upbound.io
   names:
+    kind: ServiceSetting
     categories:
     - crossplane
     - managed
     - aws
-    kind: ServiceSetting
     listKind: ServiceSettingList
     plural: servicesettings
     singular: servicesetting

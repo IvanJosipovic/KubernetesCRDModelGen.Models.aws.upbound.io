@@ -7,11 +7,11 @@ metadata:
 spec:
   group: athena.aws.upbound.io
   names:
+    kind: NamedQuery
     categories:
     - crossplane
     - managed
     - aws
-    kind: NamedQuery
     listKind: NamedQueryList
     plural: namedqueries
     singular: namedquery

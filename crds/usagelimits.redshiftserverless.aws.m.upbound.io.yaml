@@ -7,11 +7,11 @@ metadata:
 spec:
   group: redshiftserverless.aws.m.upbound.io
   names:
+    kind: UsageLimit
     categories:
     - crossplane
     - managed
     - aws
-    kind: UsageLimit
     listKind: UsageLimitList
     plural: usagelimits
     singular: usagelimit

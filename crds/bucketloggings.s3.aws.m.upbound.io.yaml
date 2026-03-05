@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3.aws.m.upbound.io
   names:
+    kind: BucketLogging
     categories:
     - crossplane
     - managed
     - aws
-    kind: BucketLogging
     listKind: BucketLoggingList
     plural: bucketloggings
     singular: bucketlogging

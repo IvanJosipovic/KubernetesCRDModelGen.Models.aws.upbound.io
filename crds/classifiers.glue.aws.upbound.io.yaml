@@ -7,11 +7,11 @@ metadata:
 spec:
   group: glue.aws.upbound.io
   names:
+    kind: Classifier
     categories:
     - crossplane
     - managed
     - aws
-    kind: Classifier
     listKind: ClassifierList
     plural: classifiers
     singular: classifier

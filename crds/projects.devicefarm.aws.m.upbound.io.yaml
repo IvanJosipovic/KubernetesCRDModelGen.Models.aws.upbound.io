@@ -7,11 +7,11 @@ metadata:
 spec:
   group: devicefarm.aws.m.upbound.io
   names:
+    kind: Project
     categories:
     - crossplane
     - managed
     - aws
-    kind: Project
     listKind: ProjectList
     plural: projects
     singular: project

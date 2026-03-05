@@ -7,11 +7,11 @@ metadata:
 spec:
   group: directconnect.aws.m.upbound.io
   names:
+    kind: Connection
     categories:
     - crossplane
     - managed
     - aws
-    kind: Connection
     listKind: ConnectionList
     plural: connections
     singular: connection

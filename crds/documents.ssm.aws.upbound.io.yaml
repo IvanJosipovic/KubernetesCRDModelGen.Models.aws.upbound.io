@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ssm.aws.upbound.io
   names:
+    kind: Document
     categories:
     - crossplane
     - managed
     - aws
-    kind: Document
     listKind: DocumentList
     plural: documents
     singular: document

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: servicediscovery.aws.upbound.io
   names:
+    kind: PublicDNSNamespace
     categories:
     - crossplane
     - managed
     - aws
-    kind: PublicDNSNamespace
     listKind: PublicDNSNamespaceList
     plural: publicdnsnamespaces
     singular: publicdnsnamespace

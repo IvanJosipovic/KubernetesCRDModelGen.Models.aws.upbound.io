@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: VPCEndpointSubnetAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: VPCEndpointSubnetAssociation
     listKind: VPCEndpointSubnetAssociationList
     plural: vpcendpointsubnetassociations
     singular: vpcendpointsubnetassociation

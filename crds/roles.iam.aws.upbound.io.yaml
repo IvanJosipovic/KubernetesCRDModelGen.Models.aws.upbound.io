@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iam.aws.upbound.io
   names:
+    kind: Role
     categories:
     - crossplane
     - managed
     - aws
-    kind: Role
     listKind: RoleList
     plural: roles
     singular: role

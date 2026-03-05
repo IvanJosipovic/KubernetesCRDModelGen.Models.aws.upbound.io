@@ -7,11 +7,11 @@ metadata:
 spec:
   group: xray.aws.upbound.io
   names:
+    kind: SamplingRule
     categories:
     - crossplane
     - managed
     - aws
-    kind: SamplingRule
     listKind: SamplingRuleList
     plural: samplingrules
     singular: samplingrule

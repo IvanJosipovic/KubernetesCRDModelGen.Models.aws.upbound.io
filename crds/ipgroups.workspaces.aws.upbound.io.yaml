@@ -7,11 +7,11 @@ metadata:
 spec:
   group: workspaces.aws.upbound.io
   names:
+    kind: IPGroup
     categories:
     - crossplane
     - managed
     - aws
-    kind: IPGroup
     listKind: IPGroupList
     plural: ipgroups
     singular: ipgroup

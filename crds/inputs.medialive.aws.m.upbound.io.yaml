@@ -7,11 +7,11 @@ metadata:
 spec:
   group: medialive.aws.m.upbound.io
   names:
+    kind: Input
     categories:
     - crossplane
     - managed
     - aws
-    kind: Input
     listKind: InputList
     plural: inputs
     singular: input

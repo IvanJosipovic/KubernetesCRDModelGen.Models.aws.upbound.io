@@ -7,11 +7,11 @@ metadata:
 spec:
   group: neptune.aws.m.upbound.io
   names:
+    kind: EventSubscription
     categories:
     - crossplane
     - managed
     - aws
-    kind: EventSubscription
     listKind: EventSubscriptionList
     plural: eventsubscriptions
     singular: eventsubscription

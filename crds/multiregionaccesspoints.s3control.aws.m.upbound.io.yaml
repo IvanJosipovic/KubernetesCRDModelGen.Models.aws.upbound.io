@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3control.aws.m.upbound.io
   names:
+    kind: MultiRegionAccessPoint
     categories:
     - crossplane
     - managed
     - aws
-    kind: MultiRegionAccessPoint
     listKind: MultiRegionAccessPointList
     plural: multiregionaccesspoints
     singular: multiregionaccesspoint

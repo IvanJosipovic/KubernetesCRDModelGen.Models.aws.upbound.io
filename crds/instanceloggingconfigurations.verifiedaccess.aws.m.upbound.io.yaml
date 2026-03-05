@@ -7,11 +7,11 @@ metadata:
 spec:
   group: verifiedaccess.aws.m.upbound.io
   names:
+    kind: InstanceLoggingConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: InstanceLoggingConfiguration
     listKind: InstanceLoggingConfigurationList
     plural: instanceloggingconfigurations
     singular: instanceloggingconfiguration

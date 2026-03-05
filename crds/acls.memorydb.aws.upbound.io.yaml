@@ -7,11 +7,11 @@ metadata:
 spec:
   group: memorydb.aws.upbound.io
   names:
+    kind: ACL
     categories:
     - crossplane
     - managed
     - aws
-    kind: ACL
     listKind: ACLList
     plural: acls
     singular: acl

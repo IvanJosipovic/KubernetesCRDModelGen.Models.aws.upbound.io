@@ -7,11 +7,11 @@ metadata:
 spec:
   group: location.aws.upbound.io
   names:
+    kind: PlaceIndex
     categories:
     - crossplane
     - managed
     - aws
-    kind: PlaceIndex
     listKind: PlaceIndexList
     plural: placeindices
     singular: placeindex

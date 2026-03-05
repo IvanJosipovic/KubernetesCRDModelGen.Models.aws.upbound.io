@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: InstanceState
     categories:
     - crossplane
     - managed
     - aws
-    kind: InstanceState
     listKind: InstanceStateList
     plural: instancestates
     singular: instancestate

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networkmanager.aws.m.upbound.io
   names:
+    kind: AttachmentAccepter
     categories:
     - crossplane
     - managed
     - aws
-    kind: AttachmentAccepter
     listKind: AttachmentAccepterList
     plural: attachmentaccepters
     singular: attachmentaccepter

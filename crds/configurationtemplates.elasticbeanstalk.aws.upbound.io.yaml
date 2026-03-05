@@ -7,11 +7,11 @@ metadata:
 spec:
   group: elasticbeanstalk.aws.upbound.io
   names:
+    kind: ConfigurationTemplate
     categories:
     - crossplane
     - managed
     - aws
-    kind: ConfigurationTemplate
     listKind: ConfigurationTemplateList
     plural: configurationtemplates
     singular: configurationtemplate

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigatewayv2.aws.m.upbound.io
   names:
+    kind: VPCLink
     categories:
     - crossplane
     - managed
     - aws
-    kind: VPCLink
     listKind: VPCLinkList
     plural: vpclinks
     singular: vpclink

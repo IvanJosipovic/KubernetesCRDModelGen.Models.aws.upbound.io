@@ -7,11 +7,11 @@ metadata:
 spec:
   group: medialive.aws.upbound.io
   names:
+    kind: Channel
     categories:
     - crossplane
     - managed
     - aws
-    kind: Channel
     listKind: ChannelList
     plural: channels
     singular: channel

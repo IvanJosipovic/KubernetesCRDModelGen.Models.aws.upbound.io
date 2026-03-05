@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dms.aws.m.upbound.io
   names:
+    kind: S3Endpoint
     categories:
     - crossplane
     - managed
     - aws
-    kind: S3Endpoint
     listKind: S3EndpointList
     plural: s3endpoints
     singular: s3endpoint

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: DefaultSecurityGroup
     categories:
     - crossplane
     - managed
     - aws
-    kind: DefaultSecurityGroup
     listKind: DefaultSecurityGroupList
     plural: defaultsecuritygroups
     singular: defaultsecuritygroup

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: account.aws.m.upbound.io
   names:
+    kind: Region
     categories:
     - crossplane
     - managed
     - aws
-    kind: Region
     listKind: RegionList
     plural: regions
     singular: region

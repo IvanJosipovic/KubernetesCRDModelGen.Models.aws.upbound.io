@@ -7,11 +7,11 @@ metadata:
 spec:
   group: lambda.aws.m.upbound.io
   names:
+    kind: FunctionURL
     categories:
     - crossplane
     - managed
     - aws
-    kind: FunctionURL
     listKind: FunctionURLList
     plural: functionurls
     singular: functionurl

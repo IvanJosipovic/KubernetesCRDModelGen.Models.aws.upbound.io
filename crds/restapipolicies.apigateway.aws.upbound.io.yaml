@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigateway.aws.upbound.io
   names:
+    kind: RestAPIPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: RestAPIPolicy
     listKind: RestAPIPolicyList
     plural: restapipolicies
     singular: restapipolicy

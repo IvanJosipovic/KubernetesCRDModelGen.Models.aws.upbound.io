@@ -7,11 +7,11 @@ metadata:
 spec:
   group: route53resolver.aws.upbound.io
   names:
+    kind: RuleAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: RuleAssociation
     listKind: RuleAssociationList
     plural: ruleassociations
     singular: ruleassociation

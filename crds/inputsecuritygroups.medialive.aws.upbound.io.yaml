@@ -7,11 +7,11 @@ metadata:
 spec:
   group: medialive.aws.upbound.io
   names:
+    kind: InputSecurityGroup
     categories:
     - crossplane
     - managed
     - aws
-    kind: InputSecurityGroup
     listKind: InputSecurityGroupList
     plural: inputsecuritygroups
     singular: inputsecuritygroup

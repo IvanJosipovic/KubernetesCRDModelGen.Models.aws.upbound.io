@@ -7,11 +7,11 @@ metadata:
 spec:
   group: chime.aws.m.upbound.io
   names:
+    kind: VoiceConnectorStreaming
     categories:
     - crossplane
     - managed
     - aws
-    kind: VoiceConnectorStreaming
     listKind: VoiceConnectorStreamingList
     plural: voiceconnectorstreamings
     singular: voiceconnectorstreaming

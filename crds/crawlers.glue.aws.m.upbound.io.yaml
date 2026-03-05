@@ -7,11 +7,11 @@ metadata:
 spec:
   group: glue.aws.m.upbound.io
   names:
+    kind: Crawler
     categories:
     - crossplane
     - managed
     - aws
-    kind: Crawler
     listKind: CrawlerList
     plural: crawlers
     singular: crawler

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ses.aws.upbound.io
   names:
+    kind: IdentityNotificationTopic
     categories:
     - crossplane
     - managed
     - aws
-    kind: IdentityNotificationTopic
     listKind: IdentityNotificationTopicList
     plural: identitynotificationtopics
     singular: identitynotificationtopic

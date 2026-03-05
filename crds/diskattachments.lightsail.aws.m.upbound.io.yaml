@@ -7,11 +7,11 @@ metadata:
 spec:
   group: lightsail.aws.m.upbound.io
   names:
+    kind: DiskAttachment
     categories:
     - crossplane
     - managed
     - aws
-    kind: DiskAttachment
     listKind: DiskAttachmentList
     plural: diskattachments
     singular: diskattachment

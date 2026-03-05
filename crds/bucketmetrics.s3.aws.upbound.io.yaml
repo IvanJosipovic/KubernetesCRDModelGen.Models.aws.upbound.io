@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3.aws.upbound.io
   names:
+    kind: BucketMetric
     categories:
     - crossplane
     - managed
     - aws
-    kind: BucketMetric
     listKind: BucketMetricList
     plural: bucketmetrics
     singular: bucketmetric

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: evidently.aws.m.upbound.io
   names:
+    kind: Segment
     categories:
     - crossplane
     - managed
     - aws
-    kind: Segment
     listKind: SegmentList
     plural: segments
     singular: segment

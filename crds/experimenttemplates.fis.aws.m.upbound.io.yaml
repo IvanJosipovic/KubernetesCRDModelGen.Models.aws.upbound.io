@@ -7,11 +7,11 @@ metadata:
 spec:
   group: fis.aws.m.upbound.io
   names:
+    kind: ExperimentTemplate
     categories:
     - crossplane
     - managed
     - aws
-    kind: ExperimentTemplate
     listKind: ExperimentTemplateList
     plural: experimenttemplates
     singular: experimenttemplate

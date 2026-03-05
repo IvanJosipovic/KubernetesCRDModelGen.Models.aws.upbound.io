@@ -7,11 +7,11 @@ metadata:
 spec:
   group: configservice.aws.m.upbound.io
   names:
+    kind: ConfigurationRecorder
     categories:
     - crossplane
     - managed
     - aws
-    kind: ConfigurationRecorder
     listKind: ConfigurationRecorderList
     plural: configurationrecorders
     singular: configurationrecorder

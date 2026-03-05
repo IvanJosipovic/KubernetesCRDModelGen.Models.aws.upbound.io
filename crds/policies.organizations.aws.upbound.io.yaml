@@ -7,11 +7,11 @@ metadata:
 spec:
   group: organizations.aws.upbound.io
   names:
+    kind: Policy
     categories:
     - crossplane
     - managed
     - aws
-    kind: Policy
     listKind: PolicyList
     plural: policies
     singular: policy

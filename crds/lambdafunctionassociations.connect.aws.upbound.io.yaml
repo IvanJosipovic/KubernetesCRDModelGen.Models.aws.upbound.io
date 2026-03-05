@@ -7,11 +7,11 @@ metadata:
 spec:
   group: connect.aws.upbound.io
   names:
+    kind: LambdaFunctionAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: LambdaFunctionAssociation
     listKind: LambdaFunctionAssociationList
     plural: lambdafunctionassociations
     singular: lambdafunctionassociation

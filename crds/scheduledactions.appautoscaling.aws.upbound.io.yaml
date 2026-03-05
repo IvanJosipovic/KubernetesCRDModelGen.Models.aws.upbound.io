@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appautoscaling.aws.upbound.io
   names:
+    kind: ScheduledAction
     categories:
     - crossplane
     - managed
     - aws
-    kind: ScheduledAction
     listKind: ScheduledActionList
     plural: scheduledactions
     singular: scheduledaction

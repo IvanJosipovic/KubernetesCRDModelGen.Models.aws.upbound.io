@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: AMI
     categories:
     - crossplane
     - managed
     - aws
-    kind: AMI
     listKind: AMIList
     plural: amis
     singular: ami

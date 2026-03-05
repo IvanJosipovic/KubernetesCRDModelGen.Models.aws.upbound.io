@@ -7,11 +7,11 @@ metadata:
 spec:
   group: wafregional.aws.m.upbound.io
   names:
+    kind: IPSet
     categories:
     - crossplane
     - managed
     - aws
-    kind: IPSet
     listKind: IPSetList
     plural: ipsets
     singular: ipset

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: eks.aws.m.upbound.io
   names:
+    kind: Addon
     categories:
     - crossplane
     - managed
     - aws
-    kind: Addon
     listKind: AddonList
     plural: addons
     singular: addon

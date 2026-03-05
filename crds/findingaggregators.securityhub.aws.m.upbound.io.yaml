@@ -7,11 +7,11 @@ metadata:
 spec:
   group: securityhub.aws.m.upbound.io
   names:
+    kind: FindingAggregator
     categories:
     - crossplane
     - managed
     - aws
-    kind: FindingAggregator
     listKind: FindingAggregatorList
     plural: findingaggregators
     singular: findingaggregator

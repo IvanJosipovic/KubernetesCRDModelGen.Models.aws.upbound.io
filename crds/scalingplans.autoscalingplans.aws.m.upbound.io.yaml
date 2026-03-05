@@ -7,11 +7,11 @@ metadata:
 spec:
   group: autoscalingplans.aws.m.upbound.io
   names:
+    kind: ScalingPlan
     categories:
     - crossplane
     - managed
     - aws
-    kind: ScalingPlan
     listKind: ScalingPlanList
     plural: scalingplans
     singular: scalingplan

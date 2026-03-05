@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: ManagedPrefixList
     categories:
     - crossplane
     - managed
     - aws
-    kind: ManagedPrefixList
     listKind: ManagedPrefixListList
     plural: managedprefixlists
     singular: managedprefixlist

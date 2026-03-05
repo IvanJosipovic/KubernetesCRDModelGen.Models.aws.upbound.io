@@ -7,11 +7,11 @@ metadata:
 spec:
   group: autoscaling.aws.m.upbound.io
   names:
+    kind: LaunchConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: LaunchConfiguration
     listKind: LaunchConfigurationList
     plural: launchconfigurations
     singular: launchconfiguration

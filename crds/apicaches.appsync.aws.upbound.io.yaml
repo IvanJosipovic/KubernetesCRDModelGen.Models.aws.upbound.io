@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appsync.aws.upbound.io
   names:
+    kind: APICache
     categories:
     - crossplane
     - managed
     - aws
-    kind: APICache
     listKind: APICacheList
     plural: apicaches
     singular: apicache

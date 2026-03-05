@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appmesh.aws.upbound.io
   names:
+    kind: GatewayRoute
     categories:
     - crossplane
     - managed
     - aws
-    kind: GatewayRoute
     listKind: GatewayRouteList
     plural: gatewayroutes
     singular: gatewayroute

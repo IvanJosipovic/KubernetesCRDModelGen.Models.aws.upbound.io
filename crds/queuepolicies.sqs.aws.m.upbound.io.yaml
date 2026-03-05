@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sqs.aws.m.upbound.io
   names:
+    kind: QueuePolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: QueuePolicy
     listKind: QueuePolicyList
     plural: queuepolicies
     singular: queuepolicy

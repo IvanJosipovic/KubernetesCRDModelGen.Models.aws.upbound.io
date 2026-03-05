@@ -7,11 +7,11 @@ metadata:
 spec:
   group: backup.aws.m.upbound.io
   names:
+    kind: Framework
     categories:
     - crossplane
     - managed
     - aws
-    kind: Framework
     listKind: FrameworkList
     plural: frameworks
     singular: framework

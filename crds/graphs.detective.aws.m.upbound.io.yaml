@@ -7,11 +7,11 @@ metadata:
 spec:
   group: detective.aws.m.upbound.io
   names:
+    kind: Graph
     categories:
     - crossplane
     - managed
     - aws
-    kind: Graph
     listKind: GraphList
     plural: graphs
     singular: graph

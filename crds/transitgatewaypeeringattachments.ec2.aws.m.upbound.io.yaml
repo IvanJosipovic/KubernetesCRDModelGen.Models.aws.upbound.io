@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: TransitGatewayPeeringAttachment
     categories:
     - crossplane
     - managed
     - aws
-    kind: TransitGatewayPeeringAttachment
     listKind: TransitGatewayPeeringAttachmentList
     plural: transitgatewaypeeringattachments
     singular: transitgatewaypeeringattachment

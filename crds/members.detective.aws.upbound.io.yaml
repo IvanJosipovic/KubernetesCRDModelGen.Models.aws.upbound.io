@@ -7,11 +7,11 @@ metadata:
 spec:
   group: detective.aws.upbound.io
   names:
+    kind: Member
     categories:
     - crossplane
     - managed
     - aws
-    kind: Member
     listKind: MemberList
     plural: members
     singular: member

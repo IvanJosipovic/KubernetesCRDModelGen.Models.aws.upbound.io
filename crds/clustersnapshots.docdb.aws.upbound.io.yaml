@@ -7,11 +7,11 @@ metadata:
 spec:
   group: docdb.aws.upbound.io
   names:
+    kind: ClusterSnapshot
     categories:
     - crossplane
     - managed
     - aws
-    kind: ClusterSnapshot
     listKind: ClusterSnapshotList
     plural: clustersnapshots
     singular: clustersnapshot

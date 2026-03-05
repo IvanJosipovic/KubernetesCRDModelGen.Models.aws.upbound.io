@@ -7,11 +7,11 @@ metadata:
 spec:
   group: elbv2.aws.m.upbound.io
   names:
+    kind: LBTargetGroup
     categories:
     - crossplane
     - managed
     - aws
-    kind: LBTargetGroup
     listKind: LBTargetGroupList
     plural: lbtargetgroups
     singular: lbtargetgroup

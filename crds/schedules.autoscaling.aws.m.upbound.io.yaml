@@ -7,11 +7,11 @@ metadata:
 spec:
   group: autoscaling.aws.m.upbound.io
   names:
+    kind: Schedule
     categories:
     - crossplane
     - managed
     - aws
-    kind: Schedule
     listKind: ScheduleList
     plural: schedules
     singular: schedule

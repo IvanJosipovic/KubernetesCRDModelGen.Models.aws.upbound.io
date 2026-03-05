@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudwatch.aws.upbound.io
   names:
+    kind: MetricStream
     categories:
     - crossplane
     - managed
     - aws
-    kind: MetricStream
     listKind: MetricStreamList
     plural: metricstreams
     singular: metricstream

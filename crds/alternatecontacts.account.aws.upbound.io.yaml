@@ -7,11 +7,11 @@ metadata:
 spec:
   group: account.aws.upbound.io
   names:
+    kind: AlternateContact
     categories:
     - crossplane
     - managed
     - aws
-    kind: AlternateContact
     listKind: AlternateContactList
     plural: alternatecontacts
     singular: alternatecontact

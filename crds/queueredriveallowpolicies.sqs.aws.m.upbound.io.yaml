@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sqs.aws.m.upbound.io
   names:
+    kind: QueueRedriveAllowPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: QueueRedriveAllowPolicy
     listKind: QueueRedriveAllowPolicyList
     plural: queueredriveallowpolicies
     singular: queueredriveallowpolicy

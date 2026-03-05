@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ses.aws.m.upbound.io
   names:
+    kind: IdentityPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: IdentityPolicy
     listKind: IdentityPolicyList
     plural: identitypolicies
     singular: identitypolicy

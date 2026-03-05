@@ -7,11 +7,11 @@ metadata:
 spec:
   group: elb.aws.upbound.io
   names:
+    kind: ProxyProtocolPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: ProxyProtocolPolicy
     listKind: ProxyProtocolPolicyList
     plural: proxyprotocolpolicies
     singular: proxyprotocolpolicy

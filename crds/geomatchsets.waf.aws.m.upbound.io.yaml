@@ -7,11 +7,11 @@ metadata:
 spec:
   group: waf.aws.m.upbound.io
   names:
+    kind: GeoMatchSet
     categories:
     - crossplane
     - managed
     - aws
-    kind: GeoMatchSet
     listKind: GeoMatchSetList
     plural: geomatchsets
     singular: geomatchset

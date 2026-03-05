@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sagemaker.aws.m.upbound.io
   names:
+    kind: FeatureGroup
     categories:
     - crossplane
     - managed
     - aws
-    kind: FeatureGroup
     listKind: FeatureGroupList
     plural: featuregroups
     singular: featuregroup

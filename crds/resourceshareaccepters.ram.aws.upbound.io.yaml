@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ram.aws.upbound.io
   names:
+    kind: ResourceShareAccepter
     categories:
     - crossplane
     - managed
     - aws
-    kind: ResourceShareAccepter
     listKind: ResourceShareAccepterList
     plural: resourceshareaccepters
     singular: resourceshareaccepter

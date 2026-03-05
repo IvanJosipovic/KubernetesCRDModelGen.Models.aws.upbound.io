@@ -7,11 +7,11 @@ metadata:
 spec:
   group: budgets.aws.m.upbound.io
   names:
+    kind: Budget
     categories:
     - crossplane
     - managed
     - aws
-    kind: Budget
     listKind: BudgetList
     plural: budgets
     singular: budget

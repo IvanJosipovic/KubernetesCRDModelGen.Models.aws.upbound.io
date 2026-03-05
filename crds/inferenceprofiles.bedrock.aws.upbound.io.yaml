@@ -7,11 +7,11 @@ metadata:
 spec:
   group: bedrock.aws.upbound.io
   names:
+    kind: InferenceProfile
     categories:
     - crossplane
     - managed
     - aws
-    kind: InferenceProfile
     listKind: InferenceProfileList
     plural: inferenceprofiles
     singular: inferenceprofile

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigateway.aws.upbound.io
   names:
+    kind: UsagePlanKey
     categories:
     - crossplane
     - managed
     - aws
-    kind: UsagePlanKey
     listKind: UsagePlanKeyList
     plural: usageplankeys
     singular: usageplankey

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigateway.aws.upbound.io
   names:
+    kind: BasePathMapping
     categories:
     - crossplane
     - managed
     - aws
-    kind: BasePathMapping
     listKind: BasePathMappingList
     plural: basepathmappings
     singular: basepathmapping

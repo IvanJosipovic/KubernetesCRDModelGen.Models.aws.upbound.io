@@ -7,11 +7,11 @@ metadata:
 spec:
   group: eks.aws.upbound.io
   names:
+    kind: AccessEntry
     categories:
     - crossplane
     - managed
     - aws
-    kind: AccessEntry
     listKind: AccessEntryList
     plural: accessentries
     singular: accessentry

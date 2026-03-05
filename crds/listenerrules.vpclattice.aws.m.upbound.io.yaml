@@ -7,11 +7,11 @@ metadata:
 spec:
   group: vpclattice.aws.m.upbound.io
   names:
+    kind: ListenerRule
     categories:
     - crossplane
     - managed
     - aws
-    kind: ListenerRule
     listKind: ListenerRuleList
     plural: listenerrules
     singular: listenerrule

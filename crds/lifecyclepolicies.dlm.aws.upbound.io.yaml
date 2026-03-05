@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dlm.aws.upbound.io
   names:
+    kind: LifecyclePolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: LifecyclePolicy
     listKind: LifecyclePolicyList
     plural: lifecyclepolicies
     singular: lifecyclepolicy

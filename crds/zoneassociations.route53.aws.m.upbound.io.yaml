@@ -7,11 +7,11 @@ metadata:
 spec:
   group: route53.aws.m.upbound.io
   names:
+    kind: ZoneAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: ZoneAssociation
     listKind: ZoneAssociationList
     plural: zoneassociations
     singular: zoneassociation

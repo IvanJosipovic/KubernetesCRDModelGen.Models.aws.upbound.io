@@ -7,11 +7,11 @@ metadata:
 spec:
   group: route53.aws.m.upbound.io
   names:
+    kind: DelegationSet
     categories:
     - crossplane
     - managed
     - aws
-    kind: DelegationSet
     listKind: DelegationSetList
     plural: delegationsets
     singular: delegationset

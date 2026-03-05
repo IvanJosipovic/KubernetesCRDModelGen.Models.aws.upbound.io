@@ -7,11 +7,11 @@ metadata:
 spec:
   group: chime.aws.m.upbound.io
   names:
+    kind: VoiceConnectorOrigination
     categories:
     - crossplane
     - managed
     - aws
-    kind: VoiceConnectorOrigination
     listKind: VoiceConnectorOriginationList
     plural: voiceconnectororiginations
     singular: voiceconnectororigination

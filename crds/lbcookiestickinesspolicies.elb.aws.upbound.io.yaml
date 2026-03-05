@@ -7,11 +7,11 @@ metadata:
 spec:
   group: elb.aws.upbound.io
   names:
+    kind: LBCookieStickinessPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: LBCookieStickinessPolicy
     listKind: LBCookieStickinessPolicyList
     plural: lbcookiestickinesspolicies
     singular: lbcookiestickinesspolicy

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: AMILaunchPermission
     categories:
     - crossplane
     - managed
     - aws
-    kind: AMILaunchPermission
     listKind: AMILaunchPermissionList
     plural: amilaunchpermissions
     singular: amilaunchpermission

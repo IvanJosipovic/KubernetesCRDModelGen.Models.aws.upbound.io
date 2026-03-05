@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ssm.aws.m.upbound.io
   names:
+    kind: PatchBaseline
     categories:
     - crossplane
     - managed
     - aws
-    kind: PatchBaseline
     listKind: PatchBaselineList
     plural: patchbaselines
     singular: patchbaseline

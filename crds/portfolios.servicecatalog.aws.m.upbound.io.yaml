@@ -7,11 +7,11 @@ metadata:
 spec:
   group: servicecatalog.aws.m.upbound.io
   names:
+    kind: Portfolio
     categories:
     - crossplane
     - managed
     - aws
-    kind: Portfolio
     listKind: PortfolioList
     plural: portfolios
     singular: portfolio

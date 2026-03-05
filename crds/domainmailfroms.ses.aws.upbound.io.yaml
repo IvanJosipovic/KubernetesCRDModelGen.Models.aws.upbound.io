@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ses.aws.upbound.io
   names:
+    kind: DomainMailFrom
     categories:
     - crossplane
     - managed
     - aws
-    kind: DomainMailFrom
     listKind: DomainMailFromList
     plural: domainmailfroms
     singular: domainmailfrom

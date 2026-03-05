@@ -7,11 +7,11 @@ metadata:
 spec:
   group: connect.aws.upbound.io
   names:
+    kind: SecurityProfile
     categories:
     - crossplane
     - managed
     - aws
-    kind: SecurityProfile
     listKind: SecurityProfileList
     plural: securityprofiles
     singular: securityprofile

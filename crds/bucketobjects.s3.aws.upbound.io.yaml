@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3.aws.upbound.io
   names:
+    kind: BucketObject
     categories:
     - crossplane
     - managed
     - aws
-    kind: BucketObject
     listKind: BucketObjectList
     plural: bucketobjects
     singular: bucketobject

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: NetworkInterfaceAttachment
     categories:
     - crossplane
     - managed
     - aws
-    kind: NetworkInterfaceAttachment
     listKind: NetworkInterfaceAttachmentList
     plural: networkinterfaceattachments
     singular: networkinterfaceattachment

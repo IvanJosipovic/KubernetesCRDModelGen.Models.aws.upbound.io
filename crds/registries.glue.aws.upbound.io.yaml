@@ -7,11 +7,11 @@ metadata:
 spec:
   group: glue.aws.upbound.io
   names:
+    kind: Registry
     categories:
     - crossplane
     - managed
     - aws
-    kind: Registry
     listKind: RegistryList
     plural: registries
     singular: registry

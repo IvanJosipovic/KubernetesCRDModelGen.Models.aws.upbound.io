@@ -7,11 +7,11 @@ metadata:
 spec:
   group: qldb.aws.upbound.io
   names:
+    kind: Stream
     categories:
     - crossplane
     - managed
     - aws
-    kind: Stream
     listKind: StreamList
     plural: streams
     singular: stream

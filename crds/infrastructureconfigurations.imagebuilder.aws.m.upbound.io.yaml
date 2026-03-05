@@ -7,11 +7,11 @@ metadata:
 spec:
   group: imagebuilder.aws.m.upbound.io
   names:
+    kind: InfrastructureConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: InfrastructureConfiguration
     listKind: InfrastructureConfigurationList
     plural: infrastructureconfigurations
     singular: infrastructureconfiguration

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: devicefarm.aws.upbound.io
   names:
+    kind: DevicePool
     categories:
     - crossplane
     - managed
     - aws
-    kind: DevicePool
     listKind: DevicePoolList
     plural: devicepools
     singular: devicepool

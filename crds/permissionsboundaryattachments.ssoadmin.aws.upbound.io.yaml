@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ssoadmin.aws.upbound.io
   names:
+    kind: PermissionsBoundaryAttachment
     categories:
     - crossplane
     - managed
     - aws
-    kind: PermissionsBoundaryAttachment
     listKind: PermissionsBoundaryAttachmentList
     plural: permissionsboundaryattachments
     singular: permissionsboundaryattachment

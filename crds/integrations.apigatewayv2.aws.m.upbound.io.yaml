@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigatewayv2.aws.m.upbound.io
   names:
+    kind: Integration
     categories:
     - crossplane
     - managed
     - aws
-    kind: Integration
     listKind: IntegrationList
     plural: integrations
     singular: integration

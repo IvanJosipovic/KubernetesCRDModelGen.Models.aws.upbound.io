@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appintegrations.aws.upbound.io
   names:
+    kind: EventIntegration
     categories:
     - crossplane
     - managed
     - aws
-    kind: EventIntegration
     listKind: EventIntegrationList
     plural: eventintegrations
     singular: eventintegration

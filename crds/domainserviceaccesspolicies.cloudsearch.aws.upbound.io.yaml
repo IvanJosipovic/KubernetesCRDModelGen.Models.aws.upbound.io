@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudsearch.aws.upbound.io
   names:
+    kind: DomainServiceAccessPolicy
     categories:
     - crossplane
     - managed
     - aws
-    kind: DomainServiceAccessPolicy
     listKind: DomainServiceAccessPolicyList
     plural: domainserviceaccesspolicies
     singular: domainserviceaccesspolicy

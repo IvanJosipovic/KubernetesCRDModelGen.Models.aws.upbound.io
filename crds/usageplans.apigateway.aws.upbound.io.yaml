@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigateway.aws.upbound.io
   names:
+    kind: UsagePlan
     categories:
     - crossplane
     - managed
     - aws
-    kind: UsagePlan
     listKind: UsagePlanList
     plural: usageplans
     singular: usageplan

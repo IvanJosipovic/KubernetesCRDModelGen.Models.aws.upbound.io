@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cognitoidentity.aws.upbound.io
   names:
+    kind: CognitoIdentityPoolProviderPrincipalTag
     categories:
     - crossplane
     - managed
     - aws
-    kind: CognitoIdentityPoolProviderPrincipalTag
     listKind: CognitoIdentityPoolProviderPrincipalTagList
     plural: cognitoidentitypoolproviderprincipaltags
     singular: cognitoidentitypoolproviderprincipaltag

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sns.aws.upbound.io
   names:
+    kind: PlatformApplication
     categories:
     - crossplane
     - managed
     - aws
-    kind: PlatformApplication
     listKind: PlatformApplicationList
     plural: platformapplications
     singular: platformapplication

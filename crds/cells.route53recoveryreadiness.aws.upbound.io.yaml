@@ -7,11 +7,11 @@ metadata:
 spec:
   group: route53recoveryreadiness.aws.upbound.io
   names:
+    kind: Cell
     categories:
     - crossplane
     - managed
     - aws
-    kind: Cell
     listKind: CellList
     plural: cells
     singular: cell

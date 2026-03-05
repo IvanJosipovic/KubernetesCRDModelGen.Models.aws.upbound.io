@@ -7,11 +7,11 @@ metadata:
 spec:
   group: batch.aws.upbound.io
   names:
+    kind: JobQueue
     categories:
     - crossplane
     - managed
     - aws
-    kind: JobQueue
     listKind: JobQueueList
     plural: jobqueues
     singular: jobqueue

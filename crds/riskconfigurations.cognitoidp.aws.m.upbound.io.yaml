@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cognitoidp.aws.m.upbound.io
   names:
+    kind: RiskConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: RiskConfiguration
     listKind: RiskConfigurationList
     plural: riskconfigurations
     singular: riskconfiguration

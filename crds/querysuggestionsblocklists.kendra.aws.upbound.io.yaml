@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kendra.aws.upbound.io
   names:
+    kind: QuerySuggestionsBlockList
     categories:
     - crossplane
     - managed
     - aws
-    kind: QuerySuggestionsBlockList
     listKind: QuerySuggestionsBlockListList
     plural: querysuggestionsblocklists
     singular: querysuggestionsblocklist

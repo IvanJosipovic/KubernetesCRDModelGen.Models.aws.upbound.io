@@ -7,11 +7,11 @@ metadata:
 spec:
   group: transfer.aws.upbound.io
   names:
+    kind: Tag
     categories:
     - crossplane
     - managed
     - aws
-    kind: Tag
     listKind: TagList
     plural: tags
     singular: tag

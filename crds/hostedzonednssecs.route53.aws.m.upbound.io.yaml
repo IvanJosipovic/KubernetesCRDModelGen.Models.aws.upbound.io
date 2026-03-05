@@ -7,11 +7,11 @@ metadata:
 spec:
   group: route53.aws.m.upbound.io
   names:
+    kind: HostedZoneDNSSEC
     categories:
     - crossplane
     - managed
     - aws
-    kind: HostedZoneDNSSEC
     listKind: HostedZoneDNSSECList
     plural: hostedzonednssecs
     singular: hostedzonednssec

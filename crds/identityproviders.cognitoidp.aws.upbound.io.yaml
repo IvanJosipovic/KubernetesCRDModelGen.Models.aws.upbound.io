@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cognitoidp.aws.upbound.io
   names:
+    kind: IdentityProvider
     categories:
     - crossplane
     - managed
     - aws
-    kind: IdentityProvider
     listKind: IdentityProviderList
     plural: identityproviders
     singular: identityprovider

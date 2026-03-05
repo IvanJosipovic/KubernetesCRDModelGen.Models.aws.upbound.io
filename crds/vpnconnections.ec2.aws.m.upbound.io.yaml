@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: VPNConnection
     categories:
     - crossplane
     - managed
     - aws
-    kind: VPNConnection
     listKind: VPNConnectionList
     plural: vpnconnections
     singular: vpnconnection

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: accessanalyzer.aws.upbound.io
   names:
+    kind: ArchiveRule
     categories:
     - crossplane
     - managed
     - aws
-    kind: ArchiveRule
     listKind: ArchiveRuleList
     plural: archiverules
     singular: archiverule

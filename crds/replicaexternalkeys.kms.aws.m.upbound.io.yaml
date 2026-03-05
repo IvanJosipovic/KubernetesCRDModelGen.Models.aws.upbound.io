@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kms.aws.m.upbound.io
   names:
+    kind: ReplicaExternalKey
     categories:
     - crossplane
     - managed
     - aws
-    kind: ReplicaExternalKey
     listKind: ReplicaExternalKeyList
     plural: replicaexternalkeys
     singular: replicaexternalkey

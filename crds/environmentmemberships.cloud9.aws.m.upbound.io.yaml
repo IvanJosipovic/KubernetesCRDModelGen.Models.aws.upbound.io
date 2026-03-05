@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloud9.aws.m.upbound.io
   names:
+    kind: EnvironmentMembership
     categories:
     - crossplane
     - managed
     - aws
-    kind: EnvironmentMembership
     listKind: EnvironmentMembershipList
     plural: environmentmemberships
     singular: environmentmembership

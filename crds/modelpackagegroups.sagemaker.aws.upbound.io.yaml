@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sagemaker.aws.upbound.io
   names:
+    kind: ModelPackageGroup
     categories:
     - crossplane
     - managed
     - aws
-    kind: ModelPackageGroup
     listKind: ModelPackageGroupList
     plural: modelpackagegroups
     singular: modelpackagegroup

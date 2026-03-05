@@ -7,11 +7,11 @@ metadata:
 spec:
   group: connect.aws.m.upbound.io
   names:
+    kind: HoursOfOperation
     categories:
     - crossplane
     - managed
     - aws
-    kind: HoursOfOperation
     listKind: HoursOfOperationList
     plural: hoursofoperations
     singular: hoursofoperation

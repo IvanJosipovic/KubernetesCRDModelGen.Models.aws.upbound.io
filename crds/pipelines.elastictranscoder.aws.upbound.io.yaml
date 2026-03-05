@@ -7,11 +7,11 @@ metadata:
 spec:
   group: elastictranscoder.aws.upbound.io
   names:
+    kind: Pipeline
     categories:
     - crossplane
     - managed
     - aws
-    kind: Pipeline
     listKind: PipelineList
     plural: pipelines
     singular: pipeline

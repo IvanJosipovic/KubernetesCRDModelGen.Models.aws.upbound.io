@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networkmanager.aws.upbound.io
   names:
+    kind: TransitGatewayRegistration
     categories:
     - crossplane
     - managed
     - aws
-    kind: TransitGatewayRegistration
     listKind: TransitGatewayRegistrationList
     plural: transitgatewayregistrations
     singular: transitgatewayregistration

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: redshift.aws.upbound.io
   names:
+    kind: SnapshotCopyGrant
     categories:
     - crossplane
     - managed
     - aws
-    kind: SnapshotCopyGrant
     listKind: SnapshotCopyGrantList
     plural: snapshotcopygrants
     singular: snapshotcopygrant

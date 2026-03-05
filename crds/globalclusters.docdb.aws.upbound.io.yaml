@@ -7,11 +7,11 @@ metadata:
 spec:
   group: docdb.aws.upbound.io
   names:
+    kind: GlobalCluster
     categories:
     - crossplane
     - managed
     - aws
-    kind: GlobalCluster
     listKind: GlobalClusterList
     plural: globalclusters
     singular: globalcluster

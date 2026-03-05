@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudwatch.aws.m.upbound.io
   names:
+    kind: MetricAlarm
     categories:
     - crossplane
     - managed
     - aws
-    kind: MetricAlarm
     listKind: MetricAlarmList
     plural: metricalarms
     singular: metricalarm

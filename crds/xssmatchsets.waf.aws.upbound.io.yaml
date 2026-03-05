@@ -7,11 +7,11 @@ metadata:
 spec:
   group: waf.aws.upbound.io
   names:
+    kind: XSSMatchSet
     categories:
     - crossplane
     - managed
     - aws
-    kind: XSSMatchSet
     listKind: XSSMatchSetList
     plural: xssmatchsets
     singular: xssmatchset

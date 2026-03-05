@@ -7,11 +7,11 @@ metadata:
 spec:
   group: batch.aws.upbound.io
   names:
+    kind: JobDefinition
     categories:
     - crossplane
     - managed
     - aws
-    kind: JobDefinition
     listKind: JobDefinitionList
     plural: jobdefinitions
     singular: jobdefinition

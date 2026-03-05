@@ -7,11 +7,11 @@ metadata:
 spec:
   group: pinpoint.aws.upbound.io
   names:
+    kind: SMSChannel
     categories:
     - crossplane
     - managed
     - aws
-    kind: SMSChannel
     listKind: SMSChannelList
     plural: smschannels
     singular: smschannel

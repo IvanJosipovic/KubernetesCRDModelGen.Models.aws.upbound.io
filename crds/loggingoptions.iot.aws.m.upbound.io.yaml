@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iot.aws.m.upbound.io
   names:
+    kind: LoggingOptions
     categories:
     - crossplane
     - managed
     - aws
-    kind: LoggingOptions
     listKind: LoggingOptionsList
     plural: loggingoptions
     singular: loggingoptions

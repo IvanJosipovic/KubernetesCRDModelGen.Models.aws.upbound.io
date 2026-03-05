@@ -7,11 +7,11 @@ metadata:
 spec:
   group: elasticache.aws.m.upbound.io
   names:
+    kind: ServerlessCache
     categories:
     - crossplane
     - managed
     - aws
-    kind: ServerlessCache
     listKind: ServerlessCacheList
     plural: serverlesscaches
     singular: serverlesscache

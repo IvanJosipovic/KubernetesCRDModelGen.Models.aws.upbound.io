@@ -7,11 +7,11 @@ metadata:
 spec:
   group: signer.aws.m.upbound.io
   names:
+    kind: SigningProfilePermission
     categories:
     - crossplane
     - managed
     - aws
-    kind: SigningProfilePermission
     listKind: SigningProfilePermissionList
     plural: signingprofilepermissions
     singular: signingprofilepermission

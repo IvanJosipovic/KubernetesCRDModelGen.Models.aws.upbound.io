@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ram.aws.m.upbound.io
   names:
+    kind: ResourceShare
     categories:
     - crossplane
     - managed
     - aws
-    kind: ResourceShare
     listKind: ResourceShareList
     plural: resourceshares
     singular: resourceshare

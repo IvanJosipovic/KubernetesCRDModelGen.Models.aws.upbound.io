@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appsync.aws.m.upbound.io
   names:
+    kind: APIKey
     categories:
     - crossplane
     - managed
     - aws
-    kind: APIKey
     listKind: APIKeyList
     plural: apikeys
     singular: apikey

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: globalaccelerator.aws.upbound.io
   names:
+    kind: EndpointGroup
     categories:
     - crossplane
     - managed
     - aws
-    kind: EndpointGroup
     listKind: EndpointGroupList
     plural: endpointgroups
     singular: endpointgroup

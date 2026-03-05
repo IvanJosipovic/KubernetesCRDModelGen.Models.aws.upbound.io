@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.upbound.io
   names:
+    kind: TransitGatewayRouteTablePropagation
     categories:
     - crossplane
     - managed
     - aws
-    kind: TransitGatewayRouteTablePropagation
     listKind: TransitGatewayRouteTablePropagationList
     plural: transitgatewayroutetablepropagations
     singular: transitgatewayroutetablepropagation

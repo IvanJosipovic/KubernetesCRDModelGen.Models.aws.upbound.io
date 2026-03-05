@@ -7,11 +7,11 @@ metadata:
 spec:
   group: eks.aws.upbound.io
   names:
+    kind: NodeGroup
     categories:
     - crossplane
     - managed
     - aws
-    kind: NodeGroup
     listKind: NodeGroupList
     plural: nodegroups
     singular: nodegroup

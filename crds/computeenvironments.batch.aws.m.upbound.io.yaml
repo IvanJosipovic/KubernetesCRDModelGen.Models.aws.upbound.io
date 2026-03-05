@@ -7,11 +7,11 @@ metadata:
 spec:
   group: batch.aws.m.upbound.io
   names:
+    kind: ComputeEnvironment
     categories:
     - crossplane
     - managed
     - aws
-    kind: ComputeEnvironment
     listKind: ComputeEnvironmentList
     plural: computeenvironments
     singular: computeenvironment

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudwatch.aws.m.upbound.io
   names:
+    kind: CompositeAlarm
     categories:
     - crossplane
     - managed
     - aws
-    kind: CompositeAlarm
     listKind: CompositeAlarmList
     plural: compositealarms
     singular: compositealarm

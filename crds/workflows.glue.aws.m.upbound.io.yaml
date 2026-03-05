@@ -7,11 +7,11 @@ metadata:
 spec:
   group: glue.aws.m.upbound.io
   names:
+    kind: Workflow
     categories:
     - crossplane
     - managed
     - aws
-    kind: Workflow
     listKind: WorkflowList
     plural: workflows
     singular: workflow

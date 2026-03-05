@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudfront.aws.m.upbound.io
   names:
+    kind: OriginAccessIdentity
     categories:
     - crossplane
     - managed
     - aws
-    kind: OriginAccessIdentity
     listKind: OriginAccessIdentityList
     plural: originaccessidentities
     singular: originaccessidentity

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: rum.aws.upbound.io
   names:
+    kind: AppMonitor
     categories:
     - crossplane
     - managed
     - aws
-    kind: AppMonitor
     listKind: AppMonitorList
     plural: appmonitors
     singular: appmonitor

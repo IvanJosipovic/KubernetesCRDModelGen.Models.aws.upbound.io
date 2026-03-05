@@ -7,11 +7,11 @@ metadata:
 spec:
   group: wafv2.aws.upbound.io
   names:
+    kind: WebACLAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: WebACLAssociation
     listKind: WebACLAssociationList
     plural: webaclassociations
     singular: webaclassociation

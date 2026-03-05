@@ -7,11 +7,11 @@ metadata:
 spec:
   group: grafana.aws.m.upbound.io
   names:
+    kind: WorkspaceSAMLConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: WorkspaceSAMLConfiguration
     listKind: WorkspaceSAMLConfigurationList
     plural: workspacesamlconfigurations
     singular: workspacesamlconfiguration

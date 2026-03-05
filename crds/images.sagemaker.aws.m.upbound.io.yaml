@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sagemaker.aws.m.upbound.io
   names:
+    kind: Image
     categories:
     - crossplane
     - managed
     - aws
-    kind: Image
     listKind: ImageList
     plural: images
     singular: image

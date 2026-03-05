@@ -7,11 +7,11 @@ metadata:
 spec:
   group: redshift.aws.m.upbound.io
   names:
+    kind: EndpointAccess
     categories:
     - crossplane
     - managed
     - aws
-    kind: EndpointAccess
     listKind: EndpointAccessList
     plural: endpointaccesses
     singular: endpointaccess

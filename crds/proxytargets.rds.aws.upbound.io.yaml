@@ -7,11 +7,11 @@ metadata:
 spec:
   group: rds.aws.upbound.io
   names:
+    kind: ProxyTarget
     categories:
     - crossplane
     - managed
     - aws
-    kind: ProxyTarget
     listKind: ProxyTargetList
     plural: proxytargets
     singular: proxytarget

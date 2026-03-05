@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ec2.aws.m.upbound.io
   names:
+    kind: NetworkInterfaceSgAttachment
     categories:
     - crossplane
     - managed
     - aws
-    kind: NetworkInterfaceSgAttachment
     listKind: NetworkInterfaceSgAttachmentList
     plural: networkinterfacesgattachments
     singular: networkinterfacesgattachment

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigateway.aws.m.upbound.io
   names:
+    kind: DocumentationPart
     categories:
     - crossplane
     - managed
     - aws
-    kind: DocumentationPart
     listKind: DocumentationPartList
     plural: documentationparts
     singular: documentationpart

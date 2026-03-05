@@ -7,11 +7,11 @@ metadata:
 spec:
   group: deploy.aws.upbound.io
   names:
+    kind: DeploymentConfig
     categories:
     - crossplane
     - managed
     - aws
-    kind: DeploymentConfig
     listKind: DeploymentConfigList
     plural: deploymentconfigs
     singular: deploymentconfig

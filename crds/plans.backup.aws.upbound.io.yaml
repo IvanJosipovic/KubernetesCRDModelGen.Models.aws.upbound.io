@@ -7,11 +7,11 @@ metadata:
 spec:
   group: backup.aws.upbound.io
   names:
+    kind: Plan
     categories:
     - crossplane
     - managed
     - aws
-    kind: Plan
     listKind: PlanList
     plural: plans
     singular: plan

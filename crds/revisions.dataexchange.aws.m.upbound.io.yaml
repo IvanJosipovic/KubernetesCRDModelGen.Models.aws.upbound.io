@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dataexchange.aws.m.upbound.io
   names:
+    kind: Revision
     categories:
     - crossplane
     - managed
     - aws
-    kind: Revision
     listKind: RevisionList
     plural: revisions
     singular: revision

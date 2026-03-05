@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sqs.aws.m.upbound.io
   names:
+    kind: Queue
     categories:
     - crossplane
     - managed
     - aws
-    kind: Queue
     listKind: QueueList
     plural: queues
     singular: queue

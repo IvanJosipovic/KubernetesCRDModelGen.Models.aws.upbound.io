@@ -7,11 +7,11 @@ metadata:
 spec:
   group: transfer.aws.m.upbound.io
   names:
+    kind: SSHKey
     categories:
     - crossplane
     - managed
     - aws
-    kind: SSHKey
     listKind: SSHKeyList
     plural: sshkeys
     singular: sshkey

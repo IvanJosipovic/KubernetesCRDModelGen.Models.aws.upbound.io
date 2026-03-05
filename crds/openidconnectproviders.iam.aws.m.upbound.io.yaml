@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iam.aws.m.upbound.io
   names:
+    kind: OpenIDConnectProvider
     categories:
     - crossplane
     - managed
     - aws
-    kind: OpenIDConnectProvider
     listKind: OpenIDConnectProviderList
     plural: openidconnectproviders
     singular: openidconnectprovider

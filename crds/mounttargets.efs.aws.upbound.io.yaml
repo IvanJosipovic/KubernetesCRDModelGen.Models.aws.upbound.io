@@ -7,11 +7,11 @@ metadata:
 spec:
   group: efs.aws.upbound.io
   names:
+    kind: MountTarget
     categories:
     - crossplane
     - managed
     - aws
-    kind: MountTarget
     listKind: MountTargetList
     plural: mounttargets
     singular: mounttarget

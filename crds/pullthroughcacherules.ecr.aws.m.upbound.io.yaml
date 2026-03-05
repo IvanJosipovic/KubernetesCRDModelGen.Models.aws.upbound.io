@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ecr.aws.m.upbound.io
   names:
+    kind: PullThroughCacheRule
     categories:
     - crossplane
     - managed
     - aws
-    kind: PullThroughCacheRule
     listKind: PullThroughCacheRuleList
     plural: pullthroughcacherules
     singular: pullthroughcacherule

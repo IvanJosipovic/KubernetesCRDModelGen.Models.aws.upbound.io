@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iot.aws.upbound.io
   names:
+    kind: RoleAlias
     categories:
     - crossplane
     - managed
     - aws
-    kind: RoleAlias
     listKind: RoleAliasList
     plural: rolealiases
     singular: rolealias

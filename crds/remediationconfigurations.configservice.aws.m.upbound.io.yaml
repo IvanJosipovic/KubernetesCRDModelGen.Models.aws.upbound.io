@@ -7,11 +7,11 @@ metadata:
 spec:
   group: configservice.aws.m.upbound.io
   names:
+    kind: RemediationConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: RemediationConfiguration
     listKind: RemediationConfigurationList
     plural: remediationconfigurations
     singular: remediationconfiguration

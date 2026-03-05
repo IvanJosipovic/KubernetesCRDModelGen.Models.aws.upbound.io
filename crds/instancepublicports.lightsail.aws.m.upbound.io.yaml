@@ -7,11 +7,11 @@ metadata:
 spec:
   group: lightsail.aws.m.upbound.io
   names:
+    kind: InstancePublicPorts
     categories:
     - crossplane
     - managed
     - aws
-    kind: InstancePublicPorts
     listKind: InstancePublicPortsList
     plural: instancepublicports
     singular: instancepublicports

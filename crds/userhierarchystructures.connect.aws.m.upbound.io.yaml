@@ -7,11 +7,11 @@ metadata:
 spec:
   group: connect.aws.m.upbound.io
   names:
+    kind: UserHierarchyStructure
     categories:
     - crossplane
     - managed
     - aws
-    kind: UserHierarchyStructure
     listKind: UserHierarchyStructureList
     plural: userhierarchystructures
     singular: userhierarchystructure

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: servicecatalog.aws.m.upbound.io
   names:
+    kind: TagOptionResourceAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: TagOptionResourceAssociation
     listKind: TagOptionResourceAssociationList
     plural: tagoptionresourceassociations
     singular: tagoptionresourceassociation

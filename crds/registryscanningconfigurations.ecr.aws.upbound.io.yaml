@@ -7,11 +7,11 @@ metadata:
 spec:
   group: ecr.aws.upbound.io
   names:
+    kind: RegistryScanningConfiguration
     categories:
     - crossplane
     - managed
     - aws
-    kind: RegistryScanningConfiguration
     listKind: RegistryScanningConfigurationList
     plural: registryscanningconfigurations
     singular: registryscanningconfiguration

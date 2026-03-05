@@ -7,11 +7,11 @@ metadata:
 spec:
   group: lightsail.aws.m.upbound.io
   names:
+    kind: Certificate
     categories:
     - crossplane
     - managed
     - aws
-    kind: Certificate
     listKind: CertificateList
     plural: certificates
     singular: certificate

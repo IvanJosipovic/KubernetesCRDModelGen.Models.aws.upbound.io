@@ -7,11 +7,11 @@ metadata:
 spec:
   group: glue.aws.upbound.io
   names:
+    kind: CatalogDatabase
     categories:
     - crossplane
     - managed
     - aws
-    kind: CatalogDatabase
     listKind: CatalogDatabaseList
     plural: catalogdatabases
     singular: catalogdatabase

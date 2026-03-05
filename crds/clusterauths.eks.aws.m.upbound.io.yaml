@@ -7,11 +7,11 @@ metadata:
 spec:
   group: eks.aws.m.upbound.io
   names:
+    kind: ClusterAuth
     categories:
     - crossplane
     - managed
     - aws
-    kind: ClusterAuth
     listKind: ClusterAuthList
     plural: clusterauths
     singular: clusterauth

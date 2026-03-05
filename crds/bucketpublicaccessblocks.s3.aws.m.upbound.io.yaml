@@ -7,11 +7,11 @@ metadata:
 spec:
   group: s3.aws.m.upbound.io
   names:
+    kind: BucketPublicAccessBlock
     categories:
     - crossplane
     - managed
     - aws
-    kind: BucketPublicAccessBlock
     listKind: BucketPublicAccessBlockList
     plural: bucketpublicaccessblocks
     singular: bucketpublicaccessblock

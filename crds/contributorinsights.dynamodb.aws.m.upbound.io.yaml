@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dynamodb.aws.m.upbound.io
   names:
+    kind: ContributorInsights
     categories:
     - crossplane
     - managed
     - aws
-    kind: ContributorInsights
     listKind: ContributorInsightsList
     plural: contributorinsights
     singular: contributorinsights

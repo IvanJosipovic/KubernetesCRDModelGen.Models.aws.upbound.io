@@ -7,11 +7,11 @@ metadata:
 spec:
   group: servicecatalog.aws.m.upbound.io
   names:
+    kind: ProductPortfolioAssociation
     categories:
     - crossplane
     - managed
     - aws
-    kind: ProductPortfolioAssociation
     listKind: ProductPortfolioAssociationList
     plural: productportfolioassociations
     singular: productportfolioassociation

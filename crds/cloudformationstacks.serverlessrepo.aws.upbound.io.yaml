@@ -7,11 +7,11 @@ metadata:
 spec:
   group: serverlessrepo.aws.upbound.io
   names:
+    kind: CloudFormationStack
     categories:
     - crossplane
     - managed
     - aws
-    kind: CloudFormationStack
     listKind: CloudFormationStackList
     plural: cloudformationstacks
     singular: cloudformationstack

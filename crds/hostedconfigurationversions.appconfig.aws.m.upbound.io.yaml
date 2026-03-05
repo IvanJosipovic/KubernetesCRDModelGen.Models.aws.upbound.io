@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appconfig.aws.m.upbound.io
   names:
+    kind: HostedConfigurationVersion
     categories:
     - crossplane
     - managed
     - aws
-    kind: HostedConfigurationVersion
     listKind: HostedConfigurationVersionList
     plural: hostedconfigurationversions
     singular: hostedconfigurationversion

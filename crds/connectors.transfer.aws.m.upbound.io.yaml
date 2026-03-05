@@ -7,11 +7,11 @@ metadata:
 spec:
   group: transfer.aws.m.upbound.io
   names:
+    kind: Connector
     categories:
     - crossplane
     - managed
     - aws
-    kind: Connector
     listKind: ConnectorList
     plural: connectors
     singular: connector

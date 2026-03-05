@@ -7,11 +7,11 @@ metadata:
 spec:
   group: autoscaling.aws.m.upbound.io
   names:
+    kind: LifecycleHook
     categories:
     - crossplane
     - managed
     - aws
-    kind: LifecycleHook
     listKind: LifecycleHookList
     plural: lifecyclehooks
     singular: lifecyclehook

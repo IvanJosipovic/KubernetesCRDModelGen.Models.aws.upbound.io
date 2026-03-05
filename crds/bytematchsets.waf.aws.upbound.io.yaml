@@ -7,11 +7,11 @@ metadata:
 spec:
   group: waf.aws.upbound.io
   names:
+    kind: ByteMatchSet
     categories:
     - crossplane
     - managed
     - aws
-    kind: ByteMatchSet
     listKind: ByteMatchSetList
     plural: bytematchsets
     singular: bytematchset

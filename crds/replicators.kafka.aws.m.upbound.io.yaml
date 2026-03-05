@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kafka.aws.m.upbound.io
   names:
+    kind: Replicator
     categories:
     - crossplane
     - managed
     - aws
-    kind: Replicator
     listKind: ReplicatorList
     plural: replicators
     singular: replicator
