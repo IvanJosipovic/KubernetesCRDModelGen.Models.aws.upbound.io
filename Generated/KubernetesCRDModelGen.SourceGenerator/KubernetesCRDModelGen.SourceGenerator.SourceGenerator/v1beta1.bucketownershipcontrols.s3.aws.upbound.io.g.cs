@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.s3.aws.upbound.io;
 /// <summary>BucketOwnershipControls is the Schema for the BucketOwnershipControlss API. Manages S3 Bucket Ownership Controls.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BucketOwnershipControlsList : IKubernetesObject<V1ListMeta>, IItems<V1beta1BucketOwnershipControls>
@@ -33,7 +33,7 @@ public partial class V1beta1BucketOwnershipControlsList : IKubernetesObject<V1Li
 
     /// <summary>List of V1beta1BucketOwnershipControls objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1BucketOwnershipControls>? Items { get; set; }
+    public required IList<V1beta1BucketOwnershipControls> Items { get; set; }
 }
 
 /// <summary>
@@ -45,7 +45,7 @@ public partial class V1beta1BucketOwnershipControlsList : IKubernetesObject<V1Li
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketOwnershipControlsSpecDeletionPolicyEnum>))]
 public enum V1beta1BucketOwnershipControlsSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1BucketOwnershipControlsSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketOwnershipControlsSpecForProviderBucketRefPolicyResolutionEnum>))]
 public enum V1beta1BucketOwnershipControlsSpecForProviderBucketRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1BucketOwnershipControlsSpecForProviderBucketRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketOwnershipControlsSpecForProviderBucketRefPolicyResolveEnum>))]
 public enum V1beta1BucketOwnershipControlsSpecForProviderBucketRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1BucketOwnershipControlsSpecForProviderBucketRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketOwnershipControlsSpecForProviderBucketRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1BucketOwnershipControlsSpecForProviderBucketRefPolic
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketOwnershipControlsSpecForProviderBucketRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1BucketOwnershipControlsSpecForProviderBucketRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketOwnershipControlsSpecForProviderBucketSelectorPolicyResolutionEnum>))]
 public enum V1beta1BucketOwnershipControlsSpecForProviderBucketSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1BucketOwnershipControlsSpecForProviderBucketSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketOwnershipControlsSpecForProviderBucketSelectorPolicyResolveEnum>))]
 public enum V1beta1BucketOwnershipControlsSpecForProviderBucketSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1BucketOwnershipControlsSpecForProviderBucketSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketOwnershipControlsSpecForProviderBucketSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1BucketOwnershipControlsSpecForProviderBucketSelector
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketOwnershipControlsSpecForProviderBucketSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1BucketOwnershipControlsSpecForProviderBucketSelector
     public V1beta1BucketOwnershipControlsSpecForProviderBucketSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketOwnershipControlsSpecForProviderRule
 {
@@ -211,7 +211,7 @@ public partial class V1beta1BucketOwnershipControlsSpecForProviderRule
     public string? ObjectOwnership { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketOwnershipControlsSpecForProvider
 {
@@ -245,7 +245,7 @@ public partial class V1beta1BucketOwnershipControlsSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketOwnershipControlsSpecInitProviderBucketRefPolicyResolutionEnum>))]
 public enum V1beta1BucketOwnershipControlsSpecInitProviderBucketRefPolicyResolutionEnum
 {
@@ -261,7 +261,7 @@ public enum V1beta1BucketOwnershipControlsSpecInitProviderBucketRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketOwnershipControlsSpecInitProviderBucketRefPolicyResolveEnum>))]
 public enum V1beta1BucketOwnershipControlsSpecInitProviderBucketRefPolicyResolveEnum
 {
@@ -272,7 +272,7 @@ public enum V1beta1BucketOwnershipControlsSpecInitProviderBucketRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketOwnershipControlsSpecInitProviderBucketRefPolicy
 {
@@ -296,7 +296,7 @@ public partial class V1beta1BucketOwnershipControlsSpecInitProviderBucketRefPoli
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketOwnershipControlsSpecInitProviderBucketRef
 {
@@ -315,7 +315,7 @@ public partial class V1beta1BucketOwnershipControlsSpecInitProviderBucketRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketOwnershipControlsSpecInitProviderBucketSelectorPolicyResolutionEnum>))]
 public enum V1beta1BucketOwnershipControlsSpecInitProviderBucketSelectorPolicyResolutionEnum
 {
@@ -331,7 +331,7 @@ public enum V1beta1BucketOwnershipControlsSpecInitProviderBucketSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketOwnershipControlsSpecInitProviderBucketSelectorPolicyResolveEnum>))]
 public enum V1beta1BucketOwnershipControlsSpecInitProviderBucketSelectorPolicyResolveEnum
 {
@@ -342,7 +342,7 @@ public enum V1beta1BucketOwnershipControlsSpecInitProviderBucketSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketOwnershipControlsSpecInitProviderBucketSelectorPolicy
 {
@@ -366,7 +366,7 @@ public partial class V1beta1BucketOwnershipControlsSpecInitProviderBucketSelecto
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketOwnershipControlsSpecInitProviderBucketSelector
 {
@@ -386,7 +386,7 @@ public partial class V1beta1BucketOwnershipControlsSpecInitProviderBucketSelecto
     public V1beta1BucketOwnershipControlsSpecInitProviderBucketSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketOwnershipControlsSpecInitProviderRule
 {
@@ -407,7 +407,7 @@ public partial class V1beta1BucketOwnershipControlsSpecInitProviderRule
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketOwnershipControlsSpecInitProvider
 {
@@ -432,7 +432,7 @@ public partial class V1beta1BucketOwnershipControlsSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketOwnershipControlsSpecManagementPoliciesEnum>))]
 public enum V1beta1BucketOwnershipControlsSpecManagementPoliciesEnum
 {
@@ -456,7 +456,7 @@ public enum V1beta1BucketOwnershipControlsSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketOwnershipControlsSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1BucketOwnershipControlsSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -472,7 +472,7 @@ public enum V1beta1BucketOwnershipControlsSpecProviderConfigRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketOwnershipControlsSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1BucketOwnershipControlsSpecProviderConfigRefPolicyResolveEnum
 {
@@ -483,7 +483,7 @@ public enum V1beta1BucketOwnershipControlsSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketOwnershipControlsSpecProviderConfigRefPolicy
 {
@@ -511,7 +511,7 @@ public partial class V1beta1BucketOwnershipControlsSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketOwnershipControlsSpecProviderConfigRef
 {
@@ -530,7 +530,7 @@ public partial class V1beta1BucketOwnershipControlsSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketOwnershipControlsSpecWriteConnectionSecretToRef
 {
@@ -544,7 +544,7 @@ public partial class V1beta1BucketOwnershipControlsSpecWriteConnectionSecretToRe
 }
 
 /// <summary>BucketOwnershipControlsSpec defines the desired state of BucketOwnershipControls</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketOwnershipControlsSpec
 {
@@ -611,7 +611,7 @@ public partial class V1beta1BucketOwnershipControlsSpec
     public V1beta1BucketOwnershipControlsSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketOwnershipControlsStatusAtProviderRule
 {
@@ -620,7 +620,7 @@ public partial class V1beta1BucketOwnershipControlsStatusAtProviderRule
     public string? ObjectOwnership { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketOwnershipControlsStatusAtProvider
 {
@@ -645,7 +645,7 @@ public partial class V1beta1BucketOwnershipControlsStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketOwnershipControlsStatusConditions
 {
@@ -688,7 +688,7 @@ public partial class V1beta1BucketOwnershipControlsStatusConditions
 }
 
 /// <summary>BucketOwnershipControlsStatus defines the observed state of BucketOwnershipControls.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketOwnershipControlsStatus
 {
@@ -709,7 +709,7 @@ public partial class V1beta1BucketOwnershipControlsStatus
 }
 
 /// <summary>BucketOwnershipControls is the Schema for the BucketOwnershipControlss API. Manages S3 Bucket Ownership Controls.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BucketOwnershipControls : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1BucketOwnershipControlsSpec>, IStatus<V1beta1BucketOwnershipControlsStatus?>

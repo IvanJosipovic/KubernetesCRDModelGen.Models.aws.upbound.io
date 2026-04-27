@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.detective.aws.m.upbound.io;
 /// <summary>Graph is the Schema for the Graphs API. Provides a resource to manage an Amazon Detective graph.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GraphList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Graph>
@@ -33,10 +33,10 @@ public partial class V1beta1GraphList : IKubernetesObject<V1ListMeta>, IItems<V1
 
     /// <summary>List of V1beta1Graph objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1Graph>? Items { get; set; }
+    public required IList<V1beta1Graph> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GraphSpecForProvider
 {
@@ -64,7 +64,7 @@ public partial class V1beta1GraphSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GraphSpecInitProvider
 {
@@ -77,7 +77,7 @@ public partial class V1beta1GraphSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphSpecManagementPoliciesEnum>))]
 public enum V1beta1GraphSpecManagementPoliciesEnum
 {
@@ -100,7 +100,7 @@ public enum V1beta1GraphSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GraphSpecProviderConfigRef
 {
@@ -119,7 +119,7 @@ public partial class V1beta1GraphSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GraphSpecWriteConnectionSecretToRef
 {
@@ -129,7 +129,7 @@ public partial class V1beta1GraphSpecWriteConnectionSecretToRef
 }
 
 /// <summary>GraphSpec defines the desired state of Graph</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GraphSpec
 {
@@ -180,7 +180,7 @@ public partial class V1beta1GraphSpec
     public V1beta1GraphSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GraphStatusAtProvider
 {
@@ -211,7 +211,7 @@ public partial class V1beta1GraphStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GraphStatusConditions
 {
@@ -254,7 +254,7 @@ public partial class V1beta1GraphStatusConditions
 }
 
 /// <summary>GraphStatus defines the observed state of Graph.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1GraphStatus
 {
@@ -275,7 +275,7 @@ public partial class V1beta1GraphStatus
 }
 
 /// <summary>Graph is the Schema for the Graphs API. Provides a resource to manage an Amazon Detective graph.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Graph : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1GraphSpec>, IStatus<V1beta1GraphStatus?>

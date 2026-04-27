@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudwatchlogs.aws.m.upbound.io;
 /// <summary>DestinationPolicy is the Schema for the DestinationPolicys API. Provides a CloudWatch Logs destination policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DestinationPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DestinationPolicy>
@@ -33,10 +33,10 @@ public partial class V1beta1DestinationPolicyList : IKubernetesObject<V1ListMeta
 
     /// <summary>List of V1beta1DestinationPolicy objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1DestinationPolicy>? Items { get; set; }
+    public required IList<V1beta1DestinationPolicy> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DestinationPolicySpecForProvider
 {
@@ -68,7 +68,7 @@ public partial class V1beta1DestinationPolicySpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DestinationPolicySpecInitProvider
 {
@@ -85,7 +85,7 @@ public partial class V1beta1DestinationPolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DestinationPolicySpecManagementPoliciesEnum>))]
 public enum V1beta1DestinationPolicySpecManagementPoliciesEnum
 {
@@ -108,7 +108,7 @@ public enum V1beta1DestinationPolicySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DestinationPolicySpecProviderConfigRef
 {
@@ -127,7 +127,7 @@ public partial class V1beta1DestinationPolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DestinationPolicySpecWriteConnectionSecretToRef
 {
@@ -137,7 +137,7 @@ public partial class V1beta1DestinationPolicySpecWriteConnectionSecretToRef
 }
 
 /// <summary>DestinationPolicySpec defines the desired state of DestinationPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DestinationPolicySpec
 {
@@ -188,7 +188,7 @@ public partial class V1beta1DestinationPolicySpec
     public V1beta1DestinationPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DestinationPolicyStatusAtProvider
 {
@@ -212,7 +212,7 @@ public partial class V1beta1DestinationPolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DestinationPolicyStatusConditions
 {
@@ -255,7 +255,7 @@ public partial class V1beta1DestinationPolicyStatusConditions
 }
 
 /// <summary>DestinationPolicyStatus defines the observed state of DestinationPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DestinationPolicyStatus
 {
@@ -276,7 +276,7 @@ public partial class V1beta1DestinationPolicyStatus
 }
 
 /// <summary>DestinationPolicy is the Schema for the DestinationPolicys API. Provides a CloudWatch Logs destination policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DestinationPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DestinationPolicySpec>, IStatus<V1beta1DestinationPolicyStatus?>

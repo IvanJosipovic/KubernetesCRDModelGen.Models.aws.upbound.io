@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cognitoidp.aws.upbound.io;
 /// <summary>RiskConfiguration is the Schema for the RiskConfigurations API. Provides a Cognito Risk Configuration resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RiskConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RiskConfiguration>
@@ -33,7 +33,7 @@ public partial class V1beta1RiskConfigurationList : IKubernetesObject<V1ListMeta
 
     /// <summary>List of V1beta1RiskConfiguration objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1RiskConfiguration>? Items { get; set; }
+    public required IList<V1beta1RiskConfiguration> Items { get; set; }
 }
 
 /// <summary>
@@ -45,7 +45,7 @@ public partial class V1beta1RiskConfigurationList : IKubernetesObject<V1ListMeta
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecDeletionPolicyEnum>))]
 public enum V1beta1RiskConfigurationSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta1RiskConfigurationSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskConfigurationActionsHighAction
 {
@@ -68,7 +68,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskC
     public bool? Notify { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskConfigurationActionsLowAction
 {
@@ -81,7 +81,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskC
     public bool? Notify { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskConfigurationActionsMediumAction
 {
@@ -94,7 +94,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskC
     public bool? Notify { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskConfigurationActions
 {
@@ -111,7 +111,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskC
     public IList<V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskConfigurationActionsMediumAction>? MediumAction { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail
 {
@@ -128,7 +128,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskC
     public string? TextBody { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail
 {
@@ -145,7 +145,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskC
     public string? TextBody { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail
 {
@@ -162,7 +162,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskC
     public string? TextBody { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskConfigurationNotifyConfiguration
 {
@@ -191,7 +191,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskC
     public string? SourceArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskConfiguration
 {
@@ -204,7 +204,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskC
     public IList<V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskConfigurationNotifyConfiguration>? NotifyConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecForProviderCompromisedCredentialsRiskConfigurationActions
 {
@@ -213,7 +213,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderCompromisedCredentia
     public string? EventAction { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecForProviderCompromisedCredentialsRiskConfiguration
 {
@@ -226,7 +226,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderCompromisedCredentia
     public IList<string>? EventFilter { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecForProviderRiskExceptionConfiguration
 {
@@ -253,7 +253,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderRiskExceptionConfigu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecForProviderUserPoolIdRefPolicyResolutionEnum>))]
 public enum V1beta1RiskConfigurationSpecForProviderUserPoolIdRefPolicyResolutionEnum
 {
@@ -269,7 +269,7 @@ public enum V1beta1RiskConfigurationSpecForProviderUserPoolIdRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecForProviderUserPoolIdRefPolicyResolveEnum>))]
 public enum V1beta1RiskConfigurationSpecForProviderUserPoolIdRefPolicyResolveEnum
 {
@@ -280,7 +280,7 @@ public enum V1beta1RiskConfigurationSpecForProviderUserPoolIdRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecForProviderUserPoolIdRefPolicy
 {
@@ -304,7 +304,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderUserPoolIdRefPolicy
 }
 
 /// <summary>Reference to a UserPool in cognitoidp to populate userPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecForProviderUserPoolIdRef
 {
@@ -323,7 +323,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderUserPoolIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecForProviderUserPoolIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1RiskConfigurationSpecForProviderUserPoolIdSelectorPolicyResolutionEnum
 {
@@ -339,7 +339,7 @@ public enum V1beta1RiskConfigurationSpecForProviderUserPoolIdSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecForProviderUserPoolIdSelectorPolicyResolveEnum>))]
 public enum V1beta1RiskConfigurationSpecForProviderUserPoolIdSelectorPolicyResolveEnum
 {
@@ -350,7 +350,7 @@ public enum V1beta1RiskConfigurationSpecForProviderUserPoolIdSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecForProviderUserPoolIdSelectorPolicy
 {
@@ -374,7 +374,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderUserPoolIdSelectorPo
 }
 
 /// <summary>Selector for a UserPool in cognitoidp to populate userPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecForProviderUserPoolIdSelector
 {
@@ -394,7 +394,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderUserPoolIdSelector
     public V1beta1RiskConfigurationSpecForProviderUserPoolIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecForProvider
 {
@@ -434,7 +434,7 @@ public partial class V1beta1RiskConfigurationSpecForProvider
     public V1beta1RiskConfigurationSpecForProviderUserPoolIdSelector? UserPoolIdSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRiskConfigurationActionsHighAction
 {
@@ -447,7 +447,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRisk
     public bool? Notify { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRiskConfigurationActionsLowAction
 {
@@ -460,7 +460,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRisk
     public bool? Notify { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRiskConfigurationActionsMediumAction
 {
@@ -473,7 +473,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRisk
     public bool? Notify { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRiskConfigurationActions
 {
@@ -490,7 +490,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRisk
     public IList<V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRiskConfigurationActionsMediumAction>? MediumAction { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail
 {
@@ -507,7 +507,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRisk
     public string? TextBody { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail
 {
@@ -524,7 +524,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRisk
     public string? TextBody { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail
 {
@@ -541,7 +541,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRisk
     public string? TextBody { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRiskConfigurationNotifyConfiguration
 {
@@ -570,7 +570,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRisk
     public string? SourceArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRiskConfiguration
 {
@@ -583,7 +583,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRisk
     public IList<V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRiskConfigurationNotifyConfiguration>? NotifyConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecInitProviderCompromisedCredentialsRiskConfigurationActions
 {
@@ -592,7 +592,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderCompromisedCredenti
     public string? EventAction { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecInitProviderCompromisedCredentialsRiskConfiguration
 {
@@ -605,7 +605,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderCompromisedCredenti
     public IList<string>? EventFilter { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecInitProviderRiskExceptionConfiguration
 {
@@ -632,7 +632,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderRiskExceptionConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecInitProviderUserPoolIdRefPolicyResolutionEnum>))]
 public enum V1beta1RiskConfigurationSpecInitProviderUserPoolIdRefPolicyResolutionEnum
 {
@@ -648,7 +648,7 @@ public enum V1beta1RiskConfigurationSpecInitProviderUserPoolIdRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecInitProviderUserPoolIdRefPolicyResolveEnum>))]
 public enum V1beta1RiskConfigurationSpecInitProviderUserPoolIdRefPolicyResolveEnum
 {
@@ -659,7 +659,7 @@ public enum V1beta1RiskConfigurationSpecInitProviderUserPoolIdRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecInitProviderUserPoolIdRefPolicy
 {
@@ -683,7 +683,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderUserPoolIdRefPolicy
 }
 
 /// <summary>Reference to a UserPool in cognitoidp to populate userPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecInitProviderUserPoolIdRef
 {
@@ -702,7 +702,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderUserPoolIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecInitProviderUserPoolIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1RiskConfigurationSpecInitProviderUserPoolIdSelectorPolicyResolutionEnum
 {
@@ -718,7 +718,7 @@ public enum V1beta1RiskConfigurationSpecInitProviderUserPoolIdSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecInitProviderUserPoolIdSelectorPolicyResolveEnum>))]
 public enum V1beta1RiskConfigurationSpecInitProviderUserPoolIdSelectorPolicyResolveEnum
 {
@@ -729,7 +729,7 @@ public enum V1beta1RiskConfigurationSpecInitProviderUserPoolIdSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecInitProviderUserPoolIdSelectorPolicy
 {
@@ -753,7 +753,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderUserPoolIdSelectorP
 }
 
 /// <summary>Selector for a UserPool in cognitoidp to populate userPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecInitProviderUserPoolIdSelector
 {
@@ -785,7 +785,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderUserPoolIdSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecInitProvider
 {
@@ -822,7 +822,7 @@ public partial class V1beta1RiskConfigurationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecManagementPoliciesEnum>))]
 public enum V1beta1RiskConfigurationSpecManagementPoliciesEnum
 {
@@ -846,7 +846,7 @@ public enum V1beta1RiskConfigurationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1RiskConfigurationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -862,7 +862,7 @@ public enum V1beta1RiskConfigurationSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1RiskConfigurationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -873,7 +873,7 @@ public enum V1beta1RiskConfigurationSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecProviderConfigRefPolicy
 {
@@ -901,7 +901,7 @@ public partial class V1beta1RiskConfigurationSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecProviderConfigRef
 {
@@ -920,7 +920,7 @@ public partial class V1beta1RiskConfigurationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpecWriteConnectionSecretToRef
 {
@@ -934,7 +934,7 @@ public partial class V1beta1RiskConfigurationSpecWriteConnectionSecretToRef
 }
 
 /// <summary>RiskConfigurationSpec defines the desired state of RiskConfiguration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationSpec
 {
@@ -1001,7 +1001,7 @@ public partial class V1beta1RiskConfigurationSpec
     public V1beta1RiskConfigurationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRiskConfigurationActionsHighAction
 {
@@ -1014,7 +1014,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRisk
     public bool? Notify { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRiskConfigurationActionsLowAction
 {
@@ -1027,7 +1027,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRisk
     public bool? Notify { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRiskConfigurationActionsMediumAction
 {
@@ -1040,7 +1040,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRisk
     public bool? Notify { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRiskConfigurationActions
 {
@@ -1057,7 +1057,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRisk
     public IList<V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRiskConfigurationActionsMediumAction>? MediumAction { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail
 {
@@ -1074,7 +1074,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRisk
     public string? TextBody { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail
 {
@@ -1091,7 +1091,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRisk
     public string? TextBody { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail
 {
@@ -1108,7 +1108,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRisk
     public string? TextBody { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRiskConfigurationNotifyConfiguration
 {
@@ -1137,7 +1137,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRisk
     public string? SourceArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRiskConfiguration
 {
@@ -1150,7 +1150,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRisk
     public IList<V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRiskConfigurationNotifyConfiguration>? NotifyConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationStatusAtProviderCompromisedCredentialsRiskConfigurationActions
 {
@@ -1159,7 +1159,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderCompromisedCredenti
     public string? EventAction { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationStatusAtProviderCompromisedCredentialsRiskConfiguration
 {
@@ -1172,7 +1172,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderCompromisedCredenti
     public IList<string>? EventFilter { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationStatusAtProviderRiskExceptionConfiguration
 {
@@ -1193,7 +1193,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderRiskExceptionConfig
     public IList<string>? SkippedIpRangeList { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationStatusAtProvider
 {
@@ -1230,7 +1230,7 @@ public partial class V1beta1RiskConfigurationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationStatusConditions
 {
@@ -1273,7 +1273,7 @@ public partial class V1beta1RiskConfigurationStatusConditions
 }
 
 /// <summary>RiskConfigurationStatus defines the observed state of RiskConfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RiskConfigurationStatus
 {
@@ -1294,7 +1294,7 @@ public partial class V1beta1RiskConfigurationStatus
 }
 
 /// <summary>RiskConfiguration is the Schema for the RiskConfigurations API. Provides a Cognito Risk Configuration resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RiskConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RiskConfigurationSpec>, IStatus<V1beta1RiskConfigurationStatus?>

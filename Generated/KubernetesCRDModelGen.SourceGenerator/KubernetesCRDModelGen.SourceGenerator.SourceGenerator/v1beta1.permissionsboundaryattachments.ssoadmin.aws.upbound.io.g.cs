@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ssoadmin.aws.upbound.io;
 /// <summary>PermissionsBoundaryAttachment is the Schema for the PermissionsBoundaryAttachments API. Attaches a permissions boundary policy to a Single Sign-On (SSO) Permission Set resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PermissionsBoundaryAttachmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PermissionsBoundaryAttachment>
@@ -33,7 +33,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentList : IKubernetesObjec
 
     /// <summary>List of V1beta1PermissionsBoundaryAttachment objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1PermissionsBoundaryAttachment>? Items { get; set; }
+    public required IList<V1beta1PermissionsBoundaryAttachment> Items { get; set; }
 }
 
 /// <summary>
@@ -45,7 +45,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentList : IKubernetesObjec
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecDeletionPolicyEnum>))]
 public enum V1beta1PermissionsBoundaryAttachmentSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnRefPolicyResolutionEnum>))]
 public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnRefPolicyResolveEnum>))]
 public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
 }
 
 /// <summary>Reference to a PermissionSet in ssoadmin to populate permissionSetArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnSelectorPolicyResolveEnum>))]
 public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
 }
 
 /// <summary>Selector for a PermissionSet in ssoadmin to populate permissionSetArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRefPolicyResolutionEnum>))]
 public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBounda
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRefPolicyResolveEnum>))]
 public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBounda
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
 }
 
 /// <summary>Reference to a Policy in iam to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBounda
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicyResolveEnum>))]
 public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBounda
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
 }
 
 /// <summary>Selector for a Policy in iam to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelector
 {
@@ -349,7 +349,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
     public V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReference
 {
@@ -370,7 +370,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
     public string? Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundary
 {
@@ -383,7 +383,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
     public string? ManagedPolicyArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProvider
 {
@@ -421,7 +421,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRefPolicyResolutionEnum>))]
 public enum V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRefPolicyResolutionEnum
 {
@@ -437,7 +437,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBound
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRefPolicyResolveEnum>))]
 public enum V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRefPolicyResolveEnum
 {
@@ -448,7 +448,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBound
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRefPolicy
 {
@@ -472,7 +472,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermiss
 }
 
 /// <summary>Reference to a Policy in iam to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRef
 {
@@ -491,7 +491,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermiss
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicyResolutionEnum
 {
@@ -507,7 +507,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBound
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicyResolveEnum>))]
 public enum V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicyResolveEnum
 {
@@ -518,7 +518,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBound
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicy
 {
@@ -542,7 +542,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermiss
 }
 
 /// <summary>Selector for a Policy in iam to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelector
 {
@@ -562,7 +562,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermiss
     public V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReference
 {
@@ -583,7 +583,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermiss
     public string? Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundary
 {
@@ -608,7 +608,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermiss
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProvider
 {
@@ -621,7 +621,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecManagementPoliciesEnum>))]
 public enum V1beta1PermissionsBoundaryAttachmentSpecManagementPoliciesEnum
 {
@@ -645,7 +645,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1PermissionsBoundaryAttachmentSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -661,7 +661,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecProviderConfigRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1PermissionsBoundaryAttachmentSpecProviderConfigRefPolicyResolveEnum
 {
@@ -672,7 +672,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecProviderConfigRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecProviderConfigRefPolicy
 {
@@ -700,7 +700,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecProviderConfigRefPo
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecProviderConfigRef
 {
@@ -719,7 +719,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecWriteConnectionSecretToRef
 {
@@ -733,7 +733,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecWriteConnectionSecr
 }
 
 /// <summary>PermissionsBoundaryAttachmentSpec defines the desired state of PermissionsBoundaryAttachment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentSpec
 {
@@ -800,7 +800,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpec
     public V1beta1PermissionsBoundaryAttachmentSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentStatusAtProviderPermissionsBoundaryCustomerManagedPolicyReference
 {
@@ -813,7 +813,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentStatusAtProviderPermiss
     public string? Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentStatusAtProviderPermissionsBoundary
 {
@@ -826,7 +826,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentStatusAtProviderPermiss
     public string? ManagedPolicyArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentStatusAtProvider
 {
@@ -855,7 +855,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentStatusConditions
 {
@@ -898,7 +898,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentStatusConditions
 }
 
 /// <summary>PermissionsBoundaryAttachmentStatus defines the observed state of PermissionsBoundaryAttachment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PermissionsBoundaryAttachmentStatus
 {
@@ -919,7 +919,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentStatus
 }
 
 /// <summary>PermissionsBoundaryAttachment is the Schema for the PermissionsBoundaryAttachments API. Attaches a permissions boundary policy to a Single Sign-On (SSO) Permission Set resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PermissionsBoundaryAttachment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PermissionsBoundaryAttachmentSpec>, IStatus<V1beta1PermissionsBoundaryAttachmentStatus?>

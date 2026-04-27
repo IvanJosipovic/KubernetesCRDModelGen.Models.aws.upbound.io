@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ds.aws.upbound.io;
 /// <summary>SharedDirectory is the Schema for the SharedDirectorys API. Manages a directory in your account (directory owner) shared with another account (directory consumer).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SharedDirectoryList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SharedDirectory>
@@ -33,7 +33,7 @@ public partial class V1beta1SharedDirectoryList : IKubernetesObject<V1ListMeta>,
 
     /// <summary>List of V1beta1SharedDirectory objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1SharedDirectory>? Items { get; set; }
+    public required IList<V1beta1SharedDirectory> Items { get; set; }
 }
 
 /// <summary>
@@ -45,7 +45,7 @@ public partial class V1beta1SharedDirectoryList : IKubernetesObject<V1ListMeta>,
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedDirectorySpecDeletionPolicyEnum>))]
 public enum V1beta1SharedDirectorySpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1SharedDirectorySpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedDirectorySpecForProviderDirectoryIdRefPolicyResolutionEnum>))]
 public enum V1beta1SharedDirectorySpecForProviderDirectoryIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1SharedDirectorySpecForProviderDirectoryIdRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedDirectorySpecForProviderDirectoryIdRefPolicyResolveEnum>))]
 public enum V1beta1SharedDirectorySpecForProviderDirectoryIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1SharedDirectorySpecForProviderDirectoryIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectorySpecForProviderDirectoryIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1SharedDirectorySpecForProviderDirectoryIdRefPolicy
 }
 
 /// <summary>Reference to a Directory in ds to populate directoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectorySpecForProviderDirectoryIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1SharedDirectorySpecForProviderDirectoryIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedDirectorySpecForProviderDirectoryIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SharedDirectorySpecForProviderDirectoryIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1SharedDirectorySpecForProviderDirectoryIdSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedDirectorySpecForProviderDirectoryIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SharedDirectorySpecForProviderDirectoryIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1SharedDirectorySpecForProviderDirectoryIdSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectorySpecForProviderDirectoryIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1SharedDirectorySpecForProviderDirectoryIdSelectorPol
 }
 
 /// <summary>Selector for a Directory in ds to populate directoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectorySpecForProviderDirectoryIdSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta1SharedDirectorySpecForProviderDirectoryIdSelector
 }
 
 /// <summary>Message sent by the directory owner to the directory consumer to help the directory consumer administrator determine whether to approve or reject the share invitation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectorySpecForProviderNotesSecretRef
 {
@@ -220,7 +220,7 @@ public partial class V1beta1SharedDirectorySpecForProviderNotesSecretRef
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectorySpecForProviderTarget
 {
@@ -233,7 +233,7 @@ public partial class V1beta1SharedDirectorySpecForProviderTarget
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectorySpecForProvider
 {
@@ -275,7 +275,7 @@ public partial class V1beta1SharedDirectorySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedDirectorySpecInitProviderDirectoryIdRefPolicyResolutionEnum>))]
 public enum V1beta1SharedDirectorySpecInitProviderDirectoryIdRefPolicyResolutionEnum
 {
@@ -291,7 +291,7 @@ public enum V1beta1SharedDirectorySpecInitProviderDirectoryIdRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedDirectorySpecInitProviderDirectoryIdRefPolicyResolveEnum>))]
 public enum V1beta1SharedDirectorySpecInitProviderDirectoryIdRefPolicyResolveEnum
 {
@@ -302,7 +302,7 @@ public enum V1beta1SharedDirectorySpecInitProviderDirectoryIdRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectorySpecInitProviderDirectoryIdRefPolicy
 {
@@ -326,7 +326,7 @@ public partial class V1beta1SharedDirectorySpecInitProviderDirectoryIdRefPolicy
 }
 
 /// <summary>Reference to a Directory in ds to populate directoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectorySpecInitProviderDirectoryIdRef
 {
@@ -345,7 +345,7 @@ public partial class V1beta1SharedDirectorySpecInitProviderDirectoryIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedDirectorySpecInitProviderDirectoryIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SharedDirectorySpecInitProviderDirectoryIdSelectorPolicyResolutionEnum
 {
@@ -361,7 +361,7 @@ public enum V1beta1SharedDirectorySpecInitProviderDirectoryIdSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedDirectorySpecInitProviderDirectoryIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SharedDirectorySpecInitProviderDirectoryIdSelectorPolicyResolveEnum
 {
@@ -372,7 +372,7 @@ public enum V1beta1SharedDirectorySpecInitProviderDirectoryIdSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectorySpecInitProviderDirectoryIdSelectorPolicy
 {
@@ -396,7 +396,7 @@ public partial class V1beta1SharedDirectorySpecInitProviderDirectoryIdSelectorPo
 }
 
 /// <summary>Selector for a Directory in ds to populate directoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectorySpecInitProviderDirectoryIdSelector
 {
@@ -417,7 +417,7 @@ public partial class V1beta1SharedDirectorySpecInitProviderDirectoryIdSelector
 }
 
 /// <summary>Message sent by the directory owner to the directory consumer to help the directory consumer administrator determine whether to approve or reject the share invitation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectorySpecInitProviderNotesSecretRef
 {
@@ -434,7 +434,7 @@ public partial class V1beta1SharedDirectorySpecInitProviderNotesSecretRef
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectorySpecInitProviderTarget
 {
@@ -459,7 +459,7 @@ public partial class V1beta1SharedDirectorySpecInitProviderTarget
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectorySpecInitProvider
 {
@@ -492,7 +492,7 @@ public partial class V1beta1SharedDirectorySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedDirectorySpecManagementPoliciesEnum>))]
 public enum V1beta1SharedDirectorySpecManagementPoliciesEnum
 {
@@ -516,7 +516,7 @@ public enum V1beta1SharedDirectorySpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedDirectorySpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1SharedDirectorySpecProviderConfigRefPolicyResolutionEnum
 {
@@ -532,7 +532,7 @@ public enum V1beta1SharedDirectorySpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SharedDirectorySpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1SharedDirectorySpecProviderConfigRefPolicyResolveEnum
 {
@@ -543,7 +543,7 @@ public enum V1beta1SharedDirectorySpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectorySpecProviderConfigRefPolicy
 {
@@ -571,7 +571,7 @@ public partial class V1beta1SharedDirectorySpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectorySpecProviderConfigRef
 {
@@ -590,7 +590,7 @@ public partial class V1beta1SharedDirectorySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectorySpecWriteConnectionSecretToRef
 {
@@ -604,7 +604,7 @@ public partial class V1beta1SharedDirectorySpecWriteConnectionSecretToRef
 }
 
 /// <summary>SharedDirectorySpec defines the desired state of SharedDirectory</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectorySpec
 {
@@ -671,7 +671,7 @@ public partial class V1beta1SharedDirectorySpec
     public V1beta1SharedDirectorySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectoryStatusAtProviderTarget
 {
@@ -684,7 +684,7 @@ public partial class V1beta1SharedDirectoryStatusAtProviderTarget
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectoryStatusAtProvider
 {
@@ -717,7 +717,7 @@ public partial class V1beta1SharedDirectoryStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectoryStatusConditions
 {
@@ -760,7 +760,7 @@ public partial class V1beta1SharedDirectoryStatusConditions
 }
 
 /// <summary>SharedDirectoryStatus defines the observed state of SharedDirectory.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SharedDirectoryStatus
 {
@@ -781,7 +781,7 @@ public partial class V1beta1SharedDirectoryStatus
 }
 
 /// <summary>SharedDirectory is the Schema for the SharedDirectorys API. Manages a directory in your account (directory owner) shared with another account (directory consumer).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SharedDirectory : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SharedDirectorySpec>, IStatus<V1beta1SharedDirectoryStatus?>

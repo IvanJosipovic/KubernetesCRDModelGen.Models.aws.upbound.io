@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ecr.aws.m.upbound.io;
 /// <summary>ReplicationConfiguration is the Schema for the ReplicationConfigurations API. Provides an Elastic Container Registry Replication Configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ReplicationConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ReplicationConfiguration>
@@ -33,10 +33,10 @@ public partial class V1beta1ReplicationConfigurationList : IKubernetesObject<V1L
 
     /// <summary>List of V1beta1ReplicationConfiguration objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1ReplicationConfiguration>? Items { get; set; }
+    public required IList<V1beta1ReplicationConfiguration> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationConfigurationSpecForProviderReplicationConfigurationRuleDestination
 {
@@ -49,7 +49,7 @@ public partial class V1beta1ReplicationConfigurationSpecForProviderReplicationCo
     public string? RegistryId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationConfigurationSpecForProviderReplicationConfigurationRuleRepositoryFilter
 {
@@ -62,7 +62,7 @@ public partial class V1beta1ReplicationConfigurationSpecForProviderReplicationCo
     public string? FilterType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationConfigurationSpecForProviderReplicationConfigurationRule
 {
@@ -76,7 +76,7 @@ public partial class V1beta1ReplicationConfigurationSpecForProviderReplicationCo
 }
 
 /// <summary>Replication configuration for a registry. See Replication Configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationConfigurationSpecForProviderReplicationConfiguration
 {
@@ -85,7 +85,7 @@ public partial class V1beta1ReplicationConfigurationSpecForProviderReplicationCo
     public IList<V1beta1ReplicationConfigurationSpecForProviderReplicationConfigurationRule>? Rule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationConfigurationSpecForProvider
 {
@@ -101,7 +101,7 @@ public partial class V1beta1ReplicationConfigurationSpecForProvider
     public V1beta1ReplicationConfigurationSpecForProviderReplicationConfiguration? ReplicationConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationConfigurationSpecInitProviderReplicationConfigurationRuleDestination
 {
@@ -110,7 +110,7 @@ public partial class V1beta1ReplicationConfigurationSpecInitProviderReplicationC
     public string? RegistryId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationConfigurationSpecInitProviderReplicationConfigurationRuleRepositoryFilter
 {
@@ -123,7 +123,7 @@ public partial class V1beta1ReplicationConfigurationSpecInitProviderReplicationC
     public string? FilterType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationConfigurationSpecInitProviderReplicationConfigurationRule
 {
@@ -137,7 +137,7 @@ public partial class V1beta1ReplicationConfigurationSpecInitProviderReplicationC
 }
 
 /// <summary>Replication configuration for a registry. See Replication Configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationConfigurationSpecInitProviderReplicationConfiguration
 {
@@ -158,7 +158,7 @@ public partial class V1beta1ReplicationConfigurationSpecInitProviderReplicationC
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationConfigurationSpecInitProvider
 {
@@ -171,7 +171,7 @@ public partial class V1beta1ReplicationConfigurationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationConfigurationSpecManagementPoliciesEnum>))]
 public enum V1beta1ReplicationConfigurationSpecManagementPoliciesEnum
 {
@@ -194,7 +194,7 @@ public enum V1beta1ReplicationConfigurationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationConfigurationSpecProviderConfigRef
 {
@@ -213,7 +213,7 @@ public partial class V1beta1ReplicationConfigurationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationConfigurationSpecWriteConnectionSecretToRef
 {
@@ -223,7 +223,7 @@ public partial class V1beta1ReplicationConfigurationSpecWriteConnectionSecretToR
 }
 
 /// <summary>ReplicationConfigurationSpec defines the desired state of ReplicationConfiguration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationConfigurationSpec
 {
@@ -274,7 +274,7 @@ public partial class V1beta1ReplicationConfigurationSpec
     public V1beta1ReplicationConfigurationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationConfigurationStatusAtProviderReplicationConfigurationRuleDestination
 {
@@ -287,7 +287,7 @@ public partial class V1beta1ReplicationConfigurationStatusAtProviderReplicationC
     public string? RegistryId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationConfigurationStatusAtProviderReplicationConfigurationRuleRepositoryFilter
 {
@@ -300,7 +300,7 @@ public partial class V1beta1ReplicationConfigurationStatusAtProviderReplicationC
     public string? FilterType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationConfigurationStatusAtProviderReplicationConfigurationRule
 {
@@ -314,7 +314,7 @@ public partial class V1beta1ReplicationConfigurationStatusAtProviderReplicationC
 }
 
 /// <summary>Replication configuration for a registry. See Replication Configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationConfigurationStatusAtProviderReplicationConfiguration
 {
@@ -323,7 +323,7 @@ public partial class V1beta1ReplicationConfigurationStatusAtProviderReplicationC
     public IList<V1beta1ReplicationConfigurationStatusAtProviderReplicationConfigurationRule>? Rule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationConfigurationStatusAtProvider
 {
@@ -347,7 +347,7 @@ public partial class V1beta1ReplicationConfigurationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationConfigurationStatusConditions
 {
@@ -390,7 +390,7 @@ public partial class V1beta1ReplicationConfigurationStatusConditions
 }
 
 /// <summary>ReplicationConfigurationStatus defines the observed state of ReplicationConfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicationConfigurationStatus
 {
@@ -411,7 +411,7 @@ public partial class V1beta1ReplicationConfigurationStatus
 }
 
 /// <summary>ReplicationConfiguration is the Schema for the ReplicationConfigurations API. Provides an Elastic Container Registry Replication Configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ReplicationConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ReplicationConfigurationSpec>, IStatus<V1beta1ReplicationConfigurationStatus?>

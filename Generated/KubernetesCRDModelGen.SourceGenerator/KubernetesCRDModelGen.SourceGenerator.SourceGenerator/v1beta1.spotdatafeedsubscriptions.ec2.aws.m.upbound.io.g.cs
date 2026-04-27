@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.aws.m.upbound.io;
 /// <summary>SpotDatafeedSubscription is the Schema for the SpotDatafeedSubscriptions API. Provides a Spot Datafeed Subscription resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpotDatafeedSubscriptionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SpotDatafeedSubscription>
@@ -33,10 +33,10 @@ public partial class V1beta1SpotDatafeedSubscriptionList : IKubernetesObject<V1L
 
     /// <summary>List of V1beta1SpotDatafeedSubscription objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1SpotDatafeedSubscription>? Items { get; set; }
+    public required IList<V1beta1SpotDatafeedSubscription> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotDatafeedSubscriptionSpecForProvider
 {
@@ -68,7 +68,7 @@ public partial class V1beta1SpotDatafeedSubscriptionSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotDatafeedSubscriptionSpecInitProvider
 {
@@ -85,7 +85,7 @@ public partial class V1beta1SpotDatafeedSubscriptionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotDatafeedSubscriptionSpecManagementPoliciesEnum>))]
 public enum V1beta1SpotDatafeedSubscriptionSpecManagementPoliciesEnum
 {
@@ -108,7 +108,7 @@ public enum V1beta1SpotDatafeedSubscriptionSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotDatafeedSubscriptionSpecProviderConfigRef
 {
@@ -127,7 +127,7 @@ public partial class V1beta1SpotDatafeedSubscriptionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotDatafeedSubscriptionSpecWriteConnectionSecretToRef
 {
@@ -137,7 +137,7 @@ public partial class V1beta1SpotDatafeedSubscriptionSpecWriteConnectionSecretToR
 }
 
 /// <summary>SpotDatafeedSubscriptionSpec defines the desired state of SpotDatafeedSubscription</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotDatafeedSubscriptionSpec
 {
@@ -188,7 +188,7 @@ public partial class V1beta1SpotDatafeedSubscriptionSpec
     public V1beta1SpotDatafeedSubscriptionSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotDatafeedSubscriptionStatusAtProvider
 {
@@ -212,7 +212,7 @@ public partial class V1beta1SpotDatafeedSubscriptionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotDatafeedSubscriptionStatusConditions
 {
@@ -255,7 +255,7 @@ public partial class V1beta1SpotDatafeedSubscriptionStatusConditions
 }
 
 /// <summary>SpotDatafeedSubscriptionStatus defines the observed state of SpotDatafeedSubscription.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SpotDatafeedSubscriptionStatus
 {
@@ -276,7 +276,7 @@ public partial class V1beta1SpotDatafeedSubscriptionStatus
 }
 
 /// <summary>SpotDatafeedSubscription is the Schema for the SpotDatafeedSubscriptions API. Provides a Spot Datafeed Subscription resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpotDatafeedSubscription : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SpotDatafeedSubscriptionSpec>, IStatus<V1beta1SpotDatafeedSubscriptionStatus?>

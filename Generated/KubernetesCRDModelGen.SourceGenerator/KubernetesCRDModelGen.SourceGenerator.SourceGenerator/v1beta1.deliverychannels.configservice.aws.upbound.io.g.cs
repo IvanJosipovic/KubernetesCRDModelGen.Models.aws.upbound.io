@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.configservice.aws.upbound.io;
 /// <summary>DeliveryChannel is the Schema for the DeliveryChannels API. Provides an AWS Config Delivery Channel.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DeliveryChannelList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DeliveryChannel>
@@ -33,7 +33,7 @@ public partial class V1beta1DeliveryChannelList : IKubernetesObject<V1ListMeta>,
 
     /// <summary>List of V1beta1DeliveryChannel objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1DeliveryChannel>? Items { get; set; }
+    public required IList<V1beta1DeliveryChannel> Items { get; set; }
 }
 
 /// <summary>
@@ -45,7 +45,7 @@ public partial class V1beta1DeliveryChannelList : IKubernetesObject<V1ListMeta>,
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryChannelSpecDeletionPolicyEnum>))]
 public enum V1beta1DeliveryChannelSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1DeliveryChannelSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryChannelSpecForProviderS3BucketNameRefPolicyResolutionEnum>))]
 public enum V1beta1DeliveryChannelSpecForProviderS3BucketNameRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1DeliveryChannelSpecForProviderS3BucketNameRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryChannelSpecForProviderS3BucketNameRefPolicyResolveEnum>))]
 public enum V1beta1DeliveryChannelSpecForProviderS3BucketNameRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1DeliveryChannelSpecForProviderS3BucketNameRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryChannelSpecForProviderS3BucketNameRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1DeliveryChannelSpecForProviderS3BucketNameRefPolicy
 }
 
 /// <summary>Reference to a Bucket in s3 to populate s3BucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryChannelSpecForProviderS3BucketNameRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1DeliveryChannelSpecForProviderS3BucketNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryChannelSpecForProviderS3BucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1DeliveryChannelSpecForProviderS3BucketNameSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1DeliveryChannelSpecForProviderS3BucketNameSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryChannelSpecForProviderS3BucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta1DeliveryChannelSpecForProviderS3BucketNameSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1DeliveryChannelSpecForProviderS3BucketNameSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryChannelSpecForProviderS3BucketNameSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1DeliveryChannelSpecForProviderS3BucketNameSelectorPo
 }
 
 /// <summary>Selector for a Bucket in s3 to populate s3BucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryChannelSpecForProviderS3BucketNameSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1DeliveryChannelSpecForProviderS3BucketNameSelector
     public V1beta1DeliveryChannelSpecForProviderS3BucketNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryChannelSpecForProviderSnapshotDeliveryProperties
 {
@@ -211,7 +211,7 @@ public partial class V1beta1DeliveryChannelSpecForProviderSnapshotDeliveryProper
     public string? DeliveryFrequency { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryChannelSpecForProvider
 {
@@ -257,7 +257,7 @@ public partial class V1beta1DeliveryChannelSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryChannelSpecInitProviderS3BucketNameRefPolicyResolutionEnum>))]
 public enum V1beta1DeliveryChannelSpecInitProviderS3BucketNameRefPolicyResolutionEnum
 {
@@ -273,7 +273,7 @@ public enum V1beta1DeliveryChannelSpecInitProviderS3BucketNameRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryChannelSpecInitProviderS3BucketNameRefPolicyResolveEnum>))]
 public enum V1beta1DeliveryChannelSpecInitProviderS3BucketNameRefPolicyResolveEnum
 {
@@ -284,7 +284,7 @@ public enum V1beta1DeliveryChannelSpecInitProviderS3BucketNameRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryChannelSpecInitProviderS3BucketNameRefPolicy
 {
@@ -308,7 +308,7 @@ public partial class V1beta1DeliveryChannelSpecInitProviderS3BucketNameRefPolicy
 }
 
 /// <summary>Reference to a Bucket in s3 to populate s3BucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryChannelSpecInitProviderS3BucketNameRef
 {
@@ -327,7 +327,7 @@ public partial class V1beta1DeliveryChannelSpecInitProviderS3BucketNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryChannelSpecInitProviderS3BucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1DeliveryChannelSpecInitProviderS3BucketNameSelectorPolicyResolutionEnum
 {
@@ -343,7 +343,7 @@ public enum V1beta1DeliveryChannelSpecInitProviderS3BucketNameSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryChannelSpecInitProviderS3BucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta1DeliveryChannelSpecInitProviderS3BucketNameSelectorPolicyResolveEnum
 {
@@ -354,7 +354,7 @@ public enum V1beta1DeliveryChannelSpecInitProviderS3BucketNameSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryChannelSpecInitProviderS3BucketNameSelectorPolicy
 {
@@ -378,7 +378,7 @@ public partial class V1beta1DeliveryChannelSpecInitProviderS3BucketNameSelectorP
 }
 
 /// <summary>Selector for a Bucket in s3 to populate s3BucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryChannelSpecInitProviderS3BucketNameSelector
 {
@@ -398,7 +398,7 @@ public partial class V1beta1DeliveryChannelSpecInitProviderS3BucketNameSelector
     public V1beta1DeliveryChannelSpecInitProviderS3BucketNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryChannelSpecInitProviderSnapshotDeliveryProperties
 {
@@ -419,7 +419,7 @@ public partial class V1beta1DeliveryChannelSpecInitProviderSnapshotDeliveryPrope
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryChannelSpecInitProvider
 {
@@ -456,7 +456,7 @@ public partial class V1beta1DeliveryChannelSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryChannelSpecManagementPoliciesEnum>))]
 public enum V1beta1DeliveryChannelSpecManagementPoliciesEnum
 {
@@ -480,7 +480,7 @@ public enum V1beta1DeliveryChannelSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryChannelSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1DeliveryChannelSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -496,7 +496,7 @@ public enum V1beta1DeliveryChannelSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryChannelSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1DeliveryChannelSpecProviderConfigRefPolicyResolveEnum
 {
@@ -507,7 +507,7 @@ public enum V1beta1DeliveryChannelSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryChannelSpecProviderConfigRefPolicy
 {
@@ -535,7 +535,7 @@ public partial class V1beta1DeliveryChannelSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryChannelSpecProviderConfigRef
 {
@@ -554,7 +554,7 @@ public partial class V1beta1DeliveryChannelSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryChannelSpecWriteConnectionSecretToRef
 {
@@ -568,7 +568,7 @@ public partial class V1beta1DeliveryChannelSpecWriteConnectionSecretToRef
 }
 
 /// <summary>DeliveryChannelSpec defines the desired state of DeliveryChannel</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryChannelSpec
 {
@@ -635,7 +635,7 @@ public partial class V1beta1DeliveryChannelSpec
     public V1beta1DeliveryChannelSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryChannelStatusAtProviderSnapshotDeliveryProperties
 {
@@ -644,7 +644,7 @@ public partial class V1beta1DeliveryChannelStatusAtProviderSnapshotDeliveryPrope
     public string? DeliveryFrequency { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryChannelStatusAtProvider
 {
@@ -681,7 +681,7 @@ public partial class V1beta1DeliveryChannelStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryChannelStatusConditions
 {
@@ -724,7 +724,7 @@ public partial class V1beta1DeliveryChannelStatusConditions
 }
 
 /// <summary>DeliveryChannelStatus defines the observed state of DeliveryChannel.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeliveryChannelStatus
 {
@@ -745,7 +745,7 @@ public partial class V1beta1DeliveryChannelStatus
 }
 
 /// <summary>DeliveryChannel is the Schema for the DeliveryChannels API. Provides an AWS Config Delivery Channel.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DeliveryChannel : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DeliveryChannelSpec>, IStatus<V1beta1DeliveryChannelStatus?>

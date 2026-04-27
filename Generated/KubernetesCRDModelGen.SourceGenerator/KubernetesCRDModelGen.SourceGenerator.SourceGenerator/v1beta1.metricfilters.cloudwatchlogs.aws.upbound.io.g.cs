@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudwatchlogs.aws.upbound.io;
 /// <summary>MetricFilter is the Schema for the MetricFilters API. Provides a CloudWatch Log Metric Filter resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MetricFilterList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MetricFilter>
@@ -33,7 +33,7 @@ public partial class V1beta1MetricFilterList : IKubernetesObject<V1ListMeta>, II
 
     /// <summary>List of V1beta1MetricFilter objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1MetricFilter>? Items { get; set; }
+    public required IList<V1beta1MetricFilter> Items { get; set; }
 }
 
 /// <summary>
@@ -45,7 +45,7 @@ public partial class V1beta1MetricFilterList : IKubernetesObject<V1ListMeta>, II
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricFilterSpecDeletionPolicyEnum>))]
 public enum V1beta1MetricFilterSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1MetricFilterSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricFilterSpecForProviderLogGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1MetricFilterSpecForProviderLogGroupNameRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1MetricFilterSpecForProviderLogGroupNameRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricFilterSpecForProviderLogGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1MetricFilterSpecForProviderLogGroupNameRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1MetricFilterSpecForProviderLogGroupNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricFilterSpecForProviderLogGroupNameRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1MetricFilterSpecForProviderLogGroupNameRefPolicy
 }
 
 /// <summary>Reference to a Group in cloudwatchlogs to populate logGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricFilterSpecForProviderLogGroupNameRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1MetricFilterSpecForProviderLogGroupNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricFilterSpecForProviderLogGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1MetricFilterSpecForProviderLogGroupNameSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1MetricFilterSpecForProviderLogGroupNameSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricFilterSpecForProviderLogGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1MetricFilterSpecForProviderLogGroupNameSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1MetricFilterSpecForProviderLogGroupNameSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricFilterSpecForProviderLogGroupNameSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1MetricFilterSpecForProviderLogGroupNameSelectorPolic
 }
 
 /// <summary>Selector for a Group in cloudwatchlogs to populate logGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricFilterSpecForProviderLogGroupNameSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1MetricFilterSpecForProviderLogGroupNameSelector
     public V1beta1MetricFilterSpecForProviderLogGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricFilterSpecForProviderMetricTransformation
 {
@@ -231,7 +231,7 @@ public partial class V1beta1MetricFilterSpecForProviderMetricTransformation
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricFilterSpecForProvider
 {
@@ -276,7 +276,7 @@ public partial class V1beta1MetricFilterSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricFilterSpecInitProviderLogGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1MetricFilterSpecInitProviderLogGroupNameRefPolicyResolutionEnum
 {
@@ -292,7 +292,7 @@ public enum V1beta1MetricFilterSpecInitProviderLogGroupNameRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricFilterSpecInitProviderLogGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1MetricFilterSpecInitProviderLogGroupNameRefPolicyResolveEnum
 {
@@ -303,7 +303,7 @@ public enum V1beta1MetricFilterSpecInitProviderLogGroupNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricFilterSpecInitProviderLogGroupNameRefPolicy
 {
@@ -327,7 +327,7 @@ public partial class V1beta1MetricFilterSpecInitProviderLogGroupNameRefPolicy
 }
 
 /// <summary>Reference to a Group in cloudwatchlogs to populate logGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricFilterSpecInitProviderLogGroupNameRef
 {
@@ -346,7 +346,7 @@ public partial class V1beta1MetricFilterSpecInitProviderLogGroupNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricFilterSpecInitProviderLogGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1MetricFilterSpecInitProviderLogGroupNameSelectorPolicyResolutionEnum
 {
@@ -362,7 +362,7 @@ public enum V1beta1MetricFilterSpecInitProviderLogGroupNameSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricFilterSpecInitProviderLogGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1MetricFilterSpecInitProviderLogGroupNameSelectorPolicyResolveEnum
 {
@@ -373,7 +373,7 @@ public enum V1beta1MetricFilterSpecInitProviderLogGroupNameSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricFilterSpecInitProviderLogGroupNameSelectorPolicy
 {
@@ -397,7 +397,7 @@ public partial class V1beta1MetricFilterSpecInitProviderLogGroupNameSelectorPoli
 }
 
 /// <summary>Selector for a Group in cloudwatchlogs to populate logGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricFilterSpecInitProviderLogGroupNameSelector
 {
@@ -417,7 +417,7 @@ public partial class V1beta1MetricFilterSpecInitProviderLogGroupNameSelector
     public V1beta1MetricFilterSpecInitProviderLogGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricFilterSpecInitProviderMetricTransformation
 {
@@ -458,7 +458,7 @@ public partial class V1beta1MetricFilterSpecInitProviderMetricTransformation
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricFilterSpecInitProvider
 {
@@ -494,7 +494,7 @@ public partial class V1beta1MetricFilterSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricFilterSpecManagementPoliciesEnum>))]
 public enum V1beta1MetricFilterSpecManagementPoliciesEnum
 {
@@ -518,7 +518,7 @@ public enum V1beta1MetricFilterSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricFilterSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1MetricFilterSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -534,7 +534,7 @@ public enum V1beta1MetricFilterSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricFilterSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1MetricFilterSpecProviderConfigRefPolicyResolveEnum
 {
@@ -545,7 +545,7 @@ public enum V1beta1MetricFilterSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricFilterSpecProviderConfigRefPolicy
 {
@@ -573,7 +573,7 @@ public partial class V1beta1MetricFilterSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricFilterSpecProviderConfigRef
 {
@@ -592,7 +592,7 @@ public partial class V1beta1MetricFilterSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricFilterSpecWriteConnectionSecretToRef
 {
@@ -606,7 +606,7 @@ public partial class V1beta1MetricFilterSpecWriteConnectionSecretToRef
 }
 
 /// <summary>MetricFilterSpec defines the desired state of MetricFilter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricFilterSpec
 {
@@ -673,7 +673,7 @@ public partial class V1beta1MetricFilterSpec
     public V1beta1MetricFilterSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricFilterStatusAtProviderMetricTransformation
 {
@@ -702,7 +702,7 @@ public partial class V1beta1MetricFilterStatusAtProviderMetricTransformation
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricFilterStatusAtProvider
 {
@@ -738,7 +738,7 @@ public partial class V1beta1MetricFilterStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricFilterStatusConditions
 {
@@ -781,7 +781,7 @@ public partial class V1beta1MetricFilterStatusConditions
 }
 
 /// <summary>MetricFilterStatus defines the observed state of MetricFilter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MetricFilterStatus
 {
@@ -802,7 +802,7 @@ public partial class V1beta1MetricFilterStatus
 }
 
 /// <summary>MetricFilter is the Schema for the MetricFilters API. Provides a CloudWatch Log Metric Filter resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MetricFilter : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MetricFilterSpec>, IStatus<V1beta1MetricFilterStatus?>
