@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.s3.aws.upbound.io;
 /// <summary>BucketReplicationConfiguration is the Schema for the BucketReplicationConfigurations API. Provides a S3 bucket replication configuration resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BucketReplicationConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1BucketReplicationConfiguration>
@@ -45,7 +45,7 @@ public partial class V1beta1BucketReplicationConfigurationList : IKubernetesObje
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecDeletionPolicyEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1BucketReplicationConfigurationSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecForProviderBucketRefPolicyResolutionEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecForProviderBucketRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1BucketReplicationConfigurationSpecForProviderBucketRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecForProviderBucketRefPolicyResolveEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecForProviderBucketRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1BucketReplicationConfigurationSpecForProviderBucketRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderBucketRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderBucketR
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderBucketRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderBucketR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecForProviderBucketSelectorPolicyResolutionEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecForProviderBucketSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1BucketReplicationConfigurationSpecForProviderBucketSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecForProviderBucketSelectorPolicyResolveEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecForProviderBucketSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1BucketReplicationConfigurationSpecForProviderBucketSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderBucketSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderBucketS
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderBucketSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderBucketS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecForProviderRoleRefPolicyResolutionEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecForProviderRoleRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1BucketReplicationConfigurationSpecForProviderRoleRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecForProviderRoleRefPolicyResolveEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecForProviderRoleRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1BucketReplicationConfigurationSpecForProviderRoleRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRoleRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRoleRef
 }
 
 /// <summary>Reference to a Role in iam to populate role.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRoleRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRoleRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecForProviderRoleSelectorPolicyResolutionEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecForProviderRoleSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1BucketReplicationConfigurationSpecForProviderRoleSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecForProviderRoleSelectorPolicyResolveEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecForProviderRoleSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1BucketReplicationConfigurationSpecForProviderRoleSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRoleSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRoleSel
 }
 
 /// <summary>Selector for a Role in iam to populate role.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRoleSelector
 {
@@ -349,7 +349,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRoleSel
     public V1beta1BucketReplicationConfigurationSpecForProviderRoleSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDeleteMarkerReplication
 {
@@ -358,7 +358,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDel
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationAccessControlTranslation
 {
@@ -373,7 +373,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDes
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationBucketRefPolicyResolutionEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationBucketRefPolicyResolutionEnum
 {
@@ -389,7 +389,7 @@ public enum V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationB
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationBucketRefPolicyResolveEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationBucketRefPolicyResolveEnum
 {
@@ -400,7 +400,7 @@ public enum V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationB
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationBucketRefPolicy
 {
@@ -424,7 +424,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDes
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationBucketRef
 {
@@ -443,7 +443,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDes
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationBucketSelectorPolicyResolutionEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationBucketSelectorPolicyResolutionEnum
 {
@@ -459,7 +459,7 @@ public enum V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationB
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationBucketSelectorPolicyResolveEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationBucketSelectorPolicyResolveEnum
 {
@@ -470,7 +470,7 @@ public enum V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationB
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationBucketSelectorPolicy
 {
@@ -494,7 +494,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDes
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationBucketSelector
 {
@@ -520,7 +520,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDes
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdRefPolicyResolutionEnum
 {
@@ -536,7 +536,7 @@ public enum V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdRefPolicyResolveEnum
 {
@@ -547,7 +547,7 @@ public enum V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdRefPolicy
 {
@@ -571,7 +571,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDes
 }
 
 /// <summary>Reference to a Key in kms to populate replicaKmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdRef
 {
@@ -590,7 +590,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDes
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdSelectorPolicyResolutionEnum
 {
@@ -606,7 +606,7 @@ public enum V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdSelectorPolicyResolveEnum
 {
@@ -617,7 +617,7 @@ public enum V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdSelectorPolicy
 {
@@ -641,7 +641,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDes
 }
 
 /// <summary>Selector for a Key in kms to populate replicaKmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdSelector
 {
@@ -661,7 +661,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDes
     public V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationEncryptionConfiguration
 {
@@ -678,7 +678,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDes
     public V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdSelector? ReplicaKmsKeyIdSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationMetricsEventThreshold
 {
@@ -687,7 +687,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDes
     public double? Minutes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationMetrics
 {
@@ -700,7 +700,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDes
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationReplicationTimeTime
 {
@@ -709,7 +709,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDes
     public double? Minutes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationReplicationTime
 {
@@ -722,7 +722,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDes
     public IList<V1beta1BucketReplicationConfigurationSpecForProviderRuleDestinationReplicationTimeTime>? Time { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDestination
 {
@@ -763,7 +763,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleDes
     public string? StorageClass { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleExistingObjectReplication
 {
@@ -772,7 +772,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleExi
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleFilterAnd
 {
@@ -785,7 +785,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleFil
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleFilterTag
 {
@@ -798,7 +798,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleFil
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleFilter
 {
@@ -815,7 +815,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleFil
     public IList<V1beta1BucketReplicationConfigurationSpecForProviderRuleFilterTag>? Tag { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleSourceSelectionCriteriaReplicaModifications
 {
@@ -824,7 +824,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleSou
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleSourceSelectionCriteriaSseKmsEncryptedObjects
 {
@@ -833,7 +833,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleSou
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleSourceSelectionCriteria
 {
@@ -846,7 +846,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRuleSou
     public IList<V1beta1BucketReplicationConfigurationSpecForProviderRuleSourceSelectionCriteriaSseKmsEncryptedObjects>? SseKmsEncryptedObjects { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderRule
 {
@@ -891,7 +891,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderRule
 /// Token to allow replication to be enabled on an Object Lock-enabled bucket. You must contact AWS support for the bucket&apos;s &quot;Object Lock token&quot;.
 /// For more details, see Using S3 Object Lock with replication.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProviderTokenSecretRef
 {
@@ -908,7 +908,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProviderTokenSe
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecForProvider
 {
@@ -961,7 +961,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecInitProviderBucketRefPolicyResolutionEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecInitProviderBucketRefPolicyResolutionEnum
 {
@@ -977,7 +977,7 @@ public enum V1beta1BucketReplicationConfigurationSpecInitProviderBucketRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecInitProviderBucketRefPolicyResolveEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecInitProviderBucketRefPolicyResolveEnum
 {
@@ -988,7 +988,7 @@ public enum V1beta1BucketReplicationConfigurationSpecInitProviderBucketRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderBucketRefPolicy
 {
@@ -1012,7 +1012,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderBucket
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderBucketRef
 {
@@ -1031,7 +1031,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderBucket
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecInitProviderBucketSelectorPolicyResolutionEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecInitProviderBucketSelectorPolicyResolutionEnum
 {
@@ -1047,7 +1047,7 @@ public enum V1beta1BucketReplicationConfigurationSpecInitProviderBucketSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecInitProviderBucketSelectorPolicyResolveEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecInitProviderBucketSelectorPolicyResolveEnum
 {
@@ -1058,7 +1058,7 @@ public enum V1beta1BucketReplicationConfigurationSpecInitProviderBucketSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderBucketSelectorPolicy
 {
@@ -1082,7 +1082,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderBucket
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderBucketSelector
 {
@@ -1108,7 +1108,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderBucket
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecInitProviderRoleRefPolicyResolutionEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecInitProviderRoleRefPolicyResolutionEnum
 {
@@ -1124,7 +1124,7 @@ public enum V1beta1BucketReplicationConfigurationSpecInitProviderRoleRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecInitProviderRoleRefPolicyResolveEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecInitProviderRoleRefPolicyResolveEnum
 {
@@ -1135,7 +1135,7 @@ public enum V1beta1BucketReplicationConfigurationSpecInitProviderRoleRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRoleRefPolicy
 {
@@ -1159,7 +1159,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRoleRe
 }
 
 /// <summary>Reference to a Role in iam to populate role.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRoleRef
 {
@@ -1178,7 +1178,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRoleRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecInitProviderRoleSelectorPolicyResolutionEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecInitProviderRoleSelectorPolicyResolutionEnum
 {
@@ -1194,7 +1194,7 @@ public enum V1beta1BucketReplicationConfigurationSpecInitProviderRoleSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecInitProviderRoleSelectorPolicyResolveEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecInitProviderRoleSelectorPolicyResolveEnum
 {
@@ -1205,7 +1205,7 @@ public enum V1beta1BucketReplicationConfigurationSpecInitProviderRoleSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRoleSelectorPolicy
 {
@@ -1229,7 +1229,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRoleSe
 }
 
 /// <summary>Selector for a Role in iam to populate role.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRoleSelector
 {
@@ -1249,7 +1249,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRoleSe
     public V1beta1BucketReplicationConfigurationSpecInitProviderRoleSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDeleteMarkerReplication
 {
@@ -1258,7 +1258,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDe
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationAccessControlTranslation
 {
@@ -1273,7 +1273,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationBucketRefPolicyResolutionEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationBucketRefPolicyResolutionEnum
 {
@@ -1289,7 +1289,7 @@ public enum V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestination
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationBucketRefPolicyResolveEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationBucketRefPolicyResolveEnum
 {
@@ -1300,7 +1300,7 @@ public enum V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestination
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationBucketRefPolicy
 {
@@ -1324,7 +1324,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDe
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationBucketRef
 {
@@ -1343,7 +1343,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationBucketSelectorPolicyResolutionEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationBucketSelectorPolicyResolutionEnum
 {
@@ -1359,7 +1359,7 @@ public enum V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestination
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationBucketSelectorPolicyResolveEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationBucketSelectorPolicyResolveEnum
 {
@@ -1370,7 +1370,7 @@ public enum V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestination
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationBucketSelectorPolicy
 {
@@ -1394,7 +1394,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDe
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationBucketSelector
 {
@@ -1420,7 +1420,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdRefPolicyResolutionEnum
 {
@@ -1436,7 +1436,7 @@ public enum V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestination
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdRefPolicyResolveEnum
 {
@@ -1447,7 +1447,7 @@ public enum V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestination
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdRefPolicy
 {
@@ -1471,7 +1471,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDe
 }
 
 /// <summary>Reference to a Key in kms to populate replicaKmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdRef
 {
@@ -1490,7 +1490,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdSelectorPolicyResolutionEnum
 {
@@ -1506,7 +1506,7 @@ public enum V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestination
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdSelectorPolicyResolveEnum
 {
@@ -1517,7 +1517,7 @@ public enum V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestination
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdSelectorPolicy
 {
@@ -1541,7 +1541,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDe
 }
 
 /// <summary>Selector for a Key in kms to populate replicaKmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdSelector
 {
@@ -1561,7 +1561,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDe
     public V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationEncryptionConfiguration
 {
@@ -1578,7 +1578,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDe
     public V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationEncryptionConfigurationReplicaKmsKeyIdSelector? ReplicaKmsKeyIdSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationMetricsEventThreshold
 {
@@ -1587,7 +1587,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDe
     public double? Minutes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationMetrics
 {
@@ -1600,7 +1600,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDe
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationReplicationTimeTime
 {
@@ -1609,7 +1609,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDe
     public double? Minutes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationReplicationTime
 {
@@ -1622,7 +1622,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDe
     public IList<V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestinationReplicationTimeTime>? Time { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDestination
 {
@@ -1663,7 +1663,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleDe
     public string? StorageClass { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleExistingObjectReplication
 {
@@ -1672,7 +1672,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleEx
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleFilterAnd
 {
@@ -1685,7 +1685,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleFi
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleFilterTag
 {
@@ -1698,7 +1698,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleFi
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleFilter
 {
@@ -1715,7 +1715,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleFi
     public IList<V1beta1BucketReplicationConfigurationSpecInitProviderRuleFilterTag>? Tag { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleSourceSelectionCriteriaReplicaModifications
 {
@@ -1724,7 +1724,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleSo
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleSourceSelectionCriteriaSseKmsEncryptedObjects
 {
@@ -1733,7 +1733,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleSo
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleSourceSelectionCriteria
 {
@@ -1746,7 +1746,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRuleSo
     public IList<V1beta1BucketReplicationConfigurationSpecInitProviderRuleSourceSelectionCriteriaSseKmsEncryptedObjects>? SseKmsEncryptedObjects { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRule
 {
@@ -1791,7 +1791,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderRule
 /// Token to allow replication to be enabled on an Object Lock-enabled bucket. You must contact AWS support for the bucket&apos;s &quot;Object Lock token&quot;.
 /// For more details, see Using S3 Object Lock with replication.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProviderTokenSecretRef
 {
@@ -1820,7 +1820,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProviderTokenS
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecInitProvider
 {
@@ -1864,7 +1864,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecManagementPoliciesEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecManagementPoliciesEnum
 {
@@ -1888,7 +1888,7 @@ public enum V1beta1BucketReplicationConfigurationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1904,7 +1904,7 @@ public enum V1beta1BucketReplicationConfigurationSpecProviderConfigRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketReplicationConfigurationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1BucketReplicationConfigurationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1915,7 +1915,7 @@ public enum V1beta1BucketReplicationConfigurationSpecProviderConfigRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecProviderConfigRefPolicy
 {
@@ -1943,7 +1943,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecProviderConfigRefP
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecProviderConfigRef
 {
@@ -1962,7 +1962,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpecWriteConnectionSecretToRef
 {
@@ -1976,7 +1976,7 @@ public partial class V1beta1BucketReplicationConfigurationSpecWriteConnectionSec
 }
 
 /// <summary>BucketReplicationConfigurationSpec defines the desired state of BucketReplicationConfiguration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationSpec
 {
@@ -2043,7 +2043,7 @@ public partial class V1beta1BucketReplicationConfigurationSpec
     public V1beta1BucketReplicationConfigurationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleDeleteMarkerReplication
 {
@@ -2052,7 +2052,7 @@ public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleDe
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleDestinationAccessControlTranslation
 {
@@ -2061,7 +2061,7 @@ public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleDe
     public string? Owner { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleDestinationEncryptionConfiguration
 {
@@ -2070,7 +2070,7 @@ public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleDe
     public string? ReplicaKmsKeyId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleDestinationMetricsEventThreshold
 {
@@ -2079,7 +2079,7 @@ public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleDe
     public double? Minutes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleDestinationMetrics
 {
@@ -2092,7 +2092,7 @@ public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleDe
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleDestinationReplicationTimeTime
 {
@@ -2101,7 +2101,7 @@ public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleDe
     public double? Minutes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleDestinationReplicationTime
 {
@@ -2114,7 +2114,7 @@ public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleDe
     public IList<V1beta1BucketReplicationConfigurationStatusAtProviderRuleDestinationReplicationTimeTime>? Time { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleDestination
 {
@@ -2147,7 +2147,7 @@ public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleDe
     public string? StorageClass { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleExistingObjectReplication
 {
@@ -2156,7 +2156,7 @@ public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleEx
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleFilterAnd
 {
@@ -2169,7 +2169,7 @@ public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleFi
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleFilterTag
 {
@@ -2182,7 +2182,7 @@ public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleFi
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleFilter
 {
@@ -2199,7 +2199,7 @@ public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleFi
     public IList<V1beta1BucketReplicationConfigurationStatusAtProviderRuleFilterTag>? Tag { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleSourceSelectionCriteriaReplicaModifications
 {
@@ -2208,7 +2208,7 @@ public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleSo
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleSourceSelectionCriteriaSseKmsEncryptedObjects
 {
@@ -2217,7 +2217,7 @@ public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleSo
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleSourceSelectionCriteria
 {
@@ -2230,7 +2230,7 @@ public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRuleSo
     public IList<V1beta1BucketReplicationConfigurationStatusAtProviderRuleSourceSelectionCriteriaSseKmsEncryptedObjects>? SseKmsEncryptedObjects { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRule
 {
@@ -2271,7 +2271,7 @@ public partial class V1beta1BucketReplicationConfigurationStatusAtProviderRule
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationStatusAtProvider
 {
@@ -2300,7 +2300,7 @@ public partial class V1beta1BucketReplicationConfigurationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationStatusConditions
 {
@@ -2343,7 +2343,7 @@ public partial class V1beta1BucketReplicationConfigurationStatusConditions
 }
 
 /// <summary>BucketReplicationConfigurationStatus defines the observed state of BucketReplicationConfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BucketReplicationConfigurationStatus
 {
@@ -2364,7 +2364,7 @@ public partial class V1beta1BucketReplicationConfigurationStatus
 }
 
 /// <summary>BucketReplicationConfiguration is the Schema for the BucketReplicationConfigurations API. Provides a S3 bucket replication configuration resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BucketReplicationConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1BucketReplicationConfigurationSpec>, IStatus<V1beta1BucketReplicationConfigurationStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudfront.aws.upbound.io;
 /// <summary>MonitoringSubscription is the Schema for the MonitoringSubscriptions API. Provides a CloudFront monitoring subscription resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitoringSubscriptionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MonitoringSubscription>
@@ -45,7 +45,7 @@ public partial class V1beta1MonitoringSubscriptionList : IKubernetesObject<V1Lis
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitoringSubscriptionSpecDeletionPolicyEnum>))]
 public enum V1beta1MonitoringSubscriptionSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1MonitoringSubscriptionSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitoringSubscriptionSpecForProviderDistributionIdRefPolicyResolutionEnum>))]
 public enum V1beta1MonitoringSubscriptionSpecForProviderDistributionIdRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1MonitoringSubscriptionSpecForProviderDistributionIdRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitoringSubscriptionSpecForProviderDistributionIdRefPolicyResolveEnum>))]
 public enum V1beta1MonitoringSubscriptionSpecForProviderDistributionIdRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1MonitoringSubscriptionSpecForProviderDistributionIdRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionSpecForProviderDistributionIdRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1MonitoringSubscriptionSpecForProviderDistributionIdR
 }
 
 /// <summary>Reference to a Distribution in cloudfront to populate distributionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionSpecForProviderDistributionIdRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1MonitoringSubscriptionSpecForProviderDistributionIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitoringSubscriptionSpecForProviderDistributionIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MonitoringSubscriptionSpecForProviderDistributionIdSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1MonitoringSubscriptionSpecForProviderDistributionIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitoringSubscriptionSpecForProviderDistributionIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MonitoringSubscriptionSpecForProviderDistributionIdSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1MonitoringSubscriptionSpecForProviderDistributionIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionSpecForProviderDistributionIdSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1MonitoringSubscriptionSpecForProviderDistributionIdS
 }
 
 /// <summary>Selector for a Distribution in cloudfront to populate distributionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionSpecForProviderDistributionIdSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1MonitoringSubscriptionSpecForProviderDistributionIdS
     public V1beta1MonitoringSubscriptionSpecForProviderDistributionIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionSpecForProviderMonitoringSubscriptionRealtimeMetricsSubscriptionConfig
 {
@@ -211,7 +211,7 @@ public partial class V1beta1MonitoringSubscriptionSpecForProviderMonitoringSubsc
     public string? RealtimeMetricsSubscriptionStatus { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionSpecForProviderMonitoringSubscription
 {
@@ -220,7 +220,7 @@ public partial class V1beta1MonitoringSubscriptionSpecForProviderMonitoringSubsc
     public IList<V1beta1MonitoringSubscriptionSpecForProviderMonitoringSubscriptionRealtimeMetricsSubscriptionConfig>? RealtimeMetricsSubscriptionConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionSpecForProvider
 {
@@ -247,7 +247,7 @@ public partial class V1beta1MonitoringSubscriptionSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitoringSubscriptionSpecInitProviderDistributionIdRefPolicyResolutionEnum>))]
 public enum V1beta1MonitoringSubscriptionSpecInitProviderDistributionIdRefPolicyResolutionEnum
 {
@@ -263,7 +263,7 @@ public enum V1beta1MonitoringSubscriptionSpecInitProviderDistributionIdRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitoringSubscriptionSpecInitProviderDistributionIdRefPolicyResolveEnum>))]
 public enum V1beta1MonitoringSubscriptionSpecInitProviderDistributionIdRefPolicyResolveEnum
 {
@@ -274,7 +274,7 @@ public enum V1beta1MonitoringSubscriptionSpecInitProviderDistributionIdRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionSpecInitProviderDistributionIdRefPolicy
 {
@@ -298,7 +298,7 @@ public partial class V1beta1MonitoringSubscriptionSpecInitProviderDistributionId
 }
 
 /// <summary>Reference to a Distribution in cloudfront to populate distributionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionSpecInitProviderDistributionIdRef
 {
@@ -317,7 +317,7 @@ public partial class V1beta1MonitoringSubscriptionSpecInitProviderDistributionId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitoringSubscriptionSpecInitProviderDistributionIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MonitoringSubscriptionSpecInitProviderDistributionIdSelectorPolicyResolutionEnum
 {
@@ -333,7 +333,7 @@ public enum V1beta1MonitoringSubscriptionSpecInitProviderDistributionIdSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitoringSubscriptionSpecInitProviderDistributionIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MonitoringSubscriptionSpecInitProviderDistributionIdSelectorPolicyResolveEnum
 {
@@ -344,7 +344,7 @@ public enum V1beta1MonitoringSubscriptionSpecInitProviderDistributionIdSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionSpecInitProviderDistributionIdSelectorPolicy
 {
@@ -368,7 +368,7 @@ public partial class V1beta1MonitoringSubscriptionSpecInitProviderDistributionId
 }
 
 /// <summary>Selector for a Distribution in cloudfront to populate distributionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionSpecInitProviderDistributionIdSelector
 {
@@ -388,7 +388,7 @@ public partial class V1beta1MonitoringSubscriptionSpecInitProviderDistributionId
     public V1beta1MonitoringSubscriptionSpecInitProviderDistributionIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionSpecInitProviderMonitoringSubscriptionRealtimeMetricsSubscriptionConfig
 {
@@ -397,7 +397,7 @@ public partial class V1beta1MonitoringSubscriptionSpecInitProviderMonitoringSubs
     public string? RealtimeMetricsSubscriptionStatus { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionSpecInitProviderMonitoringSubscription
 {
@@ -418,7 +418,7 @@ public partial class V1beta1MonitoringSubscriptionSpecInitProviderMonitoringSubs
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionSpecInitProvider
 {
@@ -443,7 +443,7 @@ public partial class V1beta1MonitoringSubscriptionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitoringSubscriptionSpecManagementPoliciesEnum>))]
 public enum V1beta1MonitoringSubscriptionSpecManagementPoliciesEnum
 {
@@ -467,7 +467,7 @@ public enum V1beta1MonitoringSubscriptionSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitoringSubscriptionSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1MonitoringSubscriptionSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -483,7 +483,7 @@ public enum V1beta1MonitoringSubscriptionSpecProviderConfigRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MonitoringSubscriptionSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1MonitoringSubscriptionSpecProviderConfigRefPolicyResolveEnum
 {
@@ -494,7 +494,7 @@ public enum V1beta1MonitoringSubscriptionSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionSpecProviderConfigRefPolicy
 {
@@ -522,7 +522,7 @@ public partial class V1beta1MonitoringSubscriptionSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionSpecProviderConfigRef
 {
@@ -541,7 +541,7 @@ public partial class V1beta1MonitoringSubscriptionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionSpecWriteConnectionSecretToRef
 {
@@ -555,7 +555,7 @@ public partial class V1beta1MonitoringSubscriptionSpecWriteConnectionSecretToRef
 }
 
 /// <summary>MonitoringSubscriptionSpec defines the desired state of MonitoringSubscription</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionSpec
 {
@@ -622,7 +622,7 @@ public partial class V1beta1MonitoringSubscriptionSpec
     public V1beta1MonitoringSubscriptionSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionStatusAtProviderMonitoringSubscriptionRealtimeMetricsSubscriptionConfig
 {
@@ -631,7 +631,7 @@ public partial class V1beta1MonitoringSubscriptionStatusAtProviderMonitoringSubs
     public string? RealtimeMetricsSubscriptionStatus { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionStatusAtProviderMonitoringSubscription
 {
@@ -640,7 +640,7 @@ public partial class V1beta1MonitoringSubscriptionStatusAtProviderMonitoringSubs
     public IList<V1beta1MonitoringSubscriptionStatusAtProviderMonitoringSubscriptionRealtimeMetricsSubscriptionConfig>? RealtimeMetricsSubscriptionConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionStatusAtProvider
 {
@@ -658,7 +658,7 @@ public partial class V1beta1MonitoringSubscriptionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionStatusConditions
 {
@@ -701,7 +701,7 @@ public partial class V1beta1MonitoringSubscriptionStatusConditions
 }
 
 /// <summary>MonitoringSubscriptionStatus defines the observed state of MonitoringSubscription.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MonitoringSubscriptionStatus
 {
@@ -722,7 +722,7 @@ public partial class V1beta1MonitoringSubscriptionStatus
 }
 
 /// <summary>MonitoringSubscription is the Schema for the MonitoringSubscriptions API. Provides a CloudFront monitoring subscription resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MonitoringSubscription : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MonitoringSubscriptionSpec>, IStatus<V1beta1MonitoringSubscriptionStatus?>

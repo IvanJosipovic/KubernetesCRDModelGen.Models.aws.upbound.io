@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.aws.upbound.io;
 /// <summary>AppImageConfig is the Schema for the AppImageConfigs API. Provides a SageMaker AI App Image Config resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AppImageConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AppImageConfig>
@@ -45,7 +45,7 @@ public partial class V1beta1AppImageConfigList : IKubernetesObject<V1ListMeta>, 
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppImageConfigSpecDeletionPolicyEnum>))]
 public enum V1beta1AppImageConfigSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta1AppImageConfigSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecForProviderCodeEditorAppImageConfigContainerConfig
 {
@@ -72,7 +72,7 @@ public partial class V1beta1AppImageConfigSpecForProviderCodeEditorAppImageConfi
     public IDictionary<string, string>? ContainerEnvironmentVariables { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecForProviderCodeEditorAppImageConfigFileSystemConfig
 {
@@ -89,7 +89,7 @@ public partial class V1beta1AppImageConfigSpecForProviderCodeEditorAppImageConfi
     public string? MountPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecForProviderCodeEditorAppImageConfig
 {
@@ -102,7 +102,7 @@ public partial class V1beta1AppImageConfigSpecForProviderCodeEditorAppImageConfi
     public IList<V1beta1AppImageConfigSpecForProviderCodeEditorAppImageConfigFileSystemConfig>? FileSystemConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecForProviderJupyterLabImageConfigContainerConfig
 {
@@ -119,7 +119,7 @@ public partial class V1beta1AppImageConfigSpecForProviderJupyterLabImageConfigCo
     public IDictionary<string, string>? ContainerEnvironmentVariables { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecForProviderJupyterLabImageConfigFileSystemConfig
 {
@@ -136,7 +136,7 @@ public partial class V1beta1AppImageConfigSpecForProviderJupyterLabImageConfigFi
     public string? MountPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecForProviderJupyterLabImageConfig
 {
@@ -149,7 +149,7 @@ public partial class V1beta1AppImageConfigSpecForProviderJupyterLabImageConfig
     public IList<V1beta1AppImageConfigSpecForProviderJupyterLabImageConfigFileSystemConfig>? FileSystemConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecForProviderKernelGatewayImageConfigFileSystemConfig
 {
@@ -166,7 +166,7 @@ public partial class V1beta1AppImageConfigSpecForProviderKernelGatewayImageConfi
     public string? MountPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecForProviderKernelGatewayImageConfigKernelSpec
 {
@@ -179,7 +179,7 @@ public partial class V1beta1AppImageConfigSpecForProviderKernelGatewayImageConfi
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecForProviderKernelGatewayImageConfig
 {
@@ -192,7 +192,7 @@ public partial class V1beta1AppImageConfigSpecForProviderKernelGatewayImageConfi
     public IList<V1beta1AppImageConfigSpecForProviderKernelGatewayImageConfigKernelSpec>? KernelSpec { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecForProvider
 {
@@ -220,7 +220,7 @@ public partial class V1beta1AppImageConfigSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecInitProviderCodeEditorAppImageConfigContainerConfig
 {
@@ -237,7 +237,7 @@ public partial class V1beta1AppImageConfigSpecInitProviderCodeEditorAppImageConf
     public IDictionary<string, string>? ContainerEnvironmentVariables { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecInitProviderCodeEditorAppImageConfigFileSystemConfig
 {
@@ -254,7 +254,7 @@ public partial class V1beta1AppImageConfigSpecInitProviderCodeEditorAppImageConf
     public string? MountPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecInitProviderCodeEditorAppImageConfig
 {
@@ -267,7 +267,7 @@ public partial class V1beta1AppImageConfigSpecInitProviderCodeEditorAppImageConf
     public IList<V1beta1AppImageConfigSpecInitProviderCodeEditorAppImageConfigFileSystemConfig>? FileSystemConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecInitProviderJupyterLabImageConfigContainerConfig
 {
@@ -284,7 +284,7 @@ public partial class V1beta1AppImageConfigSpecInitProviderJupyterLabImageConfigC
     public IDictionary<string, string>? ContainerEnvironmentVariables { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecInitProviderJupyterLabImageConfigFileSystemConfig
 {
@@ -301,7 +301,7 @@ public partial class V1beta1AppImageConfigSpecInitProviderJupyterLabImageConfigF
     public string? MountPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecInitProviderJupyterLabImageConfig
 {
@@ -314,7 +314,7 @@ public partial class V1beta1AppImageConfigSpecInitProviderJupyterLabImageConfig
     public IList<V1beta1AppImageConfigSpecInitProviderJupyterLabImageConfigFileSystemConfig>? FileSystemConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecInitProviderKernelGatewayImageConfigFileSystemConfig
 {
@@ -331,7 +331,7 @@ public partial class V1beta1AppImageConfigSpecInitProviderKernelGatewayImageConf
     public string? MountPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecInitProviderKernelGatewayImageConfigKernelSpec
 {
@@ -344,7 +344,7 @@ public partial class V1beta1AppImageConfigSpecInitProviderKernelGatewayImageConf
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecInitProviderKernelGatewayImageConfig
 {
@@ -369,7 +369,7 @@ public partial class V1beta1AppImageConfigSpecInitProviderKernelGatewayImageConf
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecInitProvider
 {
@@ -394,7 +394,7 @@ public partial class V1beta1AppImageConfigSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppImageConfigSpecManagementPoliciesEnum>))]
 public enum V1beta1AppImageConfigSpecManagementPoliciesEnum
 {
@@ -418,7 +418,7 @@ public enum V1beta1AppImageConfigSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppImageConfigSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1AppImageConfigSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -434,7 +434,7 @@ public enum V1beta1AppImageConfigSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppImageConfigSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1AppImageConfigSpecProviderConfigRefPolicyResolveEnum
 {
@@ -445,7 +445,7 @@ public enum V1beta1AppImageConfigSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecProviderConfigRefPolicy
 {
@@ -473,7 +473,7 @@ public partial class V1beta1AppImageConfigSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecProviderConfigRef
 {
@@ -492,7 +492,7 @@ public partial class V1beta1AppImageConfigSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpecWriteConnectionSecretToRef
 {
@@ -506,7 +506,7 @@ public partial class V1beta1AppImageConfigSpecWriteConnectionSecretToRef
 }
 
 /// <summary>AppImageConfigSpec defines the desired state of AppImageConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigSpec
 {
@@ -573,7 +573,7 @@ public partial class V1beta1AppImageConfigSpec
     public V1beta1AppImageConfigSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigStatusAtProviderCodeEditorAppImageConfigContainerConfig
 {
@@ -590,7 +590,7 @@ public partial class V1beta1AppImageConfigStatusAtProviderCodeEditorAppImageConf
     public IDictionary<string, string>? ContainerEnvironmentVariables { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigStatusAtProviderCodeEditorAppImageConfigFileSystemConfig
 {
@@ -607,7 +607,7 @@ public partial class V1beta1AppImageConfigStatusAtProviderCodeEditorAppImageConf
     public string? MountPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigStatusAtProviderCodeEditorAppImageConfig
 {
@@ -620,7 +620,7 @@ public partial class V1beta1AppImageConfigStatusAtProviderCodeEditorAppImageConf
     public IList<V1beta1AppImageConfigStatusAtProviderCodeEditorAppImageConfigFileSystemConfig>? FileSystemConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigStatusAtProviderJupyterLabImageConfigContainerConfig
 {
@@ -637,7 +637,7 @@ public partial class V1beta1AppImageConfigStatusAtProviderJupyterLabImageConfigC
     public IDictionary<string, string>? ContainerEnvironmentVariables { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigStatusAtProviderJupyterLabImageConfigFileSystemConfig
 {
@@ -654,7 +654,7 @@ public partial class V1beta1AppImageConfigStatusAtProviderJupyterLabImageConfigF
     public string? MountPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigStatusAtProviderJupyterLabImageConfig
 {
@@ -667,7 +667,7 @@ public partial class V1beta1AppImageConfigStatusAtProviderJupyterLabImageConfig
     public IList<V1beta1AppImageConfigStatusAtProviderJupyterLabImageConfigFileSystemConfig>? FileSystemConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigStatusAtProviderKernelGatewayImageConfigFileSystemConfig
 {
@@ -684,7 +684,7 @@ public partial class V1beta1AppImageConfigStatusAtProviderKernelGatewayImageConf
     public string? MountPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigStatusAtProviderKernelGatewayImageConfigKernelSpec
 {
@@ -697,7 +697,7 @@ public partial class V1beta1AppImageConfigStatusAtProviderKernelGatewayImageConf
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigStatusAtProviderKernelGatewayImageConfig
 {
@@ -710,7 +710,7 @@ public partial class V1beta1AppImageConfigStatusAtProviderKernelGatewayImageConf
     public IList<V1beta1AppImageConfigStatusAtProviderKernelGatewayImageConfigKernelSpec>? KernelSpec { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigStatusAtProvider
 {
@@ -751,7 +751,7 @@ public partial class V1beta1AppImageConfigStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigStatusConditions
 {
@@ -794,7 +794,7 @@ public partial class V1beta1AppImageConfigStatusConditions
 }
 
 /// <summary>AppImageConfigStatus defines the observed state of AppImageConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppImageConfigStatus
 {
@@ -815,7 +815,7 @@ public partial class V1beta1AppImageConfigStatus
 }
 
 /// <summary>AppImageConfig is the Schema for the AppImageConfigs API. Provides a SageMaker AI App Image Config resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AppImageConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AppImageConfigSpec>, IStatus<V1beta1AppImageConfigStatus?>

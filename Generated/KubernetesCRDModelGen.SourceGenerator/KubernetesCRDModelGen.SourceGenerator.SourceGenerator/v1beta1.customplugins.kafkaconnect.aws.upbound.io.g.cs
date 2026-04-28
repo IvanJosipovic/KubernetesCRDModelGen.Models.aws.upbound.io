@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.kafkaconnect.aws.upbound.io;
 /// <summary>CustomPlugin is the Schema for the CustomPlugins API. Provides an Amazon MSK Connect custom plugin resource. This resource can be Created, Observed and Deleted, but not Updated. AWS does not currently provide update APIs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CustomPluginList : IKubernetesObject<V1ListMeta>, IItems<V1beta1CustomPlugin>
@@ -45,7 +45,7 @@ public partial class V1beta1CustomPluginList : IKubernetesObject<V1ListMeta>, II
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomPluginSpecDeletionPolicyEnum>))]
 public enum V1beta1CustomPluginSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1CustomPluginSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomPluginSpecForProviderLocationS3BucketArnRefPolicyResolutionEnum>))]
 public enum V1beta1CustomPluginSpecForProviderLocationS3BucketArnRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1CustomPluginSpecForProviderLocationS3BucketArnRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomPluginSpecForProviderLocationS3BucketArnRefPolicyResolveEnum>))]
 public enum V1beta1CustomPluginSpecForProviderLocationS3BucketArnRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1CustomPluginSpecForProviderLocationS3BucketArnRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecForProviderLocationS3BucketArnRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1CustomPluginSpecForProviderLocationS3BucketArnRefPol
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecForProviderLocationS3BucketArnRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1CustomPluginSpecForProviderLocationS3BucketArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomPluginSpecForProviderLocationS3BucketArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1CustomPluginSpecForProviderLocationS3BucketArnSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1CustomPluginSpecForProviderLocationS3BucketArnSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomPluginSpecForProviderLocationS3BucketArnSelectorPolicyResolveEnum>))]
 public enum V1beta1CustomPluginSpecForProviderLocationS3BucketArnSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1CustomPluginSpecForProviderLocationS3BucketArnSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecForProviderLocationS3BucketArnSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1CustomPluginSpecForProviderLocationS3BucketArnSelect
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecForProviderLocationS3BucketArnSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1CustomPluginSpecForProviderLocationS3BucketArnSelect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomPluginSpecForProviderLocationS3FileKeyRefPolicyResolutionEnum>))]
 public enum V1beta1CustomPluginSpecForProviderLocationS3FileKeyRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1CustomPluginSpecForProviderLocationS3FileKeyRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomPluginSpecForProviderLocationS3FileKeyRefPolicyResolveEnum>))]
 public enum V1beta1CustomPluginSpecForProviderLocationS3FileKeyRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1CustomPluginSpecForProviderLocationS3FileKeyRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecForProviderLocationS3FileKeyRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1CustomPluginSpecForProviderLocationS3FileKeyRefPolic
 }
 
 /// <summary>Reference to a Object in s3 to populate fileKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecForProviderLocationS3FileKeyRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1CustomPluginSpecForProviderLocationS3FileKeyRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomPluginSpecForProviderLocationS3FileKeySelectorPolicyResolutionEnum>))]
 public enum V1beta1CustomPluginSpecForProviderLocationS3FileKeySelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1CustomPluginSpecForProviderLocationS3FileKeySelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomPluginSpecForProviderLocationS3FileKeySelectorPolicyResolveEnum>))]
 public enum V1beta1CustomPluginSpecForProviderLocationS3FileKeySelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1CustomPluginSpecForProviderLocationS3FileKeySelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecForProviderLocationS3FileKeySelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1CustomPluginSpecForProviderLocationS3FileKeySelector
 }
 
 /// <summary>Selector for a Object in s3 to populate fileKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecForProviderLocationS3FileKeySelector
 {
@@ -349,7 +349,7 @@ public partial class V1beta1CustomPluginSpecForProviderLocationS3FileKeySelector
     public V1beta1CustomPluginSpecForProviderLocationS3FileKeySelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecForProviderLocationS3
 {
@@ -382,7 +382,7 @@ public partial class V1beta1CustomPluginSpecForProviderLocationS3
     public string? ObjectVersion { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecForProviderLocation
 {
@@ -391,7 +391,7 @@ public partial class V1beta1CustomPluginSpecForProviderLocation
     public IList<V1beta1CustomPluginSpecForProviderLocationS3>? S3 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecForProvider
 {
@@ -429,7 +429,7 @@ public partial class V1beta1CustomPluginSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomPluginSpecInitProviderLocationS3BucketArnRefPolicyResolutionEnum>))]
 public enum V1beta1CustomPluginSpecInitProviderLocationS3BucketArnRefPolicyResolutionEnum
 {
@@ -445,7 +445,7 @@ public enum V1beta1CustomPluginSpecInitProviderLocationS3BucketArnRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomPluginSpecInitProviderLocationS3BucketArnRefPolicyResolveEnum>))]
 public enum V1beta1CustomPluginSpecInitProviderLocationS3BucketArnRefPolicyResolveEnum
 {
@@ -456,7 +456,7 @@ public enum V1beta1CustomPluginSpecInitProviderLocationS3BucketArnRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecInitProviderLocationS3BucketArnRefPolicy
 {
@@ -480,7 +480,7 @@ public partial class V1beta1CustomPluginSpecInitProviderLocationS3BucketArnRefPo
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecInitProviderLocationS3BucketArnRef
 {
@@ -499,7 +499,7 @@ public partial class V1beta1CustomPluginSpecInitProviderLocationS3BucketArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomPluginSpecInitProviderLocationS3BucketArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1CustomPluginSpecInitProviderLocationS3BucketArnSelectorPolicyResolutionEnum
 {
@@ -515,7 +515,7 @@ public enum V1beta1CustomPluginSpecInitProviderLocationS3BucketArnSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomPluginSpecInitProviderLocationS3BucketArnSelectorPolicyResolveEnum>))]
 public enum V1beta1CustomPluginSpecInitProviderLocationS3BucketArnSelectorPolicyResolveEnum
 {
@@ -526,7 +526,7 @@ public enum V1beta1CustomPluginSpecInitProviderLocationS3BucketArnSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecInitProviderLocationS3BucketArnSelectorPolicy
 {
@@ -550,7 +550,7 @@ public partial class V1beta1CustomPluginSpecInitProviderLocationS3BucketArnSelec
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecInitProviderLocationS3BucketArnSelector
 {
@@ -576,7 +576,7 @@ public partial class V1beta1CustomPluginSpecInitProviderLocationS3BucketArnSelec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomPluginSpecInitProviderLocationS3FileKeyRefPolicyResolutionEnum>))]
 public enum V1beta1CustomPluginSpecInitProviderLocationS3FileKeyRefPolicyResolutionEnum
 {
@@ -592,7 +592,7 @@ public enum V1beta1CustomPluginSpecInitProviderLocationS3FileKeyRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomPluginSpecInitProviderLocationS3FileKeyRefPolicyResolveEnum>))]
 public enum V1beta1CustomPluginSpecInitProviderLocationS3FileKeyRefPolicyResolveEnum
 {
@@ -603,7 +603,7 @@ public enum V1beta1CustomPluginSpecInitProviderLocationS3FileKeyRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecInitProviderLocationS3FileKeyRefPolicy
 {
@@ -627,7 +627,7 @@ public partial class V1beta1CustomPluginSpecInitProviderLocationS3FileKeyRefPoli
 }
 
 /// <summary>Reference to a Object in s3 to populate fileKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecInitProviderLocationS3FileKeyRef
 {
@@ -646,7 +646,7 @@ public partial class V1beta1CustomPluginSpecInitProviderLocationS3FileKeyRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomPluginSpecInitProviderLocationS3FileKeySelectorPolicyResolutionEnum>))]
 public enum V1beta1CustomPluginSpecInitProviderLocationS3FileKeySelectorPolicyResolutionEnum
 {
@@ -662,7 +662,7 @@ public enum V1beta1CustomPluginSpecInitProviderLocationS3FileKeySelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomPluginSpecInitProviderLocationS3FileKeySelectorPolicyResolveEnum>))]
 public enum V1beta1CustomPluginSpecInitProviderLocationS3FileKeySelectorPolicyResolveEnum
 {
@@ -673,7 +673,7 @@ public enum V1beta1CustomPluginSpecInitProviderLocationS3FileKeySelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecInitProviderLocationS3FileKeySelectorPolicy
 {
@@ -697,7 +697,7 @@ public partial class V1beta1CustomPluginSpecInitProviderLocationS3FileKeySelecto
 }
 
 /// <summary>Selector for a Object in s3 to populate fileKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecInitProviderLocationS3FileKeySelector
 {
@@ -717,7 +717,7 @@ public partial class V1beta1CustomPluginSpecInitProviderLocationS3FileKeySelecto
     public V1beta1CustomPluginSpecInitProviderLocationS3FileKeySelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecInitProviderLocationS3
 {
@@ -750,7 +750,7 @@ public partial class V1beta1CustomPluginSpecInitProviderLocationS3
     public string? ObjectVersion { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecInitProviderLocation
 {
@@ -771,7 +771,7 @@ public partial class V1beta1CustomPluginSpecInitProviderLocation
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecInitProvider
 {
@@ -796,7 +796,7 @@ public partial class V1beta1CustomPluginSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomPluginSpecManagementPoliciesEnum>))]
 public enum V1beta1CustomPluginSpecManagementPoliciesEnum
 {
@@ -820,7 +820,7 @@ public enum V1beta1CustomPluginSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomPluginSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1CustomPluginSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -836,7 +836,7 @@ public enum V1beta1CustomPluginSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomPluginSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1CustomPluginSpecProviderConfigRefPolicyResolveEnum
 {
@@ -847,7 +847,7 @@ public enum V1beta1CustomPluginSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecProviderConfigRefPolicy
 {
@@ -875,7 +875,7 @@ public partial class V1beta1CustomPluginSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecProviderConfigRef
 {
@@ -894,7 +894,7 @@ public partial class V1beta1CustomPluginSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpecWriteConnectionSecretToRef
 {
@@ -908,7 +908,7 @@ public partial class V1beta1CustomPluginSpecWriteConnectionSecretToRef
 }
 
 /// <summary>CustomPluginSpec defines the desired state of CustomPlugin</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginSpec
 {
@@ -975,7 +975,7 @@ public partial class V1beta1CustomPluginSpec
     public V1beta1CustomPluginSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginStatusAtProviderLocationS3
 {
@@ -992,7 +992,7 @@ public partial class V1beta1CustomPluginStatusAtProviderLocationS3
     public string? ObjectVersion { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginStatusAtProviderLocation
 {
@@ -1001,7 +1001,7 @@ public partial class V1beta1CustomPluginStatusAtProviderLocation
     public IList<V1beta1CustomPluginStatusAtProviderLocationS3>? S3 { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginStatusAtProvider
 {
@@ -1053,7 +1053,7 @@ public partial class V1beta1CustomPluginStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginStatusConditions
 {
@@ -1096,7 +1096,7 @@ public partial class V1beta1CustomPluginStatusConditions
 }
 
 /// <summary>CustomPluginStatus defines the observed state of CustomPlugin.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CustomPluginStatus
 {
@@ -1117,7 +1117,7 @@ public partial class V1beta1CustomPluginStatus
 }
 
 /// <summary>CustomPlugin is the Schema for the CustomPlugins API. Provides an Amazon MSK Connect custom plugin resource. This resource can be Created, Observed and Deleted, but not Updated. AWS does not currently provide update APIs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CustomPlugin : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CustomPluginSpec>, IStatus<V1beta1CustomPluginStatus?>

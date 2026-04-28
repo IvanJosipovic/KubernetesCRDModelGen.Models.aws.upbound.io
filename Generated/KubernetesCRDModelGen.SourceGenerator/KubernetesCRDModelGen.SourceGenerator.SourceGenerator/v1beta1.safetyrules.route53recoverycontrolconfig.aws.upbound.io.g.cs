@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.route53recoverycontrolconfig.aws.upbound.io;
 /// <summary>SafetyRule is the Schema for the SafetyRules API. Provides an AWS Route 53 Recovery Control Config Safety Rule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SafetyRuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SafetyRule>
@@ -45,7 +45,7 @@ public partial class V1beta1SafetyRuleList : IKubernetesObject<V1ListMeta>, IIte
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecDeletionPolicyEnum>))]
 public enum V1beta1SafetyRuleSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1SafetyRuleSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecForProviderAssertedControlsRefsPolicyResolutionEnum>))]
 public enum V1beta1SafetyRuleSpecForProviderAssertedControlsRefsPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1SafetyRuleSpecForProviderAssertedControlsRefsPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecForProviderAssertedControlsRefsPolicyResolveEnum>))]
 public enum V1beta1SafetyRuleSpecForProviderAssertedControlsRefsPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1SafetyRuleSpecForProviderAssertedControlsRefsPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecForProviderAssertedControlsRefsPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1SafetyRuleSpecForProviderAssertedControlsRefsPolicy
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecForProviderAssertedControlsRefs
 {
@@ -131,7 +131,7 @@ public partial class V1beta1SafetyRuleSpecForProviderAssertedControlsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecForProviderAssertedControlsSelectorPolicyResolutionEnum>))]
 public enum V1beta1SafetyRuleSpecForProviderAssertedControlsSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1SafetyRuleSpecForProviderAssertedControlsSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecForProviderAssertedControlsSelectorPolicyResolveEnum>))]
 public enum V1beta1SafetyRuleSpecForProviderAssertedControlsSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1SafetyRuleSpecForProviderAssertedControlsSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecForProviderAssertedControlsSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1SafetyRuleSpecForProviderAssertedControlsSelectorPol
 }
 
 /// <summary>Selector for a list of RoutingControl in route53recoverycontrolconfig to populate assertedControls.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecForProviderAssertedControlsSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1SafetyRuleSpecForProviderAssertedControlsSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecForProviderControlPanelArnRefPolicyResolutionEnum>))]
 public enum V1beta1SafetyRuleSpecForProviderControlPanelArnRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1SafetyRuleSpecForProviderControlPanelArnRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecForProviderControlPanelArnRefPolicyResolveEnum>))]
 public enum V1beta1SafetyRuleSpecForProviderControlPanelArnRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1SafetyRuleSpecForProviderControlPanelArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecForProviderControlPanelArnRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1SafetyRuleSpecForProviderControlPanelArnRefPolicy
 }
 
 /// <summary>Reference to a ControlPanel in route53recoverycontrolconfig to populate controlPanelArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecForProviderControlPanelArnRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1SafetyRuleSpecForProviderControlPanelArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecForProviderControlPanelArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1SafetyRuleSpecForProviderControlPanelArnSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1SafetyRuleSpecForProviderControlPanelArnSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecForProviderControlPanelArnSelectorPolicyResolveEnum>))]
 public enum V1beta1SafetyRuleSpecForProviderControlPanelArnSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1SafetyRuleSpecForProviderControlPanelArnSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecForProviderControlPanelArnSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1SafetyRuleSpecForProviderControlPanelArnSelectorPoli
 }
 
 /// <summary>Selector for a ControlPanel in route53recoverycontrolconfig to populate controlPanelArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecForProviderControlPanelArnSelector
 {
@@ -355,7 +355,7 @@ public partial class V1beta1SafetyRuleSpecForProviderControlPanelArnSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecForProviderGatingControlsRefsPolicyResolutionEnum>))]
 public enum V1beta1SafetyRuleSpecForProviderGatingControlsRefsPolicyResolutionEnum
 {
@@ -371,7 +371,7 @@ public enum V1beta1SafetyRuleSpecForProviderGatingControlsRefsPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecForProviderGatingControlsRefsPolicyResolveEnum>))]
 public enum V1beta1SafetyRuleSpecForProviderGatingControlsRefsPolicyResolveEnum
 {
@@ -382,7 +382,7 @@ public enum V1beta1SafetyRuleSpecForProviderGatingControlsRefsPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecForProviderGatingControlsRefsPolicy
 {
@@ -406,7 +406,7 @@ public partial class V1beta1SafetyRuleSpecForProviderGatingControlsRefsPolicy
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecForProviderGatingControlsRefs
 {
@@ -425,7 +425,7 @@ public partial class V1beta1SafetyRuleSpecForProviderGatingControlsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecForProviderGatingControlsSelectorPolicyResolutionEnum>))]
 public enum V1beta1SafetyRuleSpecForProviderGatingControlsSelectorPolicyResolutionEnum
 {
@@ -441,7 +441,7 @@ public enum V1beta1SafetyRuleSpecForProviderGatingControlsSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecForProviderGatingControlsSelectorPolicyResolveEnum>))]
 public enum V1beta1SafetyRuleSpecForProviderGatingControlsSelectorPolicyResolveEnum
 {
@@ -452,7 +452,7 @@ public enum V1beta1SafetyRuleSpecForProviderGatingControlsSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecForProviderGatingControlsSelectorPolicy
 {
@@ -476,7 +476,7 @@ public partial class V1beta1SafetyRuleSpecForProviderGatingControlsSelectorPolic
 }
 
 /// <summary>Selector for a list of RoutingControl in route53recoverycontrolconfig to populate gatingControls.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecForProviderGatingControlsSelector
 {
@@ -496,7 +496,7 @@ public partial class V1beta1SafetyRuleSpecForProviderGatingControlsSelector
     public V1beta1SafetyRuleSpecForProviderGatingControlsSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecForProviderRuleConfig
 {
@@ -519,7 +519,7 @@ public partial class V1beta1SafetyRuleSpecForProviderRuleConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecForProviderTargetControlsRefsPolicyResolutionEnum>))]
 public enum V1beta1SafetyRuleSpecForProviderTargetControlsRefsPolicyResolutionEnum
 {
@@ -535,7 +535,7 @@ public enum V1beta1SafetyRuleSpecForProviderTargetControlsRefsPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecForProviderTargetControlsRefsPolicyResolveEnum>))]
 public enum V1beta1SafetyRuleSpecForProviderTargetControlsRefsPolicyResolveEnum
 {
@@ -546,7 +546,7 @@ public enum V1beta1SafetyRuleSpecForProviderTargetControlsRefsPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecForProviderTargetControlsRefsPolicy
 {
@@ -570,7 +570,7 @@ public partial class V1beta1SafetyRuleSpecForProviderTargetControlsRefsPolicy
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecForProviderTargetControlsRefs
 {
@@ -589,7 +589,7 @@ public partial class V1beta1SafetyRuleSpecForProviderTargetControlsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecForProviderTargetControlsSelectorPolicyResolutionEnum>))]
 public enum V1beta1SafetyRuleSpecForProviderTargetControlsSelectorPolicyResolutionEnum
 {
@@ -605,7 +605,7 @@ public enum V1beta1SafetyRuleSpecForProviderTargetControlsSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecForProviderTargetControlsSelectorPolicyResolveEnum>))]
 public enum V1beta1SafetyRuleSpecForProviderTargetControlsSelectorPolicyResolveEnum
 {
@@ -616,7 +616,7 @@ public enum V1beta1SafetyRuleSpecForProviderTargetControlsSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecForProviderTargetControlsSelectorPolicy
 {
@@ -640,7 +640,7 @@ public partial class V1beta1SafetyRuleSpecForProviderTargetControlsSelectorPolic
 }
 
 /// <summary>Selector for a list of RoutingControl in route53recoverycontrolconfig to populate targetControls.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecForProviderTargetControlsSelector
 {
@@ -660,7 +660,7 @@ public partial class V1beta1SafetyRuleSpecForProviderTargetControlsSelector
     public V1beta1SafetyRuleSpecForProviderTargetControlsSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecForProvider
 {
@@ -735,7 +735,7 @@ public partial class V1beta1SafetyRuleSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecInitProviderAssertedControlsRefsPolicyResolutionEnum>))]
 public enum V1beta1SafetyRuleSpecInitProviderAssertedControlsRefsPolicyResolutionEnum
 {
@@ -751,7 +751,7 @@ public enum V1beta1SafetyRuleSpecInitProviderAssertedControlsRefsPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecInitProviderAssertedControlsRefsPolicyResolveEnum>))]
 public enum V1beta1SafetyRuleSpecInitProviderAssertedControlsRefsPolicyResolveEnum
 {
@@ -762,7 +762,7 @@ public enum V1beta1SafetyRuleSpecInitProviderAssertedControlsRefsPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecInitProviderAssertedControlsRefsPolicy
 {
@@ -786,7 +786,7 @@ public partial class V1beta1SafetyRuleSpecInitProviderAssertedControlsRefsPolicy
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecInitProviderAssertedControlsRefs
 {
@@ -805,7 +805,7 @@ public partial class V1beta1SafetyRuleSpecInitProviderAssertedControlsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecInitProviderAssertedControlsSelectorPolicyResolutionEnum>))]
 public enum V1beta1SafetyRuleSpecInitProviderAssertedControlsSelectorPolicyResolutionEnum
 {
@@ -821,7 +821,7 @@ public enum V1beta1SafetyRuleSpecInitProviderAssertedControlsSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecInitProviderAssertedControlsSelectorPolicyResolveEnum>))]
 public enum V1beta1SafetyRuleSpecInitProviderAssertedControlsSelectorPolicyResolveEnum
 {
@@ -832,7 +832,7 @@ public enum V1beta1SafetyRuleSpecInitProviderAssertedControlsSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecInitProviderAssertedControlsSelectorPolicy
 {
@@ -856,7 +856,7 @@ public partial class V1beta1SafetyRuleSpecInitProviderAssertedControlsSelectorPo
 }
 
 /// <summary>Selector for a list of RoutingControl in route53recoverycontrolconfig to populate assertedControls.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecInitProviderAssertedControlsSelector
 {
@@ -882,7 +882,7 @@ public partial class V1beta1SafetyRuleSpecInitProviderAssertedControlsSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecInitProviderControlPanelArnRefPolicyResolutionEnum>))]
 public enum V1beta1SafetyRuleSpecInitProviderControlPanelArnRefPolicyResolutionEnum
 {
@@ -898,7 +898,7 @@ public enum V1beta1SafetyRuleSpecInitProviderControlPanelArnRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecInitProviderControlPanelArnRefPolicyResolveEnum>))]
 public enum V1beta1SafetyRuleSpecInitProviderControlPanelArnRefPolicyResolveEnum
 {
@@ -909,7 +909,7 @@ public enum V1beta1SafetyRuleSpecInitProviderControlPanelArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecInitProviderControlPanelArnRefPolicy
 {
@@ -933,7 +933,7 @@ public partial class V1beta1SafetyRuleSpecInitProviderControlPanelArnRefPolicy
 }
 
 /// <summary>Reference to a ControlPanel in route53recoverycontrolconfig to populate controlPanelArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecInitProviderControlPanelArnRef
 {
@@ -952,7 +952,7 @@ public partial class V1beta1SafetyRuleSpecInitProviderControlPanelArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecInitProviderControlPanelArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1SafetyRuleSpecInitProviderControlPanelArnSelectorPolicyResolutionEnum
 {
@@ -968,7 +968,7 @@ public enum V1beta1SafetyRuleSpecInitProviderControlPanelArnSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecInitProviderControlPanelArnSelectorPolicyResolveEnum>))]
 public enum V1beta1SafetyRuleSpecInitProviderControlPanelArnSelectorPolicyResolveEnum
 {
@@ -979,7 +979,7 @@ public enum V1beta1SafetyRuleSpecInitProviderControlPanelArnSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecInitProviderControlPanelArnSelectorPolicy
 {
@@ -1003,7 +1003,7 @@ public partial class V1beta1SafetyRuleSpecInitProviderControlPanelArnSelectorPol
 }
 
 /// <summary>Selector for a ControlPanel in route53recoverycontrolconfig to populate controlPanelArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecInitProviderControlPanelArnSelector
 {
@@ -1029,7 +1029,7 @@ public partial class V1beta1SafetyRuleSpecInitProviderControlPanelArnSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecInitProviderGatingControlsRefsPolicyResolutionEnum>))]
 public enum V1beta1SafetyRuleSpecInitProviderGatingControlsRefsPolicyResolutionEnum
 {
@@ -1045,7 +1045,7 @@ public enum V1beta1SafetyRuleSpecInitProviderGatingControlsRefsPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecInitProviderGatingControlsRefsPolicyResolveEnum>))]
 public enum V1beta1SafetyRuleSpecInitProviderGatingControlsRefsPolicyResolveEnum
 {
@@ -1056,7 +1056,7 @@ public enum V1beta1SafetyRuleSpecInitProviderGatingControlsRefsPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecInitProviderGatingControlsRefsPolicy
 {
@@ -1080,7 +1080,7 @@ public partial class V1beta1SafetyRuleSpecInitProviderGatingControlsRefsPolicy
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecInitProviderGatingControlsRefs
 {
@@ -1099,7 +1099,7 @@ public partial class V1beta1SafetyRuleSpecInitProviderGatingControlsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecInitProviderGatingControlsSelectorPolicyResolutionEnum>))]
 public enum V1beta1SafetyRuleSpecInitProviderGatingControlsSelectorPolicyResolutionEnum
 {
@@ -1115,7 +1115,7 @@ public enum V1beta1SafetyRuleSpecInitProviderGatingControlsSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecInitProviderGatingControlsSelectorPolicyResolveEnum>))]
 public enum V1beta1SafetyRuleSpecInitProviderGatingControlsSelectorPolicyResolveEnum
 {
@@ -1126,7 +1126,7 @@ public enum V1beta1SafetyRuleSpecInitProviderGatingControlsSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecInitProviderGatingControlsSelectorPolicy
 {
@@ -1150,7 +1150,7 @@ public partial class V1beta1SafetyRuleSpecInitProviderGatingControlsSelectorPoli
 }
 
 /// <summary>Selector for a list of RoutingControl in route53recoverycontrolconfig to populate gatingControls.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecInitProviderGatingControlsSelector
 {
@@ -1170,7 +1170,7 @@ public partial class V1beta1SafetyRuleSpecInitProviderGatingControlsSelector
     public V1beta1SafetyRuleSpecInitProviderGatingControlsSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecInitProviderRuleConfig
 {
@@ -1193,7 +1193,7 @@ public partial class V1beta1SafetyRuleSpecInitProviderRuleConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecInitProviderTargetControlsRefsPolicyResolutionEnum>))]
 public enum V1beta1SafetyRuleSpecInitProviderTargetControlsRefsPolicyResolutionEnum
 {
@@ -1209,7 +1209,7 @@ public enum V1beta1SafetyRuleSpecInitProviderTargetControlsRefsPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecInitProviderTargetControlsRefsPolicyResolveEnum>))]
 public enum V1beta1SafetyRuleSpecInitProviderTargetControlsRefsPolicyResolveEnum
 {
@@ -1220,7 +1220,7 @@ public enum V1beta1SafetyRuleSpecInitProviderTargetControlsRefsPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecInitProviderTargetControlsRefsPolicy
 {
@@ -1244,7 +1244,7 @@ public partial class V1beta1SafetyRuleSpecInitProviderTargetControlsRefsPolicy
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecInitProviderTargetControlsRefs
 {
@@ -1263,7 +1263,7 @@ public partial class V1beta1SafetyRuleSpecInitProviderTargetControlsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecInitProviderTargetControlsSelectorPolicyResolutionEnum>))]
 public enum V1beta1SafetyRuleSpecInitProviderTargetControlsSelectorPolicyResolutionEnum
 {
@@ -1279,7 +1279,7 @@ public enum V1beta1SafetyRuleSpecInitProviderTargetControlsSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecInitProviderTargetControlsSelectorPolicyResolveEnum>))]
 public enum V1beta1SafetyRuleSpecInitProviderTargetControlsSelectorPolicyResolveEnum
 {
@@ -1290,7 +1290,7 @@ public enum V1beta1SafetyRuleSpecInitProviderTargetControlsSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecInitProviderTargetControlsSelectorPolicy
 {
@@ -1314,7 +1314,7 @@ public partial class V1beta1SafetyRuleSpecInitProviderTargetControlsSelectorPoli
 }
 
 /// <summary>Selector for a list of RoutingControl in route53recoverycontrolconfig to populate targetControls.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecInitProviderTargetControlsSelector
 {
@@ -1346,7 +1346,7 @@ public partial class V1beta1SafetyRuleSpecInitProviderTargetControlsSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecInitProvider
 {
@@ -1419,7 +1419,7 @@ public partial class V1beta1SafetyRuleSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecManagementPoliciesEnum>))]
 public enum V1beta1SafetyRuleSpecManagementPoliciesEnum
 {
@@ -1443,7 +1443,7 @@ public enum V1beta1SafetyRuleSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1SafetyRuleSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1459,7 +1459,7 @@ public enum V1beta1SafetyRuleSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SafetyRuleSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1SafetyRuleSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1470,7 +1470,7 @@ public enum V1beta1SafetyRuleSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecProviderConfigRefPolicy
 {
@@ -1498,7 +1498,7 @@ public partial class V1beta1SafetyRuleSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecProviderConfigRef
 {
@@ -1517,7 +1517,7 @@ public partial class V1beta1SafetyRuleSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpecWriteConnectionSecretToRef
 {
@@ -1531,7 +1531,7 @@ public partial class V1beta1SafetyRuleSpecWriteConnectionSecretToRef
 }
 
 /// <summary>SafetyRuleSpec defines the desired state of SafetyRule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleSpec
 {
@@ -1598,7 +1598,7 @@ public partial class V1beta1SafetyRuleSpec
     public V1beta1SafetyRuleSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleStatusAtProviderRuleConfig
 {
@@ -1615,7 +1615,7 @@ public partial class V1beta1SafetyRuleStatusAtProviderRuleConfig
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleStatusAtProvider
 {
@@ -1668,7 +1668,7 @@ public partial class V1beta1SafetyRuleStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleStatusConditions
 {
@@ -1711,7 +1711,7 @@ public partial class V1beta1SafetyRuleStatusConditions
 }
 
 /// <summary>SafetyRuleStatus defines the observed state of SafetyRule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SafetyRuleStatus
 {
@@ -1732,7 +1732,7 @@ public partial class V1beta1SafetyRuleStatus
 }
 
 /// <summary>SafetyRule is the Schema for the SafetyRules API. Provides an AWS Route 53 Recovery Control Config Safety Rule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SafetyRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SafetyRuleSpec>, IStatus<V1beta1SafetyRuleStatus?>
