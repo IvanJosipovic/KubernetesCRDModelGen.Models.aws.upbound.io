@@ -786,6 +786,18 @@ public partial class V1beta1ReplicationGroupSpecForProvider
     [JsonPropertyName("clusterMode")]
     public IList<V1beta1ReplicationGroupSpecForProviderClusterMode>? ClusterMode { get; set; }
 
+    /// <summary>
+    /// Specifies whether cluster mode is enabled or disabled. Valid values are enabled or disabled or compatible
+    /// To modify cluster mode from Disabled to Enabled, you must
+    /// first set the cluster mode to Compatible. Compatible mode allows your Valkey or
+    /// Redis OSS clients to connect using both cluster mode enabled and cluster mode
+    /// disabled. After you migrate all Valkey or Redis OSS clients to use cluster mode
+    /// enabled, you can then complete cluster mode configuration and set the cluster
+    /// mode to Enabled.
+    /// </summary>
+    [JsonPropertyName("clusterOperationMode")]
+    public string? ClusterOperationMode { get; set; }
+
     /// <summary>Enables data tiering. Data tiering is only supported for replication groups using the r6gd node type. This parameter must be set to true when using r6gd nodes.</summary>
     [JsonPropertyName("dataTieringEnabled")]
     public bool? DataTieringEnabled { get; set; }
@@ -1722,6 +1734,18 @@ public partial class V1beta1ReplicationGroupSpecInitProvider
     [JsonPropertyName("clusterMode")]
     public IList<V1beta1ReplicationGroupSpecInitProviderClusterMode>? ClusterMode { get; set; }
 
+    /// <summary>
+    /// Specifies whether cluster mode is enabled or disabled. Valid values are enabled or disabled or compatible
+    /// To modify cluster mode from Disabled to Enabled, you must
+    /// first set the cluster mode to Compatible. Compatible mode allows your Valkey or
+    /// Redis OSS clients to connect using both cluster mode enabled and cluster mode
+    /// disabled. After you migrate all Valkey or Redis OSS clients to use cluster mode
+    /// enabled, you can then complete cluster mode configuration and set the cluster
+    /// mode to Enabled.
+    /// </summary>
+    [JsonPropertyName("clusterOperationMode")]
+    public string? ClusterOperationMode { get; set; }
+
     /// <summary>Enables data tiering. Data tiering is only supported for replication groups using the r6gd node type. This parameter must be set to true when using r6gd nodes.</summary>
     [JsonPropertyName("dataTieringEnabled")]
     public bool? DataTieringEnabled { get; set; }
@@ -2213,6 +2237,18 @@ public partial class V1beta1ReplicationGroupStatusAtProvider
     /// <summary>Create a native Redis cluster. automatic_failover_enabled must be set to true. Cluster Mode documented below. Only 1 cluster_mode block is allowed. Note that configuring this block does not enable cluster mode, i.e., data sharding, this requires using a parameter group that has the parameter cluster-enabled set to true.</summary>
     [JsonPropertyName("clusterMode")]
     public IList<V1beta1ReplicationGroupStatusAtProviderClusterMode>? ClusterMode { get; set; }
+
+    /// <summary>
+    /// Specifies whether cluster mode is enabled or disabled. Valid values are enabled or disabled or compatible
+    /// To modify cluster mode from Disabled to Enabled, you must
+    /// first set the cluster mode to Compatible. Compatible mode allows your Valkey or
+    /// Redis OSS clients to connect using both cluster mode enabled and cluster mode
+    /// disabled. After you migrate all Valkey or Redis OSS clients to use cluster mode
+    /// enabled, you can then complete cluster mode configuration and set the cluster
+    /// mode to Enabled.
+    /// </summary>
+    [JsonPropertyName("clusterOperationMode")]
+    public string? ClusterOperationMode { get; set; }
 
     /// <summary>Address of the replication group configuration endpoint when cluster mode is enabled.</summary>
     [JsonPropertyName("configurationEndpointAddress")]
