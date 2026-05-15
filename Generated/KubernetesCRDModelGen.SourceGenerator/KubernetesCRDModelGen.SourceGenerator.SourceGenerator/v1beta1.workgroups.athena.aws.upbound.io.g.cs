@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.athena.aws.upbound.io;
-/// <summary>Workgroup is the Schema for the Workgroups API. Manages an Athena Workgroup.</summary>
+/// <summary>
+/// Workgroup is the Schema for the Workgroups API. Manages an Athena Workgroup.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkgroupList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Workgroup>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1WorkgroupList : IKubernetesObject<V1ListMeta>, IItem
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkgroupSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkgroupSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1WorkgroupSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecForProviderConfigurationCustomerContentEncryptionConfiguration
 {
     /// <summary>KMS key ARN to encrypt the logs published to the given Amazon S3 destination.</summary>
@@ -66,6 +72,7 @@ public partial class V1beta1WorkgroupSpecForProviderConfigurationCustomerContent
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecForProviderConfigurationEngineVersion
 {
     /// <summary>Requested engine version. Defaults to AUTO.</summary>
@@ -75,6 +82,7 @@ public partial class V1beta1WorkgroupSpecForProviderConfigurationEngineVersion
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecForProviderConfigurationIdentityCenterConfiguration
 {
     /// <summary>Specifies whether the workgroup is IAM Identity Center supported.</summary>
@@ -88,6 +96,7 @@ public partial class V1beta1WorkgroupSpecForProviderConfigurationIdentityCenterC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecForProviderConfigurationManagedQueryResultsConfigurationEncryptionConfiguration
 {
     /// <summary>KMS key ARN to encrypt the logs published to the given Amazon S3 destination.</summary>
@@ -97,6 +106,7 @@ public partial class V1beta1WorkgroupSpecForProviderConfigurationManagedQueryRes
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecForProviderConfigurationManagedQueryResultsConfiguration
 {
     /// <summary>Boolean whether Amazon CloudWatch logging is enabled for the workgroup.</summary>
@@ -110,6 +120,7 @@ public partial class V1beta1WorkgroupSpecForProviderConfigurationManagedQueryRes
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecForProviderConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType
 {
     /// <summary>Type of worker to deliver logs to CloudWatch (for example, SPARK_DRIVER and SPARK_EXECUTOR).</summary>
@@ -123,6 +134,7 @@ public partial class V1beta1WorkgroupSpecForProviderConfigurationMonitoringConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecForProviderConfigurationMonitoringConfigurationCloudWatchLoggingConfiguration
 {
     /// <summary>Boolean whether Amazon CloudWatch logging is enabled for the workgroup.</summary>
@@ -144,6 +156,7 @@ public partial class V1beta1WorkgroupSpecForProviderConfigurationMonitoringConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecForProviderConfigurationMonitoringConfigurationManagedLoggingConfiguration
 {
     /// <summary>Boolean whether Amazon CloudWatch logging is enabled for the workgroup.</summary>
@@ -157,6 +170,7 @@ public partial class V1beta1WorkgroupSpecForProviderConfigurationMonitoringConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecForProviderConfigurationMonitoringConfigurationS3LoggingConfiguration
 {
     /// <summary>Boolean whether Amazon CloudWatch logging is enabled for the workgroup.</summary>
@@ -174,6 +188,7 @@ public partial class V1beta1WorkgroupSpecForProviderConfigurationMonitoringConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecForProviderConfigurationMonitoringConfiguration
 {
     /// <summary>Configuration block for delivering logs to Amazon CloudWatch log groups. See CloudWatch Logging Configuration below.</summary>
@@ -191,6 +206,7 @@ public partial class V1beta1WorkgroupSpecForProviderConfigurationMonitoringConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecForProviderConfigurationQueryResultsS3AccessGrantsConfiguration
 {
     /// <summary>The authentication type used for Amazon S3 access grants. Currently, only DIRECTORY_IDENTITY is supported.</summary>
@@ -208,6 +224,7 @@ public partial class V1beta1WorkgroupSpecForProviderConfigurationQueryResultsS3A
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecForProviderConfigurationResultConfigurationAclConfiguration
 {
     /// <summary>Amazon S3 canned ACL that Athena should specify when storing query results. Valid value is BUCKET_OWNER_FULL_CONTROL.</summary>
@@ -223,6 +240,7 @@ public partial class V1beta1WorkgroupSpecForProviderConfigurationResultConfigura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -239,6 +257,7 @@ public enum V1beta1WorkgroupSpecForProviderConfigurationResultConfigurationEncry
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -250,6 +269,7 @@ public enum V1beta1WorkgroupSpecForProviderConfigurationResultConfigurationEncry
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRefPolicy
 {
     /// <summary>
@@ -274,6 +294,7 @@ public partial class V1beta1WorkgroupSpecForProviderConfigurationResultConfigura
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -293,6 +314,7 @@ public partial class V1beta1WorkgroupSpecForProviderConfigurationResultConfigura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -309,6 +331,7 @@ public enum V1beta1WorkgroupSpecForProviderConfigurationResultConfigurationEncry
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -320,6 +343,7 @@ public enum V1beta1WorkgroupSpecForProviderConfigurationResultConfigurationEncry
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelectorPolicy
 {
     /// <summary>
@@ -344,6 +368,7 @@ public partial class V1beta1WorkgroupSpecForProviderConfigurationResultConfigura
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelector
 {
     /// <summary>
@@ -364,6 +389,7 @@ public partial class V1beta1WorkgroupSpecForProviderConfigurationResultConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecForProviderConfigurationResultConfigurationEncryptionConfiguration
 {
     /// <summary>Whether Amazon S3 server-side encryption with Amazon S3-managed keys (SSE_S3), server-side encryption with KMS-managed keys (SSE_KMS), or client-side encryption with KMS-managed keys (CSE_KMS) is used. If a query runs in a workgroup and the workgroup overrides client-side settings, then the workgroup&apos;s setting for encryption is used. It specifies whether query results must be encrypted, for all queries that run in this workgroup.</summary>
@@ -385,6 +411,7 @@ public partial class V1beta1WorkgroupSpecForProviderConfigurationResultConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecForProviderConfigurationResultConfiguration
 {
     /// <summary>That an Amazon S3 canned ACL should be set to control ownership of stored query results. See ACL Configuration below.</summary>
@@ -406,6 +433,7 @@ public partial class V1beta1WorkgroupSpecForProviderConfigurationResultConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecForProviderConfiguration
 {
     /// <summary>Integer for the upper data usage limit (cutoff) for the amount of bytes a single query in a workgroup is allowed to scan. Must be at least 10485760.</summary>
@@ -463,6 +491,7 @@ public partial class V1beta1WorkgroupSpecForProviderConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecForProvider
 {
     /// <summary>Configuration block with various settings for the workgroup. Documented below.</summary>
@@ -495,6 +524,7 @@ public partial class V1beta1WorkgroupSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecInitProviderConfigurationCustomerContentEncryptionConfiguration
 {
     /// <summary>KMS key ARN to encrypt the logs published to the given Amazon S3 destination.</summary>
@@ -504,6 +534,7 @@ public partial class V1beta1WorkgroupSpecInitProviderConfigurationCustomerConten
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecInitProviderConfigurationEngineVersion
 {
     /// <summary>Requested engine version. Defaults to AUTO.</summary>
@@ -513,6 +544,7 @@ public partial class V1beta1WorkgroupSpecInitProviderConfigurationEngineVersion
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecInitProviderConfigurationIdentityCenterConfiguration
 {
     /// <summary>Specifies whether the workgroup is IAM Identity Center supported.</summary>
@@ -526,6 +558,7 @@ public partial class V1beta1WorkgroupSpecInitProviderConfigurationIdentityCenter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecInitProviderConfigurationManagedQueryResultsConfigurationEncryptionConfiguration
 {
     /// <summary>KMS key ARN to encrypt the logs published to the given Amazon S3 destination.</summary>
@@ -535,6 +568,7 @@ public partial class V1beta1WorkgroupSpecInitProviderConfigurationManagedQueryRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecInitProviderConfigurationManagedQueryResultsConfiguration
 {
     /// <summary>Boolean whether Amazon CloudWatch logging is enabled for the workgroup.</summary>
@@ -548,6 +582,7 @@ public partial class V1beta1WorkgroupSpecInitProviderConfigurationManagedQueryRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecInitProviderConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType
 {
     /// <summary>Type of worker to deliver logs to CloudWatch (for example, SPARK_DRIVER and SPARK_EXECUTOR).</summary>
@@ -561,6 +596,7 @@ public partial class V1beta1WorkgroupSpecInitProviderConfigurationMonitoringConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecInitProviderConfigurationMonitoringConfigurationCloudWatchLoggingConfiguration
 {
     /// <summary>Boolean whether Amazon CloudWatch logging is enabled for the workgroup.</summary>
@@ -582,6 +618,7 @@ public partial class V1beta1WorkgroupSpecInitProviderConfigurationMonitoringConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecInitProviderConfigurationMonitoringConfigurationManagedLoggingConfiguration
 {
     /// <summary>Boolean whether Amazon CloudWatch logging is enabled for the workgroup.</summary>
@@ -595,6 +632,7 @@ public partial class V1beta1WorkgroupSpecInitProviderConfigurationMonitoringConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecInitProviderConfigurationMonitoringConfigurationS3LoggingConfiguration
 {
     /// <summary>Boolean whether Amazon CloudWatch logging is enabled for the workgroup.</summary>
@@ -612,6 +650,7 @@ public partial class V1beta1WorkgroupSpecInitProviderConfigurationMonitoringConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecInitProviderConfigurationMonitoringConfiguration
 {
     /// <summary>Configuration block for delivering logs to Amazon CloudWatch log groups. See CloudWatch Logging Configuration below.</summary>
@@ -629,6 +668,7 @@ public partial class V1beta1WorkgroupSpecInitProviderConfigurationMonitoringConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecInitProviderConfigurationQueryResultsS3AccessGrantsConfiguration
 {
     /// <summary>The authentication type used for Amazon S3 access grants. Currently, only DIRECTORY_IDENTITY is supported.</summary>
@@ -646,6 +686,7 @@ public partial class V1beta1WorkgroupSpecInitProviderConfigurationQueryResultsS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecInitProviderConfigurationResultConfigurationAclConfiguration
 {
     /// <summary>Amazon S3 canned ACL that Athena should specify when storing query results. Valid value is BUCKET_OWNER_FULL_CONTROL.</summary>
@@ -661,6 +702,7 @@ public partial class V1beta1WorkgroupSpecInitProviderConfigurationResultConfigur
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -677,6 +719,7 @@ public enum V1beta1WorkgroupSpecInitProviderConfigurationResultConfigurationEncr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -688,6 +731,7 @@ public enum V1beta1WorkgroupSpecInitProviderConfigurationResultConfigurationEncr
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRefPolicy
 {
     /// <summary>
@@ -712,6 +756,7 @@ public partial class V1beta1WorkgroupSpecInitProviderConfigurationResultConfigur
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -731,6 +776,7 @@ public partial class V1beta1WorkgroupSpecInitProviderConfigurationResultConfigur
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -747,6 +793,7 @@ public enum V1beta1WorkgroupSpecInitProviderConfigurationResultConfigurationEncr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -758,6 +805,7 @@ public enum V1beta1WorkgroupSpecInitProviderConfigurationResultConfigurationEncr
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelectorPolicy
 {
     /// <summary>
@@ -782,6 +830,7 @@ public partial class V1beta1WorkgroupSpecInitProviderConfigurationResultConfigur
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfigurationKmsKeyArnSelector
 {
     /// <summary>
@@ -802,6 +851,7 @@ public partial class V1beta1WorkgroupSpecInitProviderConfigurationResultConfigur
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecInitProviderConfigurationResultConfigurationEncryptionConfiguration
 {
     /// <summary>Whether Amazon S3 server-side encryption with Amazon S3-managed keys (SSE_S3), server-side encryption with KMS-managed keys (SSE_KMS), or client-side encryption with KMS-managed keys (CSE_KMS) is used. If a query runs in a workgroup and the workgroup overrides client-side settings, then the workgroup&apos;s setting for encryption is used. It specifies whether query results must be encrypted, for all queries that run in this workgroup.</summary>
@@ -823,6 +873,7 @@ public partial class V1beta1WorkgroupSpecInitProviderConfigurationResultConfigur
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecInitProviderConfigurationResultConfiguration
 {
     /// <summary>That an Amazon S3 canned ACL should be set to control ownership of stored query results. See ACL Configuration below.</summary>
@@ -844,6 +895,7 @@ public partial class V1beta1WorkgroupSpecInitProviderConfigurationResultConfigur
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecInitProviderConfiguration
 {
     /// <summary>Integer for the upper data usage limit (cutoff) for the amount of bytes a single query in a workgroup is allowed to scan. Must be at least 10485760.</summary>
@@ -913,6 +965,7 @@ public partial class V1beta1WorkgroupSpecInitProviderConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecInitProvider
 {
     /// <summary>Configuration block with various settings for the workgroup. Documented below.</summary>
@@ -942,6 +995,7 @@ public partial class V1beta1WorkgroupSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkgroupSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkgroupSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -966,6 +1020,7 @@ public enum V1beta1WorkgroupSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkgroupSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkgroupSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -982,6 +1037,7 @@ public enum V1beta1WorkgroupSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkgroupSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkgroupSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -993,6 +1049,7 @@ public enum V1beta1WorkgroupSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1021,6 +1078,7 @@ public partial class V1beta1WorkgroupSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1040,6 +1098,7 @@ public partial class V1beta1WorkgroupSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1054,6 +1113,7 @@ public partial class V1beta1WorkgroupSpecWriteConnectionSecretToRef
 /// <summary>WorkgroupSpec defines the desired state of Workgroup</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupSpec
 {
     /// <summary>
@@ -1121,6 +1181,7 @@ public partial class V1beta1WorkgroupSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupStatusAtProviderConfigurationCustomerContentEncryptionConfiguration
 {
     /// <summary>KMS key ARN to encrypt the logs published to the given Amazon S3 destination.</summary>
@@ -1130,6 +1191,7 @@ public partial class V1beta1WorkgroupStatusAtProviderConfigurationCustomerConten
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupStatusAtProviderConfigurationEngineVersion
 {
     /// <summary>The engine version on which the query runs. If selected_engine_version is set to AUTO, the effective engine version is chosen by Athena.</summary>
@@ -1143,6 +1205,7 @@ public partial class V1beta1WorkgroupStatusAtProviderConfigurationEngineVersion
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupStatusAtProviderConfigurationIdentityCenterConfiguration
 {
     /// <summary>Specifies whether the workgroup is IAM Identity Center supported.</summary>
@@ -1156,6 +1219,7 @@ public partial class V1beta1WorkgroupStatusAtProviderConfigurationIdentityCenter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupStatusAtProviderConfigurationManagedQueryResultsConfigurationEncryptionConfiguration
 {
     /// <summary>KMS key ARN to encrypt the logs published to the given Amazon S3 destination.</summary>
@@ -1165,6 +1229,7 @@ public partial class V1beta1WorkgroupStatusAtProviderConfigurationManagedQueryRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupStatusAtProviderConfigurationManagedQueryResultsConfiguration
 {
     /// <summary>Boolean whether Amazon CloudWatch logging is enabled for the workgroup.</summary>
@@ -1178,6 +1243,7 @@ public partial class V1beta1WorkgroupStatusAtProviderConfigurationManagedQueryRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupStatusAtProviderConfigurationMonitoringConfigurationCloudWatchLoggingConfigurationLogType
 {
     /// <summary>Type of worker to deliver logs to CloudWatch (for example, SPARK_DRIVER and SPARK_EXECUTOR).</summary>
@@ -1191,6 +1257,7 @@ public partial class V1beta1WorkgroupStatusAtProviderConfigurationMonitoringConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupStatusAtProviderConfigurationMonitoringConfigurationCloudWatchLoggingConfiguration
 {
     /// <summary>Boolean whether Amazon CloudWatch logging is enabled for the workgroup.</summary>
@@ -1212,6 +1279,7 @@ public partial class V1beta1WorkgroupStatusAtProviderConfigurationMonitoringConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupStatusAtProviderConfigurationMonitoringConfigurationManagedLoggingConfiguration
 {
     /// <summary>Boolean whether Amazon CloudWatch logging is enabled for the workgroup.</summary>
@@ -1225,6 +1293,7 @@ public partial class V1beta1WorkgroupStatusAtProviderConfigurationMonitoringConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupStatusAtProviderConfigurationMonitoringConfigurationS3LoggingConfiguration
 {
     /// <summary>Boolean whether Amazon CloudWatch logging is enabled for the workgroup.</summary>
@@ -1242,6 +1311,7 @@ public partial class V1beta1WorkgroupStatusAtProviderConfigurationMonitoringConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupStatusAtProviderConfigurationMonitoringConfiguration
 {
     /// <summary>Configuration block for delivering logs to Amazon CloudWatch log groups. See CloudWatch Logging Configuration below.</summary>
@@ -1259,6 +1329,7 @@ public partial class V1beta1WorkgroupStatusAtProviderConfigurationMonitoringConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupStatusAtProviderConfigurationQueryResultsS3AccessGrantsConfiguration
 {
     /// <summary>The authentication type used for Amazon S3 access grants. Currently, only DIRECTORY_IDENTITY is supported.</summary>
@@ -1276,6 +1347,7 @@ public partial class V1beta1WorkgroupStatusAtProviderConfigurationQueryResultsS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupStatusAtProviderConfigurationResultConfigurationAclConfiguration
 {
     /// <summary>Amazon S3 canned ACL that Athena should specify when storing query results. Valid value is BUCKET_OWNER_FULL_CONTROL.</summary>
@@ -1285,6 +1357,7 @@ public partial class V1beta1WorkgroupStatusAtProviderConfigurationResultConfigur
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupStatusAtProviderConfigurationResultConfigurationEncryptionConfiguration
 {
     /// <summary>Whether Amazon S3 server-side encryption with Amazon S3-managed keys (SSE_S3), server-side encryption with KMS-managed keys (SSE_KMS), or client-side encryption with KMS-managed keys (CSE_KMS) is used. If a query runs in a workgroup and the workgroup overrides client-side settings, then the workgroup&apos;s setting for encryption is used. It specifies whether query results must be encrypted, for all queries that run in this workgroup.</summary>
@@ -1298,6 +1371,7 @@ public partial class V1beta1WorkgroupStatusAtProviderConfigurationResultConfigur
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupStatusAtProviderConfigurationResultConfiguration
 {
     /// <summary>That an Amazon S3 canned ACL should be set to control ownership of stored query results. See ACL Configuration below.</summary>
@@ -1319,6 +1393,7 @@ public partial class V1beta1WorkgroupStatusAtProviderConfigurationResultConfigur
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupStatusAtProviderConfiguration
 {
     /// <summary>Integer for the upper data usage limit (cutoff) for the amount of bytes a single query in a workgroup is allowed to scan. Must be at least 10485760.</summary>
@@ -1376,6 +1451,7 @@ public partial class V1beta1WorkgroupStatusAtProviderConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupStatusAtProvider
 {
     /// <summary>ARN of the workgroup</summary>
@@ -1421,6 +1497,7 @@ public partial class V1beta1WorkgroupStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupStatusConditions
 {
     /// <summary>
@@ -1464,6 +1541,7 @@ public partial class V1beta1WorkgroupStatusConditions
 /// <summary>WorkgroupStatus defines the observed state of Workgroup.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkgroupStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1482,9 +1560,13 @@ public partial class V1beta1WorkgroupStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Workgroup is the Schema for the Workgroups API. Manages an Athena Workgroup.</summary>
+/// <summary>
+/// Workgroup is the Schema for the Workgroups API. Manages an Athena Workgroup.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Workgroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WorkgroupSpec>, IStatus<V1beta1WorkgroupStatus?>
 {

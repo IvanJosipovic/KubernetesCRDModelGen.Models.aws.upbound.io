@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.fsx.aws.upbound.io;
-/// <summary>OntapStorageVirtualMachine is the Schema for the OntapStorageVirtualMachines API. Manages a FSx Storage Virtual Machine.</summary>
+/// <summary>
+/// OntapStorageVirtualMachine is the Schema for the OntapStorageVirtualMachines API. Manages a FSx Storage Virtual Machine.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1OntapStorageVirtualMachineList : IKubernetesObject<V1ListMeta>, IItems<V1beta1OntapStorageVirtualMachine>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1OntapStorageVirtualMachineList : IKubernetesObject<V
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OntapStorageVirtualMachineSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1OntapStorageVirtualMachineSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -58,6 +63,7 @@ public enum V1beta1OntapStorageVirtualMachineSpecDeletionPolicyEnum
 /// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecForProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -75,6 +81,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecForProviderActiveDirec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecForProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration
 {
     /// <summary>A list of up to three IP addresses of DNS servers or domain controllers in the self-managed AD directory.</summary>
@@ -104,6 +111,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecForProviderActiveDirec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecForProviderActiveDirectoryConfiguration
 {
     /// <summary>The NetBIOS name of the Active Directory computer object that will be created for your SVM. This is often the same as the SVM name but can be different. AWS limits to 15 characters because of standard NetBIOS naming limits.</summary>
@@ -123,6 +131,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecForProviderActiveDirec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -139,6 +148,7 @@ public enum V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemIdRefPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -150,6 +160,7 @@ public enum V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemIdRefPolic
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemIdRefPolicy
 {
     /// <summary>
@@ -174,6 +185,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemI
 /// <summary>Reference to a OntapFileSystem in fsx to populate fileSystemId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -193,6 +205,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -209,6 +222,7 @@ public enum V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemIdSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -220,6 +234,7 @@ public enum V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemIdSelector
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemIdSelectorPolicy
 {
     /// <summary>
@@ -244,6 +259,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemI
 /// <summary>Selector for a OntapFileSystem in fsx to populate fileSystemId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemIdSelector
 {
     /// <summary>
@@ -265,6 +281,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecForProviderFileSystemI
 /// <summary>Specifies the password to use when logging on to the SVM using a secure shell (SSH) connection to the SVM&apos;s management endpoint. Doing so enables you to manage the SVM using the NetApp ONTAP CLI or REST API. If you do not specify a password, you can still use the file system&apos;s fsxadmin user to manage the SVM.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecForProviderSvmAdminPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -282,6 +299,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecForProviderSvmAdminPas
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecForProvider
 {
     /// <summary>Configuration block that Amazon FSx uses to join the FSx ONTAP Storage Virtual Machine(SVM) to your Microsoft Active Directory (AD) directory. Detailed below.</summary>
@@ -327,6 +345,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecForProvider
 /// <summary>The password for the service account on your self-managed AD domain that Amazon FSx will use to join to your AD domain.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -344,6 +363,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderActiveDire
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration
 {
     /// <summary>A list of up to three IP addresses of DNS servers or domain controllers in the self-managed AD directory.</summary>
@@ -373,6 +393,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderActiveDire
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderActiveDirectoryConfiguration
 {
     /// <summary>The NetBIOS name of the Active Directory computer object that will be created for your SVM. This is often the same as the SVM name but can be different. AWS limits to 15 characters because of standard NetBIOS naming limits.</summary>
@@ -392,6 +413,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderActiveDire
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystemIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystemIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -408,6 +430,7 @@ public enum V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystemIdRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystemIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystemIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -419,6 +442,7 @@ public enum V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystemIdRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystemIdRefPolicy
 {
     /// <summary>
@@ -443,6 +467,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystem
 /// <summary>Reference to a OntapFileSystem in fsx to populate fileSystemId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystemIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -462,6 +487,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystem
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystemIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystemIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -478,6 +504,7 @@ public enum V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystemIdSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystemIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystemIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -489,6 +516,7 @@ public enum V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystemIdSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystemIdSelectorPolicy
 {
     /// <summary>
@@ -513,6 +541,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystem
 /// <summary>Selector for a OntapFileSystem in fsx to populate fileSystemId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystemIdSelector
 {
     /// <summary>
@@ -534,6 +563,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderFileSystem
 /// <summary>Specifies the password to use when logging on to the SVM using a secure shell (SSH) connection to the SVM&apos;s management endpoint. Doing so enables you to manage the SVM using the NetApp ONTAP CLI or REST API. If you do not specify a password, you can still use the file system&apos;s fsxadmin user to manage the SVM.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderSvmAdminPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -563,6 +593,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecInitProviderSvmAdminPa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecInitProvider
 {
     /// <summary>Configuration block that Amazon FSx uses to join the FSx ONTAP Storage Virtual Machine(SVM) to your Microsoft Active Directory (AD) directory. Detailed below.</summary>
@@ -604,6 +635,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OntapStorageVirtualMachineSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1OntapStorageVirtualMachineSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -628,6 +660,7 @@ public enum V1beta1OntapStorageVirtualMachineSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OntapStorageVirtualMachineSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1OntapStorageVirtualMachineSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -644,6 +677,7 @@ public enum V1beta1OntapStorageVirtualMachineSpecProviderConfigRefPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OntapStorageVirtualMachineSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1OntapStorageVirtualMachineSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -655,6 +689,7 @@ public enum V1beta1OntapStorageVirtualMachineSpecProviderConfigRefPolicyResolveE
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -683,6 +718,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecProviderConfigRefPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -702,6 +738,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -716,6 +753,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpecWriteConnectionSecretT
 /// <summary>OntapStorageVirtualMachineSpec defines the desired state of OntapStorageVirtualMachine</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineSpec
 {
     /// <summary>
@@ -783,6 +821,7 @@ public partial class V1beta1OntapStorageVirtualMachineSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration
 {
     /// <summary>A list of up to three IP addresses of DNS servers or domain controllers in the self-managed AD directory.</summary>
@@ -808,6 +847,7 @@ public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderActiveDire
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderActiveDirectoryConfiguration
 {
     /// <summary>The NetBIOS name of the Active Directory computer object that will be created for your SVM. This is often the same as the SVM name but can be different. AWS limits to 15 characters because of standard NetBIOS naming limits.</summary>
@@ -821,6 +861,7 @@ public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderActiveDire
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsIscsi
 {
     /// <summary>The Domain Name Service (DNS) name for the storage virtual machine. You can mount your storage virtual machine using its DNS name.</summary>
@@ -834,6 +875,7 @@ public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsManagement
 {
     /// <summary>The Domain Name Service (DNS) name for the storage virtual machine. You can mount your storage virtual machine using its DNS name.</summary>
@@ -847,6 +889,7 @@ public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsNfs
 {
     /// <summary>The Domain Name Service (DNS) name for the storage virtual machine. You can mount your storage virtual machine using its DNS name.</summary>
@@ -860,6 +903,7 @@ public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsN
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsSmb
 {
     /// <summary>The Domain Name Service (DNS) name for the storage virtual machine. You can mount your storage virtual machine using its DNS name.</summary>
@@ -873,6 +917,7 @@ public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpointsS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpoints
 {
     /// <summary>An endpoint for accessing data on your storage virtual machine via iSCSI protocol. See Endpoint.</summary>
@@ -894,6 +939,7 @@ public partial class V1beta1OntapStorageVirtualMachineStatusAtProviderEndpoints
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineStatusAtProvider
 {
     /// <summary>Configuration block that Amazon FSx uses to join the FSx ONTAP Storage Virtual Machine(SVM) to your Microsoft Active Directory (AD) directory. Detailed below.</summary>
@@ -951,6 +997,7 @@ public partial class V1beta1OntapStorageVirtualMachineStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineStatusConditions
 {
     /// <summary>
@@ -994,6 +1041,7 @@ public partial class V1beta1OntapStorageVirtualMachineStatusConditions
 /// <summary>OntapStorageVirtualMachineStatus defines the observed state of OntapStorageVirtualMachine.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1OntapStorageVirtualMachineStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1012,9 +1060,13 @@ public partial class V1beta1OntapStorageVirtualMachineStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>OntapStorageVirtualMachine is the Schema for the OntapStorageVirtualMachines API. Manages a FSx Storage Virtual Machine.</summary>
+/// <summary>
+/// OntapStorageVirtualMachine is the Schema for the OntapStorageVirtualMachines API. Manages a FSx Storage Virtual Machine.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1OntapStorageVirtualMachine : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1OntapStorageVirtualMachineSpec>, IStatus<V1beta1OntapStorageVirtualMachineStatus?>
 {

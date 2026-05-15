@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.emrserverless.aws.upbound.io;
-/// <summary>Application is the Schema for the Applications API. Manages an EMR Serverless Application</summary>
+/// <summary>
+/// Application is the Schema for the Applications API. Manages an EMR Serverless Application
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApplicationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Application>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ApplicationList : IKubernetesObject<V1ListMeta>, IIt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ApplicationSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1ApplicationSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecForProviderAutoStartConfiguration
 {
     /// <summary>Enables the application to automatically start on job submission. Defaults to true.</summary>
@@ -66,6 +72,7 @@ public partial class V1beta1ApplicationSpecForProviderAutoStartConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecForProviderAutoStopConfiguration
 {
     /// <summary>Enables the application to automatically start on job submission. Defaults to true.</summary>
@@ -79,6 +86,7 @@ public partial class V1beta1ApplicationSpecForProviderAutoStopConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecForProviderImageConfiguration
 {
     /// <summary>The image URI.</summary>
@@ -88,6 +96,7 @@ public partial class V1beta1ApplicationSpecForProviderImageConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecForProviderInitialCapacityInitialCapacityConfigWorkerConfiguration
 {
     /// <summary>The maximum allowed CPU for an application.</summary>
@@ -105,6 +114,7 @@ public partial class V1beta1ApplicationSpecForProviderInitialCapacityInitialCapa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecForProviderInitialCapacityInitialCapacityConfig
 {
     /// <summary>The resource configuration of the initial capacity configuration.</summary>
@@ -118,6 +128,7 @@ public partial class V1beta1ApplicationSpecForProviderInitialCapacityInitialCapa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecForProviderInitialCapacity
 {
     /// <summary>The initial capacity configuration per worker.</summary>
@@ -131,6 +142,7 @@ public partial class V1beta1ApplicationSpecForProviderInitialCapacity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecForProviderInteractiveConfiguration
 {
     /// <summary>Enables an Apache Livy endpoint that you can connect to and run interactive jobs.</summary>
@@ -144,6 +156,7 @@ public partial class V1beta1ApplicationSpecForProviderInteractiveConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecForProviderMaximumCapacity
 {
     /// <summary>The maximum allowed CPU for an application.</summary>
@@ -161,6 +174,7 @@ public partial class V1beta1ApplicationSpecForProviderMaximumCapacity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecForProviderMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes
 {
     /// <summary>The name of the application.</summary>
@@ -174,6 +188,7 @@ public partial class V1beta1ApplicationSpecForProviderMonitoringConfigurationClo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecForProviderMonitoringConfigurationCloudwatchLoggingConfiguration
 {
     /// <summary>Enables the application to automatically start on job submission. Defaults to true.</summary>
@@ -199,6 +214,7 @@ public partial class V1beta1ApplicationSpecForProviderMonitoringConfigurationClo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecForProviderMonitoringConfigurationManagedPersistenceMonitoringConfiguration
 {
     /// <summary>Enables the application to automatically start on job submission. Defaults to true.</summary>
@@ -212,6 +228,7 @@ public partial class V1beta1ApplicationSpecForProviderMonitoringConfigurationMan
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecForProviderMonitoringConfigurationPrometheusMonitoringConfiguration
 {
     /// <summary>The Prometheus remote write URL for sending metrics. Only supported in EMR 7.1.0 and later versions.</summary>
@@ -221,6 +238,7 @@ public partial class V1beta1ApplicationSpecForProviderMonitoringConfigurationPro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecForProviderMonitoringConfigurationS3MonitoringConfiguration
 {
     /// <summary>The AWS Key Management Service (KMS) key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
@@ -234,6 +252,7 @@ public partial class V1beta1ApplicationSpecForProviderMonitoringConfigurationS3M
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecForProviderMonitoringConfiguration
 {
     /// <summary>The Amazon CloudWatch configuration for monitoring logs.</summary>
@@ -255,6 +274,7 @@ public partial class V1beta1ApplicationSpecForProviderMonitoringConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecForProviderNetworkConfiguration
 {
     /// <summary>The array of security group Ids for customer VPC connectivity.</summary>
@@ -268,6 +288,7 @@ public partial class V1beta1ApplicationSpecForProviderNetworkConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecForProviderRuntimeConfiguration
 {
     /// <summary>The classification within a configuration.</summary>
@@ -281,6 +302,7 @@ public partial class V1beta1ApplicationSpecForProviderRuntimeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecForProviderSchedulerConfiguration
 {
     /// <summary>Maximum concurrent job runs on this application. Valid range is 1 to 1000. Defaults to 15.</summary>
@@ -294,6 +316,7 @@ public partial class V1beta1ApplicationSpecForProviderSchedulerConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecForProvider
 {
     /// <summary>The CPU architecture of an application. Valid values are ARM64 or X86_64. Default value is X86_64.</summary>
@@ -366,6 +389,7 @@ public partial class V1beta1ApplicationSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecInitProviderAutoStartConfiguration
 {
     /// <summary>Enables the application to automatically start on job submission. Defaults to true.</summary>
@@ -375,6 +399,7 @@ public partial class V1beta1ApplicationSpecInitProviderAutoStartConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecInitProviderAutoStopConfiguration
 {
     /// <summary>Enables the application to automatically start on job submission. Defaults to true.</summary>
@@ -388,6 +413,7 @@ public partial class V1beta1ApplicationSpecInitProviderAutoStopConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecInitProviderImageConfiguration
 {
     /// <summary>The image URI.</summary>
@@ -397,6 +423,7 @@ public partial class V1beta1ApplicationSpecInitProviderImageConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecInitProviderInitialCapacityInitialCapacityConfigWorkerConfiguration
 {
     /// <summary>The maximum allowed CPU for an application.</summary>
@@ -414,6 +441,7 @@ public partial class V1beta1ApplicationSpecInitProviderInitialCapacityInitialCap
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecInitProviderInitialCapacityInitialCapacityConfig
 {
     /// <summary>The resource configuration of the initial capacity configuration.</summary>
@@ -427,6 +455,7 @@ public partial class V1beta1ApplicationSpecInitProviderInitialCapacityInitialCap
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecInitProviderInitialCapacity
 {
     /// <summary>The initial capacity configuration per worker.</summary>
@@ -440,6 +469,7 @@ public partial class V1beta1ApplicationSpecInitProviderInitialCapacity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecInitProviderInteractiveConfiguration
 {
     /// <summary>Enables an Apache Livy endpoint that you can connect to and run interactive jobs.</summary>
@@ -453,6 +483,7 @@ public partial class V1beta1ApplicationSpecInitProviderInteractiveConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecInitProviderMaximumCapacity
 {
     /// <summary>The maximum allowed CPU for an application.</summary>
@@ -470,6 +501,7 @@ public partial class V1beta1ApplicationSpecInitProviderMaximumCapacity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecInitProviderMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes
 {
     /// <summary>The name of the application.</summary>
@@ -483,6 +515,7 @@ public partial class V1beta1ApplicationSpecInitProviderMonitoringConfigurationCl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecInitProviderMonitoringConfigurationCloudwatchLoggingConfiguration
 {
     /// <summary>Enables the application to automatically start on job submission. Defaults to true.</summary>
@@ -508,6 +541,7 @@ public partial class V1beta1ApplicationSpecInitProviderMonitoringConfigurationCl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecInitProviderMonitoringConfigurationManagedPersistenceMonitoringConfiguration
 {
     /// <summary>Enables the application to automatically start on job submission. Defaults to true.</summary>
@@ -521,6 +555,7 @@ public partial class V1beta1ApplicationSpecInitProviderMonitoringConfigurationMa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecInitProviderMonitoringConfigurationPrometheusMonitoringConfiguration
 {
     /// <summary>The Prometheus remote write URL for sending metrics. Only supported in EMR 7.1.0 and later versions.</summary>
@@ -530,6 +565,7 @@ public partial class V1beta1ApplicationSpecInitProviderMonitoringConfigurationPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecInitProviderMonitoringConfigurationS3MonitoringConfiguration
 {
     /// <summary>The AWS Key Management Service (KMS) key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
@@ -543,6 +579,7 @@ public partial class V1beta1ApplicationSpecInitProviderMonitoringConfigurationS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecInitProviderMonitoringConfiguration
 {
     /// <summary>The Amazon CloudWatch configuration for monitoring logs.</summary>
@@ -564,6 +601,7 @@ public partial class V1beta1ApplicationSpecInitProviderMonitoringConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecInitProviderNetworkConfiguration
 {
     /// <summary>The array of security group Ids for customer VPC connectivity.</summary>
@@ -577,6 +615,7 @@ public partial class V1beta1ApplicationSpecInitProviderNetworkConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecInitProviderRuntimeConfiguration
 {
     /// <summary>The classification within a configuration.</summary>
@@ -590,6 +629,7 @@ public partial class V1beta1ApplicationSpecInitProviderRuntimeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecInitProviderSchedulerConfiguration
 {
     /// <summary>Maximum concurrent job runs on this application. Valid range is 1 to 1000. Defaults to 15.</summary>
@@ -615,6 +655,7 @@ public partial class V1beta1ApplicationSpecInitProviderSchedulerConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecInitProvider
 {
     /// <summary>The CPU architecture of an application. Valid values are ARM64 or X86_64. Default value is X86_64.</summary>
@@ -684,6 +725,7 @@ public partial class V1beta1ApplicationSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ApplicationSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -708,6 +750,7 @@ public enum V1beta1ApplicationSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ApplicationSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -724,6 +767,7 @@ public enum V1beta1ApplicationSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ApplicationSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -735,6 +779,7 @@ public enum V1beta1ApplicationSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -763,6 +808,7 @@ public partial class V1beta1ApplicationSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -782,6 +828,7 @@ public partial class V1beta1ApplicationSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -796,6 +843,7 @@ public partial class V1beta1ApplicationSpecWriteConnectionSecretToRef
 /// <summary>ApplicationSpec defines the desired state of Application</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationSpec
 {
     /// <summary>
@@ -863,6 +911,7 @@ public partial class V1beta1ApplicationSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationStatusAtProviderAutoStartConfiguration
 {
     /// <summary>Enables the application to automatically start on job submission. Defaults to true.</summary>
@@ -872,6 +921,7 @@ public partial class V1beta1ApplicationStatusAtProviderAutoStartConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationStatusAtProviderAutoStopConfiguration
 {
     /// <summary>Enables the application to automatically start on job submission. Defaults to true.</summary>
@@ -885,6 +935,7 @@ public partial class V1beta1ApplicationStatusAtProviderAutoStopConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationStatusAtProviderImageConfiguration
 {
     /// <summary>The image URI.</summary>
@@ -894,6 +945,7 @@ public partial class V1beta1ApplicationStatusAtProviderImageConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationStatusAtProviderInitialCapacityInitialCapacityConfigWorkerConfiguration
 {
     /// <summary>The maximum allowed CPU for an application.</summary>
@@ -911,6 +963,7 @@ public partial class V1beta1ApplicationStatusAtProviderInitialCapacityInitialCap
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationStatusAtProviderInitialCapacityInitialCapacityConfig
 {
     /// <summary>The resource configuration of the initial capacity configuration.</summary>
@@ -924,6 +977,7 @@ public partial class V1beta1ApplicationStatusAtProviderInitialCapacityInitialCap
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationStatusAtProviderInitialCapacity
 {
     /// <summary>The initial capacity configuration per worker.</summary>
@@ -937,6 +991,7 @@ public partial class V1beta1ApplicationStatusAtProviderInitialCapacity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationStatusAtProviderInteractiveConfiguration
 {
     /// <summary>Enables an Apache Livy endpoint that you can connect to and run interactive jobs.</summary>
@@ -950,6 +1005,7 @@ public partial class V1beta1ApplicationStatusAtProviderInteractiveConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationStatusAtProviderMaximumCapacity
 {
     /// <summary>The maximum allowed CPU for an application.</summary>
@@ -967,6 +1023,7 @@ public partial class V1beta1ApplicationStatusAtProviderMaximumCapacity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationStatusAtProviderMonitoringConfigurationCloudwatchLoggingConfigurationLogTypes
 {
     /// <summary>The name of the application.</summary>
@@ -980,6 +1037,7 @@ public partial class V1beta1ApplicationStatusAtProviderMonitoringConfigurationCl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationStatusAtProviderMonitoringConfigurationCloudwatchLoggingConfiguration
 {
     /// <summary>Enables the application to automatically start on job submission. Defaults to true.</summary>
@@ -1005,6 +1063,7 @@ public partial class V1beta1ApplicationStatusAtProviderMonitoringConfigurationCl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationStatusAtProviderMonitoringConfigurationManagedPersistenceMonitoringConfiguration
 {
     /// <summary>Enables the application to automatically start on job submission. Defaults to true.</summary>
@@ -1018,6 +1077,7 @@ public partial class V1beta1ApplicationStatusAtProviderMonitoringConfigurationMa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationStatusAtProviderMonitoringConfigurationPrometheusMonitoringConfiguration
 {
     /// <summary>The Prometheus remote write URL for sending metrics. Only supported in EMR 7.1.0 and later versions.</summary>
@@ -1027,6 +1087,7 @@ public partial class V1beta1ApplicationStatusAtProviderMonitoringConfigurationPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationStatusAtProviderMonitoringConfigurationS3MonitoringConfiguration
 {
     /// <summary>The AWS Key Management Service (KMS) key ARN to encrypt the logs that you store in CloudWatch Logs.</summary>
@@ -1040,6 +1101,7 @@ public partial class V1beta1ApplicationStatusAtProviderMonitoringConfigurationS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationStatusAtProviderMonitoringConfiguration
 {
     /// <summary>The Amazon CloudWatch configuration for monitoring logs.</summary>
@@ -1061,6 +1123,7 @@ public partial class V1beta1ApplicationStatusAtProviderMonitoringConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationStatusAtProviderNetworkConfiguration
 {
     /// <summary>The array of security group Ids for customer VPC connectivity.</summary>
@@ -1074,6 +1137,7 @@ public partial class V1beta1ApplicationStatusAtProviderNetworkConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationStatusAtProviderRuntimeConfiguration
 {
     /// <summary>The classification within a configuration.</summary>
@@ -1087,6 +1151,7 @@ public partial class V1beta1ApplicationStatusAtProviderRuntimeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationStatusAtProviderSchedulerConfiguration
 {
     /// <summary>Maximum concurrent job runs on this application. Valid range is 1 to 1000. Defaults to 15.</summary>
@@ -1100,6 +1165,7 @@ public partial class V1beta1ApplicationStatusAtProviderSchedulerConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationStatusAtProvider
 {
     /// <summary>The CPU architecture of an application. Valid values are ARM64 or X86_64. Default value is X86_64.</summary>
@@ -1185,6 +1251,7 @@ public partial class V1beta1ApplicationStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationStatusConditions
 {
     /// <summary>
@@ -1228,6 +1295,7 @@ public partial class V1beta1ApplicationStatusConditions
 /// <summary>ApplicationStatus defines the observed state of Application.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ApplicationStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1246,9 +1314,13 @@ public partial class V1beta1ApplicationStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Application is the Schema for the Applications API. Manages an EMR Serverless Application</summary>
+/// <summary>
+/// Application is the Schema for the Applications API. Manages an EMR Serverless Application
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Application : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ApplicationSpec>, IStatus<V1beta1ApplicationStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appsync.aws.upbound.io;
-/// <summary>GraphQLAPI is the Schema for the GraphQLAPIs API. Provides an AppSync GraphQL API.</summary>
+/// <summary>
+/// GraphQLAPI is the Schema for the GraphQLAPIs API. Provides an AppSync GraphQL API.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GraphQLAPIList : IKubernetesObject<V1ListMeta>, IItems<V1beta1GraphQLAPI>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1GraphQLAPIList : IKubernetesObject<V1ListMeta>, IIte
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1GraphQLAPISpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderAdditionalAuthenticationProviderLambdaAuthorizerConfig
 {
     /// <summary>Number of seconds a response should be cached for. The default is 5 minutes (300 seconds). The Lambda function can override this by returning a ttlOverride key in its response. A value of 0 disables caching of responses. Minimum value of 0. Maximum value of 3600.</summary>
@@ -74,6 +80,7 @@ public partial class V1beta1GraphQLAPISpecForProviderAdditionalAuthenticationPro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderAdditionalAuthenticationProviderOpenidConnectConfig
 {
     /// <summary>Number of milliseconds a token is valid after being authenticated.</summary>
@@ -95,6 +102,7 @@ public partial class V1beta1GraphQLAPISpecForProviderAdditionalAuthenticationPro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderAdditionalAuthenticationProviderUserPoolConfig
 {
     /// <summary>Regular expression for validating the incoming Amazon Cognito User Pool app client ID.</summary>
@@ -112,6 +120,7 @@ public partial class V1beta1GraphQLAPISpecForProviderAdditionalAuthenticationPro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderAdditionalAuthenticationProvider
 {
     /// <summary>Authentication type. Valid values: API_KEY, AWS_IAM, AMAZON_COGNITO_USER_POOLS, OPENID_CONNECT, AWS_LAMBDA</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1GraphQLAPISpecForProviderAdditionalAuthenticationPro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderEnhancedMetricsConfig
 {
     /// <summary>How data source metrics will be emitted to CloudWatch. Valid values: FULL_REQUEST_DATA_SOURCE_METRICS, PER_DATA_SOURCE_METRICS</summary>
@@ -150,6 +160,7 @@ public partial class V1beta1GraphQLAPISpecForProviderEnhancedMetricsConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderLambdaAuthorizerConfig
 {
     /// <summary>Number of seconds a response should be cached for. The default is 5 minutes (300 seconds). The Lambda function can override this by returning a ttlOverride key in its response. A value of 0 disables caching of responses. Minimum value of 0. Maximum value of 3600.</summary>
@@ -173,6 +184,7 @@ public partial class V1beta1GraphQLAPISpecForProviderLambdaAuthorizerConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -189,6 +201,7 @@ public enum V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -200,6 +213,7 @@ public enum V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnRefPolicy
 {
     /// <summary>
@@ -224,6 +238,7 @@ public partial class V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRole
 /// <summary>Reference to a Role in iam to populate cloudwatchLogsRoleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -243,6 +258,7 @@ public partial class V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRole
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -259,6 +275,7 @@ public enum V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -270,6 +287,7 @@ public enum V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnSelectorPolicy
 {
     /// <summary>
@@ -294,6 +312,7 @@ public partial class V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRole
 /// <summary>Selector for a Role in iam to populate cloudwatchLogsRoleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRoleArnSelector
 {
     /// <summary>
@@ -314,6 +333,7 @@ public partial class V1beta1GraphQLAPISpecForProviderLogConfigCloudwatchLogsRole
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderLogConfig
 {
     /// <summary>Amazon Resource Name of the service role that AWS AppSync will assume to publish to Amazon CloudWatch logs in your account.</summary>
@@ -345,6 +365,7 @@ public partial class V1beta1GraphQLAPISpecForProviderLogConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecForProviderMergedApiExecutionRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecForProviderMergedApiExecutionRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -361,6 +382,7 @@ public enum V1beta1GraphQLAPISpecForProviderMergedApiExecutionRoleArnRefPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecForProviderMergedApiExecutionRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecForProviderMergedApiExecutionRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -372,6 +394,7 @@ public enum V1beta1GraphQLAPISpecForProviderMergedApiExecutionRoleArnRefPolicyRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderMergedApiExecutionRoleArnRefPolicy
 {
     /// <summary>
@@ -396,6 +419,7 @@ public partial class V1beta1GraphQLAPISpecForProviderMergedApiExecutionRoleArnRe
 /// <summary>Reference to a Role in iam to populate mergedApiExecutionRoleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderMergedApiExecutionRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -415,6 +439,7 @@ public partial class V1beta1GraphQLAPISpecForProviderMergedApiExecutionRoleArnRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecForProviderMergedApiExecutionRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecForProviderMergedApiExecutionRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -431,6 +456,7 @@ public enum V1beta1GraphQLAPISpecForProviderMergedApiExecutionRoleArnSelectorPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecForProviderMergedApiExecutionRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecForProviderMergedApiExecutionRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -442,6 +468,7 @@ public enum V1beta1GraphQLAPISpecForProviderMergedApiExecutionRoleArnSelectorPol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderMergedApiExecutionRoleArnSelectorPolicy
 {
     /// <summary>
@@ -466,6 +493,7 @@ public partial class V1beta1GraphQLAPISpecForProviderMergedApiExecutionRoleArnSe
 /// <summary>Selector for a Role in iam to populate mergedApiExecutionRoleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderMergedApiExecutionRoleArnSelector
 {
     /// <summary>
@@ -486,6 +514,7 @@ public partial class V1beta1GraphQLAPISpecForProviderMergedApiExecutionRoleArnSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderOpenidConnectConfig
 {
     /// <summary>Number of milliseconds a token is valid after being authenticated.</summary>
@@ -513,6 +542,7 @@ public partial class V1beta1GraphQLAPISpecForProviderOpenidConnectConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecForProviderUserPoolConfigUserPoolIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecForProviderUserPoolConfigUserPoolIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -529,6 +559,7 @@ public enum V1beta1GraphQLAPISpecForProviderUserPoolConfigUserPoolIdRefPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecForProviderUserPoolConfigUserPoolIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecForProviderUserPoolConfigUserPoolIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -540,6 +571,7 @@ public enum V1beta1GraphQLAPISpecForProviderUserPoolConfigUserPoolIdRefPolicyRes
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderUserPoolConfigUserPoolIdRefPolicy
 {
     /// <summary>
@@ -564,6 +596,7 @@ public partial class V1beta1GraphQLAPISpecForProviderUserPoolConfigUserPoolIdRef
 /// <summary>Reference to a UserPool in cognitoidp to populate userPoolId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderUserPoolConfigUserPoolIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -583,6 +616,7 @@ public partial class V1beta1GraphQLAPISpecForProviderUserPoolConfigUserPoolIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -599,6 +633,7 @@ public enum V1beta1GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSelectorPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -610,6 +645,7 @@ public enum V1beta1GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSelectorPoli
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSelectorPolicy
 {
     /// <summary>
@@ -634,6 +670,7 @@ public partial class V1beta1GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSel
 /// <summary>Selector for a UserPool in cognitoidp to populate userPoolId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSelector
 {
     /// <summary>
@@ -654,6 +691,7 @@ public partial class V1beta1GraphQLAPISpecForProviderUserPoolConfigUserPoolIdSel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProviderUserPoolConfig
 {
     /// <summary>Regular expression for validating the incoming Amazon Cognito User Pool app client ID.</summary>
@@ -683,6 +721,7 @@ public partial class V1beta1GraphQLAPISpecForProviderUserPoolConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecForProvider
 {
     /// <summary>One or more additional authentication providers for the GraphQL API. See additional_authentication_provider Block for details.</summary>
@@ -771,6 +810,7 @@ public partial class V1beta1GraphQLAPISpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderAdditionalAuthenticationProviderLambdaAuthorizerConfig
 {
     /// <summary>Number of seconds a response should be cached for. The default is 5 minutes (300 seconds). The Lambda function can override this by returning a ttlOverride key in its response. A value of 0 disables caching of responses. Minimum value of 0. Maximum value of 3600.</summary>
@@ -788,6 +828,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderAdditionalAuthenticationPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderAdditionalAuthenticationProviderOpenidConnectConfig
 {
     /// <summary>Number of milliseconds a token is valid after being authenticated.</summary>
@@ -809,6 +850,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderAdditionalAuthenticationPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderAdditionalAuthenticationProviderUserPoolConfig
 {
     /// <summary>Regular expression for validating the incoming Amazon Cognito User Pool app client ID.</summary>
@@ -826,6 +868,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderAdditionalAuthenticationPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderAdditionalAuthenticationProvider
 {
     /// <summary>Authentication type. Valid values: API_KEY, AWS_IAM, AMAZON_COGNITO_USER_POOLS, OPENID_CONNECT, AWS_LAMBDA</summary>
@@ -847,6 +890,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderAdditionalAuthenticationPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderEnhancedMetricsConfig
 {
     /// <summary>How data source metrics will be emitted to CloudWatch. Valid values: FULL_REQUEST_DATA_SOURCE_METRICS, PER_DATA_SOURCE_METRICS</summary>
@@ -864,6 +908,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderEnhancedMetricsConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderLambdaAuthorizerConfig
 {
     /// <summary>Number of seconds a response should be cached for. The default is 5 minutes (300 seconds). The Lambda function can override this by returning a ttlOverride key in its response. A value of 0 disables caching of responses. Minimum value of 0. Maximum value of 3600.</summary>
@@ -887,6 +932,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderLambdaAuthorizerConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -903,6 +949,7 @@ public enum V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -914,6 +961,7 @@ public enum V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnRefPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnRefPolicy
 {
     /// <summary>
@@ -938,6 +986,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRol
 /// <summary>Reference to a Role in iam to populate cloudwatchLogsRoleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -957,6 +1006,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -973,6 +1023,7 @@ public enum V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -984,6 +1035,7 @@ public enum V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnSelec
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnSelectorPolicy
 {
     /// <summary>
@@ -1008,6 +1060,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRol
 /// <summary>Selector for a Role in iam to populate cloudwatchLogsRoleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRoleArnSelector
 {
     /// <summary>
@@ -1028,6 +1081,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderLogConfigCloudwatchLogsRol
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderLogConfig
 {
     /// <summary>Amazon Resource Name of the service role that AWS AppSync will assume to publish to Amazon CloudWatch logs in your account.</summary>
@@ -1059,6 +1113,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderLogConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecInitProviderMergedApiExecutionRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecInitProviderMergedApiExecutionRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1075,6 +1130,7 @@ public enum V1beta1GraphQLAPISpecInitProviderMergedApiExecutionRoleArnRefPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecInitProviderMergedApiExecutionRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecInitProviderMergedApiExecutionRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1086,6 +1142,7 @@ public enum V1beta1GraphQLAPISpecInitProviderMergedApiExecutionRoleArnRefPolicyR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderMergedApiExecutionRoleArnRefPolicy
 {
     /// <summary>
@@ -1110,6 +1167,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderMergedApiExecutionRoleArnR
 /// <summary>Reference to a Role in iam to populate mergedApiExecutionRoleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderMergedApiExecutionRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1129,6 +1187,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderMergedApiExecutionRoleArnR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecInitProviderMergedApiExecutionRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecInitProviderMergedApiExecutionRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1145,6 +1204,7 @@ public enum V1beta1GraphQLAPISpecInitProviderMergedApiExecutionRoleArnSelectorPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecInitProviderMergedApiExecutionRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecInitProviderMergedApiExecutionRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1156,6 +1216,7 @@ public enum V1beta1GraphQLAPISpecInitProviderMergedApiExecutionRoleArnSelectorPo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderMergedApiExecutionRoleArnSelectorPolicy
 {
     /// <summary>
@@ -1180,6 +1241,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderMergedApiExecutionRoleArnS
 /// <summary>Selector for a Role in iam to populate mergedApiExecutionRoleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderMergedApiExecutionRoleArnSelector
 {
     /// <summary>
@@ -1200,6 +1262,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderMergedApiExecutionRoleArnS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderOpenidConnectConfig
 {
     /// <summary>Number of milliseconds a token is valid after being authenticated.</summary>
@@ -1227,6 +1290,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderOpenidConnectConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1243,6 +1307,7 @@ public enum V1beta1GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdRefPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1254,6 +1319,7 @@ public enum V1beta1GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdRefPolicyRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdRefPolicy
 {
     /// <summary>
@@ -1278,6 +1344,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdRe
 /// <summary>Reference to a UserPool in cognitoidp to populate userPoolId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1297,6 +1364,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1313,6 +1381,7 @@ public enum V1beta1GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdSelectorPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1324,6 +1393,7 @@ public enum V1beta1GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdSelectorPol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdSelectorPolicy
 {
     /// <summary>
@@ -1348,6 +1418,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdSe
 /// <summary>Selector for a UserPool in cognitoidp to populate userPoolId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdSelector
 {
     /// <summary>
@@ -1368,6 +1439,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderUserPoolConfigUserPoolIdSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProviderUserPoolConfig
 {
     /// <summary>Regular expression for validating the incoming Amazon Cognito User Pool app client ID.</summary>
@@ -1409,6 +1481,7 @@ public partial class V1beta1GraphQLAPISpecInitProviderUserPoolConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecInitProvider
 {
     /// <summary>One or more additional authentication providers for the GraphQL API. See additional_authentication_provider Block for details.</summary>
@@ -1494,6 +1567,7 @@ public partial class V1beta1GraphQLAPISpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1518,6 +1592,7 @@ public enum V1beta1GraphQLAPISpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1534,6 +1609,7 @@ public enum V1beta1GraphQLAPISpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1GraphQLAPISpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1GraphQLAPISpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1545,6 +1621,7 @@ public enum V1beta1GraphQLAPISpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1573,6 +1650,7 @@ public partial class V1beta1GraphQLAPISpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1592,6 +1670,7 @@ public partial class V1beta1GraphQLAPISpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1606,6 +1685,7 @@ public partial class V1beta1GraphQLAPISpecWriteConnectionSecretToRef
 /// <summary>GraphQLAPISpec defines the desired state of GraphQLAPI</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPISpec
 {
     /// <summary>
@@ -1673,6 +1753,7 @@ public partial class V1beta1GraphQLAPISpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPIStatusAtProviderAdditionalAuthenticationProviderLambdaAuthorizerConfig
 {
     /// <summary>Number of seconds a response should be cached for. The default is 5 minutes (300 seconds). The Lambda function can override this by returning a ttlOverride key in its response. A value of 0 disables caching of responses. Minimum value of 0. Maximum value of 3600.</summary>
@@ -1690,6 +1771,7 @@ public partial class V1beta1GraphQLAPIStatusAtProviderAdditionalAuthenticationPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPIStatusAtProviderAdditionalAuthenticationProviderOpenidConnectConfig
 {
     /// <summary>Number of milliseconds a token is valid after being authenticated.</summary>
@@ -1711,6 +1793,7 @@ public partial class V1beta1GraphQLAPIStatusAtProviderAdditionalAuthenticationPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPIStatusAtProviderAdditionalAuthenticationProviderUserPoolConfig
 {
     /// <summary>Regular expression for validating the incoming Amazon Cognito User Pool app client ID.</summary>
@@ -1728,6 +1811,7 @@ public partial class V1beta1GraphQLAPIStatusAtProviderAdditionalAuthenticationPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPIStatusAtProviderAdditionalAuthenticationProvider
 {
     /// <summary>Authentication type. Valid values: API_KEY, AWS_IAM, AMAZON_COGNITO_USER_POOLS, OPENID_CONNECT, AWS_LAMBDA</summary>
@@ -1749,6 +1833,7 @@ public partial class V1beta1GraphQLAPIStatusAtProviderAdditionalAuthenticationPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPIStatusAtProviderEnhancedMetricsConfig
 {
     /// <summary>How data source metrics will be emitted to CloudWatch. Valid values: FULL_REQUEST_DATA_SOURCE_METRICS, PER_DATA_SOURCE_METRICS</summary>
@@ -1766,6 +1851,7 @@ public partial class V1beta1GraphQLAPIStatusAtProviderEnhancedMetricsConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPIStatusAtProviderLambdaAuthorizerConfig
 {
     /// <summary>Number of seconds a response should be cached for. The default is 5 minutes (300 seconds). The Lambda function can override this by returning a ttlOverride key in its response. A value of 0 disables caching of responses. Minimum value of 0. Maximum value of 3600.</summary>
@@ -1783,6 +1869,7 @@ public partial class V1beta1GraphQLAPIStatusAtProviderLambdaAuthorizerConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPIStatusAtProviderLogConfig
 {
     /// <summary>Amazon Resource Name of the service role that AWS AppSync will assume to publish to Amazon CloudWatch logs in your account.</summary>
@@ -1800,6 +1887,7 @@ public partial class V1beta1GraphQLAPIStatusAtProviderLogConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPIStatusAtProviderOpenidConnectConfig
 {
     /// <summary>Number of milliseconds a token is valid after being authenticated.</summary>
@@ -1821,6 +1909,7 @@ public partial class V1beta1GraphQLAPIStatusAtProviderOpenidConnectConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPIStatusAtProviderUserPoolConfig
 {
     /// <summary>Regular expression for validating the incoming Amazon Cognito User Pool app client ID.</summary>
@@ -1842,6 +1931,7 @@ public partial class V1beta1GraphQLAPIStatusAtProviderUserPoolConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPIStatusAtProvider
 {
     /// <summary>One or more additional authentication providers for the GraphQL API. See additional_authentication_provider Block for details.</summary>
@@ -1939,6 +2029,7 @@ public partial class V1beta1GraphQLAPIStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPIStatusConditions
 {
     /// <summary>
@@ -1982,6 +2073,7 @@ public partial class V1beta1GraphQLAPIStatusConditions
 /// <summary>GraphQLAPIStatus defines the observed state of GraphQLAPI.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1GraphQLAPIStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2000,9 +2092,13 @@ public partial class V1beta1GraphQLAPIStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>GraphQLAPI is the Schema for the GraphQLAPIs API. Provides an AppSync GraphQL API.</summary>
+/// <summary>
+/// GraphQLAPI is the Schema for the GraphQLAPIs API. Provides an AppSync GraphQL API.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1GraphQLAPI : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1GraphQLAPISpec>, IStatus<V1beta1GraphQLAPIStatus?>
 {

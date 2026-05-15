@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appmesh.aws.upbound.io;
-/// <summary>VirtualGateway is the Schema for the VirtualGateways API. Provides an AWS App Mesh virtual gateway resource.</summary>
+/// <summary>
+/// VirtualGateway is the Schema for the VirtualGateways API. Provides an AWS App Mesh virtual gateway resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualGatewayList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VirtualGateway>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1VirtualGatewayList : IKubernetesObject<V1ListMeta>, 
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualGatewaySpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualGatewaySpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1VirtualGatewaySpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsCertificateFile
 {
     /// <summary>Certificate chain for the certificate.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsCertificateSds
 {
     /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
@@ -79,6 +86,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsCertificate
 {
     /// <summary>Local file certificate.</summary>
@@ -92,6 +100,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch
 {
     /// <summary>Values sent must match the specified values exactly.</summary>
@@ -101,6 +110,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames
 {
     /// <summary>Criteria for determining a SAN&apos;s match.</summary>
@@ -110,6 +120,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrustAcm
 {
     /// <summary>One or more ACM ARNs.</summary>
@@ -119,6 +130,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrustFile
 {
     /// <summary>Certificate chain for the certificate.</summary>
@@ -128,6 +140,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrustSds
 {
     /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
@@ -137,6 +150,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsValidationTrust
 {
     /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
@@ -154,6 +168,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTlsValidation
 {
     /// <summary>SANs for a virtual gateway&apos;s listener&apos;s Transport Layer Security (TLS) validation context.</summary>
@@ -167,6 +182,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicyTls
 {
     /// <summary>Virtual gateway&apos;s client&apos;s Transport Layer Security (TLS) certificate.</summary>
@@ -188,6 +204,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClientPolicy
 {
     /// <summary>Transport Layer Security (TLS) client policy.</summary>
@@ -197,6 +214,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaultsClie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaults
 {
     /// <summary>Default client policy for virtual gateway backends.</summary>
@@ -206,6 +224,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecBackendDefaults
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerConnectionPoolGrpc
 {
     /// <summary>Maximum number of inflight requests Envoy can concurrently support across hosts in upstream cluster. Minimum value of 1.</summary>
@@ -215,6 +234,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerConnectionP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerConnectionPoolHttp
 {
     /// <summary>Maximum number of outbound TCP connections Envoy can establish concurrently with all hosts in upstream cluster. Minimum value of 1.</summary>
@@ -228,6 +248,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerConnectionP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerConnectionPoolHttp2
 {
     /// <summary>Maximum number of inflight requests Envoy can concurrently support across hosts in upstream cluster. Minimum value of 1.</summary>
@@ -237,6 +258,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerConnectionP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerConnectionPool
 {
     /// <summary>Connection pool information for gRPC listeners.</summary>
@@ -254,6 +276,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerConnectionP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerHealthCheck
 {
     /// <summary>Number of consecutive successful health checks that must occur before declaring listener healthy.</summary>
@@ -287,6 +310,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerHealthCheck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerPortMapping
 {
     /// <summary>Port used for the port mapping.</summary>
@@ -306,6 +330,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerPortMapping
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcmCertificateArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcmCertificateArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -322,6 +347,7 @@ public enum V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcmCer
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcmCertificateArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcmCertificateArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -333,6 +359,7 @@ public enum V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcmCer
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcmCertificateArnRefPolicy
 {
     /// <summary>
@@ -357,6 +384,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertific
 /// <summary>Reference to a Certificate in acm to populate certificateArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcmCertificateArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -376,6 +404,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertific
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcmCertificateArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcmCertificateArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -392,6 +421,7 @@ public enum V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcmCer
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcmCertificateArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcmCertificateArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -403,6 +433,7 @@ public enum V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcmCer
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcmCertificateArnSelectorPolicy
 {
     /// <summary>
@@ -427,6 +458,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertific
 /// <summary>Selector for a Certificate in acm to populate certificateArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcmCertificateArnSelector
 {
     /// <summary>
@@ -447,6 +479,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertific
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertificateAcm
 {
     /// <summary>ARN for the certificate.</summary>
@@ -464,6 +497,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertific
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertificateFile
 {
     /// <summary>Certificate chain for the certificate.</summary>
@@ -477,6 +511,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertific
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertificateSds
 {
     /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
@@ -486,6 +521,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertific
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertificate
 {
     /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
@@ -503,6 +539,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsCertific
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsValidationSubjectAlternativeNamesMatch
 {
     /// <summary>Values sent must match the specified values exactly.</summary>
@@ -512,6 +549,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsValidati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsValidationSubjectAlternativeNames
 {
     /// <summary>Criteria for determining a SAN&apos;s match.</summary>
@@ -521,6 +559,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsValidati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsValidationTrustFile
 {
     /// <summary>Certificate chain for the certificate.</summary>
@@ -530,6 +569,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsValidati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsValidationTrustSds
 {
     /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
@@ -539,6 +579,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsValidati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsValidationTrust
 {
     /// <summary>Local file certificate.</summary>
@@ -552,6 +593,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsValidati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsValidation
 {
     /// <summary>SANs for a virtual gateway&apos;s listener&apos;s Transport Layer Security (TLS) validation context.</summary>
@@ -565,6 +607,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTlsValidati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTls
 {
     /// <summary>Virtual gateway&apos;s client&apos;s Transport Layer Security (TLS) certificate.</summary>
@@ -582,6 +625,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListenerTls
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecListener
 {
     /// <summary>Connection pool information for the listener.</summary>
@@ -603,6 +647,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecListener
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecLoggingAccessLogFileFormatJson
 {
     /// <summary>The specified key for the JSON. Must be between 1 and 100 characters in length.</summary>
@@ -616,6 +661,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecLoggingAccessLogFil
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecLoggingAccessLogFileFormat
 {
     /// <summary>The logging format for JSON.</summary>
@@ -629,6 +675,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecLoggingAccessLogFil
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecLoggingAccessLogFile
 {
     /// <summary>The specified format for the logs.</summary>
@@ -642,6 +689,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecLoggingAccessLogFil
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecLoggingAccessLog
 {
     /// <summary>Local file certificate.</summary>
@@ -651,6 +699,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecLoggingAccessLog
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpecLogging
 {
     /// <summary>Access log configuration for a virtual gateway.</summary>
@@ -660,6 +709,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpecLogging
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProviderSpec
 {
     /// <summary>Defaults for backends.</summary>
@@ -677,6 +727,7 @@ public partial class V1beta1VirtualGatewaySpecForProviderSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecForProvider
 {
     /// <summary>Name of the service mesh in which to create the virtual gateway. Must be between 1 and 255 characters in length.</summary>
@@ -709,6 +760,7 @@ public partial class V1beta1VirtualGatewaySpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsCertificateFile
 {
     /// <summary>Certificate chain for the certificate.</summary>
@@ -722,6 +774,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsCertificateSds
 {
     /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
@@ -731,6 +784,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsCertificate
 {
     /// <summary>Local file certificate.</summary>
@@ -744,6 +798,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch
 {
     /// <summary>Values sent must match the specified values exactly.</summary>
@@ -753,6 +808,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames
 {
     /// <summary>Criteria for determining a SAN&apos;s match.</summary>
@@ -762,6 +818,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrustAcm
 {
     /// <summary>One or more ACM ARNs.</summary>
@@ -771,6 +828,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrustFile
 {
     /// <summary>Certificate chain for the certificate.</summary>
@@ -780,6 +838,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrustSds
 {
     /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
@@ -789,6 +848,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsValidationTrust
 {
     /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
@@ -806,6 +866,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTlsValidation
 {
     /// <summary>SANs for a virtual gateway&apos;s listener&apos;s Transport Layer Security (TLS) validation context.</summary>
@@ -819,6 +880,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicyTls
 {
     /// <summary>Virtual gateway&apos;s client&apos;s Transport Layer Security (TLS) certificate.</summary>
@@ -840,6 +902,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsClientPolicy
 {
     /// <summary>Transport Layer Security (TLS) client policy.</summary>
@@ -849,6 +912,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaults
 {
     /// <summary>Default client policy for virtual gateway backends.</summary>
@@ -858,6 +922,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecBackendDefaults
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerConnectionPoolGrpc
 {
     /// <summary>Maximum number of inflight requests Envoy can concurrently support across hosts in upstream cluster. Minimum value of 1.</summary>
@@ -867,6 +932,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerConnection
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerConnectionPoolHttp
 {
     /// <summary>Maximum number of outbound TCP connections Envoy can establish concurrently with all hosts in upstream cluster. Minimum value of 1.</summary>
@@ -880,6 +946,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerConnection
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerConnectionPoolHttp2
 {
     /// <summary>Maximum number of inflight requests Envoy can concurrently support across hosts in upstream cluster. Minimum value of 1.</summary>
@@ -889,6 +956,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerConnection
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerConnectionPool
 {
     /// <summary>Connection pool information for gRPC listeners.</summary>
@@ -906,6 +974,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerConnection
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerHealthCheck
 {
     /// <summary>Number of consecutive successful health checks that must occur before declaring listener healthy.</summary>
@@ -939,6 +1008,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerHealthChec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerPortMapping
 {
     /// <summary>Port used for the port mapping.</summary>
@@ -958,6 +1028,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerPortMappin
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcmCertificateArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcmCertificateArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -974,6 +1045,7 @@ public enum V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcmCe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcmCertificateArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcmCertificateArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -985,6 +1057,7 @@ public enum V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcmCe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcmCertificateArnRefPolicy
 {
     /// <summary>
@@ -1009,6 +1082,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertifi
 /// <summary>Reference to a Certificate in acm to populate certificateArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcmCertificateArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1028,6 +1102,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertifi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcmCertificateArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcmCertificateArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1044,6 +1119,7 @@ public enum V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcmCe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcmCertificateArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcmCertificateArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1055,6 +1131,7 @@ public enum V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcmCe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcmCertificateArnSelectorPolicy
 {
     /// <summary>
@@ -1079,6 +1156,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertifi
 /// <summary>Selector for a Certificate in acm to populate certificateArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcmCertificateArnSelector
 {
     /// <summary>
@@ -1099,6 +1177,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertifi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertificateAcm
 {
     /// <summary>ARN for the certificate.</summary>
@@ -1116,6 +1195,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertifi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertificateFile
 {
     /// <summary>Certificate chain for the certificate.</summary>
@@ -1129,6 +1209,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertifi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertificateSds
 {
     /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
@@ -1138,6 +1219,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertifi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertificate
 {
     /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
@@ -1155,6 +1237,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsCertifi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsValidationSubjectAlternativeNamesMatch
 {
     /// <summary>Values sent must match the specified values exactly.</summary>
@@ -1164,6 +1247,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsValidat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsValidationSubjectAlternativeNames
 {
     /// <summary>Criteria for determining a SAN&apos;s match.</summary>
@@ -1173,6 +1257,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsValidat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsValidationTrustFile
 {
     /// <summary>Certificate chain for the certificate.</summary>
@@ -1182,6 +1267,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsValidat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsValidationTrustSds
 {
     /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
@@ -1191,6 +1277,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsValidat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsValidationTrust
 {
     /// <summary>Local file certificate.</summary>
@@ -1204,6 +1291,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsValidat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsValidation
 {
     /// <summary>SANs for a virtual gateway&apos;s listener&apos;s Transport Layer Security (TLS) validation context.</summary>
@@ -1217,6 +1305,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTlsValidat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTls
 {
     /// <summary>Virtual gateway&apos;s client&apos;s Transport Layer Security (TLS) certificate.</summary>
@@ -1234,6 +1323,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListenerTls
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecListener
 {
     /// <summary>Connection pool information for the listener.</summary>
@@ -1255,6 +1345,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecListener
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecLoggingAccessLogFileFormatJson
 {
     /// <summary>The specified key for the JSON. Must be between 1 and 100 characters in length.</summary>
@@ -1268,6 +1359,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecLoggingAccessLogFi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecLoggingAccessLogFileFormat
 {
     /// <summary>The logging format for JSON.</summary>
@@ -1281,6 +1373,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecLoggingAccessLogFi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecLoggingAccessLogFile
 {
     /// <summary>The specified format for the logs.</summary>
@@ -1294,6 +1387,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecLoggingAccessLogFi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecLoggingAccessLog
 {
     /// <summary>Local file certificate.</summary>
@@ -1303,6 +1397,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecLoggingAccessLog
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpecLogging
 {
     /// <summary>Access log configuration for a virtual gateway.</summary>
@@ -1312,6 +1407,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpecLogging
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProviderSpec
 {
     /// <summary>Defaults for backends.</summary>
@@ -1341,6 +1437,7 @@ public partial class V1beta1VirtualGatewaySpecInitProviderSpec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecInitProvider
 {
     /// <summary>Name of the service mesh in which to create the virtual gateway. Must be between 1 and 255 characters in length.</summary>
@@ -1370,6 +1467,7 @@ public partial class V1beta1VirtualGatewaySpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualGatewaySpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualGatewaySpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1394,6 +1492,7 @@ public enum V1beta1VirtualGatewaySpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualGatewaySpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualGatewaySpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1410,6 +1509,7 @@ public enum V1beta1VirtualGatewaySpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualGatewaySpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VirtualGatewaySpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1421,6 +1521,7 @@ public enum V1beta1VirtualGatewaySpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1449,6 +1550,7 @@ public partial class V1beta1VirtualGatewaySpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1468,6 +1570,7 @@ public partial class V1beta1VirtualGatewaySpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1482,6 +1585,7 @@ public partial class V1beta1VirtualGatewaySpecWriteConnectionSecretToRef
 /// <summary>VirtualGatewaySpec defines the desired state of VirtualGateway</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewaySpec
 {
     /// <summary>
@@ -1549,6 +1653,7 @@ public partial class V1beta1VirtualGatewaySpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsCertificateFile
 {
     /// <summary>Certificate chain for the certificate.</summary>
@@ -1562,6 +1667,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsCertificateSds
 {
     /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
@@ -1571,6 +1677,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsCertificate
 {
     /// <summary>Local file certificate.</summary>
@@ -1584,6 +1691,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch
 {
     /// <summary>Values sent must match the specified values exactly.</summary>
@@ -1593,6 +1701,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames
 {
     /// <summary>Criteria for determining a SAN&apos;s match.</summary>
@@ -1602,6 +1711,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrustAcm
 {
     /// <summary>One or more ACM ARNs.</summary>
@@ -1611,6 +1721,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrustFile
 {
     /// <summary>Certificate chain for the certificate.</summary>
@@ -1620,6 +1731,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrustSds
 {
     /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
@@ -1629,6 +1741,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidationTrust
 {
     /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
@@ -1646,6 +1759,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTlsValidation
 {
     /// <summary>SANs for a virtual gateway&apos;s listener&apos;s Transport Layer Security (TLS) validation context.</summary>
@@ -1659,6 +1773,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicyTls
 {
     /// <summary>Virtual gateway&apos;s client&apos;s Transport Layer Security (TLS) certificate.</summary>
@@ -1680,6 +1795,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsClientPolicy
 {
     /// <summary>Transport Layer Security (TLS) client policy.</summary>
@@ -1689,6 +1805,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaultsCli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaults
 {
     /// <summary>Default client policy for virtual gateway backends.</summary>
@@ -1698,6 +1815,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecBackendDefaults
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerConnectionPoolGrpc
 {
     /// <summary>Maximum number of inflight requests Envoy can concurrently support across hosts in upstream cluster. Minimum value of 1.</summary>
@@ -1707,6 +1825,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerConnection
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerConnectionPoolHttp
 {
     /// <summary>Maximum number of outbound TCP connections Envoy can establish concurrently with all hosts in upstream cluster. Minimum value of 1.</summary>
@@ -1720,6 +1839,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerConnection
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerConnectionPoolHttp2
 {
     /// <summary>Maximum number of inflight requests Envoy can concurrently support across hosts in upstream cluster. Minimum value of 1.</summary>
@@ -1729,6 +1849,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerConnection
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerConnectionPool
 {
     /// <summary>Connection pool information for gRPC listeners.</summary>
@@ -1746,6 +1867,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerConnection
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerHealthCheck
 {
     /// <summary>Number of consecutive successful health checks that must occur before declaring listener healthy.</summary>
@@ -1779,6 +1901,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerHealthChec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerPortMapping
 {
     /// <summary>Port used for the port mapping.</summary>
@@ -1792,6 +1915,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerPortMappin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTlsCertificateAcm
 {
     /// <summary>ARN for the certificate.</summary>
@@ -1801,6 +1925,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTlsCertifi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTlsCertificateFile
 {
     /// <summary>Certificate chain for the certificate.</summary>
@@ -1814,6 +1939,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTlsCertifi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTlsCertificateSds
 {
     /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
@@ -1823,6 +1949,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTlsCertifi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTlsCertificate
 {
     /// <summary>TLS validation context trust for an AWS Certificate Manager (ACM) certificate.</summary>
@@ -1840,6 +1967,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTlsCertifi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTlsValidationSubjectAlternativeNamesMatch
 {
     /// <summary>Values sent must match the specified values exactly.</summary>
@@ -1849,6 +1977,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTlsValidat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTlsValidationSubjectAlternativeNames
 {
     /// <summary>Criteria for determining a SAN&apos;s match.</summary>
@@ -1858,6 +1987,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTlsValidat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTlsValidationTrustFile
 {
     /// <summary>Certificate chain for the certificate.</summary>
@@ -1867,6 +1997,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTlsValidat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTlsValidationTrustSds
 {
     /// <summary>Name of the secret secret requested from the Secret Discovery Service provider representing Transport Layer Security (TLS) materials like a certificate or certificate chain.</summary>
@@ -1876,6 +2007,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTlsValidat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTlsValidationTrust
 {
     /// <summary>Local file certificate.</summary>
@@ -1889,6 +2021,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTlsValidat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTlsValidation
 {
     /// <summary>SANs for a virtual gateway&apos;s listener&apos;s Transport Layer Security (TLS) validation context.</summary>
@@ -1902,6 +2035,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTlsValidat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTls
 {
     /// <summary>Virtual gateway&apos;s client&apos;s Transport Layer Security (TLS) certificate.</summary>
@@ -1919,6 +2053,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecListenerTls
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecListener
 {
     /// <summary>Connection pool information for the listener.</summary>
@@ -1940,6 +2075,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecListener
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecLoggingAccessLogFileFormatJson
 {
     /// <summary>The specified key for the JSON. Must be between 1 and 100 characters in length.</summary>
@@ -1953,6 +2089,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecLoggingAccessLogFi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecLoggingAccessLogFileFormat
 {
     /// <summary>The logging format for JSON.</summary>
@@ -1966,6 +2103,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecLoggingAccessLogFi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecLoggingAccessLogFile
 {
     /// <summary>The specified format for the logs.</summary>
@@ -1979,6 +2117,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecLoggingAccessLogFi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecLoggingAccessLog
 {
     /// <summary>Local file certificate.</summary>
@@ -1988,6 +2127,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecLoggingAccessLog
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpecLogging
 {
     /// <summary>Access log configuration for a virtual gateway.</summary>
@@ -1997,6 +2137,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpecLogging
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProviderSpec
 {
     /// <summary>Defaults for backends.</summary>
@@ -2014,6 +2155,7 @@ public partial class V1beta1VirtualGatewayStatusAtProviderSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusAtProvider
 {
     /// <summary>ARN of the virtual gateway.</summary>
@@ -2071,6 +2213,7 @@ public partial class V1beta1VirtualGatewayStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatusConditions
 {
     /// <summary>
@@ -2114,6 +2257,7 @@ public partial class V1beta1VirtualGatewayStatusConditions
 /// <summary>VirtualGatewayStatus defines the observed state of VirtualGateway.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VirtualGatewayStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2132,9 +2276,13 @@ public partial class V1beta1VirtualGatewayStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>VirtualGateway is the Schema for the VirtualGateways API. Provides an AWS App Mesh virtual gateway resource.</summary>
+/// <summary>
+/// VirtualGateway is the Schema for the VirtualGateways API. Provides an AWS App Mesh virtual gateway resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualGateway : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VirtualGatewaySpec>, IStatus<V1beta1VirtualGatewayStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.aws.upbound.io;
-/// <summary>AppImageConfig is the Schema for the AppImageConfigs API. Provides a SageMaker AI App Image Config resource.</summary>
+/// <summary>
+/// AppImageConfig is the Schema for the AppImageConfigs API. Provides a SageMaker AI App Image Config resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AppImageConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AppImageConfig>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1AppImageConfigList : IKubernetesObject<V1ListMeta>, 
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppImageConfigSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AppImageConfigSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1AppImageConfigSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecForProviderCodeEditorAppImageConfigContainerConfig
 {
     /// <summary>The arguments for the container when you&apos;re running the application.</summary>
@@ -74,6 +80,7 @@ public partial class V1beta1AppImageConfigSpecForProviderCodeEditorAppImageConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecForProviderCodeEditorAppImageConfigFileSystemConfig
 {
     /// <summary>The default POSIX group ID (GID). If not specified, defaults to 100. Valid values are 0 and 100.</summary>
@@ -91,6 +98,7 @@ public partial class V1beta1AppImageConfigSpecForProviderCodeEditorAppImageConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecForProviderCodeEditorAppImageConfig
 {
     /// <summary>The configuration used to run the application image container. See Container Config details below.</summary>
@@ -104,6 +112,7 @@ public partial class V1beta1AppImageConfigSpecForProviderCodeEditorAppImageConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecForProviderJupyterLabImageConfigContainerConfig
 {
     /// <summary>The arguments for the container when you&apos;re running the application.</summary>
@@ -121,6 +130,7 @@ public partial class V1beta1AppImageConfigSpecForProviderJupyterLabImageConfigCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecForProviderJupyterLabImageConfigFileSystemConfig
 {
     /// <summary>The default POSIX group ID (GID). If not specified, defaults to 100. Valid values are 0 and 100.</summary>
@@ -138,6 +148,7 @@ public partial class V1beta1AppImageConfigSpecForProviderJupyterLabImageConfigFi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecForProviderJupyterLabImageConfig
 {
     /// <summary>The configuration used to run the application image container. See Container Config details below.</summary>
@@ -151,6 +162,7 @@ public partial class V1beta1AppImageConfigSpecForProviderJupyterLabImageConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecForProviderKernelGatewayImageConfigFileSystemConfig
 {
     /// <summary>The default POSIX group ID (GID). If not specified, defaults to 100. Valid values are 0 and 100.</summary>
@@ -168,6 +180,7 @@ public partial class V1beta1AppImageConfigSpecForProviderKernelGatewayImageConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecForProviderKernelGatewayImageConfigKernelSpec
 {
     /// <summary>The display name of the kernel.</summary>
@@ -181,6 +194,7 @@ public partial class V1beta1AppImageConfigSpecForProviderKernelGatewayImageConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecForProviderKernelGatewayImageConfig
 {
     /// <summary>The URL where the Git repository is located. See File System Config details below.</summary>
@@ -194,6 +208,7 @@ public partial class V1beta1AppImageConfigSpecForProviderKernelGatewayImageConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecForProvider
 {
     /// <summary>The CodeEditorAppImageConfig. See Code Editor App Image Config details below.</summary>
@@ -222,6 +237,7 @@ public partial class V1beta1AppImageConfigSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecInitProviderCodeEditorAppImageConfigContainerConfig
 {
     /// <summary>The arguments for the container when you&apos;re running the application.</summary>
@@ -239,6 +255,7 @@ public partial class V1beta1AppImageConfigSpecInitProviderCodeEditorAppImageConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecInitProviderCodeEditorAppImageConfigFileSystemConfig
 {
     /// <summary>The default POSIX group ID (GID). If not specified, defaults to 100. Valid values are 0 and 100.</summary>
@@ -256,6 +273,7 @@ public partial class V1beta1AppImageConfigSpecInitProviderCodeEditorAppImageConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecInitProviderCodeEditorAppImageConfig
 {
     /// <summary>The configuration used to run the application image container. See Container Config details below.</summary>
@@ -269,6 +287,7 @@ public partial class V1beta1AppImageConfigSpecInitProviderCodeEditorAppImageConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecInitProviderJupyterLabImageConfigContainerConfig
 {
     /// <summary>The arguments for the container when you&apos;re running the application.</summary>
@@ -286,6 +305,7 @@ public partial class V1beta1AppImageConfigSpecInitProviderJupyterLabImageConfigC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecInitProviderJupyterLabImageConfigFileSystemConfig
 {
     /// <summary>The default POSIX group ID (GID). If not specified, defaults to 100. Valid values are 0 and 100.</summary>
@@ -303,6 +323,7 @@ public partial class V1beta1AppImageConfigSpecInitProviderJupyterLabImageConfigF
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecInitProviderJupyterLabImageConfig
 {
     /// <summary>The configuration used to run the application image container. See Container Config details below.</summary>
@@ -316,6 +337,7 @@ public partial class V1beta1AppImageConfigSpecInitProviderJupyterLabImageConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecInitProviderKernelGatewayImageConfigFileSystemConfig
 {
     /// <summary>The default POSIX group ID (GID). If not specified, defaults to 100. Valid values are 0 and 100.</summary>
@@ -333,6 +355,7 @@ public partial class V1beta1AppImageConfigSpecInitProviderKernelGatewayImageConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecInitProviderKernelGatewayImageConfigKernelSpec
 {
     /// <summary>The display name of the kernel.</summary>
@@ -346,6 +369,7 @@ public partial class V1beta1AppImageConfigSpecInitProviderKernelGatewayImageConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecInitProviderKernelGatewayImageConfig
 {
     /// <summary>The URL where the Git repository is located. See File System Config details below.</summary>
@@ -371,6 +395,7 @@ public partial class V1beta1AppImageConfigSpecInitProviderKernelGatewayImageConf
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecInitProvider
 {
     /// <summary>The CodeEditorAppImageConfig. See Code Editor App Image Config details below.</summary>
@@ -396,6 +421,7 @@ public partial class V1beta1AppImageConfigSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppImageConfigSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AppImageConfigSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -420,6 +446,7 @@ public enum V1beta1AppImageConfigSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppImageConfigSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AppImageConfigSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -436,6 +463,7 @@ public enum V1beta1AppImageConfigSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppImageConfigSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AppImageConfigSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -447,6 +475,7 @@ public enum V1beta1AppImageConfigSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -475,6 +504,7 @@ public partial class V1beta1AppImageConfigSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -494,6 +524,7 @@ public partial class V1beta1AppImageConfigSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -508,6 +539,7 @@ public partial class V1beta1AppImageConfigSpecWriteConnectionSecretToRef
 /// <summary>AppImageConfigSpec defines the desired state of AppImageConfig</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigSpec
 {
     /// <summary>
@@ -575,6 +607,7 @@ public partial class V1beta1AppImageConfigSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigStatusAtProviderCodeEditorAppImageConfigContainerConfig
 {
     /// <summary>The arguments for the container when you&apos;re running the application.</summary>
@@ -592,6 +625,7 @@ public partial class V1beta1AppImageConfigStatusAtProviderCodeEditorAppImageConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigStatusAtProviderCodeEditorAppImageConfigFileSystemConfig
 {
     /// <summary>The default POSIX group ID (GID). If not specified, defaults to 100. Valid values are 0 and 100.</summary>
@@ -609,6 +643,7 @@ public partial class V1beta1AppImageConfigStatusAtProviderCodeEditorAppImageConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigStatusAtProviderCodeEditorAppImageConfig
 {
     /// <summary>The configuration used to run the application image container. See Container Config details below.</summary>
@@ -622,6 +657,7 @@ public partial class V1beta1AppImageConfigStatusAtProviderCodeEditorAppImageConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigStatusAtProviderJupyterLabImageConfigContainerConfig
 {
     /// <summary>The arguments for the container when you&apos;re running the application.</summary>
@@ -639,6 +675,7 @@ public partial class V1beta1AppImageConfigStatusAtProviderJupyterLabImageConfigC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigStatusAtProviderJupyterLabImageConfigFileSystemConfig
 {
     /// <summary>The default POSIX group ID (GID). If not specified, defaults to 100. Valid values are 0 and 100.</summary>
@@ -656,6 +693,7 @@ public partial class V1beta1AppImageConfigStatusAtProviderJupyterLabImageConfigF
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigStatusAtProviderJupyterLabImageConfig
 {
     /// <summary>The configuration used to run the application image container. See Container Config details below.</summary>
@@ -669,6 +707,7 @@ public partial class V1beta1AppImageConfigStatusAtProviderJupyterLabImageConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigStatusAtProviderKernelGatewayImageConfigFileSystemConfig
 {
     /// <summary>The default POSIX group ID (GID). If not specified, defaults to 100. Valid values are 0 and 100.</summary>
@@ -686,6 +725,7 @@ public partial class V1beta1AppImageConfigStatusAtProviderKernelGatewayImageConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigStatusAtProviderKernelGatewayImageConfigKernelSpec
 {
     /// <summary>The display name of the kernel.</summary>
@@ -699,6 +739,7 @@ public partial class V1beta1AppImageConfigStatusAtProviderKernelGatewayImageConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigStatusAtProviderKernelGatewayImageConfig
 {
     /// <summary>The URL where the Git repository is located. See File System Config details below.</summary>
@@ -712,6 +753,7 @@ public partial class V1beta1AppImageConfigStatusAtProviderKernelGatewayImageConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigStatusAtProvider
 {
     /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this App Image Config.</summary>
@@ -753,6 +795,7 @@ public partial class V1beta1AppImageConfigStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigStatusConditions
 {
     /// <summary>
@@ -796,6 +839,7 @@ public partial class V1beta1AppImageConfigStatusConditions
 /// <summary>AppImageConfigStatus defines the observed state of AppImageConfig.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AppImageConfigStatus
 {
     [JsonPropertyName("atProvider")]
@@ -814,9 +858,13 @@ public partial class V1beta1AppImageConfigStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>AppImageConfig is the Schema for the AppImageConfigs API. Provides a SageMaker AI App Image Config resource.</summary>
+/// <summary>
+/// AppImageConfig is the Schema for the AppImageConfigs API. Provides a SageMaker AI App Image Config resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AppImageConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AppImageConfigSpec>, IStatus<V1beta1AppImageConfigStatus?>
 {

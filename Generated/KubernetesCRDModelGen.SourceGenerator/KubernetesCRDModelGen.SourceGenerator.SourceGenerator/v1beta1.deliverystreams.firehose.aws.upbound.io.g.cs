@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.firehose.aws.upbound.io;
-/// <summary>DeliveryStream is the Schema for the DeliveryStreams API. Provides a AWS Kinesis Firehose Delivery Stream</summary>
+/// <summary>
+/// DeliveryStream is the Schema for the DeliveryStreams API. Provides a AWS Kinesis Firehose Delivery Stream
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DeliveryStreamList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DeliveryStream>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1DeliveryStreamList : IKubernetesObject<V1ListMeta>, 
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1DeliveryStreamSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -80,6 +86,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationDomainArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationDomainArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -96,6 +103,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationDomain
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationDomainArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationDomainArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -107,6 +115,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationDomain
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationDomainArnRefPolicy
 {
     /// <summary>
@@ -131,6 +140,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// <summary>Reference to a Domain in elasticsearch to populate domainArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationDomainArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -150,6 +160,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationDomainArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationDomainArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -166,6 +177,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationDomain
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationDomainArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationDomainArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -177,6 +189,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationDomain
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationDomainArnSelectorPolicy
 {
     /// <summary>
@@ -201,6 +214,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// <summary>Selector for a Domain in elasticsearch to populate domainArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationDomainArnSelector
 {
     /// <summary>
@@ -221,6 +235,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -234,6 +249,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -247,6 +263,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -266,6 +283,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -282,6 +300,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationRoleAr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -293,6 +312,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationRoleAr
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -317,6 +337,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -336,6 +357,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -352,6 +374,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationRoleAr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -363,6 +386,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationRoleAr
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -387,6 +411,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationRoleArnSelector
 {
     /// <summary>
@@ -413,6 +438,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -429,6 +455,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3Conf
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -440,6 +467,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3Conf
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationBucketArnRefPolicy
 {
     /// <summary>
@@ -464,6 +492,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationBucketArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -483,6 +512,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -499,6 +529,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3Conf
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -510,6 +541,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3Conf
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationBucketArnSelectorPolicy
 {
     /// <summary>
@@ -534,6 +566,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationBucketArnSelector
 {
     /// <summary>
@@ -554,6 +587,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -577,6 +611,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -593,6 +628,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3Conf
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -604,6 +640,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3Conf
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -628,6 +665,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -647,6 +685,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -663,6 +702,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3Conf
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -674,6 +714,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3Conf
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -698,6 +739,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3ConfigurationRoleArnSelector
 {
     /// <summary>
@@ -718,6 +760,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -784,6 +827,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -800,6 +844,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -811,6 +856,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcCon
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigRoleArnRefPolicy
 {
     /// <summary>
@@ -835,6 +881,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -854,6 +901,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -870,6 +918,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -881,6 +930,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcCon
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigRoleArnSelectorPolicy
 {
     /// <summary>
@@ -905,6 +955,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigRoleArnSelector
 {
     /// <summary>
@@ -931,6 +982,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -947,6 +999,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -958,6 +1011,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcCon
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsRefsPolicy
 {
     /// <summary>
@@ -982,6 +1036,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1001,6 +1056,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1017,6 +1073,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1028,6 +1085,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcCon
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsSelectorPolicy
 {
     /// <summary>
@@ -1052,6 +1110,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// <summary>Selector for a list of SecurityGroup in ec2 to populate securityGroupIds.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsSelector
 {
     /// <summary>
@@ -1078,6 +1137,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSubnetIdsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSubnetIdsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1094,6 +1154,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSubnetIdsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSubnetIdsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1105,6 +1166,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcCon
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSubnetIdsRefsPolicy
 {
     /// <summary>
@@ -1129,6 +1191,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSubnetIdsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1148,6 +1211,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSubnetIdsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSubnetIdsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1164,6 +1228,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSubnetIdsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSubnetIdsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1175,6 +1240,7 @@ public enum V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcCon
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSubnetIdsSelectorPolicy
 {
     /// <summary>
@@ -1199,6 +1265,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// <summary>Selector for a list of Subnet in ec2 to populate subnetIds.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfigSubnetIdsSelector
 {
     /// <summary>
@@ -1219,6 +1286,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurationVpcConfig
 {
     /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
@@ -1260,6 +1328,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfiguration
 {
     /// <summary>Buffer incoming data for the specified period of time, in seconds between 0 to 900, before delivering it to the destination.  The default value is 300s.</summary>
@@ -1343,6 +1412,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderElasticsearchConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationBucketArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationBucketArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1359,6 +1429,7 @@ public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationBucketArn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationBucketArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationBucketArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1370,6 +1441,7 @@ public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationBucketArn
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationBucketArnRefPolicy
 {
     /// <summary>
@@ -1394,6 +1466,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationBucketArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1413,6 +1486,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationBucketArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationBucketArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1429,6 +1503,7 @@ public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationBucketArn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationBucketArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationBucketArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1440,6 +1515,7 @@ public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationBucketArn
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationBucketArnSelectorPolicy
 {
     /// <summary>
@@ -1464,6 +1540,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationBucketArnSelector
 {
     /// <summary>
@@ -1484,6 +1561,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -1501,6 +1579,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe
 {
     /// <summary>A list of how you want Kinesis Data Firehose to parse the date and time stamps that may be present in your input data JSON. To specify these format strings, follow the pattern syntax of JodaTime&apos;s DateTimeFormat format strings. For more information, see Class DateTimeFormat. You can also use the special value millis to parse time stamps in epoch milliseconds. If you don&apos;t specify a format, Kinesis Data Firehose uses java.sql.Timestamp::valueOf by default.</summary>
@@ -1510,6 +1589,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe
 {
     /// <summary>When set to true, which is the default, Kinesis Data Firehose converts JSON keys to lowercase before deserializing them.</summary>
@@ -1527,6 +1607,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer
 {
     /// <summary>Specifies the native Hive / HCatalog JsonSerDe. More details below. See hive_json_ser_de block below for details.</summary>
@@ -1540,6 +1621,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration
 {
     /// <summary>Specifies which deserializer to use. You can choose either the Apache Hive JSON SerDe or the OpenX JSON SerDe. See deserializer block below for details.</summary>
@@ -1549,6 +1631,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe
 {
     /// <summary>The Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.</summary>
@@ -1594,6 +1677,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe
 {
     /// <summary>The Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.</summary>
@@ -1623,6 +1707,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer
 {
     /// <summary>Specifies converting data to the ORC format before storing it in Amazon S3. For more information, see Apache ORC. See orc_ser_de block below for details.</summary>
@@ -1636,6 +1721,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration
 {
     /// <summary>Specifies which serializer to use. You can choose either the ORC SerDe or the Parquet SerDe. See serializer block below for details.</summary>
@@ -1651,6 +1737,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1667,6 +1754,7 @@ public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataForma
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1678,6 +1766,7 @@ public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataForma
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -1702,6 +1791,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1721,6 +1811,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1737,6 +1828,7 @@ public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataForma
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1748,6 +1840,7 @@ public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataForma
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -1772,6 +1865,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnSelector
 {
     /// <summary>
@@ -1798,6 +1892,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1814,6 +1909,7 @@ public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataForma
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1825,6 +1921,7 @@ public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataForma
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameRefPolicy
 {
     /// <summary>
@@ -1849,6 +1946,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 /// <summary>Reference to a CatalogTable in glue to populate tableName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1868,6 +1966,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1884,6 +1983,7 @@ public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataForma
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1895,6 +1995,7 @@ public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataForma
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameSelectorPolicy
 {
     /// <summary>
@@ -1919,6 +2020,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 /// <summary>Selector for a CatalogTable in glue to populate tableName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameSelector
 {
     /// <summary>
@@ -1939,6 +2041,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration
 {
     /// <summary>The ID of the AWS Glue Data Catalog. If you don&apos;t supply this, the AWS account ID is used by default.</summary>
@@ -1984,6 +2087,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDataFormatConversionConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -2005,6 +2109,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationDynamicPartitioningConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -2018,6 +2123,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -2031,6 +2137,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -2044,6 +2151,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -2063,6 +2171,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2079,6 +2188,7 @@ public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationRoleArnRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2090,6 +2200,7 @@ public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationRoleArnRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -2114,6 +2225,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2133,6 +2245,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2149,6 +2262,7 @@ public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationRoleArnSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2160,6 +2274,7 @@ public enum V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationRoleArnSe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -2184,6 +2299,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationRoleArnSelector
 {
     /// <summary>
@@ -2204,6 +2320,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -2221,6 +2338,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3ConfigurationS3BackupConfiguration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -2265,6 +2383,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -2354,6 +2473,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderExtendedS3Configuration
 /// <summary>The access key required for Kinesis Firehose to authenticate with the HTTP endpoint selected as the destination.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationAccessKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2371,6 +2491,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -2388,6 +2509,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -2401,6 +2523,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -2414,6 +2537,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -2427,6 +2551,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRequestConfigurationCommonAttributes
 {
     /// <summary>The name of the HTTP endpoint common attribute.</summary>
@@ -2440,6 +2565,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRequestConfiguration
 {
     /// <summary>Describes the metadata sent to the HTTP endpoint destination. See common_attributes block below for details.</summary>
@@ -2459,6 +2585,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2475,6 +2602,7 @@ public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRoleArn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2486,6 +2614,7 @@ public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRoleArn
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -2510,6 +2639,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2529,6 +2659,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2545,6 +2676,7 @@ public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRoleArn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2556,6 +2688,7 @@ public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRoleArn
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -2580,6 +2713,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationRoleArnSelector
 {
     /// <summary>
@@ -2606,6 +2740,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2622,6 +2757,7 @@ public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3Confi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2633,6 +2769,7 @@ public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3Confi
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationBucketArnRefPolicy
 {
     /// <summary>
@@ -2657,6 +2794,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationBucketArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2676,6 +2814,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2692,6 +2831,7 @@ public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3Confi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2703,6 +2843,7 @@ public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3Confi
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationBucketArnSelectorPolicy
 {
     /// <summary>
@@ -2727,6 +2868,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationBucketArnSelector
 {
     /// <summary>
@@ -2747,6 +2889,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -2770,6 +2913,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2786,6 +2930,7 @@ public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3Confi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2797,6 +2942,7 @@ public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3Confi
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -2821,6 +2967,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2840,6 +2987,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2856,6 +3004,7 @@ public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3Confi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2867,6 +3016,7 @@ public enum V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3Confi
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -2891,6 +3041,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3ConfigurationRoleArnSelector
 {
     /// <summary>
@@ -2911,6 +3062,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -2971,6 +3123,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurationSecretsManagerConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -2988,6 +3141,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfiguration
 {
     /// <summary>The access key required for Kinesis Firehose to authenticate with the HTTP endpoint selected as the destination.</summary>
@@ -3053,6 +3207,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderHttpEndpointConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -3076,6 +3231,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationClo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3092,6 +3248,7 @@ public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationT
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3103,6 +3260,7 @@ public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationT
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameRefPolicy
 {
     /// <summary>
@@ -3127,6 +3285,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDes
 /// <summary>Reference to a CatalogDatabase in glue to populate databaseName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3146,6 +3305,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3162,6 +3322,7 @@ public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationT
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3173,6 +3334,7 @@ public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationT
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameSelectorPolicy
 {
     /// <summary>
@@ -3197,6 +3359,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDes
 /// <summary>Selector for a CatalogDatabase in glue to populate databaseName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameSelector
 {
     /// <summary>
@@ -3223,6 +3386,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationTableNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationTableNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3239,6 +3403,7 @@ public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationT
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationTableNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationTableNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3250,6 +3415,7 @@ public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationT
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationTableNameRefPolicy
 {
     /// <summary>
@@ -3274,6 +3440,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDes
 /// <summary>Reference to a CatalogTable in glue to populate tableName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationTableNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3293,6 +3460,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationTableNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationTableNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3309,6 +3477,7 @@ public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationT
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationTableNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationTableNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3320,6 +3489,7 @@ public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationT
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationTableNameSelectorPolicy
 {
     /// <summary>
@@ -3344,6 +3514,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDes
 /// <summary>Selector for a CatalogTable in glue to populate tableName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfigurationTableNameSelector
 {
     /// <summary>
@@ -3364,6 +3535,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDes
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDestinationTableConfiguration
 {
     /// <summary>Specifies the name of the AWS Glue database that contains the schema for the output data.</summary>
@@ -3401,6 +3573,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationDes
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -3414,6 +3587,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationPro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -3427,6 +3601,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationPro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -3446,6 +3621,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationPro
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3462,6 +3638,7 @@ public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRoleArnRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3473,6 +3650,7 @@ public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRoleArnRefPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -3497,6 +3675,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRol
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3516,6 +3695,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3532,6 +3712,7 @@ public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRoleArnSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3543,6 +3724,7 @@ public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRoleArnSelec
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -3567,6 +3749,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRol
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRoleArnSelector
 {
     /// <summary>
@@ -3593,6 +3776,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationRol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3609,6 +3793,7 @@ public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3Configurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3620,6 +3805,7 @@ public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3Configurat
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationBucketArnRefPolicy
 {
     /// <summary>
@@ -3644,6 +3830,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3C
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationBucketArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3663,6 +3850,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3C
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3679,6 +3867,7 @@ public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3Configurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3690,6 +3879,7 @@ public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3Configurat
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationBucketArnSelectorPolicy
 {
     /// <summary>
@@ -3714,6 +3904,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3C
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationBucketArnSelector
 {
     /// <summary>
@@ -3734,6 +3925,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3C
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -3757,6 +3949,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3C
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3773,6 +3966,7 @@ public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3Configurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3784,6 +3978,7 @@ public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3Configurat
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -3808,6 +4003,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3C
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3827,6 +4023,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3C
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3843,6 +4040,7 @@ public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3Configurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3854,6 +4052,7 @@ public enum V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3Configurat
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -3878,6 +4077,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3C
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3ConfigurationRoleArnSelector
 {
     /// <summary>
@@ -3898,6 +4098,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3C
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -3958,6 +4159,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfigurationS3C
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfiguration
 {
     [JsonPropertyName("appendOnly")]
@@ -4017,6 +4219,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderIcebergConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderKinesisSourceConfiguration
 {
     /// <summary>The kinesis stream used as the source of the firehose delivery stream.</summary>
@@ -4030,6 +4233,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderKinesisSourceConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderMskSourceConfigurationAuthenticationConfiguration
 {
     /// <summary>The type of connectivity used to access the Amazon MSK cluster. Valid values: PUBLIC, PRIVATE.</summary>
@@ -4043,6 +4247,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderMskSourceConfigurationA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderMskSourceConfiguration
 {
     /// <summary>The authentication configuration of the Amazon MSK cluster. See authentication_configuration block below for details.</summary>
@@ -4064,6 +4269,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderMskSourceConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -4081,6 +4287,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationDocumentIdOptions
 {
     /// <summary>The method for setting up document ID. Valid values: FIREHOSE_DEFAULT, NO_DOCUMENT_ID.</summary>
@@ -4096,6 +4303,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationDomainArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationDomainArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4112,6 +4320,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationDomainArn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationDomainArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationDomainArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4123,6 +4332,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationDomainArn
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationDomainArnRefPolicy
 {
     /// <summary>
@@ -4147,6 +4357,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// <summary>Reference to a Domain in opensearch to populate domainArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationDomainArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -4166,6 +4377,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationDomainArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationDomainArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4182,6 +4394,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationDomainArn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationDomainArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationDomainArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4193,6 +4406,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationDomainArn
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationDomainArnSelectorPolicy
 {
     /// <summary>
@@ -4217,6 +4431,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// <summary>Selector for a Domain in opensearch to populate domainArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationDomainArnSelector
 {
     /// <summary>
@@ -4237,6 +4452,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -4250,6 +4466,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -4263,6 +4480,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -4282,6 +4500,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4298,6 +4517,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationRoleArnRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4309,6 +4529,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationRoleArnRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -4333,6 +4554,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -4352,6 +4574,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4368,6 +4591,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationRoleArnSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4379,6 +4603,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationRoleArnSe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -4403,6 +4628,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationRoleArnSelector
 {
     /// <summary>
@@ -4429,6 +4655,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4445,6 +4672,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3Configu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4456,6 +4684,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3Configu
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationBucketArnRefPolicy
 {
     /// <summary>
@@ -4480,6 +4709,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationBucketArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -4499,6 +4729,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4515,6 +4746,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3Configu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4526,6 +4758,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3Configu
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationBucketArnSelectorPolicy
 {
     /// <summary>
@@ -4550,6 +4783,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationBucketArnSelector
 {
     /// <summary>
@@ -4570,6 +4804,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -4593,6 +4828,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4609,6 +4845,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3Configu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4620,6 +4857,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3Configu
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -4644,6 +4882,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -4663,6 +4902,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4679,6 +4919,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3Configu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4690,6 +4931,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3Configu
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -4714,6 +4956,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3ConfigurationRoleArnSelector
 {
     /// <summary>
@@ -4734,6 +4977,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -4800,6 +5044,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4816,6 +5061,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4827,6 +5073,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfig
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigRoleArnRefPolicy
 {
     /// <summary>
@@ -4851,6 +5098,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -4870,6 +5118,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4886,6 +5135,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4897,6 +5147,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfig
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigRoleArnSelectorPolicy
 {
     /// <summary>
@@ -4921,6 +5172,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigRoleArnSelector
 {
     /// <summary>
@@ -4947,6 +5199,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSecurityGroupIdsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSecurityGroupIdsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4963,6 +5216,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSecurityGroupIdsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSecurityGroupIdsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4974,6 +5228,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfig
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSecurityGroupIdsRefsPolicy
 {
     /// <summary>
@@ -4998,6 +5253,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSecurityGroupIdsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -5017,6 +5273,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSecurityGroupIdsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSecurityGroupIdsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -5033,6 +5290,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSecurityGroupIdsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSecurityGroupIdsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5044,6 +5302,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfig
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSecurityGroupIdsSelectorPolicy
 {
     /// <summary>
@@ -5068,6 +5327,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// <summary>Selector for a list of SecurityGroup in ec2 to populate securityGroupIds.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSecurityGroupIdsSelector
 {
     /// <summary>
@@ -5094,6 +5354,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSubnetIdsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSubnetIdsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -5110,6 +5371,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSubnetIdsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSubnetIdsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5121,6 +5383,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfig
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSubnetIdsRefsPolicy
 {
     /// <summary>
@@ -5145,6 +5408,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSubnetIdsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -5164,6 +5428,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSubnetIdsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSubnetIdsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -5180,6 +5445,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSubnetIdsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSubnetIdsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5191,6 +5457,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfig
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSubnetIdsSelectorPolicy
 {
     /// <summary>
@@ -5215,6 +5482,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 /// <summary>Selector for a list of Subnet in ec2 to populate subnetIds.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfigSubnetIdsSelector
 {
     /// <summary>
@@ -5235,6 +5503,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfigurationVpcConfig
 {
     /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
@@ -5276,6 +5545,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 {
     /// <summary>Buffer incoming data for the specified period of time, in seconds between 0 to 900, before delivering it to the destination.  The default value is 300s.</summary>
@@ -5357,6 +5627,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -5380,6 +5651,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationCollectionEndpointRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationCollectionEndpointRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -5396,6 +5668,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationCollectionEndpointRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationCollectionEndpointRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5407,6 +5680,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfiguratio
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationCollectionEndpointRefPolicy
 {
     /// <summary>
@@ -5431,6 +5705,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 /// <summary>Reference to a Collection in opensearchserverless to populate collectionEndpoint.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationCollectionEndpointRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -5450,6 +5725,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationCollectionEndpointSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationCollectionEndpointSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -5466,6 +5742,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationCollectionEndpointSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationCollectionEndpointSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5477,6 +5754,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfiguratio
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationCollectionEndpointSelectorPolicy
 {
     /// <summary>
@@ -5501,6 +5779,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 /// <summary>Selector for a Collection in opensearchserverless to populate collectionEndpoint.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationCollectionEndpointSelector
 {
     /// <summary>
@@ -5521,6 +5800,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -5534,6 +5814,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -5547,6 +5828,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -5566,6 +5848,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -5582,6 +5865,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5593,6 +5877,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfiguratio
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -5617,6 +5902,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -5636,6 +5922,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -5652,6 +5939,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5663,6 +5951,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfiguratio
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -5687,6 +5976,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationRoleArnSelector
 {
     /// <summary>
@@ -5713,6 +6003,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -5729,6 +6020,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5740,6 +6032,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfiguratio
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnRefPolicy
 {
     /// <summary>
@@ -5764,6 +6057,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -5783,6 +6077,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -5799,6 +6094,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5810,6 +6106,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfiguratio
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnSelectorPolicy
 {
     /// <summary>
@@ -5834,6 +6131,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnSelector
 {
     /// <summary>
@@ -5854,6 +6152,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -5877,6 +6176,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -5893,6 +6193,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5904,6 +6205,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfiguratio
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -5928,6 +6230,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -5947,6 +6250,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -5963,6 +6267,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5974,6 +6279,7 @@ public enum V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfiguratio
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -5998,6 +6304,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnSelector
 {
     /// <summary>
@@ -6018,6 +6325,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -6078,6 +6386,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfigurationVpcConfig
 {
     /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
@@ -6095,6 +6404,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessConfiguration
 {
     /// <summary>Buffer incoming data for the specified period of time, in seconds between 0 to 900, before delivering it to the destination.  The default value is 300s.</summary>
@@ -6160,6 +6470,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderOpensearchserverlessCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -6178,6 +6489,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationCl
 /// <summary>The password for the username above. This value is required if secrets_manager_configuration is not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -6195,6 +6507,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationPa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -6208,6 +6521,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -6221,6 +6535,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -6240,6 +6555,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationPr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -6256,6 +6572,7 @@ public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRoleArnRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -6267,6 +6584,7 @@ public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRoleArnRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -6291,6 +6609,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRo
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -6310,6 +6629,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -6326,6 +6646,7 @@ public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRoleArnSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -6337,6 +6658,7 @@ public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRoleArnSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -6361,6 +6683,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRo
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRoleArnSelector
 {
     /// <summary>
@@ -6387,6 +6710,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationRo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationBucketArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationBucketArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -6403,6 +6727,7 @@ public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationBucketArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationBucketArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -6414,6 +6739,7 @@ public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupCon
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationBucketArnRefPolicy
 {
     /// <summary>
@@ -6438,6 +6764,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationBucketArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -6457,6 +6784,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationBucketArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationBucketArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -6473,6 +6801,7 @@ public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationBucketArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationBucketArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -6484,6 +6813,7 @@ public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupCon
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationBucketArnSelectorPolicy
 {
     /// <summary>
@@ -6508,6 +6838,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationBucketArnSelector
 {
     /// <summary>
@@ -6528,6 +6859,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -6551,6 +6883,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -6567,6 +6900,7 @@ public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -6578,6 +6912,7 @@ public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupCon
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -6602,6 +6937,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -6621,6 +6957,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -6637,6 +6974,7 @@ public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -6648,6 +6986,7 @@ public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupCon
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -6672,6 +7011,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfigurationRoleArnSelector
 {
     /// <summary>
@@ -6692,6 +7032,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3BackupConfiguration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -6758,6 +7099,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -6774,6 +7116,7 @@ public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3Configura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -6785,6 +7128,7 @@ public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3Configura
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationBucketArnRefPolicy
 {
     /// <summary>
@@ -6809,6 +7153,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationBucketArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -6828,6 +7173,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -6844,6 +7190,7 @@ public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3Configura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -6855,6 +7202,7 @@ public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3Configura
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationBucketArnSelectorPolicy
 {
     /// <summary>
@@ -6879,6 +7227,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationBucketArnSelector
 {
     /// <summary>
@@ -6899,6 +7248,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -6922,6 +7272,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -6938,6 +7289,7 @@ public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3Configura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -6949,6 +7301,7 @@ public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3Configura
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -6973,6 +7326,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -6992,6 +7346,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -7008,6 +7363,7 @@ public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3Configura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -7019,6 +7375,7 @@ public enum V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3Configura
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -7043,6 +7400,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3ConfigurationRoleArnSelector
 {
     /// <summary>
@@ -7063,6 +7421,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -7123,6 +7482,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationSecretsManagerConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -7140,6 +7500,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfigurationSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfiguration
 {
     /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
@@ -7212,6 +7573,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderRedshiftConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderServerSideEncryption
 {
     /// <summary>Whether to enable encryption at rest. Default is false.</summary>
@@ -7229,6 +7591,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderServerSideEncryption
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -7247,6 +7610,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationC
 /// <summary>The passphrase for the private key.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationKeyPassphraseSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -7265,6 +7629,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationK
 /// <summary>The private key for authentication. This value is required if secrets_manager_configuration is not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationPrivateKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -7282,6 +7647,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -7295,6 +7661,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -7308,6 +7675,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -7327,6 +7695,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -7343,6 +7712,7 @@ public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationRoleArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -7354,6 +7724,7 @@ public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationRoleArnRef
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -7378,6 +7749,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationR
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -7397,6 +7769,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -7413,6 +7786,7 @@ public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationRoleArnSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -7424,6 +7798,7 @@ public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationRoleArnSel
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -7448,6 +7823,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationR
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationRoleArnSelector
 {
     /// <summary>
@@ -7474,6 +7850,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -7490,6 +7867,7 @@ public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3Configur
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -7501,6 +7879,7 @@ public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3Configur
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationBucketArnRefPolicy
 {
     /// <summary>
@@ -7525,6 +7904,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationBucketArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -7544,6 +7924,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -7560,6 +7941,7 @@ public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3Configur
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -7571,6 +7953,7 @@ public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3Configur
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationBucketArnSelectorPolicy
 {
     /// <summary>
@@ -7595,6 +7978,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationBucketArnSelector
 {
     /// <summary>
@@ -7615,6 +7999,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -7638,6 +8023,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -7654,6 +8040,7 @@ public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3Configur
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -7665,6 +8052,7 @@ public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3Configur
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -7689,6 +8077,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -7708,6 +8097,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -7724,6 +8114,7 @@ public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3Configur
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -7735,6 +8126,7 @@ public enum V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3Configur
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -7759,6 +8151,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3ConfigurationRoleArnSelector
 {
     /// <summary>
@@ -7779,6 +8172,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -7839,6 +8233,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationSecretsManagerConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -7856,6 +8251,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationSnowflakeRoleConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -7869,6 +8265,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationSnowflakeVpcConfiguration
 {
     /// <summary>The VPCE ID for Firehose to privately connect with Snowflake.</summary>
@@ -7878,6 +8275,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfigurationS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfiguration
 {
     /// <summary>The URL of the Snowflake account. Format: https://[account_identifier].snowflakecomputing.com.</summary>
@@ -7975,6 +8373,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -7993,6 +8392,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationClou
 /// <summary>The GUID that you obtain from your Splunk cluster when you create a new HEC endpoint. This value is required if secrets_manager_configuration is not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationHecTokenSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -8010,6 +8410,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationHecT
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -8023,6 +8424,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationProc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -8036,6 +8438,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationProc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -8055,6 +8458,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationProc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -8071,6 +8475,7 @@ public enum V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Configurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -8082,6 +8487,7 @@ public enum V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Configurati
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationBucketArnRefPolicy
 {
     /// <summary>
@@ -8106,6 +8512,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Co
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationBucketArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -8125,6 +8532,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Co
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -8141,6 +8549,7 @@ public enum V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Configurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -8152,6 +8561,7 @@ public enum V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Configurati
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationBucketArnSelectorPolicy
 {
     /// <summary>
@@ -8176,6 +8586,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Co
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationBucketArnSelector
 {
     /// <summary>
@@ -8196,6 +8607,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Co
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -8219,6 +8631,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Co
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -8235,6 +8648,7 @@ public enum V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Configurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -8246,6 +8660,7 @@ public enum V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Configurati
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -8270,6 +8685,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Co
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -8289,6 +8705,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Co
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -8305,6 +8722,7 @@ public enum V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Configurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -8316,6 +8734,7 @@ public enum V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Configurati
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -8340,6 +8759,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Co
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3ConfigurationRoleArnSelector
 {
     /// <summary>
@@ -8360,6 +8780,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Co
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -8420,6 +8841,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationS3Co
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationSecretsManagerConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -8437,6 +8859,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfigurationSecr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfiguration
 {
     /// <summary>Buffer incoming data for the specified period of time, in seconds between 0 to 60, before delivering it to the destination.  The default value is 60s.</summary>
@@ -8493,6 +8916,7 @@ public partial class V1beta1DeliveryStreamSpecForProviderSplunkConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecForProvider
 {
     /// <summary>This is the destination to where the data is delivered. The only options are s3 (Deprecated, use extended_s3 instead), extended_s3, redshift, elasticsearch, splunk, http_endpoint, opensearch, opensearchserverless and snowflake.</summary>
@@ -8572,6 +8996,7 @@ public partial class V1beta1DeliveryStreamSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -8595,6 +9020,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationDomainArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationDomainArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -8611,6 +9037,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationDomai
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationDomainArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationDomainArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -8622,6 +9049,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationDomai
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationDomainArnRefPolicy
 {
     /// <summary>
@@ -8646,6 +9074,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// <summary>Reference to a Domain in elasticsearch to populate domainArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationDomainArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -8665,6 +9094,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationDomainArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationDomainArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -8681,6 +9111,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationDomai
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationDomainArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationDomainArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -8692,6 +9123,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationDomai
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationDomainArnSelectorPolicy
 {
     /// <summary>
@@ -8716,6 +9148,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// <summary>Selector for a Domain in elasticsearch to populate domainArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationDomainArnSelector
 {
     /// <summary>
@@ -8736,6 +9169,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -8749,6 +9183,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -8762,6 +9197,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -8781,6 +9217,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -8797,6 +9234,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationRoleA
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -8808,6 +9246,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationRoleA
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -8832,6 +9271,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -8851,6 +9291,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -8867,6 +9308,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationRoleA
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -8878,6 +9320,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationRoleA
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -8902,6 +9345,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationRoleArnSelector
 {
     /// <summary>
@@ -8928,6 +9372,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -8944,6 +9389,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3Con
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -8955,6 +9401,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3Con
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationBucketArnRefPolicy
 {
     /// <summary>
@@ -8979,6 +9426,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationBucketArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -8998,6 +9446,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -9014,6 +9463,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3Con
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -9025,6 +9475,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3Con
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationBucketArnSelectorPolicy
 {
     /// <summary>
@@ -9049,6 +9500,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationBucketArnSelector
 {
     /// <summary>
@@ -9069,6 +9521,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -9092,6 +9545,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -9108,6 +9562,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3Con
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -9119,6 +9574,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3Con
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -9143,6 +9599,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -9162,6 +9619,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -9178,6 +9636,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3Con
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -9189,6 +9648,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3Con
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -9213,6 +9673,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3ConfigurationRoleArnSelector
 {
     /// <summary>
@@ -9233,6 +9694,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -9299,6 +9761,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -9315,6 +9778,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -9326,6 +9790,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcCo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigRoleArnRefPolicy
 {
     /// <summary>
@@ -9350,6 +9815,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -9369,6 +9835,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -9385,6 +9852,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -9396,6 +9864,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcCo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigRoleArnSelectorPolicy
 {
     /// <summary>
@@ -9420,6 +9889,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigRoleArnSelector
 {
     /// <summary>
@@ -9446,6 +9916,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -9462,6 +9933,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -9473,6 +9945,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcCo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsRefsPolicy
 {
     /// <summary>
@@ -9497,6 +9970,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -9516,6 +9990,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -9532,6 +10007,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -9543,6 +10019,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcCo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsSelectorPolicy
 {
     /// <summary>
@@ -9567,6 +10044,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// <summary>Selector for a list of SecurityGroup in ec2 to populate securityGroupIds.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSecurityGroupIdsSelector
 {
     /// <summary>
@@ -9593,6 +10071,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSubnetIdsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSubnetIdsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -9609,6 +10088,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSubnetIdsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSubnetIdsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -9620,6 +10100,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcCo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSubnetIdsRefsPolicy
 {
     /// <summary>
@@ -9644,6 +10125,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSubnetIdsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -9663,6 +10145,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSubnetIdsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSubnetIdsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -9679,6 +10162,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSubnetIdsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSubnetIdsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -9690,6 +10174,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcCo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSubnetIdsSelectorPolicy
 {
     /// <summary>
@@ -9714,6 +10199,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// <summary>Selector for a list of Subnet in ec2 to populate subnetIds.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfigSubnetIdsSelector
 {
     /// <summary>
@@ -9734,6 +10220,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigurationVpcConfig
 {
     /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
@@ -9775,6 +10262,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfiguration
 {
     /// <summary>Buffer incoming data for the specified period of time, in seconds between 0 to 900, before delivering it to the destination.  The default value is 300s.</summary>
@@ -9858,6 +10346,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderElasticsearchConfigura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationBucketArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationBucketArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -9874,6 +10363,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationBucketAr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationBucketArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationBucketArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -9885,6 +10375,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationBucketAr
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationBucketArnRefPolicy
 {
     /// <summary>
@@ -9909,6 +10400,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationBucketArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -9928,6 +10420,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationBucketArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationBucketArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -9944,6 +10437,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationBucketAr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationBucketArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationBucketArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -9955,6 +10449,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationBucketAr
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationBucketArnSelectorPolicy
 {
     /// <summary>
@@ -9979,6 +10474,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationBucketArnSelector
 {
     /// <summary>
@@ -9999,6 +10495,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -10016,6 +10513,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe
 {
     /// <summary>A list of how you want Kinesis Data Firehose to parse the date and time stamps that may be present in your input data JSON. To specify these format strings, follow the pattern syntax of JodaTime&apos;s DateTimeFormat format strings. For more information, see Class DateTimeFormat. You can also use the special value millis to parse time stamps in epoch milliseconds. If you don&apos;t specify a format, Kinesis Data Firehose uses java.sql.Timestamp::valueOf by default.</summary>
@@ -10025,6 +10523,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe
 {
     /// <summary>When set to true, which is the default, Kinesis Data Firehose converts JSON keys to lowercase before deserializing them.</summary>
@@ -10042,6 +10541,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer
 {
     /// <summary>Specifies the native Hive / HCatalog JsonSerDe. More details below. See hive_json_ser_de block below for details.</summary>
@@ -10055,6 +10555,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration
 {
     /// <summary>Specifies which deserializer to use. You can choose either the Apache Hive JSON SerDe or the OpenX JSON SerDe. See deserializer block below for details.</summary>
@@ -10064,6 +10565,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe
 {
     /// <summary>The Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.</summary>
@@ -10109,6 +10611,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe
 {
     /// <summary>The Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.</summary>
@@ -10138,6 +10641,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer
 {
     /// <summary>Specifies converting data to the ORC format before storing it in Amazon S3. For more information, see Apache ORC. See orc_ser_de block below for details.</summary>
@@ -10151,6 +10655,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration
 {
     /// <summary>Specifies which serializer to use. You can choose either the ORC SerDe or the Parquet SerDe. See serializer block below for details.</summary>
@@ -10166,6 +10671,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -10182,6 +10688,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataForm
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -10193,6 +10700,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataForm
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -10217,6 +10725,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -10236,6 +10745,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -10252,6 +10762,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataForm
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -10263,6 +10774,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataForm
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -10287,6 +10799,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationRoleArnSelector
 {
     /// <summary>
@@ -10313,6 +10826,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -10329,6 +10843,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataForm
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -10340,6 +10855,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataForm
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameRefPolicy
 {
     /// <summary>
@@ -10364,6 +10880,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 /// <summary>Reference to a CatalogTable in glue to populate tableName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -10383,6 +10900,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -10399,6 +10917,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataForm
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -10410,6 +10929,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataForm
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameSelectorPolicy
 {
     /// <summary>
@@ -10434,6 +10954,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 /// <summary>Selector for a CatalogTable in glue to populate tableName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationTableNameSelector
 {
     /// <summary>
@@ -10454,6 +10975,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration
 {
     /// <summary>The ID of the AWS Glue Data Catalog. If you don&apos;t supply this, the AWS account ID is used by default.</summary>
@@ -10495,6 +11017,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDataFormatConversionConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -10516,6 +11039,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationDynamicPartitioningConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -10529,6 +11053,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -10542,6 +11067,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -10555,6 +11081,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -10574,6 +11101,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -10590,6 +11118,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationRoleArnR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -10601,6 +11130,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationRoleArnR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -10625,6 +11155,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -10644,6 +11175,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -10660,6 +11192,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationRoleArnS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -10671,6 +11204,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationRoleArnS
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -10695,6 +11229,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationRoleArnSelector
 {
     /// <summary>
@@ -10715,6 +11250,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -10732,6 +11268,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3ConfigurationS3BackupConfiguration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -10776,6 +11313,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -10865,6 +11403,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderExtendedS3Configuratio
 /// <summary>The access key required for Kinesis Firehose to authenticate with the HTTP endpoint selected as the destination.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationAccessKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -10882,6 +11421,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -10899,6 +11439,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -10912,6 +11453,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -10925,6 +11467,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -10938,6 +11481,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRequestConfigurationCommonAttributes
 {
     /// <summary>The name of the HTTP endpoint common attribute.</summary>
@@ -10951,6 +11495,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRequestConfiguration
 {
     /// <summary>Describes the metadata sent to the HTTP endpoint destination. See common_attributes block below for details.</summary>
@@ -10970,6 +11515,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -10986,6 +11532,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRoleAr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -10997,6 +11544,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRoleAr
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -11021,6 +11569,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -11040,6 +11589,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -11056,6 +11606,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRoleAr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -11067,6 +11618,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRoleAr
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -11091,6 +11643,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationRoleArnSelector
 {
     /// <summary>
@@ -11117,6 +11670,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -11133,6 +11687,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3Conf
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -11144,6 +11699,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3Conf
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationBucketArnRefPolicy
 {
     /// <summary>
@@ -11168,6 +11724,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationBucketArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -11187,6 +11744,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -11203,6 +11761,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3Conf
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -11214,6 +11773,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3Conf
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationBucketArnSelectorPolicy
 {
     /// <summary>
@@ -11238,6 +11798,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationBucketArnSelector
 {
     /// <summary>
@@ -11258,6 +11819,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -11281,6 +11843,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -11297,6 +11860,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3Conf
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -11308,6 +11872,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3Conf
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -11332,6 +11897,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -11351,6 +11917,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -11367,6 +11934,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3Conf
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -11378,6 +11946,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3Conf
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -11402,6 +11971,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3ConfigurationRoleArnSelector
 {
     /// <summary>
@@ -11422,6 +11992,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -11482,6 +12053,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurationSecretsManagerConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -11499,6 +12071,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfiguration
 {
     /// <summary>The access key required for Kinesis Firehose to authenticate with the HTTP endpoint selected as the destination.</summary>
@@ -11564,6 +12137,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -11587,6 +12161,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationCl
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -11603,6 +12178,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestination
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -11614,6 +12190,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestination
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameRefPolicy
 {
     /// <summary>
@@ -11638,6 +12215,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDe
 /// <summary>Reference to a CatalogDatabase in glue to populate databaseName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -11657,6 +12235,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -11673,6 +12252,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestination
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -11684,6 +12264,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestination
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameSelectorPolicy
 {
     /// <summary>
@@ -11708,6 +12289,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDe
 /// <summary>Selector for a CatalogDatabase in glue to populate databaseName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationDatabaseNameSelector
 {
     /// <summary>
@@ -11734,6 +12316,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationTableNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationTableNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -11750,6 +12333,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestination
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationTableNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationTableNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -11761,6 +12345,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestination
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationTableNameRefPolicy
 {
     /// <summary>
@@ -11785,6 +12370,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDe
 /// <summary>Reference to a CatalogTable in glue to populate tableName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationTableNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -11804,6 +12390,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationTableNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationTableNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -11820,6 +12407,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestination
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationTableNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationTableNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -11831,6 +12419,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestination
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationTableNameSelectorPolicy
 {
     /// <summary>
@@ -11855,6 +12444,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDe
 /// <summary>Selector for a CatalogTable in glue to populate tableName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfigurationTableNameSelector
 {
     /// <summary>
@@ -11875,6 +12465,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDestinationTableConfiguration
 {
     /// <summary>Specifies the name of the AWS Glue database that contains the schema for the output data.</summary>
@@ -11912,6 +12503,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationDe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -11925,6 +12517,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -11938,6 +12531,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -11957,6 +12551,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationPr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -11973,6 +12568,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRoleArnRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -11984,6 +12580,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRoleArnRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -12008,6 +12605,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRo
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -12027,6 +12625,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -12043,6 +12642,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRoleArnSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -12054,6 +12654,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRoleArnSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -12078,6 +12679,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRo
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRoleArnSelector
 {
     /// <summary>
@@ -12104,6 +12706,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationRo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -12120,6 +12723,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3Configura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -12131,6 +12735,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3Configura
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationBucketArnRefPolicy
 {
     /// <summary>
@@ -12155,6 +12760,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationBucketArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -12174,6 +12780,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -12190,6 +12797,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3Configura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -12201,6 +12809,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3Configura
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationBucketArnSelectorPolicy
 {
     /// <summary>
@@ -12225,6 +12834,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationBucketArnSelector
 {
     /// <summary>
@@ -12245,6 +12855,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -12268,6 +12879,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -12284,6 +12896,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3Configura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -12295,6 +12908,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3Configura
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -12319,6 +12933,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -12338,6 +12953,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -12354,6 +12970,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3Configura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -12365,6 +12982,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3Configura
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -12389,6 +13007,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3ConfigurationRoleArnSelector
 {
     /// <summary>
@@ -12409,6 +13028,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -12469,6 +13089,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfigurationS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfiguration
 {
     [JsonPropertyName("appendOnly")]
@@ -12528,6 +13149,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderIcebergConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderKinesisSourceConfiguration
 {
     /// <summary>The kinesis stream used as the source of the firehose delivery stream.</summary>
@@ -12541,6 +13163,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderKinesisSourceConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderMskSourceConfigurationAuthenticationConfiguration
 {
     /// <summary>The type of connectivity used to access the Amazon MSK cluster. Valid values: PUBLIC, PRIVATE.</summary>
@@ -12554,6 +13177,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderMskSourceConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderMskSourceConfiguration
 {
     /// <summary>The authentication configuration of the Amazon MSK cluster. See authentication_configuration block below for details.</summary>
@@ -12575,6 +13199,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderMskSourceConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -12592,6 +13217,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationDocumentIdOptions
 {
     /// <summary>The method for setting up document ID. Valid values: FIREHOSE_DEFAULT, NO_DOCUMENT_ID.</summary>
@@ -12607,6 +13233,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationDomainArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationDomainArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -12623,6 +13250,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationDomainAr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationDomainArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationDomainArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -12634,6 +13262,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationDomainAr
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationDomainArnRefPolicy
 {
     /// <summary>
@@ -12658,6 +13287,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// <summary>Reference to a Domain in opensearch to populate domainArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationDomainArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -12677,6 +13307,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationDomainArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationDomainArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -12693,6 +13324,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationDomainAr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationDomainArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationDomainArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -12704,6 +13336,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationDomainAr
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationDomainArnSelectorPolicy
 {
     /// <summary>
@@ -12728,6 +13361,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// <summary>Selector for a Domain in opensearch to populate domainArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationDomainArnSelector
 {
     /// <summary>
@@ -12748,6 +13382,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -12761,6 +13396,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -12774,6 +13410,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -12793,6 +13430,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -12809,6 +13447,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationRoleArnR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -12820,6 +13459,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationRoleArnR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -12844,6 +13484,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -12863,6 +13504,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -12879,6 +13521,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationRoleArnS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -12890,6 +13533,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationRoleArnS
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -12914,6 +13558,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationRoleArnSelector
 {
     /// <summary>
@@ -12940,6 +13585,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -12956,6 +13602,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3Config
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -12967,6 +13614,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3Config
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationBucketArnRefPolicy
 {
     /// <summary>
@@ -12991,6 +13639,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationBucketArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -13010,6 +13659,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -13026,6 +13676,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3Config
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -13037,6 +13688,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3Config
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationBucketArnSelectorPolicy
 {
     /// <summary>
@@ -13061,6 +13713,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationBucketArnSelector
 {
     /// <summary>
@@ -13081,6 +13734,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -13104,6 +13758,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -13120,6 +13775,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3Config
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -13131,6 +13787,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3Config
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -13155,6 +13812,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -13174,6 +13832,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -13190,6 +13849,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3Config
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -13201,6 +13861,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3Config
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -13225,6 +13886,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3ConfigurationRoleArnSelector
 {
     /// <summary>
@@ -13245,6 +13907,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -13311,6 +13974,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -13327,6 +13991,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -13338,6 +14003,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfi
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigRoleArnRefPolicy
 {
     /// <summary>
@@ -13362,6 +14028,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -13381,6 +14048,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -13397,6 +14065,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -13408,6 +14077,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfi
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigRoleArnSelectorPolicy
 {
     /// <summary>
@@ -13432,6 +14102,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigRoleArnSelector
 {
     /// <summary>
@@ -13458,6 +14129,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSecurityGroupIdsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSecurityGroupIdsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -13474,6 +14146,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSecurityGroupIdsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSecurityGroupIdsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -13485,6 +14158,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfi
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSecurityGroupIdsRefsPolicy
 {
     /// <summary>
@@ -13509,6 +14183,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSecurityGroupIdsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -13528,6 +14203,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSecurityGroupIdsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSecurityGroupIdsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -13544,6 +14220,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSecurityGroupIdsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSecurityGroupIdsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -13555,6 +14232,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfi
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSecurityGroupIdsSelectorPolicy
 {
     /// <summary>
@@ -13579,6 +14257,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// <summary>Selector for a list of SecurityGroup in ec2 to populate securityGroupIds.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSecurityGroupIdsSelector
 {
     /// <summary>
@@ -13605,6 +14284,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSubnetIdsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSubnetIdsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -13621,6 +14301,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSubnetIdsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSubnetIdsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -13632,6 +14313,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfi
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSubnetIdsRefsPolicy
 {
     /// <summary>
@@ -13656,6 +14338,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSubnetIdsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -13675,6 +14358,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSubnetIdsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSubnetIdsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -13691,6 +14375,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSubnetIdsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSubnetIdsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -13702,6 +14387,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfi
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSubnetIdsSelectorPolicy
 {
     /// <summary>
@@ -13726,6 +14412,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 /// <summary>Selector for a list of Subnet in ec2 to populate subnetIds.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfigSubnetIdsSelector
 {
     /// <summary>
@@ -13746,6 +14433,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfigurationVpcConfig
 {
     /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
@@ -13787,6 +14475,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguration
 {
     /// <summary>Buffer incoming data for the specified period of time, in seconds between 0 to 900, before delivering it to the destination.  The default value is 300s.</summary>
@@ -13868,6 +14557,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -13891,6 +14581,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationCollectionEndpointRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationCollectionEndpointRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -13907,6 +14598,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationCollectionEndpointRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationCollectionEndpointRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -13918,6 +14610,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurati
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationCollectionEndpointRefPolicy
 {
     /// <summary>
@@ -13942,6 +14635,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 /// <summary>Reference to a Collection in opensearchserverless to populate collectionEndpoint.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationCollectionEndpointRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -13961,6 +14655,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationCollectionEndpointSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationCollectionEndpointSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -13977,6 +14672,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationCollectionEndpointSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationCollectionEndpointSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -13988,6 +14684,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurati
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationCollectionEndpointSelectorPolicy
 {
     /// <summary>
@@ -14012,6 +14709,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 /// <summary>Selector for a Collection in opensearchserverless to populate collectionEndpoint.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationCollectionEndpointSelector
 {
     /// <summary>
@@ -14032,6 +14730,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -14045,6 +14744,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -14058,6 +14758,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -14077,6 +14778,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -14093,6 +14795,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -14104,6 +14807,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurati
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -14128,6 +14832,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -14147,6 +14852,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -14163,6 +14869,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -14174,6 +14881,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurati
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -14198,6 +14906,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationRoleArnSelector
 {
     /// <summary>
@@ -14224,6 +14933,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -14240,6 +14950,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -14251,6 +14962,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurati
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnRefPolicy
 {
     /// <summary>
@@ -14275,6 +14987,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -14294,6 +15007,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -14310,6 +15024,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -14321,6 +15036,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurati
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnSelectorPolicy
 {
     /// <summary>
@@ -14345,6 +15061,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationBucketArnSelector
 {
     /// <summary>
@@ -14365,6 +15082,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -14388,6 +15106,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -14404,6 +15123,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -14415,6 +15135,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurati
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -14439,6 +15160,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -14458,6 +15180,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -14474,6 +15197,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -14485,6 +15209,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurati
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -14509,6 +15234,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3ConfigurationRoleArnSelector
 {
     /// <summary>
@@ -14529,6 +15255,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -14589,6 +15316,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfigurationVpcConfig
 {
     /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
@@ -14606,6 +15334,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessConfiguration
 {
     /// <summary>Buffer incoming data for the specified period of time, in seconds between 0 to 900, before delivering it to the destination.  The default value is 300s.</summary>
@@ -14671,6 +15400,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderOpensearchserverlessCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -14689,6 +15419,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationC
 /// <summary>The password for the username above. This value is required if secrets_manager_configuration is not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -14706,6 +15437,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -14719,6 +15451,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -14732,6 +15465,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -14751,6 +15485,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -14767,6 +15502,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationRoleArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -14778,6 +15514,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationRoleArnRef
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -14802,6 +15539,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationR
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -14821,6 +15559,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -14837,6 +15576,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationRoleArnSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -14848,6 +15588,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationRoleArnSel
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -14872,6 +15613,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationR
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationRoleArnSelector
 {
     /// <summary>
@@ -14898,6 +15640,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationBucketArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationBucketArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -14914,6 +15657,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationBucketArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationBucketArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -14925,6 +15669,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupCo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationBucketArnRefPolicy
 {
     /// <summary>
@@ -14949,6 +15694,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationBucketArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -14968,6 +15714,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationBucketArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationBucketArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -14984,6 +15731,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationBucketArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationBucketArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -14995,6 +15743,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupCo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationBucketArnSelectorPolicy
 {
     /// <summary>
@@ -15019,6 +15768,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationBucketArnSelector
 {
     /// <summary>
@@ -15039,6 +15789,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -15062,6 +15813,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -15078,6 +15830,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -15089,6 +15842,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupCo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -15113,6 +15867,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -15132,6 +15887,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -15148,6 +15904,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -15159,6 +15916,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupCo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -15183,6 +15941,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfigurationRoleArnSelector
 {
     /// <summary>
@@ -15203,6 +15962,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3BackupConfiguration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -15269,6 +16029,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -15285,6 +16046,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3Configur
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -15296,6 +16058,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3Configur
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationBucketArnRefPolicy
 {
     /// <summary>
@@ -15320,6 +16083,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationBucketArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -15339,6 +16103,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -15355,6 +16120,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3Configur
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -15366,6 +16132,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3Configur
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationBucketArnSelectorPolicy
 {
     /// <summary>
@@ -15390,6 +16157,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationBucketArnSelector
 {
     /// <summary>
@@ -15410,6 +16178,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -15433,6 +16202,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -15449,6 +16219,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3Configur
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -15460,6 +16231,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3Configur
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -15484,6 +16256,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -15503,6 +16276,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -15519,6 +16293,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3Configur
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -15530,6 +16305,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3Configur
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -15554,6 +16330,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3ConfigurationRoleArnSelector
 {
     /// <summary>
@@ -15574,6 +16351,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -15634,6 +16412,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationSecretsManagerConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -15651,6 +16430,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfigurationS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfiguration
 {
     /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
@@ -15723,6 +16503,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderRedshiftConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderServerSideEncryption
 {
     /// <summary>Whether to enable encryption at rest. Default is false.</summary>
@@ -15740,6 +16521,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderServerSideEncryption
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -15758,6 +16540,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 /// <summary>The passphrase for the private key.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationKeyPassphraseSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -15776,6 +16559,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 /// <summary>The private key for authentication. This value is required if secrets_manager_configuration is not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationPrivateKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -15793,6 +16577,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -15806,6 +16591,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -15819,6 +16605,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -15838,6 +16625,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -15854,6 +16642,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationRoleArnRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -15865,6 +16654,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationRoleArnRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -15889,6 +16679,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -15908,6 +16699,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -15924,6 +16716,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationRoleArnSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -15935,6 +16728,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationRoleArnSe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -15959,6 +16753,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationRoleArnSelector
 {
     /// <summary>
@@ -15985,6 +16780,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -16001,6 +16797,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3Configu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -16012,6 +16809,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3Configu
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationBucketArnRefPolicy
 {
     /// <summary>
@@ -16036,6 +16834,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationBucketArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -16055,6 +16854,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -16071,6 +16871,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3Configu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -16082,6 +16883,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3Configu
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationBucketArnSelectorPolicy
 {
     /// <summary>
@@ -16106,6 +16908,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationBucketArnSelector
 {
     /// <summary>
@@ -16126,6 +16929,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -16149,6 +16953,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -16165,6 +16970,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3Configu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -16176,6 +16982,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3Configu
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -16200,6 +17007,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -16219,6 +17027,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -16235,6 +17044,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3Configu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -16246,6 +17056,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3Configu
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -16270,6 +17081,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3ConfigurationRoleArnSelector
 {
     /// <summary>
@@ -16290,6 +17102,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -16350,6 +17163,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationSecretsManagerConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -16367,6 +17181,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationSnowflakeRoleConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -16380,6 +17195,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfigurationSnowflakeVpcConfiguration
 {
     /// <summary>The VPCE ID for Firehose to privately connect with Snowflake.</summary>
@@ -16389,6 +17205,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 {
     /// <summary>The URL of the Snowflake account. Format: https://[account_identifier].snowflakecomputing.com.</summary>
@@ -16486,6 +17303,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -16504,6 +17322,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationClo
 /// <summary>The GUID that you obtain from your Splunk cluster when you create a new HEC endpoint. This value is required if secrets_manager_configuration is not provided.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationHecTokenSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -16521,6 +17340,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationHec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -16534,6 +17354,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationPro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -16547,6 +17368,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationPro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -16566,6 +17388,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationPro
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -16582,6 +17405,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3Configurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -16593,6 +17417,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3Configurat
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationBucketArnRefPolicy
 {
     /// <summary>
@@ -16617,6 +17442,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3C
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationBucketArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -16636,6 +17462,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3C
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -16652,6 +17479,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3Configurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -16663,6 +17491,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3Configurat
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationBucketArnSelectorPolicy
 {
     /// <summary>
@@ -16687,6 +17516,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3C
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationBucketArnSelector
 {
     /// <summary>
@@ -16707,6 +17537,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3C
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -16730,6 +17561,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3C
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -16746,6 +17578,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3Configurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -16757,6 +17590,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3Configurat
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationRoleArnRefPolicy
 {
     /// <summary>
@@ -16781,6 +17615,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3C
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -16800,6 +17635,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3C
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -16816,6 +17652,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3Configurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -16827,6 +17664,7 @@ public enum V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3Configurat
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationRoleArnSelectorPolicy
 {
     /// <summary>
@@ -16851,6 +17689,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3C
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3ConfigurationRoleArnSelector
 {
     /// <summary>
@@ -16871,6 +17710,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3C
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -16931,6 +17771,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationS3C
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationSecretsManagerConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -16948,6 +17789,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfigurationSec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfiguration
 {
     /// <summary>Buffer incoming data for the specified period of time, in seconds between 0 to 60, before delivering it to the destination.  The default value is 60s.</summary>
@@ -17016,6 +17858,7 @@ public partial class V1beta1DeliveryStreamSpecInitProviderSplunkConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecInitProvider
 {
     /// <summary>This is the destination to where the data is delivered. The only options are s3 (Deprecated, use extended_s3 instead), extended_s3, redshift, elasticsearch, splunk, http_endpoint, opensearch, opensearchserverless and snowflake.</summary>
@@ -17092,6 +17935,7 @@ public partial class V1beta1DeliveryStreamSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -17116,6 +17960,7 @@ public enum V1beta1DeliveryStreamSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -17132,6 +17977,7 @@ public enum V1beta1DeliveryStreamSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeliveryStreamSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeliveryStreamSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -17143,6 +17989,7 @@ public enum V1beta1DeliveryStreamSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -17171,6 +18018,7 @@ public partial class V1beta1DeliveryStreamSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -17190,6 +18038,7 @@ public partial class V1beta1DeliveryStreamSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -17204,6 +18053,7 @@ public partial class V1beta1DeliveryStreamSpecWriteConnectionSecretToRef
 /// <summary>DeliveryStreamSpec defines the desired state of DeliveryStream</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamSpec
 {
     /// <summary>
@@ -17271,6 +18121,7 @@ public partial class V1beta1DeliveryStreamSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -17288,6 +18139,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -17301,6 +18153,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -17314,6 +18167,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -17327,6 +18181,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -17344,6 +18199,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -17388,6 +18244,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigurationVpcConfig
 {
     /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
@@ -17408,6 +18265,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfiguration
 {
     /// <summary>Buffer incoming data for the specified period of time, in seconds between 0 to 900, before delivering it to the destination.  The default value is 300s.</summary>
@@ -17469,6 +18327,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderElasticsearchConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -17486,6 +18345,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe
 {
     /// <summary>A list of how you want Kinesis Data Firehose to parse the date and time stamps that may be present in your input data JSON. To specify these format strings, follow the pattern syntax of JodaTime&apos;s DateTimeFormat format strings. For more information, see Class DateTimeFormat. You can also use the special value millis to parse time stamps in epoch milliseconds. If you don&apos;t specify a format, Kinesis Data Firehose uses java.sql.Timestamp::valueOf by default.</summary>
@@ -17495,6 +18355,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe
 {
     /// <summary>When set to true, which is the default, Kinesis Data Firehose converts JSON keys to lowercase before deserializing them.</summary>
@@ -17512,6 +18373,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer
 {
     /// <summary>Specifies the native Hive / HCatalog JsonSerDe. More details below. See hive_json_ser_de block below for details.</summary>
@@ -17525,6 +18387,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration
 {
     /// <summary>Specifies which deserializer to use. You can choose either the Apache Hive JSON SerDe or the OpenX JSON SerDe. See deserializer block below for details.</summary>
@@ -17534,6 +18397,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe
 {
     /// <summary>The Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.</summary>
@@ -17579,6 +18443,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe
 {
     /// <summary>The Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.</summary>
@@ -17608,6 +18473,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer
 {
     /// <summary>Specifies converting data to the ORC format before storing it in Amazon S3. For more information, see Apache ORC. See orc_ser_de block below for details.</summary>
@@ -17621,6 +18487,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration
 {
     /// <summary>Specifies which serializer to use. You can choose either the ORC SerDe or the Parquet SerDe. See serializer block below for details.</summary>
@@ -17630,6 +18497,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration
 {
     /// <summary>The ID of the AWS Glue Data Catalog. If you don&apos;t supply this, the AWS account ID is used by default.</summary>
@@ -17659,6 +18527,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDataFormatConversionConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -17680,6 +18549,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationDynamicPartitioningConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -17693,6 +18563,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -17706,6 +18577,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -17719,6 +18591,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -17732,6 +18605,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -17749,6 +18623,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3ConfigurationS3BackupConfiguration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -17793,6 +18668,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -17865,6 +18741,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderExtendedS3Configuratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -17882,6 +18759,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -17895,6 +18773,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -17908,6 +18787,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -17921,6 +18801,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationRequestConfigurationCommonAttributes
 {
     /// <summary>The name of the HTTP endpoint common attribute.</summary>
@@ -17934,6 +18815,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationRequestConfiguration
 {
     /// <summary>Describes the metadata sent to the HTTP endpoint destination. See common_attributes block below for details.</summary>
@@ -17947,6 +18829,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -17964,6 +18847,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -18008,6 +18892,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurationSecretsManagerConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -18025,6 +18910,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfiguration
 {
     /// <summary>Buffer incoming data for the specified period of time, in seconds, before delivering it to the destination. The default value is 300 (5 minutes).</summary>
@@ -18078,6 +18964,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderHttpEndpointConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -18095,6 +18982,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationCl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationDestinationTableConfiguration
 {
     /// <summary>Specifies the name of the AWS Glue database that contains the schema for the output data.</summary>
@@ -18116,6 +19004,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationDe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -18129,6 +19018,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -18142,6 +19032,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -18155,6 +19046,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -18172,6 +19064,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -18216,6 +19109,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfigurationS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfiguration
 {
     [JsonPropertyName("appendOnly")]
@@ -18267,6 +19161,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderIcebergConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderKinesisSourceConfiguration
 {
     /// <summary>The kinesis stream used as the source of the firehose delivery stream.</summary>
@@ -18280,6 +19175,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderKinesisSourceConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderMskSourceConfigurationAuthenticationConfiguration
 {
     /// <summary>The type of connectivity used to access the Amazon MSK cluster. Valid values: PUBLIC, PRIVATE.</summary>
@@ -18293,6 +19189,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderMskSourceConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderMskSourceConfiguration
 {
     /// <summary>The authentication configuration of the Amazon MSK cluster. See authentication_configuration block below for details.</summary>
@@ -18314,6 +19211,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderMskSourceConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -18331,6 +19229,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationDocumentIdOptions
 {
     /// <summary>The method for setting up document ID. Valid values: FIREHOSE_DEFAULT, NO_DOCUMENT_ID.</summary>
@@ -18340,6 +19239,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -18353,6 +19253,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -18366,6 +19267,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -18379,6 +19281,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -18396,6 +19299,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -18440,6 +19344,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfigurationVpcConfig
 {
     /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
@@ -18460,6 +19365,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfiguration
 {
     /// <summary>Buffer incoming data for the specified period of time, in seconds between 0 to 900, before delivering it to the destination.  The default value is 300s.</summary>
@@ -18525,6 +19431,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -18542,6 +19449,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -18555,6 +19463,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -18568,6 +19477,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -18581,6 +19491,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -18598,6 +19509,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -18642,6 +19554,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfigurationVpcConfig
 {
     /// <summary>The ARN of the IAM role to be assumed by Firehose for calling the Amazon EC2 configuration API and for creating network interfaces. Make sure role has necessary IAM permissions</summary>
@@ -18662,6 +19575,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessConfiguration
 {
     /// <summary>Buffer incoming data for the specified period of time, in seconds between 0 to 900, before delivering it to the destination.  The default value is 300s.</summary>
@@ -18711,6 +19625,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderOpensearchserverlessCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -18728,6 +19643,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -18741,6 +19657,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -18754,6 +19671,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -18767,6 +19685,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -18784,6 +19703,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS3BackupConfiguration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -18828,6 +19748,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -18845,6 +19766,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -18889,6 +19811,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationSecretsManagerConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -18906,6 +19829,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfigurationS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfiguration
 {
     /// <summary>The CloudWatch Logging Options for the delivery stream. See cloudwatch_logging_options block below for details.</summary>
@@ -18966,6 +19890,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderRedshiftConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderServerSideEncryption
 {
     /// <summary>Whether to enable encryption at rest. Default is false.</summary>
@@ -18983,6 +19908,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderServerSideEncryption
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -19000,6 +19926,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -19013,6 +19940,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -19026,6 +19954,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -19039,6 +19968,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -19056,6 +19986,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -19100,6 +20031,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationSecretsManagerConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -19117,6 +20049,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationSnowflakeRoleConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -19130,6 +20063,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfigurationSnowflakeVpcConfiguration
 {
     /// <summary>The VPCE ID for Firehose to privately connect with Snowflake.</summary>
@@ -19139,6 +20073,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfiguration
 {
     /// <summary>The URL of the Snowflake account. Format: https://[account_identifier].snowflakecomputing.com.</summary>
@@ -19220,6 +20155,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSnowflakeConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -19237,6 +20173,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationClo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationProcessingConfigurationProcessorsParameters
 {
     /// <summary>Parameter name. Valid Values: LambdaArn, NumberOfRetries, MetadataExtractionQuery, JsonParsingEngine, RoleArn, BufferSizeInMBs, BufferIntervalInSeconds, SubRecordType, Delimiter, CompressionFormat, DataMessageExtraction. Validation is done against AWS SDK constants; so values not explicitly listed may also work.</summary>
@@ -19250,6 +20187,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationPro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationProcessingConfigurationProcessors
 {
     /// <summary>Specifies the processor parameters as multiple blocks. See parameters block below for details.</summary>
@@ -19263,6 +20201,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationPro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationProcessingConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -19276,6 +20215,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationPro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationS3ConfigurationCloudwatchLoggingOptions
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -19293,6 +20233,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationS3C
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationS3Configuration
 {
     /// <summary>The ARN of the S3 bucket</summary>
@@ -19337,6 +20278,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationS3C
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationSecretsManagerConfiguration
 {
     /// <summary>Enables or disables the logging. Defaults to false.</summary>
@@ -19354,6 +20296,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfigurationSec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfiguration
 {
     /// <summary>Buffer incoming data for the specified period of time, in seconds between 0 to 60, before delivering it to the destination.  The default value is 60s.</summary>
@@ -19406,6 +20349,7 @@ public partial class V1beta1DeliveryStreamStatusAtProviderSplunkConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusAtProvider
 {
     /// <summary>The Amazon Resource Name (ARN) specifying the Stream</summary>
@@ -19497,6 +20441,7 @@ public partial class V1beta1DeliveryStreamStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatusConditions
 {
     /// <summary>
@@ -19540,6 +20485,7 @@ public partial class V1beta1DeliveryStreamStatusConditions
 /// <summary>DeliveryStreamStatus defines the observed state of DeliveryStream.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeliveryStreamStatus
 {
     [JsonPropertyName("atProvider")]
@@ -19558,9 +20504,13 @@ public partial class V1beta1DeliveryStreamStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>DeliveryStream is the Schema for the DeliveryStreams API. Provides a AWS Kinesis Firehose Delivery Stream</summary>
+/// <summary>
+/// DeliveryStream is the Schema for the DeliveryStreams API. Provides a AWS Kinesis Firehose Delivery Stream
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DeliveryStream : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DeliveryStreamSpec>, IStatus<V1beta1DeliveryStreamStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudwatchevents.aws.upbound.io;
-/// <summary>Connection is the Schema for the Connections API. Provides an EventBridge connection resource.</summary>
+/// <summary>
+/// Connection is the Schema for the Connections API. Provides an EventBridge connection resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ConnectionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Connection>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ConnectionList : IKubernetesObject<V1ListMeta>, IIte
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -58,6 +63,7 @@ public enum V1beta1ConnectionSpecDeletionPolicyEnum
 /// <summary>Header Value. Created and stored in AWS Secrets Manager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersApiKeyValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -75,6 +81,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersApiKeyValueSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersApiKey
 {
     /// <summary>Header Name.</summary>
@@ -89,6 +96,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersApiKey
 /// <summary>A password for the authorization. Created and stored in AWS Secrets Manager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersBasicPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -106,6 +114,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersBasicPassword
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersBasic
 {
     /// <summary>A password for the authorization. Created and stored in AWS Secrets Manager.</summary>
@@ -119,6 +128,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersBasic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersConnectivityParametersResourceParameters
 {
     /// <summary>ARN of the Amazon VPC Lattice resource configuration for the resource endpoint.</summary>
@@ -128,6 +138,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersConnectivityP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersConnectivityParameters
 {
     /// <summary>The parameters for EventBridge to use when invoking the resource endpoint. Documented below.</summary>
@@ -138,6 +149,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersConnectivityP
 /// <summary>Header Value. Created and stored in AWS Secrets Manager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersInvocationHttpParametersBodyValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -155,6 +167,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersInvocationHtt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersInvocationHttpParametersBody
 {
     /// <summary>Specified whether the value is secret.</summary>
@@ -173,6 +186,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersInvocationHtt
 /// <summary>Header Value. Created and stored in AWS Secrets Manager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersInvocationHttpParametersHeaderValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -190,6 +204,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersInvocationHtt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersInvocationHttpParametersHeader
 {
     /// <summary>Specified whether the value is secret.</summary>
@@ -208,6 +223,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersInvocationHtt
 /// <summary>Header Value. Created and stored in AWS Secrets Manager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersInvocationHttpParametersQueryStringValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -225,6 +241,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersInvocationHtt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersInvocationHttpParametersQueryString
 {
     /// <summary>Specified whether the value is secret.</summary>
@@ -242,6 +259,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersInvocationHtt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersInvocationHttpParameters
 {
     /// <summary>Contains additional body string parameters for the connection. You can include up to 100 additional body string parameters per request. Each additional parameter counts towards the event payload size, which cannot exceed 64 KB. Each parameter can contain the following:</summary>
@@ -260,6 +278,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersInvocationHtt
 /// <summary>The client secret for the credentials to use for authorization. Created and stored in AWS Secrets Manager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersOauthClientParametersClientSecretSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -277,6 +296,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersOauthClientPa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersOauthClientParameters
 {
     /// <summary>The client ID for the credentials to use for authorization. Created and stored in AWS Secrets Manager.</summary>
@@ -291,6 +311,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersOauthClientPa
 /// <summary>Header Value. Created and stored in AWS Secrets Manager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersOauthOauthHttpParametersBodyValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -308,6 +329,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersOauthOauthHtt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersOauthOauthHttpParametersBody
 {
     /// <summary>Specified whether the value is secret.</summary>
@@ -326,6 +348,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersOauthOauthHtt
 /// <summary>Header Value. Created and stored in AWS Secrets Manager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersOauthOauthHttpParametersHeaderValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -343,6 +366,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersOauthOauthHtt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersOauthOauthHttpParametersHeader
 {
     /// <summary>Specified whether the value is secret.</summary>
@@ -361,6 +385,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersOauthOauthHtt
 /// <summary>Header Value. Created and stored in AWS Secrets Manager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersOauthOauthHttpParametersQueryStringValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -378,6 +403,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersOauthOauthHtt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersOauthOauthHttpParametersQueryString
 {
     /// <summary>Specified whether the value is secret.</summary>
@@ -395,6 +421,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersOauthOauthHtt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersOauthOauthHttpParameters
 {
     /// <summary>Contains additional body string parameters for the connection. You can include up to 100 additional body string parameters per request. Each additional parameter counts towards the event payload size, which cannot exceed 64 KB. Each parameter can contain the following:</summary>
@@ -412,6 +439,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersOauthOauthHtt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParametersOauth
 {
     /// <summary>The URL to the authorization endpoint.</summary>
@@ -433,6 +461,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParametersOauth
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAuthParameters
 {
     /// <summary>Parameters used for API_KEY authorization. An API key to include in the header for each authentication request. A maximum of 1 are allowed. Conflicts with basic and oauth. Documented below.</summary>
@@ -458,6 +487,7 @@ public partial class V1beta1ConnectionSpecForProviderAuthParameters
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderInvocationConnectivityParametersResourceParameters
 {
     /// <summary>ARN of the Amazon VPC Lattice resource configuration for the resource endpoint.</summary>
@@ -467,6 +497,7 @@ public partial class V1beta1ConnectionSpecForProviderInvocationConnectivityParam
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderInvocationConnectivityParameters
 {
     /// <summary>The parameters for EventBridge to use when invoking the resource endpoint. Documented below.</summary>
@@ -482,6 +513,7 @@ public partial class V1beta1ConnectionSpecForProviderInvocationConnectivityParam
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderKmsKeyIdentifierRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecForProviderKmsKeyIdentifierRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -498,6 +530,7 @@ public enum V1beta1ConnectionSpecForProviderKmsKeyIdentifierRefPolicyResolutionE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderKmsKeyIdentifierRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecForProviderKmsKeyIdentifierRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -509,6 +542,7 @@ public enum V1beta1ConnectionSpecForProviderKmsKeyIdentifierRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderKmsKeyIdentifierRefPolicy
 {
     /// <summary>
@@ -533,6 +567,7 @@ public partial class V1beta1ConnectionSpecForProviderKmsKeyIdentifierRefPolicy
 /// <summary>Reference to a Key in kms to populate kmsKeyIdentifier.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderKmsKeyIdentifierRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -552,6 +587,7 @@ public partial class V1beta1ConnectionSpecForProviderKmsKeyIdentifierRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderKmsKeyIdentifierSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecForProviderKmsKeyIdentifierSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -568,6 +604,7 @@ public enum V1beta1ConnectionSpecForProviderKmsKeyIdentifierSelectorPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderKmsKeyIdentifierSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecForProviderKmsKeyIdentifierSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -579,6 +616,7 @@ public enum V1beta1ConnectionSpecForProviderKmsKeyIdentifierSelectorPolicyResolv
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderKmsKeyIdentifierSelectorPolicy
 {
     /// <summary>
@@ -603,6 +641,7 @@ public partial class V1beta1ConnectionSpecForProviderKmsKeyIdentifierSelectorPol
 /// <summary>Selector for a Key in kms to populate kmsKeyIdentifier.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderKmsKeyIdentifierSelector
 {
     /// <summary>
@@ -623,6 +662,7 @@ public partial class V1beta1ConnectionSpecForProviderKmsKeyIdentifierSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProvider
 {
     /// <summary>Parameters used for authorization. A maximum of 1 are allowed. Documented below.</summary>
@@ -664,6 +704,7 @@ public partial class V1beta1ConnectionSpecForProvider
 /// <summary>Header Value. Created and stored in AWS Secrets Manager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersApiKeyValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -681,6 +722,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersApiKeyValueS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersApiKey
 {
     /// <summary>Header Name.</summary>
@@ -695,6 +737,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersApiKey
 /// <summary>A password for the authorization. Created and stored in AWS Secrets Manager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersBasicPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -712,6 +755,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersBasicPasswor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersBasic
 {
     /// <summary>A password for the authorization. Created and stored in AWS Secrets Manager.</summary>
@@ -725,6 +769,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersBasic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersConnectivityParametersResourceParameters
 {
     /// <summary>ARN of the Amazon VPC Lattice resource configuration for the resource endpoint.</summary>
@@ -734,6 +779,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersConnectivity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersConnectivityParameters
 {
     /// <summary>The parameters for EventBridge to use when invoking the resource endpoint. Documented below.</summary>
@@ -744,6 +790,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersConnectivity
 /// <summary>Header Value. Created and stored in AWS Secrets Manager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersInvocationHttpParametersBodyValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -761,6 +808,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersInvocationHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersInvocationHttpParametersBody
 {
     /// <summary>Specified whether the value is secret.</summary>
@@ -779,6 +827,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersInvocationHt
 /// <summary>Header Value. Created and stored in AWS Secrets Manager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersInvocationHttpParametersHeaderValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -796,6 +845,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersInvocationHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersInvocationHttpParametersHeader
 {
     /// <summary>Specified whether the value is secret.</summary>
@@ -814,6 +864,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersInvocationHt
 /// <summary>Header Value. Created and stored in AWS Secrets Manager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersInvocationHttpParametersQueryStringValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -831,6 +882,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersInvocationHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersInvocationHttpParametersQueryString
 {
     /// <summary>Specified whether the value is secret.</summary>
@@ -848,6 +900,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersInvocationHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersInvocationHttpParameters
 {
     /// <summary>Contains additional body string parameters for the connection. You can include up to 100 additional body string parameters per request. Each additional parameter counts towards the event payload size, which cannot exceed 64 KB. Each parameter can contain the following:</summary>
@@ -866,6 +919,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersInvocationHt
 /// <summary>The client secret for the credentials to use for authorization. Created and stored in AWS Secrets Manager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauthClientParametersClientSecretSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -883,6 +937,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauthClientP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauthClientParameters
 {
     /// <summary>The client ID for the credentials to use for authorization. Created and stored in AWS Secrets Manager.</summary>
@@ -897,6 +952,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauthClientP
 /// <summary>Header Value. Created and stored in AWS Secrets Manager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauthOauthHttpParametersBodyValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -914,6 +970,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauthOauthHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauthOauthHttpParametersBody
 {
     /// <summary>Specified whether the value is secret.</summary>
@@ -932,6 +989,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauthOauthHt
 /// <summary>Header Value. Created and stored in AWS Secrets Manager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauthOauthHttpParametersHeaderValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -949,6 +1007,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauthOauthHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauthOauthHttpParametersHeader
 {
     /// <summary>Specified whether the value is secret.</summary>
@@ -967,6 +1026,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauthOauthHt
 /// <summary>Header Value. Created and stored in AWS Secrets Manager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauthOauthHttpParametersQueryStringValueSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -984,6 +1044,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauthOauthHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauthOauthHttpParametersQueryString
 {
     /// <summary>Specified whether the value is secret.</summary>
@@ -1001,6 +1062,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauthOauthHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauthOauthHttpParameters
 {
     /// <summary>Contains additional body string parameters for the connection. You can include up to 100 additional body string parameters per request. Each additional parameter counts towards the event payload size, which cannot exceed 64 KB. Each parameter can contain the following:</summary>
@@ -1018,6 +1080,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauthOauthHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauth
 {
     /// <summary>The URL to the authorization endpoint.</summary>
@@ -1039,6 +1102,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParametersOauth
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderAuthParameters
 {
     /// <summary>Parameters used for API_KEY authorization. An API key to include in the header for each authentication request. A maximum of 1 are allowed. Conflicts with basic and oauth. Documented below.</summary>
@@ -1064,6 +1128,7 @@ public partial class V1beta1ConnectionSpecInitProviderAuthParameters
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderInvocationConnectivityParametersResourceParameters
 {
     /// <summary>ARN of the Amazon VPC Lattice resource configuration for the resource endpoint.</summary>
@@ -1073,6 +1138,7 @@ public partial class V1beta1ConnectionSpecInitProviderInvocationConnectivityPara
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderInvocationConnectivityParameters
 {
     /// <summary>The parameters for EventBridge to use when invoking the resource endpoint. Documented below.</summary>
@@ -1088,6 +1154,7 @@ public partial class V1beta1ConnectionSpecInitProviderInvocationConnectivityPara
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderKmsKeyIdentifierRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecInitProviderKmsKeyIdentifierRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1104,6 +1171,7 @@ public enum V1beta1ConnectionSpecInitProviderKmsKeyIdentifierRefPolicyResolution
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderKmsKeyIdentifierRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecInitProviderKmsKeyIdentifierRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1115,6 +1183,7 @@ public enum V1beta1ConnectionSpecInitProviderKmsKeyIdentifierRefPolicyResolveEnu
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderKmsKeyIdentifierRefPolicy
 {
     /// <summary>
@@ -1139,6 +1208,7 @@ public partial class V1beta1ConnectionSpecInitProviderKmsKeyIdentifierRefPolicy
 /// <summary>Reference to a Key in kms to populate kmsKeyIdentifier.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderKmsKeyIdentifierRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1158,6 +1228,7 @@ public partial class V1beta1ConnectionSpecInitProviderKmsKeyIdentifierRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderKmsKeyIdentifierSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecInitProviderKmsKeyIdentifierSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1174,6 +1245,7 @@ public enum V1beta1ConnectionSpecInitProviderKmsKeyIdentifierSelectorPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderKmsKeyIdentifierSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecInitProviderKmsKeyIdentifierSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1185,6 +1257,7 @@ public enum V1beta1ConnectionSpecInitProviderKmsKeyIdentifierSelectorPolicyResol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderKmsKeyIdentifierSelectorPolicy
 {
     /// <summary>
@@ -1209,6 +1282,7 @@ public partial class V1beta1ConnectionSpecInitProviderKmsKeyIdentifierSelectorPo
 /// <summary>Selector for a Key in kms to populate kmsKeyIdentifier.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderKmsKeyIdentifierSelector
 {
     /// <summary>
@@ -1241,6 +1315,7 @@ public partial class V1beta1ConnectionSpecInitProviderKmsKeyIdentifierSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProvider
 {
     /// <summary>Parameters used for authorization. A maximum of 1 are allowed. Documented below.</summary>
@@ -1278,6 +1353,7 @@ public partial class V1beta1ConnectionSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1302,6 +1378,7 @@ public enum V1beta1ConnectionSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1318,6 +1395,7 @@ public enum V1beta1ConnectionSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1329,6 +1407,7 @@ public enum V1beta1ConnectionSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1357,6 +1436,7 @@ public partial class V1beta1ConnectionSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1376,6 +1456,7 @@ public partial class V1beta1ConnectionSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1390,6 +1471,7 @@ public partial class V1beta1ConnectionSpecWriteConnectionSecretToRef
 /// <summary>ConnectionSpec defines the desired state of Connection</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpec
 {
     /// <summary>
@@ -1457,6 +1539,7 @@ public partial class V1beta1ConnectionSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProviderAuthParametersApiKey
 {
     /// <summary>Header Name.</summary>
@@ -1466,6 +1549,7 @@ public partial class V1beta1ConnectionStatusAtProviderAuthParametersApiKey
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProviderAuthParametersBasic
 {
     /// <summary>A username for the authorization.</summary>
@@ -1475,6 +1559,7 @@ public partial class V1beta1ConnectionStatusAtProviderAuthParametersBasic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProviderAuthParametersConnectivityParametersResourceParameters
 {
     /// <summary>The Amazon Resource Name (ARN) of the connection.</summary>
@@ -1488,6 +1573,7 @@ public partial class V1beta1ConnectionStatusAtProviderAuthParametersConnectivity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProviderAuthParametersConnectivityParameters
 {
     /// <summary>The parameters for EventBridge to use when invoking the resource endpoint. Documented below.</summary>
@@ -1497,6 +1583,7 @@ public partial class V1beta1ConnectionStatusAtProviderAuthParametersConnectivity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProviderAuthParametersInvocationHttpParametersBody
 {
     /// <summary>Specified whether the value is secret.</summary>
@@ -1510,6 +1597,7 @@ public partial class V1beta1ConnectionStatusAtProviderAuthParametersInvocationHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProviderAuthParametersInvocationHttpParametersHeader
 {
     /// <summary>Specified whether the value is secret.</summary>
@@ -1523,6 +1611,7 @@ public partial class V1beta1ConnectionStatusAtProviderAuthParametersInvocationHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProviderAuthParametersInvocationHttpParametersQueryString
 {
     /// <summary>Specified whether the value is secret.</summary>
@@ -1536,6 +1625,7 @@ public partial class V1beta1ConnectionStatusAtProviderAuthParametersInvocationHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProviderAuthParametersInvocationHttpParameters
 {
     /// <summary>Contains additional body string parameters for the connection. You can include up to 100 additional body string parameters per request. Each additional parameter counts towards the event payload size, which cannot exceed 64 KB. Each parameter can contain the following:</summary>
@@ -1553,6 +1643,7 @@ public partial class V1beta1ConnectionStatusAtProviderAuthParametersInvocationHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProviderAuthParametersOauthClientParameters
 {
     /// <summary>The client ID for the credentials to use for authorization. Created and stored in AWS Secrets Manager.</summary>
@@ -1562,6 +1653,7 @@ public partial class V1beta1ConnectionStatusAtProviderAuthParametersOauthClientP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProviderAuthParametersOauthOauthHttpParametersBody
 {
     /// <summary>Specified whether the value is secret.</summary>
@@ -1575,6 +1667,7 @@ public partial class V1beta1ConnectionStatusAtProviderAuthParametersOauthOauthHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProviderAuthParametersOauthOauthHttpParametersHeader
 {
     /// <summary>Specified whether the value is secret.</summary>
@@ -1588,6 +1681,7 @@ public partial class V1beta1ConnectionStatusAtProviderAuthParametersOauthOauthHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProviderAuthParametersOauthOauthHttpParametersQueryString
 {
     /// <summary>Specified whether the value is secret.</summary>
@@ -1601,6 +1695,7 @@ public partial class V1beta1ConnectionStatusAtProviderAuthParametersOauthOauthHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProviderAuthParametersOauthOauthHttpParameters
 {
     /// <summary>Contains additional body string parameters for the connection. You can include up to 100 additional body string parameters per request. Each additional parameter counts towards the event payload size, which cannot exceed 64 KB. Each parameter can contain the following:</summary>
@@ -1618,6 +1713,7 @@ public partial class V1beta1ConnectionStatusAtProviderAuthParametersOauthOauthHt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProviderAuthParametersOauth
 {
     /// <summary>The URL to the authorization endpoint.</summary>
@@ -1639,6 +1735,7 @@ public partial class V1beta1ConnectionStatusAtProviderAuthParametersOauth
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProviderAuthParameters
 {
     /// <summary>Parameters used for API_KEY authorization. An API key to include in the header for each authentication request. A maximum of 1 are allowed. Conflicts with basic and oauth. Documented below.</summary>
@@ -1664,6 +1761,7 @@ public partial class V1beta1ConnectionStatusAtProviderAuthParameters
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProviderInvocationConnectivityParametersResourceParameters
 {
     /// <summary>The Amazon Resource Name (ARN) of the connection.</summary>
@@ -1677,6 +1775,7 @@ public partial class V1beta1ConnectionStatusAtProviderInvocationConnectivityPara
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProviderInvocationConnectivityParameters
 {
     /// <summary>The parameters for EventBridge to use when invoking the resource endpoint. Documented below.</summary>
@@ -1686,6 +1785,7 @@ public partial class V1beta1ConnectionStatusAtProviderInvocationConnectivityPara
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProvider
 {
     /// <summary>The Amazon Resource Name (ARN) of the connection.</summary>
@@ -1730,6 +1830,7 @@ public partial class V1beta1ConnectionStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusConditions
 {
     /// <summary>
@@ -1773,6 +1874,7 @@ public partial class V1beta1ConnectionStatusConditions
 /// <summary>ConnectionStatus defines the observed state of Connection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1791,9 +1893,13 @@ public partial class V1beta1ConnectionStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Connection is the Schema for the Connections API. Provides an EventBridge connection resource.</summary>
+/// <summary>
+/// Connection is the Schema for the Connections API. Provides an EventBridge connection resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Connection : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ConnectionSpec>, IStatus<V1beta1ConnectionStatus?>
 {

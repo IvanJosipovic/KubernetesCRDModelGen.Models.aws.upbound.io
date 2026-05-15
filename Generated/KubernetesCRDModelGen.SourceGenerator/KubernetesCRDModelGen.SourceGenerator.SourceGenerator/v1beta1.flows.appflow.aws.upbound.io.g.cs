@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appflow.aws.upbound.io;
-/// <summary>Flow is the Schema for the Flows API. Provides an AppFlow Flow resource.</summary>
+/// <summary>
+/// Flow is the Schema for the Flows API. Provides an AppFlow Flow resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FlowList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Flow>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1FlowList : IKubernetesObject<V1ListMeta>, IItems<V1b
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1FlowSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -74,6 +80,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnector
 {
     /// <summary>Custom properties that are specific to the connector when it&apos;s used as a destination in the flow. Maximum of 50 items.</summary>
@@ -99,6 +106,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles
 {
     /// <summary>Unique name of the Amazon Connect Customer Profiles domain.</summary>
@@ -112,6 +120,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -129,6 +138,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridge
 {
     /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
@@ -142,6 +152,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -159,6 +170,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycode
 {
     /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
@@ -172,12 +184,14 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesLookoutMetrics
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -195,6 +209,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesMarketo
 {
     /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
@@ -208,6 +223,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -225,6 +241,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesRedshift
 {
     /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
@@ -252,6 +269,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -268,6 +286,7 @@ public enum V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -279,6 +298,7 @@ public enum V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRefPolicy
 {
     /// <summary>
@@ -303,6 +323,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 /// <summary>Reference to a BucketPolicy in s3 to populate bucketName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -322,6 +343,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -338,6 +360,7 @@ public enum V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -349,6 +372,7 @@ public enum V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorP
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicy
 {
     /// <summary>
@@ -373,6 +397,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 /// <summary>Selector for a BucketPolicy in s3 to populate bucketName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelector
 {
     /// <summary>
@@ -393,6 +418,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig
 {
     /// <summary>Whether Amazon AppFlow aggregates the flow records into a single file, or leave them unaggregated. Valid values are None and SingleFile.</summary>
@@ -406,6 +432,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig
 {
     /// <summary>Determines the level of granularity that&apos;s included in the prefix. Valid values are YEAR, MONTH, DAY, HOUR, and MINUTE.</summary>
@@ -423,6 +450,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig
 {
     /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See Aggregation Config for more details.</summary>
@@ -444,6 +472,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -469,6 +498,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -486,6 +516,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforce
 {
     /// <summary>Specifies which Salesforce API is used by Amazon AppFlow when your flow transfers data to Salesforce.</summary>
@@ -511,6 +542,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -528,6 +560,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -541,6 +574,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSapoData
 {
     /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
@@ -566,6 +600,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -583,6 +618,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflake
 {
     /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
@@ -604,6 +640,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig
 {
     /// <summary>Whether Amazon AppFlow aggregates the flow records into a single file, or leave them unaggregated. Valid values are None and SingleFile.</summary>
@@ -613,6 +650,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig
 {
     /// <summary>Determines the level of granularity that&apos;s included in the prefix. Valid values are YEAR, MONTH, DAY, HOUR, and MINUTE.</summary>
@@ -630,6 +668,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig
 {
     /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See Aggregation Config for more details.</summary>
@@ -647,6 +686,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolver
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -664,6 +704,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -681,6 +722,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesZendesk
 {
     /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
@@ -702,6 +744,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationConnectorProperties
 {
     /// <summary>Properties that are required to query the custom Connector. See Custom Connector Destination Properties for more details.</summary>
@@ -758,6 +801,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfigDestinationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderDestinationFlowConfig
 {
     /// <summary>API version that the destination connector uses.</summary>
@@ -779,6 +823,7 @@ public partial class V1beta1FlowSpecForProviderDestinationFlowConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderMetadataCatalogConfigGlueDataCatalog
 {
     /// <summary>The name of an existing Glue database to store the metadata tables that Amazon AppFlow creates.</summary>
@@ -796,6 +841,7 @@ public partial class V1beta1FlowSpecForProviderMetadataCatalogConfigGlueDataCata
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderMetadataCatalogConfig
 {
     [JsonPropertyName("glueDataCatalog")]
@@ -804,6 +850,7 @@ public partial class V1beta1FlowSpecForProviderMetadataCatalogConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigIncrementalPullConfig
 {
     /// <summary>Field that specifies the date time or timestamp field as the criteria to use when importing incremental records from the source.</summary>
@@ -813,6 +860,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigIncrementalPullCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesAmplitude
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -822,6 +870,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesCustomConnector
 {
     /// <summary>Custom properties that are specific to the connector when it&apos;s used as a destination in the flow. Maximum of 50 items.</summary>
@@ -835,6 +884,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesDatadog
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -844,6 +894,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesDynatrace
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -853,6 +904,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -862,6 +914,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesInforNexus
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -871,6 +924,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesMarketo
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -886,6 +940,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -902,6 +957,7 @@ public enum V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -913,6 +969,7 @@ public enum V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRefPolicy
 {
     /// <summary>
@@ -937,6 +994,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 /// <summary>Reference to a BucketPolicy in s3 to populate bucketName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -956,6 +1014,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -972,6 +1031,7 @@ public enum V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -983,6 +1043,7 @@ public enum V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicy
 {
     /// <summary>
@@ -1007,6 +1068,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 /// <summary>Selector for a BucketPolicy in s3 to populate bucketName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelector
 {
     /// <summary>
@@ -1027,6 +1089,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig
 {
     /// <summary>File type that Amazon AppFlow gets from your Amazon S3 bucket. Valid values are CSV and JSON.</summary>
@@ -1036,6 +1099,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -1061,6 +1125,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSalesforce
 {
     /// <summary>Specifies which Salesforce API is used by Amazon AppFlow when your flow transfers data to Salesforce.</summary>
@@ -1082,6 +1147,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfig
 {
     /// <summary>he maximum number of records that Amazon AppFlow receives in each page of the response from your SAP application.</summary>
@@ -1091,6 +1157,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfig
 {
     /// <summary>he maximum number of records that Amazon AppFlow receives in each page of the response from your SAP application.</summary>
@@ -1100,6 +1167,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSapoData
 {
     /// <summary>Object path specified in the SAPOData flow destination.</summary>
@@ -1117,6 +1185,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesServiceNow
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -1126,6 +1195,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSingular
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -1135,6 +1205,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSlack
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -1144,6 +1215,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesTrendmicro
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -1153,6 +1225,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesVeeva
 {
     /// <summary>Document type specified in the Veeva document extract flow.</summary>
@@ -1178,6 +1251,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesZendesk
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -1187,6 +1261,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorProperties
 {
     /// <summary>Information that is required for querying Amplitude. See Generic Source Properties for more details.</summary>
@@ -1256,6 +1331,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderSourceFlowConfig
 {
     /// <summary>API version that the destination connector uses.</summary>
@@ -1281,6 +1357,7 @@ public partial class V1beta1FlowSpecForProviderSourceFlowConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderTaskConnectorOperator
 {
     /// <summary>Information that is required for querying Amplitude. See Generic Source Properties for more details.</summary>
@@ -1350,6 +1427,7 @@ public partial class V1beta1FlowSpecForProviderTaskConnectorOperator
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderTask
 {
     /// <summary>Operation to be performed on the provided source fields. See Connector Operator for details.</summary>
@@ -1375,6 +1453,7 @@ public partial class V1beta1FlowSpecForProviderTask
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderTriggerConfigTriggerPropertiesScheduled
 {
     /// <summary>Whether a scheduled flow has an incremental data transfer or a complete data transfer for each flow run. Valid values are Incremental and Complete.</summary>
@@ -1408,6 +1487,7 @@ public partial class V1beta1FlowSpecForProviderTriggerConfigTriggerPropertiesSch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderTriggerConfigTriggerProperties
 {
     [JsonPropertyName("scheduled")]
@@ -1416,6 +1496,7 @@ public partial class V1beta1FlowSpecForProviderTriggerConfigTriggerProperties
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderTriggerConfig
 {
     /// <summary>Configuration details of a schedule-triggered flow as defined by the user. Currently, these settings only apply to the Scheduled trigger type. See Scheduled Trigger Properties for details.</summary>
@@ -1429,6 +1510,7 @@ public partial class V1beta1FlowSpecForProviderTriggerConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProvider
 {
     /// <summary>Description of the flow you want to create.</summary>
@@ -1473,6 +1555,7 @@ public partial class V1beta1FlowSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -1490,6 +1573,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnector
 {
     /// <summary>Custom properties that are specific to the connector when it&apos;s used as a destination in the flow. Maximum of 50 items.</summary>
@@ -1515,6 +1599,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles
 {
     /// <summary>Unique name of the Amazon Connect Customer Profiles domain.</summary>
@@ -1528,6 +1613,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -1545,6 +1631,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridge
 {
     /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
@@ -1558,6 +1645,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -1575,6 +1663,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycode
 {
     /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
@@ -1588,12 +1677,14 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesLookoutMetrics
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -1611,6 +1702,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesMarketo
 {
     /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
@@ -1624,6 +1716,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -1641,6 +1734,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesRedshift
 {
     /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
@@ -1668,6 +1762,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1684,6 +1779,7 @@ public enum V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1695,6 +1791,7 @@ public enum V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnector
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRefPolicy
 {
     /// <summary>
@@ -1719,6 +1816,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 /// <summary>Reference to a BucketPolicy in s3 to populate bucketName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1738,6 +1836,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1754,6 +1853,7 @@ public enum V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1765,6 +1865,7 @@ public enum V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnector
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicy
 {
     /// <summary>
@@ -1789,6 +1890,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 /// <summary>Selector for a BucketPolicy in s3 to populate bucketName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelector
 {
     /// <summary>
@@ -1809,6 +1911,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig
 {
     /// <summary>Whether Amazon AppFlow aggregates the flow records into a single file, or leave them unaggregated. Valid values are None and SingleFile.</summary>
@@ -1822,6 +1925,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig
 {
     /// <summary>Determines the level of granularity that&apos;s included in the prefix. Valid values are YEAR, MONTH, DAY, HOUR, and MINUTE.</summary>
@@ -1839,6 +1943,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig
 {
     /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See Aggregation Config for more details.</summary>
@@ -1860,6 +1965,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -1885,6 +1991,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -1902,6 +2009,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforce
 {
     /// <summary>Specifies which Salesforce API is used by Amazon AppFlow when your flow transfers data to Salesforce.</summary>
@@ -1927,6 +2035,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -1944,6 +2053,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -1957,6 +2067,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSapoData
 {
     /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
@@ -1982,6 +2093,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -1999,6 +2111,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflake
 {
     /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
@@ -2020,6 +2133,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig
 {
     /// <summary>Whether Amazon AppFlow aggregates the flow records into a single file, or leave them unaggregated. Valid values are None and SingleFile.</summary>
@@ -2029,6 +2143,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig
 {
     /// <summary>Determines the level of granularity that&apos;s included in the prefix. Valid values are YEAR, MONTH, DAY, HOUR, and MINUTE.</summary>
@@ -2046,6 +2161,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig
 {
     /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See Aggregation Config for more details.</summary>
@@ -2063,6 +2179,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolver
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -2080,6 +2197,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -2097,6 +2215,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesZendesk
 {
     /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
@@ -2118,6 +2237,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestinationConnectorProperties
 {
     /// <summary>Properties that are required to query the custom Connector. See Custom Connector Destination Properties for more details.</summary>
@@ -2174,6 +2294,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderDestinationFlowConfig
 {
     /// <summary>API version that the destination connector uses.</summary>
@@ -2195,6 +2316,7 @@ public partial class V1beta1FlowSpecInitProviderDestinationFlowConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderMetadataCatalogConfigGlueDataCatalog
 {
     /// <summary>The name of an existing Glue database to store the metadata tables that Amazon AppFlow creates.</summary>
@@ -2212,6 +2334,7 @@ public partial class V1beta1FlowSpecInitProviderMetadataCatalogConfigGlueDataCat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderMetadataCatalogConfig
 {
     [JsonPropertyName("glueDataCatalog")]
@@ -2220,6 +2343,7 @@ public partial class V1beta1FlowSpecInitProviderMetadataCatalogConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigIncrementalPullConfig
 {
     /// <summary>Field that specifies the date time or timestamp field as the criteria to use when importing incremental records from the source.</summary>
@@ -2229,6 +2353,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigIncrementalPullC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesAmplitude
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -2238,6 +2363,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesCustomConnector
 {
     /// <summary>Custom properties that are specific to the connector when it&apos;s used as a destination in the flow. Maximum of 50 items.</summary>
@@ -2251,6 +2377,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesDatadog
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -2260,6 +2387,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesDynatrace
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -2269,6 +2397,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -2278,6 +2407,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesInforNexus
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -2287,6 +2417,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesMarketo
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -2302,6 +2433,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2318,6 +2450,7 @@ public enum V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorProperties
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2329,6 +2462,7 @@ public enum V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorProperties
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRefPolicy
 {
     /// <summary>
@@ -2353,6 +2487,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 /// <summary>Reference to a BucketPolicy in s3 to populate bucketName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2372,6 +2507,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2388,6 +2524,7 @@ public enum V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorProperties
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2399,6 +2536,7 @@ public enum V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorProperties
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicy
 {
     /// <summary>
@@ -2423,6 +2561,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 /// <summary>Selector for a BucketPolicy in s3 to populate bucketName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelector
 {
     /// <summary>
@@ -2443,6 +2582,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig
 {
     /// <summary>File type that Amazon AppFlow gets from your Amazon S3 bucket. Valid values are CSV and JSON.</summary>
@@ -2452,6 +2592,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -2477,6 +2618,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSalesforce
 {
     /// <summary>Specifies which Salesforce API is used by Amazon AppFlow when your flow transfers data to Salesforce.</summary>
@@ -2498,6 +2640,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfig
 {
     /// <summary>he maximum number of records that Amazon AppFlow receives in each page of the response from your SAP application.</summary>
@@ -2507,6 +2650,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfig
 {
     /// <summary>he maximum number of records that Amazon AppFlow receives in each page of the response from your SAP application.</summary>
@@ -2516,6 +2660,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSapoData
 {
     /// <summary>Object path specified in the SAPOData flow destination.</summary>
@@ -2533,6 +2678,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesServiceNow
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -2542,6 +2688,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSingular
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -2551,6 +2698,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSlack
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -2560,6 +2708,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesTrendmicro
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -2569,6 +2718,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesVeeva
 {
     /// <summary>Document type specified in the Veeva document extract flow.</summary>
@@ -2594,6 +2744,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesZendesk
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -2603,6 +2754,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorProperties
 {
     /// <summary>Information that is required for querying Amplitude. See Generic Source Properties for more details.</summary>
@@ -2672,6 +2824,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderSourceFlowConfig
 {
     /// <summary>API version that the destination connector uses.</summary>
@@ -2697,6 +2850,7 @@ public partial class V1beta1FlowSpecInitProviderSourceFlowConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderTaskConnectorOperator
 {
     /// <summary>Information that is required for querying Amplitude. See Generic Source Properties for more details.</summary>
@@ -2766,6 +2920,7 @@ public partial class V1beta1FlowSpecInitProviderTaskConnectorOperator
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderTask
 {
     /// <summary>Operation to be performed on the provided source fields. See Connector Operator for details.</summary>
@@ -2791,6 +2946,7 @@ public partial class V1beta1FlowSpecInitProviderTask
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderTriggerConfigTriggerPropertiesScheduled
 {
     /// <summary>Whether a scheduled flow has an incremental data transfer or a complete data transfer for each flow run. Valid values are Incremental and Complete.</summary>
@@ -2824,6 +2980,7 @@ public partial class V1beta1FlowSpecInitProviderTriggerConfigTriggerPropertiesSc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderTriggerConfigTriggerProperties
 {
     [JsonPropertyName("scheduled")]
@@ -2832,6 +2989,7 @@ public partial class V1beta1FlowSpecInitProviderTriggerConfigTriggerProperties
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderTriggerConfig
 {
     /// <summary>Configuration details of a schedule-triggered flow as defined by the user. Currently, these settings only apply to the Scheduled trigger type. See Scheduled Trigger Properties for details.</summary>
@@ -2857,6 +3015,7 @@ public partial class V1beta1FlowSpecInitProviderTriggerConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProvider
 {
     /// <summary>Description of the flow you want to create.</summary>
@@ -2898,6 +3057,7 @@ public partial class V1beta1FlowSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -2922,6 +3082,7 @@ public enum V1beta1FlowSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2938,6 +3099,7 @@ public enum V1beta1FlowSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2949,6 +3111,7 @@ public enum V1beta1FlowSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -2977,6 +3140,7 @@ public partial class V1beta1FlowSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2996,6 +3160,7 @@ public partial class V1beta1FlowSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -3010,6 +3175,7 @@ public partial class V1beta1FlowSpecWriteConnectionSecretToRef
 /// <summary>FlowSpec defines the desired state of Flow</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpec
 {
     /// <summary>
@@ -3077,6 +3243,7 @@ public partial class V1beta1FlowSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -3094,6 +3261,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnector
 {
     /// <summary>Custom properties that are specific to the connector when it&apos;s used as a destination in the flow. Maximum of 50 items.</summary>
@@ -3119,6 +3287,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles
 {
     /// <summary>Unique name of the Amazon Connect Customer Profiles domain.</summary>
@@ -3132,6 +3301,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -3149,6 +3319,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridge
 {
     /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
@@ -3162,6 +3333,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -3179,6 +3351,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycode
 {
     /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
@@ -3192,12 +3365,14 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesLookoutMetrics
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -3215,6 +3390,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesMarketo
 {
     /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
@@ -3228,6 +3404,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -3245,6 +3422,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesRedshift
 {
     /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
@@ -3266,6 +3444,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig
 {
     /// <summary>Whether Amazon AppFlow aggregates the flow records into a single file, or leave them unaggregated. Valid values are None and SingleFile.</summary>
@@ -3279,6 +3458,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig
 {
     /// <summary>Determines the level of granularity that&apos;s included in the prefix. Valid values are YEAR, MONTH, DAY, HOUR, and MINUTE.</summary>
@@ -3296,6 +3476,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig
 {
     /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See Aggregation Config for more details.</summary>
@@ -3317,6 +3498,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesS3
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -3334,6 +3516,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -3351,6 +3534,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforce
 {
     /// <summary>Specifies which Salesforce API is used by Amazon AppFlow when your flow transfers data to Salesforce.</summary>
@@ -3376,6 +3560,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -3393,6 +3578,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -3406,6 +3592,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSapoData
 {
     /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
@@ -3431,6 +3618,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -3448,6 +3636,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflake
 {
     /// <summary>Object key for the bucket in which Amazon AppFlow places the destination files.</summary>
@@ -3469,6 +3658,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig
 {
     /// <summary>Whether Amazon AppFlow aggregates the flow records into a single file, or leave them unaggregated. Valid values are None and SingleFile.</summary>
@@ -3478,6 +3668,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig
 {
     /// <summary>Determines the level of granularity that&apos;s included in the prefix. Valid values are YEAR, MONTH, DAY, HOUR, and MINUTE.</summary>
@@ -3495,6 +3686,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig
 {
     /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See Aggregation Config for more details.</summary>
@@ -3512,6 +3704,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolver
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -3529,6 +3722,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -3546,6 +3740,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesZendesk
 {
     /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See Error Handling Config for more details.</summary>
@@ -3567,6 +3762,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestinationConnectorProperties
 {
     /// <summary>Properties that are required to query the custom Connector. See Custom Connector Destination Properties for more details.</summary>
@@ -3623,6 +3819,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfigDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderDestinationFlowConfig
 {
     /// <summary>API version that the destination connector uses.</summary>
@@ -3644,6 +3841,7 @@ public partial class V1beta1FlowStatusAtProviderDestinationFlowConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderMetadataCatalogConfigGlueDataCatalog
 {
     /// <summary>The name of an existing Glue database to store the metadata tables that Amazon AppFlow creates.</summary>
@@ -3661,6 +3859,7 @@ public partial class V1beta1FlowStatusAtProviderMetadataCatalogConfigGlueDataCat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderMetadataCatalogConfig
 {
     [JsonPropertyName("glueDataCatalog")]
@@ -3669,6 +3868,7 @@ public partial class V1beta1FlowStatusAtProviderMetadataCatalogConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigIncrementalPullConfig
 {
     /// <summary>Field that specifies the date time or timestamp field as the criteria to use when importing incremental records from the source.</summary>
@@ -3678,6 +3878,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigIncrementalPullC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesAmplitude
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -3687,6 +3888,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesCustomConnector
 {
     /// <summary>Custom properties that are specific to the connector when it&apos;s used as a destination in the flow. Maximum of 50 items.</summary>
@@ -3700,6 +3902,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesDatadog
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -3709,6 +3912,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesDynatrace
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -3718,6 +3922,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -3727,6 +3932,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesInforNexus
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -3736,6 +3942,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesMarketo
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -3745,6 +3952,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig
 {
     /// <summary>File type that Amazon AppFlow gets from your Amazon S3 bucket. Valid values are CSV and JSON.</summary>
@@ -3754,6 +3962,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesS3
 {
     /// <summary>Amazon S3 bucket name in which Amazon AppFlow places the transferred data.</summary>
@@ -3771,6 +3980,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSalesforce
 {
     /// <summary>Specifies which Salesforce API is used by Amazon AppFlow when your flow transfers data to Salesforce.</summary>
@@ -3792,6 +4002,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfig
 {
     /// <summary>he maximum number of records that Amazon AppFlow receives in each page of the response from your SAP application.</summary>
@@ -3801,6 +4012,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfig
 {
     /// <summary>he maximum number of records that Amazon AppFlow receives in each page of the response from your SAP application.</summary>
@@ -3810,6 +4022,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSapoData
 {
     /// <summary>Object path specified in the SAPOData flow destination.</summary>
@@ -3827,6 +4040,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesServiceNow
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -3836,6 +4050,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSingular
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -3845,6 +4060,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSlack
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -3854,6 +4070,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesTrendmicro
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -3863,6 +4080,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesVeeva
 {
     /// <summary>Document type specified in the Veeva document extract flow.</summary>
@@ -3888,6 +4106,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesZendesk
 {
     /// <summary>Object specified in the flow destination.</summary>
@@ -3897,6 +4116,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorProperties
 {
     /// <summary>Information that is required for querying Amplitude. See Generic Source Properties for more details.</summary>
@@ -3966,6 +4186,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderSourceFlowConfig
 {
     /// <summary>API version that the destination connector uses.</summary>
@@ -3991,6 +4212,7 @@ public partial class V1beta1FlowStatusAtProviderSourceFlowConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderTaskConnectorOperator
 {
     /// <summary>Information that is required for querying Amplitude. See Generic Source Properties for more details.</summary>
@@ -4060,6 +4282,7 @@ public partial class V1beta1FlowStatusAtProviderTaskConnectorOperator
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderTask
 {
     /// <summary>Operation to be performed on the provided source fields. See Connector Operator for details.</summary>
@@ -4085,6 +4308,7 @@ public partial class V1beta1FlowStatusAtProviderTask
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderTriggerConfigTriggerPropertiesScheduled
 {
     /// <summary>Whether a scheduled flow has an incremental data transfer or a complete data transfer for each flow run. Valid values are Incremental and Complete.</summary>
@@ -4118,6 +4342,7 @@ public partial class V1beta1FlowStatusAtProviderTriggerConfigTriggerPropertiesSc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderTriggerConfigTriggerProperties
 {
     [JsonPropertyName("scheduled")]
@@ -4126,6 +4351,7 @@ public partial class V1beta1FlowStatusAtProviderTriggerConfigTriggerProperties
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderTriggerConfig
 {
     /// <summary>Configuration details of a schedule-triggered flow as defined by the user. Currently, these settings only apply to the Scheduled trigger type. See Scheduled Trigger Properties for details.</summary>
@@ -4139,6 +4365,7 @@ public partial class V1beta1FlowStatusAtProviderTriggerConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProvider
 {
     /// <summary>Flow&apos;s ARN.</summary>
@@ -4199,6 +4426,7 @@ public partial class V1beta1FlowStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusConditions
 {
     /// <summary>
@@ -4242,6 +4470,7 @@ public partial class V1beta1FlowStatusConditions
 /// <summary>FlowStatus defines the observed state of Flow.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatus
 {
     [JsonPropertyName("atProvider")]
@@ -4260,9 +4489,13 @@ public partial class V1beta1FlowStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Flow is the Schema for the Flows API. Provides an AppFlow Flow resource.</summary>
+/// <summary>
+/// Flow is the Schema for the Flows API. Provides an AppFlow Flow resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Flow : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1FlowSpec>, IStatus<V1beta1FlowStatus?>
 {

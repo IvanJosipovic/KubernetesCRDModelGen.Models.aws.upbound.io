@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudfront.aws.upbound.io;
-/// <summary>RealtimeLogConfig is the Schema for the RealtimeLogConfigs API. Provides a CloudFront real-time log configuration resource.</summary>
+/// <summary>
+/// RealtimeLogConfig is the Schema for the RealtimeLogConfigs API. Provides a CloudFront real-time log configuration resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RealtimeLogConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RealtimeLogConfig>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1RealtimeLogConfigList : IKubernetesObject<V1ListMeta
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RealtimeLogConfigSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1RealtimeLogConfigSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStrea
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStrea
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStrea
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnSelector
 {
     /// <summary>
@@ -210,6 +223,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStrea
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -226,6 +240,7 @@ public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigSt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -237,6 +252,7 @@ public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigSt
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnRefPolicy
 {
     /// <summary>
@@ -261,6 +277,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStrea
 /// <summary>Reference to a Stream in kinesis to populate streamArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -280,6 +297,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStrea
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -296,6 +314,7 @@ public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigSt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -307,6 +326,7 @@ public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigSt
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnSelectorPolicy
 {
     /// <summary>
@@ -331,6 +351,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStrea
 /// <summary>Selector for a Stream in kinesis to populate streamArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnSelector
 {
     /// <summary>
@@ -351,6 +372,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStrea
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfig
 {
     /// <summary>
@@ -383,6 +405,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStrea
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecForProviderEndpoint
 {
     /// <summary>The Amazon Kinesis data stream configuration.</summary>
@@ -396,6 +419,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProviderEndpoint
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecForProvider
 {
     /// <summary>The Amazon Kinesis data streams where real-time log data is sent.</summary>
@@ -423,6 +447,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -439,6 +464,7 @@ public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -450,6 +476,7 @@ public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnRefPolicy
 {
     /// <summary>
@@ -474,6 +501,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStre
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -493,6 +521,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStre
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -509,6 +538,7 @@ public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -520,6 +550,7 @@ public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigR
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnSelectorPolicy
 {
     /// <summary>
@@ -544,6 +575,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStre
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnSelector
 {
     /// <summary>
@@ -570,6 +602,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStre
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -586,6 +619,7 @@ public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -597,6 +631,7 @@ public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigS
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnRefPolicy
 {
     /// <summary>
@@ -621,6 +656,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStre
 /// <summary>Reference to a Stream in kinesis to populate streamArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -640,6 +676,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStre
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -656,6 +693,7 @@ public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -667,6 +705,7 @@ public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigS
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnSelectorPolicy
 {
     /// <summary>
@@ -691,6 +730,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStre
 /// <summary>Selector for a Stream in kinesis to populate streamArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnSelector
 {
     /// <summary>
@@ -711,6 +751,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStre
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfig
 {
     /// <summary>
@@ -743,6 +784,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStre
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpoint
 {
     /// <summary>The Amazon Kinesis data stream configuration.</summary>
@@ -768,6 +810,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpoint
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecInitProvider
 {
     /// <summary>The Amazon Kinesis data streams where real-time log data is sent.</summary>
@@ -793,6 +836,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RealtimeLogConfigSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -817,6 +861,7 @@ public enum V1beta1RealtimeLogConfigSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RealtimeLogConfigSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -833,6 +878,7 @@ public enum V1beta1RealtimeLogConfigSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RealtimeLogConfigSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -844,6 +890,7 @@ public enum V1beta1RealtimeLogConfigSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -872,6 +919,7 @@ public partial class V1beta1RealtimeLogConfigSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -891,6 +939,7 @@ public partial class V1beta1RealtimeLogConfigSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -905,6 +954,7 @@ public partial class V1beta1RealtimeLogConfigSpecWriteConnectionSecretToRef
 /// <summary>RealtimeLogConfigSpec defines the desired state of RealtimeLogConfig</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigSpec
 {
     /// <summary>
@@ -972,6 +1022,7 @@ public partial class V1beta1RealtimeLogConfigSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigStatusAtProviderEndpointKinesisStreamConfig
 {
     /// <summary>
@@ -988,6 +1039,7 @@ public partial class V1beta1RealtimeLogConfigStatusAtProviderEndpointKinesisStre
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigStatusAtProviderEndpoint
 {
     /// <summary>The Amazon Kinesis data stream configuration.</summary>
@@ -1001,6 +1053,7 @@ public partial class V1beta1RealtimeLogConfigStatusAtProviderEndpoint
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigStatusAtProvider
 {
     /// <summary>The ARN (Amazon Resource Name) of the CloudFront real-time log configuration.</summary>
@@ -1031,6 +1084,7 @@ public partial class V1beta1RealtimeLogConfigStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigStatusConditions
 {
     /// <summary>
@@ -1074,6 +1128,7 @@ public partial class V1beta1RealtimeLogConfigStatusConditions
 /// <summary>RealtimeLogConfigStatus defines the observed state of RealtimeLogConfig.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RealtimeLogConfigStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1092,9 +1147,13 @@ public partial class V1beta1RealtimeLogConfigStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>RealtimeLogConfig is the Schema for the RealtimeLogConfigs API. Provides a CloudFront real-time log configuration resource.</summary>
+/// <summary>
+/// RealtimeLogConfig is the Schema for the RealtimeLogConfigs API. Provides a CloudFront real-time log configuration resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RealtimeLogConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RealtimeLogConfigSpec>, IStatus<V1beta1RealtimeLogConfigStatus?>
 {

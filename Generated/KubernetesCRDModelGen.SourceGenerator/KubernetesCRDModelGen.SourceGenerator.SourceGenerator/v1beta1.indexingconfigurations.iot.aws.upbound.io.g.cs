@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.iot.aws.upbound.io;
-/// <summary>IndexingConfiguration is the Schema for the IndexingConfigurations API. Managing IoT Thing indexing.</summary>
+/// <summary>
+/// IndexingConfiguration is the Schema for the IndexingConfigurations API. Managing IoT Thing indexing.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IndexingConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1IndexingConfiguration>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1IndexingConfigurationList : IKubernetesObject<V1List
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IndexingConfigurationSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IndexingConfigurationSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1IndexingConfigurationSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationSpecForProviderThingGroupIndexingConfigurationCustomField
 {
     /// <summary>The name of the field.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1IndexingConfigurationSpecForProviderThingGroupIndexi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationSpecForProviderThingGroupIndexingConfigurationManagedField
 {
     /// <summary>The name of the field.</summary>
@@ -83,6 +90,7 @@ public partial class V1beta1IndexingConfigurationSpecForProviderThingGroupIndexi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationSpecForProviderThingGroupIndexingConfiguration
 {
     /// <summary>A list of thing group fields to index. This list cannot contain any managed fields. See below.</summary>
@@ -100,6 +108,7 @@ public partial class V1beta1IndexingConfigurationSpecForProviderThingGroupIndexi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationSpecForProviderThingIndexingConfigurationCustomField
 {
     /// <summary>The name of the field.</summary>
@@ -113,6 +122,7 @@ public partial class V1beta1IndexingConfigurationSpecForProviderThingIndexingCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationSpecForProviderThingIndexingConfigurationFilter
 {
     /// <summary>List of shadow names that you select to index.</summary>
@@ -122,6 +132,7 @@ public partial class V1beta1IndexingConfigurationSpecForProviderThingIndexingCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationSpecForProviderThingIndexingConfigurationManagedField
 {
     /// <summary>The name of the field.</summary>
@@ -135,6 +146,7 @@ public partial class V1beta1IndexingConfigurationSpecForProviderThingIndexingCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationSpecForProviderThingIndexingConfiguration
 {
     /// <summary>Contains custom field names and their data type. See below.</summary>
@@ -168,6 +180,7 @@ public partial class V1beta1IndexingConfigurationSpecForProviderThingIndexingCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationSpecForProvider
 {
     /// <summary>
@@ -188,6 +201,7 @@ public partial class V1beta1IndexingConfigurationSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationSpecInitProviderThingGroupIndexingConfigurationCustomField
 {
     /// <summary>The name of the field.</summary>
@@ -201,6 +215,7 @@ public partial class V1beta1IndexingConfigurationSpecInitProviderThingGroupIndex
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationSpecInitProviderThingGroupIndexingConfigurationManagedField
 {
     /// <summary>The name of the field.</summary>
@@ -214,6 +229,7 @@ public partial class V1beta1IndexingConfigurationSpecInitProviderThingGroupIndex
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationSpecInitProviderThingGroupIndexingConfiguration
 {
     /// <summary>A list of thing group fields to index. This list cannot contain any managed fields. See below.</summary>
@@ -231,6 +247,7 @@ public partial class V1beta1IndexingConfigurationSpecInitProviderThingGroupIndex
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationSpecInitProviderThingIndexingConfigurationCustomField
 {
     /// <summary>The name of the field.</summary>
@@ -244,6 +261,7 @@ public partial class V1beta1IndexingConfigurationSpecInitProviderThingIndexingCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationSpecInitProviderThingIndexingConfigurationFilter
 {
     /// <summary>List of shadow names that you select to index.</summary>
@@ -253,6 +271,7 @@ public partial class V1beta1IndexingConfigurationSpecInitProviderThingIndexingCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationSpecInitProviderThingIndexingConfigurationManagedField
 {
     /// <summary>The name of the field.</summary>
@@ -266,6 +285,7 @@ public partial class V1beta1IndexingConfigurationSpecInitProviderThingIndexingCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationSpecInitProviderThingIndexingConfiguration
 {
     /// <summary>Contains custom field names and their data type. See below.</summary>
@@ -311,6 +331,7 @@ public partial class V1beta1IndexingConfigurationSpecInitProviderThingIndexingCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationSpecInitProvider
 {
     /// <summary>Thing group indexing configuration. See below.</summary>
@@ -328,6 +349,7 @@ public partial class V1beta1IndexingConfigurationSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IndexingConfigurationSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IndexingConfigurationSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -352,6 +374,7 @@ public enum V1beta1IndexingConfigurationSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IndexingConfigurationSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IndexingConfigurationSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -368,6 +391,7 @@ public enum V1beta1IndexingConfigurationSpecProviderConfigRefPolicyResolutionEnu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IndexingConfigurationSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IndexingConfigurationSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -379,6 +403,7 @@ public enum V1beta1IndexingConfigurationSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -407,6 +432,7 @@ public partial class V1beta1IndexingConfigurationSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -426,6 +452,7 @@ public partial class V1beta1IndexingConfigurationSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -440,6 +467,7 @@ public partial class V1beta1IndexingConfigurationSpecWriteConnectionSecretToRef
 /// <summary>IndexingConfigurationSpec defines the desired state of IndexingConfiguration</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationSpec
 {
     /// <summary>
@@ -507,6 +535,7 @@ public partial class V1beta1IndexingConfigurationSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationStatusAtProviderThingGroupIndexingConfigurationCustomField
 {
     /// <summary>The name of the field.</summary>
@@ -520,6 +549,7 @@ public partial class V1beta1IndexingConfigurationStatusAtProviderThingGroupIndex
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationStatusAtProviderThingGroupIndexingConfigurationManagedField
 {
     /// <summary>The name of the field.</summary>
@@ -533,6 +563,7 @@ public partial class V1beta1IndexingConfigurationStatusAtProviderThingGroupIndex
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationStatusAtProviderThingGroupIndexingConfiguration
 {
     /// <summary>A list of thing group fields to index. This list cannot contain any managed fields. See below.</summary>
@@ -550,6 +581,7 @@ public partial class V1beta1IndexingConfigurationStatusAtProviderThingGroupIndex
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationStatusAtProviderThingIndexingConfigurationCustomField
 {
     /// <summary>The name of the field.</summary>
@@ -563,6 +595,7 @@ public partial class V1beta1IndexingConfigurationStatusAtProviderThingIndexingCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationStatusAtProviderThingIndexingConfigurationFilter
 {
     /// <summary>List of shadow names that you select to index.</summary>
@@ -572,6 +605,7 @@ public partial class V1beta1IndexingConfigurationStatusAtProviderThingIndexingCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationStatusAtProviderThingIndexingConfigurationManagedField
 {
     /// <summary>The name of the field.</summary>
@@ -585,6 +619,7 @@ public partial class V1beta1IndexingConfigurationStatusAtProviderThingIndexingCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationStatusAtProviderThingIndexingConfiguration
 {
     /// <summary>Contains custom field names and their data type. See below.</summary>
@@ -618,6 +653,7 @@ public partial class V1beta1IndexingConfigurationStatusAtProviderThingIndexingCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationStatusAtProvider
 {
     [JsonPropertyName("id")]
@@ -642,6 +678,7 @@ public partial class V1beta1IndexingConfigurationStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationStatusConditions
 {
     /// <summary>
@@ -685,6 +722,7 @@ public partial class V1beta1IndexingConfigurationStatusConditions
 /// <summary>IndexingConfigurationStatus defines the observed state of IndexingConfiguration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IndexingConfigurationStatus
 {
     [JsonPropertyName("atProvider")]
@@ -703,9 +741,13 @@ public partial class V1beta1IndexingConfigurationStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>IndexingConfiguration is the Schema for the IndexingConfigurations API. Managing IoT Thing indexing.</summary>
+/// <summary>
+/// IndexingConfiguration is the Schema for the IndexingConfigurations API. Managing IoT Thing indexing.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IndexingConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1IndexingConfigurationSpec>, IStatus<V1beta1IndexingConfigurationStatus?>
 {

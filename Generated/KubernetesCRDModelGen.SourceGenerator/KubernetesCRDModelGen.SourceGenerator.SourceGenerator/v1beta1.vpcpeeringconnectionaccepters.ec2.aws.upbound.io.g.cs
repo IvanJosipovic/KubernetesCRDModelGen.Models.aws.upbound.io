@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.aws.upbound.io;
-/// <summary>VPCPeeringConnectionAccepter is the Schema for the VPCPeeringConnectionAccepters API. Manage the accepter&apos;s side of a VPC Peering Connection.</summary>
+/// <summary>
+/// VPCPeeringConnectionAccepter is the Schema for the VPCPeeringConnectionAccepters API. Manage the accepter&apos;s side of a VPC Peering Connection.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VPCPeeringConnectionAccepterList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VPCPeeringConnectionAccepter>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterList : IKubernetesObject
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCPeeringConnectionAccepterSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VPCPeeringConnectionAccepterSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1VPCPeeringConnectionAccepterSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecForProviderAccepter
 {
     /// <summary>
@@ -69,6 +75,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecForProviderAccepter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecForProviderRequester
 {
     /// <summary>
@@ -87,6 +94,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecForProviderRequester
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeeringConnectionIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeeringConnectionIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -103,6 +111,7 @@ public enum V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeeringConnecti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeeringConnectionIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeeringConnectionIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -114,6 +123,7 @@ public enum V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeeringConnecti
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeeringConnectionIdRefPolicy
 {
     /// <summary>
@@ -138,6 +148,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeerin
 /// <summary>Reference to a VPCPeeringConnection in ec2 to populate vpcPeeringConnectionId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeeringConnectionIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -157,6 +168,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeerin
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeeringConnectionIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeeringConnectionIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -173,6 +185,7 @@ public enum V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeeringConnecti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeeringConnectionIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeeringConnectionIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -184,6 +197,7 @@ public enum V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeeringConnecti
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeeringConnectionIdSelectorPolicy
 {
     /// <summary>
@@ -208,6 +222,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeerin
 /// <summary>Selector for a VPCPeeringConnection in ec2 to populate vpcPeeringConnectionId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeeringConnectionIdSelector
 {
     /// <summary>
@@ -228,6 +243,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecForProviderVpcPeerin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecForProvider
 {
     /// <summary>
@@ -274,6 +290,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecInitProviderAccepter
 {
     /// <summary>
@@ -286,6 +303,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecInitProviderAccepter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecInitProviderRequester
 {
     /// <summary>
@@ -304,6 +322,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecInitProviderRequeste
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeringConnectionIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeringConnectionIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -320,6 +339,7 @@ public enum V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeringConnect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeringConnectionIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeringConnectionIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -331,6 +351,7 @@ public enum V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeringConnect
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeringConnectionIdRefPolicy
 {
     /// <summary>
@@ -355,6 +376,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeri
 /// <summary>Reference to a VPCPeeringConnection in ec2 to populate vpcPeeringConnectionId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeringConnectionIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -374,6 +396,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeri
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeringConnectionIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeringConnectionIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -390,6 +413,7 @@ public enum V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeringConnect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeringConnectionIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeringConnectionIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -401,6 +425,7 @@ public enum V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeringConnect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeringConnectionIdSelectorPolicy
 {
     /// <summary>
@@ -425,6 +450,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeri
 /// <summary>Selector for a VPCPeeringConnection in ec2 to populate vpcPeeringConnectionId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeringConnectionIdSelector
 {
     /// <summary>
@@ -457,6 +483,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecInitProviderVpcPeeri
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecInitProvider
 {
     /// <summary>
@@ -500,6 +527,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCPeeringConnectionAccepterSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VPCPeeringConnectionAccepterSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -524,6 +552,7 @@ public enum V1beta1VPCPeeringConnectionAccepterSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCPeeringConnectionAccepterSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VPCPeeringConnectionAccepterSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -540,6 +569,7 @@ public enum V1beta1VPCPeeringConnectionAccepterSpecProviderConfigRefPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCPeeringConnectionAccepterSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VPCPeeringConnectionAccepterSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -551,6 +581,7 @@ public enum V1beta1VPCPeeringConnectionAccepterSpecProviderConfigRefPolicyResolv
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -579,6 +610,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecProviderConfigRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -598,6 +630,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -612,6 +645,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpecWriteConnectionSecre
 /// <summary>VPCPeeringConnectionAccepterSpec defines the desired state of VPCPeeringConnectionAccepter</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterSpec
 {
     /// <summary>
@@ -679,6 +713,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterStatusAtProviderAccepter
 {
     /// <summary>
@@ -691,6 +726,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterStatusAtProviderAccepter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterStatusAtProviderRequester
 {
     /// <summary>
@@ -703,6 +739,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterStatusAtProviderRequeste
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterStatusAtProvider
 {
     /// <summary>The status of the VPC Peering Connection request.</summary>
@@ -770,6 +807,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterStatusConditions
 {
     /// <summary>
@@ -813,6 +851,7 @@ public partial class V1beta1VPCPeeringConnectionAccepterStatusConditions
 /// <summary>VPCPeeringConnectionAccepterStatus defines the observed state of VPCPeeringConnectionAccepter.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VPCPeeringConnectionAccepterStatus
 {
     [JsonPropertyName("atProvider")]
@@ -831,9 +870,13 @@ public partial class V1beta1VPCPeeringConnectionAccepterStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>VPCPeeringConnectionAccepter is the Schema for the VPCPeeringConnectionAccepters API. Manage the accepter&apos;s side of a VPC Peering Connection.</summary>
+/// <summary>
+/// VPCPeeringConnectionAccepter is the Schema for the VPCPeeringConnectionAccepters API. Manage the accepter&apos;s side of a VPC Peering Connection.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VPCPeeringConnectionAccepter : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VPCPeeringConnectionAccepterSpec>, IStatus<V1beta1VPCPeeringConnectionAccepterStatus?>
 {

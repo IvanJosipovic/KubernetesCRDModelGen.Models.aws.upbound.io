@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.autoscalingplans.aws.upbound.io;
-/// <summary>ScalingPlan is the Schema for the ScalingPlans API. Manages an AWS Auto Scaling scaling plan.</summary>
+/// <summary>
+/// ScalingPlan is the Schema for the ScalingPlans API. Manages an AWS Auto Scaling scaling plan.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ScalingPlanList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ScalingPlan>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ScalingPlanList : IKubernetesObject<V1ListMeta>, IIt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScalingPlanSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ScalingPlanSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1ScalingPlanSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecForProviderApplicationSourceTagFilter
 {
     /// <summary>Tag key.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1ScalingPlanSpecForProviderApplicationSourceTagFilter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecForProviderApplicationSource
 {
     /// <summary>ARN of a AWS CloudFormation stack.</summary>
@@ -83,6 +90,7 @@ public partial class V1beta1ScalingPlanSpecForProviderApplicationSource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecForProviderScalingInstructionCustomizedLoadMetricSpecification
 {
     /// <summary>Dimensions of the metric.</summary>
@@ -108,6 +116,7 @@ public partial class V1beta1ScalingPlanSpecForProviderScalingInstructionCustomiz
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecForProviderScalingInstructionPredefinedLoadMetricSpecification
 {
     /// <summary>Metric type. Valid values: ALBTargetGroupRequestCount, ASGTotalCPUUtilization, ASGTotalNetworkIn, ASGTotalNetworkOut.</summary>
@@ -121,6 +130,7 @@ public partial class V1beta1ScalingPlanSpecForProviderScalingInstructionPredefin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecForProviderScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecification
 {
     /// <summary>Dimensions of the metric.</summary>
@@ -146,6 +156,7 @@ public partial class V1beta1ScalingPlanSpecForProviderScalingInstructionTargetTr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecForProviderScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecification
 {
     /// <summary>Metric type. Valid values: ALBRequestCountPerTarget, ASGAverageCPUUtilization, ASGAverageNetworkIn, ASGAverageNetworkOut, DynamoDBReadCapacityUtilization, DynamoDBWriteCapacityUtilization, ECSServiceAverageCPUUtilization, ECSServiceAverageMemoryUtilization, EC2SpotFleetRequestAverageCPUUtilization, EC2SpotFleetRequestAverageNetworkIn, EC2SpotFleetRequestAverageNetworkOut, RDSReaderAverageCPUUtilization, RDSReaderAverageDatabaseConnections.</summary>
@@ -159,6 +170,7 @@ public partial class V1beta1ScalingPlanSpecForProviderScalingInstructionTargetTr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecForProviderScalingInstructionTargetTrackingConfiguration
 {
     /// <summary>
@@ -207,6 +219,7 @@ public partial class V1beta1ScalingPlanSpecForProviderScalingInstructionTargetTr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecForProviderScalingInstruction
 {
     /// <summary>
@@ -280,6 +293,7 @@ public partial class V1beta1ScalingPlanSpecForProviderScalingInstruction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecForProvider
 {
     /// <summary>CloudFormation stack or set of tags. You can create one scaling plan per application source.</summary>
@@ -304,6 +318,7 @@ public partial class V1beta1ScalingPlanSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecInitProviderApplicationSourceTagFilter
 {
     /// <summary>Tag key.</summary>
@@ -317,6 +332,7 @@ public partial class V1beta1ScalingPlanSpecInitProviderApplicationSourceTagFilte
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecInitProviderApplicationSource
 {
     /// <summary>ARN of a AWS CloudFormation stack.</summary>
@@ -330,6 +346,7 @@ public partial class V1beta1ScalingPlanSpecInitProviderApplicationSource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecInitProviderScalingInstructionCustomizedLoadMetricSpecification
 {
     /// <summary>Dimensions of the metric.</summary>
@@ -355,6 +372,7 @@ public partial class V1beta1ScalingPlanSpecInitProviderScalingInstructionCustomi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecInitProviderScalingInstructionPredefinedLoadMetricSpecification
 {
     /// <summary>Metric type. Valid values: ALBTargetGroupRequestCount, ASGTotalCPUUtilization, ASGTotalNetworkIn, ASGTotalNetworkOut.</summary>
@@ -368,6 +386,7 @@ public partial class V1beta1ScalingPlanSpecInitProviderScalingInstructionPredefi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecInitProviderScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecification
 {
     /// <summary>Dimensions of the metric.</summary>
@@ -393,6 +412,7 @@ public partial class V1beta1ScalingPlanSpecInitProviderScalingInstructionTargetT
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecInitProviderScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecification
 {
     /// <summary>Metric type. Valid values: ALBRequestCountPerTarget, ASGAverageCPUUtilization, ASGAverageNetworkIn, ASGAverageNetworkOut, DynamoDBReadCapacityUtilization, DynamoDBWriteCapacityUtilization, ECSServiceAverageCPUUtilization, ECSServiceAverageMemoryUtilization, EC2SpotFleetRequestAverageCPUUtilization, EC2SpotFleetRequestAverageNetworkIn, EC2SpotFleetRequestAverageNetworkOut, RDSReaderAverageCPUUtilization, RDSReaderAverageDatabaseConnections.</summary>
@@ -406,6 +426,7 @@ public partial class V1beta1ScalingPlanSpecInitProviderScalingInstructionTargetT
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecInitProviderScalingInstructionTargetTrackingConfiguration
 {
     /// <summary>
@@ -454,6 +475,7 @@ public partial class V1beta1ScalingPlanSpecInitProviderScalingInstructionTargetT
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecInitProviderScalingInstruction
 {
     /// <summary>
@@ -539,6 +561,7 @@ public partial class V1beta1ScalingPlanSpecInitProviderScalingInstruction
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecInitProvider
 {
     /// <summary>CloudFormation stack or set of tags. You can create one scaling plan per application source.</summary>
@@ -560,6 +583,7 @@ public partial class V1beta1ScalingPlanSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScalingPlanSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ScalingPlanSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -584,6 +608,7 @@ public enum V1beta1ScalingPlanSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScalingPlanSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ScalingPlanSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -600,6 +625,7 @@ public enum V1beta1ScalingPlanSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ScalingPlanSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ScalingPlanSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -611,6 +637,7 @@ public enum V1beta1ScalingPlanSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -639,6 +666,7 @@ public partial class V1beta1ScalingPlanSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -658,6 +686,7 @@ public partial class V1beta1ScalingPlanSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -672,6 +701,7 @@ public partial class V1beta1ScalingPlanSpecWriteConnectionSecretToRef
 /// <summary>ScalingPlanSpec defines the desired state of ScalingPlan</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanSpec
 {
     /// <summary>
@@ -739,6 +769,7 @@ public partial class V1beta1ScalingPlanSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanStatusAtProviderApplicationSourceTagFilter
 {
     /// <summary>Tag key.</summary>
@@ -752,6 +783,7 @@ public partial class V1beta1ScalingPlanStatusAtProviderApplicationSourceTagFilte
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanStatusAtProviderApplicationSource
 {
     /// <summary>ARN of a AWS CloudFormation stack.</summary>
@@ -765,6 +797,7 @@ public partial class V1beta1ScalingPlanStatusAtProviderApplicationSource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanStatusAtProviderScalingInstructionCustomizedLoadMetricSpecification
 {
     /// <summary>Dimensions of the metric.</summary>
@@ -790,6 +823,7 @@ public partial class V1beta1ScalingPlanStatusAtProviderScalingInstructionCustomi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanStatusAtProviderScalingInstructionPredefinedLoadMetricSpecification
 {
     /// <summary>Metric type. Valid values: ALBTargetGroupRequestCount, ASGTotalCPUUtilization, ASGTotalNetworkIn, ASGTotalNetworkOut.</summary>
@@ -803,6 +837,7 @@ public partial class V1beta1ScalingPlanStatusAtProviderScalingInstructionPredefi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanStatusAtProviderScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecification
 {
     /// <summary>Dimensions of the metric.</summary>
@@ -828,6 +863,7 @@ public partial class V1beta1ScalingPlanStatusAtProviderScalingInstructionTargetT
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanStatusAtProviderScalingInstructionTargetTrackingConfigurationPredefinedScalingMetricSpecification
 {
     /// <summary>Metric type. Valid values: ALBRequestCountPerTarget, ASGAverageCPUUtilization, ASGAverageNetworkIn, ASGAverageNetworkOut, DynamoDBReadCapacityUtilization, DynamoDBWriteCapacityUtilization, ECSServiceAverageCPUUtilization, ECSServiceAverageMemoryUtilization, EC2SpotFleetRequestAverageCPUUtilization, EC2SpotFleetRequestAverageNetworkIn, EC2SpotFleetRequestAverageNetworkOut, RDSReaderAverageCPUUtilization, RDSReaderAverageDatabaseConnections.</summary>
@@ -841,6 +877,7 @@ public partial class V1beta1ScalingPlanStatusAtProviderScalingInstructionTargetT
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanStatusAtProviderScalingInstructionTargetTrackingConfiguration
 {
     /// <summary>
@@ -889,6 +926,7 @@ public partial class V1beta1ScalingPlanStatusAtProviderScalingInstructionTargetT
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanStatusAtProviderScalingInstruction
 {
     /// <summary>
@@ -962,6 +1000,7 @@ public partial class V1beta1ScalingPlanStatusAtProviderScalingInstruction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanStatusAtProvider
 {
     /// <summary>CloudFormation stack or set of tags. You can create one scaling plan per application source.</summary>
@@ -995,6 +1034,7 @@ public partial class V1beta1ScalingPlanStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanStatusConditions
 {
     /// <summary>
@@ -1038,6 +1078,7 @@ public partial class V1beta1ScalingPlanStatusConditions
 /// <summary>ScalingPlanStatus defines the observed state of ScalingPlan.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ScalingPlanStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1056,9 +1097,13 @@ public partial class V1beta1ScalingPlanStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>ScalingPlan is the Schema for the ScalingPlans API. Manages an AWS Auto Scaling scaling plan.</summary>
+/// <summary>
+/// ScalingPlan is the Schema for the ScalingPlans API. Manages an AWS Auto Scaling scaling plan.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ScalingPlan : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ScalingPlanSpec>, IStatus<V1beta1ScalingPlanStatus?>
 {

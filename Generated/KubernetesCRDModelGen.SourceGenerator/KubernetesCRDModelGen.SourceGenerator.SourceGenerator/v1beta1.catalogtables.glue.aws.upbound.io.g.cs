@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.glue.aws.upbound.io;
-/// <summary>CatalogTable is the Schema for the CatalogTables API. Provides a Glue Catalog Table.</summary>
+/// <summary>
+/// CatalogTable is the Schema for the CatalogTables API. Provides a Glue Catalog Table.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CatalogTableList : IKubernetesObject<V1ListMeta>, IItems<V1beta1CatalogTable>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1CatalogTableList : IKubernetesObject<V1ListMeta>, II
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CatalogTableSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1CatalogTableSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableSpecForProviderDatabaseNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CatalogTableSpecForProviderDatabaseNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1CatalogTableSpecForProviderDatabaseNameRefPolicyResolutionEnu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableSpecForProviderDatabaseNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CatalogTableSpecForProviderDatabaseNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1CatalogTableSpecForProviderDatabaseNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecForProviderDatabaseNameRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1CatalogTableSpecForProviderDatabaseNameRefPolicy
 /// <summary>Reference to a CatalogDatabase in glue to populate databaseName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecForProviderDatabaseNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1CatalogTableSpecForProviderDatabaseNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableSpecForProviderDatabaseNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CatalogTableSpecForProviderDatabaseNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1CatalogTableSpecForProviderDatabaseNameSelectorPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableSpecForProviderDatabaseNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CatalogTableSpecForProviderDatabaseNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1CatalogTableSpecForProviderDatabaseNameSelectorPolicyResolveE
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecForProviderDatabaseNameSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1CatalogTableSpecForProviderDatabaseNameSelectorPolic
 /// <summary>Selector for a CatalogDatabase in glue to populate databaseName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecForProviderDatabaseNameSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1CatalogTableSpecForProviderDatabaseNameSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecForProviderOpenTableFormatInputIcebergInput
 {
     /// <summary>A required metadata operation. Can only be set to CREATE.</summary>
@@ -217,6 +231,7 @@ public partial class V1beta1CatalogTableSpecForProviderOpenTableFormatInputIcebe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecForProviderOpenTableFormatInput
 {
     /// <summary>Configuration block for iceberg table config. See iceberg_input below.</summary>
@@ -226,6 +241,7 @@ public partial class V1beta1CatalogTableSpecForProviderOpenTableFormatInput
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecForProviderPartitionIndex
 {
     /// <summary>Name of the partition index.</summary>
@@ -239,6 +255,7 @@ public partial class V1beta1CatalogTableSpecForProviderPartitionIndex
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecForProviderPartitionKeys
 {
     /// <summary>Free-form text comment.</summary>
@@ -260,6 +277,7 @@ public partial class V1beta1CatalogTableSpecForProviderPartitionKeys
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecForProviderStorageDescriptorColumns
 {
     /// <summary>Free-form text comment.</summary>
@@ -281,6 +299,7 @@ public partial class V1beta1CatalogTableSpecForProviderStorageDescriptorColumns
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecForProviderStorageDescriptorSchemaReferenceSchemaId
 {
     /// <summary>Name of the schema registry that contains the schema. Must be provided when schema_name is specified and conflicts with schema_arn.</summary>
@@ -298,6 +317,7 @@ public partial class V1beta1CatalogTableSpecForProviderStorageDescriptorSchemaRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecForProviderStorageDescriptorSchemaReference
 {
     /// <summary>Configuration block that contains schema identity fields. Either this or the schema_version_id has to be provided. See schema_id below.</summary>
@@ -315,6 +335,7 @@ public partial class V1beta1CatalogTableSpecForProviderStorageDescriptorSchemaRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecForProviderStorageDescriptorSerDeInfo
 {
     /// <summary>Name of the SerDe.</summary>
@@ -332,6 +353,7 @@ public partial class V1beta1CatalogTableSpecForProviderStorageDescriptorSerDeInf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecForProviderStorageDescriptorSkewedInfo
 {
     /// <summary>List of names of columns that contain skewed values.</summary>
@@ -349,6 +371,7 @@ public partial class V1beta1CatalogTableSpecForProviderStorageDescriptorSkewedIn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecForProviderStorageDescriptorSortColumns
 {
     /// <summary>Name of the column.</summary>
@@ -362,6 +385,7 @@ public partial class V1beta1CatalogTableSpecForProviderStorageDescriptorSortColu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecForProviderStorageDescriptor
 {
     /// <summary>List of locations that point to the path where a Delta table is located.</summary>
@@ -423,6 +447,7 @@ public partial class V1beta1CatalogTableSpecForProviderStorageDescriptor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecForProviderTargetTable
 {
     /// <summary>ID of the Data Catalog in which the table resides.</summary>
@@ -444,6 +469,7 @@ public partial class V1beta1CatalogTableSpecForProviderTargetTable
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecForProvider
 {
     /// <summary>ID of the Glue Catalog and database to create the table in. If omitted, this defaults to the AWS Account ID plus the database name.</summary>
@@ -520,6 +546,7 @@ public partial class V1beta1CatalogTableSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecInitProviderOpenTableFormatInputIcebergInput
 {
     /// <summary>A required metadata operation. Can only be set to CREATE.</summary>
@@ -533,6 +560,7 @@ public partial class V1beta1CatalogTableSpecInitProviderOpenTableFormatInputIceb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecInitProviderOpenTableFormatInput
 {
     /// <summary>Configuration block for iceberg table config. See iceberg_input below.</summary>
@@ -542,6 +570,7 @@ public partial class V1beta1CatalogTableSpecInitProviderOpenTableFormatInput
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecInitProviderPartitionIndex
 {
     /// <summary>Name of the partition index.</summary>
@@ -555,6 +584,7 @@ public partial class V1beta1CatalogTableSpecInitProviderPartitionIndex
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecInitProviderPartitionKeys
 {
     /// <summary>Free-form text comment.</summary>
@@ -576,6 +606,7 @@ public partial class V1beta1CatalogTableSpecInitProviderPartitionKeys
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecInitProviderStorageDescriptorColumns
 {
     /// <summary>Free-form text comment.</summary>
@@ -597,6 +628,7 @@ public partial class V1beta1CatalogTableSpecInitProviderStorageDescriptorColumns
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecInitProviderStorageDescriptorSchemaReferenceSchemaId
 {
     /// <summary>Name of the schema registry that contains the schema. Must be provided when schema_name is specified and conflicts with schema_arn.</summary>
@@ -614,6 +646,7 @@ public partial class V1beta1CatalogTableSpecInitProviderStorageDescriptorSchemaR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecInitProviderStorageDescriptorSchemaReference
 {
     /// <summary>Configuration block that contains schema identity fields. Either this or the schema_version_id has to be provided. See schema_id below.</summary>
@@ -631,6 +664,7 @@ public partial class V1beta1CatalogTableSpecInitProviderStorageDescriptorSchemaR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecInitProviderStorageDescriptorSerDeInfo
 {
     /// <summary>Name of the SerDe.</summary>
@@ -648,6 +682,7 @@ public partial class V1beta1CatalogTableSpecInitProviderStorageDescriptorSerDeIn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecInitProviderStorageDescriptorSkewedInfo
 {
     /// <summary>List of names of columns that contain skewed values.</summary>
@@ -665,6 +700,7 @@ public partial class V1beta1CatalogTableSpecInitProviderStorageDescriptorSkewedI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecInitProviderStorageDescriptorSortColumns
 {
     /// <summary>Name of the column.</summary>
@@ -678,6 +714,7 @@ public partial class V1beta1CatalogTableSpecInitProviderStorageDescriptorSortCol
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecInitProviderStorageDescriptor
 {
     /// <summary>List of locations that point to the path where a Delta table is located.</summary>
@@ -739,6 +776,7 @@ public partial class V1beta1CatalogTableSpecInitProviderStorageDescriptor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecInitProviderTargetTable
 {
     /// <summary>Name of the target table.</summary>
@@ -760,6 +798,7 @@ public partial class V1beta1CatalogTableSpecInitProviderTargetTable
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecInitProvider
 {
     /// <summary>Description of the table.</summary>
@@ -817,6 +856,7 @@ public partial class V1beta1CatalogTableSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CatalogTableSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -841,6 +881,7 @@ public enum V1beta1CatalogTableSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CatalogTableSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -857,6 +898,7 @@ public enum V1beta1CatalogTableSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CatalogTableSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CatalogTableSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -868,6 +910,7 @@ public enum V1beta1CatalogTableSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -896,6 +939,7 @@ public partial class V1beta1CatalogTableSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -915,6 +959,7 @@ public partial class V1beta1CatalogTableSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -929,6 +974,7 @@ public partial class V1beta1CatalogTableSpecWriteConnectionSecretToRef
 /// <summary>CatalogTableSpec defines the desired state of CatalogTable</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableSpec
 {
     /// <summary>
@@ -996,6 +1042,7 @@ public partial class V1beta1CatalogTableSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableStatusAtProviderOpenTableFormatInputIcebergInput
 {
     /// <summary>A required metadata operation. Can only be set to CREATE.</summary>
@@ -1009,6 +1056,7 @@ public partial class V1beta1CatalogTableStatusAtProviderOpenTableFormatInputIceb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableStatusAtProviderOpenTableFormatInput
 {
     /// <summary>Configuration block for iceberg table config. See iceberg_input below.</summary>
@@ -1018,6 +1066,7 @@ public partial class V1beta1CatalogTableStatusAtProviderOpenTableFormatInput
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableStatusAtProviderPartitionIndex
 {
     /// <summary>Name of the partition index.</summary>
@@ -1034,6 +1083,7 @@ public partial class V1beta1CatalogTableStatusAtProviderPartitionIndex
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableStatusAtProviderPartitionKeys
 {
     /// <summary>Free-form text comment.</summary>
@@ -1055,6 +1105,7 @@ public partial class V1beta1CatalogTableStatusAtProviderPartitionKeys
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableStatusAtProviderStorageDescriptorColumns
 {
     /// <summary>Free-form text comment.</summary>
@@ -1076,6 +1127,7 @@ public partial class V1beta1CatalogTableStatusAtProviderStorageDescriptorColumns
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableStatusAtProviderStorageDescriptorSchemaReferenceSchemaId
 {
     /// <summary>Name of the schema registry that contains the schema. Must be provided when schema_name is specified and conflicts with schema_arn.</summary>
@@ -1093,6 +1145,7 @@ public partial class V1beta1CatalogTableStatusAtProviderStorageDescriptorSchemaR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableStatusAtProviderStorageDescriptorSchemaReference
 {
     /// <summary>Configuration block that contains schema identity fields. Either this or the schema_version_id has to be provided. See schema_id below.</summary>
@@ -1110,6 +1163,7 @@ public partial class V1beta1CatalogTableStatusAtProviderStorageDescriptorSchemaR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableStatusAtProviderStorageDescriptorSerDeInfo
 {
     /// <summary>Name of the SerDe.</summary>
@@ -1127,6 +1181,7 @@ public partial class V1beta1CatalogTableStatusAtProviderStorageDescriptorSerDeIn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableStatusAtProviderStorageDescriptorSkewedInfo
 {
     /// <summary>List of names of columns that contain skewed values.</summary>
@@ -1144,6 +1199,7 @@ public partial class V1beta1CatalogTableStatusAtProviderStorageDescriptorSkewedI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableStatusAtProviderStorageDescriptorSortColumns
 {
     /// <summary>Name of the column.</summary>
@@ -1157,6 +1213,7 @@ public partial class V1beta1CatalogTableStatusAtProviderStorageDescriptorSortCol
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableStatusAtProviderStorageDescriptor
 {
     /// <summary>List of locations that point to the path where a Delta table is located.</summary>
@@ -1218,6 +1275,7 @@ public partial class V1beta1CatalogTableStatusAtProviderStorageDescriptor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableStatusAtProviderTargetTable
 {
     /// <summary>ID of the Data Catalog in which the table resides.</summary>
@@ -1239,6 +1297,7 @@ public partial class V1beta1CatalogTableStatusAtProviderTargetTable
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableStatusAtProvider
 {
     /// <summary>The ARN of the Glue Table.</summary>
@@ -1316,6 +1375,7 @@ public partial class V1beta1CatalogTableStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableStatusConditions
 {
     /// <summary>
@@ -1359,6 +1419,7 @@ public partial class V1beta1CatalogTableStatusConditions
 /// <summary>CatalogTableStatus defines the observed state of CatalogTable.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CatalogTableStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1377,9 +1438,13 @@ public partial class V1beta1CatalogTableStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>CatalogTable is the Schema for the CatalogTables API. Provides a Glue Catalog Table.</summary>
+/// <summary>
+/// CatalogTable is the Schema for the CatalogTables API. Provides a Glue Catalog Table.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CatalogTable : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CatalogTableSpec>, IStatus<V1beta1CatalogTableStatus?>
 {

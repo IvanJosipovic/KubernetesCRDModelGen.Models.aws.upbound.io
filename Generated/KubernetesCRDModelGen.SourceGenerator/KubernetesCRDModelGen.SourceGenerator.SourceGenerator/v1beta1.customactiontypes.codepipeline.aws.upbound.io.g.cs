@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.codepipeline.aws.upbound.io;
-/// <summary>CustomActionType is the Schema for the CustomActionTypes API. Provides a CodePipeline CustomActionType.</summary>
+/// <summary>
+/// CustomActionType is the Schema for the CustomActionTypes API. Provides a CodePipeline CustomActionType.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CustomActionTypeList : IKubernetesObject<V1ListMeta>, IItems<V1beta1CustomActionType>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1CustomActionTypeList : IKubernetesObject<V1ListMeta>
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomActionTypeSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CustomActionTypeSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1CustomActionTypeSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeSpecForProviderConfigurationProperty
 {
     /// <summary>The description of the action configuration property.</summary>
@@ -90,6 +96,7 @@ public partial class V1beta1CustomActionTypeSpecForProviderConfigurationProperty
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeSpecForProviderInputArtifactDetails
 {
     /// <summary>The maximum number of artifacts allowed for the action type. Min: 0, Max: 5</summary>
@@ -103,6 +110,7 @@ public partial class V1beta1CustomActionTypeSpecForProviderInputArtifactDetails
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeSpecForProviderOutputArtifactDetails
 {
     /// <summary>The maximum number of artifacts allowed for the action type. Min: 0, Max: 5</summary>
@@ -116,6 +124,7 @@ public partial class V1beta1CustomActionTypeSpecForProviderOutputArtifactDetails
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeSpecForProviderSettings
 {
     /// <summary>The URL returned to the AWS CodePipeline console that provides a deep link to the resources of the external system.</summary>
@@ -137,6 +146,7 @@ public partial class V1beta1CustomActionTypeSpecForProviderSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeSpecForProvider
 {
     /// <summary>The category of the custom action. Valid values: Source, Build, Deploy, Test, Invoke, Approval</summary>
@@ -181,6 +191,7 @@ public partial class V1beta1CustomActionTypeSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeSpecInitProviderConfigurationProperty
 {
     /// <summary>The description of the action configuration property.</summary>
@@ -214,6 +225,7 @@ public partial class V1beta1CustomActionTypeSpecInitProviderConfigurationPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeSpecInitProviderInputArtifactDetails
 {
     /// <summary>The maximum number of artifacts allowed for the action type. Min: 0, Max: 5</summary>
@@ -227,6 +239,7 @@ public partial class V1beta1CustomActionTypeSpecInitProviderInputArtifactDetails
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeSpecInitProviderOutputArtifactDetails
 {
     /// <summary>The maximum number of artifacts allowed for the action type. Min: 0, Max: 5</summary>
@@ -240,6 +253,7 @@ public partial class V1beta1CustomActionTypeSpecInitProviderOutputArtifactDetail
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeSpecInitProviderSettings
 {
     /// <summary>The URL returned to the AWS CodePipeline console that provides a deep link to the resources of the external system.</summary>
@@ -273,6 +287,7 @@ public partial class V1beta1CustomActionTypeSpecInitProviderSettings
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeSpecInitProvider
 {
     /// <summary>The category of the custom action. Valid values: Source, Build, Deploy, Test, Invoke, Approval</summary>
@@ -314,6 +329,7 @@ public partial class V1beta1CustomActionTypeSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomActionTypeSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CustomActionTypeSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -338,6 +354,7 @@ public enum V1beta1CustomActionTypeSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomActionTypeSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CustomActionTypeSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -354,6 +371,7 @@ public enum V1beta1CustomActionTypeSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomActionTypeSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CustomActionTypeSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -365,6 +383,7 @@ public enum V1beta1CustomActionTypeSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -393,6 +412,7 @@ public partial class V1beta1CustomActionTypeSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -412,6 +432,7 @@ public partial class V1beta1CustomActionTypeSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -426,6 +447,7 @@ public partial class V1beta1CustomActionTypeSpecWriteConnectionSecretToRef
 /// <summary>CustomActionTypeSpec defines the desired state of CustomActionType</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeSpec
 {
     /// <summary>
@@ -493,6 +515,7 @@ public partial class V1beta1CustomActionTypeSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeStatusAtProviderConfigurationProperty
 {
     /// <summary>The description of the action configuration property.</summary>
@@ -526,6 +549,7 @@ public partial class V1beta1CustomActionTypeStatusAtProviderConfigurationPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeStatusAtProviderInputArtifactDetails
 {
     /// <summary>The maximum number of artifacts allowed for the action type. Min: 0, Max: 5</summary>
@@ -539,6 +563,7 @@ public partial class V1beta1CustomActionTypeStatusAtProviderInputArtifactDetails
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeStatusAtProviderOutputArtifactDetails
 {
     /// <summary>The maximum number of artifacts allowed for the action type. Min: 0, Max: 5</summary>
@@ -552,6 +577,7 @@ public partial class V1beta1CustomActionTypeStatusAtProviderOutputArtifactDetail
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeStatusAtProviderSettings
 {
     /// <summary>The URL returned to the AWS CodePipeline console that provides a deep link to the resources of the external system.</summary>
@@ -573,6 +599,7 @@ public partial class V1beta1CustomActionTypeStatusAtProviderSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeStatusAtProvider
 {
     /// <summary>The action ARN.</summary>
@@ -634,6 +661,7 @@ public partial class V1beta1CustomActionTypeStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeStatusConditions
 {
     /// <summary>
@@ -677,6 +705,7 @@ public partial class V1beta1CustomActionTypeStatusConditions
 /// <summary>CustomActionTypeStatus defines the observed state of CustomActionType.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomActionTypeStatus
 {
     [JsonPropertyName("atProvider")]
@@ -695,9 +724,13 @@ public partial class V1beta1CustomActionTypeStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>CustomActionType is the Schema for the CustomActionTypes API. Provides a CodePipeline CustomActionType.</summary>
+/// <summary>
+/// CustomActionType is the Schema for the CustomActionTypes API. Provides a CodePipeline CustomActionType.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CustomActionType : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CustomActionTypeSpec>, IStatus<V1beta1CustomActionTypeStatus?>
 {

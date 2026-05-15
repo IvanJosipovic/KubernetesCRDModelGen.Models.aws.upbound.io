@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.macie2.aws.upbound.io;
-/// <summary>ClassificationJob is the Schema for the ClassificationJobs API. Provides a resource to manage an AWS Macie Classification Job.</summary>
+/// <summary>
+/// ClassificationJob is the Schema for the ClassificationJobs API. Provides a resource to manage an AWS Macie Classification Job.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ClassificationJobList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ClassificationJob>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ClassificationJobList : IKubernetesObject<V1ListMeta
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClassificationJobSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ClassificationJobSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1ClassificationJobSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterion
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -74,6 +80,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucke
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValues
 {
     /// <summary>The object property to use in the condition.</summary>
@@ -87,6 +94,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucke
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaExcludesAndTagCriterion
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -100,6 +108,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucke
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaExcludesAnd
 {
     /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an S3 buckets from the job. (documented below)</summary>
@@ -113,6 +122,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucke
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaExcludes
 {
     /// <summary>An array of conditions, one for each condition that determines which objects to include or exclude from the job. (documented below)</summary>
@@ -122,6 +132,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucke
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterion
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -139,6 +150,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucke
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValues
 {
     /// <summary>The object property to use in the condition.</summary>
@@ -152,6 +164,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucke
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaIncludesAndTagCriterion
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -165,6 +178,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucke
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaIncludesAnd
 {
     /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an S3 buckets from the job. (documented below)</summary>
@@ -178,6 +192,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucke
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaIncludes
 {
     /// <summary>An array of conditions, one for each condition that determines which objects to include or exclude from the job. (documented below)</summary>
@@ -187,6 +202,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucke
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucketCriteria
 {
     /// <summary>The property- or tag-based conditions that determine which objects to exclude from the analysis. (documented below)</summary>
@@ -200,6 +216,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucke
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucketDefinitions
 {
     /// <summary>The unique identifier for the AWS account that owns the buckets.</summary>
@@ -213,6 +230,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionBucke
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopingExcludesAndSimpleScopeTerm
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -230,6 +248,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopingExcludesAndTagScopeTermTagValues
 {
     /// <summary>The object property to use in the condition.</summary>
@@ -243,6 +262,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopingExcludesAndTagScopeTerm
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -264,6 +284,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopingExcludesAnd
 {
     /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an object from the job. (documented below)</summary>
@@ -277,6 +298,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopingExcludes
 {
     /// <summary>An array of conditions, one for each condition that determines which objects to include or exclude from the job. (documented below)</summary>
@@ -286,6 +308,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopingIncludesAndSimpleScopeTerm
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -303,6 +326,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopingIncludesAndTagScopeTermTagValues
 {
     /// <summary>The object property to use in the condition.</summary>
@@ -316,6 +340,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopingIncludesAndTagScopeTerm
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -337,6 +362,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopingIncludesAnd
 {
     /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an object from the job. (documented below)</summary>
@@ -350,6 +376,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopingIncludes
 {
     /// <summary>An array of conditions, one for each condition that determines which objects to include or exclude from the job. (documented below)</summary>
@@ -359,6 +386,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScoping
 {
     /// <summary>The property- or tag-based conditions that determine which objects to exclude from the analysis. (documented below)</summary>
@@ -372,6 +400,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinitionScopi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinition
 {
     /// <summary>The property- and tag-based conditions that determine which S3 buckets to include or exclude from the analysis. Conflicts with bucket_definitions. (documented below)</summary>
@@ -389,6 +418,7 @@ public partial class V1beta1ClassificationJobSpecForProviderS3JobDefinition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProviderScheduleFrequency
 {
     /// <summary>Specifies a daily recurrence pattern for running the job.</summary>
@@ -406,6 +436,7 @@ public partial class V1beta1ClassificationJobSpecForProviderScheduleFrequency
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecForProvider
 {
     /// <summary>The custom data identifiers to use for data analysis and classification.</summary>
@@ -458,6 +489,7 @@ public partial class V1beta1ClassificationJobSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterion
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -475,6 +507,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValues
 {
     /// <summary>The object property to use in the condition.</summary>
@@ -488,6 +521,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaExcludesAndTagCriterion
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -501,6 +535,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaExcludesAnd
 {
     /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an S3 buckets from the job. (documented below)</summary>
@@ -514,6 +549,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaExcludes
 {
     /// <summary>An array of conditions, one for each condition that determines which objects to include or exclude from the job. (documented below)</summary>
@@ -523,6 +559,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterion
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -540,6 +577,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValues
 {
     /// <summary>The object property to use in the condition.</summary>
@@ -553,6 +591,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaIncludesAndTagCriterion
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -566,6 +605,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaIncludesAnd
 {
     /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an S3 buckets from the job. (documented below)</summary>
@@ -579,6 +619,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaIncludes
 {
     /// <summary>An array of conditions, one for each condition that determines which objects to include or exclude from the job. (documented below)</summary>
@@ -588,6 +629,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteria
 {
     /// <summary>The property- or tag-based conditions that determine which objects to exclude from the analysis. (documented below)</summary>
@@ -601,6 +643,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBucketDefinitions
 {
     /// <summary>The unique identifier for the AWS account that owns the buckets.</summary>
@@ -614,6 +657,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScopingExcludesAndSimpleScopeTerm
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -631,6 +675,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScopingExcludesAndTagScopeTermTagValues
 {
     /// <summary>The object property to use in the condition.</summary>
@@ -644,6 +689,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScopingExcludesAndTagScopeTerm
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -665,6 +711,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScopingExcludesAnd
 {
     /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an object from the job. (documented below)</summary>
@@ -678,6 +725,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScopingExcludes
 {
     /// <summary>An array of conditions, one for each condition that determines which objects to include or exclude from the job. (documented below)</summary>
@@ -687,6 +735,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScopingIncludesAndSimpleScopeTerm
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -704,6 +753,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScopingIncludesAndTagScopeTermTagValues
 {
     /// <summary>The object property to use in the condition.</summary>
@@ -717,6 +767,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScopingIncludesAndTagScopeTerm
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -738,6 +789,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScopingIncludesAnd
 {
     /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an object from the job. (documented below)</summary>
@@ -751,6 +803,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScopingIncludes
 {
     /// <summary>An array of conditions, one for each condition that determines which objects to include or exclude from the job. (documented below)</summary>
@@ -760,6 +813,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScoping
 {
     /// <summary>The property- or tag-based conditions that determine which objects to exclude from the analysis. (documented below)</summary>
@@ -773,6 +827,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinition
 {
     /// <summary>The property- and tag-based conditions that determine which S3 buckets to include or exclude from the analysis. Conflicts with bucket_definitions. (documented below)</summary>
@@ -790,6 +845,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderS3JobDefinition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProviderScheduleFrequency
 {
     /// <summary>Specifies a daily recurrence pattern for running the job.</summary>
@@ -819,6 +875,7 @@ public partial class V1beta1ClassificationJobSpecInitProviderScheduleFrequency
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecInitProvider
 {
     /// <summary>The custom data identifiers to use for data analysis and classification.</summary>
@@ -868,6 +925,7 @@ public partial class V1beta1ClassificationJobSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClassificationJobSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ClassificationJobSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -892,6 +950,7 @@ public enum V1beta1ClassificationJobSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClassificationJobSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ClassificationJobSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -908,6 +967,7 @@ public enum V1beta1ClassificationJobSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClassificationJobSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ClassificationJobSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -919,6 +979,7 @@ public enum V1beta1ClassificationJobSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -947,6 +1008,7 @@ public partial class V1beta1ClassificationJobSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -966,6 +1028,7 @@ public partial class V1beta1ClassificationJobSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -980,6 +1043,7 @@ public partial class V1beta1ClassificationJobSpecWriteConnectionSecretToRef
 /// <summary>ClassificationJobSpec defines the desired state of ClassificationJob</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobSpec
 {
     /// <summary>
@@ -1047,6 +1111,7 @@ public partial class V1beta1ClassificationJobSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterion
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -1064,6 +1129,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValues
 {
     /// <summary>The object property to use in the condition.</summary>
@@ -1077,6 +1143,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaExcludesAndTagCriterion
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -1090,6 +1157,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaExcludesAnd
 {
     /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an S3 buckets from the job. (documented below)</summary>
@@ -1103,6 +1171,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaExcludes
 {
     /// <summary>An array of conditions, one for each condition that determines which objects to include or exclude from the job. (documented below)</summary>
@@ -1112,6 +1181,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterion
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -1129,6 +1199,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValues
 {
     /// <summary>The object property to use in the condition.</summary>
@@ -1142,6 +1213,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaIncludesAndTagCriterion
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -1155,6 +1227,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaIncludesAnd
 {
     /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an S3 buckets from the job. (documented below)</summary>
@@ -1168,6 +1241,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaIncludes
 {
     /// <summary>An array of conditions, one for each condition that determines which objects to include or exclude from the job. (documented below)</summary>
@@ -1177,6 +1251,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteria
 {
     /// <summary>The property- or tag-based conditions that determine which objects to exclude from the analysis. (documented below)</summary>
@@ -1190,6 +1265,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBucketDefinitions
 {
     /// <summary>The unique identifier for the AWS account that owns the buckets.</summary>
@@ -1203,6 +1279,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionBuck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScopingExcludesAndSimpleScopeTerm
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -1220,6 +1297,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScopingExcludesAndTagScopeTermTagValues
 {
     /// <summary>The object property to use in the condition.</summary>
@@ -1233,6 +1311,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScopingExcludesAndTagScopeTerm
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -1254,6 +1333,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScopingExcludesAnd
 {
     /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an object from the job. (documented below)</summary>
@@ -1267,6 +1347,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScopingExcludes
 {
     /// <summary>An array of conditions, one for each condition that determines which objects to include or exclude from the job. (documented below)</summary>
@@ -1276,6 +1357,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScopingIncludesAndSimpleScopeTerm
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -1293,6 +1375,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScopingIncludesAndTagScopeTermTagValues
 {
     /// <summary>The object property to use in the condition.</summary>
@@ -1306,6 +1389,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScopingIncludesAndTagScopeTerm
 {
     /// <summary>The operator to use in a condition. Valid values are: EQ, GT, GTE, LT, LTE, NE, CONTAINS, STARTS_WITH</summary>
@@ -1327,6 +1411,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScopingIncludesAnd
 {
     /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an object from the job. (documented below)</summary>
@@ -1340,6 +1425,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScopingIncludes
 {
     /// <summary>An array of conditions, one for each condition that determines which objects to include or exclude from the job. (documented below)</summary>
@@ -1349,6 +1435,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScoping
 {
     /// <summary>The property- or tag-based conditions that determine which objects to exclude from the analysis. (documented below)</summary>
@@ -1362,6 +1449,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinitionScop
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinition
 {
     /// <summary>The property- and tag-based conditions that determine which S3 buckets to include or exclude from the analysis. Conflicts with bucket_definitions. (documented below)</summary>
@@ -1379,6 +1467,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderS3JobDefinition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderScheduleFrequency
 {
     /// <summary>Specifies a daily recurrence pattern for running the job.</summary>
@@ -1396,6 +1485,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderScheduleFrequency
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProviderUserPausedDetails
 {
     [JsonPropertyName("jobExpiresAt")]
@@ -1410,6 +1500,7 @@ public partial class V1beta1ClassificationJobStatusAtProviderUserPausedDetails
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusAtProvider
 {
     /// <summary>The date and time, in UTC and extended RFC 3339 format, when the job was created.</summary>
@@ -1486,6 +1577,7 @@ public partial class V1beta1ClassificationJobStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatusConditions
 {
     /// <summary>
@@ -1529,6 +1621,7 @@ public partial class V1beta1ClassificationJobStatusConditions
 /// <summary>ClassificationJobStatus defines the observed state of ClassificationJob.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClassificationJobStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1547,9 +1640,13 @@ public partial class V1beta1ClassificationJobStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>ClassificationJob is the Schema for the ClassificationJobs API. Provides a resource to manage an AWS Macie Classification Job.</summary>
+/// <summary>
+/// ClassificationJob is the Schema for the ClassificationJobs API. Provides a resource to manage an AWS Macie Classification Job.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ClassificationJob : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ClassificationJobSpec>, IStatus<V1beta1ClassificationJobStatus?>
 {

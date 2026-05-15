@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cognitoidp.aws.upbound.io;
-/// <summary>RiskConfiguration is the Schema for the RiskConfigurations API. Provides a Cognito Risk Configuration resource.</summary>
+/// <summary>
+/// RiskConfiguration is the Schema for the RiskConfigurations API. Provides a Cognito Risk Configuration resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RiskConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RiskConfiguration>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1RiskConfigurationList : IKubernetesObject<V1ListMeta
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RiskConfigurationSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1RiskConfigurationSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskConfigurationActionsHighAction
 {
     /// <summary>The action to take in response to the account takeover action. Valid values are BLOCK, MFA_IF_CONFIGURED, MFA_REQUIRED and NO_ACTION.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskConfigurationActionsLowAction
 {
     /// <summary>The action to take in response to the account takeover action. Valid values are BLOCK, MFA_IF_CONFIGURED, MFA_REQUIRED and NO_ACTION.</summary>
@@ -83,6 +90,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskConfigurationActionsMediumAction
 {
     /// <summary>The action to take in response to the account takeover action. Valid values are BLOCK, MFA_IF_CONFIGURED, MFA_REQUIRED and NO_ACTION.</summary>
@@ -96,6 +104,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskConfigurationActions
 {
     /// <summary>Action to take for a high risk. See action block below.</summary>
@@ -113,6 +122,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail
 {
     /// <summary>The email HTML body.</summary>
@@ -130,6 +140,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail
 {
     /// <summary>The email HTML body.</summary>
@@ -147,6 +158,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail
 {
     /// <summary>The email HTML body.</summary>
@@ -164,6 +176,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskConfigurationNotifyConfiguration
 {
     /// <summary>Email template used when a detected risk event is blocked. See notify email type below.</summary>
@@ -193,6 +206,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskConfiguration
 {
     /// <summary>Account takeover risk configuration actions. See details below.</summary>
@@ -206,6 +220,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderAccountTakeoverRiskC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecForProviderCompromisedCredentialsRiskConfigurationActions
 {
     /// <summary>The action to take in response to the account takeover action. Valid values are BLOCK, MFA_IF_CONFIGURED, MFA_REQUIRED and NO_ACTION.</summary>
@@ -215,6 +230,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderCompromisedCredentia
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecForProviderCompromisedCredentialsRiskConfiguration
 {
     /// <summary>The compromised credentials risk configuration actions. See details below.</summary>
@@ -228,6 +244,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderCompromisedCredentia
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecForProviderRiskExceptionConfiguration
 {
     /// <summary>
@@ -255,6 +272,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderRiskExceptionConfigu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecForProviderUserPoolIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RiskConfigurationSpecForProviderUserPoolIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -271,6 +289,7 @@ public enum V1beta1RiskConfigurationSpecForProviderUserPoolIdRefPolicyResolution
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecForProviderUserPoolIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RiskConfigurationSpecForProviderUserPoolIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -282,6 +301,7 @@ public enum V1beta1RiskConfigurationSpecForProviderUserPoolIdRefPolicyResolveEnu
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecForProviderUserPoolIdRefPolicy
 {
     /// <summary>
@@ -306,6 +326,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderUserPoolIdRefPolicy
 /// <summary>Reference to a UserPool in cognitoidp to populate userPoolId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecForProviderUserPoolIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -325,6 +346,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderUserPoolIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecForProviderUserPoolIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RiskConfigurationSpecForProviderUserPoolIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -341,6 +363,7 @@ public enum V1beta1RiskConfigurationSpecForProviderUserPoolIdSelectorPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecForProviderUserPoolIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RiskConfigurationSpecForProviderUserPoolIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -352,6 +375,7 @@ public enum V1beta1RiskConfigurationSpecForProviderUserPoolIdSelectorPolicyResol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecForProviderUserPoolIdSelectorPolicy
 {
     /// <summary>
@@ -376,6 +400,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderUserPoolIdSelectorPo
 /// <summary>Selector for a UserPool in cognitoidp to populate userPoolId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecForProviderUserPoolIdSelector
 {
     /// <summary>
@@ -396,6 +421,7 @@ public partial class V1beta1RiskConfigurationSpecForProviderUserPoolIdSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecForProvider
 {
     /// <summary>The account takeover risk configuration. See details below.</summary>
@@ -436,6 +462,7 @@ public partial class V1beta1RiskConfigurationSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRiskConfigurationActionsHighAction
 {
     /// <summary>The action to take in response to the account takeover action. Valid values are BLOCK, MFA_IF_CONFIGURED, MFA_REQUIRED and NO_ACTION.</summary>
@@ -449,6 +476,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRiskConfigurationActionsLowAction
 {
     /// <summary>The action to take in response to the account takeover action. Valid values are BLOCK, MFA_IF_CONFIGURED, MFA_REQUIRED and NO_ACTION.</summary>
@@ -462,6 +490,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRiskConfigurationActionsMediumAction
 {
     /// <summary>The action to take in response to the account takeover action. Valid values are BLOCK, MFA_IF_CONFIGURED, MFA_REQUIRED and NO_ACTION.</summary>
@@ -475,6 +504,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRiskConfigurationActions
 {
     /// <summary>Action to take for a high risk. See action block below.</summary>
@@ -492,6 +522,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail
 {
     /// <summary>The email HTML body.</summary>
@@ -509,6 +540,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail
 {
     /// <summary>The email HTML body.</summary>
@@ -526,6 +558,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail
 {
     /// <summary>The email HTML body.</summary>
@@ -543,6 +576,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRiskConfigurationNotifyConfiguration
 {
     /// <summary>Email template used when a detected risk event is blocked. See notify email type below.</summary>
@@ -572,6 +606,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRiskConfiguration
 {
     /// <summary>Account takeover risk configuration actions. See details below.</summary>
@@ -585,6 +620,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderAccountTakeoverRisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecInitProviderCompromisedCredentialsRiskConfigurationActions
 {
     /// <summary>The action to take in response to the account takeover action. Valid values are BLOCK, MFA_IF_CONFIGURED, MFA_REQUIRED and NO_ACTION.</summary>
@@ -594,6 +630,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderCompromisedCredenti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecInitProviderCompromisedCredentialsRiskConfiguration
 {
     /// <summary>The compromised credentials risk configuration actions. See details below.</summary>
@@ -607,6 +644,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderCompromisedCredenti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecInitProviderRiskExceptionConfiguration
 {
     /// <summary>
@@ -634,6 +672,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderRiskExceptionConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecInitProviderUserPoolIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RiskConfigurationSpecInitProviderUserPoolIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -650,6 +689,7 @@ public enum V1beta1RiskConfigurationSpecInitProviderUserPoolIdRefPolicyResolutio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecInitProviderUserPoolIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RiskConfigurationSpecInitProviderUserPoolIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -661,6 +701,7 @@ public enum V1beta1RiskConfigurationSpecInitProviderUserPoolIdRefPolicyResolveEn
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecInitProviderUserPoolIdRefPolicy
 {
     /// <summary>
@@ -685,6 +726,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderUserPoolIdRefPolicy
 /// <summary>Reference to a UserPool in cognitoidp to populate userPoolId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecInitProviderUserPoolIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -704,6 +746,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderUserPoolIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecInitProviderUserPoolIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RiskConfigurationSpecInitProviderUserPoolIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -720,6 +763,7 @@ public enum V1beta1RiskConfigurationSpecInitProviderUserPoolIdSelectorPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecInitProviderUserPoolIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RiskConfigurationSpecInitProviderUserPoolIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -731,6 +775,7 @@ public enum V1beta1RiskConfigurationSpecInitProviderUserPoolIdSelectorPolicyReso
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecInitProviderUserPoolIdSelectorPolicy
 {
     /// <summary>
@@ -755,6 +800,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderUserPoolIdSelectorP
 /// <summary>Selector for a UserPool in cognitoidp to populate userPoolId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecInitProviderUserPoolIdSelector
 {
     /// <summary>
@@ -787,6 +833,7 @@ public partial class V1beta1RiskConfigurationSpecInitProviderUserPoolIdSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecInitProvider
 {
     /// <summary>The account takeover risk configuration. See details below.</summary>
@@ -824,6 +871,7 @@ public partial class V1beta1RiskConfigurationSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RiskConfigurationSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -848,6 +896,7 @@ public enum V1beta1RiskConfigurationSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RiskConfigurationSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -864,6 +913,7 @@ public enum V1beta1RiskConfigurationSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RiskConfigurationSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RiskConfigurationSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -875,6 +925,7 @@ public enum V1beta1RiskConfigurationSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -903,6 +954,7 @@ public partial class V1beta1RiskConfigurationSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -922,6 +974,7 @@ public partial class V1beta1RiskConfigurationSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -936,6 +989,7 @@ public partial class V1beta1RiskConfigurationSpecWriteConnectionSecretToRef
 /// <summary>RiskConfigurationSpec defines the desired state of RiskConfiguration</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationSpec
 {
     /// <summary>
@@ -1003,6 +1057,7 @@ public partial class V1beta1RiskConfigurationSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRiskConfigurationActionsHighAction
 {
     /// <summary>The action to take in response to the account takeover action. Valid values are BLOCK, MFA_IF_CONFIGURED, MFA_REQUIRED and NO_ACTION.</summary>
@@ -1016,6 +1071,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRiskConfigurationActionsLowAction
 {
     /// <summary>The action to take in response to the account takeover action. Valid values are BLOCK, MFA_IF_CONFIGURED, MFA_REQUIRED and NO_ACTION.</summary>
@@ -1029,6 +1085,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRiskConfigurationActionsMediumAction
 {
     /// <summary>The action to take in response to the account takeover action. Valid values are BLOCK, MFA_IF_CONFIGURED, MFA_REQUIRED and NO_ACTION.</summary>
@@ -1042,6 +1099,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRiskConfigurationActions
 {
     /// <summary>Action to take for a high risk. See action block below.</summary>
@@ -1059,6 +1117,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail
 {
     /// <summary>The email HTML body.</summary>
@@ -1076,6 +1135,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail
 {
     /// <summary>The email HTML body.</summary>
@@ -1093,6 +1153,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail
 {
     /// <summary>The email HTML body.</summary>
@@ -1110,6 +1171,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRiskConfigurationNotifyConfiguration
 {
     /// <summary>Email template used when a detected risk event is blocked. See notify email type below.</summary>
@@ -1139,6 +1201,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRiskConfiguration
 {
     /// <summary>Account takeover risk configuration actions. See details below.</summary>
@@ -1152,6 +1215,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderAccountTakeoverRisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationStatusAtProviderCompromisedCredentialsRiskConfigurationActions
 {
     /// <summary>The action to take in response to the account takeover action. Valid values are BLOCK, MFA_IF_CONFIGURED, MFA_REQUIRED and NO_ACTION.</summary>
@@ -1161,6 +1225,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderCompromisedCredenti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationStatusAtProviderCompromisedCredentialsRiskConfiguration
 {
     /// <summary>The compromised credentials risk configuration actions. See details below.</summary>
@@ -1174,6 +1239,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderCompromisedCredenti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationStatusAtProviderRiskExceptionConfiguration
 {
     /// <summary>
@@ -1195,6 +1261,7 @@ public partial class V1beta1RiskConfigurationStatusAtProviderRiskExceptionConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationStatusAtProvider
 {
     /// <summary>The account takeover risk configuration. See details below.</summary>
@@ -1232,6 +1299,7 @@ public partial class V1beta1RiskConfigurationStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationStatusConditions
 {
     /// <summary>
@@ -1275,6 +1343,7 @@ public partial class V1beta1RiskConfigurationStatusConditions
 /// <summary>RiskConfigurationStatus defines the observed state of RiskConfiguration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RiskConfigurationStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1293,9 +1362,13 @@ public partial class V1beta1RiskConfigurationStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>RiskConfiguration is the Schema for the RiskConfigurations API. Provides a Cognito Risk Configuration resource.</summary>
+/// <summary>
+/// RiskConfiguration is the Schema for the RiskConfigurations API. Provides a Cognito Risk Configuration resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RiskConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RiskConfigurationSpec>, IStatus<V1beta1RiskConfigurationStatus?>
 {

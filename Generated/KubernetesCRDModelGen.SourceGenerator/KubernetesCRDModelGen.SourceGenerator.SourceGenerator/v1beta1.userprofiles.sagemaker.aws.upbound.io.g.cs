@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.aws.upbound.io;
-/// <summary>UserProfile is the Schema for the UserProfiles API. Provides a SageMaker AI User Profile resource.</summary>
+/// <summary>
+/// UserProfile is the Schema for the UserProfiles API. Provides a SageMaker AI User Profile resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1UserProfileList : IKubernetesObject<V1ListMeta>, IItems<V1beta1UserProfile>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1UserProfileList : IKubernetesObject<V1ListMeta>, IIt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserProfileSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1UserProfileSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecForProviderDomainIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserProfileSpecForProviderDomainIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1UserProfileSpecForProviderDomainIdRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecForProviderDomainIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserProfileSpecForProviderDomainIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1UserProfileSpecForProviderDomainIdRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderDomainIdRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1UserProfileSpecForProviderDomainIdRefPolicy
 /// <summary>Reference to a Domain in sagemaker to populate domainId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderDomainIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1UserProfileSpecForProviderDomainIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecForProviderDomainIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserProfileSpecForProviderDomainIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1UserProfileSpecForProviderDomainIdSelectorPolicyResolutionEnu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecForProviderDomainIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserProfileSpecForProviderDomainIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1UserProfileSpecForProviderDomainIdSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderDomainIdSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1UserProfileSpecForProviderDomainIdSelectorPolicy
 /// <summary>Selector for a Domain in sagemaker to populate domainId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderDomainIdSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1UserProfileSpecForProviderDomainIdSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSettingsDirectDeploySettings
 {
     /// <summary>Describes whether model deployment permissions are enabled or disabled in the Canvas application. Valid values are ENABLED and DISABLED.</summary>
@@ -213,6 +227,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSetti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSettingsEmrServerlessSettings
 {
     /// <summary>The Amazon Resource Name (ARN) of the AWS IAM role that is assumed for running Amazon EMR Serverless jobs in SageMaker AI Canvas. This role should have the necessary permissions to read and write data attached and a trust relationship with EMR Serverless.</summary>
@@ -226,6 +241,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSetti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSettingsGenerativeAiSettings
 {
     /// <summary>The user profile Amazon Resource Name (ARN).</summary>
@@ -235,6 +251,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSetti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSettingsIdentityProviderOauthSettings
 {
     /// <summary>The name of the data source that you&apos;re connecting to. Canvas currently supports OAuth for Snowflake and Salesforce Data Cloud. Valid values are SalesforceGenie and Snowflake.</summary>
@@ -252,6 +269,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSetti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSettingsKendraSettings
 {
     /// <summary>Describes whether the document querying feature is enabled or disabled in the Canvas application. Valid values are ENABLED and DISABLED.</summary>
@@ -261,6 +279,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSetti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSettingsModelRegisterSettings
 {
     /// <summary>The Amazon Resource Name (ARN) of the SageMaker AI model registry account. Required only to register model versions created by a different SageMaker AI Canvas AWS account than the AWS account in which SageMaker AI model registry is set up.</summary>
@@ -274,6 +293,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSetti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings
 {
     /// <summary>The IAM role that Canvas passes to Amazon Forecast for time series forecasting. By default, Canvas uses the execution role specified in the UserProfile that launches the Canvas app. If an execution role is not specified in the UserProfile, Canvas uses the execution role specified in the Domain that owns the UserProfile. To allow time series forecasting, this IAM role should have the AmazonSageMakerCanvasForecastAccess policy attached and forecast.amazonaws.com added in the trust relationship as a service principal.</summary>
@@ -287,6 +307,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSetti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSettingsWorkspaceSettings
 {
     /// <summary>The Amazon S3 bucket used to store artifacts generated by Canvas. Updating the Amazon S3 location impacts existing configuration settings, and Canvas users no longer have access to their artifacts. Canvas users must log out and log back in to apply the new location.</summary>
@@ -300,6 +321,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSetti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSettings
 {
     /// <summary>The model deployment settings for the SageMaker AI Canvas application. See Direct Deploy Settings below.</summary>
@@ -336,6 +358,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCanvasAppSetti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings
 {
     /// <summary>The time that SageMaker AI waits after the application becomes idle before shutting it down. Valid values are between 60 and 525600.</summary>
@@ -357,6 +380,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppSettingsAppLifecycleManagement
 {
     /// <summary>Settings related to idle shutdown of Studio applications. see idle_settings Block below.</summary>
@@ -366,6 +390,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppSettingsCustomImage
 {
     /// <summary>The name of the App Image Config.</summary>
@@ -383,6 +408,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppSettingsDefaultResourceSpec
 {
     /// <summary>The instance type that the image version runs on.. For valid values see SageMaker AI Instance Types.</summary>
@@ -408,6 +434,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppSettings
 {
     /// <summary>Indicates whether idle shutdown is activated for JupyterLab applications. see app_lifecycle_management Block below.</summary>
@@ -433,6 +460,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCodeEditorAppS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCustomFileSystemConfigEfsFileSystemConfig
 {
     /// <summary>The ID of your Amazon EFS file system.</summary>
@@ -446,6 +474,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCustomFileSyst
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCustomFileSystemConfig
 {
     /// <summary>The default EBS storage settings for a private space. See EFS File System Config below.</summary>
@@ -455,6 +484,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCustomFileSyst
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsCustomPosixUserConfig
 {
     /// <summary>The POSIX group ID.</summary>
@@ -468,6 +498,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsCustomPosixUse
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings
 {
     /// <summary>The time that SageMaker AI waits after the application becomes idle before shutting it down. Valid values are between 60 and 525600.</summary>
@@ -489,6 +520,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppSettingsAppLifecycleManagement
 {
     /// <summary>Settings related to idle shutdown of Studio applications. see idle_settings Block below.</summary>
@@ -498,6 +530,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppSettingsCodeRepository
 {
     /// <summary>The URL of the Git repository.</summary>
@@ -507,6 +540,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppSettingsCustomImage
 {
     /// <summary>The name of the App Image Config.</summary>
@@ -524,6 +558,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppSettingsDefaultResourceSpec
 {
     /// <summary>The instance type that the image version runs on.. For valid values see SageMaker AI Instance Types.</summary>
@@ -549,6 +584,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppSettingsEmrSettings
 {
     /// <summary>An array of Amazon Resource Names (ARNs) of the IAM roles that the execution role of SageMaker AI can assume for performing operations or tasks related to Amazon EMR clusters or Amazon EMR Serverless applications. These roles define the permissions and access policies required when performing Amazon EMR-related operations, such as listing, connecting to, or terminating Amazon EMR clusters or Amazon EMR Serverless applications. They are typically used in cross-account access scenarios, where the Amazon EMR resources (clusters or serverless applications) are located in a different AWS account than the SageMaker AI domain.</summary>
@@ -562,6 +598,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppSettings
 {
     /// <summary>Indicates whether idle shutdown is activated for JupyterLab applications. see app_lifecycle_management Block below.</summary>
@@ -595,6 +632,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterLabAppS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterServerAppSettingsCodeRepository
 {
     /// <summary>The URL of the Git repository.</summary>
@@ -604,6 +642,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterServerA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterServerAppSettingsDefaultResourceSpec
 {
     /// <summary>The instance type that the image version runs on.. For valid values see SageMaker AI Instance Types.</summary>
@@ -629,6 +668,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterServerA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterServerAppSettings
 {
     /// <summary>A list of Git repositories that SageMaker AI automatically displays to users for cloning in the JupyterServer application. see Code Repository below.</summary>
@@ -646,6 +686,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsJupyterServerA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsKernelGatewayAppSettingsCustomImage
 {
     /// <summary>The name of the App Image Config.</summary>
@@ -663,6 +704,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsKernelGatewayA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsKernelGatewayAppSettingsDefaultResourceSpec
 {
     /// <summary>The instance type that the image version runs on.. For valid values see SageMaker AI Instance Types.</summary>
@@ -688,6 +730,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsKernelGatewayA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsKernelGatewayAppSettings
 {
     /// <summary>A list of custom SageMaker AI images that are configured to run as a KernelGateway app. see Custom Image below.</summary>
@@ -705,6 +748,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsKernelGatewayA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsRSessionAppSettingsCustomImage
 {
     /// <summary>The name of the App Image Config.</summary>
@@ -722,6 +766,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsRSessionAppSet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsRSessionAppSettingsDefaultResourceSpec
 {
     /// <summary>The instance type that the image version runs on.. For valid values see SageMaker AI Instance Types.</summary>
@@ -747,6 +792,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsRSessionAppSet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsRSessionAppSettings
 {
     /// <summary>A list of custom SageMaker AI images that are configured to run as a KernelGateway app. see Custom Image below.</summary>
@@ -760,6 +806,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsRSessionAppSet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsRStudioServerProAppSettings
 {
     /// <summary>Indicates whether the current user has access to the RStudioServerPro app. Valid values are ENABLED and DISABLED.</summary>
@@ -773,6 +820,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsRStudioServerP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsSharingSettings
 {
     /// <summary>Whether to include the notebook cell output when sharing the notebook. The default is Disabled. Valid values are Allowed and Disabled.</summary>
@@ -790,6 +838,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsSharingSetting
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsSpaceStorageSettingsDefaultEbsStorageSettings
 {
     /// <summary>The default size of the EBS storage volume for a private space.</summary>
@@ -803,6 +852,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsSpaceStorageSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsSpaceStorageSettings
 {
     /// <summary>The default EBS storage settings for a private space. See Default EBS Storage Settings below.</summary>
@@ -812,6 +862,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsSpaceStorageSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsStudioWebPortalSettings
 {
     /// <summary>The Applications supported in Studio that are hidden from the Studio left navigation pane.</summary>
@@ -829,6 +880,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsStudioWebPorta
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsTensorBoardAppSettingsDefaultResourceSpec
 {
     /// <summary>The instance type that the image version runs on.. For valid values see SageMaker AI Instance Types.</summary>
@@ -854,6 +906,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsTensorBoardApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettingsTensorBoardAppSettings
 {
     /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
@@ -863,6 +916,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettingsTensorBoardApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProviderUserSettings
 {
     /// <summary>Indicates whether auto-mounting of an EFS volume is supported for the user profile. The DefaultAsDomain value is only supported for user profiles. Do not use the DefaultAsDomain value when setting this parameter for a domain. Valid values are: Enabled, Disabled, and DefaultAsDomain.</summary>
@@ -940,6 +994,7 @@ public partial class V1beta1UserProfileSpecForProviderUserSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecForProvider
 {
     /// <summary>The ID of the associated Domain.</summary>
@@ -990,6 +1045,7 @@ public partial class V1beta1UserProfileSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecInitProviderDomainIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserProfileSpecInitProviderDomainIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1006,6 +1062,7 @@ public enum V1beta1UserProfileSpecInitProviderDomainIdRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecInitProviderDomainIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserProfileSpecInitProviderDomainIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1017,6 +1074,7 @@ public enum V1beta1UserProfileSpecInitProviderDomainIdRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderDomainIdRefPolicy
 {
     /// <summary>
@@ -1041,6 +1099,7 @@ public partial class V1beta1UserProfileSpecInitProviderDomainIdRefPolicy
 /// <summary>Reference to a Domain in sagemaker to populate domainId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderDomainIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1060,6 +1119,7 @@ public partial class V1beta1UserProfileSpecInitProviderDomainIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecInitProviderDomainIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserProfileSpecInitProviderDomainIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1076,6 +1136,7 @@ public enum V1beta1UserProfileSpecInitProviderDomainIdSelectorPolicyResolutionEn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecInitProviderDomainIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserProfileSpecInitProviderDomainIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1087,6 +1148,7 @@ public enum V1beta1UserProfileSpecInitProviderDomainIdSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderDomainIdSelectorPolicy
 {
     /// <summary>
@@ -1111,6 +1173,7 @@ public partial class V1beta1UserProfileSpecInitProviderDomainIdSelectorPolicy
 /// <summary>Selector for a Domain in sagemaker to populate domainId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderDomainIdSelector
 {
     /// <summary>
@@ -1131,6 +1194,7 @@ public partial class V1beta1UserProfileSpecInitProviderDomainIdSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSettingsDirectDeploySettings
 {
     /// <summary>Describes whether model deployment permissions are enabled or disabled in the Canvas application. Valid values are ENABLED and DISABLED.</summary>
@@ -1140,6 +1204,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSettingsEmrServerlessSettings
 {
     /// <summary>The Amazon Resource Name (ARN) of the AWS IAM role that is assumed for running Amazon EMR Serverless jobs in SageMaker AI Canvas. This role should have the necessary permissions to read and write data attached and a trust relationship with EMR Serverless.</summary>
@@ -1153,6 +1218,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSettingsGenerativeAiSettings
 {
     /// <summary>The user profile Amazon Resource Name (ARN).</summary>
@@ -1162,6 +1228,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSettingsIdentityProviderOauthSettings
 {
     /// <summary>The name of the data source that you&apos;re connecting to. Canvas currently supports OAuth for Snowflake and Salesforce Data Cloud. Valid values are SalesforceGenie and Snowflake.</summary>
@@ -1179,6 +1246,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSettingsKendraSettings
 {
     /// <summary>Describes whether the document querying feature is enabled or disabled in the Canvas application. Valid values are ENABLED and DISABLED.</summary>
@@ -1188,6 +1256,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSettingsModelRegisterSettings
 {
     /// <summary>The Amazon Resource Name (ARN) of the SageMaker AI model registry account. Required only to register model versions created by a different SageMaker AI Canvas AWS account than the AWS account in which SageMaker AI model registry is set up.</summary>
@@ -1201,6 +1270,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings
 {
     /// <summary>The IAM role that Canvas passes to Amazon Forecast for time series forecasting. By default, Canvas uses the execution role specified in the UserProfile that launches the Canvas app. If an execution role is not specified in the UserProfile, Canvas uses the execution role specified in the Domain that owns the UserProfile. To allow time series forecasting, this IAM role should have the AmazonSageMakerCanvasForecastAccess policy attached and forecast.amazonaws.com added in the trust relationship as a service principal.</summary>
@@ -1214,6 +1284,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSettingsWorkspaceSettings
 {
     /// <summary>The Amazon S3 bucket used to store artifacts generated by Canvas. Updating the Amazon S3 location impacts existing configuration settings, and Canvas users no longer have access to their artifacts. Canvas users must log out and log back in to apply the new location.</summary>
@@ -1227,6 +1298,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSettings
 {
     /// <summary>The model deployment settings for the SageMaker AI Canvas application. See Direct Deploy Settings below.</summary>
@@ -1263,6 +1335,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCanvasAppSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings
 {
     /// <summary>The time that SageMaker AI waits after the application becomes idle before shutting it down. Valid values are between 60 and 525600.</summary>
@@ -1284,6 +1357,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorAppSettingsAppLifecycleManagement
 {
     /// <summary>Settings related to idle shutdown of Studio applications. see idle_settings Block below.</summary>
@@ -1293,6 +1367,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorAppSettingsCustomImage
 {
     /// <summary>The name of the App Image Config.</summary>
@@ -1310,6 +1385,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorAppSettingsDefaultResourceSpec
 {
     /// <summary>The instance type that the image version runs on.. For valid values see SageMaker AI Instance Types.</summary>
@@ -1335,6 +1411,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorAppSettings
 {
     /// <summary>Indicates whether idle shutdown is activated for JupyterLab applications. see app_lifecycle_management Block below.</summary>
@@ -1360,6 +1437,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCodeEditorApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCustomFileSystemConfigEfsFileSystemConfig
 {
     /// <summary>The ID of your Amazon EFS file system.</summary>
@@ -1373,6 +1451,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCustomFileSys
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCustomFileSystemConfig
 {
     /// <summary>The default EBS storage settings for a private space. See EFS File System Config below.</summary>
@@ -1382,6 +1461,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCustomFileSys
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsCustomPosixUserConfig
 {
     /// <summary>The POSIX group ID.</summary>
@@ -1395,6 +1475,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsCustomPosixUs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings
 {
     /// <summary>The time that SageMaker AI waits after the application becomes idle before shutting it down. Valid values are between 60 and 525600.</summary>
@@ -1416,6 +1497,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabAppSettingsAppLifecycleManagement
 {
     /// <summary>Settings related to idle shutdown of Studio applications. see idle_settings Block below.</summary>
@@ -1425,6 +1507,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabAppSettingsCodeRepository
 {
     /// <summary>The URL of the Git repository.</summary>
@@ -1434,6 +1517,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabAppSettingsCustomImage
 {
     /// <summary>The name of the App Image Config.</summary>
@@ -1451,6 +1535,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabAppSettingsDefaultResourceSpec
 {
     /// <summary>The instance type that the image version runs on.. For valid values see SageMaker AI Instance Types.</summary>
@@ -1476,6 +1561,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabAppSettingsEmrSettings
 {
     /// <summary>An array of Amazon Resource Names (ARNs) of the IAM roles that the execution role of SageMaker AI can assume for performing operations or tasks related to Amazon EMR clusters or Amazon EMR Serverless applications. These roles define the permissions and access policies required when performing Amazon EMR-related operations, such as listing, connecting to, or terminating Amazon EMR clusters or Amazon EMR Serverless applications. They are typically used in cross-account access scenarios, where the Amazon EMR resources (clusters or serverless applications) are located in a different AWS account than the SageMaker AI domain.</summary>
@@ -1489,6 +1575,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabAppSettings
 {
     /// <summary>Indicates whether idle shutdown is activated for JupyterLab applications. see app_lifecycle_management Block below.</summary>
@@ -1522,6 +1609,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterLabApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterServerAppSettingsCodeRepository
 {
     /// <summary>The URL of the Git repository.</summary>
@@ -1531,6 +1619,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterServer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterServerAppSettingsDefaultResourceSpec
 {
     /// <summary>The instance type that the image version runs on.. For valid values see SageMaker AI Instance Types.</summary>
@@ -1556,6 +1645,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterServer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterServerAppSettings
 {
     /// <summary>A list of Git repositories that SageMaker AI automatically displays to users for cloning in the JupyterServer application. see Code Repository below.</summary>
@@ -1573,6 +1663,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsJupyterServer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsKernelGatewayAppSettingsCustomImage
 {
     /// <summary>The name of the App Image Config.</summary>
@@ -1590,6 +1681,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsKernelGateway
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsKernelGatewayAppSettingsDefaultResourceSpec
 {
     /// <summary>The instance type that the image version runs on.. For valid values see SageMaker AI Instance Types.</summary>
@@ -1615,6 +1707,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsKernelGateway
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsKernelGatewayAppSettings
 {
     /// <summary>A list of custom SageMaker AI images that are configured to run as a KernelGateway app. see Custom Image below.</summary>
@@ -1632,6 +1725,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsKernelGateway
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsRSessionAppSettingsCustomImage
 {
     /// <summary>The name of the App Image Config.</summary>
@@ -1649,6 +1743,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsRSessionAppSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsRSessionAppSettingsDefaultResourceSpec
 {
     /// <summary>The instance type that the image version runs on.. For valid values see SageMaker AI Instance Types.</summary>
@@ -1674,6 +1769,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsRSessionAppSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsRSessionAppSettings
 {
     /// <summary>A list of custom SageMaker AI images that are configured to run as a KernelGateway app. see Custom Image below.</summary>
@@ -1687,6 +1783,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsRSessionAppSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsRStudioServerProAppSettings
 {
     /// <summary>Indicates whether the current user has access to the RStudioServerPro app. Valid values are ENABLED and DISABLED.</summary>
@@ -1700,6 +1797,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsRStudioServer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsSharingSettings
 {
     /// <summary>Whether to include the notebook cell output when sharing the notebook. The default is Disabled. Valid values are Allowed and Disabled.</summary>
@@ -1717,6 +1815,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsSharingSettin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsSpaceStorageSettingsDefaultEbsStorageSettings
 {
     /// <summary>The default size of the EBS storage volume for a private space.</summary>
@@ -1730,6 +1829,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsSpaceStorageS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsSpaceStorageSettings
 {
     /// <summary>The default EBS storage settings for a private space. See Default EBS Storage Settings below.</summary>
@@ -1739,6 +1839,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsSpaceStorageS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsStudioWebPortalSettings
 {
     /// <summary>The Applications supported in Studio that are hidden from the Studio left navigation pane.</summary>
@@ -1756,6 +1857,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsStudioWebPort
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsTensorBoardAppSettingsDefaultResourceSpec
 {
     /// <summary>The instance type that the image version runs on.. For valid values see SageMaker AI Instance Types.</summary>
@@ -1781,6 +1883,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsTensorBoardAp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettingsTensorBoardAppSettings
 {
     /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
@@ -1790,6 +1893,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettingsTensorBoardAp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProviderUserSettings
 {
     /// <summary>Indicates whether auto-mounting of an EFS volume is supported for the user profile. The DefaultAsDomain value is only supported for user profiles. Do not use the DefaultAsDomain value when setting this parameter for a domain. Valid values are: Enabled, Disabled, and DefaultAsDomain.</summary>
@@ -1879,6 +1983,7 @@ public partial class V1beta1UserProfileSpecInitProviderUserSettings
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecInitProvider
 {
     /// <summary>The ID of the associated Domain.</summary>
@@ -1920,6 +2025,7 @@ public partial class V1beta1UserProfileSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserProfileSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1944,6 +2050,7 @@ public enum V1beta1UserProfileSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserProfileSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1960,6 +2067,7 @@ public enum V1beta1UserProfileSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserProfileSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserProfileSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1971,6 +2079,7 @@ public enum V1beta1UserProfileSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1999,6 +2108,7 @@ public partial class V1beta1UserProfileSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2018,6 +2128,7 @@ public partial class V1beta1UserProfileSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -2032,6 +2143,7 @@ public partial class V1beta1UserProfileSpecWriteConnectionSecretToRef
 /// <summary>UserProfileSpec defines the desired state of UserProfile</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileSpec
 {
     /// <summary>
@@ -2099,6 +2211,7 @@ public partial class V1beta1UserProfileSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSettingsDirectDeploySettings
 {
     /// <summary>Describes whether model deployment permissions are enabled or disabled in the Canvas application. Valid values are ENABLED and DISABLED.</summary>
@@ -2108,6 +2221,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSettingsEmrServerlessSettings
 {
     /// <summary>The Amazon Resource Name (ARN) of the AWS IAM role that is assumed for running Amazon EMR Serverless jobs in SageMaker AI Canvas. This role should have the necessary permissions to read and write data attached and a trust relationship with EMR Serverless.</summary>
@@ -2121,6 +2235,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSettingsGenerativeAiSettings
 {
     /// <summary>The user profile Amazon Resource Name (ARN).</summary>
@@ -2130,6 +2245,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSettingsIdentityProviderOauthSettings
 {
     /// <summary>The name of the data source that you&apos;re connecting to. Canvas currently supports OAuth for Snowflake and Salesforce Data Cloud. Valid values are SalesforceGenie and Snowflake.</summary>
@@ -2147,6 +2263,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSettingsKendraSettings
 {
     /// <summary>Describes whether the document querying feature is enabled or disabled in the Canvas application. Valid values are ENABLED and DISABLED.</summary>
@@ -2156,6 +2273,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSettingsModelRegisterSettings
 {
     /// <summary>The Amazon Resource Name (ARN) of the SageMaker AI model registry account. Required only to register model versions created by a different SageMaker AI Canvas AWS account than the AWS account in which SageMaker AI model registry is set up.</summary>
@@ -2169,6 +2287,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings
 {
     /// <summary>The IAM role that Canvas passes to Amazon Forecast for time series forecasting. By default, Canvas uses the execution role specified in the UserProfile that launches the Canvas app. If an execution role is not specified in the UserProfile, Canvas uses the execution role specified in the Domain that owns the UserProfile. To allow time series forecasting, this IAM role should have the AmazonSageMakerCanvasForecastAccess policy attached and forecast.amazonaws.com added in the trust relationship as a service principal.</summary>
@@ -2182,6 +2301,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSettingsWorkspaceSettings
 {
     /// <summary>The Amazon S3 bucket used to store artifacts generated by Canvas. Updating the Amazon S3 location impacts existing configuration settings, and Canvas users no longer have access to their artifacts. Canvas users must log out and log back in to apply the new location.</summary>
@@ -2195,6 +2315,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSettings
 {
     /// <summary>The model deployment settings for the SageMaker AI Canvas application. See Direct Deploy Settings below.</summary>
@@ -2231,6 +2352,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCanvasAppSett
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings
 {
     /// <summary>The time that SageMaker AI waits after the application becomes idle before shutting it down. Valid values are between 60 and 525600.</summary>
@@ -2252,6 +2374,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorAppSettingsAppLifecycleManagement
 {
     /// <summary>Settings related to idle shutdown of Studio applications. see idle_settings Block below.</summary>
@@ -2261,6 +2384,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorAppSettingsCustomImage
 {
     /// <summary>The name of the App Image Config.</summary>
@@ -2278,6 +2402,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorAppSettingsDefaultResourceSpec
 {
     /// <summary>The instance type that the image version runs on.. For valid values see SageMaker AI Instance Types.</summary>
@@ -2303,6 +2428,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorAppSettings
 {
     /// <summary>Indicates whether idle shutdown is activated for JupyterLab applications. see app_lifecycle_management Block below.</summary>
@@ -2328,6 +2454,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCodeEditorApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCustomFileSystemConfigEfsFileSystemConfig
 {
     /// <summary>The ID of your Amazon EFS file system.</summary>
@@ -2341,6 +2468,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCustomFileSys
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCustomFileSystemConfig
 {
     /// <summary>The default EBS storage settings for a private space. See EFS File System Config below.</summary>
@@ -2350,6 +2478,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCustomFileSys
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsCustomPosixUserConfig
 {
     /// <summary>The POSIX group ID.</summary>
@@ -2363,6 +2492,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsCustomPosixUs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings
 {
     /// <summary>The time that SageMaker AI waits after the application becomes idle before shutting it down. Valid values are between 60 and 525600.</summary>
@@ -2384,6 +2514,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabAppSettingsAppLifecycleManagement
 {
     /// <summary>Settings related to idle shutdown of Studio applications. see idle_settings Block below.</summary>
@@ -2393,6 +2524,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabAppSettingsCodeRepository
 {
     /// <summary>The URL of the Git repository.</summary>
@@ -2402,6 +2534,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabAppSettingsCustomImage
 {
     /// <summary>The name of the App Image Config.</summary>
@@ -2419,6 +2552,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabAppSettingsDefaultResourceSpec
 {
     /// <summary>The instance type that the image version runs on.. For valid values see SageMaker AI Instance Types.</summary>
@@ -2444,6 +2578,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabAppSettingsEmrSettings
 {
     /// <summary>An array of Amazon Resource Names (ARNs) of the IAM roles that the execution role of SageMaker AI can assume for performing operations or tasks related to Amazon EMR clusters or Amazon EMR Serverless applications. These roles define the permissions and access policies required when performing Amazon EMR-related operations, such as listing, connecting to, or terminating Amazon EMR clusters or Amazon EMR Serverless applications. They are typically used in cross-account access scenarios, where the Amazon EMR resources (clusters or serverless applications) are located in a different AWS account than the SageMaker AI domain.</summary>
@@ -2457,6 +2592,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabAppSettings
 {
     /// <summary>Indicates whether idle shutdown is activated for JupyterLab applications. see app_lifecycle_management Block below.</summary>
@@ -2490,6 +2626,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterLabApp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterServerAppSettingsCodeRepository
 {
     /// <summary>The URL of the Git repository.</summary>
@@ -2499,6 +2636,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterServer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterServerAppSettingsDefaultResourceSpec
 {
     /// <summary>The instance type that the image version runs on.. For valid values see SageMaker AI Instance Types.</summary>
@@ -2524,6 +2662,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterServer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterServerAppSettings
 {
     /// <summary>A list of Git repositories that SageMaker AI automatically displays to users for cloning in the JupyterServer application. see Code Repository below.</summary>
@@ -2541,6 +2680,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsJupyterServer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsKernelGatewayAppSettingsCustomImage
 {
     /// <summary>The name of the App Image Config.</summary>
@@ -2558,6 +2698,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsKernelGateway
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsKernelGatewayAppSettingsDefaultResourceSpec
 {
     /// <summary>The instance type that the image version runs on.. For valid values see SageMaker AI Instance Types.</summary>
@@ -2583,6 +2724,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsKernelGateway
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsKernelGatewayAppSettings
 {
     /// <summary>A list of custom SageMaker AI images that are configured to run as a KernelGateway app. see Custom Image below.</summary>
@@ -2600,6 +2742,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsKernelGateway
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsRSessionAppSettingsCustomImage
 {
     /// <summary>The name of the App Image Config.</summary>
@@ -2617,6 +2760,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsRSessionAppSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsRSessionAppSettingsDefaultResourceSpec
 {
     /// <summary>The instance type that the image version runs on.. For valid values see SageMaker AI Instance Types.</summary>
@@ -2642,6 +2786,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsRSessionAppSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsRSessionAppSettings
 {
     /// <summary>A list of custom SageMaker AI images that are configured to run as a KernelGateway app. see Custom Image below.</summary>
@@ -2655,6 +2800,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsRSessionAppSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsRStudioServerProAppSettings
 {
     /// <summary>Indicates whether the current user has access to the RStudioServerPro app. Valid values are ENABLED and DISABLED.</summary>
@@ -2668,6 +2814,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsRStudioServer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsSharingSettings
 {
     /// <summary>Whether to include the notebook cell output when sharing the notebook. The default is Disabled. Valid values are Allowed and Disabled.</summary>
@@ -2685,6 +2832,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsSharingSettin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsSpaceStorageSettingsDefaultEbsStorageSettings
 {
     /// <summary>The default size of the EBS storage volume for a private space.</summary>
@@ -2698,6 +2846,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsSpaceStorageS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsSpaceStorageSettings
 {
     /// <summary>The default EBS storage settings for a private space. See Default EBS Storage Settings below.</summary>
@@ -2707,6 +2856,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsSpaceStorageS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsStudioWebPortalSettings
 {
     /// <summary>The Applications supported in Studio that are hidden from the Studio left navigation pane.</summary>
@@ -2724,6 +2874,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsStudioWebPort
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsTensorBoardAppSettingsDefaultResourceSpec
 {
     /// <summary>The instance type that the image version runs on.. For valid values see SageMaker AI Instance Types.</summary>
@@ -2749,6 +2900,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsTensorBoardAp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettingsTensorBoardAppSettings
 {
     /// <summary>The default instance type and the Amazon Resource Name (ARN) of the SageMaker AI image created on the instance. see Default Resource Spec below.</summary>
@@ -2758,6 +2910,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettingsTensorBoardAp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProviderUserSettings
 {
     /// <summary>Indicates whether auto-mounting of an EFS volume is supported for the user profile. The DefaultAsDomain value is only supported for user profiles. Do not use the DefaultAsDomain value when setting this parameter for a domain. Valid values are: Enabled, Disabled, and DefaultAsDomain.</summary>
@@ -2835,6 +2988,7 @@ public partial class V1beta1UserProfileStatusAtProviderUserSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusAtProvider
 {
     /// <summary>The user profile Amazon Resource Name (ARN).</summary>
@@ -2887,6 +3041,7 @@ public partial class V1beta1UserProfileStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatusConditions
 {
     /// <summary>
@@ -2930,6 +3085,7 @@ public partial class V1beta1UserProfileStatusConditions
 /// <summary>UserProfileStatus defines the observed state of UserProfile.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserProfileStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2948,9 +3104,13 @@ public partial class V1beta1UserProfileStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>UserProfile is the Schema for the UserProfiles API. Provides a SageMaker AI User Profile resource.</summary>
+/// <summary>
+/// UserProfile is the Schema for the UserProfiles API. Provides a SageMaker AI User Profile resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1UserProfile : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1UserProfileSpec>, IStatus<V1beta1UserProfileStatus?>
 {

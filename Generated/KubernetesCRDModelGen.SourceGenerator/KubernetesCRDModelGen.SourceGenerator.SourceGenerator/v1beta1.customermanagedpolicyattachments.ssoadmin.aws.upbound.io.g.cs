@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ssoadmin.aws.upbound.io;
-/// <summary>CustomerManagedPolicyAttachment is the Schema for the CustomerManagedPolicyAttachments API. Manages a customer managed policy for a Single Sign-On (SSO) Permission Set</summary>
+/// <summary>
+/// CustomerManagedPolicyAttachment is the Schema for the CustomerManagedPolicyAttachments API. Manages a customer managed policy for a Single Sign-On (SSO) Permission Set
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CustomerManagedPolicyAttachmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1CustomerManagedPolicyAttachment>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentList : IKubernetesObj
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerManagedPolicyAttachmentSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CustomerManagedPolicyAttachmentSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1CustomerManagedPolicyAttachmentSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustomerManaged
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustomerManaged
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustom
 /// <summary>Reference to a Policy in iam to populate name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustom
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustomerManaged
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustomerManaged
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustom
 /// <summary>Selector for a Policy in iam to populate name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustom
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReference
 {
     /// <summary>Name of the customer managed IAM Policy to be attached.</summary>
@@ -231,6 +245,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentSpecForProviderCustom
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -247,6 +262,7 @@ public enum V1beta1CustomerManagedPolicyAttachmentSpecForProviderPermissionSetAr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -258,6 +274,7 @@ public enum V1beta1CustomerManagedPolicyAttachmentSpecForProviderPermissionSetAr
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnRefPolicy
 {
     /// <summary>
@@ -282,6 +299,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentSpecForProviderPermis
 /// <summary>Reference to a PermissionSet in ssoadmin to populate permissionSetArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -301,6 +319,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentSpecForProviderPermis
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -317,6 +336,7 @@ public enum V1beta1CustomerManagedPolicyAttachmentSpecForProviderPermissionSetAr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -328,6 +348,7 @@ public enum V1beta1CustomerManagedPolicyAttachmentSpecForProviderPermissionSetAr
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnSelectorPolicy
 {
     /// <summary>
@@ -352,6 +373,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentSpecForProviderPermis
 /// <summary>Selector for a PermissionSet in ssoadmin to populate permissionSetArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnSelector
 {
     /// <summary>
@@ -372,6 +394,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentSpecForProviderPermis
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentSpecForProvider
 {
     /// <summary>Specifies the name and path of a customer managed policy. See below.</summary>
@@ -410,6 +433,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -426,6 +450,7 @@ public enum V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCustomerManage
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -437,6 +462,7 @@ public enum V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCustomerManage
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameRefPolicy
 {
     /// <summary>
@@ -461,6 +487,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCusto
 /// <summary>Reference to a Policy in iam to populate name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -480,6 +507,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCusto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -496,6 +524,7 @@ public enum V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCustomerManage
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -507,6 +536,7 @@ public enum V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCustomerManage
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameSelectorPolicy
 {
     /// <summary>
@@ -531,6 +561,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCusto
 /// <summary>Selector for a Policy in iam to populate name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameSelector
 {
     /// <summary>
@@ -551,6 +582,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCusto
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReference
 {
     /// <summary>Name of the customer managed IAM Policy to be attached.</summary>
@@ -584,6 +616,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentSpecInitProviderCusto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentSpecInitProvider
 {
     /// <summary>Specifies the name and path of a customer managed policy. See below.</summary>
@@ -597,6 +630,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerManagedPolicyAttachmentSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CustomerManagedPolicyAttachmentSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -621,6 +655,7 @@ public enum V1beta1CustomerManagedPolicyAttachmentSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerManagedPolicyAttachmentSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CustomerManagedPolicyAttachmentSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -637,6 +672,7 @@ public enum V1beta1CustomerManagedPolicyAttachmentSpecProviderConfigRefPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CustomerManagedPolicyAttachmentSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CustomerManagedPolicyAttachmentSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -648,6 +684,7 @@ public enum V1beta1CustomerManagedPolicyAttachmentSpecProviderConfigRefPolicyRes
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -676,6 +713,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -695,6 +733,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -709,6 +748,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentSpecWriteConnectionSe
 /// <summary>CustomerManagedPolicyAttachmentSpec defines the desired state of CustomerManagedPolicyAttachment</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentSpec
 {
     /// <summary>
@@ -776,6 +816,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentStatusAtProviderCustomerManagedPolicyReference
 {
     /// <summary>Name of the customer managed IAM Policy to be attached.</summary>
@@ -789,6 +830,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentStatusAtProviderCusto
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentStatusAtProvider
 {
     /// <summary>Specifies the name and path of a customer managed policy. See below.</summary>
@@ -818,6 +860,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentStatusConditions
 {
     /// <summary>
@@ -861,6 +904,7 @@ public partial class V1beta1CustomerManagedPolicyAttachmentStatusConditions
 /// <summary>CustomerManagedPolicyAttachmentStatus defines the observed state of CustomerManagedPolicyAttachment.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CustomerManagedPolicyAttachmentStatus
 {
     [JsonPropertyName("atProvider")]
@@ -879,9 +923,13 @@ public partial class V1beta1CustomerManagedPolicyAttachmentStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>CustomerManagedPolicyAttachment is the Schema for the CustomerManagedPolicyAttachments API. Manages a customer managed policy for a Single Sign-On (SSO) Permission Set</summary>
+/// <summary>
+/// CustomerManagedPolicyAttachment is the Schema for the CustomerManagedPolicyAttachments API. Manages a customer managed policy for a Single Sign-On (SSO) Permission Set
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CustomerManagedPolicyAttachment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CustomerManagedPolicyAttachmentSpec>, IStatus<V1beta1CustomerManagedPolicyAttachmentStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudfront.aws.upbound.io;
-/// <summary>FieldLevelEncryptionConfig is the Schema for the FieldLevelEncryptionConfigs API. Provides a CloudFront Field-level Encryption Config resource.</summary>
+/// <summary>
+/// FieldLevelEncryptionConfig is the Schema for the FieldLevelEncryptionConfigs API. Provides a CloudFront Field-level Encryption Config resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FieldLevelEncryptionConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1FieldLevelEncryptionConfig>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1FieldLevelEncryptionConfigList : IKubernetesObject<V
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FieldLevelEncryptionConfigSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FieldLevelEncryptionConfigSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1FieldLevelEncryptionConfigSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecForProviderContentTypeProfileConfigContentTypeProfilesItems
 {
     /// <summary>he content type for a field-level encryption content type-profile mapping. Valid value is application/x-www-form-urlencoded.</summary>
@@ -74,6 +80,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecForProviderContentType
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecForProviderContentTypeProfileConfigContentTypeProfiles
 {
     [JsonPropertyName("items")]
@@ -82,6 +89,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecForProviderContentType
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecForProviderContentTypeProfileConfig
 {
     /// <summary>Object that contains an attribute items that contains the list of configurations for a field-level encryption content type-profile. See Content Type Profile.</summary>
@@ -101,6 +109,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecForProviderContentType
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -117,6 +126,7 @@ public enum V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgProfileConfi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -128,6 +138,7 @@ public enum V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgProfileConfi
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdRefPolicy
 {
     /// <summary>
@@ -152,6 +163,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgPro
 /// <summary>Reference to a FieldLevelEncryptionProfile in cloudfront to populate profileId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -171,6 +183,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgPro
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -187,6 +200,7 @@ public enum V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgProfileConfi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -198,6 +212,7 @@ public enum V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgProfileConfi
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdSelectorPolicy
 {
     /// <summary>
@@ -222,6 +237,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgPro
 /// <summary>Selector for a FieldLevelEncryptionProfile in cloudfront to populate profileId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdSelector
 {
     /// <summary>
@@ -242,6 +258,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgPro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgProfileConfigQueryArgProfilesItems
 {
     /// <summary>The profile ID for a field-level encryption content type-profile mapping.</summary>
@@ -263,6 +280,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgPro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgProfileConfigQueryArgProfiles
 {
     [JsonPropertyName("items")]
@@ -271,6 +289,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgPro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgProfileConfig
 {
     /// <summary>Flag to set if you want a request to be forwarded to the origin even if the profile specified by the field-level encryption query argument, fle-profile, is unknown.</summary>
@@ -284,6 +303,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecForProviderQueryArgPro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecForProvider
 {
     /// <summary>An optional comment about the Field Level Encryption Config.</summary>
@@ -301,6 +321,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecInitProviderContentTypeProfileConfigContentTypeProfilesItems
 {
     /// <summary>he content type for a field-level encryption content type-profile mapping. Valid value is application/x-www-form-urlencoded.</summary>
@@ -318,6 +339,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecInitProviderContentTyp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecInitProviderContentTypeProfileConfigContentTypeProfiles
 {
     [JsonPropertyName("items")]
@@ -326,6 +348,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecInitProviderContentTyp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecInitProviderContentTypeProfileConfig
 {
     /// <summary>Object that contains an attribute items that contains the list of configurations for a field-level encryption content type-profile. See Content Type Profile.</summary>
@@ -345,6 +368,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecInitProviderContentTyp
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -361,6 +385,7 @@ public enum V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgProfileConf
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -372,6 +397,7 @@ public enum V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgProfileConf
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdRefPolicy
 {
     /// <summary>
@@ -396,6 +422,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgPr
 /// <summary>Reference to a FieldLevelEncryptionProfile in cloudfront to populate profileId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -415,6 +442,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgPr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -431,6 +459,7 @@ public enum V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgProfileConf
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -442,6 +471,7 @@ public enum V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgProfileConf
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdSelectorPolicy
 {
     /// <summary>
@@ -466,6 +496,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgPr
 /// <summary>Selector for a FieldLevelEncryptionProfile in cloudfront to populate profileId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgProfileConfigQueryArgProfilesItemsProfileIdSelector
 {
     /// <summary>
@@ -486,6 +517,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgProfileConfigQueryArgProfilesItems
 {
     /// <summary>The profile ID for a field-level encryption content type-profile mapping.</summary>
@@ -507,6 +539,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgProfileConfigQueryArgProfiles
 {
     [JsonPropertyName("items")]
@@ -515,6 +548,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgProfileConfig
 {
     /// <summary>Flag to set if you want a request to be forwarded to the origin even if the profile specified by the field-level encryption query argument, fle-profile, is unknown.</summary>
@@ -540,6 +574,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecInitProviderQueryArgPr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecInitProvider
 {
     /// <summary>An optional comment about the Field Level Encryption Config.</summary>
@@ -561,6 +596,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FieldLevelEncryptionConfigSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FieldLevelEncryptionConfigSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -585,6 +621,7 @@ public enum V1beta1FieldLevelEncryptionConfigSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FieldLevelEncryptionConfigSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FieldLevelEncryptionConfigSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -601,6 +638,7 @@ public enum V1beta1FieldLevelEncryptionConfigSpecProviderConfigRefPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FieldLevelEncryptionConfigSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FieldLevelEncryptionConfigSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -612,6 +650,7 @@ public enum V1beta1FieldLevelEncryptionConfigSpecProviderConfigRefPolicyResolveE
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -640,6 +679,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecProviderConfigRefPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -659,6 +699,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -673,6 +714,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpecWriteConnectionSecretT
 /// <summary>FieldLevelEncryptionConfigSpec defines the desired state of FieldLevelEncryptionConfig</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigSpec
 {
     /// <summary>
@@ -740,6 +782,7 @@ public partial class V1beta1FieldLevelEncryptionConfigSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigStatusAtProviderContentTypeProfileConfigContentTypeProfilesItems
 {
     /// <summary>he content type for a field-level encryption content type-profile mapping. Valid value is application/x-www-form-urlencoded.</summary>
@@ -757,6 +800,7 @@ public partial class V1beta1FieldLevelEncryptionConfigStatusAtProviderContentTyp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigStatusAtProviderContentTypeProfileConfigContentTypeProfiles
 {
     [JsonPropertyName("items")]
@@ -765,6 +809,7 @@ public partial class V1beta1FieldLevelEncryptionConfigStatusAtProviderContentTyp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigStatusAtProviderContentTypeProfileConfig
 {
     /// <summary>Object that contains an attribute items that contains the list of configurations for a field-level encryption content type-profile. See Content Type Profile.</summary>
@@ -778,6 +823,7 @@ public partial class V1beta1FieldLevelEncryptionConfigStatusAtProviderContentTyp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigStatusAtProviderQueryArgProfileConfigQueryArgProfilesItems
 {
     /// <summary>The profile ID for a field-level encryption content type-profile mapping.</summary>
@@ -791,6 +837,7 @@ public partial class V1beta1FieldLevelEncryptionConfigStatusAtProviderQueryArgPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigStatusAtProviderQueryArgProfileConfigQueryArgProfiles
 {
     [JsonPropertyName("items")]
@@ -799,6 +846,7 @@ public partial class V1beta1FieldLevelEncryptionConfigStatusAtProviderQueryArgPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigStatusAtProviderQueryArgProfileConfig
 {
     /// <summary>Flag to set if you want a request to be forwarded to the origin even if the profile specified by the field-level encryption query argument, fle-profile, is unknown.</summary>
@@ -812,6 +860,7 @@ public partial class V1beta1FieldLevelEncryptionConfigStatusAtProviderQueryArgPr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigStatusAtProvider
 {
     /// <summary>The Field Level Encryption Config ARN.</summary>
@@ -846,6 +895,7 @@ public partial class V1beta1FieldLevelEncryptionConfigStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigStatusConditions
 {
     /// <summary>
@@ -889,6 +939,7 @@ public partial class V1beta1FieldLevelEncryptionConfigStatusConditions
 /// <summary>FieldLevelEncryptionConfigStatus defines the observed state of FieldLevelEncryptionConfig.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FieldLevelEncryptionConfigStatus
 {
     [JsonPropertyName("atProvider")]
@@ -907,9 +958,13 @@ public partial class V1beta1FieldLevelEncryptionConfigStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>FieldLevelEncryptionConfig is the Schema for the FieldLevelEncryptionConfigs API. Provides a CloudFront Field-level Encryption Config resource.</summary>
+/// <summary>
+/// FieldLevelEncryptionConfig is the Schema for the FieldLevelEncryptionConfigs API. Provides a CloudFront Field-level Encryption Config resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FieldLevelEncryptionConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1FieldLevelEncryptionConfigSpec>, IStatus<V1beta1FieldLevelEncryptionConfigStatus?>
 {

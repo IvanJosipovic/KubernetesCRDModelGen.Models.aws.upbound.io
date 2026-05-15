@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.waf.aws.upbound.io;
-/// <summary>SQLInjectionMatchSet is the Schema for the SQLInjectionMatchSets API. Provides a AWS WAF SQL Injection Match Set resource.</summary>
+/// <summary>
+/// SQLInjectionMatchSet is the Schema for the SQLInjectionMatchSets API. Provides a AWS WAF SQL Injection Match Set resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SQLInjectionMatchSetList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SQLInjectionMatchSet>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1SQLInjectionMatchSetList : IKubernetesObject<V1ListM
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SQLInjectionMatchSetSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SQLInjectionMatchSetSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1SQLInjectionMatchSetSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SQLInjectionMatchSetSpecForProviderSqlInjectionMatchTuplesFieldToMatch
 {
     /// <summary>
@@ -78,6 +84,7 @@ public partial class V1beta1SQLInjectionMatchSetSpecForProviderSqlInjectionMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SQLInjectionMatchSetSpecForProviderSqlInjectionMatchTuples
 {
     /// <summary>Specifies where in a web request to look for snippets of malicious SQL code.</summary>
@@ -97,6 +104,7 @@ public partial class V1beta1SQLInjectionMatchSetSpecForProviderSqlInjectionMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SQLInjectionMatchSetSpecForProvider
 {
     /// <summary>The name or description of the SQL Injection Match Set.</summary>
@@ -110,6 +118,7 @@ public partial class V1beta1SQLInjectionMatchSetSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SQLInjectionMatchSetSpecInitProviderSqlInjectionMatchTuplesFieldToMatch
 {
     /// <summary>
@@ -131,6 +140,7 @@ public partial class V1beta1SQLInjectionMatchSetSpecInitProviderSqlInjectionMatc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SQLInjectionMatchSetSpecInitProviderSqlInjectionMatchTuples
 {
     /// <summary>Specifies where in a web request to look for snippets of malicious SQL code.</summary>
@@ -162,6 +172,7 @@ public partial class V1beta1SQLInjectionMatchSetSpecInitProviderSqlInjectionMatc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SQLInjectionMatchSetSpecInitProvider
 {
     /// <summary>The name or description of the SQL Injection Match Set.</summary>
@@ -179,6 +190,7 @@ public partial class V1beta1SQLInjectionMatchSetSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SQLInjectionMatchSetSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SQLInjectionMatchSetSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -203,6 +215,7 @@ public enum V1beta1SQLInjectionMatchSetSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SQLInjectionMatchSetSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SQLInjectionMatchSetSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -219,6 +232,7 @@ public enum V1beta1SQLInjectionMatchSetSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SQLInjectionMatchSetSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SQLInjectionMatchSetSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -230,6 +244,7 @@ public enum V1beta1SQLInjectionMatchSetSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SQLInjectionMatchSetSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -258,6 +273,7 @@ public partial class V1beta1SQLInjectionMatchSetSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SQLInjectionMatchSetSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -277,6 +293,7 @@ public partial class V1beta1SQLInjectionMatchSetSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SQLInjectionMatchSetSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -291,6 +308,7 @@ public partial class V1beta1SQLInjectionMatchSetSpecWriteConnectionSecretToRef
 /// <summary>SQLInjectionMatchSetSpec defines the desired state of SQLInjectionMatchSet</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SQLInjectionMatchSetSpec
 {
     /// <summary>
@@ -358,6 +376,7 @@ public partial class V1beta1SQLInjectionMatchSetSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SQLInjectionMatchSetStatusAtProviderSqlInjectionMatchTuplesFieldToMatch
 {
     /// <summary>
@@ -379,6 +398,7 @@ public partial class V1beta1SQLInjectionMatchSetStatusAtProviderSqlInjectionMatc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SQLInjectionMatchSetStatusAtProviderSqlInjectionMatchTuples
 {
     /// <summary>Specifies where in a web request to look for snippets of malicious SQL code.</summary>
@@ -398,6 +418,7 @@ public partial class V1beta1SQLInjectionMatchSetStatusAtProviderSqlInjectionMatc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SQLInjectionMatchSetStatusAtProvider
 {
     /// <summary>Amazon Resource Name (ARN) of the SQL injection match set.</summary>
@@ -420,6 +441,7 @@ public partial class V1beta1SQLInjectionMatchSetStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SQLInjectionMatchSetStatusConditions
 {
     /// <summary>
@@ -463,6 +485,7 @@ public partial class V1beta1SQLInjectionMatchSetStatusConditions
 /// <summary>SQLInjectionMatchSetStatus defines the observed state of SQLInjectionMatchSet.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SQLInjectionMatchSetStatus
 {
     [JsonPropertyName("atProvider")]
@@ -481,9 +504,13 @@ public partial class V1beta1SQLInjectionMatchSetStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>SQLInjectionMatchSet is the Schema for the SQLInjectionMatchSets API. Provides a AWS WAF SQL Injection Match Set resource.</summary>
+/// <summary>
+/// SQLInjectionMatchSet is the Schema for the SQLInjectionMatchSets API. Provides a AWS WAF SQL Injection Match Set resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SQLInjectionMatchSet : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SQLInjectionMatchSetSpec>, IStatus<V1beta1SQLInjectionMatchSetStatus?>
 {
