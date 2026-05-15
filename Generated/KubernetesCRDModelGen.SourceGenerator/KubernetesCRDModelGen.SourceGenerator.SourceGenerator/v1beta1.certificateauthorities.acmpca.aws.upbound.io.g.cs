@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.acmpca.aws.upbound.io;
-/// <summary>CertificateAuthority is the Schema for the CertificateAuthoritys API. Provides a resource to manage AWS Certificate Manager Private Certificate Authorities</summary>
+/// <summary>
+/// CertificateAuthority is the Schema for the CertificateAuthoritys API. Provides a resource to manage AWS Certificate Manager Private Certificate Authorities
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CertificateAuthorityList : IKubernetesObject<V1ListMeta>, IItems<V1beta1CertificateAuthority>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1CertificateAuthorityList : IKubernetesObject<V1ListM
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateAuthoritySpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CertificateAuthoritySpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1CertificateAuthoritySpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthoritySpecForProviderCertificateAuthorityConfigurationSubject
 {
     /// <summary>Fully qualified domain name (FQDN) associated with the certificate subject. Must be less than or equal to 64 characters in length.</summary>
@@ -114,6 +120,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderCertificateAuthor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthoritySpecForProviderCertificateAuthorityConfiguration
 {
     /// <summary>Type of the public key algorithm and size, in bits, of the key pair that your key pair creates when it issues a certificate. Valid values can be found in the ACM PCA Documentation.</summary>
@@ -131,6 +138,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderCertificateAuthor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthoritySpecForProviderRevocationConfigurationCrlConfiguration
 {
     /// <summary>Name inserted into the certificate CRL Distribution Points extension that enables the use of an alias for the CRL distribution point. Use this value if you don&apos;t want the name of your S3 bucket to be public. Must be less than or equal to 253 characters in length.</summary>
@@ -160,6 +168,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderRevocationConfigu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthoritySpecForProviderRevocationConfigurationOcspConfiguration
 {
     /// <summary>Boolean value that specifies whether a custom OCSP responder is enabled.</summary>
@@ -173,6 +182,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderRevocationConfigu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthoritySpecForProviderRevocationConfiguration
 {
     /// <summary>Nested argument containing configuration of the certificate revocation list (CRL), if any, maintained by the certificate authority. Defined below.</summary>
@@ -189,6 +199,7 @@ public partial class V1beta1CertificateAuthoritySpecForProviderRevocationConfigu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthoritySpecForProvider
 {
     /// <summary>Nested argument containing algorithms and certificate subject information. Defined below.</summary>
@@ -233,6 +244,7 @@ public partial class V1beta1CertificateAuthoritySpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthoritySpecInitProviderCertificateAuthorityConfigurationSubject
 {
     /// <summary>Fully qualified domain name (FQDN) associated with the certificate subject. Must be less than or equal to 64 characters in length.</summary>
@@ -290,6 +302,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderCertificateAutho
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthoritySpecInitProviderCertificateAuthorityConfiguration
 {
     /// <summary>Type of the public key algorithm and size, in bits, of the key pair that your key pair creates when it issues a certificate. Valid values can be found in the ACM PCA Documentation.</summary>
@@ -307,6 +320,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderCertificateAutho
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthoritySpecInitProviderRevocationConfigurationCrlConfiguration
 {
     /// <summary>Name inserted into the certificate CRL Distribution Points extension that enables the use of an alias for the CRL distribution point. Use this value if you don&apos;t want the name of your S3 bucket to be public. Must be less than or equal to 253 characters in length.</summary>
@@ -336,6 +350,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderRevocationConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthoritySpecInitProviderRevocationConfigurationOcspConfiguration
 {
     /// <summary>Boolean value that specifies whether a custom OCSP responder is enabled.</summary>
@@ -349,6 +364,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderRevocationConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthoritySpecInitProviderRevocationConfiguration
 {
     /// <summary>Nested argument containing configuration of the certificate revocation list (CRL), if any, maintained by the certificate authority. Defined below.</summary>
@@ -377,6 +393,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProviderRevocationConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthoritySpecInitProvider
 {
     /// <summary>Nested argument containing algorithms and certificate subject information. Defined below.</summary>
@@ -418,6 +435,7 @@ public partial class V1beta1CertificateAuthoritySpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateAuthoritySpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CertificateAuthoritySpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -442,6 +460,7 @@ public enum V1beta1CertificateAuthoritySpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateAuthoritySpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CertificateAuthoritySpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -458,6 +477,7 @@ public enum V1beta1CertificateAuthoritySpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateAuthoritySpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CertificateAuthoritySpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -469,6 +489,7 @@ public enum V1beta1CertificateAuthoritySpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthoritySpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -497,6 +518,7 @@ public partial class V1beta1CertificateAuthoritySpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthoritySpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -516,6 +538,7 @@ public partial class V1beta1CertificateAuthoritySpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthoritySpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -530,6 +553,7 @@ public partial class V1beta1CertificateAuthoritySpecWriteConnectionSecretToRef
 /// <summary>CertificateAuthoritySpec defines the desired state of CertificateAuthority</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthoritySpec
 {
     /// <summary>
@@ -597,6 +621,7 @@ public partial class V1beta1CertificateAuthoritySpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthorityStatusAtProviderCertificateAuthorityConfigurationSubject
 {
     /// <summary>Fully qualified domain name (FQDN) associated with the certificate subject. Must be less than or equal to 64 characters in length.</summary>
@@ -654,6 +679,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderCertificateAutho
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthorityStatusAtProviderCertificateAuthorityConfiguration
 {
     /// <summary>Type of the public key algorithm and size, in bits, of the key pair that your key pair creates when it issues a certificate. Valid values can be found in the ACM PCA Documentation.</summary>
@@ -671,6 +697,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderCertificateAutho
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthorityStatusAtProviderRevocationConfigurationCrlConfiguration
 {
     /// <summary>Name inserted into the certificate CRL Distribution Points extension that enables the use of an alias for the CRL distribution point. Use this value if you don&apos;t want the name of your S3 bucket to be public. Must be less than or equal to 253 characters in length.</summary>
@@ -700,6 +727,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderRevocationConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthorityStatusAtProviderRevocationConfigurationOcspConfiguration
 {
     /// <summary>Boolean value that specifies whether a custom OCSP responder is enabled.</summary>
@@ -713,6 +741,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderRevocationConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthorityStatusAtProviderRevocationConfiguration
 {
     /// <summary>Nested argument containing configuration of the certificate revocation list (CRL), if any, maintained by the certificate authority. Defined below.</summary>
@@ -729,6 +758,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProviderRevocationConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthorityStatusAtProvider
 {
     /// <summary>ARN of the certificate authority.</summary>
@@ -810,6 +840,7 @@ public partial class V1beta1CertificateAuthorityStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthorityStatusConditions
 {
     /// <summary>
@@ -853,6 +884,7 @@ public partial class V1beta1CertificateAuthorityStatusConditions
 /// <summary>CertificateAuthorityStatus defines the observed state of CertificateAuthority.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateAuthorityStatus
 {
     [JsonPropertyName("atProvider")]
@@ -871,9 +903,13 @@ public partial class V1beta1CertificateAuthorityStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>CertificateAuthority is the Schema for the CertificateAuthoritys API. Provides a resource to manage AWS Certificate Manager Private Certificate Authorities</summary>
+/// <summary>
+/// CertificateAuthority is the Schema for the CertificateAuthoritys API. Provides a resource to manage AWS Certificate Manager Private Certificate Authorities
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CertificateAuthority : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CertificateAuthoritySpec>, IStatus<V1beta1CertificateAuthorityStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.glue.aws.upbound.io;
-/// <summary>Connection is the Schema for the Connections API. Provides an Glue Connection resource.</summary>
+/// <summary>
+/// Connection is the Schema for the Connections API. Provides an Glue Connection resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ConnectionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Connection>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ConnectionList : IKubernetesObject<V1ListMeta>, IIte
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -58,6 +63,7 @@ public enum V1beta1ConnectionSpecDeletionPolicyEnum
 /// <summary>Map of key-value pairs used as connection properties specific to the Athena compute environment.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderAthenaPropertiesSecretRef
 {
     /// <summary>Name of the secret.</summary>
@@ -72,6 +78,7 @@ public partial class V1beta1ConnectionSpecForProviderAthenaPropertiesSecretRef
 /// <summary>Map of key-value pairs used as parameters for this connection. For more information, see the AWS Documentation.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderConnectionPropertiesSecretRef
 {
     /// <summary>Name of the secret.</summary>
@@ -91,6 +98,7 @@ public partial class V1beta1ConnectionSpecForProviderConnectionPropertiesSecretR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -107,6 +115,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvaila
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -118,6 +127,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvaila
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneRefPolicy
 {
     /// <summary>
@@ -142,6 +152,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 /// <summary>Reference to a Subnet in ec2 to populate availabilityZone.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -161,6 +172,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -177,6 +189,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvaila
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -188,6 +201,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvaila
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneSelectorPolicy
 {
     /// <summary>
@@ -212,6 +226,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 /// <summary>Selector for a Subnet in ec2 to populate availabilityZone.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsAvailabilityZoneSelector
 {
     /// <summary>
@@ -238,6 +253,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -254,6 +270,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecuri
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -265,6 +282,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecuri
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListRefsPolicy
 {
     /// <summary>
@@ -289,6 +307,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -308,6 +327,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -324,6 +344,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecuri
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -335,6 +356,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecuri
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListSelectorPolicy
 {
     /// <summary>
@@ -359,6 +381,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 /// <summary>Selector for a list of SecurityGroup in ec2 to populate securityGroupIdList.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSecurityGroupIdListSelector
 {
     /// <summary>
@@ -385,6 +408,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -401,6 +425,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -412,6 +437,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnet
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdRefPolicy
 {
     /// <summary>
@@ -436,6 +462,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 /// <summary>Reference to a Subnet in ec2 to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -455,6 +482,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -471,6 +499,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -482,6 +511,7 @@ public enum V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnet
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -506,6 +536,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 /// <summary>Selector for a Subnet in ec2 to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirementsSubnetIdSelector
 {
     /// <summary>
@@ -526,6 +557,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequirements
 {
     /// <summary>The availability zone of the connection. This field is redundant and implied by subnet_id, but is currently an api requirement.</summary>
@@ -567,6 +599,7 @@ public partial class V1beta1ConnectionSpecForProviderPhysicalConnectionRequireme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecForProvider
 {
     /// <summary>Map of key-value pairs used as connection properties specific to the Athena compute environment.</summary>
@@ -617,6 +650,7 @@ public partial class V1beta1ConnectionSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -633,6 +667,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvail
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -644,6 +679,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvail
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneRefPolicy
 {
     /// <summary>
@@ -668,6 +704,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 /// <summary>Reference to a Subnet in ec2 to populate availabilityZone.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -687,6 +724,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -703,6 +741,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvail
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -714,6 +753,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvail
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneSelectorPolicy
 {
     /// <summary>
@@ -738,6 +778,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 /// <summary>Selector for a Subnet in ec2 to populate availabilityZone.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsAvailabilityZoneSelector
 {
     /// <summary>
@@ -764,6 +805,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -780,6 +822,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecur
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -791,6 +834,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecur
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListRefsPolicy
 {
     /// <summary>
@@ -815,6 +859,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -834,6 +879,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -850,6 +896,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecur
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -861,6 +908,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecur
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListSelectorPolicy
 {
     /// <summary>
@@ -885,6 +933,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 /// <summary>Selector for a list of SecurityGroup in ec2 to populate securityGroupIdList.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSecurityGroupIdListSelector
 {
     /// <summary>
@@ -911,6 +960,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -927,6 +977,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubne
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -938,6 +989,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubne
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdRefPolicy
 {
     /// <summary>
@@ -962,6 +1014,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 /// <summary>Reference to a Subnet in ec2 to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -981,6 +1034,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -997,6 +1051,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubne
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1008,6 +1063,7 @@ public enum V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubne
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdSelectorPolicy
 {
     /// <summary>
@@ -1032,6 +1088,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 /// <summary>Selector for a Subnet in ec2 to populate subnetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirementsSubnetIdSelector
 {
     /// <summary>
@@ -1052,6 +1109,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirements
 {
     /// <summary>The availability zone of the connection. This field is redundant and implied by subnet_id, but is currently an api requirement.</summary>
@@ -1105,6 +1163,7 @@ public partial class V1beta1ConnectionSpecInitProviderPhysicalConnectionRequirem
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecInitProvider
 {
     [JsonPropertyName("athenaPropertiesSecretRef")]
@@ -1140,6 +1199,7 @@ public partial class V1beta1ConnectionSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1164,6 +1224,7 @@ public enum V1beta1ConnectionSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1180,6 +1241,7 @@ public enum V1beta1ConnectionSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1191,6 +1253,7 @@ public enum V1beta1ConnectionSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1219,6 +1282,7 @@ public partial class V1beta1ConnectionSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1238,6 +1302,7 @@ public partial class V1beta1ConnectionSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1252,6 +1317,7 @@ public partial class V1beta1ConnectionSpecWriteConnectionSecretToRef
 /// <summary>ConnectionSpec defines the desired state of Connection</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionSpec
 {
     /// <summary>
@@ -1319,6 +1385,7 @@ public partial class V1beta1ConnectionSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProviderPhysicalConnectionRequirements
 {
     /// <summary>The availability zone of the connection. This field is redundant and implied by subnet_id, but is currently an api requirement.</summary>
@@ -1336,6 +1403,7 @@ public partial class V1beta1ConnectionStatusAtProviderPhysicalConnectionRequirem
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusAtProvider
 {
     /// <summary>ARN of the Glue Connection.</summary>
@@ -1385,6 +1453,7 @@ public partial class V1beta1ConnectionStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatusConditions
 {
     /// <summary>
@@ -1428,6 +1497,7 @@ public partial class V1beta1ConnectionStatusConditions
 /// <summary>ConnectionStatus defines the observed state of Connection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1446,9 +1516,13 @@ public partial class V1beta1ConnectionStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Connection is the Schema for the Connections API. Provides an Glue Connection resource.</summary>
+/// <summary>
+/// Connection is the Schema for the Connections API. Provides an Glue Connection resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Connection : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ConnectionSpec>, IStatus<V1beta1ConnectionStatus?>
 {

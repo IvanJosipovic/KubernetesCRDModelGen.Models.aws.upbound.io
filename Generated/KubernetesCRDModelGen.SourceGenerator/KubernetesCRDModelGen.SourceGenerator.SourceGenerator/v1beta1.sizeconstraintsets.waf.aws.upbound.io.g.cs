@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.waf.aws.upbound.io;
-/// <summary>SizeConstraintSet is the Schema for the SizeConstraintSets API. The</summary>
+/// <summary>
+/// SizeConstraintSet is the Schema for the SizeConstraintSets API. The
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SizeConstraintSetList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SizeConstraintSet>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1SizeConstraintSetList : IKubernetesObject<V1ListMeta
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SizeConstraintSetSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SizeConstraintSetSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1SizeConstraintSetSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SizeConstraintSetSpecForProviderSizeConstraintsFieldToMatch
 {
     /// <summary>When the type is HEADER, specify the name of the header that you want to search using the data field, for example, User-Agent or Referer. If the type is any other value, you can omit this field.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1SizeConstraintSetSpecForProviderSizeConstraintsField
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SizeConstraintSetSpecForProviderSizeConstraints
 {
     /// <summary>Type of comparison you want to perform, such as EQ, NE, LT, or GT. Please refer to the documentation for a complete list of supported values.</summary>
@@ -94,6 +101,7 @@ public partial class V1beta1SizeConstraintSetSpecForProviderSizeConstraints
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SizeConstraintSetSpecForProvider
 {
     /// <summary>Name or description of the Size Constraint Set.</summary>
@@ -107,6 +115,7 @@ public partial class V1beta1SizeConstraintSetSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SizeConstraintSetSpecInitProviderSizeConstraintsFieldToMatch
 {
     /// <summary>When the type is HEADER, specify the name of the header that you want to search using the data field, for example, User-Agent or Referer. If the type is any other value, you can omit this field.</summary>
@@ -120,6 +129,7 @@ public partial class V1beta1SizeConstraintSetSpecInitProviderSizeConstraintsFiel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SizeConstraintSetSpecInitProviderSizeConstraints
 {
     /// <summary>Type of comparison you want to perform, such as EQ, NE, LT, or GT. Please refer to the documentation for a complete list of supported values.</summary>
@@ -156,6 +166,7 @@ public partial class V1beta1SizeConstraintSetSpecInitProviderSizeConstraints
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SizeConstraintSetSpecInitProvider
 {
     /// <summary>Name or description of the Size Constraint Set.</summary>
@@ -173,6 +184,7 @@ public partial class V1beta1SizeConstraintSetSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SizeConstraintSetSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SizeConstraintSetSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -197,6 +209,7 @@ public enum V1beta1SizeConstraintSetSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SizeConstraintSetSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SizeConstraintSetSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -213,6 +226,7 @@ public enum V1beta1SizeConstraintSetSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SizeConstraintSetSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SizeConstraintSetSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -224,6 +238,7 @@ public enum V1beta1SizeConstraintSetSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SizeConstraintSetSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -252,6 +267,7 @@ public partial class V1beta1SizeConstraintSetSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SizeConstraintSetSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -271,6 +287,7 @@ public partial class V1beta1SizeConstraintSetSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SizeConstraintSetSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -285,6 +302,7 @@ public partial class V1beta1SizeConstraintSetSpecWriteConnectionSecretToRef
 /// <summary>SizeConstraintSetSpec defines the desired state of SizeConstraintSet</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SizeConstraintSetSpec
 {
     /// <summary>
@@ -352,6 +370,7 @@ public partial class V1beta1SizeConstraintSetSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SizeConstraintSetStatusAtProviderSizeConstraintsFieldToMatch
 {
     /// <summary>When the type is HEADER, specify the name of the header that you want to search using the data field, for example, User-Agent or Referer. If the type is any other value, you can omit this field.</summary>
@@ -365,6 +384,7 @@ public partial class V1beta1SizeConstraintSetStatusAtProviderSizeConstraintsFiel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SizeConstraintSetStatusAtProviderSizeConstraints
 {
     /// <summary>Type of comparison you want to perform, such as EQ, NE, LT, or GT. Please refer to the documentation for a complete list of supported values.</summary>
@@ -389,6 +409,7 @@ public partial class V1beta1SizeConstraintSetStatusAtProviderSizeConstraints
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SizeConstraintSetStatusAtProvider
 {
     /// <summary>Amazon Resource Name (ARN).</summary>
@@ -411,6 +432,7 @@ public partial class V1beta1SizeConstraintSetStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SizeConstraintSetStatusConditions
 {
     /// <summary>
@@ -454,6 +476,7 @@ public partial class V1beta1SizeConstraintSetStatusConditions
 /// <summary>SizeConstraintSetStatus defines the observed state of SizeConstraintSet.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SizeConstraintSetStatus
 {
     [JsonPropertyName("atProvider")]
@@ -472,9 +495,13 @@ public partial class V1beta1SizeConstraintSetStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>SizeConstraintSet is the Schema for the SizeConstraintSets API. The</summary>
+/// <summary>
+/// SizeConstraintSet is the Schema for the SizeConstraintSets API. The
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SizeConstraintSet : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SizeConstraintSetSpec>, IStatus<V1beta1SizeConstraintSetStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.lambda.aws.upbound.io;
-/// <summary>EventSourceMapping is the Schema for the EventSourceMappings API. Manages an AWS Lambda Event Source Mapping.</summary>
+/// <summary>
+/// EventSourceMapping is the Schema for the EventSourceMappings API. Manages an AWS Lambda Event Source Mapping.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EventSourceMappingList : IKubernetesObject<V1ListMeta>, IItems<V1beta1EventSourceMapping>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1EventSourceMappingList : IKubernetesObject<V1ListMet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1EventSourceMappingSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig
 {
     /// <summary>Authentication type Lambda uses to access the schema registry.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderAmazonManagedKafkaE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfig
 {
     /// <summary>Message attribute to validate. Valid values: KEY, VALUE.</summary>
@@ -79,6 +86,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderAmazonManagedKafkaE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderAmazonManagedKafkaEventSourceConfigSchemaRegistryConfig
 {
     /// <summary>Configuration block for authentication Lambda uses to access the schema registry.</summary>
@@ -100,6 +108,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderAmazonManagedKafkaE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderAmazonManagedKafkaEventSourceConfig
 {
     /// <summary>Kafka consumer group ID between 1 and 200 characters for use when creating this event source mapping. If one is not specified, this value will be automatically generated. See AmazonManagedKafkaEventSourceConfig Syntax.</summary>
@@ -119,6 +128,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderAmazonManagedKafkaE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecForProviderDestinationConfigOnFailureDestinationArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecForProviderDestinationConfigOnFailureDestinationArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -135,6 +145,7 @@ public enum V1beta1EventSourceMappingSpecForProviderDestinationConfigOnFailureDe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecForProviderDestinationConfigOnFailureDestinationArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecForProviderDestinationConfigOnFailureDestinationArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -146,6 +157,7 @@ public enum V1beta1EventSourceMappingSpecForProviderDestinationConfigOnFailureDe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderDestinationConfigOnFailureDestinationArnRefPolicy
 {
     /// <summary>
@@ -170,6 +182,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderDestinationConfigOn
 /// <summary>Reference to a Queue in sqs to populate destinationArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderDestinationConfigOnFailureDestinationArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -189,6 +202,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderDestinationConfigOn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecForProviderDestinationConfigOnFailureDestinationArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecForProviderDestinationConfigOnFailureDestinationArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -205,6 +219,7 @@ public enum V1beta1EventSourceMappingSpecForProviderDestinationConfigOnFailureDe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecForProviderDestinationConfigOnFailureDestinationArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecForProviderDestinationConfigOnFailureDestinationArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -216,6 +231,7 @@ public enum V1beta1EventSourceMappingSpecForProviderDestinationConfigOnFailureDe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderDestinationConfigOnFailureDestinationArnSelectorPolicy
 {
     /// <summary>
@@ -240,6 +256,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderDestinationConfigOn
 /// <summary>Selector for a Queue in sqs to populate destinationArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderDestinationConfigOnFailureDestinationArnSelector
 {
     /// <summary>
@@ -260,6 +277,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderDestinationConfigOn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderDestinationConfigOnFailure
 {
     /// <summary>ARN of the destination resource, or kafka://your-topic-name for Amazon MSK and self-managed Apache Kafka destinations.</summary>
@@ -277,6 +295,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderDestinationConfigOn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderDestinationConfig
 {
     /// <summary>Destination configuration for failed invocations. See below.</summary>
@@ -286,6 +305,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderDestinationConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderDocumentDbEventSourceConfig
 {
     /// <summary>Name of the collection to consume within the database. If you do not specify a collection, Lambda consumes all collections.</summary>
@@ -303,6 +323,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderDocumentDbEventSour
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderFilterCriteriaFilter
 {
     /// <summary>Filter pattern up to 4096 characters. See Filter Rule Syntax.</summary>
@@ -312,6 +333,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderFilterCriteriaFilte
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderFilterCriteria
 {
     /// <summary>Set of up to 5 filter. If an event satisfies at least one, Lambda sends the event to the function or adds it to the next batch. See below.</summary>
@@ -327,6 +349,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderFilterCriteria
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecForProviderFunctionNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecForProviderFunctionNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -343,6 +366,7 @@ public enum V1beta1EventSourceMappingSpecForProviderFunctionNameRefPolicyResolut
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecForProviderFunctionNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecForProviderFunctionNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -354,6 +378,7 @@ public enum V1beta1EventSourceMappingSpecForProviderFunctionNameRefPolicyResolve
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderFunctionNameRefPolicy
 {
     /// <summary>
@@ -378,6 +403,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderFunctionNameRefPoli
 /// <summary>Reference to a Function in lambda to populate functionName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderFunctionNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -397,6 +423,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderFunctionNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecForProviderFunctionNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecForProviderFunctionNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -413,6 +440,7 @@ public enum V1beta1EventSourceMappingSpecForProviderFunctionNameSelectorPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecForProviderFunctionNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecForProviderFunctionNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -424,6 +452,7 @@ public enum V1beta1EventSourceMappingSpecForProviderFunctionNameSelectorPolicyRe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderFunctionNameSelectorPolicy
 {
     /// <summary>
@@ -448,6 +477,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderFunctionNameSelecto
 /// <summary>Selector for a Function in lambda to populate functionName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderFunctionNameSelector
 {
     /// <summary>
@@ -474,6 +504,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderFunctionNameSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecForProviderKmsKeyArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecForProviderKmsKeyArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -490,6 +521,7 @@ public enum V1beta1EventSourceMappingSpecForProviderKmsKeyArnRefPolicyResolution
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecForProviderKmsKeyArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecForProviderKmsKeyArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -501,6 +533,7 @@ public enum V1beta1EventSourceMappingSpecForProviderKmsKeyArnRefPolicyResolveEnu
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderKmsKeyArnRefPolicy
 {
     /// <summary>
@@ -525,6 +558,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderKmsKeyArnRefPolicy
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderKmsKeyArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -544,6 +578,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderKmsKeyArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecForProviderKmsKeyArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecForProviderKmsKeyArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -560,6 +595,7 @@ public enum V1beta1EventSourceMappingSpecForProviderKmsKeyArnSelectorPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecForProviderKmsKeyArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecForProviderKmsKeyArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -571,6 +607,7 @@ public enum V1beta1EventSourceMappingSpecForProviderKmsKeyArnSelectorPolicyResol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderKmsKeyArnSelectorPolicy
 {
     /// <summary>
@@ -595,6 +632,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderKmsKeyArnSelectorPo
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderKmsKeyArnSelector
 {
     /// <summary>
@@ -615,6 +653,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderKmsKeyArnSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderMetricsConfig
 {
     /// <summary>List containing the metrics to be produced by the event source mapping. Valid values: EventCount.</summary>
@@ -624,6 +663,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderMetricsConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderProvisionedPollerConfig
 {
     /// <summary>Maximum number of event pollers this event source can scale up to. The range is between 1 and 2000.</summary>
@@ -641,6 +681,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderProvisionedPollerCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderScalingConfig
 {
     /// <summary>Limits the number of concurrent instances that the Amazon SQS event source can invoke. Must be greater than or equal to 2. See Configuring maximum concurrency for Amazon SQS event sources. You need to raise a Service Quota Ticket to increase the concurrency beyond 1000.</summary>
@@ -650,6 +691,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderScalingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderSelfManagedEventSource
 {
     /// <summary>Map of endpoints for the self managed source. For Kafka self-managed sources, the key should be KAFKA_BOOTSTRAP_SERVERS and the value should be a string with a comma separated list of broker endpoints.</summary>
@@ -659,6 +701,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderSelfManagedEventSou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig
 {
     /// <summary>Authentication type Lambda uses to access the schema registry.</summary>
@@ -672,6 +715,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderSelfManagedKafkaEve
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfig
 {
     /// <summary>Message attribute to validate. Valid values: KEY, VALUE.</summary>
@@ -681,6 +725,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderSelfManagedKafkaEve
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderSelfManagedKafkaEventSourceConfigSchemaRegistryConfig
 {
     /// <summary>Configuration block for authentication Lambda uses to access the schema registry.</summary>
@@ -702,6 +747,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderSelfManagedKafkaEve
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderSelfManagedKafkaEventSourceConfig
 {
     /// <summary>Kafka consumer group ID between 1 and 200 characters for use when creating this event source mapping. If one is not specified, this value will be automatically generated. See SelfManagedKafkaEventSourceConfig Syntax.</summary>
@@ -715,6 +761,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderSelfManagedKafkaEve
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProviderSourceAccessConfiguration
 {
     /// <summary>Type of authentication protocol, VPC components, or virtual host for your event source. For valid values, refer to the AWS documentation.</summary>
@@ -728,6 +775,7 @@ public partial class V1beta1EventSourceMappingSpecForProviderSourceAccessConfigu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecForProvider
 {
     /// <summary>Additional configuration block for Amazon Managed Kafka sources. Incompatible with self_managed_event_source and self_managed_kafka_event_source_config. See below.</summary>
@@ -864,6 +912,7 @@ public partial class V1beta1EventSourceMappingSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig
 {
     /// <summary>Authentication type Lambda uses to access the schema registry.</summary>
@@ -877,6 +926,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderAmazonManagedKafka
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfig
 {
     /// <summary>Message attribute to validate. Valid values: KEY, VALUE.</summary>
@@ -886,6 +936,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderAmazonManagedKafka
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderAmazonManagedKafkaEventSourceConfigSchemaRegistryConfig
 {
     /// <summary>Configuration block for authentication Lambda uses to access the schema registry.</summary>
@@ -907,6 +958,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderAmazonManagedKafka
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderAmazonManagedKafkaEventSourceConfig
 {
     /// <summary>Kafka consumer group ID between 1 and 200 characters for use when creating this event source mapping. If one is not specified, this value will be automatically generated. See AmazonManagedKafkaEventSourceConfig Syntax.</summary>
@@ -926,6 +978,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderAmazonManagedKafka
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecInitProviderDestinationConfigOnFailureDestinationArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecInitProviderDestinationConfigOnFailureDestinationArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -942,6 +995,7 @@ public enum V1beta1EventSourceMappingSpecInitProviderDestinationConfigOnFailureD
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecInitProviderDestinationConfigOnFailureDestinationArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecInitProviderDestinationConfigOnFailureDestinationArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -953,6 +1007,7 @@ public enum V1beta1EventSourceMappingSpecInitProviderDestinationConfigOnFailureD
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderDestinationConfigOnFailureDestinationArnRefPolicy
 {
     /// <summary>
@@ -977,6 +1032,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderDestinationConfigO
 /// <summary>Reference to a Queue in sqs to populate destinationArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderDestinationConfigOnFailureDestinationArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -996,6 +1052,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderDestinationConfigO
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecInitProviderDestinationConfigOnFailureDestinationArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecInitProviderDestinationConfigOnFailureDestinationArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1012,6 +1069,7 @@ public enum V1beta1EventSourceMappingSpecInitProviderDestinationConfigOnFailureD
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecInitProviderDestinationConfigOnFailureDestinationArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecInitProviderDestinationConfigOnFailureDestinationArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1023,6 +1081,7 @@ public enum V1beta1EventSourceMappingSpecInitProviderDestinationConfigOnFailureD
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderDestinationConfigOnFailureDestinationArnSelectorPolicy
 {
     /// <summary>
@@ -1047,6 +1106,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderDestinationConfigO
 /// <summary>Selector for a Queue in sqs to populate destinationArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderDestinationConfigOnFailureDestinationArnSelector
 {
     /// <summary>
@@ -1067,6 +1127,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderDestinationConfigO
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderDestinationConfigOnFailure
 {
     /// <summary>ARN of the destination resource, or kafka://your-topic-name for Amazon MSK and self-managed Apache Kafka destinations.</summary>
@@ -1084,6 +1145,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderDestinationConfigO
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderDestinationConfig
 {
     /// <summary>Destination configuration for failed invocations. See below.</summary>
@@ -1093,6 +1155,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderDestinationConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderDocumentDbEventSourceConfig
 {
     /// <summary>Name of the collection to consume within the database. If you do not specify a collection, Lambda consumes all collections.</summary>
@@ -1110,6 +1173,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderDocumentDbEventSou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderFilterCriteriaFilter
 {
     /// <summary>Filter pattern up to 4096 characters. See Filter Rule Syntax.</summary>
@@ -1119,6 +1183,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderFilterCriteriaFilt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderFilterCriteria
 {
     /// <summary>Set of up to 5 filter. If an event satisfies at least one, Lambda sends the event to the function or adds it to the next batch. See below.</summary>
@@ -1134,6 +1199,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderFilterCriteria
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecInitProviderFunctionNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecInitProviderFunctionNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1150,6 +1216,7 @@ public enum V1beta1EventSourceMappingSpecInitProviderFunctionNameRefPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecInitProviderFunctionNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecInitProviderFunctionNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1161,6 +1228,7 @@ public enum V1beta1EventSourceMappingSpecInitProviderFunctionNameRefPolicyResolv
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderFunctionNameRefPolicy
 {
     /// <summary>
@@ -1185,6 +1253,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderFunctionNameRefPol
 /// <summary>Reference to a Function in lambda to populate functionName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderFunctionNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1204,6 +1273,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderFunctionNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecInitProviderFunctionNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecInitProviderFunctionNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1220,6 +1290,7 @@ public enum V1beta1EventSourceMappingSpecInitProviderFunctionNameSelectorPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecInitProviderFunctionNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecInitProviderFunctionNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1231,6 +1302,7 @@ public enum V1beta1EventSourceMappingSpecInitProviderFunctionNameSelectorPolicyR
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderFunctionNameSelectorPolicy
 {
     /// <summary>
@@ -1255,6 +1327,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderFunctionNameSelect
 /// <summary>Selector for a Function in lambda to populate functionName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderFunctionNameSelector
 {
     /// <summary>
@@ -1281,6 +1354,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderFunctionNameSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecInitProviderKmsKeyArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecInitProviderKmsKeyArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1297,6 +1371,7 @@ public enum V1beta1EventSourceMappingSpecInitProviderKmsKeyArnRefPolicyResolutio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecInitProviderKmsKeyArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecInitProviderKmsKeyArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1308,6 +1383,7 @@ public enum V1beta1EventSourceMappingSpecInitProviderKmsKeyArnRefPolicyResolveEn
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderKmsKeyArnRefPolicy
 {
     /// <summary>
@@ -1332,6 +1408,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderKmsKeyArnRefPolicy
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderKmsKeyArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1351,6 +1428,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderKmsKeyArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecInitProviderKmsKeyArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecInitProviderKmsKeyArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1367,6 +1445,7 @@ public enum V1beta1EventSourceMappingSpecInitProviderKmsKeyArnSelectorPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecInitProviderKmsKeyArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecInitProviderKmsKeyArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1378,6 +1457,7 @@ public enum V1beta1EventSourceMappingSpecInitProviderKmsKeyArnSelectorPolicyReso
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderKmsKeyArnSelectorPolicy
 {
     /// <summary>
@@ -1402,6 +1482,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderKmsKeyArnSelectorP
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderKmsKeyArnSelector
 {
     /// <summary>
@@ -1422,6 +1503,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderKmsKeyArnSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderMetricsConfig
 {
     /// <summary>List containing the metrics to be produced by the event source mapping. Valid values: EventCount.</summary>
@@ -1431,6 +1513,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderMetricsConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderProvisionedPollerConfig
 {
     /// <summary>Maximum number of event pollers this event source can scale up to. The range is between 1 and 2000.</summary>
@@ -1448,6 +1531,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderProvisionedPollerC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderScalingConfig
 {
     /// <summary>Limits the number of concurrent instances that the Amazon SQS event source can invoke. Must be greater than or equal to 2. See Configuring maximum concurrency for Amazon SQS event sources. You need to raise a Service Quota Ticket to increase the concurrency beyond 1000.</summary>
@@ -1457,6 +1541,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderScalingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderSelfManagedEventSource
 {
     /// <summary>Map of endpoints for the self managed source. For Kafka self-managed sources, the key should be KAFKA_BOOTSTRAP_SERVERS and the value should be a string with a comma separated list of broker endpoints.</summary>
@@ -1466,6 +1551,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderSelfManagedEventSo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig
 {
     /// <summary>Authentication type Lambda uses to access the schema registry.</summary>
@@ -1479,6 +1565,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderSelfManagedKafkaEv
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfig
 {
     /// <summary>Message attribute to validate. Valid values: KEY, VALUE.</summary>
@@ -1488,6 +1575,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderSelfManagedKafkaEv
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderSelfManagedKafkaEventSourceConfigSchemaRegistryConfig
 {
     /// <summary>Configuration block for authentication Lambda uses to access the schema registry.</summary>
@@ -1509,6 +1597,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderSelfManagedKafkaEv
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderSelfManagedKafkaEventSourceConfig
 {
     /// <summary>Kafka consumer group ID between 1 and 200 characters for use when creating this event source mapping. If one is not specified, this value will be automatically generated. See SelfManagedKafkaEventSourceConfig Syntax.</summary>
@@ -1522,6 +1611,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderSelfManagedKafkaEv
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProviderSourceAccessConfiguration
 {
     /// <summary>Type of authentication protocol, VPC components, or virtual host for your event source. For valid values, refer to the AWS documentation.</summary>
@@ -1547,6 +1637,7 @@ public partial class V1beta1EventSourceMappingSpecInitProviderSourceAccessConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecInitProvider
 {
     /// <summary>Additional configuration block for Amazon Managed Kafka sources. Incompatible with self_managed_event_source and self_managed_kafka_event_source_config. See below.</summary>
@@ -1680,6 +1771,7 @@ public partial class V1beta1EventSourceMappingSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1704,6 +1796,7 @@ public enum V1beta1EventSourceMappingSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1720,6 +1813,7 @@ public enum V1beta1EventSourceMappingSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EventSourceMappingSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EventSourceMappingSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1731,6 +1825,7 @@ public enum V1beta1EventSourceMappingSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1759,6 +1854,7 @@ public partial class V1beta1EventSourceMappingSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1778,6 +1874,7 @@ public partial class V1beta1EventSourceMappingSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1792,6 +1889,7 @@ public partial class V1beta1EventSourceMappingSpecWriteConnectionSecretToRef
 /// <summary>EventSourceMappingSpec defines the desired state of EventSourceMapping</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingSpec
 {
     /// <summary>
@@ -1859,6 +1957,7 @@ public partial class V1beta1EventSourceMappingSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatusAtProviderAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig
 {
     /// <summary>Authentication type Lambda uses to access the schema registry.</summary>
@@ -1872,6 +1971,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderAmazonManagedKafka
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatusAtProviderAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfig
 {
     /// <summary>Message attribute to validate. Valid values: KEY, VALUE.</summary>
@@ -1881,6 +1981,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderAmazonManagedKafka
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatusAtProviderAmazonManagedKafkaEventSourceConfigSchemaRegistryConfig
 {
     /// <summary>Configuration block for authentication Lambda uses to access the schema registry.</summary>
@@ -1902,6 +2003,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderAmazonManagedKafka
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatusAtProviderAmazonManagedKafkaEventSourceConfig
 {
     /// <summary>Kafka consumer group ID between 1 and 200 characters for use when creating this event source mapping. If one is not specified, this value will be automatically generated. See AmazonManagedKafkaEventSourceConfig Syntax.</summary>
@@ -1915,6 +2017,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderAmazonManagedKafka
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatusAtProviderDestinationConfigOnFailure
 {
     /// <summary>ARN of the destination resource, or kafka://your-topic-name for Amazon MSK and self-managed Apache Kafka destinations.</summary>
@@ -1924,6 +2027,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderDestinationConfigO
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatusAtProviderDestinationConfig
 {
     /// <summary>Destination configuration for failed invocations. See below.</summary>
@@ -1933,6 +2037,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderDestinationConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatusAtProviderDocumentDbEventSourceConfig
 {
     /// <summary>Name of the collection to consume within the database. If you do not specify a collection, Lambda consumes all collections.</summary>
@@ -1950,6 +2055,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderDocumentDbEventSou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatusAtProviderFilterCriteriaFilter
 {
     /// <summary>Filter pattern up to 4096 characters. See Filter Rule Syntax.</summary>
@@ -1959,6 +2065,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderFilterCriteriaFilt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatusAtProviderFilterCriteria
 {
     /// <summary>Set of up to 5 filter. If an event satisfies at least one, Lambda sends the event to the function or adds it to the next batch. See below.</summary>
@@ -1968,6 +2075,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderFilterCriteria
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatusAtProviderMetricsConfig
 {
     /// <summary>List containing the metrics to be produced by the event source mapping. Valid values: EventCount.</summary>
@@ -1977,6 +2085,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderMetricsConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatusAtProviderProvisionedPollerConfig
 {
     /// <summary>Maximum number of event pollers this event source can scale up to. The range is between 1 and 2000.</summary>
@@ -1994,6 +2103,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderProvisionedPollerC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatusAtProviderScalingConfig
 {
     /// <summary>Limits the number of concurrent instances that the Amazon SQS event source can invoke. Must be greater than or equal to 2. See Configuring maximum concurrency for Amazon SQS event sources. You need to raise a Service Quota Ticket to increase the concurrency beyond 1000.</summary>
@@ -2003,6 +2113,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderScalingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatusAtProviderSelfManagedEventSource
 {
     /// <summary>Map of endpoints for the self managed source. For Kafka self-managed sources, the key should be KAFKA_BOOTSTRAP_SERVERS and the value should be a string with a comma separated list of broker endpoints.</summary>
@@ -2012,6 +2123,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderSelfManagedEventSo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatusAtProviderSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig
 {
     /// <summary>Authentication type Lambda uses to access the schema registry.</summary>
@@ -2025,6 +2137,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderSelfManagedKafkaEv
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatusAtProviderSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfig
 {
     /// <summary>Message attribute to validate. Valid values: KEY, VALUE.</summary>
@@ -2034,6 +2147,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderSelfManagedKafkaEv
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatusAtProviderSelfManagedKafkaEventSourceConfigSchemaRegistryConfig
 {
     /// <summary>Configuration block for authentication Lambda uses to access the schema registry.</summary>
@@ -2055,6 +2169,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderSelfManagedKafkaEv
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatusAtProviderSelfManagedKafkaEventSourceConfig
 {
     /// <summary>Kafka consumer group ID between 1 and 200 characters for use when creating this event source mapping. If one is not specified, this value will be automatically generated. See SelfManagedKafkaEventSourceConfig Syntax.</summary>
@@ -2068,6 +2183,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderSelfManagedKafkaEv
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatusAtProviderSourceAccessConfiguration
 {
     /// <summary>Type of authentication protocol, VPC components, or virtual host for your event source. For valid values, refer to the AWS documentation.</summary>
@@ -2081,6 +2197,7 @@ public partial class V1beta1EventSourceMappingStatusAtProviderSourceAccessConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatusAtProvider
 {
     /// <summary>Additional configuration block for Amazon Managed Kafka sources. Incompatible with self_managed_event_source and self_managed_kafka_event_source_config. See below.</summary>
@@ -2237,6 +2354,7 @@ public partial class V1beta1EventSourceMappingStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatusConditions
 {
     /// <summary>
@@ -2280,6 +2398,7 @@ public partial class V1beta1EventSourceMappingStatusConditions
 /// <summary>EventSourceMappingStatus defines the observed state of EventSourceMapping.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EventSourceMappingStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2298,9 +2417,13 @@ public partial class V1beta1EventSourceMappingStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>EventSourceMapping is the Schema for the EventSourceMappings API. Manages an AWS Lambda Event Source Mapping.</summary>
+/// <summary>
+/// EventSourceMapping is the Schema for the EventSourceMappings API. Manages an AWS Lambda Event Source Mapping.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EventSourceMapping : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1EventSourceMappingSpec>, IStatus<V1beta1EventSourceMappingStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.aws.upbound.io;
-/// <summary>Workteam is the Schema for the Workteams API. Provides a SageMaker AI Workteam resource.</summary>
+/// <summary>
+/// Workteam is the Schema for the Workteams API. Provides a SageMaker AI Workteam resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkteamList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Workteam>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1WorkteamList : IKubernetesObject<V1ListMeta>, IItems
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1WorkteamSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMember
 /// <summary>Reference to a UserPoolClient in cognitoidp to populate clientId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMember
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMember
 /// <summary>Selector for a UserPoolClient in cognitoidp to populate clientId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionClientIdSelector
 {
     /// <summary>
@@ -210,6 +223,7 @@ public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMember
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -226,6 +240,7 @@ public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -237,6 +252,7 @@ public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupRefPolicy
 {
     /// <summary>
@@ -261,6 +277,7 @@ public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMember
 /// <summary>Reference to a UserGroup in cognitoidp to populate userGroup.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -280,6 +297,7 @@ public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMember
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -296,6 +314,7 @@ public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -307,6 +326,7 @@ public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelectorPolicy
 {
     /// <summary>
@@ -331,6 +351,7 @@ public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMember
 /// <summary>Selector for a UserGroup in cognitoidp to populate userGroup.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelector
 {
     /// <summary>
@@ -357,6 +378,7 @@ public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMember
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -373,6 +395,7 @@ public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -384,6 +407,7 @@ public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolRefPolicy
 {
     /// <summary>
@@ -408,6 +432,7 @@ public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMember
 /// <summary>Reference to a UserPoolDomain in cognitoidp to populate userPool.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -427,6 +452,7 @@ public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMember
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -443,6 +469,7 @@ public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -454,6 +481,7 @@ public enum V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitio
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelectorPolicy
 {
     /// <summary>
@@ -478,6 +506,7 @@ public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMember
 /// <summary>Selector for a UserPoolDomain in cognitoidp to populate userPool.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelector
 {
     /// <summary>
@@ -498,6 +527,7 @@ public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMember
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMemberDefinition
 {
     /// <summary>An identifier for an application client. You must create the app client ID using Amazon Cognito.</summary>
@@ -539,6 +569,7 @@ public partial class V1beta1WorkteamSpecForProviderMemberDefinitionCognitoMember
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderMemberDefinitionOidcMemberDefinition
 {
     /// <summary>A list of comma separated strings that identifies user groups in your OIDC IdP. Each user group is made up of a group of private workers.</summary>
@@ -548,6 +579,7 @@ public partial class V1beta1WorkteamSpecForProviderMemberDefinitionOidcMemberDef
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderMemberDefinition
 {
     /// <summary>The Amazon Cognito user group that is part of the work team. See Cognito Member Definition details below.</summary>
@@ -561,6 +593,7 @@ public partial class V1beta1WorkteamSpecForProviderMemberDefinition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderNotificationConfiguration
 {
     /// <summary>The ARN for the SNS topic to which notifications should be published.</summary>
@@ -570,6 +603,7 @@ public partial class V1beta1WorkteamSpecForProviderNotificationConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderWorkerAccessConfigurationS3PresignIamPolicyConstraints
 {
     /// <summary>When SourceIp is Enabled the worker&apos;s IP address when a task is rendered in the worker portal is added to the IAM policy as a Condition used to generate the Amazon S3 presigned URL. This IP address is checked by Amazon S3 and must match in order for the Amazon S3 resource to be rendered in the worker portal. Valid values are Enabled or Disabled</summary>
@@ -583,6 +617,7 @@ public partial class V1beta1WorkteamSpecForProviderWorkerAccessConfigurationS3Pr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderWorkerAccessConfigurationS3Presign
 {
     /// <summary>Use this parameter to specify the allowed request source. Possible sources are either SourceIp or VpcSourceIp. see IAM Policy Constraints details below.</summary>
@@ -592,6 +627,7 @@ public partial class V1beta1WorkteamSpecForProviderWorkerAccessConfigurationS3Pr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderWorkerAccessConfiguration
 {
     /// <summary>Defines any Amazon S3 resource constraints. see S3 Presign details below.</summary>
@@ -607,6 +643,7 @@ public partial class V1beta1WorkteamSpecForProviderWorkerAccessConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecForProviderWorkforceNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecForProviderWorkforceNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -623,6 +660,7 @@ public enum V1beta1WorkteamSpecForProviderWorkforceNameRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecForProviderWorkforceNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecForProviderWorkforceNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -634,6 +672,7 @@ public enum V1beta1WorkteamSpecForProviderWorkforceNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderWorkforceNameRefPolicy
 {
     /// <summary>
@@ -658,6 +697,7 @@ public partial class V1beta1WorkteamSpecForProviderWorkforceNameRefPolicy
 /// <summary>Reference to a Workforce in sagemaker to populate workforceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderWorkforceNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -677,6 +717,7 @@ public partial class V1beta1WorkteamSpecForProviderWorkforceNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecForProviderWorkforceNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecForProviderWorkforceNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -693,6 +734,7 @@ public enum V1beta1WorkteamSpecForProviderWorkforceNameSelectorPolicyResolutionE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecForProviderWorkforceNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecForProviderWorkforceNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -704,6 +746,7 @@ public enum V1beta1WorkteamSpecForProviderWorkforceNameSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderWorkforceNameSelectorPolicy
 {
     /// <summary>
@@ -728,6 +771,7 @@ public partial class V1beta1WorkteamSpecForProviderWorkforceNameSelectorPolicy
 /// <summary>Selector for a Workforce in sagemaker to populate workforceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProviderWorkforceNameSelector
 {
     /// <summary>
@@ -748,6 +792,7 @@ public partial class V1beta1WorkteamSpecForProviderWorkforceNameSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecForProvider
 {
     /// <summary>A description of the work team.</summary>
@@ -798,6 +843,7 @@ public partial class V1beta1WorkteamSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -814,6 +860,7 @@ public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -825,6 +872,7 @@ public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdRefPolicy
 {
     /// <summary>
@@ -849,6 +897,7 @@ public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 /// <summary>Reference to a UserPoolClient in cognitoidp to populate clientId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -868,6 +917,7 @@ public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -884,6 +934,7 @@ public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -895,6 +946,7 @@ public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdSelectorPolicy
 {
     /// <summary>
@@ -919,6 +971,7 @@ public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 /// <summary>Selector for a UserPoolClient in cognitoidp to populate clientId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionClientIdSelector
 {
     /// <summary>
@@ -945,6 +998,7 @@ public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -961,6 +1015,7 @@ public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -972,6 +1027,7 @@ public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupRefPolicy
 {
     /// <summary>
@@ -996,6 +1052,7 @@ public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 /// <summary>Reference to a UserGroup in cognitoidp to populate userGroup.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1015,6 +1072,7 @@ public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1031,6 +1089,7 @@ public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1042,6 +1101,7 @@ public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelectorPolicy
 {
     /// <summary>
@@ -1066,6 +1126,7 @@ public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 /// <summary>Selector for a UserGroup in cognitoidp to populate userGroup.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserGroupSelector
 {
     /// <summary>
@@ -1092,6 +1153,7 @@ public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1108,6 +1170,7 @@ public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1119,6 +1182,7 @@ public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolRefPolicy
 {
     /// <summary>
@@ -1143,6 +1207,7 @@ public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 /// <summary>Reference to a UserPoolDomain in cognitoidp to populate userPool.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1162,6 +1227,7 @@ public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1178,6 +1244,7 @@ public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1189,6 +1256,7 @@ public enum V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefiniti
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelectorPolicy
 {
     /// <summary>
@@ -1213,6 +1281,7 @@ public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 /// <summary>Selector for a UserPoolDomain in cognitoidp to populate userPool.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinitionUserPoolSelector
 {
     /// <summary>
@@ -1233,6 +1302,7 @@ public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMemberDefinition
 {
     /// <summary>An identifier for an application client. You must create the app client ID using Amazon Cognito.</summary>
@@ -1274,6 +1344,7 @@ public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionCognitoMembe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionOidcMemberDefinition
 {
     /// <summary>A list of comma separated strings that identifies user groups in your OIDC IdP. Each user group is made up of a group of private workers.</summary>
@@ -1283,6 +1354,7 @@ public partial class V1beta1WorkteamSpecInitProviderMemberDefinitionOidcMemberDe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderMemberDefinition
 {
     /// <summary>The Amazon Cognito user group that is part of the work team. See Cognito Member Definition details below.</summary>
@@ -1296,6 +1368,7 @@ public partial class V1beta1WorkteamSpecInitProviderMemberDefinition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderNotificationConfiguration
 {
     /// <summary>The ARN for the SNS topic to which notifications should be published.</summary>
@@ -1305,6 +1378,7 @@ public partial class V1beta1WorkteamSpecInitProviderNotificationConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderWorkerAccessConfigurationS3PresignIamPolicyConstraints
 {
     /// <summary>When SourceIp is Enabled the worker&apos;s IP address when a task is rendered in the worker portal is added to the IAM policy as a Condition used to generate the Amazon S3 presigned URL. This IP address is checked by Amazon S3 and must match in order for the Amazon S3 resource to be rendered in the worker portal. Valid values are Enabled or Disabled</summary>
@@ -1318,6 +1392,7 @@ public partial class V1beta1WorkteamSpecInitProviderWorkerAccessConfigurationS3P
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderWorkerAccessConfigurationS3Presign
 {
     /// <summary>Use this parameter to specify the allowed request source. Possible sources are either SourceIp or VpcSourceIp. see IAM Policy Constraints details below.</summary>
@@ -1327,6 +1402,7 @@ public partial class V1beta1WorkteamSpecInitProviderWorkerAccessConfigurationS3P
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderWorkerAccessConfiguration
 {
     /// <summary>Defines any Amazon S3 resource constraints. see S3 Presign details below.</summary>
@@ -1342,6 +1418,7 @@ public partial class V1beta1WorkteamSpecInitProviderWorkerAccessConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecInitProviderWorkforceNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecInitProviderWorkforceNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1358,6 +1435,7 @@ public enum V1beta1WorkteamSpecInitProviderWorkforceNameRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecInitProviderWorkforceNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecInitProviderWorkforceNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1369,6 +1447,7 @@ public enum V1beta1WorkteamSpecInitProviderWorkforceNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderWorkforceNameRefPolicy
 {
     /// <summary>
@@ -1393,6 +1472,7 @@ public partial class V1beta1WorkteamSpecInitProviderWorkforceNameRefPolicy
 /// <summary>Reference to a Workforce in sagemaker to populate workforceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderWorkforceNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1412,6 +1492,7 @@ public partial class V1beta1WorkteamSpecInitProviderWorkforceNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecInitProviderWorkforceNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecInitProviderWorkforceNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1428,6 +1509,7 @@ public enum V1beta1WorkteamSpecInitProviderWorkforceNameSelectorPolicyResolution
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecInitProviderWorkforceNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecInitProviderWorkforceNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1439,6 +1521,7 @@ public enum V1beta1WorkteamSpecInitProviderWorkforceNameSelectorPolicyResolveEnu
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderWorkforceNameSelectorPolicy
 {
     /// <summary>
@@ -1463,6 +1546,7 @@ public partial class V1beta1WorkteamSpecInitProviderWorkforceNameSelectorPolicy
 /// <summary>Selector for a Workforce in sagemaker to populate workforceName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProviderWorkforceNameSelector
 {
     /// <summary>
@@ -1495,6 +1579,7 @@ public partial class V1beta1WorkteamSpecInitProviderWorkforceNameSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecInitProvider
 {
     /// <summary>A description of the work team.</summary>
@@ -1536,6 +1621,7 @@ public partial class V1beta1WorkteamSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1560,6 +1646,7 @@ public enum V1beta1WorkteamSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1576,6 +1663,7 @@ public enum V1beta1WorkteamSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkteamSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkteamSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1587,6 +1675,7 @@ public enum V1beta1WorkteamSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1615,6 +1704,7 @@ public partial class V1beta1WorkteamSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1634,6 +1724,7 @@ public partial class V1beta1WorkteamSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1648,6 +1739,7 @@ public partial class V1beta1WorkteamSpecWriteConnectionSecretToRef
 /// <summary>WorkteamSpec defines the desired state of Workteam</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamSpec
 {
     /// <summary>
@@ -1715,6 +1807,7 @@ public partial class V1beta1WorkteamSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamStatusAtProviderMemberDefinitionCognitoMemberDefinition
 {
     /// <summary>An identifier for an application client. You must create the app client ID using Amazon Cognito.</summary>
@@ -1732,6 +1825,7 @@ public partial class V1beta1WorkteamStatusAtProviderMemberDefinitionCognitoMembe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamStatusAtProviderMemberDefinitionOidcMemberDefinition
 {
     /// <summary>A list of comma separated strings that identifies user groups in your OIDC IdP. Each user group is made up of a group of private workers.</summary>
@@ -1741,6 +1835,7 @@ public partial class V1beta1WorkteamStatusAtProviderMemberDefinitionOidcMemberDe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamStatusAtProviderMemberDefinition
 {
     /// <summary>The Amazon Cognito user group that is part of the work team. See Cognito Member Definition details below.</summary>
@@ -1754,6 +1849,7 @@ public partial class V1beta1WorkteamStatusAtProviderMemberDefinition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamStatusAtProviderNotificationConfiguration
 {
     /// <summary>The ARN for the SNS topic to which notifications should be published.</summary>
@@ -1763,6 +1859,7 @@ public partial class V1beta1WorkteamStatusAtProviderNotificationConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamStatusAtProviderWorkerAccessConfigurationS3PresignIamPolicyConstraints
 {
     /// <summary>When SourceIp is Enabled the worker&apos;s IP address when a task is rendered in the worker portal is added to the IAM policy as a Condition used to generate the Amazon S3 presigned URL. This IP address is checked by Amazon S3 and must match in order for the Amazon S3 resource to be rendered in the worker portal. Valid values are Enabled or Disabled</summary>
@@ -1776,6 +1873,7 @@ public partial class V1beta1WorkteamStatusAtProviderWorkerAccessConfigurationS3P
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamStatusAtProviderWorkerAccessConfigurationS3Presign
 {
     /// <summary>Use this parameter to specify the allowed request source. Possible sources are either SourceIp or VpcSourceIp. see IAM Policy Constraints details below.</summary>
@@ -1785,6 +1883,7 @@ public partial class V1beta1WorkteamStatusAtProviderWorkerAccessConfigurationS3P
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamStatusAtProviderWorkerAccessConfiguration
 {
     /// <summary>Defines any Amazon S3 resource constraints. see S3 Presign details below.</summary>
@@ -1794,6 +1893,7 @@ public partial class V1beta1WorkteamStatusAtProviderWorkerAccessConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamStatusAtProvider
 {
     /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this Workteam.</summary>
@@ -1847,6 +1947,7 @@ public partial class V1beta1WorkteamStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamStatusConditions
 {
     /// <summary>
@@ -1890,6 +1991,7 @@ public partial class V1beta1WorkteamStatusConditions
 /// <summary>WorkteamStatus defines the observed state of Workteam.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkteamStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1908,9 +2010,13 @@ public partial class V1beta1WorkteamStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Workteam is the Schema for the Workteams API. Provides a SageMaker AI Workteam resource.</summary>
+/// <summary>
+/// Workteam is the Schema for the Workteams API. Provides a SageMaker AI Workteam resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Workteam : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WorkteamSpec>, IStatus<V1beta1WorkteamStatus?>
 {

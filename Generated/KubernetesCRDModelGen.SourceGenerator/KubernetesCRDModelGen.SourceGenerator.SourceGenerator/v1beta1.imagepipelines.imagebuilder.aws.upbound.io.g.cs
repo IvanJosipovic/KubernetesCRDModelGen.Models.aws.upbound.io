@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.imagebuilder.aws.upbound.io;
-/// <summary>ImagePipeline is the Schema for the ImagePipelines API. Manages an Image Builder Image Pipeline</summary>
+/// <summary>
+/// ImagePipeline is the Schema for the ImagePipelines API. Manages an Image Builder Image Pipeline
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ImagePipelineList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ImagePipeline>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ImagePipelineList : IKubernetesObject<V1ListMeta>, I
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImagePipelineSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImagePipelineSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1ImagePipelineSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImagePipelineSpecForProviderImageRecipeArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImagePipelineSpecForProviderImageRecipeArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1ImagePipelineSpecForProviderImageRecipeArnRefPolicyResolution
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImagePipelineSpecForProviderImageRecipeArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImagePipelineSpecForProviderImageRecipeArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1ImagePipelineSpecForProviderImageRecipeArnRefPolicyResolveEnu
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecForProviderImageRecipeArnRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1ImagePipelineSpecForProviderImageRecipeArnRefPolicy
 /// <summary>Reference to a ImageRecipe in imagebuilder to populate imageRecipeArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecForProviderImageRecipeArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1ImagePipelineSpecForProviderImageRecipeArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImagePipelineSpecForProviderImageRecipeArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImagePipelineSpecForProviderImageRecipeArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1ImagePipelineSpecForProviderImageRecipeArnSelectorPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImagePipelineSpecForProviderImageRecipeArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImagePipelineSpecForProviderImageRecipeArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1ImagePipelineSpecForProviderImageRecipeArnSelectorPolicyResol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecForProviderImageRecipeArnSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1ImagePipelineSpecForProviderImageRecipeArnSelectorPo
 /// <summary>Selector for a ImageRecipe in imagebuilder to populate imageRecipeArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecForProviderImageRecipeArnSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1ImagePipelineSpecForProviderImageRecipeArnSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecForProviderImageScanningConfigurationEcrConfiguration
 {
     /// <summary>Key-value map of resource tags.</summary>
@@ -217,6 +231,7 @@ public partial class V1beta1ImagePipelineSpecForProviderImageScanningConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecForProviderImageScanningConfiguration
 {
     /// <summary>Configuration block with ECR configuration for image scanning. Detailed below.</summary>
@@ -230,6 +245,7 @@ public partial class V1beta1ImagePipelineSpecForProviderImageScanningConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecForProviderImageTestsConfiguration
 {
     /// <summary>Whether image tests are enabled. Defaults to true.</summary>
@@ -249,6 +265,7 @@ public partial class V1beta1ImagePipelineSpecForProviderImageTestsConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImagePipelineSpecForProviderInfrastructureConfigurationArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImagePipelineSpecForProviderInfrastructureConfigurationArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -265,6 +282,7 @@ public enum V1beta1ImagePipelineSpecForProviderInfrastructureConfigurationArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImagePipelineSpecForProviderInfrastructureConfigurationArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImagePipelineSpecForProviderInfrastructureConfigurationArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -276,6 +294,7 @@ public enum V1beta1ImagePipelineSpecForProviderInfrastructureConfigurationArnRef
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecForProviderInfrastructureConfigurationArnRefPolicy
 {
     /// <summary>
@@ -300,6 +319,7 @@ public partial class V1beta1ImagePipelineSpecForProviderInfrastructureConfigurat
 /// <summary>Reference to a InfrastructureConfiguration in imagebuilder to populate infrastructureConfigurationArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecForProviderInfrastructureConfigurationArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -319,6 +339,7 @@ public partial class V1beta1ImagePipelineSpecForProviderInfrastructureConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImagePipelineSpecForProviderInfrastructureConfigurationArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImagePipelineSpecForProviderInfrastructureConfigurationArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -335,6 +356,7 @@ public enum V1beta1ImagePipelineSpecForProviderInfrastructureConfigurationArnSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImagePipelineSpecForProviderInfrastructureConfigurationArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImagePipelineSpecForProviderInfrastructureConfigurationArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -346,6 +368,7 @@ public enum V1beta1ImagePipelineSpecForProviderInfrastructureConfigurationArnSel
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecForProviderInfrastructureConfigurationArnSelectorPolicy
 {
     /// <summary>
@@ -370,6 +393,7 @@ public partial class V1beta1ImagePipelineSpecForProviderInfrastructureConfigurat
 /// <summary>Selector for a InfrastructureConfiguration in imagebuilder to populate infrastructureConfigurationArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecForProviderInfrastructureConfigurationArnSelector
 {
     /// <summary>
@@ -390,6 +414,7 @@ public partial class V1beta1ImagePipelineSpecForProviderInfrastructureConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecForProviderLoggingConfiguration
 {
     /// <summary>Name of the CloudWatch Log Group to send image logs to.</summary>
@@ -403,6 +428,7 @@ public partial class V1beta1ImagePipelineSpecForProviderLoggingConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecForProviderSchedule
 {
     /// <summary>Condition when the pipeline should trigger a new image build. Valid values are EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE and EXPRESSION_MATCH_ONLY. Defaults to EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE.</summary>
@@ -420,6 +446,7 @@ public partial class V1beta1ImagePipelineSpecForProviderSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecForProviderWorkflowParameter
 {
     /// <summary>The name of the Workflow parameter.</summary>
@@ -433,6 +460,7 @@ public partial class V1beta1ImagePipelineSpecForProviderWorkflowParameter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecForProviderWorkflow
 {
     /// <summary>The action to take if the workflow fails. Must be one of CONTINUE or ABORT.</summary>
@@ -454,6 +482,7 @@ public partial class V1beta1ImagePipelineSpecForProviderWorkflow
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecForProvider
 {
     /// <summary>Amazon Resource Name (ARN) of the container recipe.</summary>
@@ -548,6 +577,7 @@ public partial class V1beta1ImagePipelineSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImagePipelineSpecInitProviderImageRecipeArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImagePipelineSpecInitProviderImageRecipeArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -564,6 +594,7 @@ public enum V1beta1ImagePipelineSpecInitProviderImageRecipeArnRefPolicyResolutio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImagePipelineSpecInitProviderImageRecipeArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImagePipelineSpecInitProviderImageRecipeArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -575,6 +606,7 @@ public enum V1beta1ImagePipelineSpecInitProviderImageRecipeArnRefPolicyResolveEn
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecInitProviderImageRecipeArnRefPolicy
 {
     /// <summary>
@@ -599,6 +631,7 @@ public partial class V1beta1ImagePipelineSpecInitProviderImageRecipeArnRefPolicy
 /// <summary>Reference to a ImageRecipe in imagebuilder to populate imageRecipeArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecInitProviderImageRecipeArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -618,6 +651,7 @@ public partial class V1beta1ImagePipelineSpecInitProviderImageRecipeArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImagePipelineSpecInitProviderImageRecipeArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImagePipelineSpecInitProviderImageRecipeArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -634,6 +668,7 @@ public enum V1beta1ImagePipelineSpecInitProviderImageRecipeArnSelectorPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImagePipelineSpecInitProviderImageRecipeArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImagePipelineSpecInitProviderImageRecipeArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -645,6 +680,7 @@ public enum V1beta1ImagePipelineSpecInitProviderImageRecipeArnSelectorPolicyReso
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecInitProviderImageRecipeArnSelectorPolicy
 {
     /// <summary>
@@ -669,6 +705,7 @@ public partial class V1beta1ImagePipelineSpecInitProviderImageRecipeArnSelectorP
 /// <summary>Selector for a ImageRecipe in imagebuilder to populate imageRecipeArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecInitProviderImageRecipeArnSelector
 {
     /// <summary>
@@ -689,6 +726,7 @@ public partial class V1beta1ImagePipelineSpecInitProviderImageRecipeArnSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecInitProviderImageScanningConfigurationEcrConfiguration
 {
     /// <summary>Key-value map of resource tags.</summary>
@@ -702,6 +740,7 @@ public partial class V1beta1ImagePipelineSpecInitProviderImageScanningConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecInitProviderImageScanningConfiguration
 {
     /// <summary>Configuration block with ECR configuration for image scanning. Detailed below.</summary>
@@ -715,6 +754,7 @@ public partial class V1beta1ImagePipelineSpecInitProviderImageScanningConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecInitProviderImageTestsConfiguration
 {
     /// <summary>Whether image tests are enabled. Defaults to true.</summary>
@@ -734,6 +774,7 @@ public partial class V1beta1ImagePipelineSpecInitProviderImageTestsConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImagePipelineSpecInitProviderInfrastructureConfigurationArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImagePipelineSpecInitProviderInfrastructureConfigurationArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -750,6 +791,7 @@ public enum V1beta1ImagePipelineSpecInitProviderInfrastructureConfigurationArnRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImagePipelineSpecInitProviderInfrastructureConfigurationArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImagePipelineSpecInitProviderInfrastructureConfigurationArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -761,6 +803,7 @@ public enum V1beta1ImagePipelineSpecInitProviderInfrastructureConfigurationArnRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecInitProviderInfrastructureConfigurationArnRefPolicy
 {
     /// <summary>
@@ -785,6 +828,7 @@ public partial class V1beta1ImagePipelineSpecInitProviderInfrastructureConfigura
 /// <summary>Reference to a InfrastructureConfiguration in imagebuilder to populate infrastructureConfigurationArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecInitProviderInfrastructureConfigurationArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -804,6 +848,7 @@ public partial class V1beta1ImagePipelineSpecInitProviderInfrastructureConfigura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImagePipelineSpecInitProviderInfrastructureConfigurationArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImagePipelineSpecInitProviderInfrastructureConfigurationArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -820,6 +865,7 @@ public enum V1beta1ImagePipelineSpecInitProviderInfrastructureConfigurationArnSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImagePipelineSpecInitProviderInfrastructureConfigurationArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImagePipelineSpecInitProviderInfrastructureConfigurationArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -831,6 +877,7 @@ public enum V1beta1ImagePipelineSpecInitProviderInfrastructureConfigurationArnSe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecInitProviderInfrastructureConfigurationArnSelectorPolicy
 {
     /// <summary>
@@ -855,6 +902,7 @@ public partial class V1beta1ImagePipelineSpecInitProviderInfrastructureConfigura
 /// <summary>Selector for a InfrastructureConfiguration in imagebuilder to populate infrastructureConfigurationArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecInitProviderInfrastructureConfigurationArnSelector
 {
     /// <summary>
@@ -875,6 +923,7 @@ public partial class V1beta1ImagePipelineSpecInitProviderInfrastructureConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecInitProviderLoggingConfiguration
 {
     /// <summary>Name of the CloudWatch Log Group to send image logs to.</summary>
@@ -888,6 +937,7 @@ public partial class V1beta1ImagePipelineSpecInitProviderLoggingConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecInitProviderSchedule
 {
     /// <summary>Condition when the pipeline should trigger a new image build. Valid values are EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE and EXPRESSION_MATCH_ONLY. Defaults to EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE.</summary>
@@ -905,6 +955,7 @@ public partial class V1beta1ImagePipelineSpecInitProviderSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecInitProviderWorkflowParameter
 {
     /// <summary>The name of the Workflow parameter.</summary>
@@ -918,6 +969,7 @@ public partial class V1beta1ImagePipelineSpecInitProviderWorkflowParameter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecInitProviderWorkflow
 {
     /// <summary>The action to take if the workflow fails. Must be one of CONTINUE or ABORT.</summary>
@@ -951,6 +1003,7 @@ public partial class V1beta1ImagePipelineSpecInitProviderWorkflow
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecInitProvider
 {
     /// <summary>Amazon Resource Name (ARN) of the container recipe.</summary>
@@ -1036,6 +1089,7 @@ public partial class V1beta1ImagePipelineSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImagePipelineSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImagePipelineSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1060,6 +1114,7 @@ public enum V1beta1ImagePipelineSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImagePipelineSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImagePipelineSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1076,6 +1131,7 @@ public enum V1beta1ImagePipelineSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImagePipelineSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImagePipelineSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1087,6 +1143,7 @@ public enum V1beta1ImagePipelineSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1115,6 +1172,7 @@ public partial class V1beta1ImagePipelineSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1134,6 +1192,7 @@ public partial class V1beta1ImagePipelineSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1148,6 +1207,7 @@ public partial class V1beta1ImagePipelineSpecWriteConnectionSecretToRef
 /// <summary>ImagePipelineSpec defines the desired state of ImagePipeline</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineSpec
 {
     /// <summary>
@@ -1215,6 +1275,7 @@ public partial class V1beta1ImagePipelineSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineStatusAtProviderImageScanningConfigurationEcrConfiguration
 {
     /// <summary>Key-value map of resource tags.</summary>
@@ -1228,6 +1289,7 @@ public partial class V1beta1ImagePipelineStatusAtProviderImageScanningConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineStatusAtProviderImageScanningConfiguration
 {
     /// <summary>Configuration block with ECR configuration for image scanning. Detailed below.</summary>
@@ -1241,6 +1303,7 @@ public partial class V1beta1ImagePipelineStatusAtProviderImageScanningConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineStatusAtProviderImageTestsConfiguration
 {
     /// <summary>Whether image tests are enabled. Defaults to true.</summary>
@@ -1254,6 +1317,7 @@ public partial class V1beta1ImagePipelineStatusAtProviderImageTestsConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineStatusAtProviderLoggingConfiguration
 {
     /// <summary>Name of the CloudWatch Log Group to send image logs to.</summary>
@@ -1267,6 +1331,7 @@ public partial class V1beta1ImagePipelineStatusAtProviderLoggingConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineStatusAtProviderSchedule
 {
     /// <summary>Condition when the pipeline should trigger a new image build. Valid values are EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE and EXPRESSION_MATCH_ONLY. Defaults to EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE.</summary>
@@ -1284,6 +1349,7 @@ public partial class V1beta1ImagePipelineStatusAtProviderSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineStatusAtProviderWorkflowParameter
 {
     /// <summary>The name of the Workflow parameter.</summary>
@@ -1297,6 +1363,7 @@ public partial class V1beta1ImagePipelineStatusAtProviderWorkflowParameter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineStatusAtProviderWorkflow
 {
     /// <summary>The action to take if the workflow fails. Must be one of CONTINUE or ABORT.</summary>
@@ -1318,6 +1385,7 @@ public partial class V1beta1ImagePipelineStatusAtProviderWorkflow
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineStatusAtProvider
 {
     /// <summary>Amazon Resource Name (ARN) of the image pipeline.</summary>
@@ -1423,6 +1491,7 @@ public partial class V1beta1ImagePipelineStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineStatusConditions
 {
     /// <summary>
@@ -1466,6 +1535,7 @@ public partial class V1beta1ImagePipelineStatusConditions
 /// <summary>ImagePipelineStatus defines the observed state of ImagePipeline.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImagePipelineStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1484,9 +1554,13 @@ public partial class V1beta1ImagePipelineStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>ImagePipeline is the Schema for the ImagePipelines API. Manages an Image Builder Image Pipeline</summary>
+/// <summary>
+/// ImagePipeline is the Schema for the ImagePipelines API. Manages an Image Builder Image Pipeline
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ImagePipeline : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ImagePipelineSpec>, IStatus<V1beta1ImagePipelineStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.signer.aws.upbound.io;
-/// <summary>SigningProfile is the Schema for the SigningProfiles API. Creates a Signer Signing Profile.</summary>
+/// <summary>
+/// SigningProfile is the Schema for the SigningProfiles API. Creates a Signer Signing Profile.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SigningProfileList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SigningProfile>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1SigningProfileList : IKubernetesObject<V1ListMeta>, 
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SigningProfileSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SigningProfileSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1SigningProfileSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SigningProfileSpecForProviderSignatureValidityPeriod
 {
     /// <summary>The time unit for signature validity. Valid values: DAYS, MONTHS, YEARS.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1SigningProfileSpecForProviderSignatureValidityPeriod
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SigningProfileSpecForProviderSigningMaterial
 {
     /// <summary>The Amazon Resource Name (ARN) of the certificates that is used to sign your code.</summary>
@@ -79,6 +86,7 @@ public partial class V1beta1SigningProfileSpecForProviderSigningMaterial
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SigningProfileSpecForProvider
 {
     /// <summary>The ID of the platform that is used by the target signing profile.</summary>
@@ -111,6 +119,7 @@ public partial class V1beta1SigningProfileSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SigningProfileSpecInitProviderSignatureValidityPeriod
 {
     /// <summary>The time unit for signature validity. Valid values: DAYS, MONTHS, YEARS.</summary>
@@ -124,6 +133,7 @@ public partial class V1beta1SigningProfileSpecInitProviderSignatureValidityPerio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SigningProfileSpecInitProviderSigningMaterial
 {
     /// <summary>The Amazon Resource Name (ARN) of the certificates that is used to sign your code.</summary>
@@ -145,6 +155,7 @@ public partial class V1beta1SigningProfileSpecInitProviderSigningMaterial
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SigningProfileSpecInitProvider
 {
     /// <summary>The ID of the platform that is used by the target signing profile.</summary>
@@ -174,6 +185,7 @@ public partial class V1beta1SigningProfileSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SigningProfileSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SigningProfileSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -198,6 +210,7 @@ public enum V1beta1SigningProfileSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SigningProfileSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SigningProfileSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -214,6 +227,7 @@ public enum V1beta1SigningProfileSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SigningProfileSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SigningProfileSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -225,6 +239,7 @@ public enum V1beta1SigningProfileSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SigningProfileSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -253,6 +268,7 @@ public partial class V1beta1SigningProfileSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SigningProfileSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -272,6 +288,7 @@ public partial class V1beta1SigningProfileSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SigningProfileSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -286,6 +303,7 @@ public partial class V1beta1SigningProfileSpecWriteConnectionSecretToRef
 /// <summary>SigningProfileSpec defines the desired state of SigningProfile</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SigningProfileSpec
 {
     /// <summary>
@@ -353,6 +371,7 @@ public partial class V1beta1SigningProfileSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SigningProfileStatusAtProviderRevocationRecord
 {
     /// <summary>The time when revocation becomes effective.</summary>
@@ -370,6 +389,7 @@ public partial class V1beta1SigningProfileStatusAtProviderRevocationRecord
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SigningProfileStatusAtProviderSignatureValidityPeriod
 {
     /// <summary>The time unit for signature validity. Valid values: DAYS, MONTHS, YEARS.</summary>
@@ -383,6 +403,7 @@ public partial class V1beta1SigningProfileStatusAtProviderSignatureValidityPerio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SigningProfileStatusAtProviderSigningMaterial
 {
     /// <summary>The Amazon Resource Name (ARN) of the certificates that is used to sign your code.</summary>
@@ -392,6 +413,7 @@ public partial class V1beta1SigningProfileStatusAtProviderSigningMaterial
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SigningProfileStatusAtProvider
 {
     /// <summary>The Amazon Resource Name (ARN) for the signing profile.</summary>
@@ -456,6 +478,7 @@ public partial class V1beta1SigningProfileStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SigningProfileStatusConditions
 {
     /// <summary>
@@ -499,6 +522,7 @@ public partial class V1beta1SigningProfileStatusConditions
 /// <summary>SigningProfileStatus defines the observed state of SigningProfile.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SigningProfileStatus
 {
     [JsonPropertyName("atProvider")]
@@ -517,9 +541,13 @@ public partial class V1beta1SigningProfileStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>SigningProfile is the Schema for the SigningProfiles API. Creates a Signer Signing Profile.</summary>
+/// <summary>
+/// SigningProfile is the Schema for the SigningProfiles API. Creates a Signer Signing Profile.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SigningProfile : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SigningProfileSpec>, IStatus<V1beta1SigningProfileStatus?>
 {

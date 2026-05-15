@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.iot.aws.upbound.io;
-/// <summary>ProvisioningTemplate is the Schema for the ProvisioningTemplates API. Manages an IoT fleet provisioning template.</summary>
+/// <summary>
+/// ProvisioningTemplate is the Schema for the ProvisioningTemplates API. Manages an IoT fleet provisioning template.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ProvisioningTemplateList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ProvisioningTemplate>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ProvisioningTemplateList : IKubernetesObject<V1ListM
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProvisioningTemplateSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProvisioningTemplateSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1ProvisioningTemplateSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProvisioningTemplateSpecForProviderPreProvisioningHook
 {
     /// <summary>The version of the payload that was sent to the target function. The only valid (and the default) payload version is &quot;2020-04-01&quot;.</summary>
@@ -76,6 +82,7 @@ public partial class V1beta1ProvisioningTemplateSpecForProviderPreProvisioningHo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProvisioningTemplateSpecForProviderProvisioningRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProvisioningTemplateSpecForProviderProvisioningRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -92,6 +99,7 @@ public enum V1beta1ProvisioningTemplateSpecForProviderProvisioningRoleArnRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProvisioningTemplateSpecForProviderProvisioningRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProvisioningTemplateSpecForProviderProvisioningRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -103,6 +111,7 @@ public enum V1beta1ProvisioningTemplateSpecForProviderProvisioningRoleArnRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProvisioningTemplateSpecForProviderProvisioningRoleArnRefPolicy
 {
     /// <summary>
@@ -127,6 +136,7 @@ public partial class V1beta1ProvisioningTemplateSpecForProviderProvisioningRoleA
 /// <summary>Reference to a Role in iam to populate provisioningRoleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProvisioningTemplateSpecForProviderProvisioningRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -146,6 +156,7 @@ public partial class V1beta1ProvisioningTemplateSpecForProviderProvisioningRoleA
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProvisioningTemplateSpecForProviderProvisioningRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProvisioningTemplateSpecForProviderProvisioningRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -162,6 +173,7 @@ public enum V1beta1ProvisioningTemplateSpecForProviderProvisioningRoleArnSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProvisioningTemplateSpecForProviderProvisioningRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProvisioningTemplateSpecForProviderProvisioningRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -173,6 +185,7 @@ public enum V1beta1ProvisioningTemplateSpecForProviderProvisioningRoleArnSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProvisioningTemplateSpecForProviderProvisioningRoleArnSelectorPolicy
 {
     /// <summary>
@@ -197,6 +210,7 @@ public partial class V1beta1ProvisioningTemplateSpecForProviderProvisioningRoleA
 /// <summary>Selector for a Role in iam to populate provisioningRoleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProvisioningTemplateSpecForProviderProvisioningRoleArnSelector
 {
     /// <summary>
@@ -217,6 +231,7 @@ public partial class V1beta1ProvisioningTemplateSpecForProviderProvisioningRoleA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProvisioningTemplateSpecForProvider
 {
     /// <summary>The description of the fleet provisioning template.</summary>
@@ -265,6 +280,7 @@ public partial class V1beta1ProvisioningTemplateSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProvisioningTemplateSpecInitProviderPreProvisioningHook
 {
     /// <summary>The version of the payload that was sent to the target function. The only valid (and the default) payload version is &quot;2020-04-01&quot;.</summary>
@@ -284,6 +300,7 @@ public partial class V1beta1ProvisioningTemplateSpecInitProviderPreProvisioningH
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProvisioningTemplateSpecInitProviderProvisioningRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProvisioningTemplateSpecInitProviderProvisioningRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -300,6 +317,7 @@ public enum V1beta1ProvisioningTemplateSpecInitProviderProvisioningRoleArnRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProvisioningTemplateSpecInitProviderProvisioningRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProvisioningTemplateSpecInitProviderProvisioningRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -311,6 +329,7 @@ public enum V1beta1ProvisioningTemplateSpecInitProviderProvisioningRoleArnRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProvisioningTemplateSpecInitProviderProvisioningRoleArnRefPolicy
 {
     /// <summary>
@@ -335,6 +354,7 @@ public partial class V1beta1ProvisioningTemplateSpecInitProviderProvisioningRole
 /// <summary>Reference to a Role in iam to populate provisioningRoleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProvisioningTemplateSpecInitProviderProvisioningRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -354,6 +374,7 @@ public partial class V1beta1ProvisioningTemplateSpecInitProviderProvisioningRole
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProvisioningTemplateSpecInitProviderProvisioningRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProvisioningTemplateSpecInitProviderProvisioningRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -370,6 +391,7 @@ public enum V1beta1ProvisioningTemplateSpecInitProviderProvisioningRoleArnSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProvisioningTemplateSpecInitProviderProvisioningRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProvisioningTemplateSpecInitProviderProvisioningRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -381,6 +403,7 @@ public enum V1beta1ProvisioningTemplateSpecInitProviderProvisioningRoleArnSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProvisioningTemplateSpecInitProviderProvisioningRoleArnSelectorPolicy
 {
     /// <summary>
@@ -405,6 +428,7 @@ public partial class V1beta1ProvisioningTemplateSpecInitProviderProvisioningRole
 /// <summary>Selector for a Role in iam to populate provisioningRoleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProvisioningTemplateSpecInitProviderProvisioningRoleArnSelector
 {
     /// <summary>
@@ -437,6 +461,7 @@ public partial class V1beta1ProvisioningTemplateSpecInitProviderProvisioningRole
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProvisioningTemplateSpecInitProvider
 {
     /// <summary>The description of the fleet provisioning template.</summary>
@@ -482,6 +507,7 @@ public partial class V1beta1ProvisioningTemplateSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProvisioningTemplateSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProvisioningTemplateSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -506,6 +532,7 @@ public enum V1beta1ProvisioningTemplateSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProvisioningTemplateSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProvisioningTemplateSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -522,6 +549,7 @@ public enum V1beta1ProvisioningTemplateSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProvisioningTemplateSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProvisioningTemplateSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -533,6 +561,7 @@ public enum V1beta1ProvisioningTemplateSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProvisioningTemplateSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -561,6 +590,7 @@ public partial class V1beta1ProvisioningTemplateSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProvisioningTemplateSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -580,6 +610,7 @@ public partial class V1beta1ProvisioningTemplateSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProvisioningTemplateSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -594,6 +625,7 @@ public partial class V1beta1ProvisioningTemplateSpecWriteConnectionSecretToRef
 /// <summary>ProvisioningTemplateSpec defines the desired state of ProvisioningTemplate</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProvisioningTemplateSpec
 {
     /// <summary>
@@ -661,6 +693,7 @@ public partial class V1beta1ProvisioningTemplateSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProvisioningTemplateStatusAtProviderPreProvisioningHook
 {
     /// <summary>The version of the payload that was sent to the target function. The only valid (and the default) payload version is &quot;2020-04-01&quot;.</summary>
@@ -674,6 +707,7 @@ public partial class V1beta1ProvisioningTemplateStatusAtProviderPreProvisioningH
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProvisioningTemplateStatusAtProvider
 {
     /// <summary>The ARN that identifies the provisioning template.</summary>
@@ -730,6 +764,7 @@ public partial class V1beta1ProvisioningTemplateStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProvisioningTemplateStatusConditions
 {
     /// <summary>
@@ -773,6 +808,7 @@ public partial class V1beta1ProvisioningTemplateStatusConditions
 /// <summary>ProvisioningTemplateStatus defines the observed state of ProvisioningTemplate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProvisioningTemplateStatus
 {
     [JsonPropertyName("atProvider")]
@@ -791,9 +827,13 @@ public partial class V1beta1ProvisioningTemplateStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>ProvisioningTemplate is the Schema for the ProvisioningTemplates API. Manages an IoT fleet provisioning template.</summary>
+/// <summary>
+/// ProvisioningTemplate is the Schema for the ProvisioningTemplates API. Manages an IoT fleet provisioning template.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ProvisioningTemplate : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ProvisioningTemplateSpec>, IStatus<V1beta1ProvisioningTemplateStatus?>
 {

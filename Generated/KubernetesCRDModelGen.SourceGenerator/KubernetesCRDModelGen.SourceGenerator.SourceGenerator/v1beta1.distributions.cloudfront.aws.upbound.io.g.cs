@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudfront.aws.upbound.io;
-/// <summary>Distribution is the Schema for the Distributions API. Provides a CloudFront web distribution resource.</summary>
+/// <summary>
+/// Distribution is the Schema for the Distributions API. Provides a CloudFront web distribution resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DistributionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Distribution>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1DistributionList : IKubernetesObject<V1ListMeta>, II
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1DistributionSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderConnectionFunctionAssociation
 {
     /// <summary>Identifier of the connection function to associate with the distribution.</summary>
@@ -66,6 +72,7 @@ public partial class V1beta1DistributionSpecForProviderConnectionFunctionAssocia
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderCustomErrorResponse
 {
     /// <summary>Minimum amount of time you want HTTP error codes to stay in CloudFront caches before CloudFront queries your origin to see whether the object has been updated.</summary>
@@ -87,6 +94,7 @@ public partial class V1beta1DistributionSpecForProviderCustomErrorResponse
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderDefaultCacheBehaviorForwardedValuesCookies
 {
     /// <summary>Whether you want CloudFront to forward cookies to the origin that is associated with this cache behavior. You can specify all, none or whitelist. If whitelist, you must include the subsequent whitelisted_names.</summary>
@@ -100,6 +108,7 @@ public partial class V1beta1DistributionSpecForProviderDefaultCacheBehaviorForwa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderDefaultCacheBehaviorForwardedValues
 {
     /// <summary>The forwarded values cookies that specifies how CloudFront handles cookies (maximum one).</summary>
@@ -121,6 +130,7 @@ public partial class V1beta1DistributionSpecForProviderDefaultCacheBehaviorForwa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderDefaultCacheBehaviorFunctionAssociation
 {
     /// <summary>Specific event to trigger this function. Valid values: viewer-request, origin-request, viewer-response, origin-response.</summary>
@@ -134,6 +144,7 @@ public partial class V1beta1DistributionSpecForProviderDefaultCacheBehaviorFunct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderDefaultCacheBehaviorGrpcConfig
 {
     /// <summary>Whether the distribution is enabled to accept end user requests for content.</summary>
@@ -143,6 +154,7 @@ public partial class V1beta1DistributionSpecForProviderDefaultCacheBehaviorGrpcC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderDefaultCacheBehaviorLambdaFunctionAssociation
 {
     /// <summary>Specific event to trigger this function. Valid values: viewer-request, origin-request, viewer-response, origin-response.</summary>
@@ -160,6 +172,7 @@ public partial class V1beta1DistributionSpecForProviderDefaultCacheBehaviorLambd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderDefaultCacheBehavior
 {
     /// <summary>Controls which HTTP methods CloudFront processes and forwards to your Amazon S3 bucket or your custom origin.</summary>
@@ -245,6 +258,7 @@ public partial class V1beta1DistributionSpecForProviderDefaultCacheBehavior
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderLoggingConfig
 {
     /// <summary>Amazon S3 bucket for V1 logging where access logs are stored, for example, myawslogbucket.s3.amazonaws.com. V1 logging is enabled when this argument is specified. The bucket must have correct ACL attached with &quot;FULL_CONTROL&quot; permission for &quot;awslogsdelivery&quot; account (Canonical ID: &quot;c4c1ede66af53448b93c283ce9448c4ba468c9432aa01d700d3878632f77d2d0&quot;) for log transfer to work.</summary>
@@ -262,6 +276,7 @@ public partial class V1beta1DistributionSpecForProviderLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorForwardedValuesCookies
 {
     /// <summary>Whether you want CloudFront to forward cookies to the origin that is associated with this cache behavior. You can specify all, none or whitelist. If whitelist, you must include the subsequent whitelisted_names.</summary>
@@ -275,6 +290,7 @@ public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorForwa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorForwardedValues
 {
     /// <summary>The forwarded values cookies that specifies how CloudFront handles cookies (maximum one).</summary>
@@ -302,6 +318,7 @@ public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorForwa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -318,6 +335,7 @@ public enum V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunctionAssoci
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -329,6 +347,7 @@ public enum V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunctionAssoci
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRefPolicy
 {
     /// <summary>
@@ -353,6 +372,7 @@ public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunct
 /// <summary>Reference to a Function in cloudfront to populate functionArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -372,6 +392,7 @@ public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunct
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -388,6 +409,7 @@ public enum V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunctionAssoci
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -399,6 +421,7 @@ public enum V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunctionAssoci
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicy
 {
     /// <summary>
@@ -423,6 +446,7 @@ public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunct
 /// <summary>Selector for a Function in cloudfront to populate functionArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelector
 {
     /// <summary>
@@ -443,6 +467,7 @@ public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunctionAssociation
 {
     /// <summary>Specific event to trigger this function. Valid values: viewer-request, origin-request, viewer-response, origin-response.</summary>
@@ -464,6 +489,7 @@ public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorFunct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorGrpcConfig
 {
     /// <summary>Whether the distribution is enabled to accept end user requests for content.</summary>
@@ -479,6 +505,7 @@ public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorGrpcC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -495,6 +522,7 @@ public enum V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambdaFunction
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -506,6 +534,7 @@ public enum V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambdaFunction
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRefPolicy
 {
     /// <summary>
@@ -530,6 +559,7 @@ public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambd
 /// <summary>Reference to a Function in lambda to populate lambdaArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -549,6 +579,7 @@ public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambd
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -565,6 +596,7 @@ public enum V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambdaFunction
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -576,6 +608,7 @@ public enum V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambdaFunction
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicy
 {
     /// <summary>
@@ -600,6 +633,7 @@ public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambd
 /// <summary>Selector for a Function in lambda to populate lambdaArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelector
 {
     /// <summary>
@@ -620,6 +654,7 @@ public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambdaFunctionAssociation
 {
     /// <summary>Specific event to trigger this function. Valid values: viewer-request, origin-request, viewer-response, origin-response.</summary>
@@ -645,6 +680,7 @@ public partial class V1beta1DistributionSpecForProviderOrderedCacheBehaviorLambd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOrderedCacheBehavior
 {
     /// <summary>Controls which HTTP methods CloudFront processes and forwards to your Amazon S3 bucket or your custom origin.</summary>
@@ -734,6 +770,7 @@ public partial class V1beta1DistributionSpecForProviderOrderedCacheBehavior
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOriginCustomHeader
 {
     [JsonPropertyName("name")]
@@ -745,6 +782,7 @@ public partial class V1beta1DistributionSpecForProviderOriginCustomHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOriginCustomOriginConfig
 {
     /// <summary>HTTP port the custom origin listens on.</summary>
@@ -784,6 +822,7 @@ public partial class V1beta1DistributionSpecForProviderOriginCustomOriginConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecForProviderOriginOriginAccessControlIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecForProviderOriginOriginAccessControlIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -800,6 +839,7 @@ public enum V1beta1DistributionSpecForProviderOriginOriginAccessControlIdRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecForProviderOriginOriginAccessControlIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecForProviderOriginOriginAccessControlIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -811,6 +851,7 @@ public enum V1beta1DistributionSpecForProviderOriginOriginAccessControlIdRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOriginOriginAccessControlIdRefPolicy
 {
     /// <summary>
@@ -835,6 +876,7 @@ public partial class V1beta1DistributionSpecForProviderOriginOriginAccessControl
 /// <summary>Reference to a OriginAccessControl in cloudfront to populate originAccessControlId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOriginOriginAccessControlIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -854,6 +896,7 @@ public partial class V1beta1DistributionSpecForProviderOriginOriginAccessControl
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecForProviderOriginOriginAccessControlIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecForProviderOriginOriginAccessControlIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -870,6 +913,7 @@ public enum V1beta1DistributionSpecForProviderOriginOriginAccessControlIdSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecForProviderOriginOriginAccessControlIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecForProviderOriginOriginAccessControlIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -881,6 +925,7 @@ public enum V1beta1DistributionSpecForProviderOriginOriginAccessControlIdSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOriginOriginAccessControlIdSelectorPolicy
 {
     /// <summary>
@@ -905,6 +950,7 @@ public partial class V1beta1DistributionSpecForProviderOriginOriginAccessControl
 /// <summary>Selector for a OriginAccessControl in cloudfront to populate originAccessControlId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOriginOriginAccessControlIdSelector
 {
     /// <summary>
@@ -925,6 +971,7 @@ public partial class V1beta1DistributionSpecForProviderOriginOriginAccessControl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOriginOriginShield
 {
     /// <summary>Whether the distribution is enabled to accept end user requests for content.</summary>
@@ -944,6 +991,7 @@ public partial class V1beta1DistributionSpecForProviderOriginOriginShield
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentityRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentityRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -960,6 +1008,7 @@ public enum V1beta1DistributionSpecForProviderOriginS3OriginConfigOriginAccessId
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentityRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentityRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -971,6 +1020,7 @@ public enum V1beta1DistributionSpecForProviderOriginS3OriginConfigOriginAccessId
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentityRefPolicy
 {
     /// <summary>
@@ -995,6 +1045,7 @@ public partial class V1beta1DistributionSpecForProviderOriginS3OriginConfigOrigi
 /// <summary>Reference to a OriginAccessIdentity in cloudfront to populate originAccessIdentity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentityRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1014,6 +1065,7 @@ public partial class V1beta1DistributionSpecForProviderOriginS3OriginConfigOrigi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentitySelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentitySelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1030,6 +1082,7 @@ public enum V1beta1DistributionSpecForProviderOriginS3OriginConfigOriginAccessId
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentitySelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentitySelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1041,6 +1094,7 @@ public enum V1beta1DistributionSpecForProviderOriginS3OriginConfigOriginAccessId
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentitySelectorPolicy
 {
     /// <summary>
@@ -1065,6 +1119,7 @@ public partial class V1beta1DistributionSpecForProviderOriginS3OriginConfigOrigi
 /// <summary>Selector for a OriginAccessIdentity in cloudfront to populate originAccessIdentity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOriginS3OriginConfigOriginAccessIdentitySelector
 {
     /// <summary>
@@ -1085,6 +1140,7 @@ public partial class V1beta1DistributionSpecForProviderOriginS3OriginConfigOrigi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOriginS3OriginConfig
 {
     /// <summary>The CloudFront origin access identity to associate with the origin.</summary>
@@ -1102,6 +1158,7 @@ public partial class V1beta1DistributionSpecForProviderOriginS3OriginConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOriginVpcOriginConfig
 {
     /// <summary>The Custom KeepAlive timeout, in seconds. By default, AWS enforces an upper limit of 60. But you can request an increase. Defaults to 5.</summary>
@@ -1123,6 +1180,7 @@ public partial class V1beta1DistributionSpecForProviderOriginVpcOriginConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOrigin
 {
     /// <summary>Number of times that CloudFront attempts to connect to the origin. Must be between 1-3. Defaults to 3.</summary>
@@ -1184,6 +1242,7 @@ public partial class V1beta1DistributionSpecForProviderOrigin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOriginGroupFailoverCriteria
 {
     /// <summary>List of HTTP status codes for the origin group.</summary>
@@ -1193,6 +1252,7 @@ public partial class V1beta1DistributionSpecForProviderOriginGroupFailoverCriter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOriginGroupMember
 {
     /// <summary>Unique identifier for the origin.</summary>
@@ -1202,6 +1262,7 @@ public partial class V1beta1DistributionSpecForProviderOriginGroupMember
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderOriginGroup
 {
     /// <summary>The failover criteria for when to failover to the secondary origin.</summary>
@@ -1219,6 +1280,7 @@ public partial class V1beta1DistributionSpecForProviderOriginGroup
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderRestrictionsGeoRestriction
 {
     /// <summary>ISO 3166-1-alpha-2 codes for which you want CloudFront either to distribute your content (whitelist) or not distribute your content (blacklist). If the type is specified as none an empty array can be used.</summary>
@@ -1232,6 +1294,7 @@ public partial class V1beta1DistributionSpecForProviderRestrictionsGeoRestrictio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderRestrictions
 {
     [JsonPropertyName("geoRestriction")]
@@ -1240,6 +1303,7 @@ public partial class V1beta1DistributionSpecForProviderRestrictions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderViewerCertificate
 {
     /// <summary>ARN of the AWS Certificate Manager certificate that you wish to use with this distribution. Specify this, cloudfront_default_certificate, or iam_certificate_id.  The ACM certificate must be in  US-EAST-1.</summary>
@@ -1265,6 +1329,7 @@ public partial class V1beta1DistributionSpecForProviderViewerCertificate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderViewerMtlsConfigTrustStoreConfig
 {
     /// <summary>Whether to advertise the trust store CA names to clients. Defaults to false.</summary>
@@ -1282,6 +1347,7 @@ public partial class V1beta1DistributionSpecForProviderViewerMtlsConfigTrustStor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProviderViewerMtlsConfig
 {
     /// <summary>The mode for viewer mTLS. Valid values: required, optional.</summary>
@@ -1295,6 +1361,7 @@ public partial class V1beta1DistributionSpecForProviderViewerMtlsConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecForProvider
 {
     /// <summary>Extra CNAMEs (alternate domain names), if any, for this distribution.</summary>
@@ -1396,6 +1463,7 @@ public partial class V1beta1DistributionSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderConnectionFunctionAssociation
 {
     /// <summary>Identifier of the connection function to associate with the distribution.</summary>
@@ -1405,6 +1473,7 @@ public partial class V1beta1DistributionSpecInitProviderConnectionFunctionAssoci
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderCustomErrorResponse
 {
     /// <summary>Minimum amount of time you want HTTP error codes to stay in CloudFront caches before CloudFront queries your origin to see whether the object has been updated.</summary>
@@ -1426,6 +1495,7 @@ public partial class V1beta1DistributionSpecInitProviderCustomErrorResponse
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderDefaultCacheBehaviorForwardedValuesCookies
 {
     /// <summary>Whether you want CloudFront to forward cookies to the origin that is associated with this cache behavior. You can specify all, none or whitelist. If whitelist, you must include the subsequent whitelisted_names.</summary>
@@ -1439,6 +1509,7 @@ public partial class V1beta1DistributionSpecInitProviderDefaultCacheBehaviorForw
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderDefaultCacheBehaviorForwardedValues
 {
     /// <summary>The forwarded values cookies that specifies how CloudFront handles cookies (maximum one).</summary>
@@ -1460,6 +1531,7 @@ public partial class V1beta1DistributionSpecInitProviderDefaultCacheBehaviorForw
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderDefaultCacheBehaviorFunctionAssociation
 {
     /// <summary>Specific event to trigger this function. Valid values: viewer-request, origin-request, viewer-response, origin-response.</summary>
@@ -1473,6 +1545,7 @@ public partial class V1beta1DistributionSpecInitProviderDefaultCacheBehaviorFunc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderDefaultCacheBehaviorGrpcConfig
 {
     /// <summary>Whether the distribution is enabled to accept end user requests for content.</summary>
@@ -1482,6 +1555,7 @@ public partial class V1beta1DistributionSpecInitProviderDefaultCacheBehaviorGrpc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderDefaultCacheBehaviorLambdaFunctionAssociation
 {
     /// <summary>Specific event to trigger this function. Valid values: viewer-request, origin-request, viewer-response, origin-response.</summary>
@@ -1499,6 +1573,7 @@ public partial class V1beta1DistributionSpecInitProviderDefaultCacheBehaviorLamb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderDefaultCacheBehavior
 {
     /// <summary>Controls which HTTP methods CloudFront processes and forwards to your Amazon S3 bucket or your custom origin.</summary>
@@ -1584,6 +1659,7 @@ public partial class V1beta1DistributionSpecInitProviderDefaultCacheBehavior
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderLoggingConfig
 {
     /// <summary>Amazon S3 bucket for V1 logging where access logs are stored, for example, myawslogbucket.s3.amazonaws.com. V1 logging is enabled when this argument is specified. The bucket must have correct ACL attached with &quot;FULL_CONTROL&quot; permission for &quot;awslogsdelivery&quot; account (Canonical ID: &quot;c4c1ede66af53448b93c283ce9448c4ba468c9432aa01d700d3878632f77d2d0&quot;) for log transfer to work.</summary>
@@ -1601,6 +1677,7 @@ public partial class V1beta1DistributionSpecInitProviderLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorForwardedValuesCookies
 {
     /// <summary>Whether you want CloudFront to forward cookies to the origin that is associated with this cache behavior. You can specify all, none or whitelist. If whitelist, you must include the subsequent whitelisted_names.</summary>
@@ -1614,6 +1691,7 @@ public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorForw
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorForwardedValues
 {
     /// <summary>The forwarded values cookies that specifies how CloudFront handles cookies (maximum one).</summary>
@@ -1641,6 +1719,7 @@ public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorForw
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1657,6 +1736,7 @@ public enum V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssoc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1668,6 +1748,7 @@ public enum V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssoc
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRefPolicy
 {
     /// <summary>
@@ -1692,6 +1773,7 @@ public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunc
 /// <summary>Reference to a Function in cloudfront to populate functionArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1711,6 +1793,7 @@ public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1727,6 +1810,7 @@ public enum V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssoc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1738,6 +1822,7 @@ public enum V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssoc
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelectorPolicy
 {
     /// <summary>
@@ -1762,6 +1847,7 @@ public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunc
 /// <summary>Selector for a Function in cloudfront to populate functionArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociationFunctionArnSelector
 {
     /// <summary>
@@ -1782,6 +1868,7 @@ public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunctionAssociation
 {
     /// <summary>Specific event to trigger this function. Valid values: viewer-request, origin-request, viewer-response, origin-response.</summary>
@@ -1803,6 +1890,7 @@ public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorFunc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorGrpcConfig
 {
     /// <summary>Whether the distribution is enabled to accept end user requests for content.</summary>
@@ -1818,6 +1906,7 @@ public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorGrpc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1834,6 +1923,7 @@ public enum V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1845,6 +1935,7 @@ public enum V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctio
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRefPolicy
 {
     /// <summary>
@@ -1869,6 +1960,7 @@ public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLamb
 /// <summary>Reference to a Function in lambda to populate lambdaArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1888,6 +1980,7 @@ public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLamb
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1904,6 +1997,7 @@ public enum V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1915,6 +2009,7 @@ public enum V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctio
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelectorPolicy
 {
     /// <summary>
@@ -1939,6 +2034,7 @@ public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLamb
 /// <summary>Selector for a Function in lambda to populate lambdaArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociationLambdaArnSelector
 {
     /// <summary>
@@ -1959,6 +2055,7 @@ public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLamb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLambdaFunctionAssociation
 {
     /// <summary>Specific event to trigger this function. Valid values: viewer-request, origin-request, viewer-response, origin-response.</summary>
@@ -1984,6 +2081,7 @@ public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehaviorLamb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehavior
 {
     /// <summary>Controls which HTTP methods CloudFront processes and forwards to your Amazon S3 bucket or your custom origin.</summary>
@@ -2073,6 +2171,7 @@ public partial class V1beta1DistributionSpecInitProviderOrderedCacheBehavior
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOriginCustomHeader
 {
     [JsonPropertyName("name")]
@@ -2084,6 +2183,7 @@ public partial class V1beta1DistributionSpecInitProviderOriginCustomHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOriginCustomOriginConfig
 {
     /// <summary>HTTP port the custom origin listens on.</summary>
@@ -2123,6 +2223,7 @@ public partial class V1beta1DistributionSpecInitProviderOriginCustomOriginConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecInitProviderOriginOriginAccessControlIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecInitProviderOriginOriginAccessControlIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2139,6 +2240,7 @@ public enum V1beta1DistributionSpecInitProviderOriginOriginAccessControlIdRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecInitProviderOriginOriginAccessControlIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecInitProviderOriginOriginAccessControlIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2150,6 +2252,7 @@ public enum V1beta1DistributionSpecInitProviderOriginOriginAccessControlIdRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOriginOriginAccessControlIdRefPolicy
 {
     /// <summary>
@@ -2174,6 +2277,7 @@ public partial class V1beta1DistributionSpecInitProviderOriginOriginAccessContro
 /// <summary>Reference to a OriginAccessControl in cloudfront to populate originAccessControlId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOriginOriginAccessControlIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2193,6 +2297,7 @@ public partial class V1beta1DistributionSpecInitProviderOriginOriginAccessContro
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecInitProviderOriginOriginAccessControlIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecInitProviderOriginOriginAccessControlIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2209,6 +2314,7 @@ public enum V1beta1DistributionSpecInitProviderOriginOriginAccessControlIdSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecInitProviderOriginOriginAccessControlIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecInitProviderOriginOriginAccessControlIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2220,6 +2326,7 @@ public enum V1beta1DistributionSpecInitProviderOriginOriginAccessControlIdSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOriginOriginAccessControlIdSelectorPolicy
 {
     /// <summary>
@@ -2244,6 +2351,7 @@ public partial class V1beta1DistributionSpecInitProviderOriginOriginAccessContro
 /// <summary>Selector for a OriginAccessControl in cloudfront to populate originAccessControlId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOriginOriginAccessControlIdSelector
 {
     /// <summary>
@@ -2264,6 +2372,7 @@ public partial class V1beta1DistributionSpecInitProviderOriginOriginAccessContro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOriginOriginShield
 {
     /// <summary>Whether the distribution is enabled to accept end user requests for content.</summary>
@@ -2283,6 +2392,7 @@ public partial class V1beta1DistributionSpecInitProviderOriginOriginShield
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentityRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentityRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2299,6 +2409,7 @@ public enum V1beta1DistributionSpecInitProviderOriginS3OriginConfigOriginAccessI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentityRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentityRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2310,6 +2421,7 @@ public enum V1beta1DistributionSpecInitProviderOriginS3OriginConfigOriginAccessI
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentityRefPolicy
 {
     /// <summary>
@@ -2334,6 +2446,7 @@ public partial class V1beta1DistributionSpecInitProviderOriginS3OriginConfigOrig
 /// <summary>Reference to a OriginAccessIdentity in cloudfront to populate originAccessIdentity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentityRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2353,6 +2466,7 @@ public partial class V1beta1DistributionSpecInitProviderOriginS3OriginConfigOrig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentitySelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentitySelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2369,6 +2483,7 @@ public enum V1beta1DistributionSpecInitProviderOriginS3OriginConfigOriginAccessI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentitySelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentitySelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2380,6 +2495,7 @@ public enum V1beta1DistributionSpecInitProviderOriginS3OriginConfigOriginAccessI
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentitySelectorPolicy
 {
     /// <summary>
@@ -2404,6 +2520,7 @@ public partial class V1beta1DistributionSpecInitProviderOriginS3OriginConfigOrig
 /// <summary>Selector for a OriginAccessIdentity in cloudfront to populate originAccessIdentity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOriginS3OriginConfigOriginAccessIdentitySelector
 {
     /// <summary>
@@ -2424,6 +2541,7 @@ public partial class V1beta1DistributionSpecInitProviderOriginS3OriginConfigOrig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOriginS3OriginConfig
 {
     /// <summary>The CloudFront origin access identity to associate with the origin.</summary>
@@ -2441,6 +2559,7 @@ public partial class V1beta1DistributionSpecInitProviderOriginS3OriginConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOriginVpcOriginConfig
 {
     /// <summary>The Custom KeepAlive timeout, in seconds. By default, AWS enforces an upper limit of 60. But you can request an increase. Defaults to 5.</summary>
@@ -2462,6 +2581,7 @@ public partial class V1beta1DistributionSpecInitProviderOriginVpcOriginConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOrigin
 {
     /// <summary>Number of times that CloudFront attempts to connect to the origin. Must be between 1-3. Defaults to 3.</summary>
@@ -2523,6 +2643,7 @@ public partial class V1beta1DistributionSpecInitProviderOrigin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOriginGroupFailoverCriteria
 {
     /// <summary>List of HTTP status codes for the origin group.</summary>
@@ -2532,6 +2653,7 @@ public partial class V1beta1DistributionSpecInitProviderOriginGroupFailoverCrite
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOriginGroupMember
 {
     /// <summary>Unique identifier for the origin.</summary>
@@ -2541,6 +2663,7 @@ public partial class V1beta1DistributionSpecInitProviderOriginGroupMember
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderOriginGroup
 {
     /// <summary>The failover criteria for when to failover to the secondary origin.</summary>
@@ -2558,6 +2681,7 @@ public partial class V1beta1DistributionSpecInitProviderOriginGroup
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderRestrictionsGeoRestriction
 {
     /// <summary>ISO 3166-1-alpha-2 codes for which you want CloudFront either to distribute your content (whitelist) or not distribute your content (blacklist). If the type is specified as none an empty array can be used.</summary>
@@ -2571,6 +2695,7 @@ public partial class V1beta1DistributionSpecInitProviderRestrictionsGeoRestricti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderRestrictions
 {
     [JsonPropertyName("geoRestriction")]
@@ -2579,6 +2704,7 @@ public partial class V1beta1DistributionSpecInitProviderRestrictions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderViewerCertificate
 {
     /// <summary>ARN of the AWS Certificate Manager certificate that you wish to use with this distribution. Specify this, cloudfront_default_certificate, or iam_certificate_id.  The ACM certificate must be in  US-EAST-1.</summary>
@@ -2604,6 +2730,7 @@ public partial class V1beta1DistributionSpecInitProviderViewerCertificate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderViewerMtlsConfigTrustStoreConfig
 {
     /// <summary>Whether to advertise the trust store CA names to clients. Defaults to false.</summary>
@@ -2621,6 +2748,7 @@ public partial class V1beta1DistributionSpecInitProviderViewerMtlsConfigTrustSto
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProviderViewerMtlsConfig
 {
     /// <summary>The mode for viewer mTLS. Valid values: required, optional.</summary>
@@ -2646,6 +2774,7 @@ public partial class V1beta1DistributionSpecInitProviderViewerMtlsConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecInitProvider
 {
     /// <summary>Extra CNAMEs (alternate domain names), if any, for this distribution.</summary>
@@ -2751,6 +2880,7 @@ public partial class V1beta1DistributionSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -2775,6 +2905,7 @@ public enum V1beta1DistributionSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2791,6 +2922,7 @@ public enum V1beta1DistributionSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2802,6 +2934,7 @@ public enum V1beta1DistributionSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -2830,6 +2963,7 @@ public partial class V1beta1DistributionSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2849,6 +2983,7 @@ public partial class V1beta1DistributionSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -2863,6 +2998,7 @@ public partial class V1beta1DistributionSpecWriteConnectionSecretToRef
 /// <summary>DistributionSpec defines the desired state of Distribution</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionSpec
 {
     /// <summary>
@@ -2930,6 +3066,7 @@ public partial class V1beta1DistributionSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderConnectionFunctionAssociation
 {
     /// <summary>Identifier of the connection function to associate with the distribution.</summary>
@@ -2939,6 +3076,7 @@ public partial class V1beta1DistributionStatusAtProviderConnectionFunctionAssoci
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderCustomErrorResponse
 {
     /// <summary>Minimum amount of time you want HTTP error codes to stay in CloudFront caches before CloudFront queries your origin to see whether the object has been updated.</summary>
@@ -2960,6 +3098,7 @@ public partial class V1beta1DistributionStatusAtProviderCustomErrorResponse
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderDefaultCacheBehaviorForwardedValuesCookies
 {
     /// <summary>Whether you want CloudFront to forward cookies to the origin that is associated with this cache behavior. You can specify all, none or whitelist. If whitelist, you must include the subsequent whitelisted_names.</summary>
@@ -2973,6 +3112,7 @@ public partial class V1beta1DistributionStatusAtProviderDefaultCacheBehaviorForw
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderDefaultCacheBehaviorForwardedValues
 {
     /// <summary>The forwarded values cookies that specifies how CloudFront handles cookies (maximum one).</summary>
@@ -2994,6 +3134,7 @@ public partial class V1beta1DistributionStatusAtProviderDefaultCacheBehaviorForw
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderDefaultCacheBehaviorFunctionAssociation
 {
     /// <summary>Specific event to trigger this function. Valid values: viewer-request, origin-request, viewer-response, origin-response.</summary>
@@ -3007,6 +3148,7 @@ public partial class V1beta1DistributionStatusAtProviderDefaultCacheBehaviorFunc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderDefaultCacheBehaviorGrpcConfig
 {
     /// <summary>Whether the distribution is enabled to accept end user requests for content.</summary>
@@ -3016,6 +3158,7 @@ public partial class V1beta1DistributionStatusAtProviderDefaultCacheBehaviorGrpc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderDefaultCacheBehaviorLambdaFunctionAssociation
 {
     /// <summary>Specific event to trigger this function. Valid values: viewer-request, origin-request, viewer-response, origin-response.</summary>
@@ -3033,6 +3176,7 @@ public partial class V1beta1DistributionStatusAtProviderDefaultCacheBehaviorLamb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderDefaultCacheBehavior
 {
     /// <summary>Controls which HTTP methods CloudFront processes and forwards to your Amazon S3 bucket or your custom origin.</summary>
@@ -3118,6 +3262,7 @@ public partial class V1beta1DistributionStatusAtProviderDefaultCacheBehavior
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderLoggingConfig
 {
     /// <summary>Amazon S3 bucket for V1 logging where access logs are stored, for example, myawslogbucket.s3.amazonaws.com. V1 logging is enabled when this argument is specified. The bucket must have correct ACL attached with &quot;FULL_CONTROL&quot; permission for &quot;awslogsdelivery&quot; account (Canonical ID: &quot;c4c1ede66af53448b93c283ce9448c4ba468c9432aa01d700d3878632f77d2d0&quot;) for log transfer to work.</summary>
@@ -3135,6 +3280,7 @@ public partial class V1beta1DistributionStatusAtProviderLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderOrderedCacheBehaviorForwardedValuesCookies
 {
     /// <summary>Whether you want CloudFront to forward cookies to the origin that is associated with this cache behavior. You can specify all, none or whitelist. If whitelist, you must include the subsequent whitelisted_names.</summary>
@@ -3148,6 +3294,7 @@ public partial class V1beta1DistributionStatusAtProviderOrderedCacheBehaviorForw
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderOrderedCacheBehaviorForwardedValues
 {
     /// <summary>The forwarded values cookies that specifies how CloudFront handles cookies (maximum one).</summary>
@@ -3169,6 +3316,7 @@ public partial class V1beta1DistributionStatusAtProviderOrderedCacheBehaviorForw
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderOrderedCacheBehaviorFunctionAssociation
 {
     /// <summary>Specific event to trigger this function. Valid values: viewer-request, origin-request, viewer-response, origin-response.</summary>
@@ -3182,6 +3330,7 @@ public partial class V1beta1DistributionStatusAtProviderOrderedCacheBehaviorFunc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderOrderedCacheBehaviorGrpcConfig
 {
     /// <summary>Whether the distribution is enabled to accept end user requests for content.</summary>
@@ -3191,6 +3340,7 @@ public partial class V1beta1DistributionStatusAtProviderOrderedCacheBehaviorGrpc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderOrderedCacheBehaviorLambdaFunctionAssociation
 {
     /// <summary>Specific event to trigger this function. Valid values: viewer-request, origin-request, viewer-response, origin-response.</summary>
@@ -3208,6 +3358,7 @@ public partial class V1beta1DistributionStatusAtProviderOrderedCacheBehaviorLamb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderOrderedCacheBehavior
 {
     /// <summary>Controls which HTTP methods CloudFront processes and forwards to your Amazon S3 bucket or your custom origin.</summary>
@@ -3297,6 +3448,7 @@ public partial class V1beta1DistributionStatusAtProviderOrderedCacheBehavior
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderOriginCustomHeader
 {
     [JsonPropertyName("name")]
@@ -3308,6 +3460,7 @@ public partial class V1beta1DistributionStatusAtProviderOriginCustomHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderOriginCustomOriginConfig
 {
     /// <summary>HTTP port the custom origin listens on.</summary>
@@ -3341,6 +3494,7 @@ public partial class V1beta1DistributionStatusAtProviderOriginCustomOriginConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderOriginOriginShield
 {
     /// <summary>Whether the distribution is enabled to accept end user requests for content.</summary>
@@ -3354,6 +3508,7 @@ public partial class V1beta1DistributionStatusAtProviderOriginOriginShield
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderOriginS3OriginConfig
 {
     /// <summary>The CloudFront origin access identity to associate with the origin.</summary>
@@ -3363,6 +3518,7 @@ public partial class V1beta1DistributionStatusAtProviderOriginS3OriginConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderOriginVpcOriginConfig
 {
     /// <summary>The Custom KeepAlive timeout, in seconds. By default, AWS enforces an upper limit of 60. But you can request an increase. Defaults to 5.</summary>
@@ -3384,6 +3540,7 @@ public partial class V1beta1DistributionStatusAtProviderOriginVpcOriginConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderOrigin
 {
     /// <summary>Number of times that CloudFront attempts to connect to the origin. Must be between 1-3. Defaults to 3.</summary>
@@ -3437,6 +3594,7 @@ public partial class V1beta1DistributionStatusAtProviderOrigin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderOriginGroupFailoverCriteria
 {
     /// <summary>List of HTTP status codes for the origin group.</summary>
@@ -3446,6 +3604,7 @@ public partial class V1beta1DistributionStatusAtProviderOriginGroupFailoverCrite
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderOriginGroupMember
 {
     /// <summary>Unique identifier for the origin.</summary>
@@ -3455,6 +3614,7 @@ public partial class V1beta1DistributionStatusAtProviderOriginGroupMember
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderOriginGroup
 {
     /// <summary>The failover criteria for when to failover to the secondary origin.</summary>
@@ -3472,6 +3632,7 @@ public partial class V1beta1DistributionStatusAtProviderOriginGroup
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderRestrictionsGeoRestriction
 {
     /// <summary>ISO 3166-1-alpha-2 codes for which you want CloudFront either to distribute your content (whitelist) or not distribute your content (blacklist). If the type is specified as none an empty array can be used.</summary>
@@ -3485,6 +3646,7 @@ public partial class V1beta1DistributionStatusAtProviderRestrictionsGeoRestricti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderRestrictions
 {
     [JsonPropertyName("geoRestriction")]
@@ -3493,6 +3655,7 @@ public partial class V1beta1DistributionStatusAtProviderRestrictions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderTrustedKeyGroupsItems
 {
     /// <summary>ID of the key group that contains the public keys.</summary>
@@ -3506,6 +3669,7 @@ public partial class V1beta1DistributionStatusAtProviderTrustedKeyGroupsItems
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderTrustedKeyGroups
 {
     /// <summary>Whether the distribution is enabled to accept end user requests for content.</summary>
@@ -3519,6 +3683,7 @@ public partial class V1beta1DistributionStatusAtProviderTrustedKeyGroups
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderTrustedSignersItems
 {
     /// <summary>AWS account ID or self</summary>
@@ -3532,6 +3697,7 @@ public partial class V1beta1DistributionStatusAtProviderTrustedSignersItems
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderTrustedSigners
 {
     /// <summary>Whether the distribution is enabled to accept end user requests for content.</summary>
@@ -3545,6 +3711,7 @@ public partial class V1beta1DistributionStatusAtProviderTrustedSigners
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderViewerCertificate
 {
     /// <summary>ARN of the AWS Certificate Manager certificate that you wish to use with this distribution. Specify this, cloudfront_default_certificate, or iam_certificate_id.  The ACM certificate must be in  US-EAST-1.</summary>
@@ -3570,6 +3737,7 @@ public partial class V1beta1DistributionStatusAtProviderViewerCertificate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderViewerMtlsConfigTrustStoreConfig
 {
     /// <summary>Whether to advertise the trust store CA names to clients. Defaults to false.</summary>
@@ -3587,6 +3755,7 @@ public partial class V1beta1DistributionStatusAtProviderViewerMtlsConfigTrustSto
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProviderViewerMtlsConfig
 {
     /// <summary>The mode for viewer mTLS. Valid values: required, optional.</summary>
@@ -3600,6 +3769,7 @@ public partial class V1beta1DistributionStatusAtProviderViewerMtlsConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusAtProvider
 {
     /// <summary>Extra CNAMEs (alternate domain names), if any, for this distribution.</summary>
@@ -3754,6 +3924,7 @@ public partial class V1beta1DistributionStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatusConditions
 {
     /// <summary>
@@ -3797,6 +3968,7 @@ public partial class V1beta1DistributionStatusConditions
 /// <summary>DistributionStatus defines the observed state of Distribution.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionStatus
 {
     [JsonPropertyName("atProvider")]
@@ -3815,9 +3987,13 @@ public partial class V1beta1DistributionStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Distribution is the Schema for the Distributions API. Provides a CloudFront web distribution resource.</summary>
+/// <summary>
+/// Distribution is the Schema for the Distributions API. Provides a CloudFront web distribution resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Distribution : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DistributionSpec>, IStatus<V1beta1DistributionStatus?>
 {

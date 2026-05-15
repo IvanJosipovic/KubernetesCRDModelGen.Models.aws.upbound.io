@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networkfirewall.aws.upbound.io;
-/// <summary>FirewallPolicy is the Schema for the FirewallPolicys API. Provides an AWS Network Firewall Policy resource.</summary>
+/// <summary>
+/// FirewallPolicy is the Schema for the FirewallPolicys API. Provides an AWS Network Firewall Policy resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FirewallPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1FirewallPolicy>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1FirewallPolicyList : IKubernetesObject<V1ListMeta>, 
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicySpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FirewallPolicySpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1FirewallPolicySpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderEncryptionConfiguration
 {
     /// <summary>The ID of the customer managed key. You can use any of the key identifiers that KMS supports, unless you&apos;re using a key that&apos;s managed by another account. If you&apos;re using a key managed by another account, then specify the key ARN.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1FirewallPolicySpecForProviderEncryptionConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyPolicyVariablesRuleVariablesIpSet
 {
     /// <summary>Set of IPv4 or IPv6 addresses in CIDR notation to use for the Suricata HOME_NET variable.</summary>
@@ -79,6 +86,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyPolicyVar
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyPolicyVariablesRuleVariables
 {
     /// <summary>A configuration block that defines a set of IP addresses. See IP Set below for details.</summary>
@@ -92,6 +100,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyPolicyVar
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyPolicyVariables
 {
     [JsonPropertyName("ruleVariables")]
@@ -100,6 +109,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyPolicyVar
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulEngineOptionsFlowTimeouts
 {
     /// <summary>Number of seconds that can pass without any TCP traffic sent through the firewall before the firewall determines that the connection is idle. After the idle timeout passes, data packets are dropped, however, the next TCP SYN packet is considered a new flow and is processed by the firewall. Clients or targets can use TCP keepalive packets to reset the idle timeout. Default value: 350.</summary>
@@ -109,6 +119,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulEngineOptions
 {
     /// <summary>Amount of time that can pass without any traffic sent through the firewall before the firewall determines that the connection is idle.</summary>
@@ -126,6 +137,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulRuleGroupReferenceOverride
 {
     /// <summary>The action that changes the rule group from DROP to ALERT . This only applies to managed rule groups.</summary>
@@ -141,6 +153,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -157,6 +170,7 @@ public enum V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulRuleGroupR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -168,6 +182,7 @@ public enum V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulRuleGroupR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnRefPolicy
 {
     /// <summary>
@@ -192,6 +207,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulR
 /// <summary>Reference to a RuleGroup in networkfirewall to populate resourceArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -211,6 +227,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -227,6 +244,7 @@ public enum V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulRuleGroupR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -238,6 +256,7 @@ public enum V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulRuleGroupR
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnSelectorPolicy
 {
     /// <summary>
@@ -262,6 +281,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulR
 /// <summary>Selector for a RuleGroup in networkfirewall to populate resourceArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnSelector
 {
     /// <summary>
@@ -282,6 +302,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulRuleGroupReference
 {
     /// <summary>Whether to enable deep threat inspection, which allows AWS to analyze service logs of network traffic processed by these rule groups to identify threat indicators across customers. AWS will use these threat indicators to improve the active threat defense managed rule groups and protect the security of AWS customers and services. This only applies to active threat defense maanaged rule groups.</summary>
@@ -311,6 +332,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatefulR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimension
 {
     /// <summary>The string value to use in the custom metric dimension.</summary>
@@ -320,6 +342,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStateless
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction
 {
     /// <summary>Set of configuration blocks describing dimension settings to use for Amazon CloudWatch custom metrics. See Dimension below for more details.</summary>
@@ -329,6 +352,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStateless
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessCustomActionActionDefinition
 {
     /// <summary>A configuration block describing the stateless inspection criteria that publishes the specified metrics to Amazon CloudWatch for the matching packet. You can pair this custom action with any of the standard stateless rule actions. See Publish Metric Action below for details.</summary>
@@ -338,6 +362,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStateless
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessCustomAction
 {
     /// <summary>A configuration block describing the custom action associated with the action_name. See Action Definition below for details.</summary>
@@ -357,6 +382,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStateless
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -373,6 +399,7 @@ public enum V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessRuleGroup
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -384,6 +411,7 @@ public enum V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessRuleGroup
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnRefPolicy
 {
     /// <summary>
@@ -408,6 +436,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStateless
 /// <summary>Reference to a RuleGroup in networkfirewall to populate resourceArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -427,6 +456,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStateless
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -443,6 +473,7 @@ public enum V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessRuleGroup
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -454,6 +485,7 @@ public enum V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessRuleGroup
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnSelectorPolicy
 {
     /// <summary>
@@ -478,6 +510,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStateless
 /// <summary>Selector for a RuleGroup in networkfirewall to populate resourceArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnSelector
 {
     /// <summary>
@@ -498,6 +531,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStateless
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStatelessRuleGroupReference
 {
     /// <summary>An integer setting that indicates the order in which to run the stateless rule groups in a single policy. AWS Network Firewall applies each stateless rule group to a packet starting with the group that has the lowest priority setting.</summary>
@@ -519,6 +553,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicyStateless
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicy
 {
     /// <summary>. Contains variables that you can use to override default Suricata settings in your firewall policy. See Rule Variables for details.</summary>
@@ -566,6 +601,7 @@ public partial class V1beta1FirewallPolicySpecForProviderFirewallPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecForProvider
 {
     /// <summary>A friendly description of the firewall policy.</summary>
@@ -594,6 +630,7 @@ public partial class V1beta1FirewallPolicySpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderEncryptionConfiguration
 {
     /// <summary>The ID of the customer managed key. You can use any of the key identifiers that KMS supports, unless you&apos;re using a key that&apos;s managed by another account. If you&apos;re using a key managed by another account, then specify the key ARN.</summary>
@@ -607,6 +644,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderEncryptionConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyPolicyVariablesRuleVariablesIpSet
 {
     /// <summary>Set of IPv4 or IPv6 addresses in CIDR notation to use for the Suricata HOME_NET variable.</summary>
@@ -616,6 +654,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyPolicyVa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyPolicyVariablesRuleVariables
 {
     /// <summary>A configuration block that defines a set of IP addresses. See IP Set below for details.</summary>
@@ -629,6 +668,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyPolicyVa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyPolicyVariables
 {
     [JsonPropertyName("ruleVariables")]
@@ -637,6 +677,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyPolicyVa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatefulEngineOptionsFlowTimeouts
 {
     /// <summary>Number of seconds that can pass without any TCP traffic sent through the firewall before the firewall determines that the connection is idle. After the idle timeout passes, data packets are dropped, however, the next TCP SYN packet is considered a new flow and is processed by the firewall. Clients or targets can use TCP keepalive packets to reset the idle timeout. Default value: 350.</summary>
@@ -646,6 +687,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStateful
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatefulEngineOptions
 {
     /// <summary>Amount of time that can pass without any traffic sent through the firewall before the firewall determines that the connection is idle.</summary>
@@ -663,6 +705,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStateful
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatefulRuleGroupReferenceOverride
 {
     /// <summary>The action that changes the rule group from DROP to ALERT . This only applies to managed rule groups.</summary>
@@ -678,6 +721,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStateful
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -694,6 +738,7 @@ public enum V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatefulRuleGroup
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -705,6 +750,7 @@ public enum V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatefulRuleGroup
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnRefPolicy
 {
     /// <summary>
@@ -729,6 +775,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStateful
 /// <summary>Reference to a RuleGroup in networkfirewall to populate resourceArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -748,6 +795,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStateful
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -764,6 +812,7 @@ public enum V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatefulRuleGroup
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -775,6 +824,7 @@ public enum V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatefulRuleGroup
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnSelectorPolicy
 {
     /// <summary>
@@ -799,6 +849,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStateful
 /// <summary>Selector for a RuleGroup in networkfirewall to populate resourceArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatefulRuleGroupReferenceResourceArnSelector
 {
     /// <summary>
@@ -819,6 +870,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStateful
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatefulRuleGroupReference
 {
     /// <summary>Whether to enable deep threat inspection, which allows AWS to analyze service logs of network traffic processed by these rule groups to identify threat indicators across customers. AWS will use these threat indicators to improve the active threat defense managed rule groups and protect the security of AWS customers and services. This only applies to active threat defense maanaged rule groups.</summary>
@@ -848,6 +900,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStateful
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimension
 {
     /// <summary>The string value to use in the custom metric dimension.</summary>
@@ -857,6 +910,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStateles
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction
 {
     /// <summary>Set of configuration blocks describing dimension settings to use for Amazon CloudWatch custom metrics. See Dimension below for more details.</summary>
@@ -866,6 +920,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStateles
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessCustomActionActionDefinition
 {
     /// <summary>A configuration block describing the stateless inspection criteria that publishes the specified metrics to Amazon CloudWatch for the matching packet. You can pair this custom action with any of the standard stateless rule actions. See Publish Metric Action below for details.</summary>
@@ -875,6 +930,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStateles
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessCustomAction
 {
     /// <summary>A configuration block describing the custom action associated with the action_name. See Action Definition below for details.</summary>
@@ -894,6 +950,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStateles
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -910,6 +967,7 @@ public enum V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessRuleGrou
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -921,6 +979,7 @@ public enum V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessRuleGrou
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnRefPolicy
 {
     /// <summary>
@@ -945,6 +1004,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStateles
 /// <summary>Reference to a RuleGroup in networkfirewall to populate resourceArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -964,6 +1024,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStateles
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -980,6 +1041,7 @@ public enum V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessRuleGrou
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -991,6 +1053,7 @@ public enum V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessRuleGrou
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnSelectorPolicy
 {
     /// <summary>
@@ -1015,6 +1078,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStateles
 /// <summary>Selector for a RuleGroup in networkfirewall to populate resourceArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessRuleGroupReferenceResourceArnSelector
 {
     /// <summary>
@@ -1035,6 +1099,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStateles
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStatelessRuleGroupReference
 {
     /// <summary>An integer setting that indicates the order in which to run the stateless rule groups in a single policy. AWS Network Firewall applies each stateless rule group to a packet starting with the group that has the lowest priority setting.</summary>
@@ -1056,6 +1121,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicyStateles
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicy
 {
     /// <summary>. Contains variables that you can use to override default Suricata settings in your firewall policy. See Rule Variables for details.</summary>
@@ -1115,6 +1181,7 @@ public partial class V1beta1FirewallPolicySpecInitProviderFirewallPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecInitProvider
 {
     /// <summary>A friendly description of the firewall policy.</summary>
@@ -1140,6 +1207,7 @@ public partial class V1beta1FirewallPolicySpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicySpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FirewallPolicySpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1164,6 +1232,7 @@ public enum V1beta1FirewallPolicySpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicySpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FirewallPolicySpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1180,6 +1249,7 @@ public enum V1beta1FirewallPolicySpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicySpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FirewallPolicySpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1191,6 +1261,7 @@ public enum V1beta1FirewallPolicySpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1219,6 +1290,7 @@ public partial class V1beta1FirewallPolicySpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1238,6 +1310,7 @@ public partial class V1beta1FirewallPolicySpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1252,6 +1325,7 @@ public partial class V1beta1FirewallPolicySpecWriteConnectionSecretToRef
 /// <summary>FirewallPolicySpec defines the desired state of FirewallPolicy</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicySpec
 {
     /// <summary>
@@ -1319,6 +1393,7 @@ public partial class V1beta1FirewallPolicySpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicyStatusAtProviderEncryptionConfiguration
 {
     /// <summary>The ID of the customer managed key. You can use any of the key identifiers that KMS supports, unless you&apos;re using a key that&apos;s managed by another account. If you&apos;re using a key managed by another account, then specify the key ARN.</summary>
@@ -1332,6 +1407,7 @@ public partial class V1beta1FirewallPolicyStatusAtProviderEncryptionConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyPolicyVariablesRuleVariablesIpSet
 {
     /// <summary>Set of IPv4 or IPv6 addresses in CIDR notation to use for the Suricata HOME_NET variable.</summary>
@@ -1341,6 +1417,7 @@ public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyPolicyVa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyPolicyVariablesRuleVariables
 {
     /// <summary>A configuration block that defines a set of IP addresses. See IP Set below for details.</summary>
@@ -1354,6 +1431,7 @@ public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyPolicyVa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyPolicyVariables
 {
     [JsonPropertyName("ruleVariables")]
@@ -1362,6 +1440,7 @@ public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyPolicyVa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStatefulEngineOptionsFlowTimeouts
 {
     /// <summary>Number of seconds that can pass without any TCP traffic sent through the firewall before the firewall determines that the connection is idle. After the idle timeout passes, data packets are dropped, however, the next TCP SYN packet is considered a new flow and is processed by the firewall. Clients or targets can use TCP keepalive packets to reset the idle timeout. Default value: 350.</summary>
@@ -1371,6 +1450,7 @@ public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStateful
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStatefulEngineOptions
 {
     /// <summary>Amount of time that can pass without any traffic sent through the firewall before the firewall determines that the connection is idle.</summary>
@@ -1388,6 +1468,7 @@ public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStateful
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStatefulRuleGroupReferenceOverride
 {
     /// <summary>The action that changes the rule group from DROP to ALERT . This only applies to managed rule groups.</summary>
@@ -1397,6 +1478,7 @@ public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStateful
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStatefulRuleGroupReference
 {
     /// <summary>Whether to enable deep threat inspection, which allows AWS to analyze service logs of network traffic processed by these rule groups to identify threat indicators across customers. AWS will use these threat indicators to improve the active threat defense managed rule groups and protect the security of AWS customers and services. This only applies to active threat defense maanaged rule groups.</summary>
@@ -1418,6 +1500,7 @@ public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStateful
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricActionDimension
 {
     /// <summary>The string value to use in the custom metric dimension.</summary>
@@ -1427,6 +1510,7 @@ public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStateles
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction
 {
     /// <summary>Set of configuration blocks describing dimension settings to use for Amazon CloudWatch custom metrics. See Dimension below for more details.</summary>
@@ -1436,6 +1520,7 @@ public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStateles
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStatelessCustomActionActionDefinition
 {
     /// <summary>A configuration block describing the stateless inspection criteria that publishes the specified metrics to Amazon CloudWatch for the matching packet. You can pair this custom action with any of the standard stateless rule actions. See Publish Metric Action below for details.</summary>
@@ -1445,6 +1530,7 @@ public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStateles
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStatelessCustomAction
 {
     /// <summary>A configuration block describing the custom action associated with the action_name. See Action Definition below for details.</summary>
@@ -1458,6 +1544,7 @@ public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStateles
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStatelessRuleGroupReference
 {
     /// <summary>An integer setting that indicates the order in which to run the stateless rule groups in a single policy. AWS Network Firewall applies each stateless rule group to a packet starting with the group that has the lowest priority setting.</summary>
@@ -1471,6 +1558,7 @@ public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicyStateles
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicy
 {
     /// <summary>. Contains variables that you can use to override default Suricata settings in your firewall policy. See Rule Variables for details.</summary>
@@ -1518,6 +1606,7 @@ public partial class V1beta1FirewallPolicyStatusAtProviderFirewallPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicyStatusAtProvider
 {
     /// <summary>The Amazon Resource Name (ARN) that identifies the firewall policy.</summary>
@@ -1563,6 +1652,7 @@ public partial class V1beta1FirewallPolicyStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicyStatusConditions
 {
     /// <summary>
@@ -1606,6 +1696,7 @@ public partial class V1beta1FirewallPolicyStatusConditions
 /// <summary>FirewallPolicyStatus defines the observed state of FirewallPolicy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FirewallPolicyStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1624,9 +1715,13 @@ public partial class V1beta1FirewallPolicyStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>FirewallPolicy is the Schema for the FirewallPolicys API. Provides an AWS Network Firewall Policy resource.</summary>
+/// <summary>
+/// FirewallPolicy is the Schema for the FirewallPolicys API. Provides an AWS Network Firewall Policy resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FirewallPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1FirewallPolicySpec>, IStatus<V1beta1FirewallPolicyStatus?>
 {

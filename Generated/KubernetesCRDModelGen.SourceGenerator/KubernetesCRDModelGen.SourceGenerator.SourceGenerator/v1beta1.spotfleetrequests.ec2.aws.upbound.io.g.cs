@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.aws.upbound.io;
-/// <summary>SpotFleetRequest is the Schema for the SpotFleetRequests API. Provides a Spot Fleet Request resource.</summary>
+/// <summary>
+/// SpotFleetRequest is the Schema for the SpotFleetRequests API. Provides a Spot Fleet Request resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpotFleetRequestList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SpotFleetRequest>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1SpotFleetRequestList : IKubernetesObject<V1ListMeta>
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1SpotFleetRequestSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationEbsBlockDevice
 {
     [JsonPropertyName("deleteOnTermination")]
@@ -92,6 +98,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationEb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationEphemeralBlockDevice
 {
     /// <summary>The name of the launch template. Conflicts with id.</summary>
@@ -111,6 +118,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationEp
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -127,6 +135,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstance
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -138,6 +147,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstance
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnRefPolicy
 {
     /// <summary>
@@ -162,6 +172,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIa
 /// <summary>Reference to a InstanceProfile in iam to populate iamInstanceProfileArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -181,6 +192,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -197,6 +209,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstance
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -208,6 +221,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstance
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicy
 {
     /// <summary>
@@ -232,6 +246,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIa
 /// <summary>Selector for a InstanceProfile in iam to populate iamInstanceProfileArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIamInstanceProfileArnSelector
 {
     /// <summary>
@@ -252,6 +267,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationIa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationRootBlockDevice
 {
     [JsonPropertyName("deleteOnTermination")]
@@ -279,6 +295,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecificationRo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecification
 {
     [JsonPropertyName("ami")]
@@ -366,6 +383,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchSpecification
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -382,6 +400,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemp
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -393,6 +412,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemp
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRefPolicy
 {
     /// <summary>
@@ -417,6 +437,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigL
 /// <summary>Reference to a LaunchTemplate in ec2 to populate id.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -436,6 +457,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigL
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -452,6 +474,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemp
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -463,6 +486,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemp
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelectorPolicy
 {
     /// <summary>
@@ -487,6 +511,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigL
 /// <summary>Selector for a LaunchTemplate in ec2 to populate id.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelector
 {
     /// <summary>
@@ -513,6 +538,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigL
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -529,6 +555,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemp
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -540,6 +567,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemp
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRefPolicy
 {
     /// <summary>
@@ -564,6 +592,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigL
 /// <summary>Reference to a LaunchTemplate in ec2 to populate version.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -583,6 +612,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigL
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -599,6 +629,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemp
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -610,6 +641,7 @@ public enum V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemp
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelectorPolicy
 {
     /// <summary>
@@ -634,6 +666,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigL
 /// <summary>Selector for a LaunchTemplate in ec2 to populate version.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelector
 {
     /// <summary>
@@ -654,6 +687,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigL
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigLaunchTemplateSpecification
 {
     /// <summary>The ID of the launch template. Conflicts with name.</summary>
@@ -687,6 +721,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigL
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorCount
 {
     /// <summary>Maximum.</summary>
@@ -700,6 +735,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorTotalMemoryMib
 {
     /// <summary>Maximum.</summary>
@@ -713,6 +749,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbps
 {
     /// <summary>Maximum.</summary>
@@ -726,6 +763,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirementsMemoryGibPerVcpu
 {
     /// <summary>Maximum.</summary>
@@ -739,6 +777,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirementsMemoryMib
 {
     /// <summary>Maximum.</summary>
@@ -752,6 +791,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps
 {
     /// <summary>Maximum.</summary>
@@ -765,6 +805,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCount
 {
     /// <summary>Maximum.</summary>
@@ -778,6 +819,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirementsTotalLocalStorageGb
 {
     /// <summary>Maximum.</summary>
@@ -791,6 +833,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirementsVcpuCount
 {
     /// <summary>Maximum.</summary>
@@ -804,6 +847,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverridesInstanceRequirements
 {
     /// <summary>Block describing the minimum and maximum number of accelerators (GPUs, FPGAs, or AWS Inferentia chips). Default is no minimum or maximum.</summary>
@@ -901,6 +945,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigOverrides
 {
     /// <summary>The availability zone in which to place the request.</summary>
@@ -934,6 +979,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfigO
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfig
 {
     /// <summary>Launch template specification. See Launch Template Specification below for more details.</summary>
@@ -947,6 +993,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderSpotMaintenanceStrategiesCapacityRebalance
 {
     /// <summary>The replacement strategy to use. Only available for spot fleets with fleet_type set to maintain. Valid values: launch.</summary>
@@ -956,6 +1003,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderSpotMaintenanceStrate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProviderSpotMaintenanceStrategies
 {
     /// <summary>Nested argument containing the capacity rebalance for your fleet request. Defined below.</summary>
@@ -965,6 +1013,7 @@ public partial class V1beta1SpotFleetRequestSpecForProviderSpotMaintenanceStrate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecForProvider
 {
     /// <summary>
@@ -1116,6 +1165,7 @@ public partial class V1beta1SpotFleetRequestSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationEbsBlockDevice
 {
     [JsonPropertyName("deleteOnTermination")]
@@ -1151,6 +1201,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationEphemeralBlockDevice
 {
     /// <summary>The name of the launch template. Conflicts with id.</summary>
@@ -1170,6 +1221,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1186,6 +1238,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1197,6 +1250,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanc
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnRefPolicy
 {
     /// <summary>
@@ -1221,6 +1275,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationI
 /// <summary>Reference to a InstanceProfile in iam to populate iamInstanceProfileArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1240,6 +1295,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1256,6 +1312,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1267,6 +1324,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanc
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnSelectorPolicy
 {
     /// <summary>
@@ -1291,6 +1349,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationI
 /// <summary>Selector for a InstanceProfile in iam to populate iamInstanceProfileArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationIamInstanceProfileArnSelector
 {
     /// <summary>
@@ -1311,6 +1370,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationRootBlockDevice
 {
     [JsonPropertyName("deleteOnTermination")]
@@ -1338,6 +1398,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecificationR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecification
 {
     [JsonPropertyName("ami")]
@@ -1425,6 +1486,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchSpecification
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1441,6 +1503,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTem
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1452,6 +1515,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTem
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRefPolicy
 {
     /// <summary>
@@ -1476,6 +1540,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 /// <summary>Reference to a LaunchTemplate in ec2 to populate id.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1495,6 +1560,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1511,6 +1577,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTem
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1522,6 +1589,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTem
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelectorPolicy
 {
     /// <summary>
@@ -1546,6 +1614,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 /// <summary>Selector for a LaunchTemplate in ec2 to populate id.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationIdSelector
 {
     /// <summary>
@@ -1572,6 +1641,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1588,6 +1658,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTem
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1599,6 +1670,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTem
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRefPolicy
 {
     /// <summary>
@@ -1623,6 +1695,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 /// <summary>Reference to a LaunchTemplate in ec2 to populate version.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1642,6 +1715,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1658,6 +1732,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTem
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1669,6 +1744,7 @@ public enum V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTem
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelectorPolicy
 {
     /// <summary>
@@ -1693,6 +1769,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 /// <summary>Selector for a LaunchTemplate in ec2 to populate version.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecificationVersionSelector
 {
     /// <summary>
@@ -1713,6 +1790,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigLaunchTemplateSpecification
 {
     /// <summary>The ID of the launch template. Conflicts with name.</summary>
@@ -1746,6 +1824,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorCount
 {
     /// <summary>Maximum.</summary>
@@ -1759,6 +1838,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorTotalMemoryMib
 {
     /// <summary>Maximum.</summary>
@@ -1772,6 +1852,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbps
 {
     /// <summary>Maximum.</summary>
@@ -1785,6 +1866,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirementsMemoryGibPerVcpu
 {
     /// <summary>Maximum.</summary>
@@ -1798,6 +1880,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirementsMemoryMib
 {
     /// <summary>Maximum.</summary>
@@ -1811,6 +1894,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps
 {
     /// <summary>Maximum.</summary>
@@ -1824,6 +1908,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCount
 {
     /// <summary>Maximum.</summary>
@@ -1837,6 +1922,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirementsTotalLocalStorageGb
 {
     /// <summary>Maximum.</summary>
@@ -1850,6 +1936,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirementsVcpuCount
 {
     /// <summary>Maximum.</summary>
@@ -1863,6 +1950,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverridesInstanceRequirements
 {
     /// <summary>Block describing the minimum and maximum number of accelerators (GPUs, FPGAs, or AWS Inferentia chips). Default is no minimum or maximum.</summary>
@@ -1960,6 +2048,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfigOverrides
 {
     /// <summary>The availability zone in which to place the request.</summary>
@@ -1993,6 +2082,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 {
     /// <summary>Launch template specification. See Launch Template Specification below for more details.</summary>
@@ -2006,6 +2096,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderSpotMaintenanceStrategiesCapacityRebalance
 {
     /// <summary>The replacement strategy to use. Only available for spot fleets with fleet_type set to maintain. Valid values: launch.</summary>
@@ -2015,6 +2106,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderSpotMaintenanceStrat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProviderSpotMaintenanceStrategies
 {
     /// <summary>Nested argument containing the capacity rebalance for your fleet request. Defined below.</summary>
@@ -2036,6 +2128,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProviderSpotMaintenanceStrat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecInitProvider
 {
     /// <summary>
@@ -2184,6 +2277,7 @@ public partial class V1beta1SpotFleetRequestSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -2208,6 +2302,7 @@ public enum V1beta1SpotFleetRequestSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2224,6 +2319,7 @@ public enum V1beta1SpotFleetRequestSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SpotFleetRequestSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SpotFleetRequestSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2235,6 +2331,7 @@ public enum V1beta1SpotFleetRequestSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -2263,6 +2360,7 @@ public partial class V1beta1SpotFleetRequestSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2282,6 +2380,7 @@ public partial class V1beta1SpotFleetRequestSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -2296,6 +2395,7 @@ public partial class V1beta1SpotFleetRequestSpecWriteConnectionSecretToRef
 /// <summary>SpotFleetRequestSpec defines the desired state of SpotFleetRequest</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestSpec
 {
     /// <summary>
@@ -2363,6 +2463,7 @@ public partial class V1beta1SpotFleetRequestSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchSpecificationEbsBlockDevice
 {
     [JsonPropertyName("deleteOnTermination")]
@@ -2398,6 +2499,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchSpecificationE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchSpecificationEphemeralBlockDevice
 {
     /// <summary>The name of the launch template. Conflicts with id.</summary>
@@ -2411,6 +2513,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchSpecificationE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchSpecificationRootBlockDevice
 {
     [JsonPropertyName("deleteOnTermination")]
@@ -2438,6 +2541,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchSpecificationR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchSpecification
 {
     [JsonPropertyName("ami")]
@@ -2511,6 +2615,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchSpecification
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigLaunchTemplateSpecification
 {
     /// <summary>The ID of the launch template. Conflicts with name.</summary>
@@ -2528,6 +2633,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorCount
 {
     /// <summary>Maximum.</summary>
@@ -2541,6 +2647,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirementsAcceleratorTotalMemoryMib
 {
     /// <summary>Maximum.</summary>
@@ -2554,6 +2661,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbps
 {
     /// <summary>Maximum.</summary>
@@ -2567,6 +2675,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirementsMemoryGibPerVcpu
 {
     /// <summary>Maximum.</summary>
@@ -2580,6 +2689,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirementsMemoryMib
 {
     /// <summary>Maximum.</summary>
@@ -2593,6 +2703,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps
 {
     /// <summary>Maximum.</summary>
@@ -2606,6 +2717,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCount
 {
     /// <summary>Maximum.</summary>
@@ -2619,6 +2731,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirementsTotalLocalStorageGb
 {
     /// <summary>Maximum.</summary>
@@ -2632,6 +2745,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirementsVcpuCount
 {
     /// <summary>Maximum.</summary>
@@ -2645,6 +2759,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverridesInstanceRequirements
 {
     /// <summary>Block describing the minimum and maximum number of accelerators (GPUs, FPGAs, or AWS Inferentia chips). Default is no minimum or maximum.</summary>
@@ -2742,6 +2857,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfigOverrides
 {
     /// <summary>The availability zone in which to place the request.</summary>
@@ -2775,6 +2891,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 {
     /// <summary>Launch template specification. See Launch Template Specification below for more details.</summary>
@@ -2788,6 +2905,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderLaunchTemplateConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusAtProviderSpotMaintenanceStrategiesCapacityRebalance
 {
     /// <summary>The replacement strategy to use. Only available for spot fleets with fleet_type set to maintain. Valid values: launch.</summary>
@@ -2797,6 +2915,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderSpotMaintenanceStrat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusAtProviderSpotMaintenanceStrategies
 {
     /// <summary>Nested argument containing the capacity rebalance for your fleet request. Defined below.</summary>
@@ -2806,6 +2925,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProviderSpotMaintenanceStrat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusAtProvider
 {
     /// <summary>
@@ -2973,6 +3093,7 @@ public partial class V1beta1SpotFleetRequestStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatusConditions
 {
     /// <summary>
@@ -3016,6 +3137,7 @@ public partial class V1beta1SpotFleetRequestStatusConditions
 /// <summary>SpotFleetRequestStatus defines the observed state of SpotFleetRequest.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SpotFleetRequestStatus
 {
     [JsonPropertyName("atProvider")]
@@ -3034,9 +3156,13 @@ public partial class V1beta1SpotFleetRequestStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>SpotFleetRequest is the Schema for the SpotFleetRequests API. Provides a Spot Fleet Request resource.</summary>
+/// <summary>
+/// SpotFleetRequest is the Schema for the SpotFleetRequests API. Provides a Spot Fleet Request resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SpotFleetRequest : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SpotFleetRequestSpec>, IStatus<V1beta1SpotFleetRequestStatus?>
 {

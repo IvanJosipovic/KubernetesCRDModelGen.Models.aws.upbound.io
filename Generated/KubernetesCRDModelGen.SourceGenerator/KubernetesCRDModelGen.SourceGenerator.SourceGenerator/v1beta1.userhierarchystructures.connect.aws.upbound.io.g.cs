@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.connect.aws.upbound.io;
-/// <summary>UserHierarchyStructure is the Schema for the UserHierarchyStructures API. Provides details about a specific Amazon Connect User Hierarchy Structure</summary>
+/// <summary>
+/// UserHierarchyStructure is the Schema for the UserHierarchyStructures API. Provides details about a specific Amazon Connect User Hierarchy Structure
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1UserHierarchyStructureList : IKubernetesObject<V1ListMeta>, IItems<V1beta1UserHierarchyStructure>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1UserHierarchyStructureList : IKubernetesObject<V1Lis
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserHierarchyStructureSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserHierarchyStructureSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1UserHierarchyStructureSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecForProviderHierarchyStructureLevelFive
 {
     /// <summary>The name of the user hierarchy level. Must not be more than 50 characters.</summary>
@@ -66,6 +72,7 @@ public partial class V1beta1UserHierarchyStructureSpecForProviderHierarchyStruct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecForProviderHierarchyStructureLevelFour
 {
     /// <summary>The name of the user hierarchy level. Must not be more than 50 characters.</summary>
@@ -75,6 +82,7 @@ public partial class V1beta1UserHierarchyStructureSpecForProviderHierarchyStruct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecForProviderHierarchyStructureLevelOne
 {
     /// <summary>The name of the user hierarchy level. Must not be more than 50 characters.</summary>
@@ -84,6 +92,7 @@ public partial class V1beta1UserHierarchyStructureSpecForProviderHierarchyStruct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecForProviderHierarchyStructureLevelThree
 {
     /// <summary>The name of the user hierarchy level. Must not be more than 50 characters.</summary>
@@ -93,6 +102,7 @@ public partial class V1beta1UserHierarchyStructureSpecForProviderHierarchyStruct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecForProviderHierarchyStructureLevelTwo
 {
     /// <summary>The name of the user hierarchy level. Must not be more than 50 characters.</summary>
@@ -102,6 +112,7 @@ public partial class V1beta1UserHierarchyStructureSpecForProviderHierarchyStruct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecForProviderHierarchyStructure
 {
     /// <summary>A block that defines the details of level five. The level block is documented below.</summary>
@@ -133,6 +144,7 @@ public partial class V1beta1UserHierarchyStructureSpecForProviderHierarchyStruct
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserHierarchyStructureSpecForProviderInstanceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserHierarchyStructureSpecForProviderInstanceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +161,7 @@ public enum V1beta1UserHierarchyStructureSpecForProviderInstanceIdRefPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserHierarchyStructureSpecForProviderInstanceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserHierarchyStructureSpecForProviderInstanceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +173,7 @@ public enum V1beta1UserHierarchyStructureSpecForProviderInstanceIdRefPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecForProviderInstanceIdRefPolicy
 {
     /// <summary>
@@ -184,6 +198,7 @@ public partial class V1beta1UserHierarchyStructureSpecForProviderInstanceIdRefPo
 /// <summary>Reference to a Instance in connect to populate instanceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecForProviderInstanceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -203,6 +218,7 @@ public partial class V1beta1UserHierarchyStructureSpecForProviderInstanceIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserHierarchyStructureSpecForProviderInstanceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserHierarchyStructureSpecForProviderInstanceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -219,6 +235,7 @@ public enum V1beta1UserHierarchyStructureSpecForProviderInstanceIdSelectorPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserHierarchyStructureSpecForProviderInstanceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserHierarchyStructureSpecForProviderInstanceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -230,6 +247,7 @@ public enum V1beta1UserHierarchyStructureSpecForProviderInstanceIdSelectorPolicy
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecForProviderInstanceIdSelectorPolicy
 {
     /// <summary>
@@ -254,6 +272,7 @@ public partial class V1beta1UserHierarchyStructureSpecForProviderInstanceIdSelec
 /// <summary>Selector for a Instance in connect to populate instanceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecForProviderInstanceIdSelector
 {
     /// <summary>
@@ -274,6 +293,7 @@ public partial class V1beta1UserHierarchyStructureSpecForProviderInstanceIdSelec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecForProvider
 {
     /// <summary>A block that defines the hierarchy structure&apos;s levels. The hierarchy_structure block is documented below.</summary>
@@ -302,6 +322,7 @@ public partial class V1beta1UserHierarchyStructureSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecInitProviderHierarchyStructureLevelFive
 {
     /// <summary>The name of the user hierarchy level. Must not be more than 50 characters.</summary>
@@ -311,6 +332,7 @@ public partial class V1beta1UserHierarchyStructureSpecInitProviderHierarchyStruc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecInitProviderHierarchyStructureLevelFour
 {
     /// <summary>The name of the user hierarchy level. Must not be more than 50 characters.</summary>
@@ -320,6 +342,7 @@ public partial class V1beta1UserHierarchyStructureSpecInitProviderHierarchyStruc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecInitProviderHierarchyStructureLevelOne
 {
     /// <summary>The name of the user hierarchy level. Must not be more than 50 characters.</summary>
@@ -329,6 +352,7 @@ public partial class V1beta1UserHierarchyStructureSpecInitProviderHierarchyStruc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecInitProviderHierarchyStructureLevelThree
 {
     /// <summary>The name of the user hierarchy level. Must not be more than 50 characters.</summary>
@@ -338,6 +362,7 @@ public partial class V1beta1UserHierarchyStructureSpecInitProviderHierarchyStruc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecInitProviderHierarchyStructureLevelTwo
 {
     /// <summary>The name of the user hierarchy level. Must not be more than 50 characters.</summary>
@@ -347,6 +372,7 @@ public partial class V1beta1UserHierarchyStructureSpecInitProviderHierarchyStruc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecInitProviderHierarchyStructure
 {
     /// <summary>A block that defines the details of level five. The level block is documented below.</summary>
@@ -378,6 +404,7 @@ public partial class V1beta1UserHierarchyStructureSpecInitProviderHierarchyStruc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserHierarchyStructureSpecInitProviderInstanceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserHierarchyStructureSpecInitProviderInstanceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -394,6 +421,7 @@ public enum V1beta1UserHierarchyStructureSpecInitProviderInstanceIdRefPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserHierarchyStructureSpecInitProviderInstanceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserHierarchyStructureSpecInitProviderInstanceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -405,6 +433,7 @@ public enum V1beta1UserHierarchyStructureSpecInitProviderInstanceIdRefPolicyReso
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecInitProviderInstanceIdRefPolicy
 {
     /// <summary>
@@ -429,6 +458,7 @@ public partial class V1beta1UserHierarchyStructureSpecInitProviderInstanceIdRefP
 /// <summary>Reference to a Instance in connect to populate instanceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecInitProviderInstanceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -448,6 +478,7 @@ public partial class V1beta1UserHierarchyStructureSpecInitProviderInstanceIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserHierarchyStructureSpecInitProviderInstanceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserHierarchyStructureSpecInitProviderInstanceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -464,6 +495,7 @@ public enum V1beta1UserHierarchyStructureSpecInitProviderInstanceIdSelectorPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserHierarchyStructureSpecInitProviderInstanceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserHierarchyStructureSpecInitProviderInstanceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -475,6 +507,7 @@ public enum V1beta1UserHierarchyStructureSpecInitProviderInstanceIdSelectorPolic
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecInitProviderInstanceIdSelectorPolicy
 {
     /// <summary>
@@ -499,6 +532,7 @@ public partial class V1beta1UserHierarchyStructureSpecInitProviderInstanceIdSele
 /// <summary>Selector for a Instance in connect to populate instanceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecInitProviderInstanceIdSelector
 {
     /// <summary>
@@ -531,6 +565,7 @@ public partial class V1beta1UserHierarchyStructureSpecInitProviderInstanceIdSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecInitProvider
 {
     /// <summary>A block that defines the hierarchy structure&apos;s levels. The hierarchy_structure block is documented below.</summary>
@@ -556,6 +591,7 @@ public partial class V1beta1UserHierarchyStructureSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserHierarchyStructureSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserHierarchyStructureSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -580,6 +616,7 @@ public enum V1beta1UserHierarchyStructureSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserHierarchyStructureSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserHierarchyStructureSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -596,6 +633,7 @@ public enum V1beta1UserHierarchyStructureSpecProviderConfigRefPolicyResolutionEn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserHierarchyStructureSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserHierarchyStructureSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -607,6 +645,7 @@ public enum V1beta1UserHierarchyStructureSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -635,6 +674,7 @@ public partial class V1beta1UserHierarchyStructureSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -654,6 +694,7 @@ public partial class V1beta1UserHierarchyStructureSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -668,6 +709,7 @@ public partial class V1beta1UserHierarchyStructureSpecWriteConnectionSecretToRef
 /// <summary>UserHierarchyStructureSpec defines the desired state of UserHierarchyStructure</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureSpec
 {
     /// <summary>
@@ -735,6 +777,7 @@ public partial class V1beta1UserHierarchyStructureSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureStatusAtProviderHierarchyStructureLevelFive
 {
     /// <summary>The Amazon Resource Name (ARN) of the hierarchy level.</summary>
@@ -752,6 +795,7 @@ public partial class V1beta1UserHierarchyStructureStatusAtProviderHierarchyStruc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureStatusAtProviderHierarchyStructureLevelFour
 {
     /// <summary>The Amazon Resource Name (ARN) of the hierarchy level.</summary>
@@ -769,6 +813,7 @@ public partial class V1beta1UserHierarchyStructureStatusAtProviderHierarchyStruc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureStatusAtProviderHierarchyStructureLevelOne
 {
     /// <summary>The Amazon Resource Name (ARN) of the hierarchy level.</summary>
@@ -786,6 +831,7 @@ public partial class V1beta1UserHierarchyStructureStatusAtProviderHierarchyStruc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureStatusAtProviderHierarchyStructureLevelThree
 {
     /// <summary>The Amazon Resource Name (ARN) of the hierarchy level.</summary>
@@ -803,6 +849,7 @@ public partial class V1beta1UserHierarchyStructureStatusAtProviderHierarchyStruc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureStatusAtProviderHierarchyStructureLevelTwo
 {
     /// <summary>The Amazon Resource Name (ARN) of the hierarchy level.</summary>
@@ -820,6 +867,7 @@ public partial class V1beta1UserHierarchyStructureStatusAtProviderHierarchyStruc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureStatusAtProviderHierarchyStructure
 {
     /// <summary>A block that defines the details of level five. The level block is documented below.</summary>
@@ -845,6 +893,7 @@ public partial class V1beta1UserHierarchyStructureStatusAtProviderHierarchyStruc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureStatusAtProvider
 {
     /// <summary>A block that defines the hierarchy structure&apos;s levels. The hierarchy_structure block is documented below.</summary>
@@ -870,6 +919,7 @@ public partial class V1beta1UserHierarchyStructureStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureStatusConditions
 {
     /// <summary>
@@ -913,6 +963,7 @@ public partial class V1beta1UserHierarchyStructureStatusConditions
 /// <summary>UserHierarchyStructureStatus defines the observed state of UserHierarchyStructure.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserHierarchyStructureStatus
 {
     [JsonPropertyName("atProvider")]
@@ -931,9 +982,13 @@ public partial class V1beta1UserHierarchyStructureStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>UserHierarchyStructure is the Schema for the UserHierarchyStructures API. Provides details about a specific Amazon Connect User Hierarchy Structure</summary>
+/// <summary>
+/// UserHierarchyStructure is the Schema for the UserHierarchyStructures API. Provides details about a specific Amazon Connect User Hierarchy Structure
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1UserHierarchyStructure : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1UserHierarchyStructureSpec>, IStatus<V1beta1UserHierarchyStructureStatus?>
 {

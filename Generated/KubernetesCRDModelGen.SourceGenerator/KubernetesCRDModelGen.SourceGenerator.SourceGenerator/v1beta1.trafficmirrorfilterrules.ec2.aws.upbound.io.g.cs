@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.aws.upbound.io;
-/// <summary>TrafficMirrorFilterRule is the Schema for the TrafficMirrorFilterRules API. Provides an Traffic mirror filter rule</summary>
+/// <summary>
+/// TrafficMirrorFilterRule is the Schema for the TrafficMirrorFilterRules API. Provides an Traffic mirror filter rule
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TrafficMirrorFilterRuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta1TrafficMirrorFilterRule>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1TrafficMirrorFilterRuleList : IKubernetesObject<V1Li
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficMirrorFilterRuleSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TrafficMirrorFilterRuleSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1TrafficMirrorFilterRuleSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleSpecForProviderDestinationPortRange
 {
     /// <summary>Starting port of the range</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1TrafficMirrorFilterRuleSpecForProviderDestinationPor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleSpecForProviderSourcePortRange
 {
     /// <summary>Starting port of the range</summary>
@@ -89,6 +96,7 @@ public partial class V1beta1TrafficMirrorFilterRuleSpecForProviderSourcePortRang
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -105,6 +113,7 @@ public enum V1beta1TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -116,6 +125,7 @@ public enum V1beta1TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdRefPolicy
 {
     /// <summary>
@@ -140,6 +150,7 @@ public partial class V1beta1TrafficMirrorFilterRuleSpecForProviderTrafficMirrorF
 /// <summary>Reference to a TrafficMirrorFilter in ec2 to populate trafficMirrorFilterId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -159,6 +170,7 @@ public partial class V1beta1TrafficMirrorFilterRuleSpecForProviderTrafficMirrorF
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -175,6 +187,7 @@ public enum V1beta1TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -186,6 +199,7 @@ public enum V1beta1TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdSe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdSelectorPolicy
 {
     /// <summary>
@@ -210,6 +224,7 @@ public partial class V1beta1TrafficMirrorFilterRuleSpecForProviderTrafficMirrorF
 /// <summary>Selector for a TrafficMirrorFilter in ec2 to populate trafficMirrorFilterId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleSpecForProviderTrafficMirrorFilterIdSelector
 {
     /// <summary>
@@ -230,6 +245,7 @@ public partial class V1beta1TrafficMirrorFilterRuleSpecForProviderTrafficMirrorF
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleSpecForProvider
 {
     /// <summary>Description of the traffic mirror filter rule.</summary>
@@ -290,6 +306,7 @@ public partial class V1beta1TrafficMirrorFilterRuleSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleSpecInitProviderDestinationPortRange
 {
     /// <summary>Starting port of the range</summary>
@@ -303,6 +320,7 @@ public partial class V1beta1TrafficMirrorFilterRuleSpecInitProviderDestinationPo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleSpecInitProviderSourcePortRange
 {
     /// <summary>Starting port of the range</summary>
@@ -322,6 +340,7 @@ public partial class V1beta1TrafficMirrorFilterRuleSpecInitProviderSourcePortRan
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -338,6 +357,7 @@ public enum V1beta1TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -349,6 +369,7 @@ public enum V1beta1TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdRefPolicy
 {
     /// <summary>
@@ -373,6 +394,7 @@ public partial class V1beta1TrafficMirrorFilterRuleSpecInitProviderTrafficMirror
 /// <summary>Reference to a TrafficMirrorFilter in ec2 to populate trafficMirrorFilterId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -392,6 +414,7 @@ public partial class V1beta1TrafficMirrorFilterRuleSpecInitProviderTrafficMirror
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -408,6 +431,7 @@ public enum V1beta1TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -419,6 +443,7 @@ public enum V1beta1TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdS
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdSelectorPolicy
 {
     /// <summary>
@@ -443,6 +468,7 @@ public partial class V1beta1TrafficMirrorFilterRuleSpecInitProviderTrafficMirror
 /// <summary>Selector for a TrafficMirrorFilter in ec2 to populate trafficMirrorFilterId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleSpecInitProviderTrafficMirrorFilterIdSelector
 {
     /// <summary>
@@ -475,6 +501,7 @@ public partial class V1beta1TrafficMirrorFilterRuleSpecInitProviderTrafficMirror
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleSpecInitProvider
 {
     /// <summary>Description of the traffic mirror filter rule.</summary>
@@ -532,6 +559,7 @@ public partial class V1beta1TrafficMirrorFilterRuleSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficMirrorFilterRuleSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TrafficMirrorFilterRuleSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -556,6 +584,7 @@ public enum V1beta1TrafficMirrorFilterRuleSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficMirrorFilterRuleSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TrafficMirrorFilterRuleSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -572,6 +601,7 @@ public enum V1beta1TrafficMirrorFilterRuleSpecProviderConfigRefPolicyResolutionE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficMirrorFilterRuleSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TrafficMirrorFilterRuleSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -583,6 +613,7 @@ public enum V1beta1TrafficMirrorFilterRuleSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -611,6 +642,7 @@ public partial class V1beta1TrafficMirrorFilterRuleSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -630,6 +662,7 @@ public partial class V1beta1TrafficMirrorFilterRuleSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -644,6 +677,7 @@ public partial class V1beta1TrafficMirrorFilterRuleSpecWriteConnectionSecretToRe
 /// <summary>TrafficMirrorFilterRuleSpec defines the desired state of TrafficMirrorFilterRule</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleSpec
 {
     /// <summary>
@@ -711,6 +745,7 @@ public partial class V1beta1TrafficMirrorFilterRuleSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleStatusAtProviderDestinationPortRange
 {
     /// <summary>Starting port of the range</summary>
@@ -724,6 +759,7 @@ public partial class V1beta1TrafficMirrorFilterRuleStatusAtProviderDestinationPo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleStatusAtProviderSourcePortRange
 {
     /// <summary>Starting port of the range</summary>
@@ -737,6 +773,7 @@ public partial class V1beta1TrafficMirrorFilterRuleStatusAtProviderSourcePortRan
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleStatusAtProvider
 {
     /// <summary>ARN of the traffic mirror filter rule.</summary>
@@ -798,6 +835,7 @@ public partial class V1beta1TrafficMirrorFilterRuleStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleStatusConditions
 {
     /// <summary>
@@ -841,6 +879,7 @@ public partial class V1beta1TrafficMirrorFilterRuleStatusConditions
 /// <summary>TrafficMirrorFilterRuleStatus defines the observed state of TrafficMirrorFilterRule.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TrafficMirrorFilterRuleStatus
 {
     [JsonPropertyName("atProvider")]
@@ -859,9 +898,13 @@ public partial class V1beta1TrafficMirrorFilterRuleStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>TrafficMirrorFilterRule is the Schema for the TrafficMirrorFilterRules API. Provides an Traffic mirror filter rule</summary>
+/// <summary>
+/// TrafficMirrorFilterRule is the Schema for the TrafficMirrorFilterRules API. Provides an Traffic mirror filter rule
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TrafficMirrorFilterRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1TrafficMirrorFilterRuleSpec>, IStatus<V1beta1TrafficMirrorFilterRuleStatus?>
 {

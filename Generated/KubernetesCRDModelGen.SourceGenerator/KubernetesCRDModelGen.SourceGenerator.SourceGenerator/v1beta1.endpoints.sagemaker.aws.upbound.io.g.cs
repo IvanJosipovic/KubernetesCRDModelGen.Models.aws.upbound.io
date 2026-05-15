@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.aws.upbound.io;
-/// <summary>Endpoint is the Schema for the Endpoints API. Provides a SageMaker AI Endpoint resource.</summary>
+/// <summary>
+/// Endpoint is the Schema for the Endpoints API. Provides a SageMaker AI Endpoint resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EndpointList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Endpoint>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1EndpointList : IKubernetesObject<V1ListMeta>, IItems
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EndpointSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1EndpointSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecForProviderDeploymentConfigAutoRollbackConfigurationAlarms
 {
     /// <summary>The name of a CloudWatch alarm in your account.</summary>
@@ -66,6 +72,7 @@ public partial class V1beta1EndpointSpecForProviderDeploymentConfigAutoRollbackC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecForProviderDeploymentConfigAutoRollbackConfiguration
 {
     /// <summary>List of CloudWatch alarms in your account that are configured to monitor metrics on an endpoint. If any alarms are tripped during a deployment, SageMaker AI rolls back the deployment. See Alarms.</summary>
@@ -75,6 +82,7 @@ public partial class V1beta1EndpointSpecForProviderDeploymentConfigAutoRollbackC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecForProviderDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize
 {
     /// <summary>Traffic routing strategy type. Valid values are: ALL_AT_ONCE, CANARY, and LINEAR.</summary>
@@ -88,6 +96,7 @@ public partial class V1beta1EndpointSpecForProviderDeploymentConfigBlueGreenUpda
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecForProviderDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize
 {
     /// <summary>Traffic routing strategy type. Valid values are: ALL_AT_ONCE, CANARY, and LINEAR.</summary>
@@ -101,6 +110,7 @@ public partial class V1beta1EndpointSpecForProviderDeploymentConfigBlueGreenUpda
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecForProviderDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration
 {
     /// <summary>Batch size for the first step to turn on traffic on the new endpoint fleet. Value must be less than or equal to 50% of the variant&apos;s total instance count. See Canary Size.</summary>
@@ -122,6 +132,7 @@ public partial class V1beta1EndpointSpecForProviderDeploymentConfigBlueGreenUpda
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecForProviderDeploymentConfigBlueGreenUpdatePolicy
 {
     /// <summary>Maximum execution timeout for the deployment. Note that the timeout value should be larger than the total waiting time specified in termination_wait_in_seconds and wait_interval_in_seconds. Valid values are between 600 and 14400.</summary>
@@ -139,6 +150,7 @@ public partial class V1beta1EndpointSpecForProviderDeploymentConfigBlueGreenUpda
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecForProviderDeploymentConfigRollingUpdatePolicyMaximumBatchSize
 {
     /// <summary>Traffic routing strategy type. Valid values are: ALL_AT_ONCE, CANARY, and LINEAR.</summary>
@@ -152,6 +164,7 @@ public partial class V1beta1EndpointSpecForProviderDeploymentConfigRollingUpdate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecForProviderDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSize
 {
     /// <summary>Traffic routing strategy type. Valid values are: ALL_AT_ONCE, CANARY, and LINEAR.</summary>
@@ -165,6 +178,7 @@ public partial class V1beta1EndpointSpecForProviderDeploymentConfigRollingUpdate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecForProviderDeploymentConfigRollingUpdatePolicy
 {
     /// <summary>Batch size for each rolling step to provision capacity and turn on traffic on the new endpoint fleet, and terminate capacity on the old endpoint fleet. Value must be between 5% to 50% of the variant&apos;s total instance count. See Maximum Batch Size.</summary>
@@ -186,6 +200,7 @@ public partial class V1beta1EndpointSpecForProviderDeploymentConfigRollingUpdate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecForProviderDeploymentConfig
 {
     /// <summary>Automatic rollback configuration for handling endpoint deployment failures and recovery. See Auto Rollback Configuration.</summary>
@@ -209,6 +224,7 @@ public partial class V1beta1EndpointSpecForProviderDeploymentConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointSpecForProviderEndpointConfigNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EndpointSpecForProviderEndpointConfigNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -225,6 +241,7 @@ public enum V1beta1EndpointSpecForProviderEndpointConfigNameRefPolicyResolutionE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointSpecForProviderEndpointConfigNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EndpointSpecForProviderEndpointConfigNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -236,6 +253,7 @@ public enum V1beta1EndpointSpecForProviderEndpointConfigNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecForProviderEndpointConfigNameRefPolicy
 {
     /// <summary>
@@ -260,6 +278,7 @@ public partial class V1beta1EndpointSpecForProviderEndpointConfigNameRefPolicy
 /// <summary>Reference to a EndpointConfiguration in sagemaker to populate endpointConfigName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecForProviderEndpointConfigNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -279,6 +298,7 @@ public partial class V1beta1EndpointSpecForProviderEndpointConfigNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointSpecForProviderEndpointConfigNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EndpointSpecForProviderEndpointConfigNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -295,6 +315,7 @@ public enum V1beta1EndpointSpecForProviderEndpointConfigNameSelectorPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointSpecForProviderEndpointConfigNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EndpointSpecForProviderEndpointConfigNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -306,6 +327,7 @@ public enum V1beta1EndpointSpecForProviderEndpointConfigNameSelectorPolicyResolv
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecForProviderEndpointConfigNameSelectorPolicy
 {
     /// <summary>
@@ -330,6 +352,7 @@ public partial class V1beta1EndpointSpecForProviderEndpointConfigNameSelectorPol
 /// <summary>Selector for a EndpointConfiguration in sagemaker to populate endpointConfigName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecForProviderEndpointConfigNameSelector
 {
     /// <summary>
@@ -350,6 +373,7 @@ public partial class V1beta1EndpointSpecForProviderEndpointConfigNameSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecForProvider
 {
     /// <summary>The deployment configuration for an endpoint, which contains the desired deployment strategy and rollback configurations. See Deployment Config.</summary>
@@ -382,6 +406,7 @@ public partial class V1beta1EndpointSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecInitProviderDeploymentConfigAutoRollbackConfigurationAlarms
 {
     /// <summary>The name of a CloudWatch alarm in your account.</summary>
@@ -391,6 +416,7 @@ public partial class V1beta1EndpointSpecInitProviderDeploymentConfigAutoRollback
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecInitProviderDeploymentConfigAutoRollbackConfiguration
 {
     /// <summary>List of CloudWatch alarms in your account that are configured to monitor metrics on an endpoint. If any alarms are tripped during a deployment, SageMaker AI rolls back the deployment. See Alarms.</summary>
@@ -400,6 +426,7 @@ public partial class V1beta1EndpointSpecInitProviderDeploymentConfigAutoRollback
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecInitProviderDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize
 {
     /// <summary>Traffic routing strategy type. Valid values are: ALL_AT_ONCE, CANARY, and LINEAR.</summary>
@@ -413,6 +440,7 @@ public partial class V1beta1EndpointSpecInitProviderDeploymentConfigBlueGreenUpd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecInitProviderDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize
 {
     /// <summary>Traffic routing strategy type. Valid values are: ALL_AT_ONCE, CANARY, and LINEAR.</summary>
@@ -426,6 +454,7 @@ public partial class V1beta1EndpointSpecInitProviderDeploymentConfigBlueGreenUpd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecInitProviderDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration
 {
     /// <summary>Batch size for the first step to turn on traffic on the new endpoint fleet. Value must be less than or equal to 50% of the variant&apos;s total instance count. See Canary Size.</summary>
@@ -447,6 +476,7 @@ public partial class V1beta1EndpointSpecInitProviderDeploymentConfigBlueGreenUpd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecInitProviderDeploymentConfigBlueGreenUpdatePolicy
 {
     /// <summary>Maximum execution timeout for the deployment. Note that the timeout value should be larger than the total waiting time specified in termination_wait_in_seconds and wait_interval_in_seconds. Valid values are between 600 and 14400.</summary>
@@ -464,6 +494,7 @@ public partial class V1beta1EndpointSpecInitProviderDeploymentConfigBlueGreenUpd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecInitProviderDeploymentConfigRollingUpdatePolicyMaximumBatchSize
 {
     /// <summary>Traffic routing strategy type. Valid values are: ALL_AT_ONCE, CANARY, and LINEAR.</summary>
@@ -477,6 +508,7 @@ public partial class V1beta1EndpointSpecInitProviderDeploymentConfigRollingUpdat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecInitProviderDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSize
 {
     /// <summary>Traffic routing strategy type. Valid values are: ALL_AT_ONCE, CANARY, and LINEAR.</summary>
@@ -490,6 +522,7 @@ public partial class V1beta1EndpointSpecInitProviderDeploymentConfigRollingUpdat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecInitProviderDeploymentConfigRollingUpdatePolicy
 {
     /// <summary>Batch size for each rolling step to provision capacity and turn on traffic on the new endpoint fleet, and terminate capacity on the old endpoint fleet. Value must be between 5% to 50% of the variant&apos;s total instance count. See Maximum Batch Size.</summary>
@@ -511,6 +544,7 @@ public partial class V1beta1EndpointSpecInitProviderDeploymentConfigRollingUpdat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecInitProviderDeploymentConfig
 {
     /// <summary>Automatic rollback configuration for handling endpoint deployment failures and recovery. See Auto Rollback Configuration.</summary>
@@ -534,6 +568,7 @@ public partial class V1beta1EndpointSpecInitProviderDeploymentConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointSpecInitProviderEndpointConfigNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EndpointSpecInitProviderEndpointConfigNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -550,6 +585,7 @@ public enum V1beta1EndpointSpecInitProviderEndpointConfigNameRefPolicyResolution
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointSpecInitProviderEndpointConfigNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EndpointSpecInitProviderEndpointConfigNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -561,6 +597,7 @@ public enum V1beta1EndpointSpecInitProviderEndpointConfigNameRefPolicyResolveEnu
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecInitProviderEndpointConfigNameRefPolicy
 {
     /// <summary>
@@ -585,6 +622,7 @@ public partial class V1beta1EndpointSpecInitProviderEndpointConfigNameRefPolicy
 /// <summary>Reference to a EndpointConfiguration in sagemaker to populate endpointConfigName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecInitProviderEndpointConfigNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -604,6 +642,7 @@ public partial class V1beta1EndpointSpecInitProviderEndpointConfigNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointSpecInitProviderEndpointConfigNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EndpointSpecInitProviderEndpointConfigNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -620,6 +659,7 @@ public enum V1beta1EndpointSpecInitProviderEndpointConfigNameSelectorPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointSpecInitProviderEndpointConfigNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EndpointSpecInitProviderEndpointConfigNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -631,6 +671,7 @@ public enum V1beta1EndpointSpecInitProviderEndpointConfigNameSelectorPolicyResol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecInitProviderEndpointConfigNameSelectorPolicy
 {
     /// <summary>
@@ -655,6 +696,7 @@ public partial class V1beta1EndpointSpecInitProviderEndpointConfigNameSelectorPo
 /// <summary>Selector for a EndpointConfiguration in sagemaker to populate endpointConfigName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecInitProviderEndpointConfigNameSelector
 {
     /// <summary>
@@ -687,6 +729,7 @@ public partial class V1beta1EndpointSpecInitProviderEndpointConfigNameSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecInitProvider
 {
     /// <summary>The deployment configuration for an endpoint, which contains the desired deployment strategy and rollback configurations. See Deployment Config.</summary>
@@ -716,6 +759,7 @@ public partial class V1beta1EndpointSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EndpointSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -740,6 +784,7 @@ public enum V1beta1EndpointSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EndpointSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -756,6 +801,7 @@ public enum V1beta1EndpointSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EndpointSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1EndpointSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -767,6 +813,7 @@ public enum V1beta1EndpointSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -795,6 +842,7 @@ public partial class V1beta1EndpointSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -814,6 +862,7 @@ public partial class V1beta1EndpointSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -828,6 +877,7 @@ public partial class V1beta1EndpointSpecWriteConnectionSecretToRef
 /// <summary>EndpointSpec defines the desired state of Endpoint</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointSpec
 {
     /// <summary>
@@ -895,6 +945,7 @@ public partial class V1beta1EndpointSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointStatusAtProviderDeploymentConfigAutoRollbackConfigurationAlarms
 {
     /// <summary>The name of a CloudWatch alarm in your account.</summary>
@@ -904,6 +955,7 @@ public partial class V1beta1EndpointStatusAtProviderDeploymentConfigAutoRollback
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointStatusAtProviderDeploymentConfigAutoRollbackConfiguration
 {
     /// <summary>List of CloudWatch alarms in your account that are configured to monitor metrics on an endpoint. If any alarms are tripped during a deployment, SageMaker AI rolls back the deployment. See Alarms.</summary>
@@ -913,6 +965,7 @@ public partial class V1beta1EndpointStatusAtProviderDeploymentConfigAutoRollback
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointStatusAtProviderDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize
 {
     /// <summary>Traffic routing strategy type. Valid values are: ALL_AT_ONCE, CANARY, and LINEAR.</summary>
@@ -926,6 +979,7 @@ public partial class V1beta1EndpointStatusAtProviderDeploymentConfigBlueGreenUpd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointStatusAtProviderDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize
 {
     /// <summary>Traffic routing strategy type. Valid values are: ALL_AT_ONCE, CANARY, and LINEAR.</summary>
@@ -939,6 +993,7 @@ public partial class V1beta1EndpointStatusAtProviderDeploymentConfigBlueGreenUpd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointStatusAtProviderDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration
 {
     /// <summary>Batch size for the first step to turn on traffic on the new endpoint fleet. Value must be less than or equal to 50% of the variant&apos;s total instance count. See Canary Size.</summary>
@@ -960,6 +1015,7 @@ public partial class V1beta1EndpointStatusAtProviderDeploymentConfigBlueGreenUpd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointStatusAtProviderDeploymentConfigBlueGreenUpdatePolicy
 {
     /// <summary>Maximum execution timeout for the deployment. Note that the timeout value should be larger than the total waiting time specified in termination_wait_in_seconds and wait_interval_in_seconds. Valid values are between 600 and 14400.</summary>
@@ -977,6 +1033,7 @@ public partial class V1beta1EndpointStatusAtProviderDeploymentConfigBlueGreenUpd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointStatusAtProviderDeploymentConfigRollingUpdatePolicyMaximumBatchSize
 {
     /// <summary>Traffic routing strategy type. Valid values are: ALL_AT_ONCE, CANARY, and LINEAR.</summary>
@@ -990,6 +1047,7 @@ public partial class V1beta1EndpointStatusAtProviderDeploymentConfigRollingUpdat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointStatusAtProviderDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSize
 {
     /// <summary>Traffic routing strategy type. Valid values are: ALL_AT_ONCE, CANARY, and LINEAR.</summary>
@@ -1003,6 +1061,7 @@ public partial class V1beta1EndpointStatusAtProviderDeploymentConfigRollingUpdat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointStatusAtProviderDeploymentConfigRollingUpdatePolicy
 {
     /// <summary>Batch size for each rolling step to provision capacity and turn on traffic on the new endpoint fleet, and terminate capacity on the old endpoint fleet. Value must be between 5% to 50% of the variant&apos;s total instance count. See Maximum Batch Size.</summary>
@@ -1024,6 +1083,7 @@ public partial class V1beta1EndpointStatusAtProviderDeploymentConfigRollingUpdat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointStatusAtProviderDeploymentConfig
 {
     /// <summary>Automatic rollback configuration for handling endpoint deployment failures and recovery. See Auto Rollback Configuration.</summary>
@@ -1041,6 +1101,7 @@ public partial class V1beta1EndpointStatusAtProviderDeploymentConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointStatusAtProvider
 {
     /// <summary>The Amazon Resource Name (ARN) assigned by AWS to this endpoint.</summary>
@@ -1077,6 +1138,7 @@ public partial class V1beta1EndpointStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointStatusConditions
 {
     /// <summary>
@@ -1120,6 +1182,7 @@ public partial class V1beta1EndpointStatusConditions
 /// <summary>EndpointStatus defines the observed state of Endpoint.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1EndpointStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1138,9 +1201,13 @@ public partial class V1beta1EndpointStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Endpoint is the Schema for the Endpoints API. Provides a SageMaker AI Endpoint resource.</summary>
+/// <summary>
+/// Endpoint is the Schema for the Endpoints API. Provides a SageMaker AI Endpoint resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Endpoint : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1EndpointSpec>, IStatus<V1beta1EndpointStatus?>
 {

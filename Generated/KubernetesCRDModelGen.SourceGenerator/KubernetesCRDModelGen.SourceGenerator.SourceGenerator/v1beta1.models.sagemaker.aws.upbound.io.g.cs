@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.aws.upbound.io;
-/// <summary>Model is the Schema for the Models API. Manages an Amazon SageMaker AI Model.</summary>
+/// <summary>
+/// Model is the Schema for the Models API. Manages an Amazon SageMaker AI Model.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ModelList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Model>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ModelList : IKubernetesObject<V1ListMeta>, IItems<V1
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ModelSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1ModelSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig
 {
     /// <summary>Specifies agreement to the model end-user license agreement (EULA). The value must be set to true in order to accept the EULA that this model requires. You are responsible for reviewing and complying with any applicable license terms and making sure they are acceptable for your use case before downloading or using a model.</summary>
@@ -66,6 +72,7 @@ public partial class V1beta1ModelSpecForProviderContainerAdditionalModelDataSour
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderContainerAdditionalModelDataSourceS3DataSource
 {
     /// <summary>How the model data is prepared. Allowed values are: None and Gzip.</summary>
@@ -87,6 +94,7 @@ public partial class V1beta1ModelSpecForProviderContainerAdditionalModelDataSour
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderContainerAdditionalModelDataSource
 {
     /// <summary>Custom name for the additional model data source object. It will be stored in /opt/ml/additional-model-data-sources/&lt;channel_name&gt;/.</summary>
@@ -100,6 +108,7 @@ public partial class V1beta1ModelSpecForProviderContainerAdditionalModelDataSour
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderContainerImageConfigRepositoryAuthConfig
 {
     /// <summary>Amazon Resource Name (ARN) of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.</summary>
@@ -109,6 +118,7 @@ public partial class V1beta1ModelSpecForProviderContainerImageConfigRepositoryAu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderContainerImageConfig
 {
     /// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). Allowed values are: Platform and Vpc.</summary>
@@ -122,6 +132,7 @@ public partial class V1beta1ModelSpecForProviderContainerImageConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderContainerModelDataSourceS3DataSourceModelAccessConfig
 {
     /// <summary>Specifies agreement to the model end-user license agreement (EULA). The value must be set to true in order to accept the EULA that this model requires. You are responsible for reviewing and complying with any applicable license terms and making sure they are acceptable for your use case before downloading or using a model.</summary>
@@ -131,6 +142,7 @@ public partial class V1beta1ModelSpecForProviderContainerModelDataSourceS3DataSo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderContainerModelDataSourceS3DataSource
 {
     /// <summary>How the model data is prepared. Allowed values are: None and Gzip.</summary>
@@ -152,6 +164,7 @@ public partial class V1beta1ModelSpecForProviderContainerModelDataSourceS3DataSo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderContainerModelDataSource
 {
     /// <summary>S3 location of model data to deploy. See S3 Data Source.</summary>
@@ -161,6 +174,7 @@ public partial class V1beta1ModelSpecForProviderContainerModelDataSource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderContainerMultiModelConfig
 {
     /// <summary>Whether to cache models for a multi-model endpoint. By default, multi-model endpoints cache models so that a model does not have to be loaded into memory each time it is invoked. Some use cases do not benefit from model caching. For example, if an endpoint hosts a large number of models that are each invoked infrequently, the endpoint might perform better if you disable model caching. To disable model caching, set the value of this parameter to Disabled. Allowed values are: Enabled and Disabled.</summary>
@@ -170,6 +184,7 @@ public partial class V1beta1ModelSpecForProviderContainerMultiModelConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderContainer
 {
     /// <summary>Additional data sources that are available to the model in addition to those specified in model_data_source. See Additional Model Data Source.</summary>
@@ -228,6 +243,7 @@ public partial class V1beta1ModelSpecForProviderContainer
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelSpecForProviderExecutionRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ModelSpecForProviderExecutionRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -244,6 +260,7 @@ public enum V1beta1ModelSpecForProviderExecutionRoleArnRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelSpecForProviderExecutionRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ModelSpecForProviderExecutionRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -255,6 +272,7 @@ public enum V1beta1ModelSpecForProviderExecutionRoleArnRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderExecutionRoleArnRefPolicy
 {
     /// <summary>
@@ -279,6 +297,7 @@ public partial class V1beta1ModelSpecForProviderExecutionRoleArnRefPolicy
 /// <summary>Reference to a Role in iam to populate executionRoleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderExecutionRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -298,6 +317,7 @@ public partial class V1beta1ModelSpecForProviderExecutionRoleArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelSpecForProviderExecutionRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ModelSpecForProviderExecutionRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -314,6 +334,7 @@ public enum V1beta1ModelSpecForProviderExecutionRoleArnSelectorPolicyResolutionE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelSpecForProviderExecutionRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ModelSpecForProviderExecutionRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -325,6 +346,7 @@ public enum V1beta1ModelSpecForProviderExecutionRoleArnSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderExecutionRoleArnSelectorPolicy
 {
     /// <summary>
@@ -349,6 +371,7 @@ public partial class V1beta1ModelSpecForProviderExecutionRoleArnSelectorPolicy
 /// <summary>Selector for a Role in iam to populate executionRoleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderExecutionRoleArnSelector
 {
     /// <summary>
@@ -369,6 +392,7 @@ public partial class V1beta1ModelSpecForProviderExecutionRoleArnSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderInferenceExecutionConfig
 {
     /// <summary>Container hosts value. Allowed values are: SingleModel and MultiModel. The default value is SingleModel.</summary>
@@ -378,6 +402,7 @@ public partial class V1beta1ModelSpecForProviderInferenceExecutionConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig
 {
     /// <summary>Specifies agreement to the model end-user license agreement (EULA). The value must be set to true in order to accept the EULA that this model requires. You are responsible for reviewing and complying with any applicable license terms and making sure they are acceptable for your use case before downloading or using a model.</summary>
@@ -387,6 +412,7 @@ public partial class V1beta1ModelSpecForProviderPrimaryContainerAdditionalModelD
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderPrimaryContainerAdditionalModelDataSourceS3DataSource
 {
     /// <summary>How the model data is prepared. Allowed values are: None and Gzip.</summary>
@@ -408,6 +434,7 @@ public partial class V1beta1ModelSpecForProviderPrimaryContainerAdditionalModelD
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderPrimaryContainerAdditionalModelDataSource
 {
     /// <summary>Custom name for the additional model data source object. It will be stored in /opt/ml/additional-model-data-sources/&lt;channel_name&gt;/.</summary>
@@ -421,6 +448,7 @@ public partial class V1beta1ModelSpecForProviderPrimaryContainerAdditionalModelD
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderPrimaryContainerImageConfigRepositoryAuthConfig
 {
     /// <summary>Amazon Resource Name (ARN) of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.</summary>
@@ -430,6 +458,7 @@ public partial class V1beta1ModelSpecForProviderPrimaryContainerImageConfigRepos
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderPrimaryContainerImageConfig
 {
     /// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). Allowed values are: Platform and Vpc.</summary>
@@ -443,6 +472,7 @@ public partial class V1beta1ModelSpecForProviderPrimaryContainerImageConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig
 {
     /// <summary>Specifies agreement to the model end-user license agreement (EULA). The value must be set to true in order to accept the EULA that this model requires. You are responsible for reviewing and complying with any applicable license terms and making sure they are acceptable for your use case before downloading or using a model.</summary>
@@ -452,6 +482,7 @@ public partial class V1beta1ModelSpecForProviderPrimaryContainerModelDataSourceS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderPrimaryContainerModelDataSourceS3DataSource
 {
     /// <summary>How the model data is prepared. Allowed values are: None and Gzip.</summary>
@@ -473,6 +504,7 @@ public partial class V1beta1ModelSpecForProviderPrimaryContainerModelDataSourceS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderPrimaryContainerModelDataSource
 {
     /// <summary>S3 location of model data to deploy. See S3 Data Source.</summary>
@@ -482,6 +514,7 @@ public partial class V1beta1ModelSpecForProviderPrimaryContainerModelDataSource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderPrimaryContainerMultiModelConfig
 {
     /// <summary>Whether to cache models for a multi-model endpoint. By default, multi-model endpoints cache models so that a model does not have to be loaded into memory each time it is invoked. Some use cases do not benefit from model caching. For example, if an endpoint hosts a large number of models that are each invoked infrequently, the endpoint might perform better if you disable model caching. To disable model caching, set the value of this parameter to Disabled. Allowed values are: Enabled and Disabled.</summary>
@@ -491,6 +524,7 @@ public partial class V1beta1ModelSpecForProviderPrimaryContainerMultiModelConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderPrimaryContainer
 {
     /// <summary>Additional data sources that are available to the model in addition to those specified in model_data_source. See Additional Model Data Source.</summary>
@@ -543,6 +577,7 @@ public partial class V1beta1ModelSpecForProviderPrimaryContainer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProviderVpcConfig
 {
     /// <summary>List of security group IDs you want to be applied to your training job or model. Specify the security groups for the VPC that is specified in the Subnets field.</summary>
@@ -556,6 +591,7 @@ public partial class V1beta1ModelSpecForProviderVpcConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecForProvider
 {
     /// <summary>Specifies containers in the inference pipeline. If not specified, the primary_container argument is required. Fields are documented below.</summary>
@@ -604,6 +640,7 @@ public partial class V1beta1ModelSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig
 {
     /// <summary>Specifies agreement to the model end-user license agreement (EULA). The value must be set to true in order to accept the EULA that this model requires. You are responsible for reviewing and complying with any applicable license terms and making sure they are acceptable for your use case before downloading or using a model.</summary>
@@ -613,6 +650,7 @@ public partial class V1beta1ModelSpecInitProviderContainerAdditionalModelDataSou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderContainerAdditionalModelDataSourceS3DataSource
 {
     /// <summary>How the model data is prepared. Allowed values are: None and Gzip.</summary>
@@ -634,6 +672,7 @@ public partial class V1beta1ModelSpecInitProviderContainerAdditionalModelDataSou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderContainerAdditionalModelDataSource
 {
     /// <summary>Custom name for the additional model data source object. It will be stored in /opt/ml/additional-model-data-sources/&lt;channel_name&gt;/.</summary>
@@ -647,6 +686,7 @@ public partial class V1beta1ModelSpecInitProviderContainerAdditionalModelDataSou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderContainerImageConfigRepositoryAuthConfig
 {
     /// <summary>Amazon Resource Name (ARN) of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.</summary>
@@ -656,6 +696,7 @@ public partial class V1beta1ModelSpecInitProviderContainerImageConfigRepositoryA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderContainerImageConfig
 {
     /// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). Allowed values are: Platform and Vpc.</summary>
@@ -669,6 +710,7 @@ public partial class V1beta1ModelSpecInitProviderContainerImageConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderContainerModelDataSourceS3DataSourceModelAccessConfig
 {
     /// <summary>Specifies agreement to the model end-user license agreement (EULA). The value must be set to true in order to accept the EULA that this model requires. You are responsible for reviewing and complying with any applicable license terms and making sure they are acceptable for your use case before downloading or using a model.</summary>
@@ -678,6 +720,7 @@ public partial class V1beta1ModelSpecInitProviderContainerModelDataSourceS3DataS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderContainerModelDataSourceS3DataSource
 {
     /// <summary>How the model data is prepared. Allowed values are: None and Gzip.</summary>
@@ -699,6 +742,7 @@ public partial class V1beta1ModelSpecInitProviderContainerModelDataSourceS3DataS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderContainerModelDataSource
 {
     /// <summary>S3 location of model data to deploy. See S3 Data Source.</summary>
@@ -708,6 +752,7 @@ public partial class V1beta1ModelSpecInitProviderContainerModelDataSource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderContainerMultiModelConfig
 {
     /// <summary>Whether to cache models for a multi-model endpoint. By default, multi-model endpoints cache models so that a model does not have to be loaded into memory each time it is invoked. Some use cases do not benefit from model caching. For example, if an endpoint hosts a large number of models that are each invoked infrequently, the endpoint might perform better if you disable model caching. To disable model caching, set the value of this parameter to Disabled. Allowed values are: Enabled and Disabled.</summary>
@@ -717,6 +762,7 @@ public partial class V1beta1ModelSpecInitProviderContainerMultiModelConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderContainer
 {
     /// <summary>Additional data sources that are available to the model in addition to those specified in model_data_source. See Additional Model Data Source.</summary>
@@ -775,6 +821,7 @@ public partial class V1beta1ModelSpecInitProviderContainer
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelSpecInitProviderExecutionRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ModelSpecInitProviderExecutionRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -791,6 +838,7 @@ public enum V1beta1ModelSpecInitProviderExecutionRoleArnRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelSpecInitProviderExecutionRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ModelSpecInitProviderExecutionRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -802,6 +850,7 @@ public enum V1beta1ModelSpecInitProviderExecutionRoleArnRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderExecutionRoleArnRefPolicy
 {
     /// <summary>
@@ -826,6 +875,7 @@ public partial class V1beta1ModelSpecInitProviderExecutionRoleArnRefPolicy
 /// <summary>Reference to a Role in iam to populate executionRoleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderExecutionRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -845,6 +895,7 @@ public partial class V1beta1ModelSpecInitProviderExecutionRoleArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelSpecInitProviderExecutionRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ModelSpecInitProviderExecutionRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -861,6 +912,7 @@ public enum V1beta1ModelSpecInitProviderExecutionRoleArnSelectorPolicyResolution
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelSpecInitProviderExecutionRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ModelSpecInitProviderExecutionRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -872,6 +924,7 @@ public enum V1beta1ModelSpecInitProviderExecutionRoleArnSelectorPolicyResolveEnu
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderExecutionRoleArnSelectorPolicy
 {
     /// <summary>
@@ -896,6 +949,7 @@ public partial class V1beta1ModelSpecInitProviderExecutionRoleArnSelectorPolicy
 /// <summary>Selector for a Role in iam to populate executionRoleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderExecutionRoleArnSelector
 {
     /// <summary>
@@ -916,6 +970,7 @@ public partial class V1beta1ModelSpecInitProviderExecutionRoleArnSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderInferenceExecutionConfig
 {
     /// <summary>Container hosts value. Allowed values are: SingleModel and MultiModel. The default value is SingleModel.</summary>
@@ -925,6 +980,7 @@ public partial class V1beta1ModelSpecInitProviderInferenceExecutionConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig
 {
     /// <summary>Specifies agreement to the model end-user license agreement (EULA). The value must be set to true in order to accept the EULA that this model requires. You are responsible for reviewing and complying with any applicable license terms and making sure they are acceptable for your use case before downloading or using a model.</summary>
@@ -934,6 +990,7 @@ public partial class V1beta1ModelSpecInitProviderPrimaryContainerAdditionalModel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderPrimaryContainerAdditionalModelDataSourceS3DataSource
 {
     /// <summary>How the model data is prepared. Allowed values are: None and Gzip.</summary>
@@ -955,6 +1012,7 @@ public partial class V1beta1ModelSpecInitProviderPrimaryContainerAdditionalModel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderPrimaryContainerAdditionalModelDataSource
 {
     /// <summary>Custom name for the additional model data source object. It will be stored in /opt/ml/additional-model-data-sources/&lt;channel_name&gt;/.</summary>
@@ -968,6 +1026,7 @@ public partial class V1beta1ModelSpecInitProviderPrimaryContainerAdditionalModel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderPrimaryContainerImageConfigRepositoryAuthConfig
 {
     /// <summary>Amazon Resource Name (ARN) of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.</summary>
@@ -977,6 +1036,7 @@ public partial class V1beta1ModelSpecInitProviderPrimaryContainerImageConfigRepo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderPrimaryContainerImageConfig
 {
     /// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). Allowed values are: Platform and Vpc.</summary>
@@ -990,6 +1050,7 @@ public partial class V1beta1ModelSpecInitProviderPrimaryContainerImageConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig
 {
     /// <summary>Specifies agreement to the model end-user license agreement (EULA). The value must be set to true in order to accept the EULA that this model requires. You are responsible for reviewing and complying with any applicable license terms and making sure they are acceptable for your use case before downloading or using a model.</summary>
@@ -999,6 +1060,7 @@ public partial class V1beta1ModelSpecInitProviderPrimaryContainerModelDataSource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderPrimaryContainerModelDataSourceS3DataSource
 {
     /// <summary>How the model data is prepared. Allowed values are: None and Gzip.</summary>
@@ -1020,6 +1082,7 @@ public partial class V1beta1ModelSpecInitProviderPrimaryContainerModelDataSource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderPrimaryContainerModelDataSource
 {
     /// <summary>S3 location of model data to deploy. See S3 Data Source.</summary>
@@ -1029,6 +1092,7 @@ public partial class V1beta1ModelSpecInitProviderPrimaryContainerModelDataSource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderPrimaryContainerMultiModelConfig
 {
     /// <summary>Whether to cache models for a multi-model endpoint. By default, multi-model endpoints cache models so that a model does not have to be loaded into memory each time it is invoked. Some use cases do not benefit from model caching. For example, if an endpoint hosts a large number of models that are each invoked infrequently, the endpoint might perform better if you disable model caching. To disable model caching, set the value of this parameter to Disabled. Allowed values are: Enabled and Disabled.</summary>
@@ -1038,6 +1102,7 @@ public partial class V1beta1ModelSpecInitProviderPrimaryContainerMultiModelConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderPrimaryContainer
 {
     /// <summary>Additional data sources that are available to the model in addition to those specified in model_data_source. See Additional Model Data Source.</summary>
@@ -1090,6 +1155,7 @@ public partial class V1beta1ModelSpecInitProviderPrimaryContainer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProviderVpcConfig
 {
     /// <summary>List of security group IDs you want to be applied to your training job or model. Specify the security groups for the VPC that is specified in the Subnets field.</summary>
@@ -1115,6 +1181,7 @@ public partial class V1beta1ModelSpecInitProviderVpcConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecInitProvider
 {
     /// <summary>Specifies containers in the inference pipeline. If not specified, the primary_container argument is required. Fields are documented below.</summary>
@@ -1160,6 +1227,7 @@ public partial class V1beta1ModelSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ModelSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1184,6 +1252,7 @@ public enum V1beta1ModelSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ModelSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1200,6 +1269,7 @@ public enum V1beta1ModelSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ModelSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1211,6 +1281,7 @@ public enum V1beta1ModelSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1239,6 +1310,7 @@ public partial class V1beta1ModelSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1258,6 +1330,7 @@ public partial class V1beta1ModelSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1272,6 +1345,7 @@ public partial class V1beta1ModelSpecWriteConnectionSecretToRef
 /// <summary>ModelSpec defines the desired state of Model</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelSpec
 {
     /// <summary>
@@ -1339,6 +1413,7 @@ public partial class V1beta1ModelSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig
 {
     /// <summary>Specifies agreement to the model end-user license agreement (EULA). The value must be set to true in order to accept the EULA that this model requires. You are responsible for reviewing and complying with any applicable license terms and making sure they are acceptable for your use case before downloading or using a model.</summary>
@@ -1348,6 +1423,7 @@ public partial class V1beta1ModelStatusAtProviderContainerAdditionalModelDataSou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderContainerAdditionalModelDataSourceS3DataSource
 {
     /// <summary>How the model data is prepared. Allowed values are: None and Gzip.</summary>
@@ -1369,6 +1445,7 @@ public partial class V1beta1ModelStatusAtProviderContainerAdditionalModelDataSou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderContainerAdditionalModelDataSource
 {
     /// <summary>Custom name for the additional model data source object. It will be stored in /opt/ml/additional-model-data-sources/&lt;channel_name&gt;/.</summary>
@@ -1382,6 +1459,7 @@ public partial class V1beta1ModelStatusAtProviderContainerAdditionalModelDataSou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderContainerImageConfigRepositoryAuthConfig
 {
     /// <summary>Amazon Resource Name (ARN) of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.</summary>
@@ -1391,6 +1469,7 @@ public partial class V1beta1ModelStatusAtProviderContainerImageConfigRepositoryA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderContainerImageConfig
 {
     /// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). Allowed values are: Platform and Vpc.</summary>
@@ -1404,6 +1483,7 @@ public partial class V1beta1ModelStatusAtProviderContainerImageConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderContainerModelDataSourceS3DataSourceModelAccessConfig
 {
     /// <summary>Specifies agreement to the model end-user license agreement (EULA). The value must be set to true in order to accept the EULA that this model requires. You are responsible for reviewing and complying with any applicable license terms and making sure they are acceptable for your use case before downloading or using a model.</summary>
@@ -1413,6 +1493,7 @@ public partial class V1beta1ModelStatusAtProviderContainerModelDataSourceS3DataS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderContainerModelDataSourceS3DataSource
 {
     /// <summary>How the model data is prepared. Allowed values are: None and Gzip.</summary>
@@ -1434,6 +1515,7 @@ public partial class V1beta1ModelStatusAtProviderContainerModelDataSourceS3DataS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderContainerModelDataSource
 {
     /// <summary>S3 location of model data to deploy. See S3 Data Source.</summary>
@@ -1443,6 +1525,7 @@ public partial class V1beta1ModelStatusAtProviderContainerModelDataSource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderContainerMultiModelConfig
 {
     /// <summary>Whether to cache models for a multi-model endpoint. By default, multi-model endpoints cache models so that a model does not have to be loaded into memory each time it is invoked. Some use cases do not benefit from model caching. For example, if an endpoint hosts a large number of models that are each invoked infrequently, the endpoint might perform better if you disable model caching. To disable model caching, set the value of this parameter to Disabled. Allowed values are: Enabled and Disabled.</summary>
@@ -1452,6 +1535,7 @@ public partial class V1beta1ModelStatusAtProviderContainerMultiModelConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderContainer
 {
     /// <summary>Additional data sources that are available to the model in addition to those specified in model_data_source. See Additional Model Data Source.</summary>
@@ -1504,6 +1588,7 @@ public partial class V1beta1ModelStatusAtProviderContainer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderInferenceExecutionConfig
 {
     /// <summary>Container hosts value. Allowed values are: SingleModel and MultiModel. The default value is SingleModel.</summary>
@@ -1513,6 +1598,7 @@ public partial class V1beta1ModelStatusAtProviderInferenceExecutionConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderPrimaryContainerAdditionalModelDataSourceS3DataSourceModelAccessConfig
 {
     /// <summary>Specifies agreement to the model end-user license agreement (EULA). The value must be set to true in order to accept the EULA that this model requires. You are responsible for reviewing and complying with any applicable license terms and making sure they are acceptable for your use case before downloading or using a model.</summary>
@@ -1522,6 +1608,7 @@ public partial class V1beta1ModelStatusAtProviderPrimaryContainerAdditionalModel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderPrimaryContainerAdditionalModelDataSourceS3DataSource
 {
     /// <summary>How the model data is prepared. Allowed values are: None and Gzip.</summary>
@@ -1543,6 +1630,7 @@ public partial class V1beta1ModelStatusAtProviderPrimaryContainerAdditionalModel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderPrimaryContainerAdditionalModelDataSource
 {
     /// <summary>Custom name for the additional model data source object. It will be stored in /opt/ml/additional-model-data-sources/&lt;channel_name&gt;/.</summary>
@@ -1556,6 +1644,7 @@ public partial class V1beta1ModelStatusAtProviderPrimaryContainerAdditionalModel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderPrimaryContainerImageConfigRepositoryAuthConfig
 {
     /// <summary>Amazon Resource Name (ARN) of an AWS Lambda function that provides credentials to authenticate to the private Docker registry where your model image is hosted. For information about how to create an AWS Lambda function, see Create a Lambda function with the console in the AWS Lambda Developer Guide.</summary>
@@ -1565,6 +1654,7 @@ public partial class V1beta1ModelStatusAtProviderPrimaryContainerImageConfigRepo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderPrimaryContainerImageConfig
 {
     /// <summary>Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). Allowed values are: Platform and Vpc.</summary>
@@ -1578,6 +1668,7 @@ public partial class V1beta1ModelStatusAtProviderPrimaryContainerImageConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderPrimaryContainerModelDataSourceS3DataSourceModelAccessConfig
 {
     /// <summary>Specifies agreement to the model end-user license agreement (EULA). The value must be set to true in order to accept the EULA that this model requires. You are responsible for reviewing and complying with any applicable license terms and making sure they are acceptable for your use case before downloading or using a model.</summary>
@@ -1587,6 +1678,7 @@ public partial class V1beta1ModelStatusAtProviderPrimaryContainerModelDataSource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderPrimaryContainerModelDataSourceS3DataSource
 {
     /// <summary>How the model data is prepared. Allowed values are: None and Gzip.</summary>
@@ -1608,6 +1700,7 @@ public partial class V1beta1ModelStatusAtProviderPrimaryContainerModelDataSource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderPrimaryContainerModelDataSource
 {
     /// <summary>S3 location of model data to deploy. See S3 Data Source.</summary>
@@ -1617,6 +1710,7 @@ public partial class V1beta1ModelStatusAtProviderPrimaryContainerModelDataSource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderPrimaryContainerMultiModelConfig
 {
     /// <summary>Whether to cache models for a multi-model endpoint. By default, multi-model endpoints cache models so that a model does not have to be loaded into memory each time it is invoked. Some use cases do not benefit from model caching. For example, if an endpoint hosts a large number of models that are each invoked infrequently, the endpoint might perform better if you disable model caching. To disable model caching, set the value of this parameter to Disabled. Allowed values are: Enabled and Disabled.</summary>
@@ -1626,6 +1720,7 @@ public partial class V1beta1ModelStatusAtProviderPrimaryContainerMultiModelConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderPrimaryContainer
 {
     /// <summary>Additional data sources that are available to the model in addition to those specified in model_data_source. See Additional Model Data Source.</summary>
@@ -1678,6 +1773,7 @@ public partial class V1beta1ModelStatusAtProviderPrimaryContainer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProviderVpcConfig
 {
     /// <summary>List of security group IDs you want to be applied to your training job or model. Specify the security groups for the VPC that is specified in the Subnets field.</summary>
@@ -1691,6 +1787,7 @@ public partial class V1beta1ModelStatusAtProviderVpcConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusAtProvider
 {
     /// <summary>Amazon Resource Name (ARN) assigned by AWS to this model.</summary>
@@ -1743,6 +1840,7 @@ public partial class V1beta1ModelStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatusConditions
 {
     /// <summary>
@@ -1786,6 +1884,7 @@ public partial class V1beta1ModelStatusConditions
 /// <summary>ModelStatus defines the observed state of Model.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ModelStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1804,9 +1903,13 @@ public partial class V1beta1ModelStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Model is the Schema for the Models API. Manages an Amazon SageMaker AI Model.</summary>
+/// <summary>
+/// Model is the Schema for the Models API. Manages an Amazon SageMaker AI Model.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Model : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ModelSpec>, IStatus<V1beta1ModelStatus?>
 {

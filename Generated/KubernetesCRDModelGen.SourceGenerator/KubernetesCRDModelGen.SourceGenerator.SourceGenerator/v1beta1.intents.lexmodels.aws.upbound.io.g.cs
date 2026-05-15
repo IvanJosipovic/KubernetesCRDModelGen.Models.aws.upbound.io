@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.lexmodels.aws.upbound.io;
-/// <summary>Intent is the Schema for the Intents API. Provides an Amazon Lex intent resource.</summary>
+/// <summary>
+/// Intent is the Schema for the Intents API. Provides an Amazon Lex intent resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IntentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Intent>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1IntentList : IKubernetesObject<V1ListMeta>, IItems<V
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntentSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntentSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1IntentSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecForProviderConclusionStatementMessage
 {
     /// <summary>The text of the message. Must be less than or equal to 1000 characters in length.</summary>
@@ -77,6 +83,7 @@ public partial class V1beta1IntentSpecForProviderConclusionStatementMessage
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecForProviderConclusionStatement
 {
     /// <summary>
@@ -98,6 +105,7 @@ public partial class V1beta1IntentSpecForProviderConclusionStatement
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecForProviderConfirmationPromptMessage
 {
     /// <summary>The text of the message. Must be less than or equal to 1000 characters in length.</summary>
@@ -118,6 +126,7 @@ public partial class V1beta1IntentSpecForProviderConfirmationPromptMessage
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecForProviderConfirmationPrompt
 {
     /// <summary>The number of times to prompt the user for information. Must be a number between 1 and 5 (inclusive).</summary>
@@ -143,6 +152,7 @@ public partial class V1beta1IntentSpecForProviderConfirmationPrompt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecForProviderDialogCodeHook
 {
     /// <summary>
@@ -160,6 +170,7 @@ public partial class V1beta1IntentSpecForProviderDialogCodeHook
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecForProviderFollowUpPromptPromptMessage
 {
     /// <summary>The text of the message. Must be less than or equal to 1000 characters in length.</summary>
@@ -180,6 +191,7 @@ public partial class V1beta1IntentSpecForProviderFollowUpPromptPromptMessage
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecForProviderFollowUpPromptPrompt
 {
     /// <summary>The number of times to prompt the user for information. Must be a number between 1 and 5 (inclusive).</summary>
@@ -205,6 +217,7 @@ public partial class V1beta1IntentSpecForProviderFollowUpPromptPrompt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecForProviderFollowUpPromptRejectionStatementMessage
 {
     /// <summary>The text of the message. Must be less than or equal to 1000 characters in length.</summary>
@@ -225,6 +238,7 @@ public partial class V1beta1IntentSpecForProviderFollowUpPromptRejectionStatemen
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecForProviderFollowUpPromptRejectionStatement
 {
     /// <summary>
@@ -246,6 +260,7 @@ public partial class V1beta1IntentSpecForProviderFollowUpPromptRejectionStatemen
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecForProviderFollowUpPrompt
 {
     /// <summary>Prompts for information from the user. Attributes are documented under prompt.</summary>
@@ -263,6 +278,7 @@ public partial class V1beta1IntentSpecForProviderFollowUpPrompt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecForProviderFulfillmentActivityCodeHook
 {
     /// <summary>
@@ -280,6 +296,7 @@ public partial class V1beta1IntentSpecForProviderFulfillmentActivityCodeHook
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecForProviderFulfillmentActivity
 {
     /// <summary>
@@ -299,6 +316,7 @@ public partial class V1beta1IntentSpecForProviderFulfillmentActivity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecForProviderRejectionStatementMessage
 {
     /// <summary>The text of the message. Must be less than or equal to 1000 characters in length.</summary>
@@ -319,6 +337,7 @@ public partial class V1beta1IntentSpecForProviderRejectionStatementMessage
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecForProviderRejectionStatement
 {
     /// <summary>
@@ -340,6 +359,7 @@ public partial class V1beta1IntentSpecForProviderRejectionStatement
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecForProviderSlotValueElicitationPromptMessage
 {
     /// <summary>The text of the message. Must be less than or equal to 1000 characters in length.</summary>
@@ -360,6 +380,7 @@ public partial class V1beta1IntentSpecForProviderSlotValueElicitationPromptMessa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecForProviderSlotValueElicitationPrompt
 {
     /// <summary>The number of times to prompt the user for information. Must be a number between 1 and 5 (inclusive).</summary>
@@ -385,6 +406,7 @@ public partial class V1beta1IntentSpecForProviderSlotValueElicitationPrompt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecForProviderSlot
 {
     /// <summary>A description of the bot. Must be less than or equal to 200 characters in length.</summary>
@@ -445,6 +467,7 @@ public partial class V1beta1IntentSpecForProviderSlot
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecForProvider
 {
     /// <summary>
@@ -543,6 +566,7 @@ public partial class V1beta1IntentSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecInitProviderConclusionStatementMessage
 {
     /// <summary>The text of the message. Must be less than or equal to 1000 characters in length.</summary>
@@ -563,6 +587,7 @@ public partial class V1beta1IntentSpecInitProviderConclusionStatementMessage
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecInitProviderConclusionStatement
 {
     /// <summary>
@@ -584,6 +609,7 @@ public partial class V1beta1IntentSpecInitProviderConclusionStatement
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecInitProviderConfirmationPromptMessage
 {
     /// <summary>The text of the message. Must be less than or equal to 1000 characters in length.</summary>
@@ -604,6 +630,7 @@ public partial class V1beta1IntentSpecInitProviderConfirmationPromptMessage
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecInitProviderConfirmationPrompt
 {
     /// <summary>The number of times to prompt the user for information. Must be a number between 1 and 5 (inclusive).</summary>
@@ -629,6 +656,7 @@ public partial class V1beta1IntentSpecInitProviderConfirmationPrompt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecInitProviderDialogCodeHook
 {
     /// <summary>
@@ -646,6 +674,7 @@ public partial class V1beta1IntentSpecInitProviderDialogCodeHook
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecInitProviderFollowUpPromptPromptMessage
 {
     /// <summary>The text of the message. Must be less than or equal to 1000 characters in length.</summary>
@@ -666,6 +695,7 @@ public partial class V1beta1IntentSpecInitProviderFollowUpPromptPromptMessage
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecInitProviderFollowUpPromptPrompt
 {
     /// <summary>The number of times to prompt the user for information. Must be a number between 1 and 5 (inclusive).</summary>
@@ -691,6 +721,7 @@ public partial class V1beta1IntentSpecInitProviderFollowUpPromptPrompt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecInitProviderFollowUpPromptRejectionStatementMessage
 {
     /// <summary>The text of the message. Must be less than or equal to 1000 characters in length.</summary>
@@ -711,6 +742,7 @@ public partial class V1beta1IntentSpecInitProviderFollowUpPromptRejectionStateme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecInitProviderFollowUpPromptRejectionStatement
 {
     /// <summary>
@@ -732,6 +764,7 @@ public partial class V1beta1IntentSpecInitProviderFollowUpPromptRejectionStateme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecInitProviderFollowUpPrompt
 {
     /// <summary>Prompts for information from the user. Attributes are documented under prompt.</summary>
@@ -749,6 +782,7 @@ public partial class V1beta1IntentSpecInitProviderFollowUpPrompt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecInitProviderFulfillmentActivityCodeHook
 {
     /// <summary>
@@ -766,6 +800,7 @@ public partial class V1beta1IntentSpecInitProviderFulfillmentActivityCodeHook
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecInitProviderFulfillmentActivity
 {
     /// <summary>
@@ -785,6 +820,7 @@ public partial class V1beta1IntentSpecInitProviderFulfillmentActivity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecInitProviderRejectionStatementMessage
 {
     /// <summary>The text of the message. Must be less than or equal to 1000 characters in length.</summary>
@@ -805,6 +841,7 @@ public partial class V1beta1IntentSpecInitProviderRejectionStatementMessage
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecInitProviderRejectionStatement
 {
     /// <summary>
@@ -826,6 +863,7 @@ public partial class V1beta1IntentSpecInitProviderRejectionStatement
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecInitProviderSlotValueElicitationPromptMessage
 {
     /// <summary>The text of the message. Must be less than or equal to 1000 characters in length.</summary>
@@ -846,6 +884,7 @@ public partial class V1beta1IntentSpecInitProviderSlotValueElicitationPromptMess
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecInitProviderSlotValueElicitationPrompt
 {
     /// <summary>The number of times to prompt the user for information. Must be a number between 1 and 5 (inclusive).</summary>
@@ -871,6 +910,7 @@ public partial class V1beta1IntentSpecInitProviderSlotValueElicitationPrompt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecInitProviderSlot
 {
     /// <summary>A description of the bot. Must be less than or equal to 200 characters in length.</summary>
@@ -943,6 +983,7 @@ public partial class V1beta1IntentSpecInitProviderSlot
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecInitProvider
 {
     /// <summary>
@@ -1038,6 +1079,7 @@ public partial class V1beta1IntentSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntentSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntentSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1062,6 +1104,7 @@ public enum V1beta1IntentSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntentSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntentSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1078,6 +1121,7 @@ public enum V1beta1IntentSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntentSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1IntentSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1089,6 +1133,7 @@ public enum V1beta1IntentSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1117,6 +1162,7 @@ public partial class V1beta1IntentSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1136,6 +1182,7 @@ public partial class V1beta1IntentSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1150,6 +1197,7 @@ public partial class V1beta1IntentSpecWriteConnectionSecretToRef
 /// <summary>IntentSpec defines the desired state of Intent</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentSpec
 {
     /// <summary>
@@ -1217,6 +1265,7 @@ public partial class V1beta1IntentSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentStatusAtProviderConclusionStatementMessage
 {
     /// <summary>The text of the message. Must be less than or equal to 1000 characters in length.</summary>
@@ -1237,6 +1286,7 @@ public partial class V1beta1IntentStatusAtProviderConclusionStatementMessage
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentStatusAtProviderConclusionStatement
 {
     /// <summary>
@@ -1258,6 +1308,7 @@ public partial class V1beta1IntentStatusAtProviderConclusionStatement
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentStatusAtProviderConfirmationPromptMessage
 {
     /// <summary>The text of the message. Must be less than or equal to 1000 characters in length.</summary>
@@ -1278,6 +1329,7 @@ public partial class V1beta1IntentStatusAtProviderConfirmationPromptMessage
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentStatusAtProviderConfirmationPrompt
 {
     /// <summary>The number of times to prompt the user for information. Must be a number between 1 and 5 (inclusive).</summary>
@@ -1303,6 +1355,7 @@ public partial class V1beta1IntentStatusAtProviderConfirmationPrompt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentStatusAtProviderDialogCodeHook
 {
     /// <summary>
@@ -1320,6 +1373,7 @@ public partial class V1beta1IntentStatusAtProviderDialogCodeHook
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentStatusAtProviderFollowUpPromptPromptMessage
 {
     /// <summary>The text of the message. Must be less than or equal to 1000 characters in length.</summary>
@@ -1340,6 +1394,7 @@ public partial class V1beta1IntentStatusAtProviderFollowUpPromptPromptMessage
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentStatusAtProviderFollowUpPromptPrompt
 {
     /// <summary>The number of times to prompt the user for information. Must be a number between 1 and 5 (inclusive).</summary>
@@ -1365,6 +1420,7 @@ public partial class V1beta1IntentStatusAtProviderFollowUpPromptPrompt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentStatusAtProviderFollowUpPromptRejectionStatementMessage
 {
     /// <summary>The text of the message. Must be less than or equal to 1000 characters in length.</summary>
@@ -1385,6 +1441,7 @@ public partial class V1beta1IntentStatusAtProviderFollowUpPromptRejectionStateme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentStatusAtProviderFollowUpPromptRejectionStatement
 {
     /// <summary>
@@ -1406,6 +1463,7 @@ public partial class V1beta1IntentStatusAtProviderFollowUpPromptRejectionStateme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentStatusAtProviderFollowUpPrompt
 {
     /// <summary>Prompts for information from the user. Attributes are documented under prompt.</summary>
@@ -1423,6 +1481,7 @@ public partial class V1beta1IntentStatusAtProviderFollowUpPrompt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentStatusAtProviderFulfillmentActivityCodeHook
 {
     /// <summary>
@@ -1440,6 +1499,7 @@ public partial class V1beta1IntentStatusAtProviderFulfillmentActivityCodeHook
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentStatusAtProviderFulfillmentActivity
 {
     /// <summary>
@@ -1459,6 +1519,7 @@ public partial class V1beta1IntentStatusAtProviderFulfillmentActivity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentStatusAtProviderRejectionStatementMessage
 {
     /// <summary>The text of the message. Must be less than or equal to 1000 characters in length.</summary>
@@ -1479,6 +1540,7 @@ public partial class V1beta1IntentStatusAtProviderRejectionStatementMessage
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentStatusAtProviderRejectionStatement
 {
     /// <summary>
@@ -1500,6 +1562,7 @@ public partial class V1beta1IntentStatusAtProviderRejectionStatement
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentStatusAtProviderSlotValueElicitationPromptMessage
 {
     /// <summary>The text of the message. Must be less than or equal to 1000 characters in length.</summary>
@@ -1520,6 +1583,7 @@ public partial class V1beta1IntentStatusAtProviderSlotValueElicitationPromptMess
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentStatusAtProviderSlotValueElicitationPrompt
 {
     /// <summary>The number of times to prompt the user for information. Must be a number between 1 and 5 (inclusive).</summary>
@@ -1545,6 +1609,7 @@ public partial class V1beta1IntentStatusAtProviderSlotValueElicitationPrompt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentStatusAtProviderSlot
 {
     /// <summary>A description of the bot. Must be less than or equal to 200 characters in length.</summary>
@@ -1605,6 +1670,7 @@ public partial class V1beta1IntentStatusAtProviderSlot
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentStatusAtProvider
 {
     /// <summary>The ARN of the Lex intent.</summary>
@@ -1730,6 +1796,7 @@ public partial class V1beta1IntentStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentStatusConditions
 {
     /// <summary>
@@ -1773,6 +1840,7 @@ public partial class V1beta1IntentStatusConditions
 /// <summary>IntentStatus defines the observed state of Intent.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1IntentStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1791,9 +1859,13 @@ public partial class V1beta1IntentStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Intent is the Schema for the Intents API. Provides an Amazon Lex intent resource.</summary>
+/// <summary>
+/// Intent is the Schema for the Intents API. Provides an Amazon Lex intent resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Intent : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1IntentSpec>, IStatus<V1beta1IntentStatus?>
 {

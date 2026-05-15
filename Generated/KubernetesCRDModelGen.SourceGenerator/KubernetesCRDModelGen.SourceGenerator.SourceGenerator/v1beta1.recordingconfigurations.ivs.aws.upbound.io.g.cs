@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ivs.aws.upbound.io;
-/// <summary>RecordingConfiguration is the Schema for the RecordingConfigurations API.</summary>
+/// <summary>
+/// RecordingConfiguration is the Schema for the RecordingConfigurations API.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RecordingConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RecordingConfiguration>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1RecordingConfigurationList : IKubernetesObject<V1Lis
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RecordingConfigurationSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RecordingConfigurationSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1RecordingConfigurationSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RecordingConfigurationSpecForProviderDestinationConfigurationS3
 {
     /// <summary>S3 bucket name where recorded videos will be stored.</summary>
@@ -66,6 +72,7 @@ public partial class V1beta1RecordingConfigurationSpecForProviderDestinationConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RecordingConfigurationSpecForProviderDestinationConfiguration
 {
     /// <summary>S3 destination configuration where recorded videos will be stored.</summary>
@@ -75,6 +82,7 @@ public partial class V1beta1RecordingConfigurationSpecForProviderDestinationConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RecordingConfigurationSpecForProviderThumbnailConfiguration
 {
     /// <summary>Thumbnail recording mode. Valid values: DISABLED, INTERVAL.</summary>
@@ -88,6 +96,7 @@ public partial class V1beta1RecordingConfigurationSpecForProviderThumbnailConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RecordingConfigurationSpecForProvider
 {
     /// <summary>Object containing destination configuration for where recorded video will be stored.</summary>
@@ -120,6 +129,7 @@ public partial class V1beta1RecordingConfigurationSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RecordingConfigurationSpecInitProviderDestinationConfigurationS3
 {
     /// <summary>S3 bucket name where recorded videos will be stored.</summary>
@@ -129,6 +139,7 @@ public partial class V1beta1RecordingConfigurationSpecInitProviderDestinationCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RecordingConfigurationSpecInitProviderDestinationConfiguration
 {
     /// <summary>S3 destination configuration where recorded videos will be stored.</summary>
@@ -138,6 +149,7 @@ public partial class V1beta1RecordingConfigurationSpecInitProviderDestinationCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RecordingConfigurationSpecInitProviderThumbnailConfiguration
 {
     /// <summary>Thumbnail recording mode. Valid values: DISABLED, INTERVAL.</summary>
@@ -163,6 +175,7 @@ public partial class V1beta1RecordingConfigurationSpecInitProviderThumbnailConfi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RecordingConfigurationSpecInitProvider
 {
     /// <summary>Object containing destination configuration for where recorded video will be stored.</summary>
@@ -192,6 +205,7 @@ public partial class V1beta1RecordingConfigurationSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RecordingConfigurationSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RecordingConfigurationSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -216,6 +230,7 @@ public enum V1beta1RecordingConfigurationSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RecordingConfigurationSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RecordingConfigurationSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -232,6 +247,7 @@ public enum V1beta1RecordingConfigurationSpecProviderConfigRefPolicyResolutionEn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RecordingConfigurationSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RecordingConfigurationSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -243,6 +259,7 @@ public enum V1beta1RecordingConfigurationSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RecordingConfigurationSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -271,6 +288,7 @@ public partial class V1beta1RecordingConfigurationSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RecordingConfigurationSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -290,6 +308,7 @@ public partial class V1beta1RecordingConfigurationSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RecordingConfigurationSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -304,6 +323,7 @@ public partial class V1beta1RecordingConfigurationSpecWriteConnectionSecretToRef
 /// <summary>RecordingConfigurationSpec defines the desired state of RecordingConfiguration</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RecordingConfigurationSpec
 {
     /// <summary>
@@ -371,6 +391,7 @@ public partial class V1beta1RecordingConfigurationSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RecordingConfigurationStatusAtProviderDestinationConfigurationS3
 {
     /// <summary>S3 bucket name where recorded videos will be stored.</summary>
@@ -380,6 +401,7 @@ public partial class V1beta1RecordingConfigurationStatusAtProviderDestinationCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RecordingConfigurationStatusAtProviderDestinationConfiguration
 {
     /// <summary>S3 destination configuration where recorded videos will be stored.</summary>
@@ -389,6 +411,7 @@ public partial class V1beta1RecordingConfigurationStatusAtProviderDestinationCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RecordingConfigurationStatusAtProviderThumbnailConfiguration
 {
     /// <summary>Thumbnail recording mode. Valid values: DISABLED, INTERVAL.</summary>
@@ -402,6 +425,7 @@ public partial class V1beta1RecordingConfigurationStatusAtProviderThumbnailConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RecordingConfigurationStatusAtProvider
 {
     /// <summary>ARN of the Recording Configuration.</summary>
@@ -450,6 +474,7 @@ public partial class V1beta1RecordingConfigurationStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RecordingConfigurationStatusConditions
 {
     /// <summary>
@@ -493,6 +518,7 @@ public partial class V1beta1RecordingConfigurationStatusConditions
 /// <summary>RecordingConfigurationStatus defines the observed state of RecordingConfiguration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RecordingConfigurationStatus
 {
     [JsonPropertyName("atProvider")]
@@ -511,9 +537,13 @@ public partial class V1beta1RecordingConfigurationStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>RecordingConfiguration is the Schema for the RecordingConfigurations API.</summary>
+/// <summary>
+/// RecordingConfiguration is the Schema for the RecordingConfigurations API.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RecordingConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RecordingConfigurationSpec>, IStatus<V1beta1RecordingConfigurationStatus?>
 {

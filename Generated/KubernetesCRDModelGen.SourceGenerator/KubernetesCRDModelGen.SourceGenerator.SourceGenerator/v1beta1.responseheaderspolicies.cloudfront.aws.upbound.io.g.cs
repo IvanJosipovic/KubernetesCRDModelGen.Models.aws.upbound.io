@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudfront.aws.upbound.io;
-/// <summary>ResponseHeadersPolicy is the Schema for the ResponseHeadersPolicys API. Provides a CloudFront response headers policy resource.</summary>
+/// <summary>
+/// ResponseHeadersPolicy is the Schema for the ResponseHeadersPolicys API. Provides a CloudFront response headers policy resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ResponseHeadersPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ResponseHeadersPolicy>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ResponseHeadersPolicyList : IKubernetesObject<V1List
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResponseHeadersPolicySpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResponseHeadersPolicySpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1ResponseHeadersPolicySpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecForProviderCorsConfigAccessControlAllowHeaders
 {
     [JsonPropertyName("items")]
@@ -65,6 +71,7 @@ public partial class V1beta1ResponseHeadersPolicySpecForProviderCorsConfigAccess
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecForProviderCorsConfigAccessControlAllowMethods
 {
     [JsonPropertyName("items")]
@@ -73,6 +80,7 @@ public partial class V1beta1ResponseHeadersPolicySpecForProviderCorsConfigAccess
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecForProviderCorsConfigAccessControlAllowOrigins
 {
     [JsonPropertyName("items")]
@@ -81,6 +89,7 @@ public partial class V1beta1ResponseHeadersPolicySpecForProviderCorsConfigAccess
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecForProviderCorsConfigAccessControlExposeHeaders
 {
     [JsonPropertyName("items")]
@@ -89,6 +98,7 @@ public partial class V1beta1ResponseHeadersPolicySpecForProviderCorsConfigAccess
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecForProviderCorsConfig
 {
     /// <summary>A Boolean value that CloudFront uses as the value for the Access-Control-Allow-Credentials HTTP response header.</summary>
@@ -122,6 +132,7 @@ public partial class V1beta1ResponseHeadersPolicySpecForProviderCorsConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecForProviderCustomHeadersConfigItems
 {
     /// <summary>The HTTP response header name.</summary>
@@ -139,6 +150,7 @@ public partial class V1beta1ResponseHeadersPolicySpecForProviderCustomHeadersCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecForProviderCustomHeadersConfig
 {
     [JsonPropertyName("items")]
@@ -147,6 +159,7 @@ public partial class V1beta1ResponseHeadersPolicySpecForProviderCustomHeadersCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecForProviderRemoveHeadersConfigItems
 {
     /// <summary>The HTTP response header name.</summary>
@@ -156,6 +169,7 @@ public partial class V1beta1ResponseHeadersPolicySpecForProviderRemoveHeadersCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecForProviderRemoveHeadersConfig
 {
     [JsonPropertyName("items")]
@@ -164,6 +178,7 @@ public partial class V1beta1ResponseHeadersPolicySpecForProviderRemoveHeadersCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecForProviderSecurityHeadersConfigContentSecurityPolicy
 {
     /// <summary>The policy directives and their values that CloudFront includes as values for the Content-Security-Policy HTTP response header. See Content Security Policy for more information.</summary>
@@ -177,6 +192,7 @@ public partial class V1beta1ResponseHeadersPolicySpecForProviderSecurityHeadersC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecForProviderSecurityHeadersConfigContentTypeOptions
 {
     /// <summary>Whether CloudFront overrides a response header with the same name received from the origin with the header specifies here.</summary>
@@ -186,6 +202,7 @@ public partial class V1beta1ResponseHeadersPolicySpecForProviderSecurityHeadersC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecForProviderSecurityHeadersConfigFrameOptions
 {
     /// <summary>The value of the X-Frame-Options HTTP response header. Valid values: DENY | SAMEORIGIN</summary>
@@ -199,6 +216,7 @@ public partial class V1beta1ResponseHeadersPolicySpecForProviderSecurityHeadersC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecForProviderSecurityHeadersConfigReferrerPolicy
 {
     /// <summary>Whether CloudFront overrides a response header with the same name received from the origin with the header specifies here.</summary>
@@ -212,6 +230,7 @@ public partial class V1beta1ResponseHeadersPolicySpecForProviderSecurityHeadersC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecForProviderSecurityHeadersConfigStrictTransportSecurity
 {
     /// <summary>A number that CloudFront uses as the value for the Access-Control-Max-Age HTTP response header.</summary>
@@ -233,6 +252,7 @@ public partial class V1beta1ResponseHeadersPolicySpecForProviderSecurityHeadersC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecForProviderSecurityHeadersConfigXssProtection
 {
     /// <summary>Whether CloudFront includes the mode=block directive in the X-XSS-Protection header.</summary>
@@ -254,6 +274,7 @@ public partial class V1beta1ResponseHeadersPolicySpecForProviderSecurityHeadersC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecForProviderSecurityHeadersConfig
 {
     /// <summary>The policy directives and their values that CloudFront includes as values for the Content-Security-Policy HTTP response header. See Content Security Policy for more information.</summary>
@@ -283,6 +304,7 @@ public partial class V1beta1ResponseHeadersPolicySpecForProviderSecurityHeadersC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecForProviderServerTimingHeadersConfig
 {
     /// <summary>A Whether CloudFront adds the Server-Timing header to HTTP responses that it sends in response to requests that match a cache behavior that&apos;s associated with this response headers policy.</summary>
@@ -296,6 +318,7 @@ public partial class V1beta1ResponseHeadersPolicySpecForProviderServerTimingHead
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecForProvider
 {
     /// <summary>A comment to describe the response headers policy. The comment cannot be longer than 128 characters.</summary>
@@ -329,6 +352,7 @@ public partial class V1beta1ResponseHeadersPolicySpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecInitProviderCorsConfigAccessControlAllowHeaders
 {
     [JsonPropertyName("items")]
@@ -337,6 +361,7 @@ public partial class V1beta1ResponseHeadersPolicySpecInitProviderCorsConfigAcces
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecInitProviderCorsConfigAccessControlAllowMethods
 {
     [JsonPropertyName("items")]
@@ -345,6 +370,7 @@ public partial class V1beta1ResponseHeadersPolicySpecInitProviderCorsConfigAcces
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecInitProviderCorsConfigAccessControlAllowOrigins
 {
     [JsonPropertyName("items")]
@@ -353,6 +379,7 @@ public partial class V1beta1ResponseHeadersPolicySpecInitProviderCorsConfigAcces
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecInitProviderCorsConfigAccessControlExposeHeaders
 {
     [JsonPropertyName("items")]
@@ -361,6 +388,7 @@ public partial class V1beta1ResponseHeadersPolicySpecInitProviderCorsConfigAcces
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecInitProviderCorsConfig
 {
     /// <summary>A Boolean value that CloudFront uses as the value for the Access-Control-Allow-Credentials HTTP response header.</summary>
@@ -394,6 +422,7 @@ public partial class V1beta1ResponseHeadersPolicySpecInitProviderCorsConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecInitProviderCustomHeadersConfigItems
 {
     /// <summary>The HTTP response header name.</summary>
@@ -411,6 +440,7 @@ public partial class V1beta1ResponseHeadersPolicySpecInitProviderCustomHeadersCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecInitProviderCustomHeadersConfig
 {
     [JsonPropertyName("items")]
@@ -419,6 +449,7 @@ public partial class V1beta1ResponseHeadersPolicySpecInitProviderCustomHeadersCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecInitProviderRemoveHeadersConfigItems
 {
     /// <summary>The HTTP response header name.</summary>
@@ -428,6 +459,7 @@ public partial class V1beta1ResponseHeadersPolicySpecInitProviderRemoveHeadersCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecInitProviderRemoveHeadersConfig
 {
     [JsonPropertyName("items")]
@@ -436,6 +468,7 @@ public partial class V1beta1ResponseHeadersPolicySpecInitProviderRemoveHeadersCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecInitProviderSecurityHeadersConfigContentSecurityPolicy
 {
     /// <summary>The policy directives and their values that CloudFront includes as values for the Content-Security-Policy HTTP response header. See Content Security Policy for more information.</summary>
@@ -449,6 +482,7 @@ public partial class V1beta1ResponseHeadersPolicySpecInitProviderSecurityHeaders
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecInitProviderSecurityHeadersConfigContentTypeOptions
 {
     /// <summary>Whether CloudFront overrides a response header with the same name received from the origin with the header specifies here.</summary>
@@ -458,6 +492,7 @@ public partial class V1beta1ResponseHeadersPolicySpecInitProviderSecurityHeaders
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecInitProviderSecurityHeadersConfigFrameOptions
 {
     /// <summary>The value of the X-Frame-Options HTTP response header. Valid values: DENY | SAMEORIGIN</summary>
@@ -471,6 +506,7 @@ public partial class V1beta1ResponseHeadersPolicySpecInitProviderSecurityHeaders
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecInitProviderSecurityHeadersConfigReferrerPolicy
 {
     /// <summary>Whether CloudFront overrides a response header with the same name received from the origin with the header specifies here.</summary>
@@ -484,6 +520,7 @@ public partial class V1beta1ResponseHeadersPolicySpecInitProviderSecurityHeaders
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecInitProviderSecurityHeadersConfigStrictTransportSecurity
 {
     /// <summary>A number that CloudFront uses as the value for the Access-Control-Max-Age HTTP response header.</summary>
@@ -505,6 +542,7 @@ public partial class V1beta1ResponseHeadersPolicySpecInitProviderSecurityHeaders
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecInitProviderSecurityHeadersConfigXssProtection
 {
     /// <summary>Whether CloudFront includes the mode=block directive in the X-XSS-Protection header.</summary>
@@ -526,6 +564,7 @@ public partial class V1beta1ResponseHeadersPolicySpecInitProviderSecurityHeaders
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecInitProviderSecurityHeadersConfig
 {
     /// <summary>The policy directives and their values that CloudFront includes as values for the Content-Security-Policy HTTP response header. See Content Security Policy for more information.</summary>
@@ -555,6 +594,7 @@ public partial class V1beta1ResponseHeadersPolicySpecInitProviderSecurityHeaders
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecInitProviderServerTimingHeadersConfig
 {
     /// <summary>A Whether CloudFront adds the Server-Timing header to HTTP responses that it sends in response to requests that match a cache behavior that&apos;s associated with this response headers policy.</summary>
@@ -580,6 +620,7 @@ public partial class V1beta1ResponseHeadersPolicySpecInitProviderServerTimingHea
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecInitProvider
 {
     /// <summary>A comment to describe the response headers policy. The comment cannot be longer than 128 characters.</summary>
@@ -617,6 +658,7 @@ public partial class V1beta1ResponseHeadersPolicySpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResponseHeadersPolicySpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResponseHeadersPolicySpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -641,6 +683,7 @@ public enum V1beta1ResponseHeadersPolicySpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResponseHeadersPolicySpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResponseHeadersPolicySpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -657,6 +700,7 @@ public enum V1beta1ResponseHeadersPolicySpecProviderConfigRefPolicyResolutionEnu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResponseHeadersPolicySpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResponseHeadersPolicySpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -668,6 +712,7 @@ public enum V1beta1ResponseHeadersPolicySpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -696,6 +741,7 @@ public partial class V1beta1ResponseHeadersPolicySpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -715,6 +761,7 @@ public partial class V1beta1ResponseHeadersPolicySpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -729,6 +776,7 @@ public partial class V1beta1ResponseHeadersPolicySpecWriteConnectionSecretToRef
 /// <summary>ResponseHeadersPolicySpec defines the desired state of ResponseHeadersPolicy</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicySpec
 {
     /// <summary>
@@ -796,6 +844,7 @@ public partial class V1beta1ResponseHeadersPolicySpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicyStatusAtProviderCorsConfigAccessControlAllowHeaders
 {
     [JsonPropertyName("items")]
@@ -804,6 +853,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusAtProviderCorsConfigAcces
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicyStatusAtProviderCorsConfigAccessControlAllowMethods
 {
     [JsonPropertyName("items")]
@@ -812,6 +862,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusAtProviderCorsConfigAcces
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicyStatusAtProviderCorsConfigAccessControlAllowOrigins
 {
     [JsonPropertyName("items")]
@@ -820,6 +871,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusAtProviderCorsConfigAcces
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicyStatusAtProviderCorsConfigAccessControlExposeHeaders
 {
     [JsonPropertyName("items")]
@@ -828,6 +880,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusAtProviderCorsConfigAcces
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicyStatusAtProviderCorsConfig
 {
     /// <summary>A Boolean value that CloudFront uses as the value for the Access-Control-Allow-Credentials HTTP response header.</summary>
@@ -861,6 +914,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusAtProviderCorsConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicyStatusAtProviderCustomHeadersConfigItems
 {
     /// <summary>The HTTP response header name.</summary>
@@ -878,6 +932,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusAtProviderCustomHeadersCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicyStatusAtProviderCustomHeadersConfig
 {
     [JsonPropertyName("items")]
@@ -886,6 +941,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusAtProviderCustomHeadersCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicyStatusAtProviderRemoveHeadersConfigItems
 {
     /// <summary>The HTTP response header name.</summary>
@@ -895,6 +951,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusAtProviderRemoveHeadersCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicyStatusAtProviderRemoveHeadersConfig
 {
     [JsonPropertyName("items")]
@@ -903,6 +960,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusAtProviderRemoveHeadersCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicyStatusAtProviderSecurityHeadersConfigContentSecurityPolicy
 {
     /// <summary>The policy directives and their values that CloudFront includes as values for the Content-Security-Policy HTTP response header. See Content Security Policy for more information.</summary>
@@ -916,6 +974,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusAtProviderSecurityHeaders
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicyStatusAtProviderSecurityHeadersConfigContentTypeOptions
 {
     /// <summary>Whether CloudFront overrides a response header with the same name received from the origin with the header specifies here.</summary>
@@ -925,6 +984,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusAtProviderSecurityHeaders
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicyStatusAtProviderSecurityHeadersConfigFrameOptions
 {
     /// <summary>The value of the X-Frame-Options HTTP response header. Valid values: DENY | SAMEORIGIN</summary>
@@ -938,6 +998,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusAtProviderSecurityHeaders
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicyStatusAtProviderSecurityHeadersConfigReferrerPolicy
 {
     /// <summary>Whether CloudFront overrides a response header with the same name received from the origin with the header specifies here.</summary>
@@ -951,6 +1012,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusAtProviderSecurityHeaders
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicyStatusAtProviderSecurityHeadersConfigStrictTransportSecurity
 {
     /// <summary>A number that CloudFront uses as the value for the Access-Control-Max-Age HTTP response header.</summary>
@@ -972,6 +1034,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusAtProviderSecurityHeaders
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicyStatusAtProviderSecurityHeadersConfigXssProtection
 {
     /// <summary>Whether CloudFront includes the mode=block directive in the X-XSS-Protection header.</summary>
@@ -993,6 +1056,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusAtProviderSecurityHeaders
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicyStatusAtProviderSecurityHeadersConfig
 {
     /// <summary>The policy directives and their values that CloudFront includes as values for the Content-Security-Policy HTTP response header. See Content Security Policy for more information.</summary>
@@ -1022,6 +1086,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusAtProviderSecurityHeaders
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicyStatusAtProviderServerTimingHeadersConfig
 {
     /// <summary>A Whether CloudFront adds the Server-Timing header to HTTP responses that it sends in response to requests that match a cache behavior that&apos;s associated with this response headers policy.</summary>
@@ -1035,6 +1100,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusAtProviderServerTimingHea
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicyStatusAtProvider
 {
     /// <summary>The response headers policy ARN.</summary>
@@ -1081,6 +1147,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicyStatusConditions
 {
     /// <summary>
@@ -1124,6 +1191,7 @@ public partial class V1beta1ResponseHeadersPolicyStatusConditions
 /// <summary>ResponseHeadersPolicyStatus defines the observed state of ResponseHeadersPolicy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResponseHeadersPolicyStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1142,9 +1210,13 @@ public partial class V1beta1ResponseHeadersPolicyStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>ResponseHeadersPolicy is the Schema for the ResponseHeadersPolicys API. Provides a CloudFront response headers policy resource.</summary>
+/// <summary>
+/// ResponseHeadersPolicy is the Schema for the ResponseHeadersPolicys API. Provides a CloudFront response headers policy resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ResponseHeadersPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ResponseHeadersPolicySpec>, IStatus<V1beta1ResponseHeadersPolicyStatus?>
 {

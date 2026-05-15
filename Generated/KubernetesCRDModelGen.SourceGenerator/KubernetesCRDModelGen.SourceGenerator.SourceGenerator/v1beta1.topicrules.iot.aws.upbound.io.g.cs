@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.iot.aws.upbound.io;
-/// <summary>TopicRule is the Schema for the TopicRules API. Creates and manages an AWS IoT topic rule</summary>
+/// <summary>
+/// TopicRule is the Schema for the TopicRules API. Creates and manages an AWS IoT topic rule
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TopicRuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta1TopicRule>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1TopicRuleList : IKubernetesObject<V1ListMeta>, IItem
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1TopicRuleSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderCloudwatchAlarm
 {
     /// <summary>The CloudWatch alarm name.</summary>
@@ -78,6 +84,7 @@ public partial class V1beta1TopicRuleSpecForProviderCloudwatchAlarm
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderCloudwatchLogs
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -95,6 +102,7 @@ public partial class V1beta1TopicRuleSpecForProviderCloudwatchLogs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderCloudwatchMetric
 {
     /// <summary>The CloudWatch metric name.</summary>
@@ -124,6 +132,7 @@ public partial class V1beta1TopicRuleSpecForProviderCloudwatchMetric
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderDynamodb
 {
     /// <summary>The hash key name.</summary>
@@ -169,6 +178,7 @@ public partial class V1beta1TopicRuleSpecForProviderDynamodb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderDynamodbv2PutItem
 {
     /// <summary>The name of the DynamoDB table.</summary>
@@ -178,6 +188,7 @@ public partial class V1beta1TopicRuleSpecForProviderDynamodbv2PutItem
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderDynamodbv2
 {
     /// <summary>Configuration block with DynamoDB Table to which the message will be written. Nested arguments below.</summary>
@@ -191,6 +202,7 @@ public partial class V1beta1TopicRuleSpecForProviderDynamodbv2
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderElasticsearch
 {
     /// <summary>The endpoint of your Elasticsearch domain.</summary>
@@ -216,6 +228,7 @@ public partial class V1beta1TopicRuleSpecForProviderElasticsearch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionCloudwatchAlarm
 {
     /// <summary>The CloudWatch alarm name.</summary>
@@ -237,6 +250,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionCloudwatchAlarm
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionCloudwatchLogs
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -254,6 +268,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionCloudwatchLogs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionCloudwatchMetric
 {
     /// <summary>The CloudWatch metric name.</summary>
@@ -283,6 +298,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionCloudwatchMetric
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionDynamodb
 {
     /// <summary>The hash key name.</summary>
@@ -328,6 +344,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionDynamodb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionDynamodbv2PutItem
 {
     /// <summary>The name of the DynamoDB table.</summary>
@@ -337,6 +354,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionDynamodbv2PutItem
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionDynamodbv2
 {
     /// <summary>Configuration block with DynamoDB Table to which the message will be written. Nested arguments below.</summary>
@@ -350,6 +368,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionDynamodbv2
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionElasticsearch
 {
     /// <summary>The endpoint of your Elasticsearch domain.</summary>
@@ -375,6 +394,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionElasticsearch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionFirehose
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -396,6 +416,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionFirehose
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionHttpHttpHeader
 {
     /// <summary>The name of the HTTP header.</summary>
@@ -409,6 +430,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionHttpHttpHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionHttp
 {
     /// <summary>The HTTPS URL used to verify ownership of url.</summary>
@@ -426,6 +448,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionHttp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionIotAnalytics
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -443,6 +466,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionIotAnalytics
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionIotEvents
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -464,6 +488,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionIotEvents
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionKafkaHeader
 {
     /// <summary>The name of the HTTP header.</summary>
@@ -477,6 +502,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionKafkaHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionKafka
 {
     /// <summary>Properties of the Apache Kafka producer client. For more info, see the AWS documentation.</summary>
@@ -506,6 +532,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionKafka
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionKinesis
 {
     /// <summary>The partition key.</summary>
@@ -523,6 +550,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionKinesis
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionLambda
 {
     /// <summary>The ARN of the Lambda function.</summary>
@@ -532,6 +560,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionLambda
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionRepublish
 {
     /// <summary>The Quality of Service (QoS) level to use when republishing messages. Valid values are 0 or 1. The default value is 0.</summary>
@@ -549,6 +578,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionRepublish
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionS3
 {
     /// <summary>The Amazon S3 bucket name.</summary>
@@ -576,6 +606,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionS3
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecForProviderErrorActionSnsRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecForProviderErrorActionSnsRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -592,6 +623,7 @@ public enum V1beta1TopicRuleSpecForProviderErrorActionSnsRoleArnRefPolicyResolut
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecForProviderErrorActionSnsRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecForProviderErrorActionSnsRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -603,6 +635,7 @@ public enum V1beta1TopicRuleSpecForProviderErrorActionSnsRoleArnRefPolicyResolve
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionSnsRoleArnRefPolicy
 {
     /// <summary>
@@ -627,6 +660,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionSnsRoleArnRefPoli
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionSnsRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -646,6 +680,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionSnsRoleArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecForProviderErrorActionSnsRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecForProviderErrorActionSnsRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -662,6 +697,7 @@ public enum V1beta1TopicRuleSpecForProviderErrorActionSnsRoleArnSelectorPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecForProviderErrorActionSnsRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecForProviderErrorActionSnsRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -673,6 +709,7 @@ public enum V1beta1TopicRuleSpecForProviderErrorActionSnsRoleArnSelectorPolicyRe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionSnsRoleArnSelectorPolicy
 {
     /// <summary>
@@ -697,6 +734,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionSnsRoleArnSelecto
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionSnsRoleArnSelector
 {
     /// <summary>
@@ -723,6 +761,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionSnsRoleArnSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecForProviderErrorActionSnsTargetArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecForProviderErrorActionSnsTargetArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -739,6 +778,7 @@ public enum V1beta1TopicRuleSpecForProviderErrorActionSnsTargetArnRefPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecForProviderErrorActionSnsTargetArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecForProviderErrorActionSnsTargetArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -750,6 +790,7 @@ public enum V1beta1TopicRuleSpecForProviderErrorActionSnsTargetArnRefPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionSnsTargetArnRefPolicy
 {
     /// <summary>
@@ -774,6 +815,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionSnsTargetArnRefPo
 /// <summary>Reference to a Topic in sns to populate targetArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionSnsTargetArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -793,6 +835,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionSnsTargetArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecForProviderErrorActionSnsTargetArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecForProviderErrorActionSnsTargetArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -809,6 +852,7 @@ public enum V1beta1TopicRuleSpecForProviderErrorActionSnsTargetArnSelectorPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecForProviderErrorActionSnsTargetArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecForProviderErrorActionSnsTargetArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -820,6 +864,7 @@ public enum V1beta1TopicRuleSpecForProviderErrorActionSnsTargetArnSelectorPolicy
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionSnsTargetArnSelectorPolicy
 {
     /// <summary>
@@ -844,6 +889,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionSnsTargetArnSelec
 /// <summary>Selector for a Topic in sns to populate targetArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionSnsTargetArnSelector
 {
     /// <summary>
@@ -864,6 +910,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionSnsTargetArnSelec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionSns
 {
     /// <summary>The message format of the message to publish. Accepted values are &quot;JSON&quot; and &quot;RAW&quot;.</summary>
@@ -897,6 +944,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionSns
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionSqs
 {
     /// <summary>The URL of the Amazon SQS queue.</summary>
@@ -914,6 +962,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionSqs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionStepFunctions
 {
     /// <summary>The prefix used to generate, along with a UUID, the unique state machine execution name.</summary>
@@ -931,6 +980,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionStepFunctions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionTimestreamDimension
 {
     /// <summary>The name of the rule.</summary>
@@ -944,6 +994,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionTimestreamDimensi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionTimestreamTimestamp
 {
     /// <summary>The precision of the timestamp value that results from the expression described in value. Valid values: SECONDS, MILLISECONDS, MICROSECONDS, NANOSECONDS.</summary>
@@ -957,6 +1008,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionTimestreamTimesta
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorActionTimestream
 {
     /// <summary>The name of an Amazon Timestream database.</summary>
@@ -982,6 +1034,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorActionTimestream
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderErrorAction
 {
     [JsonPropertyName("cloudwatchAlarm")]
@@ -1044,6 +1097,7 @@ public partial class V1beta1TopicRuleSpecForProviderErrorAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderFirehose
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -1065,6 +1119,7 @@ public partial class V1beta1TopicRuleSpecForProviderFirehose
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderHttpHttpHeader
 {
     /// <summary>The name of the HTTP header.</summary>
@@ -1078,6 +1133,7 @@ public partial class V1beta1TopicRuleSpecForProviderHttpHttpHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderHttp
 {
     /// <summary>The HTTPS URL used to verify ownership of url.</summary>
@@ -1095,6 +1151,7 @@ public partial class V1beta1TopicRuleSpecForProviderHttp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderIotAnalytics
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -1112,6 +1169,7 @@ public partial class V1beta1TopicRuleSpecForProviderIotAnalytics
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderIotEvents
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -1133,6 +1191,7 @@ public partial class V1beta1TopicRuleSpecForProviderIotEvents
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderKafkaHeader
 {
     /// <summary>The name of the HTTP header.</summary>
@@ -1146,6 +1205,7 @@ public partial class V1beta1TopicRuleSpecForProviderKafkaHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderKafka
 {
     /// <summary>Properties of the Apache Kafka producer client. For more info, see the AWS documentation.</summary>
@@ -1175,6 +1235,7 @@ public partial class V1beta1TopicRuleSpecForProviderKafka
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderKinesis
 {
     /// <summary>The partition key.</summary>
@@ -1192,6 +1253,7 @@ public partial class V1beta1TopicRuleSpecForProviderKinesis
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderLambda
 {
     /// <summary>The ARN of the Lambda function.</summary>
@@ -1201,6 +1263,7 @@ public partial class V1beta1TopicRuleSpecForProviderLambda
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderRepublish
 {
     /// <summary>The Quality of Service (QoS) level to use when republishing messages. Valid values are 0 or 1. The default value is 0.</summary>
@@ -1218,6 +1281,7 @@ public partial class V1beta1TopicRuleSpecForProviderRepublish
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderS3
 {
     /// <summary>The Amazon S3 bucket name.</summary>
@@ -1245,6 +1309,7 @@ public partial class V1beta1TopicRuleSpecForProviderS3
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecForProviderSnsRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecForProviderSnsRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1261,6 +1326,7 @@ public enum V1beta1TopicRuleSpecForProviderSnsRoleArnRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecForProviderSnsRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecForProviderSnsRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1272,6 +1338,7 @@ public enum V1beta1TopicRuleSpecForProviderSnsRoleArnRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderSnsRoleArnRefPolicy
 {
     /// <summary>
@@ -1296,6 +1363,7 @@ public partial class V1beta1TopicRuleSpecForProviderSnsRoleArnRefPolicy
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderSnsRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1315,6 +1383,7 @@ public partial class V1beta1TopicRuleSpecForProviderSnsRoleArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecForProviderSnsRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecForProviderSnsRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1331,6 +1400,7 @@ public enum V1beta1TopicRuleSpecForProviderSnsRoleArnSelectorPolicyResolutionEnu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecForProviderSnsRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecForProviderSnsRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1342,6 +1412,7 @@ public enum V1beta1TopicRuleSpecForProviderSnsRoleArnSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderSnsRoleArnSelectorPolicy
 {
     /// <summary>
@@ -1366,6 +1437,7 @@ public partial class V1beta1TopicRuleSpecForProviderSnsRoleArnSelectorPolicy
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderSnsRoleArnSelector
 {
     /// <summary>
@@ -1392,6 +1464,7 @@ public partial class V1beta1TopicRuleSpecForProviderSnsRoleArnSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecForProviderSnsTargetArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecForProviderSnsTargetArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1408,6 +1481,7 @@ public enum V1beta1TopicRuleSpecForProviderSnsTargetArnRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecForProviderSnsTargetArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecForProviderSnsTargetArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1419,6 +1493,7 @@ public enum V1beta1TopicRuleSpecForProviderSnsTargetArnRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderSnsTargetArnRefPolicy
 {
     /// <summary>
@@ -1443,6 +1518,7 @@ public partial class V1beta1TopicRuleSpecForProviderSnsTargetArnRefPolicy
 /// <summary>Reference to a Topic in sns to populate targetArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderSnsTargetArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1462,6 +1538,7 @@ public partial class V1beta1TopicRuleSpecForProviderSnsTargetArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecForProviderSnsTargetArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecForProviderSnsTargetArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1478,6 +1555,7 @@ public enum V1beta1TopicRuleSpecForProviderSnsTargetArnSelectorPolicyResolutionE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecForProviderSnsTargetArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecForProviderSnsTargetArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1489,6 +1567,7 @@ public enum V1beta1TopicRuleSpecForProviderSnsTargetArnSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderSnsTargetArnSelectorPolicy
 {
     /// <summary>
@@ -1513,6 +1592,7 @@ public partial class V1beta1TopicRuleSpecForProviderSnsTargetArnSelectorPolicy
 /// <summary>Selector for a Topic in sns to populate targetArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderSnsTargetArnSelector
 {
     /// <summary>
@@ -1533,6 +1613,7 @@ public partial class V1beta1TopicRuleSpecForProviderSnsTargetArnSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderSns
 {
     /// <summary>The message format of the message to publish. Accepted values are &quot;JSON&quot; and &quot;RAW&quot;.</summary>
@@ -1566,6 +1647,7 @@ public partial class V1beta1TopicRuleSpecForProviderSns
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderSqs
 {
     /// <summary>The URL of the Amazon SQS queue.</summary>
@@ -1583,6 +1665,7 @@ public partial class V1beta1TopicRuleSpecForProviderSqs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderStepFunctions
 {
     /// <summary>The prefix used to generate, along with a UUID, the unique state machine execution name.</summary>
@@ -1600,6 +1683,7 @@ public partial class V1beta1TopicRuleSpecForProviderStepFunctions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderTimestreamDimension
 {
     /// <summary>The name of the rule.</summary>
@@ -1613,6 +1697,7 @@ public partial class V1beta1TopicRuleSpecForProviderTimestreamDimension
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderTimestreamTimestamp
 {
     /// <summary>The precision of the timestamp value that results from the expression described in value. Valid values: SECONDS, MILLISECONDS, MICROSECONDS, NANOSECONDS.</summary>
@@ -1626,6 +1711,7 @@ public partial class V1beta1TopicRuleSpecForProviderTimestreamTimestamp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProviderTimestream
 {
     /// <summary>The name of an Amazon Timestream database.</summary>
@@ -1651,6 +1737,7 @@ public partial class V1beta1TopicRuleSpecForProviderTimestream
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecForProvider
 {
     [JsonPropertyName("cloudwatchAlarm")]
@@ -1744,6 +1831,7 @@ public partial class V1beta1TopicRuleSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderCloudwatchAlarm
 {
     /// <summary>The CloudWatch alarm name.</summary>
@@ -1765,6 +1853,7 @@ public partial class V1beta1TopicRuleSpecInitProviderCloudwatchAlarm
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderCloudwatchLogs
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -1782,6 +1871,7 @@ public partial class V1beta1TopicRuleSpecInitProviderCloudwatchLogs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderCloudwatchMetric
 {
     /// <summary>The CloudWatch metric name.</summary>
@@ -1811,6 +1901,7 @@ public partial class V1beta1TopicRuleSpecInitProviderCloudwatchMetric
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderDynamodb
 {
     /// <summary>The hash key name.</summary>
@@ -1856,6 +1947,7 @@ public partial class V1beta1TopicRuleSpecInitProviderDynamodb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderDynamodbv2PutItem
 {
     /// <summary>The name of the DynamoDB table.</summary>
@@ -1865,6 +1957,7 @@ public partial class V1beta1TopicRuleSpecInitProviderDynamodbv2PutItem
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderDynamodbv2
 {
     /// <summary>Configuration block with DynamoDB Table to which the message will be written. Nested arguments below.</summary>
@@ -1878,6 +1971,7 @@ public partial class V1beta1TopicRuleSpecInitProviderDynamodbv2
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderElasticsearch
 {
     /// <summary>The endpoint of your Elasticsearch domain.</summary>
@@ -1903,6 +1997,7 @@ public partial class V1beta1TopicRuleSpecInitProviderElasticsearch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionCloudwatchAlarm
 {
     /// <summary>The CloudWatch alarm name.</summary>
@@ -1924,6 +2019,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionCloudwatchAlarm
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionCloudwatchLogs
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -1941,6 +2037,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionCloudwatchLogs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionCloudwatchMetric
 {
     /// <summary>The CloudWatch metric name.</summary>
@@ -1970,6 +2067,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionCloudwatchMetric
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionDynamodb
 {
     /// <summary>The hash key name.</summary>
@@ -2015,6 +2113,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionDynamodb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionDynamodbv2PutItem
 {
     /// <summary>The name of the DynamoDB table.</summary>
@@ -2024,6 +2123,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionDynamodbv2PutIte
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionDynamodbv2
 {
     /// <summary>Configuration block with DynamoDB Table to which the message will be written. Nested arguments below.</summary>
@@ -2037,6 +2137,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionDynamodbv2
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionElasticsearch
 {
     /// <summary>The endpoint of your Elasticsearch domain.</summary>
@@ -2062,6 +2163,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionElasticsearch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionFirehose
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -2083,6 +2185,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionFirehose
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionHttpHttpHeader
 {
     /// <summary>The name of the HTTP header.</summary>
@@ -2096,6 +2199,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionHttpHttpHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionHttp
 {
     /// <summary>The HTTPS URL used to verify ownership of url.</summary>
@@ -2113,6 +2217,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionHttp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionIotAnalytics
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -2130,6 +2235,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionIotAnalytics
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionIotEvents
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -2151,6 +2257,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionIotEvents
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionKafkaHeader
 {
     /// <summary>The name of the HTTP header.</summary>
@@ -2164,6 +2271,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionKafkaHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionKafka
 {
     /// <summary>Properties of the Apache Kafka producer client. For more info, see the AWS documentation.</summary>
@@ -2193,6 +2301,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionKafka
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionKinesis
 {
     /// <summary>The partition key.</summary>
@@ -2210,6 +2319,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionKinesis
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionLambda
 {
     /// <summary>The ARN of the Lambda function.</summary>
@@ -2219,6 +2329,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionLambda
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionRepublish
 {
     /// <summary>The Quality of Service (QoS) level to use when republishing messages. Valid values are 0 or 1. The default value is 0.</summary>
@@ -2236,6 +2347,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionRepublish
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionS3
 {
     /// <summary>The Amazon S3 bucket name.</summary>
@@ -2263,6 +2375,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionS3
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecInitProviderErrorActionSnsRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecInitProviderErrorActionSnsRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2279,6 +2392,7 @@ public enum V1beta1TopicRuleSpecInitProviderErrorActionSnsRoleArnRefPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecInitProviderErrorActionSnsRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecInitProviderErrorActionSnsRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2290,6 +2404,7 @@ public enum V1beta1TopicRuleSpecInitProviderErrorActionSnsRoleArnRefPolicyResolv
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionSnsRoleArnRefPolicy
 {
     /// <summary>
@@ -2314,6 +2429,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionSnsRoleArnRefPol
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionSnsRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2333,6 +2449,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionSnsRoleArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecInitProviderErrorActionSnsRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecInitProviderErrorActionSnsRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2349,6 +2466,7 @@ public enum V1beta1TopicRuleSpecInitProviderErrorActionSnsRoleArnSelectorPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecInitProviderErrorActionSnsRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecInitProviderErrorActionSnsRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2360,6 +2478,7 @@ public enum V1beta1TopicRuleSpecInitProviderErrorActionSnsRoleArnSelectorPolicyR
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionSnsRoleArnSelectorPolicy
 {
     /// <summary>
@@ -2384,6 +2503,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionSnsRoleArnSelect
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionSnsRoleArnSelector
 {
     /// <summary>
@@ -2410,6 +2530,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionSnsRoleArnSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecInitProviderErrorActionSnsTargetArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecInitProviderErrorActionSnsTargetArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2426,6 +2547,7 @@ public enum V1beta1TopicRuleSpecInitProviderErrorActionSnsTargetArnRefPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecInitProviderErrorActionSnsTargetArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecInitProviderErrorActionSnsTargetArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2437,6 +2559,7 @@ public enum V1beta1TopicRuleSpecInitProviderErrorActionSnsTargetArnRefPolicyReso
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionSnsTargetArnRefPolicy
 {
     /// <summary>
@@ -2461,6 +2584,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionSnsTargetArnRefP
 /// <summary>Reference to a Topic in sns to populate targetArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionSnsTargetArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2480,6 +2604,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionSnsTargetArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecInitProviderErrorActionSnsTargetArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecInitProviderErrorActionSnsTargetArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2496,6 +2621,7 @@ public enum V1beta1TopicRuleSpecInitProviderErrorActionSnsTargetArnSelectorPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecInitProviderErrorActionSnsTargetArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecInitProviderErrorActionSnsTargetArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2507,6 +2633,7 @@ public enum V1beta1TopicRuleSpecInitProviderErrorActionSnsTargetArnSelectorPolic
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionSnsTargetArnSelectorPolicy
 {
     /// <summary>
@@ -2531,6 +2658,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionSnsTargetArnSele
 /// <summary>Selector for a Topic in sns to populate targetArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionSnsTargetArnSelector
 {
     /// <summary>
@@ -2551,6 +2679,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionSnsTargetArnSele
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionSns
 {
     /// <summary>The message format of the message to publish. Accepted values are &quot;JSON&quot; and &quot;RAW&quot;.</summary>
@@ -2584,6 +2713,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionSns
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionSqs
 {
     /// <summary>The URL of the Amazon SQS queue.</summary>
@@ -2601,6 +2731,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionSqs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionStepFunctions
 {
     /// <summary>The prefix used to generate, along with a UUID, the unique state machine execution name.</summary>
@@ -2618,6 +2749,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionStepFunctions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionTimestreamDimension
 {
     /// <summary>The name of the rule.</summary>
@@ -2631,6 +2763,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionTimestreamDimens
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionTimestreamTimestamp
 {
     /// <summary>The precision of the timestamp value that results from the expression described in value. Valid values: SECONDS, MILLISECONDS, MICROSECONDS, NANOSECONDS.</summary>
@@ -2644,6 +2777,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionTimestreamTimest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorActionTimestream
 {
     /// <summary>The name of an Amazon Timestream database.</summary>
@@ -2669,6 +2803,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorActionTimestream
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderErrorAction
 {
     [JsonPropertyName("cloudwatchAlarm")]
@@ -2731,6 +2866,7 @@ public partial class V1beta1TopicRuleSpecInitProviderErrorAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderFirehose
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -2752,6 +2888,7 @@ public partial class V1beta1TopicRuleSpecInitProviderFirehose
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderHttpHttpHeader
 {
     /// <summary>The name of the HTTP header.</summary>
@@ -2765,6 +2902,7 @@ public partial class V1beta1TopicRuleSpecInitProviderHttpHttpHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderHttp
 {
     /// <summary>The HTTPS URL used to verify ownership of url.</summary>
@@ -2782,6 +2920,7 @@ public partial class V1beta1TopicRuleSpecInitProviderHttp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderIotAnalytics
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -2799,6 +2938,7 @@ public partial class V1beta1TopicRuleSpecInitProviderIotAnalytics
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderIotEvents
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -2820,6 +2960,7 @@ public partial class V1beta1TopicRuleSpecInitProviderIotEvents
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderKafkaHeader
 {
     /// <summary>The name of the HTTP header.</summary>
@@ -2833,6 +2974,7 @@ public partial class V1beta1TopicRuleSpecInitProviderKafkaHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderKafka
 {
     /// <summary>Properties of the Apache Kafka producer client. For more info, see the AWS documentation.</summary>
@@ -2862,6 +3004,7 @@ public partial class V1beta1TopicRuleSpecInitProviderKafka
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderKinesis
 {
     /// <summary>The partition key.</summary>
@@ -2879,6 +3022,7 @@ public partial class V1beta1TopicRuleSpecInitProviderKinesis
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderLambda
 {
     /// <summary>The ARN of the Lambda function.</summary>
@@ -2888,6 +3032,7 @@ public partial class V1beta1TopicRuleSpecInitProviderLambda
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderRepublish
 {
     /// <summary>The Quality of Service (QoS) level to use when republishing messages. Valid values are 0 or 1. The default value is 0.</summary>
@@ -2905,6 +3050,7 @@ public partial class V1beta1TopicRuleSpecInitProviderRepublish
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderS3
 {
     /// <summary>The Amazon S3 bucket name.</summary>
@@ -2932,6 +3078,7 @@ public partial class V1beta1TopicRuleSpecInitProviderS3
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecInitProviderSnsRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecInitProviderSnsRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2948,6 +3095,7 @@ public enum V1beta1TopicRuleSpecInitProviderSnsRoleArnRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecInitProviderSnsRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecInitProviderSnsRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2959,6 +3107,7 @@ public enum V1beta1TopicRuleSpecInitProviderSnsRoleArnRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderSnsRoleArnRefPolicy
 {
     /// <summary>
@@ -2983,6 +3132,7 @@ public partial class V1beta1TopicRuleSpecInitProviderSnsRoleArnRefPolicy
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderSnsRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3002,6 +3152,7 @@ public partial class V1beta1TopicRuleSpecInitProviderSnsRoleArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecInitProviderSnsRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecInitProviderSnsRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3018,6 +3169,7 @@ public enum V1beta1TopicRuleSpecInitProviderSnsRoleArnSelectorPolicyResolutionEn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecInitProviderSnsRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecInitProviderSnsRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3029,6 +3181,7 @@ public enum V1beta1TopicRuleSpecInitProviderSnsRoleArnSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderSnsRoleArnSelectorPolicy
 {
     /// <summary>
@@ -3053,6 +3206,7 @@ public partial class V1beta1TopicRuleSpecInitProviderSnsRoleArnSelectorPolicy
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderSnsRoleArnSelector
 {
     /// <summary>
@@ -3079,6 +3233,7 @@ public partial class V1beta1TopicRuleSpecInitProviderSnsRoleArnSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecInitProviderSnsTargetArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecInitProviderSnsTargetArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3095,6 +3250,7 @@ public enum V1beta1TopicRuleSpecInitProviderSnsTargetArnRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecInitProviderSnsTargetArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecInitProviderSnsTargetArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3106,6 +3262,7 @@ public enum V1beta1TopicRuleSpecInitProviderSnsTargetArnRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderSnsTargetArnRefPolicy
 {
     /// <summary>
@@ -3130,6 +3287,7 @@ public partial class V1beta1TopicRuleSpecInitProviderSnsTargetArnRefPolicy
 /// <summary>Reference to a Topic in sns to populate targetArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderSnsTargetArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3149,6 +3307,7 @@ public partial class V1beta1TopicRuleSpecInitProviderSnsTargetArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecInitProviderSnsTargetArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecInitProviderSnsTargetArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3165,6 +3324,7 @@ public enum V1beta1TopicRuleSpecInitProviderSnsTargetArnSelectorPolicyResolution
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecInitProviderSnsTargetArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecInitProviderSnsTargetArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3176,6 +3336,7 @@ public enum V1beta1TopicRuleSpecInitProviderSnsTargetArnSelectorPolicyResolveEnu
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderSnsTargetArnSelectorPolicy
 {
     /// <summary>
@@ -3200,6 +3361,7 @@ public partial class V1beta1TopicRuleSpecInitProviderSnsTargetArnSelectorPolicy
 /// <summary>Selector for a Topic in sns to populate targetArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderSnsTargetArnSelector
 {
     /// <summary>
@@ -3220,6 +3382,7 @@ public partial class V1beta1TopicRuleSpecInitProviderSnsTargetArnSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderSns
 {
     /// <summary>The message format of the message to publish. Accepted values are &quot;JSON&quot; and &quot;RAW&quot;.</summary>
@@ -3253,6 +3416,7 @@ public partial class V1beta1TopicRuleSpecInitProviderSns
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderSqs
 {
     /// <summary>The URL of the Amazon SQS queue.</summary>
@@ -3270,6 +3434,7 @@ public partial class V1beta1TopicRuleSpecInitProviderSqs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderStepFunctions
 {
     /// <summary>The prefix used to generate, along with a UUID, the unique state machine execution name.</summary>
@@ -3287,6 +3452,7 @@ public partial class V1beta1TopicRuleSpecInitProviderStepFunctions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderTimestreamDimension
 {
     /// <summary>The name of the rule.</summary>
@@ -3300,6 +3466,7 @@ public partial class V1beta1TopicRuleSpecInitProviderTimestreamDimension
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderTimestreamTimestamp
 {
     /// <summary>The precision of the timestamp value that results from the expression described in value. Valid values: SECONDS, MILLISECONDS, MICROSECONDS, NANOSECONDS.</summary>
@@ -3313,6 +3480,7 @@ public partial class V1beta1TopicRuleSpecInitProviderTimestreamTimestamp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProviderTimestream
 {
     /// <summary>The name of an Amazon Timestream database.</summary>
@@ -3350,6 +3518,7 @@ public partial class V1beta1TopicRuleSpecInitProviderTimestream
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecInitProvider
 {
     [JsonPropertyName("cloudwatchAlarm")]
@@ -3440,6 +3609,7 @@ public partial class V1beta1TopicRuleSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -3464,6 +3634,7 @@ public enum V1beta1TopicRuleSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3480,6 +3651,7 @@ public enum V1beta1TopicRuleSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TopicRuleSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TopicRuleSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3491,6 +3663,7 @@ public enum V1beta1TopicRuleSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -3519,6 +3692,7 @@ public partial class V1beta1TopicRuleSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3538,6 +3712,7 @@ public partial class V1beta1TopicRuleSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -3552,6 +3727,7 @@ public partial class V1beta1TopicRuleSpecWriteConnectionSecretToRef
 /// <summary>TopicRuleSpec defines the desired state of TopicRule</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleSpec
 {
     /// <summary>
@@ -3619,6 +3795,7 @@ public partial class V1beta1TopicRuleSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderCloudwatchAlarm
 {
     /// <summary>The CloudWatch alarm name.</summary>
@@ -3640,6 +3817,7 @@ public partial class V1beta1TopicRuleStatusAtProviderCloudwatchAlarm
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderCloudwatchLogs
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -3657,6 +3835,7 @@ public partial class V1beta1TopicRuleStatusAtProviderCloudwatchLogs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderCloudwatchMetric
 {
     /// <summary>The CloudWatch metric name.</summary>
@@ -3686,6 +3865,7 @@ public partial class V1beta1TopicRuleStatusAtProviderCloudwatchMetric
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderDynamodb
 {
     /// <summary>The hash key name.</summary>
@@ -3731,6 +3911,7 @@ public partial class V1beta1TopicRuleStatusAtProviderDynamodb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderDynamodbv2PutItem
 {
     /// <summary>The name of the DynamoDB table.</summary>
@@ -3740,6 +3921,7 @@ public partial class V1beta1TopicRuleStatusAtProviderDynamodbv2PutItem
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderDynamodbv2
 {
     /// <summary>Configuration block with DynamoDB Table to which the message will be written. Nested arguments below.</summary>
@@ -3753,6 +3935,7 @@ public partial class V1beta1TopicRuleStatusAtProviderDynamodbv2
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderElasticsearch
 {
     /// <summary>The endpoint of your Elasticsearch domain.</summary>
@@ -3778,6 +3961,7 @@ public partial class V1beta1TopicRuleStatusAtProviderElasticsearch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionCloudwatchAlarm
 {
     /// <summary>The CloudWatch alarm name.</summary>
@@ -3799,6 +3983,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionCloudwatchAlarm
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionCloudwatchLogs
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -3816,6 +4001,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionCloudwatchLogs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionCloudwatchMetric
 {
     /// <summary>The CloudWatch metric name.</summary>
@@ -3845,6 +4031,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionCloudwatchMetric
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionDynamodb
 {
     /// <summary>The hash key name.</summary>
@@ -3890,6 +4077,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionDynamodb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionDynamodbv2PutItem
 {
     /// <summary>The name of the DynamoDB table.</summary>
@@ -3899,6 +4087,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionDynamodbv2PutIte
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionDynamodbv2
 {
     /// <summary>Configuration block with DynamoDB Table to which the message will be written. Nested arguments below.</summary>
@@ -3912,6 +4101,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionDynamodbv2
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionElasticsearch
 {
     /// <summary>The endpoint of your Elasticsearch domain.</summary>
@@ -3937,6 +4127,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionElasticsearch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionFirehose
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -3958,6 +4149,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionFirehose
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionHttpHttpHeader
 {
     /// <summary>The name of the HTTP header.</summary>
@@ -3971,6 +4163,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionHttpHttpHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionHttp
 {
     /// <summary>The HTTPS URL used to verify ownership of url.</summary>
@@ -3988,6 +4181,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionHttp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionIotAnalytics
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -4005,6 +4199,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionIotAnalytics
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionIotEvents
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -4026,6 +4221,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionIotEvents
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionKafkaHeader
 {
     /// <summary>The name of the HTTP header.</summary>
@@ -4039,6 +4235,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionKafkaHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionKafka
 {
     /// <summary>Properties of the Apache Kafka producer client. For more info, see the AWS documentation.</summary>
@@ -4068,6 +4265,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionKafka
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionKinesis
 {
     /// <summary>The partition key.</summary>
@@ -4085,6 +4283,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionKinesis
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionLambda
 {
     /// <summary>The ARN of the Lambda function.</summary>
@@ -4094,6 +4293,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionLambda
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionRepublish
 {
     /// <summary>The Quality of Service (QoS) level to use when republishing messages. Valid values are 0 or 1. The default value is 0.</summary>
@@ -4111,6 +4311,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionRepublish
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionS3
 {
     /// <summary>The Amazon S3 bucket name.</summary>
@@ -4132,6 +4333,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionSns
 {
     /// <summary>The message format of the message to publish. Accepted values are &quot;JSON&quot; and &quot;RAW&quot;.</summary>
@@ -4149,6 +4351,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionSns
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionSqs
 {
     /// <summary>The URL of the Amazon SQS queue.</summary>
@@ -4166,6 +4369,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionSqs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionStepFunctions
 {
     /// <summary>The prefix used to generate, along with a UUID, the unique state machine execution name.</summary>
@@ -4183,6 +4387,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionStepFunctions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionTimestreamDimension
 {
     /// <summary>The name of the rule.</summary>
@@ -4196,6 +4401,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionTimestreamDimens
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionTimestreamTimestamp
 {
     /// <summary>The precision of the timestamp value that results from the expression described in value. Valid values: SECONDS, MILLISECONDS, MICROSECONDS, NANOSECONDS.</summary>
@@ -4209,6 +4415,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionTimestreamTimest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorActionTimestream
 {
     /// <summary>The name of an Amazon Timestream database.</summary>
@@ -4234,6 +4441,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorActionTimestream
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderErrorAction
 {
     [JsonPropertyName("cloudwatchAlarm")]
@@ -4296,6 +4504,7 @@ public partial class V1beta1TopicRuleStatusAtProviderErrorAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderFirehose
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -4317,6 +4526,7 @@ public partial class V1beta1TopicRuleStatusAtProviderFirehose
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderHttpHttpHeader
 {
     /// <summary>The name of the HTTP header.</summary>
@@ -4330,6 +4540,7 @@ public partial class V1beta1TopicRuleStatusAtProviderHttpHttpHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderHttp
 {
     /// <summary>The HTTPS URL used to verify ownership of url.</summary>
@@ -4347,6 +4558,7 @@ public partial class V1beta1TopicRuleStatusAtProviderHttp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderIotAnalytics
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -4364,6 +4576,7 @@ public partial class V1beta1TopicRuleStatusAtProviderIotAnalytics
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderIotEvents
 {
     /// <summary>The payload that contains a JSON array of records will be sent to CloudWatch via a batch call.</summary>
@@ -4385,6 +4598,7 @@ public partial class V1beta1TopicRuleStatusAtProviderIotEvents
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderKafkaHeader
 {
     /// <summary>The name of the HTTP header.</summary>
@@ -4398,6 +4612,7 @@ public partial class V1beta1TopicRuleStatusAtProviderKafkaHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderKafka
 {
     /// <summary>Properties of the Apache Kafka producer client. For more info, see the AWS documentation.</summary>
@@ -4427,6 +4642,7 @@ public partial class V1beta1TopicRuleStatusAtProviderKafka
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderKinesis
 {
     /// <summary>The partition key.</summary>
@@ -4444,6 +4660,7 @@ public partial class V1beta1TopicRuleStatusAtProviderKinesis
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderLambda
 {
     /// <summary>The ARN of the Lambda function.</summary>
@@ -4453,6 +4670,7 @@ public partial class V1beta1TopicRuleStatusAtProviderLambda
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderRepublish
 {
     /// <summary>The Quality of Service (QoS) level to use when republishing messages. Valid values are 0 or 1. The default value is 0.</summary>
@@ -4470,6 +4688,7 @@ public partial class V1beta1TopicRuleStatusAtProviderRepublish
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderS3
 {
     /// <summary>The Amazon S3 bucket name.</summary>
@@ -4491,6 +4710,7 @@ public partial class V1beta1TopicRuleStatusAtProviderS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderSns
 {
     /// <summary>The message format of the message to publish. Accepted values are &quot;JSON&quot; and &quot;RAW&quot;.</summary>
@@ -4508,6 +4728,7 @@ public partial class V1beta1TopicRuleStatusAtProviderSns
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderSqs
 {
     /// <summary>The URL of the Amazon SQS queue.</summary>
@@ -4525,6 +4746,7 @@ public partial class V1beta1TopicRuleStatusAtProviderSqs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderStepFunctions
 {
     /// <summary>The prefix used to generate, along with a UUID, the unique state machine execution name.</summary>
@@ -4542,6 +4764,7 @@ public partial class V1beta1TopicRuleStatusAtProviderStepFunctions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderTimestreamDimension
 {
     /// <summary>The name of the rule.</summary>
@@ -4555,6 +4778,7 @@ public partial class V1beta1TopicRuleStatusAtProviderTimestreamDimension
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderTimestreamTimestamp
 {
     /// <summary>The precision of the timestamp value that results from the expression described in value. Valid values: SECONDS, MILLISECONDS, MICROSECONDS, NANOSECONDS.</summary>
@@ -4568,6 +4792,7 @@ public partial class V1beta1TopicRuleStatusAtProviderTimestreamTimestamp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProviderTimestream
 {
     /// <summary>The name of an Amazon Timestream database.</summary>
@@ -4593,6 +4818,7 @@ public partial class V1beta1TopicRuleStatusAtProviderTimestream
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusAtProvider
 {
     /// <summary>The ARN of the topic rule</summary>
@@ -4699,6 +4925,7 @@ public partial class V1beta1TopicRuleStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatusConditions
 {
     /// <summary>
@@ -4742,6 +4969,7 @@ public partial class V1beta1TopicRuleStatusConditions
 /// <summary>TopicRuleStatus defines the observed state of TopicRule.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TopicRuleStatus
 {
     [JsonPropertyName("atProvider")]
@@ -4760,9 +4988,13 @@ public partial class V1beta1TopicRuleStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>TopicRule is the Schema for the TopicRules API. Creates and manages an AWS IoT topic rule</summary>
+/// <summary>
+/// TopicRule is the Schema for the TopicRules API. Creates and manages an AWS IoT topic rule
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TopicRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1TopicRuleSpec>, IStatus<V1beta1TopicRuleStatus?>
 {

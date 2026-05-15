@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.autoscaling.aws.upbound.io;
-/// <summary>LaunchConfiguration is the Schema for the LaunchConfigurations API. Provides a resource to create a new launch configuration, used for autoscaling groups.</summary>
+/// <summary>
+/// LaunchConfiguration is the Schema for the LaunchConfigurations API. Provides a resource to create a new launch configuration, used for autoscaling groups.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LaunchConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1LaunchConfiguration>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1LaunchConfigurationList : IKubernetesObject<V1ListMe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LaunchConfigurationSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LaunchConfigurationSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1LaunchConfigurationSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationSpecForProviderEbsBlockDevice
 {
     /// <summary>
@@ -105,6 +111,7 @@ public partial class V1beta1LaunchConfigurationSpecForProviderEbsBlockDevice
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationSpecForProviderEphemeralBlockDevice
 {
     /// <summary>The name of the block device to mount on the instance.</summary>
@@ -122,6 +129,7 @@ public partial class V1beta1LaunchConfigurationSpecForProviderEphemeralBlockDevi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationSpecForProviderMetadataOptions
 {
     /// <summary>The state of the metadata service: enabled, disabled.</summary>
@@ -139,6 +147,7 @@ public partial class V1beta1LaunchConfigurationSpecForProviderMetadataOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationSpecForProviderRootBlockDevice
 {
     /// <summary>Whether the volume should be destroyed on instance termination. Defaults to true.</summary>
@@ -168,6 +177,7 @@ public partial class V1beta1LaunchConfigurationSpecForProviderRootBlockDevice
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationSpecForProvider
 {
     /// <summary>Associate a public ip address with an instance in a VPC.</summary>
@@ -244,6 +254,7 @@ public partial class V1beta1LaunchConfigurationSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationSpecInitProviderEbsBlockDevice
 {
     /// <summary>
@@ -292,6 +303,7 @@ public partial class V1beta1LaunchConfigurationSpecInitProviderEbsBlockDevice
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationSpecInitProviderEphemeralBlockDevice
 {
     /// <summary>The name of the block device to mount on the instance.</summary>
@@ -309,6 +321,7 @@ public partial class V1beta1LaunchConfigurationSpecInitProviderEphemeralBlockDev
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationSpecInitProviderMetadataOptions
 {
     /// <summary>The state of the metadata service: enabled, disabled.</summary>
@@ -326,6 +339,7 @@ public partial class V1beta1LaunchConfigurationSpecInitProviderMetadataOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationSpecInitProviderRootBlockDevice
 {
     /// <summary>Whether the volume should be destroyed on instance termination. Defaults to true.</summary>
@@ -367,6 +381,7 @@ public partial class V1beta1LaunchConfigurationSpecInitProviderRootBlockDevice
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationSpecInitProvider
 {
     /// <summary>Associate a public ip address with an instance in a VPC.</summary>
@@ -440,6 +455,7 @@ public partial class V1beta1LaunchConfigurationSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LaunchConfigurationSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LaunchConfigurationSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -464,6 +480,7 @@ public enum V1beta1LaunchConfigurationSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LaunchConfigurationSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LaunchConfigurationSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -480,6 +497,7 @@ public enum V1beta1LaunchConfigurationSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LaunchConfigurationSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LaunchConfigurationSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -491,6 +509,7 @@ public enum V1beta1LaunchConfigurationSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -519,6 +538,7 @@ public partial class V1beta1LaunchConfigurationSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -538,6 +558,7 @@ public partial class V1beta1LaunchConfigurationSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -552,6 +573,7 @@ public partial class V1beta1LaunchConfigurationSpecWriteConnectionSecretToRef
 /// <summary>LaunchConfigurationSpec defines the desired state of LaunchConfiguration</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationSpec
 {
     /// <summary>
@@ -619,6 +641,7 @@ public partial class V1beta1LaunchConfigurationSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationStatusAtProviderEbsBlockDevice
 {
     /// <summary>
@@ -667,6 +690,7 @@ public partial class V1beta1LaunchConfigurationStatusAtProviderEbsBlockDevice
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationStatusAtProviderEphemeralBlockDevice
 {
     /// <summary>The name of the block device to mount on the instance.</summary>
@@ -684,6 +708,7 @@ public partial class V1beta1LaunchConfigurationStatusAtProviderEphemeralBlockDev
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationStatusAtProviderMetadataOptions
 {
     /// <summary>The state of the metadata service: enabled, disabled.</summary>
@@ -701,6 +726,7 @@ public partial class V1beta1LaunchConfigurationStatusAtProviderMetadataOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationStatusAtProviderRootBlockDevice
 {
     /// <summary>Whether the volume should be destroyed on instance termination. Defaults to true.</summary>
@@ -730,6 +756,7 @@ public partial class V1beta1LaunchConfigurationStatusAtProviderRootBlockDevice
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationStatusAtProvider
 {
     /// <summary>The Amazon Resource Name of the launch configuration.</summary>
@@ -815,6 +842,7 @@ public partial class V1beta1LaunchConfigurationStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationStatusConditions
 {
     /// <summary>
@@ -858,6 +886,7 @@ public partial class V1beta1LaunchConfigurationStatusConditions
 /// <summary>LaunchConfigurationStatus defines the observed state of LaunchConfiguration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LaunchConfigurationStatus
 {
     [JsonPropertyName("atProvider")]
@@ -876,9 +905,13 @@ public partial class V1beta1LaunchConfigurationStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>LaunchConfiguration is the Schema for the LaunchConfigurations API. Provides a resource to create a new launch configuration, used for autoscaling groups.</summary>
+/// <summary>
+/// LaunchConfiguration is the Schema for the LaunchConfigurations API. Provides a resource to create a new launch configuration, used for autoscaling groups.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LaunchConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LaunchConfigurationSpec>, IStatus<V1beta1LaunchConfigurationStatus?>
 {

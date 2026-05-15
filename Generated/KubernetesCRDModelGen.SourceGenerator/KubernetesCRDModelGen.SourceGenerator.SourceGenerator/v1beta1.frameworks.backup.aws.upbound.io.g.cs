@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.backup.aws.upbound.io;
-/// <summary>Framework is the Schema for the Frameworks API. Provides an AWS Backup Framework resource.</summary>
+/// <summary>
+/// Framework is the Schema for the Frameworks API. Provides an AWS Backup Framework resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FrameworkList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Framework>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1FrameworkList : IKubernetesObject<V1ListMeta>, IItem
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrameworkSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FrameworkSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1FrameworkSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrameworkSpecForProviderControlInputParameter
 {
     /// <summary>The unique name of the framework. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1FrameworkSpecForProviderControlInputParameter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrameworkSpecForProviderControlScope
 {
     /// <summary>The ID of the only AWS resource that you want your control scope to contain. Minimum number of 1 item. Maximum number of 100 items.</summary>
@@ -87,6 +94,7 @@ public partial class V1beta1FrameworkSpecForProviderControlScope
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrameworkSpecForProviderControl
 {
     /// <summary>One or more input parameter blocks. An example of a control with two parameters is: &quot;backup plan frequency is at least daily and the retention period is at least 1 year&quot;. The first parameter is daily. The second parameter is 1 year. Detailed below.</summary>
@@ -104,6 +112,7 @@ public partial class V1beta1FrameworkSpecForProviderControl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrameworkSpecForProvider
 {
     /// <summary>One or more control blocks that make up the framework. Each control in the list has a name, input parameters, and scope. Detailed below.</summary>
@@ -132,6 +141,7 @@ public partial class V1beta1FrameworkSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrameworkSpecInitProviderControlInputParameter
 {
     /// <summary>The unique name of the framework. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
@@ -145,6 +155,7 @@ public partial class V1beta1FrameworkSpecInitProviderControlInputParameter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrameworkSpecInitProviderControlScope
 {
     /// <summary>The ID of the only AWS resource that you want your control scope to contain. Minimum number of 1 item. Maximum number of 100 items.</summary>
@@ -162,6 +173,7 @@ public partial class V1beta1FrameworkSpecInitProviderControlScope
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrameworkSpecInitProviderControl
 {
     /// <summary>One or more input parameter blocks. An example of a control with two parameters is: &quot;backup plan frequency is at least daily and the retention period is at least 1 year&quot;. The first parameter is daily. The second parameter is 1 year. Detailed below.</summary>
@@ -191,6 +203,7 @@ public partial class V1beta1FrameworkSpecInitProviderControl
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrameworkSpecInitProvider
 {
     /// <summary>One or more control blocks that make up the framework. Each control in the list has a name, input parameters, and scope. Detailed below.</summary>
@@ -216,6 +229,7 @@ public partial class V1beta1FrameworkSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrameworkSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FrameworkSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -240,6 +254,7 @@ public enum V1beta1FrameworkSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrameworkSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FrameworkSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -256,6 +271,7 @@ public enum V1beta1FrameworkSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrameworkSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FrameworkSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -267,6 +283,7 @@ public enum V1beta1FrameworkSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrameworkSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -295,6 +312,7 @@ public partial class V1beta1FrameworkSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrameworkSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -314,6 +332,7 @@ public partial class V1beta1FrameworkSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrameworkSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -328,6 +347,7 @@ public partial class V1beta1FrameworkSpecWriteConnectionSecretToRef
 /// <summary>FrameworkSpec defines the desired state of Framework</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrameworkSpec
 {
     /// <summary>
@@ -395,6 +415,7 @@ public partial class V1beta1FrameworkSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrameworkStatusAtProviderControlInputParameter
 {
     /// <summary>The unique name of the framework. The name must be between 1 and 256 characters, starting with a letter, and consisting of letters, numbers, and underscores.</summary>
@@ -408,6 +429,7 @@ public partial class V1beta1FrameworkStatusAtProviderControlInputParameter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrameworkStatusAtProviderControlScope
 {
     /// <summary>The ID of the only AWS resource that you want your control scope to contain. Minimum number of 1 item. Maximum number of 100 items.</summary>
@@ -425,6 +447,7 @@ public partial class V1beta1FrameworkStatusAtProviderControlScope
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrameworkStatusAtProviderControl
 {
     /// <summary>One or more input parameter blocks. An example of a control with two parameters is: &quot;backup plan frequency is at least daily and the retention period is at least 1 year&quot;. The first parameter is daily. The second parameter is 1 year. Detailed below.</summary>
@@ -442,6 +465,7 @@ public partial class V1beta1FrameworkStatusAtProviderControl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrameworkStatusAtProvider
 {
     /// <summary>The ARN of the backup framework.</summary>
@@ -495,6 +519,7 @@ public partial class V1beta1FrameworkStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrameworkStatusConditions
 {
     /// <summary>
@@ -538,6 +563,7 @@ public partial class V1beta1FrameworkStatusConditions
 /// <summary>FrameworkStatus defines the observed state of Framework.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FrameworkStatus
 {
     [JsonPropertyName("atProvider")]
@@ -556,9 +582,13 @@ public partial class V1beta1FrameworkStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Framework is the Schema for the Frameworks API. Provides an AWS Backup Framework resource.</summary>
+/// <summary>
+/// Framework is the Schema for the Frameworks API. Provides an AWS Backup Framework resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Framework : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1FrameworkSpec>, IStatus<V1beta1FrameworkStatus?>
 {

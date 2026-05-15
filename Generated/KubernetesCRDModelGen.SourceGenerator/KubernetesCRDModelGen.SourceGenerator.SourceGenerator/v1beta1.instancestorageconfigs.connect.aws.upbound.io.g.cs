@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.connect.aws.upbound.io;
-/// <summary>InstanceStorageConfig is the Schema for the InstanceStorageConfigs API. Provides details about a specific Amazon Connect Instance Storage Config.</summary>
+/// <summary>
+/// InstanceStorageConfig is the Schema for the InstanceStorageConfigs API. Provides details about a specific Amazon Connect Instance Storage Config.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1InstanceStorageConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1InstanceStorageConfig>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1InstanceStorageConfigList : IKubernetesObject<V1List
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1InstanceStorageConfigSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderInstanceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderInstanceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderInstanceIdRefPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderInstanceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderInstanceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderInstanceIdRefPolicyResolv
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderInstanceIdRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderInstanceIdRefPol
 /// <summary>Reference to a Instance in connect to populate instanceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderInstanceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderInstanceIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderInstanceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderInstanceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderInstanceIdSelectorPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderInstanceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderInstanceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderInstanceIdSelectorPolicyR
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderInstanceIdSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderInstanceIdSelect
 /// <summary>Selector for a Instance in connect to populate instanceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderInstanceIdSelector
 {
     /// <summary>
@@ -210,6 +223,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderInstanceIdSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -226,6 +240,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisFireh
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -237,6 +252,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisFireh
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnRefPolicy
 {
     /// <summary>
@@ -261,6 +277,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKin
 /// <summary>Reference to a DeliveryStream in firehose to populate firehoseArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -280,6 +297,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKin
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -296,6 +314,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisFireh
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -307,6 +326,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisFireh
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelectorPolicy
 {
     /// <summary>
@@ -331,6 +351,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKin
 /// <summary>Selector for a DeliveryStream in firehose to populate firehoseArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelector
 {
     /// <summary>
@@ -351,6 +372,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfig
 {
     /// <summary>The Amazon Resource Name (ARN) of the delivery stream.</summary>
@@ -374,6 +396,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKin
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -390,6 +413,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisStrea
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -401,6 +425,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisStrea
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnRefPolicy
 {
     /// <summary>
@@ -425,6 +450,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKin
 /// <summary>Reference to a Stream in kinesis to populate streamArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -444,6 +470,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKin
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -460,6 +487,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisStrea
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -471,6 +499,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisStrea
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnSelectorPolicy
 {
     /// <summary>
@@ -495,6 +524,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKin
 /// <summary>Selector for a Stream in kinesis to populate streamArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnSelector
 {
     /// <summary>
@@ -515,6 +545,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfig
 {
     /// <summary>The Amazon Resource Name (ARN) of the data stream.</summary>
@@ -538,6 +569,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKin
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -554,6 +586,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisVideo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -565,6 +598,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisVideo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRefPolicy
 {
     /// <summary>
@@ -589,6 +623,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKin
 /// <summary>Reference to a Key in kms to populate keyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -608,6 +643,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKin
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -624,6 +660,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisVideo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -635,6 +672,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisVideo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelectorPolicy
 {
     /// <summary>
@@ -659,6 +697,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKin
 /// <summary>Selector for a Key in kms to populate keyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelector
 {
     /// <summary>
@@ -679,6 +718,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfig
 {
     /// <summary>The type of encryption. Valid Values: KMS.</summary>
@@ -700,6 +740,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfig
 {
     /// <summary>The encryption configuration. Documented below.</summary>
@@ -723,6 +764,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigKin
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -739,6 +781,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBuck
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -750,6 +793,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBuck
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameRefPolicy
 {
     /// <summary>
@@ -774,6 +818,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3C
 /// <summary>Reference to a Bucket in s3 to populate bucketName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -793,6 +838,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3C
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -809,6 +855,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBuck
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -820,6 +867,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBuck
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameSelectorPolicy
 {
     /// <summary>
@@ -844,6 +892,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3C
 /// <summary>Selector for a Bucket in s3 to populate bucketName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameSelector
 {
     /// <summary>
@@ -870,6 +919,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3C
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -886,6 +936,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -897,6 +948,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncr
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdRefPolicy
 {
     /// <summary>
@@ -921,6 +973,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3C
 /// <summary>Reference to a Key in kms to populate keyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -940,6 +993,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3C
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -956,6 +1010,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -967,6 +1022,7 @@ public enum V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncr
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelectorPolicy
 {
     /// <summary>
@@ -991,6 +1047,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3C
 /// <summary>Selector for a Key in kms to populate keyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelector
 {
     /// <summary>
@@ -1011,6 +1068,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3C
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfig
 {
     /// <summary>The type of encryption. Valid Values: KMS.</summary>
@@ -1032,6 +1090,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3C
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3Config
 {
     /// <summary>The S3 bucket name.</summary>
@@ -1057,6 +1116,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfigS3C
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfig
 {
     /// <summary>A block that specifies the configuration of the Kinesis Firehose delivery stream. Documented below.</summary>
@@ -1082,6 +1142,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProviderStorageConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecForProvider
 {
     /// <summary>Specifies the identifier of the hosting Amazon Connect Instance.</summary>
@@ -1120,6 +1181,7 @@ public partial class V1beta1InstanceStorageConfigSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderInstanceIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderInstanceIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1136,6 +1198,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderInstanceIdRefPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderInstanceIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderInstanceIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1147,6 +1210,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderInstanceIdRefPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderInstanceIdRefPolicy
 {
     /// <summary>
@@ -1171,6 +1235,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderInstanceIdRefPo
 /// <summary>Reference to a Instance in connect to populate instanceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderInstanceIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1190,6 +1255,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderInstanceIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderInstanceIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderInstanceIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1206,6 +1272,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderInstanceIdSelectorPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderInstanceIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderInstanceIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1217,6 +1284,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderInstanceIdSelectorPolicy
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderInstanceIdSelectorPolicy
 {
     /// <summary>
@@ -1241,6 +1309,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderInstanceIdSelec
 /// <summary>Selector for a Instance in connect to populate instanceId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderInstanceIdSelector
 {
     /// <summary>
@@ -1267,6 +1336,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderInstanceIdSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1283,6 +1353,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisFire
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1294,6 +1365,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisFire
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnRefPolicy
 {
     /// <summary>
@@ -1318,6 +1390,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKi
 /// <summary>Reference to a DeliveryStream in firehose to populate firehoseArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1337,6 +1410,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1353,6 +1427,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisFire
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1364,6 +1439,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisFire
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelectorPolicy
 {
     /// <summary>
@@ -1388,6 +1464,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKi
 /// <summary>Selector for a DeliveryStream in firehose to populate firehoseArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelector
 {
     /// <summary>
@@ -1408,6 +1485,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfig
 {
     /// <summary>The Amazon Resource Name (ARN) of the delivery stream.</summary>
@@ -1431,6 +1509,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1447,6 +1526,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisStre
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1458,6 +1538,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisStre
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnRefPolicy
 {
     /// <summary>
@@ -1482,6 +1563,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKi
 /// <summary>Reference to a Stream in kinesis to populate streamArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1501,6 +1583,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1517,6 +1600,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisStre
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1528,6 +1612,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisStre
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnSelectorPolicy
 {
     /// <summary>
@@ -1552,6 +1637,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKi
 /// <summary>Selector for a Stream in kinesis to populate streamArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnSelector
 {
     /// <summary>
@@ -1572,6 +1658,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfig
 {
     /// <summary>The Amazon Resource Name (ARN) of the data stream.</summary>
@@ -1595,6 +1682,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1611,6 +1699,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisVide
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1622,6 +1711,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisVide
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRefPolicy
 {
     /// <summary>
@@ -1646,6 +1736,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKi
 /// <summary>Reference to a Key in kms to populate keyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1665,6 +1756,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1681,6 +1773,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisVide
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1692,6 +1785,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisVide
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelectorPolicy
 {
     /// <summary>
@@ -1716,6 +1810,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKi
 /// <summary>Selector for a Key in kms to populate keyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelector
 {
     /// <summary>
@@ -1736,6 +1831,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfig
 {
     /// <summary>The type of encryption. Valid Values: KMS.</summary>
@@ -1757,6 +1853,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfig
 {
     /// <summary>The encryption configuration. Documented below.</summary>
@@ -1780,6 +1877,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigKi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1796,6 +1894,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBuc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1807,6 +1906,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBuc
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameRefPolicy
 {
     /// <summary>
@@ -1831,6 +1931,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3
 /// <summary>Reference to a Bucket in s3 to populate bucketName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1850,6 +1951,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1866,6 +1968,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBuc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1877,6 +1980,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBuc
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameSelectorPolicy
 {
     /// <summary>
@@ -1901,6 +2005,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3
 /// <summary>Selector for a Bucket in s3 to populate bucketName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameSelector
 {
     /// <summary>
@@ -1927,6 +2032,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1943,6 +2049,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEnc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1954,6 +2061,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEnc
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdRefPolicy
 {
     /// <summary>
@@ -1978,6 +2086,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3
 /// <summary>Reference to a Key in kms to populate keyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1997,6 +2106,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2013,6 +2123,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEnc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2024,6 +2135,7 @@ public enum V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEnc
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelectorPolicy
 {
     /// <summary>
@@ -2048,6 +2160,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3
 /// <summary>Selector for a Key in kms to populate keyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelector
 {
     /// <summary>
@@ -2068,6 +2181,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfig
 {
     /// <summary>The type of encryption. Valid Values: KMS.</summary>
@@ -2089,6 +2203,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3Config
 {
     /// <summary>The S3 bucket name.</summary>
@@ -2114,6 +2229,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfigS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfig
 {
     /// <summary>A block that specifies the configuration of the Kinesis Firehose delivery stream. Documented below.</summary>
@@ -2151,6 +2267,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProviderStorageConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecInitProvider
 {
     /// <summary>Specifies the identifier of the hosting Amazon Connect Instance.</summary>
@@ -2180,6 +2297,7 @@ public partial class V1beta1InstanceStorageConfigSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -2204,6 +2322,7 @@ public enum V1beta1InstanceStorageConfigSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2220,6 +2339,7 @@ public enum V1beta1InstanceStorageConfigSpecProviderConfigRefPolicyResolutionEnu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceStorageConfigSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceStorageConfigSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2231,6 +2351,7 @@ public enum V1beta1InstanceStorageConfigSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -2259,6 +2380,7 @@ public partial class V1beta1InstanceStorageConfigSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2278,6 +2400,7 @@ public partial class V1beta1InstanceStorageConfigSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -2292,6 +2415,7 @@ public partial class V1beta1InstanceStorageConfigSpecWriteConnectionSecretToRef
 /// <summary>InstanceStorageConfigSpec defines the desired state of InstanceStorageConfig</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigSpec
 {
     /// <summary>
@@ -2359,6 +2483,7 @@ public partial class V1beta1InstanceStorageConfigSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigStatusAtProviderStorageConfigKinesisFirehoseConfig
 {
     /// <summary>The Amazon Resource Name (ARN) of the delivery stream.</summary>
@@ -2368,6 +2493,7 @@ public partial class V1beta1InstanceStorageConfigStatusAtProviderStorageConfigKi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigStatusAtProviderStorageConfigKinesisStreamConfig
 {
     /// <summary>The Amazon Resource Name (ARN) of the data stream.</summary>
@@ -2377,6 +2503,7 @@ public partial class V1beta1InstanceStorageConfigStatusAtProviderStorageConfigKi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigStatusAtProviderStorageConfigKinesisVideoStreamConfigEncryptionConfig
 {
     /// <summary>The type of encryption. Valid Values: KMS.</summary>
@@ -2390,6 +2517,7 @@ public partial class V1beta1InstanceStorageConfigStatusAtProviderStorageConfigKi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigStatusAtProviderStorageConfigKinesisVideoStreamConfig
 {
     /// <summary>The encryption configuration. Documented below.</summary>
@@ -2407,6 +2535,7 @@ public partial class V1beta1InstanceStorageConfigStatusAtProviderStorageConfigKi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigStatusAtProviderStorageConfigS3ConfigEncryptionConfig
 {
     /// <summary>The type of encryption. Valid Values: KMS.</summary>
@@ -2420,6 +2549,7 @@ public partial class V1beta1InstanceStorageConfigStatusAtProviderStorageConfigS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigStatusAtProviderStorageConfigS3Config
 {
     /// <summary>The S3 bucket name.</summary>
@@ -2437,6 +2567,7 @@ public partial class V1beta1InstanceStorageConfigStatusAtProviderStorageConfigS3
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigStatusAtProviderStorageConfig
 {
     /// <summary>A block that specifies the configuration of the Kinesis Firehose delivery stream. Documented below.</summary>
@@ -2462,6 +2593,7 @@ public partial class V1beta1InstanceStorageConfigStatusAtProviderStorageConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigStatusAtProvider
 {
     /// <summary>The existing association identifier that uniquely identifies the resource type and storage config for the given instance ID.</summary>
@@ -2495,6 +2627,7 @@ public partial class V1beta1InstanceStorageConfigStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigStatusConditions
 {
     /// <summary>
@@ -2538,6 +2671,7 @@ public partial class V1beta1InstanceStorageConfigStatusConditions
 /// <summary>InstanceStorageConfigStatus defines the observed state of InstanceStorageConfig.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceStorageConfigStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2556,9 +2690,13 @@ public partial class V1beta1InstanceStorageConfigStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>InstanceStorageConfig is the Schema for the InstanceStorageConfigs API. Provides details about a specific Amazon Connect Instance Storage Config.</summary>
+/// <summary>
+/// InstanceStorageConfig is the Schema for the InstanceStorageConfigs API. Provides details about a specific Amazon Connect Instance Storage Config.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1InstanceStorageConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1InstanceStorageConfigSpec>, IStatus<V1beta1InstanceStorageConfigStatus?>
 {

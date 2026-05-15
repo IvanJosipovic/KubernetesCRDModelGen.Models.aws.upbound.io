@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dlm.aws.upbound.io;
-/// <summary>LifecyclePolicy is the Schema for the LifecyclePolicys API. Provides a Data Lifecycle Manager (DLM) lifecycle policy for managing snapshots.</summary>
+/// <summary>
+/// LifecyclePolicy is the Schema for the LifecyclePolicys API. Provides a Data Lifecycle Manager (DLM) lifecycle policy for managing snapshots.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LifecyclePolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1LifecyclePolicy>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1LifecyclePolicyList : IKubernetesObject<V1ListMeta>,
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LifecyclePolicySpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LifecyclePolicySpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1LifecyclePolicySpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LifecyclePolicySpecForProviderExecutionRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LifecyclePolicySpecForProviderExecutionRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1LifecyclePolicySpecForProviderExecutionRoleArnRefPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LifecyclePolicySpecForProviderExecutionRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LifecyclePolicySpecForProviderExecutionRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1LifecyclePolicySpecForProviderExecutionRoleArnRefPolicyResolv
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderExecutionRoleArnRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderExecutionRoleArnRefPol
 /// <summary>Reference to a Role in iam to populate executionRoleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderExecutionRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderExecutionRoleArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LifecyclePolicySpecForProviderExecutionRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LifecyclePolicySpecForProviderExecutionRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1LifecyclePolicySpecForProviderExecutionRoleArnSelectorPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LifecyclePolicySpecForProviderExecutionRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LifecyclePolicySpecForProviderExecutionRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1LifecyclePolicySpecForProviderExecutionRoleArnSelectorPolicyR
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderExecutionRoleArnSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderExecutionRoleArnSelect
 /// <summary>Selector for a Role in iam to populate executionRoleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderExecutionRoleArnSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderExecutionRoleArnSelect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsActionCrossRegionCopyEncryptionConfiguration
 {
     /// <summary>The Amazon Resource Name (ARN) of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.</summary>
@@ -217,6 +231,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsActionCro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsActionCrossRegionCopyRetainRule
 {
     /// <summary>How often this lifecycle policy should be evaluated. 1, 2,3,4,6,8,12 or 24 are valid values. Conflicts with cron_expression. If set, interval_unit and times must also be set.</summary>
@@ -230,6 +245,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsActionCro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsActionCrossRegionCopy
 {
     /// <summary>The encryption settings for the copied snapshot. See the encryption_configuration block. Max of 1 per action.</summary>
@@ -247,6 +263,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsActionCro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsAction
 {
     /// <summary>The rule for copying shared snapshots across Regions. See the cross_region_copy configuration block.</summary>
@@ -260,6 +277,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsEventSourceParameters
 {
     /// <summary>The snapshot description that can trigger the policy. The description pattern is specified using a regular expression. The policy runs only if a snapshot with a description that matches the specified pattern is shared with your account.</summary>
@@ -277,6 +295,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsEventSour
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsEventSource
 {
     /// <summary>A set of optional parameters for snapshot and AMI lifecycle policies. See the parameters configuration block.</summary>
@@ -290,6 +309,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsEventSour
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsExclusions
 {
     /// <summary>Indicates whether to exclude volumes that are attached to instances as the boot volume. To exclude boot volumes, specify true.</summary>
@@ -307,6 +327,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsExclusion
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsParameters
 {
     /// <summary>Indicates whether to exclude the root volume from snapshots created using CreateSnapshots. The default is false.</summary>
@@ -320,6 +341,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsParameter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTier
 {
     /// <summary>Specifies the number of oldest AMIs to deprecate. Must be an integer between 1 and 1000. Conflicts with interval and interval_unit.</summary>
@@ -337,6 +359,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleArchiveRuleArchiveRetainRule
 {
     /// <summary>Information about retention period in the Amazon EBS Snapshots Archive. See the retention_archive_tier block.</summary>
@@ -346,6 +369,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleArchiveRule
 {
     /// <summary>Information about the retention period for the snapshot archiving rule. See the archive_retain_rule block.</summary>
@@ -355,6 +379,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCreateRuleScripts
 {
     /// <summary>Indicates whether Amazon Data Lifecycle Manager should default to crash-consistent snapshots if the pre script fails. The default is true.</summary>
@@ -384,6 +409,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCreateRule
 {
     /// <summary>The schedule, as a Cron expression. The schedule interval must be between 1 hour and 1 year. Conflicts with interval, interval_unit, and times. For details on valid Cron expressions, see here.</summary>
@@ -419,6 +445,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -435,6 +462,7 @@ public enum V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -446,6 +474,7 @@ public enum V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegio
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRefPolicy
 {
     /// <summary>
@@ -470,6 +499,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleC
 /// <summary>Reference to a Key in kms to populate cmkArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -489,6 +519,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -505,6 +536,7 @@ public enum V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -516,6 +548,7 @@ public enum V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegio
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelectorPolicy
 {
     /// <summary>
@@ -540,6 +573,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleC
 /// <summary>Selector for a Key in kms to populate cmkArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelector
 {
     /// <summary>
@@ -560,6 +594,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule
 {
     /// <summary>How often this lifecycle policy should be evaluated. 1, 2,3,4,6,8,12 or 24 are valid values. Conflicts with cron_expression. If set, interval_unit and times must also be set.</summary>
@@ -573,6 +608,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRuleRetainRule
 {
     /// <summary>How often this lifecycle policy should be evaluated. 1, 2,3,4,6,8,12 or 24 are valid values. Conflicts with cron_expression. If set, interval_unit and times must also be set.</summary>
@@ -586,6 +622,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleCrossRegionCopyRule
 {
     /// <summary>The Amazon Resource Name (ARN) of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.</summary>
@@ -627,6 +664,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleDeprecateRule
 {
     /// <summary>Specifies the number of oldest AMIs to deprecate. Must be an integer between 1 and 1000. Conflicts with interval and interval_unit.</summary>
@@ -644,6 +682,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleD
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleFastRestoreRule
 {
     /// <summary>The Availability Zones in which to enable fast snapshot restore.</summary>
@@ -665,6 +704,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleF
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleRetainRule
 {
     /// <summary>Specifies the number of oldest AMIs to deprecate. Must be an integer between 1 and 1000. Conflicts with interval and interval_unit.</summary>
@@ -682,6 +722,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleShareRule
 {
     /// <summary>The IDs of the AWS accounts with which to share the snapshots.</summary>
@@ -699,6 +740,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsScheduleS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsSchedule
 {
     /// <summary>Specifies a snapshot archiving rule for a schedule. See archive_rule block.</summary>
@@ -748,6 +790,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetails
 {
     /// <summary>The actions to be performed when the event-based policy is triggered. You can specify only one action per policy. This parameter is required for event-based policies only. If you are creating a snapshot or AMI policy, omit this parameter. See the action configuration block.</summary>
@@ -813,6 +856,7 @@ public partial class V1beta1LifecyclePolicySpecForProviderPolicyDetails
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecForProvider
 {
     /// <summary>Specify the type of default policy to create. valid values are VOLUME or INSTANCE.</summary>
@@ -863,6 +907,7 @@ public partial class V1beta1LifecyclePolicySpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -879,6 +924,7 @@ public enum V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnRefPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -890,6 +936,7 @@ public enum V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnRefPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnRefPolicy
 {
     /// <summary>
@@ -914,6 +961,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnRefPo
 /// <summary>Reference to a Role in iam to populate executionRoleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -933,6 +981,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -949,6 +998,7 @@ public enum V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnSelectorPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -960,6 +1010,7 @@ public enum V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnSelectorPolicy
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnSelectorPolicy
 {
     /// <summary>
@@ -984,6 +1035,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnSelec
 /// <summary>Selector for a Role in iam to populate executionRoleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnSelector
 {
     /// <summary>
@@ -1004,6 +1056,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderExecutionRoleArnSelec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsActionCrossRegionCopyEncryptionConfiguration
 {
     /// <summary>The Amazon Resource Name (ARN) of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.</summary>
@@ -1017,6 +1070,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsActionCr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsActionCrossRegionCopyRetainRule
 {
     /// <summary>How often this lifecycle policy should be evaluated. 1, 2,3,4,6,8,12 or 24 are valid values. Conflicts with cron_expression. If set, interval_unit and times must also be set.</summary>
@@ -1030,6 +1084,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsActionCr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsActionCrossRegionCopy
 {
     /// <summary>The encryption settings for the copied snapshot. See the encryption_configuration block. Max of 1 per action.</summary>
@@ -1047,6 +1102,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsActionCr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsAction
 {
     /// <summary>The rule for copying shared snapshots across Regions. See the cross_region_copy configuration block.</summary>
@@ -1060,6 +1116,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsEventSourceParameters
 {
     /// <summary>The snapshot description that can trigger the policy. The description pattern is specified using a regular expression. The policy runs only if a snapshot with a description that matches the specified pattern is shared with your account.</summary>
@@ -1077,6 +1134,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsEventSou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsEventSource
 {
     /// <summary>A set of optional parameters for snapshot and AMI lifecycle policies. See the parameters configuration block.</summary>
@@ -1090,6 +1148,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsEventSou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsExclusions
 {
     /// <summary>Indicates whether to exclude volumes that are attached to instances as the boot volume. To exclude boot volumes, specify true.</summary>
@@ -1107,6 +1166,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsExclusio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsParameters
 {
     /// <summary>Indicates whether to exclude the root volume from snapshots created using CreateSnapshots. The default is false.</summary>
@@ -1120,6 +1180,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsParamete
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTier
 {
     /// <summary>Specifies the number of oldest AMIs to deprecate. Must be an integer between 1 and 1000. Conflicts with interval and interval_unit.</summary>
@@ -1137,6 +1198,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleArchiveRuleArchiveRetainRule
 {
     /// <summary>Information about retention period in the Amazon EBS Snapshots Archive. See the retention_archive_tier block.</summary>
@@ -1146,6 +1208,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleArchiveRule
 {
     /// <summary>Information about the retention period for the snapshot archiving rule. See the archive_retain_rule block.</summary>
@@ -1155,6 +1218,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCreateRuleScripts
 {
     /// <summary>Indicates whether Amazon Data Lifecycle Manager should default to crash-consistent snapshots if the pre script fails. The default is true.</summary>
@@ -1184,6 +1248,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCreateRule
 {
     /// <summary>The schedule, as a Cron expression. The schedule interval must be between 1 hour and 1 year. Conflicts with interval, interval_unit, and times. For details on valid Cron expressions, see here.</summary>
@@ -1219,6 +1284,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1235,6 +1301,7 @@ public enum V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1246,6 +1313,7 @@ public enum V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegi
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRefPolicy
 {
     /// <summary>
@@ -1270,6 +1338,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 /// <summary>Reference to a Key in kms to populate cmkArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1289,6 +1358,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1305,6 +1375,7 @@ public enum V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1316,6 +1387,7 @@ public enum V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegi
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelectorPolicy
 {
     /// <summary>
@@ -1340,6 +1412,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 /// <summary>Selector for a Key in kms to populate cmkArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleCmkArnSelector
 {
     /// <summary>
@@ -1360,6 +1433,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule
 {
     /// <summary>How often this lifecycle policy should be evaluated. 1, 2,3,4,6,8,12 or 24 are valid values. Conflicts with cron_expression. If set, interval_unit and times must also be set.</summary>
@@ -1373,6 +1447,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRuleRetainRule
 {
     /// <summary>How often this lifecycle policy should be evaluated. 1, 2,3,4,6,8,12 or 24 are valid values. Conflicts with cron_expression. If set, interval_unit and times must also be set.</summary>
@@ -1386,6 +1461,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleCrossRegionCopyRule
 {
     /// <summary>The Amazon Resource Name (ARN) of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.</summary>
@@ -1427,6 +1503,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleDeprecateRule
 {
     /// <summary>Specifies the number of oldest AMIs to deprecate. Must be an integer between 1 and 1000. Conflicts with interval and interval_unit.</summary>
@@ -1444,6 +1521,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleFastRestoreRule
 {
     /// <summary>The Availability Zones in which to enable fast snapshot restore.</summary>
@@ -1465,6 +1543,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleRetainRule
 {
     /// <summary>Specifies the number of oldest AMIs to deprecate. Must be an integer between 1 and 1000. Conflicts with interval and interval_unit.</summary>
@@ -1482,6 +1561,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsScheduleShareRule
 {
     /// <summary>The IDs of the AWS accounts with which to share the snapshots.</summary>
@@ -1499,6 +1579,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 {
     /// <summary>Specifies a snapshot archiving rule for a schedule. See archive_rule block.</summary>
@@ -1548,6 +1629,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetails
 {
     /// <summary>The actions to be performed when the event-based policy is triggered. You can specify only one action per policy. This parameter is required for event-based policies only. If you are creating a snapshot or AMI policy, omit this parameter. See the action configuration block.</summary>
@@ -1625,6 +1707,7 @@ public partial class V1beta1LifecyclePolicySpecInitProviderPolicyDetails
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecInitProvider
 {
     /// <summary>Specify the type of default policy to create. valid values are VOLUME or INSTANCE.</summary>
@@ -1666,6 +1749,7 @@ public partial class V1beta1LifecyclePolicySpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LifecyclePolicySpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LifecyclePolicySpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1690,6 +1774,7 @@ public enum V1beta1LifecyclePolicySpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LifecyclePolicySpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LifecyclePolicySpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1706,6 +1791,7 @@ public enum V1beta1LifecyclePolicySpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LifecyclePolicySpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LifecyclePolicySpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1717,6 +1803,7 @@ public enum V1beta1LifecyclePolicySpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1745,6 +1832,7 @@ public partial class V1beta1LifecyclePolicySpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1764,6 +1852,7 @@ public partial class V1beta1LifecyclePolicySpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1778,6 +1867,7 @@ public partial class V1beta1LifecyclePolicySpecWriteConnectionSecretToRef
 /// <summary>LifecyclePolicySpec defines the desired state of LifecyclePolicy</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicySpec
 {
     /// <summary>
@@ -1845,6 +1935,7 @@ public partial class V1beta1LifecyclePolicySpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsActionCrossRegionCopyEncryptionConfiguration
 {
     /// <summary>The Amazon Resource Name (ARN) of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.</summary>
@@ -1858,6 +1949,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsActionCr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsActionCrossRegionCopyRetainRule
 {
     /// <summary>How often this lifecycle policy should be evaluated. 1, 2,3,4,6,8,12 or 24 are valid values. Conflicts with cron_expression. If set, interval_unit and times must also be set.</summary>
@@ -1871,6 +1963,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsActionCr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsActionCrossRegionCopy
 {
     /// <summary>The encryption settings for the copied snapshot. See the encryption_configuration block. Max of 1 per action.</summary>
@@ -1888,6 +1981,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsActionCr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsAction
 {
     /// <summary>The rule for copying shared snapshots across Regions. See the cross_region_copy configuration block.</summary>
@@ -1901,6 +1995,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsEventSourceParameters
 {
     /// <summary>The snapshot description that can trigger the policy. The description pattern is specified using a regular expression. The policy runs only if a snapshot with a description that matches the specified pattern is shared with your account.</summary>
@@ -1918,6 +2013,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsEventSou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsEventSource
 {
     /// <summary>A set of optional parameters for snapshot and AMI lifecycle policies. See the parameters configuration block.</summary>
@@ -1931,6 +2027,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsEventSou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsExclusions
 {
     /// <summary>Indicates whether to exclude volumes that are attached to instances as the boot volume. To exclude boot volumes, specify true.</summary>
@@ -1948,6 +2045,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsExclusio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsParameters
 {
     /// <summary>Indicates whether to exclude the root volume from snapshots created using CreateSnapshots. The default is false.</summary>
@@ -1961,6 +2059,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsParamete
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsScheduleArchiveRuleArchiveRetainRuleRetentionArchiveTier
 {
     /// <summary>Specifies the number of oldest AMIs to deprecate. Must be an integer between 1 and 1000. Conflicts with interval and interval_unit.</summary>
@@ -1978,6 +2077,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsScheduleArchiveRuleArchiveRetainRule
 {
     /// <summary>Information about retention period in the Amazon EBS Snapshots Archive. See the retention_archive_tier block.</summary>
@@ -1987,6 +2087,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsScheduleArchiveRule
 {
     /// <summary>Information about the retention period for the snapshot archiving rule. See the archive_retain_rule block.</summary>
@@ -1996,6 +2097,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsScheduleCreateRuleScripts
 {
     /// <summary>Indicates whether Amazon Data Lifecycle Manager should default to crash-consistent snapshots if the pre script fails. The default is true.</summary>
@@ -2025,6 +2127,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsScheduleCreateRule
 {
     /// <summary>The schedule, as a Cron expression. The schedule interval must be between 1 hour and 1 year. Conflicts with interval, interval_unit, and times. For details on valid Cron expressions, see here.</summary>
@@ -2054,6 +2157,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule
 {
     /// <summary>How often this lifecycle policy should be evaluated. 1, 2,3,4,6,8,12 or 24 are valid values. Conflicts with cron_expression. If set, interval_unit and times must also be set.</summary>
@@ -2067,6 +2171,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsScheduleCrossRegionCopyRuleRetainRule
 {
     /// <summary>How often this lifecycle policy should be evaluated. 1, 2,3,4,6,8,12 or 24 are valid values. Conflicts with cron_expression. If set, interval_unit and times must also be set.</summary>
@@ -2080,6 +2185,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsScheduleCrossRegionCopyRule
 {
     /// <summary>The Amazon Resource Name (ARN) of the AWS KMS key to use for EBS encryption. If this parameter is not specified, the default KMS key for the account is used.</summary>
@@ -2113,6 +2219,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsScheduleDeprecateRule
 {
     /// <summary>Specifies the number of oldest AMIs to deprecate. Must be an integer between 1 and 1000. Conflicts with interval and interval_unit.</summary>
@@ -2130,6 +2237,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsScheduleFastRestoreRule
 {
     /// <summary>The Availability Zones in which to enable fast snapshot restore.</summary>
@@ -2151,6 +2259,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsScheduleRetainRule
 {
     /// <summary>Specifies the number of oldest AMIs to deprecate. Must be an integer between 1 and 1000. Conflicts with interval and interval_unit.</summary>
@@ -2168,6 +2277,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsScheduleShareRule
 {
     /// <summary>The IDs of the AWS accounts with which to share the snapshots.</summary>
@@ -2185,6 +2295,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 {
     /// <summary>Specifies a snapshot archiving rule for a schedule. See archive_rule block.</summary>
@@ -2234,6 +2345,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetailsSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetails
 {
     /// <summary>The actions to be performed when the event-based policy is triggered. You can specify only one action per policy. This parameter is required for event-based policies only. If you are creating a snapshot or AMI policy, omit this parameter. See the action configuration block.</summary>
@@ -2299,6 +2411,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProviderPolicyDetails
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusAtProvider
 {
     /// <summary>Amazon Resource Name (ARN) of the DLM Lifecycle Policy.</summary>
@@ -2348,6 +2461,7 @@ public partial class V1beta1LifecyclePolicyStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatusConditions
 {
     /// <summary>
@@ -2391,6 +2505,7 @@ public partial class V1beta1LifecyclePolicyStatusConditions
 /// <summary>LifecyclePolicyStatus defines the observed state of LifecyclePolicy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LifecyclePolicyStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2409,9 +2524,13 @@ public partial class V1beta1LifecyclePolicyStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>LifecyclePolicy is the Schema for the LifecyclePolicys API. Provides a Data Lifecycle Manager (DLM) lifecycle policy for managing snapshots.</summary>
+/// <summary>
+/// LifecyclePolicy is the Schema for the LifecyclePolicys API. Provides a Data Lifecycle Manager (DLM) lifecycle policy for managing snapshots.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LifecyclePolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LifecyclePolicySpec>, IStatus<V1beta1LifecyclePolicyStatus?>
 {

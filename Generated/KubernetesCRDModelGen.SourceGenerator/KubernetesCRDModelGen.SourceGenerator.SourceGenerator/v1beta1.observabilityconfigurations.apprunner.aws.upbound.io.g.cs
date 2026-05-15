@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.apprunner.aws.upbound.io;
-/// <summary>ObservabilityConfiguration is the Schema for the ObservabilityConfigurations API. Manages an App Runner Observability Configuration.</summary>
+/// <summary>
+/// ObservabilityConfiguration is the Schema for the ObservabilityConfigurations API. Manages an App Runner Observability Configuration.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ObservabilityConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ObservabilityConfiguration>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ObservabilityConfigurationList : IKubernetesObject<V
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObservabilityConfigurationSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ObservabilityConfigurationSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1ObservabilityConfigurationSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ObservabilityConfigurationSpecForProviderTraceConfiguration
 {
     /// <summary>Implementation provider chosen for tracing App Runner services. Valid values: AWSXRAY.</summary>
@@ -66,6 +72,7 @@ public partial class V1beta1ObservabilityConfigurationSpecForProviderTraceConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ObservabilityConfigurationSpecForProvider
 {
     /// <summary>Name of the observability configuration.</summary>
@@ -90,6 +97,7 @@ public partial class V1beta1ObservabilityConfigurationSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ObservabilityConfigurationSpecInitProviderTraceConfiguration
 {
     /// <summary>Implementation provider chosen for tracing App Runner services. Valid values: AWSXRAY.</summary>
@@ -111,6 +119,7 @@ public partial class V1beta1ObservabilityConfigurationSpecInitProviderTraceConfi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ObservabilityConfigurationSpecInitProvider
 {
     /// <summary>Name of the observability configuration.</summary>
@@ -132,6 +141,7 @@ public partial class V1beta1ObservabilityConfigurationSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObservabilityConfigurationSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ObservabilityConfigurationSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -156,6 +166,7 @@ public enum V1beta1ObservabilityConfigurationSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObservabilityConfigurationSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ObservabilityConfigurationSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -172,6 +183,7 @@ public enum V1beta1ObservabilityConfigurationSpecProviderConfigRefPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ObservabilityConfigurationSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ObservabilityConfigurationSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -183,6 +195,7 @@ public enum V1beta1ObservabilityConfigurationSpecProviderConfigRefPolicyResolveE
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ObservabilityConfigurationSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -211,6 +224,7 @@ public partial class V1beta1ObservabilityConfigurationSpecProviderConfigRefPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ObservabilityConfigurationSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -230,6 +244,7 @@ public partial class V1beta1ObservabilityConfigurationSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ObservabilityConfigurationSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -244,6 +259,7 @@ public partial class V1beta1ObservabilityConfigurationSpecWriteConnectionSecretT
 /// <summary>ObservabilityConfigurationSpec defines the desired state of ObservabilityConfiguration</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ObservabilityConfigurationSpec
 {
     /// <summary>
@@ -311,6 +327,7 @@ public partial class V1beta1ObservabilityConfigurationSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ObservabilityConfigurationStatusAtProviderTraceConfiguration
 {
     /// <summary>Implementation provider chosen for tracing App Runner services. Valid values: AWSXRAY.</summary>
@@ -320,6 +337,7 @@ public partial class V1beta1ObservabilityConfigurationStatusAtProviderTraceConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ObservabilityConfigurationStatusAtProvider
 {
     /// <summary>ARN of this observability configuration.</summary>
@@ -368,6 +386,7 @@ public partial class V1beta1ObservabilityConfigurationStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ObservabilityConfigurationStatusConditions
 {
     /// <summary>
@@ -411,6 +430,7 @@ public partial class V1beta1ObservabilityConfigurationStatusConditions
 /// <summary>ObservabilityConfigurationStatus defines the observed state of ObservabilityConfiguration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ObservabilityConfigurationStatus
 {
     [JsonPropertyName("atProvider")]
@@ -429,9 +449,13 @@ public partial class V1beta1ObservabilityConfigurationStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>ObservabilityConfiguration is the Schema for the ObservabilityConfigurations API. Manages an App Runner Observability Configuration.</summary>
+/// <summary>
+/// ObservabilityConfiguration is the Schema for the ObservabilityConfigurations API. Manages an App Runner Observability Configuration.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ObservabilityConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ObservabilityConfigurationSpec>, IStatus<V1beta1ObservabilityConfigurationStatus?>
 {

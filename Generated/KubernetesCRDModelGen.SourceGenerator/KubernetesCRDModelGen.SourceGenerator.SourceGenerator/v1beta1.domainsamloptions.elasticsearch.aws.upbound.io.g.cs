@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.elasticsearch.aws.upbound.io;
-/// <summary>DomainSAMLOptions is the Schema for the DomainSAMLOptionss API.</summary>
+/// <summary>
+/// DomainSAMLOptions is the Schema for the DomainSAMLOptionss API.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DomainSAMLOptionsList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DomainSAMLOptions>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1DomainSAMLOptionsList : IKubernetesObject<V1ListMeta
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainSAMLOptionsSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DomainSAMLOptionsSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1DomainSAMLOptionsSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DomainSAMLOptionsSpecForProviderSamlOptionsIdp
 {
     /// <summary>The unique Entity ID of the application in SAML Identity Provider.</summary>
@@ -71,6 +77,7 @@ public partial class V1beta1DomainSAMLOptionsSpecForProviderSamlOptionsIdp
 /// <summary>This username from the SAML IdP receives full permissions to the cluster, equivalent to a new master user.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DomainSAMLOptionsSpecForProviderSamlOptionsMasterUserNameSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -88,6 +95,7 @@ public partial class V1beta1DomainSAMLOptionsSpecForProviderSamlOptionsMasterUse
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DomainSAMLOptionsSpecForProviderSamlOptions
 {
     /// <summary>Whether SAML authentication is enabled.</summary>
@@ -121,6 +129,7 @@ public partial class V1beta1DomainSAMLOptionsSpecForProviderSamlOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DomainSAMLOptionsSpecForProvider
 {
     /// <summary>
@@ -137,6 +146,7 @@ public partial class V1beta1DomainSAMLOptionsSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DomainSAMLOptionsSpecInitProviderSamlOptionsIdp
 {
     /// <summary>The unique Entity ID of the application in SAML Identity Provider.</summary>
@@ -151,6 +161,7 @@ public partial class V1beta1DomainSAMLOptionsSpecInitProviderSamlOptionsIdp
 /// <summary>This username from the SAML IdP receives full permissions to the cluster, equivalent to a new master user.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DomainSAMLOptionsSpecInitProviderSamlOptionsMasterUserNameSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -168,6 +179,7 @@ public partial class V1beta1DomainSAMLOptionsSpecInitProviderSamlOptionsMasterUs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DomainSAMLOptionsSpecInitProviderSamlOptions
 {
     /// <summary>Whether SAML authentication is enabled.</summary>
@@ -213,6 +225,7 @@ public partial class V1beta1DomainSAMLOptionsSpecInitProviderSamlOptions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DomainSAMLOptionsSpecInitProvider
 {
     /// <summary>The SAML authentication options for an AWS Elasticsearch Domain.</summary>
@@ -226,6 +239,7 @@ public partial class V1beta1DomainSAMLOptionsSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainSAMLOptionsSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DomainSAMLOptionsSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -250,6 +264,7 @@ public enum V1beta1DomainSAMLOptionsSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainSAMLOptionsSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DomainSAMLOptionsSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -266,6 +281,7 @@ public enum V1beta1DomainSAMLOptionsSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DomainSAMLOptionsSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DomainSAMLOptionsSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -277,6 +293,7 @@ public enum V1beta1DomainSAMLOptionsSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DomainSAMLOptionsSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -305,6 +322,7 @@ public partial class V1beta1DomainSAMLOptionsSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DomainSAMLOptionsSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -324,6 +342,7 @@ public partial class V1beta1DomainSAMLOptionsSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DomainSAMLOptionsSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -338,6 +357,7 @@ public partial class V1beta1DomainSAMLOptionsSpecWriteConnectionSecretToRef
 /// <summary>DomainSAMLOptionsSpec defines the desired state of DomainSAMLOptions</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DomainSAMLOptionsSpec
 {
     /// <summary>
@@ -405,6 +425,7 @@ public partial class V1beta1DomainSAMLOptionsSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DomainSAMLOptionsStatusAtProviderSamlOptionsIdp
 {
     /// <summary>The unique Entity ID of the application in SAML Identity Provider.</summary>
@@ -418,6 +439,7 @@ public partial class V1beta1DomainSAMLOptionsStatusAtProviderSamlOptionsIdp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DomainSAMLOptionsStatusAtProviderSamlOptions
 {
     /// <summary>Whether SAML authentication is enabled.</summary>
@@ -447,6 +469,7 @@ public partial class V1beta1DomainSAMLOptionsStatusAtProviderSamlOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DomainSAMLOptionsStatusAtProvider
 {
     /// <summary>The name of the domain the SAML options are associated with.</summary>
@@ -468,6 +491,7 @@ public partial class V1beta1DomainSAMLOptionsStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DomainSAMLOptionsStatusConditions
 {
     /// <summary>
@@ -511,6 +535,7 @@ public partial class V1beta1DomainSAMLOptionsStatusConditions
 /// <summary>DomainSAMLOptionsStatus defines the observed state of DomainSAMLOptions.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DomainSAMLOptionsStatus
 {
     [JsonPropertyName("atProvider")]
@@ -529,9 +554,13 @@ public partial class V1beta1DomainSAMLOptionsStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>DomainSAMLOptions is the Schema for the DomainSAMLOptionss API.</summary>
+/// <summary>
+/// DomainSAMLOptions is the Schema for the DomainSAMLOptionss API.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DomainSAMLOptions : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DomainSAMLOptionsSpec>, IStatus<V1beta1DomainSAMLOptionsStatus?>
 {

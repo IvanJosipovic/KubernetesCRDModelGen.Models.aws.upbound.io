@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.medialive.aws.upbound.io;
-/// <summary>Channel is the Schema for the Channels API.</summary>
+/// <summary>
+/// Channel is the Schema for the Channels API.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ChannelList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Channel>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ChannelList : IKubernetesObject<V1ListMeta>, IItems<
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ChannelSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ChannelSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1ChannelSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderCdiInputSpecification
 {
     /// <summary>- Maximum CDI input resolution.</summary>
@@ -66,6 +72,7 @@ public partial class V1beta1ChannelSpecForProviderCdiInputSpecification
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderDestinationsMediaPackageSettings
 {
     /// <summary>ID of the channel in MediaPackage that is the destination for this output group.</summary>
@@ -75,6 +82,7 @@ public partial class V1beta1ChannelSpecForProviderDestinationsMediaPackageSettin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderDestinationsMultiplexSettings
 {
     /// <summary>The ID of the Multiplex that the encoder is providing output to.</summary>
@@ -88,6 +96,7 @@ public partial class V1beta1ChannelSpecForProviderDestinationsMultiplexSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderDestinationsSettings
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -109,6 +118,7 @@ public partial class V1beta1ChannelSpecForProviderDestinationsSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderDestinations
 {
     /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
@@ -130,6 +140,7 @@ public partial class V1beta1ChannelSpecForProviderDestinations
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsAudioNormalizationSettings
 {
     /// <summary>Audio normalization algorithm to use. itu17701 conforms to the CALM Act specification, itu17702 to the EBU R-128 specification.</summary>
@@ -147,6 +158,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings
 {
     [JsonPropertyName("cbetCheckDigitString")]
@@ -163,6 +175,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings
 {
     [JsonPropertyName("checkDigitString")]
@@ -175,6 +188,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings
 {
     /// <summary>Used to insert watermarks of type Nielsen CBET. See Nielsen CBET Settings for more details.</summary>
@@ -192,6 +206,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettings
 {
     /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
@@ -201,6 +216,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsAacSettings
 {
     /// <summary>Average bitrate in bits/second.</summary>
@@ -242,6 +258,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings
 {
     /// <summary>Average bitrate in bits/second.</summary>
@@ -275,6 +292,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings
 {
     /// <summary>Average bitrate in bits/second.</summary>
@@ -308,6 +326,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings
 {
     /// <summary>Sets the attenuation control.</summary>
@@ -386,6 +405,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings
 {
     /// <summary>Average bitrate in bits/second.</summary>
@@ -403,12 +423,14 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsWavSettings
 {
     [JsonPropertyName("bitDepth")]
@@ -425,6 +447,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettings
 {
     /// <summary>Aac Settings. See AAC Settings for more details.</summary>
@@ -458,6 +481,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels
 {
     [JsonPropertyName("gain")]
@@ -469,6 +493,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings
 {
     [JsonPropertyName("inputChannelLevels")]
@@ -480,6 +505,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptionsRemixSettings
 {
     [JsonPropertyName("channelMappings")]
@@ -494,6 +520,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptions
 {
     /// <summary>Advanced audio normalization settings. See Audio Normalization Settings for more details.</summary>
@@ -542,6 +569,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAudioDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAvailBlankingAvailBlankingImage
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -559,6 +587,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAvailBlankingAv
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsAvailBlanking
 {
     /// <summary>Blanking image to be used. See Avail Blanking Image for more details.</summary>
@@ -572,12 +601,14 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsAvailBlanking
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFont
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -595,6 +626,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescript
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettings
 {
     /// <summary>If no explicit xPosition or yPosition is provided, setting alignment to centered will place the captions at the bottom center of the output. Similarly, setting a left alignment will align captions to the bottom left of the output. If x and y positions are given in conjunction with the alignment parameter, the font will be justified (either left or centered) relative to those coordinates. Selecting “smart” justification will left-justify live subtitles and center-justify pre-recorded subtitles. All burn-in and DVB-Sub font settings must match.</summary>
@@ -668,6 +700,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescript
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFont
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -685,6 +718,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescript
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettings
 {
     /// <summary>If no explicit xPosition or yPosition is provided, setting alignment to centered will place the captions at the bottom center of the output. Similarly, setting a left alignment will align captions to the bottom left of the output. If x and y positions are given in conjunction with the alignment parameter, the font will be justified (either left or centered) relative to those coordinates. Selecting “smart” justification will left-justify live subtitles and center-justify pre-recorded subtitles. All burn-in and DVB-Sub font settings must match.</summary>
@@ -758,6 +792,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescript
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettings
 {
     /// <summary>Complete this field if you want to include the name of the copyright holder in the copyright tag in the captions metadata.</summary>
@@ -779,48 +814,56 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescript
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettings
 {
     /// <summary>Specifies the style information (font color, font position, and so on) to include in the font data that is attached to the EBU-TT captions. - include: Take the style information (font color, font position, and so on) from the source captions and include that information in the font data attached to the EBU-TT captions. This option is valid only if the source captions are Embedded or Teletext. - exclude: In the font data attached to the EBU-TT captions, set the font family to “monospaced”. Do not include any other style information.</summary>
@@ -830,6 +873,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescript
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings
 {
     /// <summary>Specifies the style information (font color, font position, and so on) to include in the font data that is attached to the EBU-TT captions. - include: Take the style information (font color, font position, and so on) from the source captions and include that information in the font data attached to the EBU-TT captions. This option is valid only if the source captions are Embedded or Teletext. - exclude: In the font data attached to the EBU-TT captions, set the font family to “monospaced”. Do not include any other style information.</summary>
@@ -839,6 +883,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescript
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettings
 {
     /// <summary>ARIB Destination Settings.</summary>
@@ -896,6 +941,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescript
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescriptions
 {
     /// <summary>Indicates whether the caption track implements accessibility features such as written descriptions of spoken dialog, music, and sounds.</summary>
@@ -925,6 +971,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsCaptionDescript
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlate
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -942,6 +989,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsGlobalConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsGlobalConfigurationInputLossBehavior
 {
     [JsonPropertyName("blackFrameMsec")]
@@ -962,6 +1010,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsGlobalConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsGlobalConfiguration
 {
     /// <summary>Value to set the initial audio gain for the Live Event.</summary>
@@ -991,12 +1040,14 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsGlobalConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettings
 {
     /// <summary>Html Motion Graphics Settings.</summary>
@@ -1006,6 +1057,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsMotionGraphicsC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsMotionGraphicsConfiguration
 {
     /// <summary>Motion Graphics Insertion.</summary>
@@ -1019,6 +1071,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsMotionGraphicsC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsNielsenConfiguration
 {
     /// <summary>Enter the Distributor ID assigned to your organization by Nielsen.</summary>
@@ -1032,6 +1085,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsNielsenConfigur
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings
 {
     /// <summary>Specify the canned ACL to apply to each S3 request.</summary>
@@ -1041,6 +1095,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings
 {
     /// <summary>Archive S3 Settings. See Archive S3 Settings for more details.</summary>
@@ -1050,6 +1105,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -1059,6 +1115,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings
 {
     /// <summary>Parameters that control the interactions with the CDN. See Archive CDN Settings for more details.</summary>
@@ -1076,6 +1133,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -1085,6 +1143,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings
 {
     /// <summary>Specify the canned ACL to apply to each S3 request.</summary>
@@ -1094,6 +1153,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings
 {
     /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
@@ -1103,6 +1163,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings
 {
     /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
@@ -1116,6 +1177,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings
 {
     [JsonPropertyName("captionChannel")]
@@ -1132,6 +1194,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -1141,6 +1204,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings
 {
     /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
@@ -1170,6 +1234,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings
 {
     /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
@@ -1190,6 +1255,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings
 {
     /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
@@ -1213,6 +1279,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings
 {
     /// <summary>Specify the canned ACL to apply to each S3 request.</summary>
@@ -1222,6 +1289,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings
 {
     /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
@@ -1245,6 +1313,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings
 {
     /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
@@ -1270,6 +1339,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -1287,6 +1357,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings
 {
     [JsonPropertyName("keyProviderServer")]
@@ -1298,6 +1369,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings
 {
     /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
@@ -1307,6 +1379,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings
 {
     /// <summary>The ad marker type for this output group.</summary>
@@ -1447,6 +1520,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -1456,6 +1530,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings
 {
     /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
@@ -1465,6 +1540,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -1474,6 +1550,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings
 {
     /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
@@ -1544,12 +1621,14 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings
 {
     /// <summary>The ad marker type for this output group.</summary>
@@ -1583,6 +1662,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings
 {
     /// <summary>Controls the behavior of the RTMP group if input becomes unavailable.</summary>
@@ -1599,6 +1679,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettings
 {
     /// <summary>Archive group settings. See Archive Group Settings for more details.</summary>
@@ -1636,6 +1717,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings
 {
     /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
@@ -1652,6 +1734,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings
 {
     [JsonPropertyName("outputSdt")]
@@ -1671,6 +1754,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings
 {
     [JsonPropertyName("repInterval")]
@@ -1679,6 +1763,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettings
 {
     [JsonPropertyName("absentInputAudioBehavior")]
@@ -1841,12 +1926,14 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings
 {
     /// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
@@ -1860,6 +1947,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings
 {
     /// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
@@ -1877,6 +1965,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings
 {
     /// <summary>String concatenated to the end of the destination filename. Required for multiple outputs of the same type.</summary>
@@ -1886,6 +1975,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -1903,6 +1993,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings
 {
     /// <summary>Specifies the GROUP-ID in the #EXT-X-MEDIA tag of the target HLS audio rendition.</summary>
@@ -1921,6 +2012,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings
 {
     [JsonPropertyName("audioRenditionSets")]
@@ -1935,12 +2027,14 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3u8Settings
 {
     [JsonPropertyName("audioFramesPerPes")]
@@ -2004,6 +2098,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings
 {
     [JsonPropertyName("audioRenditionSets")]
@@ -2016,6 +2111,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings
 {
     /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
@@ -2037,6 +2133,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings
 {
     [JsonPropertyName("h265PackagingType")]
@@ -2056,12 +2153,14 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings
 {
     [JsonPropertyName("h265PackagingType")]
@@ -2074,6 +2173,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -2083,6 +2183,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings
 {
     /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
@@ -2092,6 +2193,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -2101,6 +2203,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings
 {
     /// <summary>Setting to allow self signed or verified RTMP certificates.</summary>
@@ -2122,6 +2225,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings
 {
     /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
@@ -2138,6 +2242,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings
 {
     [JsonPropertyName("outputSdt")]
@@ -2157,6 +2262,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings
 {
     [JsonPropertyName("repInterval")]
@@ -2165,6 +2271,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettings
 {
     [JsonPropertyName("absentInputAudioBehavior")]
@@ -2327,6 +2434,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings
 {
     /// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
@@ -2336,6 +2444,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -2345,6 +2454,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings
 {
     /// <summary>The height of the FEC protection matrix.</summary>
@@ -2362,6 +2472,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings
 {
     /// <summary>UDP output buffering in milliseconds.</summary>
@@ -2383,6 +2494,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettings
 {
     /// <summary>Archive output settings. See Archive Output Settings for more details.</summary>
@@ -2420,6 +2532,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOutputs
 {
     /// <summary>The names of the audio descriptions used as audio sources for the output.</summary>
@@ -2445,6 +2558,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroups
 {
     /// <summary>Name of the Channel.</summary>
@@ -2462,6 +2576,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsOutputGroups
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsTimecodeConfig
 {
     /// <summary>The source for the timecode that will be associated with the events outputs.</summary>
@@ -2475,6 +2590,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsTimecodeConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings
 {
     /// <summary>The frequency at which to capture frames for inclusion in the output.</summary>
@@ -2488,6 +2604,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings
 {
     /// <summary>Post filter sharpening.</summary>
@@ -2501,6 +2618,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings
 {
     /// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
@@ -2510,6 +2628,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH264Settings
 {
     /// <summary>Enables or disables adaptive quantization.</summary>
@@ -2673,18 +2792,21 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsColorSpacePassthroughSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsDolbyVision81Settings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsHdr10Settings
 {
     /// <summary>Sets the MaxCLL value for HDR10.</summary>
@@ -2698,18 +2820,21 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec601Settings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec709Settings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettings
 {
     /// <summary>Sets the colorspace metadata to be passed through.</summary>
@@ -2735,6 +2860,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettingsTemporalFilterSettings
 {
     /// <summary>Post filter sharpening.</summary>
@@ -2748,6 +2874,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettings
 {
     /// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
@@ -2757,6 +2884,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsTimecodeBurninSettings
 {
     /// <summary>Set a prefix on the burned in timecode.</summary>
@@ -2774,6 +2902,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265Settings
 {
     /// <summary>Enables or disables adaptive quantization.</summary>
@@ -2926,6 +3055,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettings
 {
     /// <summary>Frame capture settings. See Frame Capture Settings for more details.</summary>
@@ -2943,6 +3073,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptions
 {
     /// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
@@ -2976,6 +3107,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettingsVideoDescriptio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderEncoderSettings
 {
     /// <summary>Audio descriptions for the channel. See Audio Descriptions for more details.</summary>
@@ -3017,6 +3149,7 @@ public partial class V1beta1ChannelSpecForProviderEncoderSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings
 {
     /// <summary>The name of the audio selector in the input that MediaLive should monitor to detect silence. Select your most important rendition. If you didn&apos;t create an audio selector in this input, leave blank.</summary>
@@ -3030,6 +3163,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInput
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings
 {
     /// <summary>The amount of time (in milliseconds) that no input is detected. After that time, an input failover will occur.</summary>
@@ -3039,6 +3173,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInput
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings
 {
     /// <summary>A value used in calculating the threshold below which MediaLive considers a pixel to be &apos;black&apos;. For the input to be considered black, every pixel in a frame must be below this threshold. The threshold is calculated as a percentage (expressed as a decimal) of white. Therefore .1 means 10% white (or 90% black). Note how the formula works for any color depth. For example, if you set this field to 0.1 in 10-bit color depth: (10230.1=102.3), which means a pixel value of 102 or less is &apos;black&apos;. If you set this field to .1 in an 8-bit color depth: (2550.1=25.5), which means a pixel value of 25 or less is &apos;black&apos;. The range is 0.0 to 1.0, with any number of decimal places.</summary>
@@ -3052,6 +3187,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInput
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings
 {
     /// <summary>MediaLive will perform a failover if the specified audio selector is silent for the specified period. See Audio Silence Failover Settings for more details.</summary>
@@ -3069,6 +3205,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInput
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition
 {
     /// <summary>Failover condition type-specific settings. See Failover Condition Settings for more details.</summary>
@@ -3078,6 +3215,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInput
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettings
 {
     /// <summary>This clear time defines the requirement a recovered input must meet to be considered healthy. The input must have no failover conditions for this length of time. Enter a time in milliseconds. This value is particularly important if the input_preference for the failover pair is set to PRIMARY_INPUT_PREFERRED, because after this time, MediaLive will switch back to the primary input.</summary>
@@ -3105,6 +3243,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsAutomaticInput
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ChannelSpecForProviderInputAttachmentsInputIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ChannelSpecForProviderInputAttachmentsInputIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3121,6 +3260,7 @@ public enum V1beta1ChannelSpecForProviderInputAttachmentsInputIdRefPolicyResolut
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ChannelSpecForProviderInputAttachmentsInputIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ChannelSpecForProviderInputAttachmentsInputIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3132,6 +3272,7 @@ public enum V1beta1ChannelSpecForProviderInputAttachmentsInputIdRefPolicyResolve
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputIdRefPolicy
 {
     /// <summary>
@@ -3156,6 +3297,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputIdRefPoli
 /// <summary>Reference to a Input in medialive to populate inputId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3175,6 +3317,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ChannelSpecForProviderInputAttachmentsInputIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ChannelSpecForProviderInputAttachmentsInputIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3191,6 +3334,7 @@ public enum V1beta1ChannelSpecForProviderInputAttachmentsInputIdSelectorPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ChannelSpecForProviderInputAttachmentsInputIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ChannelSpecForProviderInputAttachmentsInputIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3202,6 +3346,7 @@ public enum V1beta1ChannelSpecForProviderInputAttachmentsInputIdSelectorPolicyRe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputIdSelectorPolicy
 {
     /// <summary>
@@ -3226,6 +3371,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputIdSelecto
 /// <summary>Selector for a Input in medialive to populate inputId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputIdSelector
 {
     /// <summary>
@@ -3246,6 +3392,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputIdSelecto
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection
 {
     /// <summary>Specifies the GROUP-ID in the #EXT-X-MEDIA tag of the target HLS audio rendition.</summary>
@@ -3259,6 +3406,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection
 {
     /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
@@ -3272,6 +3420,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection
 {
     /// <summary>Selects a specific PID from within a source.</summary>
@@ -3281,6 +3430,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecode
 {
     /// <summary>Applies only to Dolby E. Enter the program ID (according to the metadata in the audio) of the Dolby E program to extract from the specified track. One program extracted per audio selector. To select multiple programs, create multiple selectors with the same Track and different Program numbers. “All channels” means to ignore the program IDs and include all the channels in this selector; useful if metadata is known to be incorrect.</summary>
@@ -3290,6 +3440,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTracks
 {
     /// <summary>1-based integer value that maps to a specific audio track.</summary>
@@ -3299,6 +3450,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection
 {
     /// <summary>Configure decoding options for Dolby E streams - these should be Dolby E frames carried in PCM streams tagged with SMPTE-337. See Dolby E Decode for more details.</summary>
@@ -3312,6 +3464,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettings
 {
     /// <summary>Audio HLS Rendition Selection. See Audio HLS Rendition Selection for more details.</summary>
@@ -3333,6 +3486,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelector
 {
     /// <summary>Name of the Channel.</summary>
@@ -3346,6 +3500,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings
 {
     /// <summary>Specifies the number (1 to 4) of the captions channel you want to extract from the ancillary captions. If you plan to convert the ancillary captions to another format, complete this field. If you plan to choose Embedded as the captions destination in the output (to pass through all the channels in the ancillary captions), leave this field blank because MediaLive ignores the field.</summary>
@@ -3355,12 +3510,14 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettings
 {
     /// <summary>If you will configure a WebVTT caption description that references this caption selector, use this field to provide the language to consider when translating the image-based source to text.</summary>
@@ -3374,6 +3531,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings
 {
     /// <summary>If upconvert, 608 data is both passed through via the “608 compatibility bytes” fields of the 708 wrapper as well as translated into 708. 708 data present in the source content will be discarded.</summary>
@@ -3391,6 +3549,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings
 {
     /// <summary>If upconvert, 608 data is both passed through via the “608 compatibility bytes” fields of the 708 wrapper as well as translated into 708. 708 data present in the source content will be discarded.</summary>
@@ -3404,6 +3563,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings
 {
     /// <summary>If you will configure a WebVTT caption description that references this caption selector, use this field to provide the language to consider when translating the image-based source to text.</summary>
@@ -3417,6 +3577,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle
 {
     /// <summary>See the description in left_offset. For height, specify the entire height of the rectangle as a percentage of the underlying frame height. For example, &quot;80&quot; means the rectangle height is 80% of the underlying frame height. The top_offset and rectangle_height must add up to 100% or less. This field corresponds to tts:extent - Y in the TTML standard.</summary>
@@ -3438,6 +3599,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings
 {
     /// <summary>Optionally defines a region where TTML style captions will be displayed. See Caption Rectangle for more details.</summary>
@@ -3451,6 +3613,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettings
 {
     /// <summary>Ancillary Source Settings. See Ancillary Source Settings for more details.</summary>
@@ -3484,6 +3647,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelector
 {
     /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
@@ -3501,6 +3665,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings
 {
     /// <summary>The bitrate is specified in bits per second, as in an HLS manifest.</summary>
@@ -3526,6 +3691,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsN
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsNetworkInputSettings
 {
     /// <summary>Specifies HLS input settings when the uri is for a HLS manifest. See HLS Input Settings for more details.</summary>
@@ -3539,6 +3705,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsN
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsVideoSelector
 {
     [JsonPropertyName("colorSpace")]
@@ -3550,6 +3717,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettingsV
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettings
 {
     /// <summary>Used to select the audio stream to decode for inputs that have multiple. See Audio Selectors for more details.</summary>
@@ -3598,6 +3766,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputAttachments
 {
     /// <summary>User-specified settings for defining what the conditions are for declaring the input unhealthy and failing over to a different input. See Automatic Input Failover Settings for more details.</summary>
@@ -3627,6 +3796,7 @@ public partial class V1beta1ChannelSpecForProviderInputAttachments
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderInputSpecification
 {
     [JsonPropertyName("codec")]
@@ -3643,6 +3813,7 @@ public partial class V1beta1ChannelSpecForProviderInputSpecification
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderMaintenance
 {
     /// <summary>The day of the week to use for maintenance.</summary>
@@ -3662,6 +3833,7 @@ public partial class V1beta1ChannelSpecForProviderMaintenance
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ChannelSpecForProviderRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ChannelSpecForProviderRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3678,6 +3850,7 @@ public enum V1beta1ChannelSpecForProviderRoleArnRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ChannelSpecForProviderRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ChannelSpecForProviderRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3689,6 +3862,7 @@ public enum V1beta1ChannelSpecForProviderRoleArnRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderRoleArnRefPolicy
 {
     /// <summary>
@@ -3713,6 +3887,7 @@ public partial class V1beta1ChannelSpecForProviderRoleArnRefPolicy
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3732,6 +3907,7 @@ public partial class V1beta1ChannelSpecForProviderRoleArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ChannelSpecForProviderRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ChannelSpecForProviderRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3748,6 +3924,7 @@ public enum V1beta1ChannelSpecForProviderRoleArnSelectorPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ChannelSpecForProviderRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ChannelSpecForProviderRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3759,6 +3936,7 @@ public enum V1beta1ChannelSpecForProviderRoleArnSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderRoleArnSelectorPolicy
 {
     /// <summary>
@@ -3783,6 +3961,7 @@ public partial class V1beta1ChannelSpecForProviderRoleArnSelectorPolicy
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderRoleArnSelector
 {
     /// <summary>
@@ -3803,6 +3982,7 @@ public partial class V1beta1ChannelSpecForProviderRoleArnSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProviderVpc
 {
     /// <summary>List of public address allocation ids to associate with ENIs that will be created in Output VPC. Must specify one for SINGLE_PIPELINE, two for STANDARD channels.</summary>
@@ -3820,6 +4000,7 @@ public partial class V1beta1ChannelSpecForProviderVpc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecForProvider
 {
     /// <summary>Specification of CDI inputs for this channel. See CDI Input Specification for more details.</summary>
@@ -3892,6 +4073,7 @@ public partial class V1beta1ChannelSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderCdiInputSpecification
 {
     /// <summary>- Maximum CDI input resolution.</summary>
@@ -3901,6 +4083,7 @@ public partial class V1beta1ChannelSpecInitProviderCdiInputSpecification
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderDestinationsMediaPackageSettings
 {
     /// <summary>ID of the channel in MediaPackage that is the destination for this output group.</summary>
@@ -3910,6 +4093,7 @@ public partial class V1beta1ChannelSpecInitProviderDestinationsMediaPackageSetti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderDestinationsMultiplexSettings
 {
     /// <summary>The ID of the Multiplex that the encoder is providing output to.</summary>
@@ -3923,6 +4107,7 @@ public partial class V1beta1ChannelSpecInitProviderDestinationsMultiplexSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderDestinationsSettings
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -3944,6 +4129,7 @@ public partial class V1beta1ChannelSpecInitProviderDestinationsSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderDestinations
 {
     /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
@@ -3965,6 +4151,7 @@ public partial class V1beta1ChannelSpecInitProviderDestinations
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsAudioNormalizationSettings
 {
     /// <summary>Audio normalization algorithm to use. itu17701 conforms to the CALM Act specification, itu17702 to the EBU R-128 specification.</summary>
@@ -3982,6 +4169,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings
 {
     [JsonPropertyName("cbetCheckDigitString")]
@@ -3998,6 +4186,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings
 {
     [JsonPropertyName("checkDigitString")]
@@ -4010,6 +4199,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings
 {
     /// <summary>Used to insert watermarks of type Nielsen CBET. See Nielsen CBET Settings for more details.</summary>
@@ -4027,6 +4217,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettings
 {
     /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
@@ -4036,6 +4227,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsAacSettings
 {
     /// <summary>Average bitrate in bits/second.</summary>
@@ -4077,6 +4269,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings
 {
     /// <summary>Average bitrate in bits/second.</summary>
@@ -4110,6 +4303,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings
 {
     /// <summary>Average bitrate in bits/second.</summary>
@@ -4143,6 +4337,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings
 {
     /// <summary>Sets the attenuation control.</summary>
@@ -4221,6 +4416,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings
 {
     /// <summary>Average bitrate in bits/second.</summary>
@@ -4238,12 +4434,14 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsWavSettings
 {
     [JsonPropertyName("bitDepth")]
@@ -4260,6 +4458,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettings
 {
     /// <summary>Aac Settings. See AAC Settings for more details.</summary>
@@ -4293,6 +4492,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels
 {
     [JsonPropertyName("gain")]
@@ -4304,6 +4504,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings
 {
     [JsonPropertyName("inputChannelLevels")]
@@ -4315,6 +4516,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptionsRemixSettings
 {
     [JsonPropertyName("channelMappings")]
@@ -4329,6 +4531,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescriptions
 {
     /// <summary>Advanced audio normalization settings. See Audio Normalization Settings for more details.</summary>
@@ -4377,6 +4580,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAvailBlankingAvailBlankingImage
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -4394,6 +4598,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAvailBlankingA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAvailBlanking
 {
     /// <summary>Blanking image to be used. See Avail Blanking Image for more details.</summary>
@@ -4407,12 +4612,14 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsAvailBlanking
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFont
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -4430,6 +4637,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescrip
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettings
 {
     /// <summary>If no explicit xPosition or yPosition is provided, setting alignment to centered will place the captions at the bottom center of the output. Similarly, setting a left alignment will align captions to the bottom left of the output. If x and y positions are given in conjunction with the alignment parameter, the font will be justified (either left or centered) relative to those coordinates. Selecting “smart” justification will left-justify live subtitles and center-justify pre-recorded subtitles. All burn-in and DVB-Sub font settings must match.</summary>
@@ -4503,6 +4711,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescrip
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFont
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -4520,6 +4729,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescrip
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettings
 {
     /// <summary>If no explicit xPosition or yPosition is provided, setting alignment to centered will place the captions at the bottom center of the output. Similarly, setting a left alignment will align captions to the bottom left of the output. If x and y positions are given in conjunction with the alignment parameter, the font will be justified (either left or centered) relative to those coordinates. Selecting “smart” justification will left-justify live subtitles and center-justify pre-recorded subtitles. All burn-in and DVB-Sub font settings must match.</summary>
@@ -4593,6 +4803,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescrip
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettings
 {
     /// <summary>Complete this field if you want to include the name of the copyright holder in the copyright tag in the captions metadata.</summary>
@@ -4614,48 +4825,56 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescrip
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettings
 {
     /// <summary>Specifies the style information (font color, font position, and so on) to include in the font data that is attached to the EBU-TT captions. - include: Take the style information (font color, font position, and so on) from the source captions and include that information in the font data attached to the EBU-TT captions. This option is valid only if the source captions are Embedded or Teletext. - exclude: In the font data attached to the EBU-TT captions, set the font family to “monospaced”. Do not include any other style information.</summary>
@@ -4665,6 +4884,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescrip
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings
 {
     /// <summary>Specifies the style information (font color, font position, and so on) to include in the font data that is attached to the EBU-TT captions. - include: Take the style information (font color, font position, and so on) from the source captions and include that information in the font data attached to the EBU-TT captions. This option is valid only if the source captions are Embedded or Teletext. - exclude: In the font data attached to the EBU-TT captions, set the font family to “monospaced”. Do not include any other style information.</summary>
@@ -4674,6 +4894,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescrip
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettings
 {
     /// <summary>ARIB Destination Settings.</summary>
@@ -4731,6 +4952,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescrip
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescriptions
 {
     /// <summary>Indicates whether the caption track implements accessibility features such as written descriptions of spoken dialog, music, and sounds.</summary>
@@ -4760,6 +4982,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsCaptionDescrip
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlate
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -4777,6 +5000,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsGlobalConfigur
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsGlobalConfigurationInputLossBehavior
 {
     [JsonPropertyName("blackFrameMsec")]
@@ -4797,6 +5021,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsGlobalConfigur
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsGlobalConfiguration
 {
     /// <summary>Value to set the initial audio gain for the Live Event.</summary>
@@ -4826,12 +5051,14 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsGlobalConfigur
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettings
 {
     /// <summary>Html Motion Graphics Settings.</summary>
@@ -4841,6 +5068,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsMotionGraphics
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsMotionGraphicsConfiguration
 {
     /// <summary>Motion Graphics Insertion.</summary>
@@ -4854,6 +5082,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsMotionGraphics
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsNielsenConfiguration
 {
     /// <summary>Enter the Distributor ID assigned to your organization by Nielsen.</summary>
@@ -4867,6 +5096,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsNielsenConfigu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings
 {
     /// <summary>Specify the canned ACL to apply to each S3 request.</summary>
@@ -4876,6 +5106,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings
 {
     /// <summary>Archive S3 Settings. See Archive S3 Settings for more details.</summary>
@@ -4885,6 +5116,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -4894,6 +5126,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings
 {
     /// <summary>Parameters that control the interactions with the CDN. See Archive CDN Settings for more details.</summary>
@@ -4911,6 +5144,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -4920,6 +5154,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings
 {
     /// <summary>Specify the canned ACL to apply to each S3 request.</summary>
@@ -4929,6 +5164,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings
 {
     /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
@@ -4938,6 +5174,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings
 {
     /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
@@ -4951,6 +5188,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings
 {
     [JsonPropertyName("captionChannel")]
@@ -4967,6 +5205,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -4976,6 +5215,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings
 {
     /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
@@ -5005,6 +5245,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings
 {
     /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
@@ -5025,6 +5266,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings
 {
     /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
@@ -5048,6 +5290,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings
 {
     /// <summary>Specify the canned ACL to apply to each S3 request.</summary>
@@ -5057,6 +5300,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings
 {
     /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
@@ -5080,6 +5324,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings
 {
     /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
@@ -5105,6 +5350,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -5122,6 +5368,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings
 {
     [JsonPropertyName("keyProviderServer")]
@@ -5133,6 +5380,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings
 {
     /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
@@ -5142,6 +5390,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings
 {
     /// <summary>The ad marker type for this output group.</summary>
@@ -5282,6 +5531,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -5291,6 +5541,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings
 {
     /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
@@ -5300,6 +5551,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -5309,6 +5561,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings
 {
     /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
@@ -5379,12 +5632,14 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings
 {
     /// <summary>The ad marker type for this output group.</summary>
@@ -5418,6 +5673,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings
 {
     /// <summary>Controls the behavior of the RTMP group if input becomes unavailable.</summary>
@@ -5434,6 +5690,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettings
 {
     /// <summary>Archive group settings. See Archive Group Settings for more details.</summary>
@@ -5471,6 +5728,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings
 {
     /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
@@ -5487,6 +5745,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings
 {
     [JsonPropertyName("outputSdt")]
@@ -5506,6 +5765,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings
 {
     [JsonPropertyName("repInterval")]
@@ -5514,6 +5774,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettings
 {
     [JsonPropertyName("absentInputAudioBehavior")]
@@ -5676,12 +5937,14 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings
 {
     /// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
@@ -5695,6 +5958,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings
 {
     /// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
@@ -5712,6 +5976,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings
 {
     /// <summary>String concatenated to the end of the destination filename. Required for multiple outputs of the same type.</summary>
@@ -5721,6 +5986,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -5738,6 +6004,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings
 {
     /// <summary>Specifies the GROUP-ID in the #EXT-X-MEDIA tag of the target HLS audio rendition.</summary>
@@ -5756,6 +6023,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings
 {
     [JsonPropertyName("audioRenditionSets")]
@@ -5770,12 +6038,14 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3u8Settings
 {
     [JsonPropertyName("audioFramesPerPes")]
@@ -5839,6 +6109,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings
 {
     [JsonPropertyName("audioRenditionSets")]
@@ -5851,6 +6122,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings
 {
     /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
@@ -5872,6 +6144,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings
 {
     [JsonPropertyName("h265PackagingType")]
@@ -5891,12 +6164,14 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings
 {
     [JsonPropertyName("h265PackagingType")]
@@ -5909,6 +6184,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -5918,6 +6194,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings
 {
     /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
@@ -5927,6 +6204,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -5936,6 +6214,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings
 {
     /// <summary>Setting to allow self signed or verified RTMP certificates.</summary>
@@ -5957,6 +6236,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings
 {
     /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
@@ -5973,6 +6253,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings
 {
     [JsonPropertyName("outputSdt")]
@@ -5992,6 +6273,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings
 {
     [JsonPropertyName("repInterval")]
@@ -6000,6 +6282,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettings
 {
     [JsonPropertyName("absentInputAudioBehavior")]
@@ -6162,6 +6445,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings
 {
     /// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
@@ -6171,6 +6455,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -6180,6 +6465,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings
 {
     /// <summary>The height of the FEC protection matrix.</summary>
@@ -6197,6 +6483,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings
 {
     /// <summary>UDP output buffering in milliseconds.</summary>
@@ -6218,6 +6505,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettings
 {
     /// <summary>Archive output settings. See Archive Output Settings for more details.</summary>
@@ -6255,6 +6543,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputs
 {
     /// <summary>The names of the audio descriptions used as audio sources for the output.</summary>
@@ -6280,6 +6569,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroups
 {
     /// <summary>Name of the Channel.</summary>
@@ -6297,6 +6587,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsOutputGroups
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsTimecodeConfig
 {
     /// <summary>The source for the timecode that will be associated with the events outputs.</summary>
@@ -6310,6 +6601,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsTimecodeConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings
 {
     /// <summary>The frequency at which to capture frames for inclusion in the output.</summary>
@@ -6323,6 +6615,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings
 {
     /// <summary>Post filter sharpening.</summary>
@@ -6336,6 +6629,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings
 {
     /// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
@@ -6345,6 +6639,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH264Settings
 {
     /// <summary>Enables or disables adaptive quantization.</summary>
@@ -6508,18 +6803,21 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsColorSpacePassthroughSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsDolbyVision81Settings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsHdr10Settings
 {
     /// <summary>Sets the MaxCLL value for HDR10.</summary>
@@ -6533,18 +6831,21 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec601Settings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec709Settings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettings
 {
     /// <summary>Sets the colorspace metadata to be passed through.</summary>
@@ -6570,6 +6871,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettingsTemporalFilterSettings
 {
     /// <summary>Post filter sharpening.</summary>
@@ -6583,6 +6885,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettings
 {
     /// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
@@ -6592,6 +6895,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsTimecodeBurninSettings
 {
     /// <summary>Set a prefix on the burned in timecode.</summary>
@@ -6609,6 +6913,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265Settings
 {
     /// <summary>Enables or disables adaptive quantization.</summary>
@@ -6761,6 +7066,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettings
 {
     /// <summary>Frame capture settings. See Frame Capture Settings for more details.</summary>
@@ -6778,6 +7084,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescriptions
 {
     /// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
@@ -6811,6 +7118,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderEncoderSettings
 {
     /// <summary>Audio descriptions for the channel. See Audio Descriptions for more details.</summary>
@@ -6852,6 +7160,7 @@ public partial class V1beta1ChannelSpecInitProviderEncoderSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings
 {
     /// <summary>The name of the audio selector in the input that MediaLive should monitor to detect silence. Select your most important rendition. If you didn&apos;t create an audio selector in this input, leave blank.</summary>
@@ -6865,6 +7174,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInpu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings
 {
     /// <summary>The amount of time (in milliseconds) that no input is detected. After that time, an input failover will occur.</summary>
@@ -6874,6 +7184,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInpu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings
 {
     /// <summary>A value used in calculating the threshold below which MediaLive considers a pixel to be &apos;black&apos;. For the input to be considered black, every pixel in a frame must be below this threshold. The threshold is calculated as a percentage (expressed as a decimal) of white. Therefore .1 means 10% white (or 90% black). Note how the formula works for any color depth. For example, if you set this field to 0.1 in 10-bit color depth: (10230.1=102.3), which means a pixel value of 102 or less is &apos;black&apos;. If you set this field to .1 in an 8-bit color depth: (2550.1=25.5), which means a pixel value of 25 or less is &apos;black&apos;. The range is 0.0 to 1.0, with any number of decimal places.</summary>
@@ -6887,6 +7198,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInpu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings
 {
     /// <summary>MediaLive will perform a failover if the specified audio selector is silent for the specified period. See Audio Silence Failover Settings for more details.</summary>
@@ -6904,6 +7216,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInpu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition
 {
     /// <summary>Failover condition type-specific settings. See Failover Condition Settings for more details.</summary>
@@ -6913,6 +7226,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInpu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettings
 {
     /// <summary>This clear time defines the requirement a recovered input must meet to be considered healthy. The input must have no failover conditions for this length of time. Enter a time in milliseconds. This value is particularly important if the input_preference for the failover pair is set to PRIMARY_INPUT_PREFERRED, because after this time, MediaLive will switch back to the primary input.</summary>
@@ -6940,6 +7254,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsAutomaticInpu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ChannelSpecInitProviderInputAttachmentsInputIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ChannelSpecInitProviderInputAttachmentsInputIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -6956,6 +7271,7 @@ public enum V1beta1ChannelSpecInitProviderInputAttachmentsInputIdRefPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ChannelSpecInitProviderInputAttachmentsInputIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ChannelSpecInitProviderInputAttachmentsInputIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -6967,6 +7283,7 @@ public enum V1beta1ChannelSpecInitProviderInputAttachmentsInputIdRefPolicyResolv
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputIdRefPolicy
 {
     /// <summary>
@@ -6991,6 +7308,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputIdRefPol
 /// <summary>Reference to a Input in medialive to populate inputId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -7010,6 +7328,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ChannelSpecInitProviderInputAttachmentsInputIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ChannelSpecInitProviderInputAttachmentsInputIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -7026,6 +7345,7 @@ public enum V1beta1ChannelSpecInitProviderInputAttachmentsInputIdSelectorPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ChannelSpecInitProviderInputAttachmentsInputIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ChannelSpecInitProviderInputAttachmentsInputIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -7037,6 +7357,7 @@ public enum V1beta1ChannelSpecInitProviderInputAttachmentsInputIdSelectorPolicyR
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputIdSelectorPolicy
 {
     /// <summary>
@@ -7061,6 +7382,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputIdSelect
 /// <summary>Selector for a Input in medialive to populate inputId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputIdSelector
 {
     /// <summary>
@@ -7081,6 +7403,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputIdSelect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection
 {
     /// <summary>Specifies the GROUP-ID in the #EXT-X-MEDIA tag of the target HLS audio rendition.</summary>
@@ -7094,6 +7417,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection
 {
     /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
@@ -7107,6 +7431,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection
 {
     /// <summary>Selects a specific PID from within a source.</summary>
@@ -7116,6 +7441,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecode
 {
     /// <summary>Applies only to Dolby E. Enter the program ID (according to the metadata in the audio) of the Dolby E program to extract from the specified track. One program extracted per audio selector. To select multiple programs, create multiple selectors with the same Track and different Program numbers. “All channels” means to ignore the program IDs and include all the channels in this selector; useful if metadata is known to be incorrect.</summary>
@@ -7125,6 +7451,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTracks
 {
     /// <summary>1-based integer value that maps to a specific audio track.</summary>
@@ -7134,6 +7461,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection
 {
     /// <summary>Configure decoding options for Dolby E streams - these should be Dolby E frames carried in PCM streams tagged with SMPTE-337. See Dolby E Decode for more details.</summary>
@@ -7147,6 +7475,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettings
 {
     /// <summary>Audio HLS Rendition Selection. See Audio HLS Rendition Selection for more details.</summary>
@@ -7168,6 +7497,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelector
 {
     /// <summary>Name of the Channel.</summary>
@@ -7181,6 +7511,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings
 {
     /// <summary>Specifies the number (1 to 4) of the captions channel you want to extract from the ancillary captions. If you plan to convert the ancillary captions to another format, complete this field. If you plan to choose Embedded as the captions destination in the output (to pass through all the channels in the ancillary captions), leave this field blank because MediaLive ignores the field.</summary>
@@ -7190,12 +7521,14 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettings
 {
     /// <summary>If you will configure a WebVTT caption description that references this caption selector, use this field to provide the language to consider when translating the image-based source to text.</summary>
@@ -7209,6 +7542,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings
 {
     /// <summary>If upconvert, 608 data is both passed through via the “608 compatibility bytes” fields of the 708 wrapper as well as translated into 708. 708 data present in the source content will be discarded.</summary>
@@ -7226,6 +7560,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings
 {
     /// <summary>If upconvert, 608 data is both passed through via the “608 compatibility bytes” fields of the 708 wrapper as well as translated into 708. 708 data present in the source content will be discarded.</summary>
@@ -7239,6 +7574,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings
 {
     /// <summary>If you will configure a WebVTT caption description that references this caption selector, use this field to provide the language to consider when translating the image-based source to text.</summary>
@@ -7252,6 +7588,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle
 {
     /// <summary>See the description in left_offset. For height, specify the entire height of the rectangle as a percentage of the underlying frame height. For example, &quot;80&quot; means the rectangle height is 80% of the underlying frame height. The top_offset and rectangle_height must add up to 100% or less. This field corresponds to tts:extent - Y in the TTML standard.</summary>
@@ -7273,6 +7610,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings
 {
     /// <summary>Optionally defines a region where TTML style captions will be displayed. See Caption Rectangle for more details.</summary>
@@ -7286,6 +7624,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettings
 {
     /// <summary>Ancillary Source Settings. See Ancillary Source Settings for more details.</summary>
@@ -7319,6 +7658,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelector
 {
     /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
@@ -7336,6 +7676,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings
 {
     /// <summary>The bitrate is specified in bits per second, as in an HLS manifest.</summary>
@@ -7361,6 +7702,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsNetworkInputSettings
 {
     /// <summary>Specifies HLS input settings when the uri is for a HLS manifest. See HLS Input Settings for more details.</summary>
@@ -7374,6 +7716,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettingsVideoSelector
 {
     [JsonPropertyName("colorSpace")]
@@ -7385,6 +7728,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 {
     /// <summary>Used to select the audio stream to decode for inputs that have multiple. See Audio Selectors for more details.</summary>
@@ -7433,6 +7777,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputAttachments
 {
     /// <summary>User-specified settings for defining what the conditions are for declaring the input unhealthy and failing over to a different input. See Automatic Input Failover Settings for more details.</summary>
@@ -7462,6 +7807,7 @@ public partial class V1beta1ChannelSpecInitProviderInputAttachments
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderInputSpecification
 {
     [JsonPropertyName("codec")]
@@ -7478,6 +7824,7 @@ public partial class V1beta1ChannelSpecInitProviderInputSpecification
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderMaintenance
 {
     /// <summary>The day of the week to use for maintenance.</summary>
@@ -7497,6 +7844,7 @@ public partial class V1beta1ChannelSpecInitProviderMaintenance
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ChannelSpecInitProviderRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ChannelSpecInitProviderRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -7513,6 +7861,7 @@ public enum V1beta1ChannelSpecInitProviderRoleArnRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ChannelSpecInitProviderRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ChannelSpecInitProviderRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -7524,6 +7873,7 @@ public enum V1beta1ChannelSpecInitProviderRoleArnRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderRoleArnRefPolicy
 {
     /// <summary>
@@ -7548,6 +7898,7 @@ public partial class V1beta1ChannelSpecInitProviderRoleArnRefPolicy
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -7567,6 +7918,7 @@ public partial class V1beta1ChannelSpecInitProviderRoleArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ChannelSpecInitProviderRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ChannelSpecInitProviderRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -7583,6 +7935,7 @@ public enum V1beta1ChannelSpecInitProviderRoleArnSelectorPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ChannelSpecInitProviderRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ChannelSpecInitProviderRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -7594,6 +7947,7 @@ public enum V1beta1ChannelSpecInitProviderRoleArnSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderRoleArnSelectorPolicy
 {
     /// <summary>
@@ -7618,6 +7972,7 @@ public partial class V1beta1ChannelSpecInitProviderRoleArnSelectorPolicy
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderRoleArnSelector
 {
     /// <summary>
@@ -7638,6 +7993,7 @@ public partial class V1beta1ChannelSpecInitProviderRoleArnSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProviderVpc
 {
     /// <summary>List of public address allocation ids to associate with ENIs that will be created in Output VPC. Must specify one for SINGLE_PIPELINE, two for STANDARD channels.</summary>
@@ -7667,6 +8023,7 @@ public partial class V1beta1ChannelSpecInitProviderVpc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecInitProvider
 {
     /// <summary>Specification of CDI inputs for this channel. See CDI Input Specification for more details.</summary>
@@ -7736,6 +8093,7 @@ public partial class V1beta1ChannelSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ChannelSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ChannelSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -7760,6 +8118,7 @@ public enum V1beta1ChannelSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ChannelSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ChannelSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -7776,6 +8135,7 @@ public enum V1beta1ChannelSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ChannelSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ChannelSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -7787,6 +8147,7 @@ public enum V1beta1ChannelSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -7815,6 +8176,7 @@ public partial class V1beta1ChannelSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -7834,6 +8196,7 @@ public partial class V1beta1ChannelSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -7848,6 +8211,7 @@ public partial class V1beta1ChannelSpecWriteConnectionSecretToRef
 /// <summary>ChannelSpec defines the desired state of Channel</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelSpec
 {
     /// <summary>
@@ -7915,6 +8279,7 @@ public partial class V1beta1ChannelSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderCdiInputSpecification
 {
     /// <summary>- Maximum CDI input resolution.</summary>
@@ -7924,6 +8289,7 @@ public partial class V1beta1ChannelStatusAtProviderCdiInputSpecification
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderDestinationsMediaPackageSettings
 {
     /// <summary>ID of the channel in MediaPackage that is the destination for this output group.</summary>
@@ -7933,6 +8299,7 @@ public partial class V1beta1ChannelStatusAtProviderDestinationsMediaPackageSetti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderDestinationsMultiplexSettings
 {
     /// <summary>The ID of the Multiplex that the encoder is providing output to.</summary>
@@ -7946,6 +8313,7 @@ public partial class V1beta1ChannelStatusAtProviderDestinationsMultiplexSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderDestinationsSettings
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -7967,6 +8335,7 @@ public partial class V1beta1ChannelStatusAtProviderDestinationsSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderDestinations
 {
     /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
@@ -7988,6 +8357,7 @@ public partial class V1beta1ChannelStatusAtProviderDestinations
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsAudioNormalizationSettings
 {
     /// <summary>Audio normalization algorithm to use. itu17701 conforms to the CALM Act specification, itu17702 to the EBU R-128 specification.</summary>
@@ -8005,6 +8375,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings
 {
     [JsonPropertyName("cbetCheckDigitString")]
@@ -8021,6 +8392,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings
 {
     [JsonPropertyName("checkDigitString")]
@@ -8033,6 +8405,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings
 {
     /// <summary>Used to insert watermarks of type Nielsen CBET. See Nielsen CBET Settings for more details.</summary>
@@ -8050,6 +8423,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettings
 {
     /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
@@ -8059,6 +8433,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsAacSettings
 {
     /// <summary>Average bitrate in bits/second.</summary>
@@ -8100,6 +8475,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings
 {
     /// <summary>Average bitrate in bits/second.</summary>
@@ -8133,6 +8509,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings
 {
     /// <summary>Average bitrate in bits/second.</summary>
@@ -8166,6 +8543,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings
 {
     /// <summary>Sets the attenuation control.</summary>
@@ -8244,6 +8622,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings
 {
     /// <summary>Average bitrate in bits/second.</summary>
@@ -8261,12 +8640,14 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsWavSettings
 {
     [JsonPropertyName("bitDepth")]
@@ -8283,6 +8664,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettings
 {
     /// <summary>Aac Settings. See AAC Settings for more details.</summary>
@@ -8316,6 +8698,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels
 {
     [JsonPropertyName("gain")]
@@ -8327,6 +8710,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings
 {
     [JsonPropertyName("inputChannelLevels")]
@@ -8338,6 +8722,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptionsRemixSettings
 {
     [JsonPropertyName("channelMappings")]
@@ -8352,6 +8737,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescriptions
 {
     /// <summary>Advanced audio normalization settings. See Audio Normalization Settings for more details.</summary>
@@ -8400,6 +8786,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAudioDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAvailBlankingAvailBlankingImage
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -8417,6 +8804,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAvailBlankingA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAvailBlanking
 {
     /// <summary>Blanking image to be used. See Avail Blanking Image for more details.</summary>
@@ -8430,12 +8818,14 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsAvailBlanking
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFont
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -8453,6 +8843,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescrip
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettings
 {
     /// <summary>If no explicit xPosition or yPosition is provided, setting alignment to centered will place the captions at the bottom center of the output. Similarly, setting a left alignment will align captions to the bottom left of the output. If x and y positions are given in conjunction with the alignment parameter, the font will be justified (either left or centered) relative to those coordinates. Selecting “smart” justification will left-justify live subtitles and center-justify pre-recorded subtitles. All burn-in and DVB-Sub font settings must match.</summary>
@@ -8526,6 +8917,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescrip
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFont
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -8543,6 +8935,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescrip
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettings
 {
     /// <summary>If no explicit xPosition or yPosition is provided, setting alignment to centered will place the captions at the bottom center of the output. Similarly, setting a left alignment will align captions to the bottom left of the output. If x and y positions are given in conjunction with the alignment parameter, the font will be justified (either left or centered) relative to those coordinates. Selecting “smart” justification will left-justify live subtitles and center-justify pre-recorded subtitles. All burn-in and DVB-Sub font settings must match.</summary>
@@ -8616,6 +9009,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescrip
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettings
 {
     /// <summary>Complete this field if you want to include the name of the copyright holder in the copyright tag in the captions metadata.</summary>
@@ -8637,48 +9031,56 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescrip
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettings
 {
     /// <summary>Specifies the style information (font color, font position, and so on) to include in the font data that is attached to the EBU-TT captions. - include: Take the style information (font color, font position, and so on) from the source captions and include that information in the font data attached to the EBU-TT captions. This option is valid only if the source captions are Embedded or Teletext. - exclude: In the font data attached to the EBU-TT captions, set the font family to “monospaced”. Do not include any other style information.</summary>
@@ -8688,6 +9090,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescrip
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings
 {
     /// <summary>Specifies the style information (font color, font position, and so on) to include in the font data that is attached to the EBU-TT captions. - include: Take the style information (font color, font position, and so on) from the source captions and include that information in the font data attached to the EBU-TT captions. This option is valid only if the source captions are Embedded or Teletext. - exclude: In the font data attached to the EBU-TT captions, set the font family to “monospaced”. Do not include any other style information.</summary>
@@ -8697,6 +9100,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescrip
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettings
 {
     /// <summary>ARIB Destination Settings.</summary>
@@ -8754,6 +9158,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescrip
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescriptions
 {
     /// <summary>Indicates whether the caption track implements accessibility features such as written descriptions of spoken dialog, music, and sounds.</summary>
@@ -8783,6 +9188,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsCaptionDescrip
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlate
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -8800,6 +9206,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsGlobalConfigur
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsGlobalConfigurationInputLossBehavior
 {
     [JsonPropertyName("blackFrameMsec")]
@@ -8820,6 +9227,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsGlobalConfigur
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsGlobalConfiguration
 {
     /// <summary>Value to set the initial audio gain for the Live Event.</summary>
@@ -8849,12 +9257,14 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsGlobalConfigur
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettings
 {
     /// <summary>Html Motion Graphics Settings.</summary>
@@ -8864,6 +9274,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsMotionGraphics
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsMotionGraphicsConfiguration
 {
     /// <summary>Motion Graphics Insertion.</summary>
@@ -8877,6 +9288,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsMotionGraphics
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsNielsenConfiguration
 {
     /// <summary>Enter the Distributor ID assigned to your organization by Nielsen.</summary>
@@ -8890,6 +9302,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsNielsenConfigu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings
 {
     /// <summary>Specify the canned ACL to apply to each S3 request.</summary>
@@ -8899,6 +9312,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings
 {
     /// <summary>Archive S3 Settings. See Archive S3 Settings for more details.</summary>
@@ -8908,6 +9322,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -8917,6 +9332,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings
 {
     /// <summary>Parameters that control the interactions with the CDN. See Archive CDN Settings for more details.</summary>
@@ -8934,6 +9350,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -8943,6 +9360,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings
 {
     /// <summary>Specify the canned ACL to apply to each S3 request.</summary>
@@ -8952,6 +9370,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings
 {
     /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
@@ -8961,6 +9380,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings
 {
     /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
@@ -8974,6 +9394,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings
 {
     [JsonPropertyName("captionChannel")]
@@ -8990,6 +9411,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -8999,6 +9421,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings
 {
     /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
@@ -9028,6 +9451,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings
 {
     /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
@@ -9048,6 +9472,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings
 {
     /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
@@ -9071,6 +9496,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings
 {
     /// <summary>Specify the canned ACL to apply to each S3 request.</summary>
@@ -9080,6 +9506,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings
 {
     /// <summary>Number of seconds to wait before retrying connection to the flash media server if the connection is lost.</summary>
@@ -9103,6 +9530,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings
 {
     /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
@@ -9128,6 +9556,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -9145,6 +9574,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings
 {
     [JsonPropertyName("keyProviderServer")]
@@ -9156,6 +9586,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings
 {
     /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
@@ -9165,6 +9596,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings
 {
     /// <summary>The ad marker type for this output group.</summary>
@@ -9305,6 +9737,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -9314,6 +9747,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings
 {
     /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
@@ -9323,6 +9757,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -9332,6 +9767,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings
 {
     /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
@@ -9402,12 +9838,14 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings
 {
     /// <summary>The ad marker type for this output group.</summary>
@@ -9441,6 +9879,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings
 {
     /// <summary>Controls the behavior of the RTMP group if input becomes unavailable.</summary>
@@ -9457,6 +9896,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettings
 {
     /// <summary>Archive group settings. See Archive Group Settings for more details.</summary>
@@ -9494,6 +9934,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings
 {
     /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
@@ -9510,6 +9951,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings
 {
     [JsonPropertyName("outputSdt")]
@@ -9529,6 +9971,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings
 {
     [JsonPropertyName("repInterval")]
@@ -9537,6 +9980,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettings
 {
     [JsonPropertyName("absentInputAudioBehavior")]
@@ -9699,12 +10143,14 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings
 {
     /// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
@@ -9718,6 +10164,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings
 {
     /// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
@@ -9735,6 +10182,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings
 {
     /// <summary>String concatenated to the end of the destination filename. Required for multiple outputs of the same type.</summary>
@@ -9744,6 +10192,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage
 {
     /// <summary>Key used to extract the password from EC2 Parameter store.</summary>
@@ -9761,6 +10210,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings
 {
     /// <summary>Specifies the GROUP-ID in the #EXT-X-MEDIA tag of the target HLS audio rendition.</summary>
@@ -9779,6 +10229,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings
 {
     [JsonPropertyName("audioRenditionSets")]
@@ -9793,12 +10244,14 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3u8Settings
 {
     [JsonPropertyName("audioFramesPerPes")]
@@ -9862,6 +10315,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings
 {
     [JsonPropertyName("audioRenditionSets")]
@@ -9874,6 +10328,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings
 {
     /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
@@ -9895,6 +10350,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings
 {
     [JsonPropertyName("h265PackagingType")]
@@ -9914,12 +10370,14 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings
 {
     [JsonPropertyName("h265PackagingType")]
@@ -9932,6 +10390,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -9941,6 +10400,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings
 {
     /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
@@ -9950,6 +10410,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -9959,6 +10420,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings
 {
     /// <summary>Setting to allow self signed or verified RTMP certificates.</summary>
@@ -9980,6 +10442,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings
 {
     /// <summary>User-specified id. Ths is used in an output group or an output.</summary>
@@ -9996,6 +10459,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings
 {
     [JsonPropertyName("outputSdt")]
@@ -10015,6 +10479,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings
 {
     [JsonPropertyName("repInterval")]
@@ -10023,6 +10488,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettings
 {
     [JsonPropertyName("absentInputAudioBehavior")]
@@ -10185,6 +10651,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings
 {
     /// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
@@ -10194,6 +10661,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination
 {
     /// <summary>Reference ID for the destination.</summary>
@@ -10203,6 +10671,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings
 {
     /// <summary>The height of the FEC protection matrix.</summary>
@@ -10220,6 +10689,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings
 {
     /// <summary>UDP output buffering in milliseconds.</summary>
@@ -10241,6 +10711,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettings
 {
     /// <summary>Archive output settings. See Archive Output Settings for more details.</summary>
@@ -10278,6 +10749,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputs
 {
     /// <summary>The names of the audio descriptions used as audio sources for the output.</summary>
@@ -10303,6 +10775,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroups
 {
     /// <summary>Name of the Channel.</summary>
@@ -10320,6 +10793,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsOutputGroups
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsTimecodeConfig
 {
     /// <summary>The source for the timecode that will be associated with the events outputs.</summary>
@@ -10333,6 +10807,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsTimecodeConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings
 {
     /// <summary>The frequency at which to capture frames for inclusion in the output.</summary>
@@ -10346,6 +10821,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings
 {
     /// <summary>Post filter sharpening.</summary>
@@ -10359,6 +10835,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings
 {
     /// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
@@ -10368,6 +10845,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH264Settings
 {
     /// <summary>Enables or disables adaptive quantization.</summary>
@@ -10531,18 +11009,21 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsColorSpacePassthroughSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsDolbyVision81Settings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsHdr10Settings
 {
     /// <summary>Sets the MaxCLL value for HDR10.</summary>
@@ -10556,18 +11037,21 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec601Settings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec709Settings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettings
 {
     /// <summary>Sets the colorspace metadata to be passed through.</summary>
@@ -10593,6 +11077,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettingsTemporalFilterSettings
 {
     /// <summary>Post filter sharpening.</summary>
@@ -10606,6 +11091,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettings
 {
     /// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
@@ -10615,6 +11101,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsTimecodeBurninSettings
 {
     /// <summary>Set a prefix on the burned in timecode.</summary>
@@ -10632,6 +11119,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265Settings
 {
     /// <summary>Enables or disables adaptive quantization.</summary>
@@ -10784,6 +11272,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettings
 {
     /// <summary>Frame capture settings. See Frame Capture Settings for more details.</summary>
@@ -10801,6 +11290,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescriptions
 {
     /// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
@@ -10834,6 +11324,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettingsVideoDescripti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderEncoderSettings
 {
     /// <summary>Audio descriptions for the channel. See Audio Descriptions for more details.</summary>
@@ -10875,6 +11366,7 @@ public partial class V1beta1ChannelStatusAtProviderEncoderSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings
 {
     /// <summary>The name of the audio selector in the input that MediaLive should monitor to detect silence. Select your most important rendition. If you didn&apos;t create an audio selector in this input, leave blank.</summary>
@@ -10888,6 +11380,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInpu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings
 {
     /// <summary>The amount of time (in milliseconds) that no input is detected. After that time, an input failover will occur.</summary>
@@ -10897,6 +11390,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInpu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings
 {
     /// <summary>A value used in calculating the threshold below which MediaLive considers a pixel to be &apos;black&apos;. For the input to be considered black, every pixel in a frame must be below this threshold. The threshold is calculated as a percentage (expressed as a decimal) of white. Therefore .1 means 10% white (or 90% black). Note how the formula works for any color depth. For example, if you set this field to 0.1 in 10-bit color depth: (10230.1=102.3), which means a pixel value of 102 or less is &apos;black&apos;. If you set this field to .1 in an 8-bit color depth: (2550.1=25.5), which means a pixel value of 25 or less is &apos;black&apos;. The range is 0.0 to 1.0, with any number of decimal places.</summary>
@@ -10910,6 +11404,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInpu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings
 {
     /// <summary>MediaLive will perform a failover if the specified audio selector is silent for the specified period. See Audio Silence Failover Settings for more details.</summary>
@@ -10927,6 +11422,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInpu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition
 {
     /// <summary>Failover condition type-specific settings. See Failover Condition Settings for more details.</summary>
@@ -10936,6 +11432,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInpu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettings
 {
     /// <summary>This clear time defines the requirement a recovered input must meet to be considered healthy. The input must have no failover conditions for this length of time. Enter a time in milliseconds. This value is particularly important if the input_preference for the failover pair is set to PRIMARY_INPUT_PREFERRED, because after this time, MediaLive will switch back to the primary input.</summary>
@@ -10957,6 +11454,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsAutomaticInpu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection
 {
     /// <summary>Specifies the GROUP-ID in the #EXT-X-MEDIA tag of the target HLS audio rendition.</summary>
@@ -10970,6 +11468,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection
 {
     /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
@@ -10983,6 +11482,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection
 {
     /// <summary>Selects a specific PID from within a source.</summary>
@@ -10992,6 +11492,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecode
 {
     /// <summary>Applies only to Dolby E. Enter the program ID (according to the metadata in the audio) of the Dolby E program to extract from the specified track. One program extracted per audio selector. To select multiple programs, create multiple selectors with the same Track and different Program numbers. “All channels” means to ignore the program IDs and include all the channels in this selector; useful if metadata is known to be incorrect.</summary>
@@ -11001,6 +11502,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTracks
 {
     /// <summary>1-based integer value that maps to a specific audio track.</summary>
@@ -11010,6 +11512,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection
 {
     /// <summary>Configure decoding options for Dolby E streams - these should be Dolby E frames carried in PCM streams tagged with SMPTE-337. See Dolby E Decode for more details.</summary>
@@ -11023,6 +11526,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettings
 {
     /// <summary>Audio HLS Rendition Selection. See Audio HLS Rendition Selection for more details.</summary>
@@ -11044,6 +11548,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelector
 {
     /// <summary>Name of the Channel.</summary>
@@ -11057,6 +11562,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings
 {
     /// <summary>Specifies the number (1 to 4) of the captions channel you want to extract from the ancillary captions. If you plan to convert the ancillary captions to another format, complete this field. If you plan to choose Embedded as the captions destination in the output (to pass through all the channels in the ancillary captions), leave this field blank because MediaLive ignores the field.</summary>
@@ -11066,12 +11572,14 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettings
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettings
 {
     /// <summary>If you will configure a WebVTT caption description that references this caption selector, use this field to provide the language to consider when translating the image-based source to text.</summary>
@@ -11085,6 +11593,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings
 {
     /// <summary>If upconvert, 608 data is both passed through via the “608 compatibility bytes” fields of the 708 wrapper as well as translated into 708. 708 data present in the source content will be discarded.</summary>
@@ -11102,6 +11611,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings
 {
     /// <summary>If upconvert, 608 data is both passed through via the “608 compatibility bytes” fields of the 708 wrapper as well as translated into 708. 708 data present in the source content will be discarded.</summary>
@@ -11115,6 +11625,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings
 {
     /// <summary>If you will configure a WebVTT caption description that references this caption selector, use this field to provide the language to consider when translating the image-based source to text.</summary>
@@ -11128,6 +11639,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle
 {
     /// <summary>See the description in left_offset. For height, specify the entire height of the rectangle as a percentage of the underlying frame height. For example, &quot;80&quot; means the rectangle height is 80% of the underlying frame height. The top_offset and rectangle_height must add up to 100% or less. This field corresponds to tts:extent - Y in the TTML standard.</summary>
@@ -11149,6 +11661,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings
 {
     /// <summary>Optionally defines a region where TTML style captions will be displayed. See Caption Rectangle for more details.</summary>
@@ -11162,6 +11675,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettings
 {
     /// <summary>Ancillary Source Settings. See Ancillary Source Settings for more details.</summary>
@@ -11195,6 +11709,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelector
 {
     /// <summary>Selects a specific three-letter language code from within an audio source.</summary>
@@ -11212,6 +11727,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings
 {
     /// <summary>The bitrate is specified in bits per second, as in an HLS manifest.</summary>
@@ -11237,6 +11753,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsNetworkInputSettings
 {
     /// <summary>Specifies HLS input settings when the uri is for a HLS manifest. See HLS Input Settings for more details.</summary>
@@ -11250,6 +11767,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettingsVideoSelector
 {
     [JsonPropertyName("colorSpace")]
@@ -11261,6 +11779,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 {
     /// <summary>Used to select the audio stream to decode for inputs that have multiple. See Audio Selectors for more details.</summary>
@@ -11309,6 +11828,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachmentsInputSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputAttachments
 {
     /// <summary>User-specified settings for defining what the conditions are for declaring the input unhealthy and failing over to a different input. See Automatic Input Failover Settings for more details.</summary>
@@ -11330,6 +11850,7 @@ public partial class V1beta1ChannelStatusAtProviderInputAttachments
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderInputSpecification
 {
     [JsonPropertyName("codec")]
@@ -11346,6 +11867,7 @@ public partial class V1beta1ChannelStatusAtProviderInputSpecification
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderMaintenance
 {
     /// <summary>The day of the week to use for maintenance.</summary>
@@ -11359,6 +11881,7 @@ public partial class V1beta1ChannelStatusAtProviderMaintenance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProviderVpc
 {
     [JsonPropertyName("availabilityZones")]
@@ -11382,6 +11905,7 @@ public partial class V1beta1ChannelStatusAtProviderVpc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusAtProvider
 {
     /// <summary>ARN of the Channel.</summary>
@@ -11462,6 +11986,7 @@ public partial class V1beta1ChannelStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatusConditions
 {
     /// <summary>
@@ -11505,6 +12030,7 @@ public partial class V1beta1ChannelStatusConditions
 /// <summary>ChannelStatus defines the observed state of Channel.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ChannelStatus
 {
     [JsonPropertyName("atProvider")]
@@ -11523,9 +12049,13 @@ public partial class V1beta1ChannelStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Channel is the Schema for the Channels API.</summary>
+/// <summary>
+/// Channel is the Schema for the Channels API.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Channel : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ChannelSpec>, IStatus<V1beta1ChannelStatus?>
 {

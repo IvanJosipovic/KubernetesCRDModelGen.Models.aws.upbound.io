@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ssoadmin.aws.upbound.io;
-/// <summary>PermissionsBoundaryAttachment is the Schema for the PermissionsBoundaryAttachments API. Attaches a permissions boundary policy to a Single Sign-On (SSO) Permission Set resource.</summary>
+/// <summary>
+/// PermissionsBoundaryAttachment is the Schema for the PermissionsBoundaryAttachments API. Attaches a permissions boundary policy to a Single Sign-On (SSO) Permission Set resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PermissionsBoundaryAttachmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PermissionsBoundaryAttachment>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentList : IKubernetesObjec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PermissionsBoundaryAttachmentSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
 /// <summary>Reference to a PermissionSet in ssoadmin to populate permissionSetArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnS
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
 /// <summary>Selector for a PermissionSet in ssoadmin to populate permissionSetArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionSetArnSelector
 {
     /// <summary>
@@ -210,6 +223,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -226,6 +240,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBounda
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -237,6 +252,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBounda
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRefPolicy
 {
     /// <summary>
@@ -261,6 +277,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
 /// <summary>Reference to a Policy in iam to populate name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -280,6 +297,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -296,6 +314,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBounda
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -307,6 +326,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBounda
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicy
 {
     /// <summary>
@@ -331,6 +351,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
 /// <summary>Selector for a Policy in iam to populate name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelector
 {
     /// <summary>
@@ -351,6 +372,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundaryCustomerManagedPolicyReference
 {
     /// <summary>Name of the customer managed IAM Policy to be attached.</summary>
@@ -372,6 +394,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissionsBoundary
 {
     /// <summary>Specifies the name and path of a customer managed policy. See below.</summary>
@@ -385,6 +408,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProviderPermissi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecForProvider
 {
     /// <summary>The Amazon Resource Name (ARN) of the SSO Instance under which the operation will be executed.</summary>
@@ -423,6 +447,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -439,6 +464,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBound
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -450,6 +476,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBound
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRefPolicy
 {
     /// <summary>
@@ -474,6 +501,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermiss
 /// <summary>Reference to a Policy in iam to populate name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -493,6 +521,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermiss
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -509,6 +538,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBound
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -520,6 +550,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBound
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelectorPolicy
 {
     /// <summary>
@@ -544,6 +575,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermiss
 /// <summary>Selector for a Policy in iam to populate name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReferenceNameSelector
 {
     /// <summary>
@@ -564,6 +596,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermiss
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundaryCustomerManagedPolicyReference
 {
     /// <summary>Name of the customer managed IAM Policy to be attached.</summary>
@@ -585,6 +618,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermiss
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermissionsBoundary
 {
     /// <summary>Specifies the name and path of a customer managed policy. See below.</summary>
@@ -610,6 +644,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProviderPermiss
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProvider
 {
     /// <summary>The permissions boundary policy. See below.</summary>
@@ -623,6 +658,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PermissionsBoundaryAttachmentSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -647,6 +683,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PermissionsBoundaryAttachmentSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -663,6 +700,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecProviderConfigRefPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PermissionsBoundaryAttachmentSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PermissionsBoundaryAttachmentSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -674,6 +712,7 @@ public enum V1beta1PermissionsBoundaryAttachmentSpecProviderConfigRefPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -702,6 +741,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecProviderConfigRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -721,6 +761,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -735,6 +776,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpecWriteConnectionSecr
 /// <summary>PermissionsBoundaryAttachmentSpec defines the desired state of PermissionsBoundaryAttachment</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentSpec
 {
     /// <summary>
@@ -802,6 +844,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentStatusAtProviderPermissionsBoundaryCustomerManagedPolicyReference
 {
     /// <summary>Name of the customer managed IAM Policy to be attached.</summary>
@@ -815,6 +858,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentStatusAtProviderPermiss
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentStatusAtProviderPermissionsBoundary
 {
     /// <summary>Specifies the name and path of a customer managed policy. See below.</summary>
@@ -828,6 +872,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentStatusAtProviderPermiss
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentStatusAtProvider
 {
     /// <summary>Permission Set Amazon Resource Name (ARN) and SSO Instance ARN, separated by a comma (,).</summary>
@@ -857,6 +902,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentStatusConditions
 {
     /// <summary>
@@ -900,6 +946,7 @@ public partial class V1beta1PermissionsBoundaryAttachmentStatusConditions
 /// <summary>PermissionsBoundaryAttachmentStatus defines the observed state of PermissionsBoundaryAttachment.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PermissionsBoundaryAttachmentStatus
 {
     [JsonPropertyName("atProvider")]
@@ -918,9 +965,13 @@ public partial class V1beta1PermissionsBoundaryAttachmentStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>PermissionsBoundaryAttachment is the Schema for the PermissionsBoundaryAttachments API. Attaches a permissions boundary policy to a Single Sign-On (SSO) Permission Set resource.</summary>
+/// <summary>
+/// PermissionsBoundaryAttachment is the Schema for the PermissionsBoundaryAttachments API. Attaches a permissions boundary policy to a Single Sign-On (SSO) Permission Set resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PermissionsBoundaryAttachment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PermissionsBoundaryAttachmentSpec>, IStatus<V1beta1PermissionsBoundaryAttachmentStatus?>
 {

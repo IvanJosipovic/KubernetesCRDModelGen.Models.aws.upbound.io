@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.codepipeline.aws.upbound.io;
-/// <summary>Codepipeline is the Schema for the Codepipelines API. Provides a CodePipeline</summary>
+/// <summary>
+/// Codepipeline is the Schema for the Codepipelines API. Provides a CodePipeline
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CodepipelineList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Codepipeline>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1CodepipelineList : IKubernetesObject<V1ListMeta>, II
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodepipelineSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CodepipelineSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1CodepipelineSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderArtifactStoreEncryptionKey
 {
     /// <summary>The KMS key ARN or ID</summary>
@@ -76,6 +82,7 @@ public partial class V1beta1CodepipelineSpecForProviderArtifactStoreEncryptionKe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodepipelineSpecForProviderArtifactStoreLocationRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CodepipelineSpecForProviderArtifactStoreLocationRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -92,6 +99,7 @@ public enum V1beta1CodepipelineSpecForProviderArtifactStoreLocationRefPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodepipelineSpecForProviderArtifactStoreLocationRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CodepipelineSpecForProviderArtifactStoreLocationRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -103,6 +111,7 @@ public enum V1beta1CodepipelineSpecForProviderArtifactStoreLocationRefPolicyReso
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderArtifactStoreLocationRefPolicy
 {
     /// <summary>
@@ -127,6 +136,7 @@ public partial class V1beta1CodepipelineSpecForProviderArtifactStoreLocationRefP
 /// <summary>Reference to a Bucket in s3 to populate location.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderArtifactStoreLocationRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -146,6 +156,7 @@ public partial class V1beta1CodepipelineSpecForProviderArtifactStoreLocationRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodepipelineSpecForProviderArtifactStoreLocationSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CodepipelineSpecForProviderArtifactStoreLocationSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -162,6 +173,7 @@ public enum V1beta1CodepipelineSpecForProviderArtifactStoreLocationSelectorPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodepipelineSpecForProviderArtifactStoreLocationSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CodepipelineSpecForProviderArtifactStoreLocationSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -173,6 +185,7 @@ public enum V1beta1CodepipelineSpecForProviderArtifactStoreLocationSelectorPolic
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderArtifactStoreLocationSelectorPolicy
 {
     /// <summary>
@@ -197,6 +210,7 @@ public partial class V1beta1CodepipelineSpecForProviderArtifactStoreLocationSele
 /// <summary>Selector for a Bucket in s3 to populate location.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderArtifactStoreLocationSelector
 {
     /// <summary>
@@ -217,6 +231,7 @@ public partial class V1beta1CodepipelineSpecForProviderArtifactStoreLocationSele
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderArtifactStore
 {
     /// <summary>The encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as an AWS Key Management Service (AWS KMS) key. If you don&apos;t specify a key, AWS CodePipeline uses the default key for Amazon Simple Storage Service (Amazon S3). An encryption_key block is documented below.</summary>
@@ -252,6 +267,7 @@ public partial class V1beta1CodepipelineSpecForProviderArtifactStore
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodepipelineSpecForProviderRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CodepipelineSpecForProviderRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -268,6 +284,7 @@ public enum V1beta1CodepipelineSpecForProviderRoleArnRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodepipelineSpecForProviderRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CodepipelineSpecForProviderRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -279,6 +296,7 @@ public enum V1beta1CodepipelineSpecForProviderRoleArnRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderRoleArnRefPolicy
 {
     /// <summary>
@@ -303,6 +321,7 @@ public partial class V1beta1CodepipelineSpecForProviderRoleArnRefPolicy
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -322,6 +341,7 @@ public partial class V1beta1CodepipelineSpecForProviderRoleArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodepipelineSpecForProviderRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CodepipelineSpecForProviderRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -338,6 +358,7 @@ public enum V1beta1CodepipelineSpecForProviderRoleArnSelectorPolicyResolutionEnu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodepipelineSpecForProviderRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CodepipelineSpecForProviderRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -349,6 +370,7 @@ public enum V1beta1CodepipelineSpecForProviderRoleArnSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderRoleArnSelectorPolicy
 {
     /// <summary>
@@ -373,6 +395,7 @@ public partial class V1beta1CodepipelineSpecForProviderRoleArnSelectorPolicy
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderRoleArnSelector
 {
     /// <summary>
@@ -393,6 +416,7 @@ public partial class V1beta1CodepipelineSpecForProviderRoleArnSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderStageAction
 {
     /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
@@ -450,6 +474,7 @@ public partial class V1beta1CodepipelineSpecForProviderStageAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderStageBeforeEntryConditionRuleRuleTypeId
 {
     /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
@@ -471,6 +496,7 @@ public partial class V1beta1CodepipelineSpecForProviderStageBeforeEntryCondition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderStageBeforeEntryConditionRule
 {
     /// <summary>The shell commands to run with your commands rule in CodePipeline. All commands are supported except multi-line formats.</summary>
@@ -508,6 +534,7 @@ public partial class V1beta1CodepipelineSpecForProviderStageBeforeEntryCondition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderStageBeforeEntryCondition
 {
     /// <summary>The conditions that are configured as failure conditions. Possible values are ROLLBACK,  FAIL, RETRY and SKIP.</summary>
@@ -521,6 +548,7 @@ public partial class V1beta1CodepipelineSpecForProviderStageBeforeEntryCondition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderStageBeforeEntry
 {
     /// <summary>The conditions that are success conditions. Defined as a condition block below.</summary>
@@ -530,6 +558,7 @@ public partial class V1beta1CodepipelineSpecForProviderStageBeforeEntry
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderStageOnFailureConditionRuleRuleTypeId
 {
     /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
@@ -551,6 +580,7 @@ public partial class V1beta1CodepipelineSpecForProviderStageOnFailureConditionRu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderStageOnFailureConditionRule
 {
     /// <summary>The shell commands to run with your commands rule in CodePipeline. All commands are supported except multi-line formats.</summary>
@@ -588,6 +618,7 @@ public partial class V1beta1CodepipelineSpecForProviderStageOnFailureConditionRu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderStageOnFailureCondition
 {
     /// <summary>The conditions that are configured as failure conditions. Possible values are ROLLBACK,  FAIL, RETRY and SKIP.</summary>
@@ -601,6 +632,7 @@ public partial class V1beta1CodepipelineSpecForProviderStageOnFailureCondition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderStageOnFailureRetryConfiguration
 {
     /// <summary>The method that you want to configure for automatic stage retry on stage failure. You can specify to retry only failed action in the stage or all actions in the stage. Possible values are FAILED_ACTIONS and ALL_ACTIONS.</summary>
@@ -610,6 +642,7 @@ public partial class V1beta1CodepipelineSpecForProviderStageOnFailureRetryConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderStageOnFailure
 {
     /// <summary>The conditions that are success conditions. Defined as a condition block below.</summary>
@@ -627,6 +660,7 @@ public partial class V1beta1CodepipelineSpecForProviderStageOnFailure
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderStageOnSuccessConditionRuleRuleTypeId
 {
     /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
@@ -648,6 +682,7 @@ public partial class V1beta1CodepipelineSpecForProviderStageOnSuccessConditionRu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderStageOnSuccessConditionRule
 {
     /// <summary>The shell commands to run with your commands rule in CodePipeline. All commands are supported except multi-line formats.</summary>
@@ -685,6 +720,7 @@ public partial class V1beta1CodepipelineSpecForProviderStageOnSuccessConditionRu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderStageOnSuccessCondition
 {
     /// <summary>The conditions that are configured as failure conditions. Possible values are ROLLBACK,  FAIL, RETRY and SKIP.</summary>
@@ -698,6 +734,7 @@ public partial class V1beta1CodepipelineSpecForProviderStageOnSuccessCondition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderStageOnSuccess
 {
     /// <summary>The conditions that are success conditions. Defined as a condition block below.</summary>
@@ -707,6 +744,7 @@ public partial class V1beta1CodepipelineSpecForProviderStageOnSuccess
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderStage
 {
     /// <summary>The action(s) to include in the stage. Defined as an action block below</summary>
@@ -732,6 +770,7 @@ public partial class V1beta1CodepipelineSpecForProviderStage
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderTriggerGitConfigurationPullRequestBranches
 {
     /// <summary>A list of patterns of Git tags that, when pushed, are to be excluded from starting the pipeline.</summary>
@@ -745,6 +784,7 @@ public partial class V1beta1CodepipelineSpecForProviderTriggerGitConfigurationPu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderTriggerGitConfigurationPullRequestFilePaths
 {
     /// <summary>A list of patterns of Git tags that, when pushed, are to be excluded from starting the pipeline.</summary>
@@ -758,6 +798,7 @@ public partial class V1beta1CodepipelineSpecForProviderTriggerGitConfigurationPu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderTriggerGitConfigurationPullRequest
 {
     /// <summary>The field that specifies to filter on branches for the pull request trigger configuration. A branches block is documented below.</summary>
@@ -775,6 +816,7 @@ public partial class V1beta1CodepipelineSpecForProviderTriggerGitConfigurationPu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderTriggerGitConfigurationPushBranches
 {
     /// <summary>A list of patterns of Git tags that, when pushed, are to be excluded from starting the pipeline.</summary>
@@ -788,6 +830,7 @@ public partial class V1beta1CodepipelineSpecForProviderTriggerGitConfigurationPu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderTriggerGitConfigurationPushFilePaths
 {
     /// <summary>A list of patterns of Git tags that, when pushed, are to be excluded from starting the pipeline.</summary>
@@ -801,6 +844,7 @@ public partial class V1beta1CodepipelineSpecForProviderTriggerGitConfigurationPu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderTriggerGitConfigurationPushTags
 {
     /// <summary>A list of patterns of Git tags that, when pushed, are to be excluded from starting the pipeline.</summary>
@@ -814,6 +858,7 @@ public partial class V1beta1CodepipelineSpecForProviderTriggerGitConfigurationPu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderTriggerGitConfigurationPush
 {
     /// <summary>The field that specifies to filter on branches for the pull request trigger configuration. A branches block is documented below.</summary>
@@ -831,6 +876,7 @@ public partial class V1beta1CodepipelineSpecForProviderTriggerGitConfigurationPu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderTriggerGitConfiguration
 {
     /// <summary>The field where the repository event that will start the pipeline is specified as pull requests. A pull_request block is documented below.</summary>
@@ -848,6 +894,7 @@ public partial class V1beta1CodepipelineSpecForProviderTriggerGitConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderTrigger
 {
     /// <summary>Provides the filter criteria and the source stage for the repository event that starts the pipeline. For more information, refer to the AWS documentation. A git_configuration block is documented below.</summary>
@@ -861,6 +908,7 @@ public partial class V1beta1CodepipelineSpecForProviderTrigger
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProviderVariable
 {
     /// <summary>The default value of a pipeline-level variable.</summary>
@@ -878,6 +926,7 @@ public partial class V1beta1CodepipelineSpecForProviderVariable
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecForProvider
 {
     /// <summary>One or more artifact_store blocks. Artifact stores are documented below.</summary>
@@ -930,6 +979,7 @@ public partial class V1beta1CodepipelineSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderArtifactStoreEncryptionKey
 {
     /// <summary>The KMS key ARN or ID</summary>
@@ -949,6 +999,7 @@ public partial class V1beta1CodepipelineSpecInitProviderArtifactStoreEncryptionK
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodepipelineSpecInitProviderArtifactStoreLocationRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CodepipelineSpecInitProviderArtifactStoreLocationRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -965,6 +1016,7 @@ public enum V1beta1CodepipelineSpecInitProviderArtifactStoreLocationRefPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodepipelineSpecInitProviderArtifactStoreLocationRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CodepipelineSpecInitProviderArtifactStoreLocationRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -976,6 +1028,7 @@ public enum V1beta1CodepipelineSpecInitProviderArtifactStoreLocationRefPolicyRes
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderArtifactStoreLocationRefPolicy
 {
     /// <summary>
@@ -1000,6 +1053,7 @@ public partial class V1beta1CodepipelineSpecInitProviderArtifactStoreLocationRef
 /// <summary>Reference to a Bucket in s3 to populate location.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderArtifactStoreLocationRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1019,6 +1073,7 @@ public partial class V1beta1CodepipelineSpecInitProviderArtifactStoreLocationRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodepipelineSpecInitProviderArtifactStoreLocationSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CodepipelineSpecInitProviderArtifactStoreLocationSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1035,6 +1090,7 @@ public enum V1beta1CodepipelineSpecInitProviderArtifactStoreLocationSelectorPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodepipelineSpecInitProviderArtifactStoreLocationSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CodepipelineSpecInitProviderArtifactStoreLocationSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1046,6 +1102,7 @@ public enum V1beta1CodepipelineSpecInitProviderArtifactStoreLocationSelectorPoli
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderArtifactStoreLocationSelectorPolicy
 {
     /// <summary>
@@ -1070,6 +1127,7 @@ public partial class V1beta1CodepipelineSpecInitProviderArtifactStoreLocationSel
 /// <summary>Selector for a Bucket in s3 to populate location.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderArtifactStoreLocationSelector
 {
     /// <summary>
@@ -1090,6 +1148,7 @@ public partial class V1beta1CodepipelineSpecInitProviderArtifactStoreLocationSel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderArtifactStore
 {
     /// <summary>The encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as an AWS Key Management Service (AWS KMS) key. If you don&apos;t specify a key, AWS CodePipeline uses the default key for Amazon Simple Storage Service (Amazon S3). An encryption_key block is documented below.</summary>
@@ -1121,6 +1180,7 @@ public partial class V1beta1CodepipelineSpecInitProviderArtifactStore
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodepipelineSpecInitProviderRoleArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CodepipelineSpecInitProviderRoleArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1137,6 +1197,7 @@ public enum V1beta1CodepipelineSpecInitProviderRoleArnRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodepipelineSpecInitProviderRoleArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CodepipelineSpecInitProviderRoleArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1148,6 +1209,7 @@ public enum V1beta1CodepipelineSpecInitProviderRoleArnRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderRoleArnRefPolicy
 {
     /// <summary>
@@ -1172,6 +1234,7 @@ public partial class V1beta1CodepipelineSpecInitProviderRoleArnRefPolicy
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderRoleArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1191,6 +1254,7 @@ public partial class V1beta1CodepipelineSpecInitProviderRoleArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodepipelineSpecInitProviderRoleArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CodepipelineSpecInitProviderRoleArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1207,6 +1271,7 @@ public enum V1beta1CodepipelineSpecInitProviderRoleArnSelectorPolicyResolutionEn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodepipelineSpecInitProviderRoleArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CodepipelineSpecInitProviderRoleArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1218,6 +1283,7 @@ public enum V1beta1CodepipelineSpecInitProviderRoleArnSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderRoleArnSelectorPolicy
 {
     /// <summary>
@@ -1242,6 +1308,7 @@ public partial class V1beta1CodepipelineSpecInitProviderRoleArnSelectorPolicy
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderRoleArnSelector
 {
     /// <summary>
@@ -1262,6 +1329,7 @@ public partial class V1beta1CodepipelineSpecInitProviderRoleArnSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderStageAction
 {
     /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
@@ -1315,6 +1383,7 @@ public partial class V1beta1CodepipelineSpecInitProviderStageAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderStageBeforeEntryConditionRuleRuleTypeId
 {
     /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
@@ -1336,6 +1405,7 @@ public partial class V1beta1CodepipelineSpecInitProviderStageBeforeEntryConditio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderStageBeforeEntryConditionRule
 {
     /// <summary>The shell commands to run with your commands rule in CodePipeline. All commands are supported except multi-line formats.</summary>
@@ -1369,6 +1439,7 @@ public partial class V1beta1CodepipelineSpecInitProviderStageBeforeEntryConditio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderStageBeforeEntryCondition
 {
     /// <summary>The conditions that are configured as failure conditions. Possible values are ROLLBACK,  FAIL, RETRY and SKIP.</summary>
@@ -1382,6 +1453,7 @@ public partial class V1beta1CodepipelineSpecInitProviderStageBeforeEntryConditio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderStageBeforeEntry
 {
     /// <summary>The conditions that are success conditions. Defined as a condition block below.</summary>
@@ -1391,6 +1463,7 @@ public partial class V1beta1CodepipelineSpecInitProviderStageBeforeEntry
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderStageOnFailureConditionRuleRuleTypeId
 {
     /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
@@ -1412,6 +1485,7 @@ public partial class V1beta1CodepipelineSpecInitProviderStageOnFailureConditionR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderStageOnFailureConditionRule
 {
     /// <summary>The shell commands to run with your commands rule in CodePipeline. All commands are supported except multi-line formats.</summary>
@@ -1445,6 +1519,7 @@ public partial class V1beta1CodepipelineSpecInitProviderStageOnFailureConditionR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderStageOnFailureCondition
 {
     /// <summary>The conditions that are configured as failure conditions. Possible values are ROLLBACK,  FAIL, RETRY and SKIP.</summary>
@@ -1458,6 +1533,7 @@ public partial class V1beta1CodepipelineSpecInitProviderStageOnFailureCondition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderStageOnFailureRetryConfiguration
 {
     /// <summary>The method that you want to configure for automatic stage retry on stage failure. You can specify to retry only failed action in the stage or all actions in the stage. Possible values are FAILED_ACTIONS and ALL_ACTIONS.</summary>
@@ -1467,6 +1543,7 @@ public partial class V1beta1CodepipelineSpecInitProviderStageOnFailureRetryConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderStageOnFailure
 {
     /// <summary>The conditions that are success conditions. Defined as a condition block below.</summary>
@@ -1484,6 +1561,7 @@ public partial class V1beta1CodepipelineSpecInitProviderStageOnFailure
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderStageOnSuccessConditionRuleRuleTypeId
 {
     /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
@@ -1505,6 +1583,7 @@ public partial class V1beta1CodepipelineSpecInitProviderStageOnSuccessConditionR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderStageOnSuccessConditionRule
 {
     /// <summary>The shell commands to run with your commands rule in CodePipeline. All commands are supported except multi-line formats.</summary>
@@ -1538,6 +1617,7 @@ public partial class V1beta1CodepipelineSpecInitProviderStageOnSuccessConditionR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderStageOnSuccessCondition
 {
     /// <summary>The conditions that are configured as failure conditions. Possible values are ROLLBACK,  FAIL, RETRY and SKIP.</summary>
@@ -1551,6 +1631,7 @@ public partial class V1beta1CodepipelineSpecInitProviderStageOnSuccessCondition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderStageOnSuccess
 {
     /// <summary>The conditions that are success conditions. Defined as a condition block below.</summary>
@@ -1560,6 +1641,7 @@ public partial class V1beta1CodepipelineSpecInitProviderStageOnSuccess
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderStage
 {
     /// <summary>The action(s) to include in the stage. Defined as an action block below</summary>
@@ -1585,6 +1667,7 @@ public partial class V1beta1CodepipelineSpecInitProviderStage
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderTriggerGitConfigurationPullRequestBranches
 {
     /// <summary>A list of patterns of Git tags that, when pushed, are to be excluded from starting the pipeline.</summary>
@@ -1598,6 +1681,7 @@ public partial class V1beta1CodepipelineSpecInitProviderTriggerGitConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderTriggerGitConfigurationPullRequestFilePaths
 {
     /// <summary>A list of patterns of Git tags that, when pushed, are to be excluded from starting the pipeline.</summary>
@@ -1611,6 +1695,7 @@ public partial class V1beta1CodepipelineSpecInitProviderTriggerGitConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderTriggerGitConfigurationPullRequest
 {
     /// <summary>The field that specifies to filter on branches for the pull request trigger configuration. A branches block is documented below.</summary>
@@ -1628,6 +1713,7 @@ public partial class V1beta1CodepipelineSpecInitProviderTriggerGitConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderTriggerGitConfigurationPushBranches
 {
     /// <summary>A list of patterns of Git tags that, when pushed, are to be excluded from starting the pipeline.</summary>
@@ -1641,6 +1727,7 @@ public partial class V1beta1CodepipelineSpecInitProviderTriggerGitConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderTriggerGitConfigurationPushFilePaths
 {
     /// <summary>A list of patterns of Git tags that, when pushed, are to be excluded from starting the pipeline.</summary>
@@ -1654,6 +1741,7 @@ public partial class V1beta1CodepipelineSpecInitProviderTriggerGitConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderTriggerGitConfigurationPushTags
 {
     /// <summary>A list of patterns of Git tags that, when pushed, are to be excluded from starting the pipeline.</summary>
@@ -1667,6 +1755,7 @@ public partial class V1beta1CodepipelineSpecInitProviderTriggerGitConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderTriggerGitConfigurationPush
 {
     /// <summary>The field that specifies to filter on branches for the pull request trigger configuration. A branches block is documented below.</summary>
@@ -1684,6 +1773,7 @@ public partial class V1beta1CodepipelineSpecInitProviderTriggerGitConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderTriggerGitConfiguration
 {
     /// <summary>The field where the repository event that will start the pipeline is specified as pull requests. A pull_request block is documented below.</summary>
@@ -1701,6 +1791,7 @@ public partial class V1beta1CodepipelineSpecInitProviderTriggerGitConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderTrigger
 {
     /// <summary>Provides the filter criteria and the source stage for the repository event that starts the pipeline. For more information, refer to the AWS documentation. A git_configuration block is documented below.</summary>
@@ -1714,6 +1805,7 @@ public partial class V1beta1CodepipelineSpecInitProviderTrigger
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProviderVariable
 {
     /// <summary>The default value of a pipeline-level variable.</summary>
@@ -1743,6 +1835,7 @@ public partial class V1beta1CodepipelineSpecInitProviderVariable
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecInitProvider
 {
     /// <summary>One or more artifact_store blocks. Artifact stores are documented below.</summary>
@@ -1792,6 +1885,7 @@ public partial class V1beta1CodepipelineSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodepipelineSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CodepipelineSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1816,6 +1910,7 @@ public enum V1beta1CodepipelineSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodepipelineSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CodepipelineSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1832,6 +1927,7 @@ public enum V1beta1CodepipelineSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CodepipelineSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CodepipelineSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1843,6 +1939,7 @@ public enum V1beta1CodepipelineSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1871,6 +1968,7 @@ public partial class V1beta1CodepipelineSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1890,6 +1988,7 @@ public partial class V1beta1CodepipelineSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1904,6 +2003,7 @@ public partial class V1beta1CodepipelineSpecWriteConnectionSecretToRef
 /// <summary>CodepipelineSpec defines the desired state of Codepipeline</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineSpec
 {
     /// <summary>
@@ -1971,6 +2071,7 @@ public partial class V1beta1CodepipelineSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderArtifactStoreEncryptionKey
 {
     /// <summary>The KMS key ARN or ID</summary>
@@ -1984,6 +2085,7 @@ public partial class V1beta1CodepipelineStatusAtProviderArtifactStoreEncryptionK
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderArtifactStore
 {
     /// <summary>The encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as an AWS Key Management Service (AWS KMS) key. If you don&apos;t specify a key, AWS CodePipeline uses the default key for Amazon Simple Storage Service (Amazon S3). An encryption_key block is documented below.</summary>
@@ -2005,6 +2107,7 @@ public partial class V1beta1CodepipelineStatusAtProviderArtifactStore
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderStageAction
 {
     /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
@@ -2062,6 +2165,7 @@ public partial class V1beta1CodepipelineStatusAtProviderStageAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderStageBeforeEntryConditionRuleRuleTypeId
 {
     /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
@@ -2083,6 +2187,7 @@ public partial class V1beta1CodepipelineStatusAtProviderStageBeforeEntryConditio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderStageBeforeEntryConditionRule
 {
     /// <summary>The shell commands to run with your commands rule in CodePipeline. All commands are supported except multi-line formats.</summary>
@@ -2120,6 +2225,7 @@ public partial class V1beta1CodepipelineStatusAtProviderStageBeforeEntryConditio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderStageBeforeEntryCondition
 {
     /// <summary>The conditions that are configured as failure conditions. Possible values are ROLLBACK,  FAIL, RETRY and SKIP.</summary>
@@ -2133,6 +2239,7 @@ public partial class V1beta1CodepipelineStatusAtProviderStageBeforeEntryConditio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderStageBeforeEntry
 {
     /// <summary>The conditions that are success conditions. Defined as a condition block below.</summary>
@@ -2142,6 +2249,7 @@ public partial class V1beta1CodepipelineStatusAtProviderStageBeforeEntry
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderStageOnFailureConditionRuleRuleTypeId
 {
     /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
@@ -2163,6 +2271,7 @@ public partial class V1beta1CodepipelineStatusAtProviderStageOnFailureConditionR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderStageOnFailureConditionRule
 {
     /// <summary>The shell commands to run with your commands rule in CodePipeline. All commands are supported except multi-line formats.</summary>
@@ -2200,6 +2309,7 @@ public partial class V1beta1CodepipelineStatusAtProviderStageOnFailureConditionR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderStageOnFailureCondition
 {
     /// <summary>The conditions that are configured as failure conditions. Possible values are ROLLBACK,  FAIL, RETRY and SKIP.</summary>
@@ -2213,6 +2323,7 @@ public partial class V1beta1CodepipelineStatusAtProviderStageOnFailureCondition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderStageOnFailureRetryConfiguration
 {
     /// <summary>The method that you want to configure for automatic stage retry on stage failure. You can specify to retry only failed action in the stage or all actions in the stage. Possible values are FAILED_ACTIONS and ALL_ACTIONS.</summary>
@@ -2222,6 +2333,7 @@ public partial class V1beta1CodepipelineStatusAtProviderStageOnFailureRetryConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderStageOnFailure
 {
     /// <summary>The conditions that are success conditions. Defined as a condition block below.</summary>
@@ -2239,6 +2351,7 @@ public partial class V1beta1CodepipelineStatusAtProviderStageOnFailure
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderStageOnSuccessConditionRuleRuleTypeId
 {
     /// <summary>A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are Approval, Build, Deploy, Invoke, Source and Test.</summary>
@@ -2260,6 +2373,7 @@ public partial class V1beta1CodepipelineStatusAtProviderStageOnSuccessConditionR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderStageOnSuccessConditionRule
 {
     /// <summary>The shell commands to run with your commands rule in CodePipeline. All commands are supported except multi-line formats.</summary>
@@ -2297,6 +2411,7 @@ public partial class V1beta1CodepipelineStatusAtProviderStageOnSuccessConditionR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderStageOnSuccessCondition
 {
     /// <summary>The conditions that are configured as failure conditions. Possible values are ROLLBACK,  FAIL, RETRY and SKIP.</summary>
@@ -2310,6 +2425,7 @@ public partial class V1beta1CodepipelineStatusAtProviderStageOnSuccessCondition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderStageOnSuccess
 {
     /// <summary>The conditions that are success conditions. Defined as a condition block below.</summary>
@@ -2319,6 +2435,7 @@ public partial class V1beta1CodepipelineStatusAtProviderStageOnSuccess
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderStage
 {
     /// <summary>The action(s) to include in the stage. Defined as an action block below</summary>
@@ -2344,6 +2461,7 @@ public partial class V1beta1CodepipelineStatusAtProviderStage
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderTriggerGitConfigurationPullRequestBranches
 {
     /// <summary>A list of patterns of Git tags that, when pushed, are to be excluded from starting the pipeline.</summary>
@@ -2357,6 +2475,7 @@ public partial class V1beta1CodepipelineStatusAtProviderTriggerGitConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderTriggerGitConfigurationPullRequestFilePaths
 {
     /// <summary>A list of patterns of Git tags that, when pushed, are to be excluded from starting the pipeline.</summary>
@@ -2370,6 +2489,7 @@ public partial class V1beta1CodepipelineStatusAtProviderTriggerGitConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderTriggerGitConfigurationPullRequest
 {
     /// <summary>The field that specifies to filter on branches for the pull request trigger configuration. A branches block is documented below.</summary>
@@ -2387,6 +2507,7 @@ public partial class V1beta1CodepipelineStatusAtProviderTriggerGitConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderTriggerGitConfigurationPushBranches
 {
     /// <summary>A list of patterns of Git tags that, when pushed, are to be excluded from starting the pipeline.</summary>
@@ -2400,6 +2521,7 @@ public partial class V1beta1CodepipelineStatusAtProviderTriggerGitConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderTriggerGitConfigurationPushFilePaths
 {
     /// <summary>A list of patterns of Git tags that, when pushed, are to be excluded from starting the pipeline.</summary>
@@ -2413,6 +2535,7 @@ public partial class V1beta1CodepipelineStatusAtProviderTriggerGitConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderTriggerGitConfigurationPushTags
 {
     /// <summary>A list of patterns of Git tags that, when pushed, are to be excluded from starting the pipeline.</summary>
@@ -2426,6 +2549,7 @@ public partial class V1beta1CodepipelineStatusAtProviderTriggerGitConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderTriggerGitConfigurationPush
 {
     /// <summary>The field that specifies to filter on branches for the pull request trigger configuration. A branches block is documented below.</summary>
@@ -2443,6 +2567,7 @@ public partial class V1beta1CodepipelineStatusAtProviderTriggerGitConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderTriggerGitConfiguration
 {
     /// <summary>The field where the repository event that will start the pipeline is specified as pull requests. A pull_request block is documented below.</summary>
@@ -2460,6 +2585,7 @@ public partial class V1beta1CodepipelineStatusAtProviderTriggerGitConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderTrigger
 {
     /// <summary>Provides the filter criteria and the source stage for the repository event that starts the pipeline. For more information, refer to the AWS documentation. A git_configuration block is documented below.</summary>
@@ -2473,6 +2599,7 @@ public partial class V1beta1CodepipelineStatusAtProviderTrigger
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderTriggerAllGitConfigurationPullRequestBranches
 {
     /// <summary>A list of patterns of Git tags that, when pushed, are to be excluded from starting the pipeline.</summary>
@@ -2486,6 +2613,7 @@ public partial class V1beta1CodepipelineStatusAtProviderTriggerAllGitConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderTriggerAllGitConfigurationPullRequestFilePaths
 {
     /// <summary>A list of patterns of Git tags that, when pushed, are to be excluded from starting the pipeline.</summary>
@@ -2499,6 +2627,7 @@ public partial class V1beta1CodepipelineStatusAtProviderTriggerAllGitConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderTriggerAllGitConfigurationPullRequest
 {
     /// <summary>The field that specifies to filter on branches for the pull request trigger configuration. A branches block is documented below.</summary>
@@ -2516,6 +2645,7 @@ public partial class V1beta1CodepipelineStatusAtProviderTriggerAllGitConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderTriggerAllGitConfigurationPushBranches
 {
     /// <summary>A list of patterns of Git tags that, when pushed, are to be excluded from starting the pipeline.</summary>
@@ -2529,6 +2659,7 @@ public partial class V1beta1CodepipelineStatusAtProviderTriggerAllGitConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderTriggerAllGitConfigurationPushFilePaths
 {
     /// <summary>A list of patterns of Git tags that, when pushed, are to be excluded from starting the pipeline.</summary>
@@ -2542,6 +2673,7 @@ public partial class V1beta1CodepipelineStatusAtProviderTriggerAllGitConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderTriggerAllGitConfigurationPushTags
 {
     /// <summary>A list of patterns of Git tags that, when pushed, are to be excluded from starting the pipeline.</summary>
@@ -2555,6 +2687,7 @@ public partial class V1beta1CodepipelineStatusAtProviderTriggerAllGitConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderTriggerAllGitConfigurationPush
 {
     /// <summary>The field that specifies to filter on branches for the pull request trigger configuration. A branches block is documented below.</summary>
@@ -2572,6 +2705,7 @@ public partial class V1beta1CodepipelineStatusAtProviderTriggerAllGitConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderTriggerAllGitConfiguration
 {
     /// <summary>The field where the repository event that will start the pipeline is specified as pull requests. A pull_request block is documented below.</summary>
@@ -2589,6 +2723,7 @@ public partial class V1beta1CodepipelineStatusAtProviderTriggerAllGitConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderTriggerAll
 {
     /// <summary>Provides the filter criteria and the source stage for the repository event that starts the pipeline. For more information, refer to the AWS documentation. A git_configuration block is documented below.</summary>
@@ -2602,6 +2737,7 @@ public partial class V1beta1CodepipelineStatusAtProviderTriggerAll
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProviderVariable
 {
     /// <summary>The default value of a pipeline-level variable.</summary>
@@ -2619,6 +2755,7 @@ public partial class V1beta1CodepipelineStatusAtProviderVariable
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusAtProvider
 {
     /// <summary>Codepipeline ARN.</summary>
@@ -2680,6 +2817,7 @@ public partial class V1beta1CodepipelineStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatusConditions
 {
     /// <summary>
@@ -2723,6 +2861,7 @@ public partial class V1beta1CodepipelineStatusConditions
 /// <summary>CodepipelineStatus defines the observed state of Codepipeline.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CodepipelineStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2741,9 +2880,13 @@ public partial class V1beta1CodepipelineStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Codepipeline is the Schema for the Codepipelines API. Provides a CodePipeline</summary>
+/// <summary>
+/// Codepipeline is the Schema for the Codepipelines API. Provides a CodePipeline
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Codepipeline : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CodepipelineSpec>, IStatus<V1beta1CodepipelineStatus?>
 {

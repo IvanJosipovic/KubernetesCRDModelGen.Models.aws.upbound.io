@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.chime.aws.upbound.io;
-/// <summary>VoiceConnectorStreaming is the Schema for the VoiceConnectorStreamings API. The streaming configuration associated with an Amazon Chime Voice Connector. Specifies whether media streaming is enabled for sending to Amazon Kinesis, and shows the retention period for the Amazon Kinesis data, in hours.</summary>
+/// <summary>
+/// VoiceConnectorStreaming is the Schema for the VoiceConnectorStreamings API. The streaming configuration associated with an Amazon Chime Voice Connector. Specifies whether media streaming is enabled for sending to Amazon Kinesis, and shows the retention period for the Amazon Kinesis data, in hours.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VoiceConnectorStreamingList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VoiceConnectorStreaming>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1VoiceConnectorStreamingList : IKubernetesObject<V1Li
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorStreamingSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VoiceConnectorStreamingSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1VoiceConnectorStreamingSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VoiceConnectorStreamingSpecForProviderMediaInsightsConfiguration
 {
     /// <summary>The media insights configuration that will be invoked by the Voice Connector.</summary>
@@ -76,6 +82,7 @@ public partial class V1beta1VoiceConnectorStreamingSpecForProviderMediaInsightsC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorStreamingSpecForProviderVoiceConnectorIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VoiceConnectorStreamingSpecForProviderVoiceConnectorIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -92,6 +99,7 @@ public enum V1beta1VoiceConnectorStreamingSpecForProviderVoiceConnectorIdRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorStreamingSpecForProviderVoiceConnectorIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VoiceConnectorStreamingSpecForProviderVoiceConnectorIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -103,6 +111,7 @@ public enum V1beta1VoiceConnectorStreamingSpecForProviderVoiceConnectorIdRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VoiceConnectorStreamingSpecForProviderVoiceConnectorIdRefPolicy
 {
     /// <summary>
@@ -127,6 +136,7 @@ public partial class V1beta1VoiceConnectorStreamingSpecForProviderVoiceConnector
 /// <summary>Reference to a VoiceConnector in chime to populate voiceConnectorId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VoiceConnectorStreamingSpecForProviderVoiceConnectorIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -146,6 +156,7 @@ public partial class V1beta1VoiceConnectorStreamingSpecForProviderVoiceConnector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorStreamingSpecForProviderVoiceConnectorIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VoiceConnectorStreamingSpecForProviderVoiceConnectorIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -162,6 +173,7 @@ public enum V1beta1VoiceConnectorStreamingSpecForProviderVoiceConnectorIdSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorStreamingSpecForProviderVoiceConnectorIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VoiceConnectorStreamingSpecForProviderVoiceConnectorIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -173,6 +185,7 @@ public enum V1beta1VoiceConnectorStreamingSpecForProviderVoiceConnectorIdSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VoiceConnectorStreamingSpecForProviderVoiceConnectorIdSelectorPolicy
 {
     /// <summary>
@@ -197,6 +210,7 @@ public partial class V1beta1VoiceConnectorStreamingSpecForProviderVoiceConnector
 /// <summary>Selector for a VoiceConnector in chime to populate voiceConnectorId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VoiceConnectorStreamingSpecForProviderVoiceConnectorIdSelector
 {
     /// <summary>
@@ -217,6 +231,7 @@ public partial class V1beta1VoiceConnectorStreamingSpecForProviderVoiceConnector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VoiceConnectorStreamingSpecForProvider
 {
     /// <summary>The retention period, in hours, for the Amazon Kinesis data.</summary>
@@ -257,6 +272,7 @@ public partial class V1beta1VoiceConnectorStreamingSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VoiceConnectorStreamingSpecInitProviderMediaInsightsConfiguration
 {
     /// <summary>The media insights configuration that will be invoked by the Voice Connector.</summary>
@@ -276,6 +292,7 @@ public partial class V1beta1VoiceConnectorStreamingSpecInitProviderMediaInsights
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorStreamingSpecInitProviderVoiceConnectorIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VoiceConnectorStreamingSpecInitProviderVoiceConnectorIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -292,6 +309,7 @@ public enum V1beta1VoiceConnectorStreamingSpecInitProviderVoiceConnectorIdRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorStreamingSpecInitProviderVoiceConnectorIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VoiceConnectorStreamingSpecInitProviderVoiceConnectorIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -303,6 +321,7 @@ public enum V1beta1VoiceConnectorStreamingSpecInitProviderVoiceConnectorIdRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VoiceConnectorStreamingSpecInitProviderVoiceConnectorIdRefPolicy
 {
     /// <summary>
@@ -327,6 +346,7 @@ public partial class V1beta1VoiceConnectorStreamingSpecInitProviderVoiceConnecto
 /// <summary>Reference to a VoiceConnector in chime to populate voiceConnectorId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VoiceConnectorStreamingSpecInitProviderVoiceConnectorIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -346,6 +366,7 @@ public partial class V1beta1VoiceConnectorStreamingSpecInitProviderVoiceConnecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorStreamingSpecInitProviderVoiceConnectorIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VoiceConnectorStreamingSpecInitProviderVoiceConnectorIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -362,6 +383,7 @@ public enum V1beta1VoiceConnectorStreamingSpecInitProviderVoiceConnectorIdSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorStreamingSpecInitProviderVoiceConnectorIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VoiceConnectorStreamingSpecInitProviderVoiceConnectorIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -373,6 +395,7 @@ public enum V1beta1VoiceConnectorStreamingSpecInitProviderVoiceConnectorIdSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VoiceConnectorStreamingSpecInitProviderVoiceConnectorIdSelectorPolicy
 {
     /// <summary>
@@ -397,6 +420,7 @@ public partial class V1beta1VoiceConnectorStreamingSpecInitProviderVoiceConnecto
 /// <summary>Selector for a VoiceConnector in chime to populate voiceConnectorId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VoiceConnectorStreamingSpecInitProviderVoiceConnectorIdSelector
 {
     /// <summary>
@@ -429,6 +453,7 @@ public partial class V1beta1VoiceConnectorStreamingSpecInitProviderVoiceConnecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VoiceConnectorStreamingSpecInitProvider
 {
     /// <summary>The retention period, in hours, for the Amazon Kinesis data.</summary>
@@ -466,6 +491,7 @@ public partial class V1beta1VoiceConnectorStreamingSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorStreamingSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VoiceConnectorStreamingSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -490,6 +516,7 @@ public enum V1beta1VoiceConnectorStreamingSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorStreamingSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VoiceConnectorStreamingSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -506,6 +533,7 @@ public enum V1beta1VoiceConnectorStreamingSpecProviderConfigRefPolicyResolutionE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorStreamingSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1VoiceConnectorStreamingSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -517,6 +545,7 @@ public enum V1beta1VoiceConnectorStreamingSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VoiceConnectorStreamingSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -545,6 +574,7 @@ public partial class V1beta1VoiceConnectorStreamingSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VoiceConnectorStreamingSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -564,6 +594,7 @@ public partial class V1beta1VoiceConnectorStreamingSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VoiceConnectorStreamingSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -578,6 +609,7 @@ public partial class V1beta1VoiceConnectorStreamingSpecWriteConnectionSecretToRe
 /// <summary>VoiceConnectorStreamingSpec defines the desired state of VoiceConnectorStreaming</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VoiceConnectorStreamingSpec
 {
     /// <summary>
@@ -645,6 +677,7 @@ public partial class V1beta1VoiceConnectorStreamingSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VoiceConnectorStreamingStatusAtProviderMediaInsightsConfiguration
 {
     /// <summary>The media insights configuration that will be invoked by the Voice Connector.</summary>
@@ -658,6 +691,7 @@ public partial class V1beta1VoiceConnectorStreamingStatusAtProviderMediaInsights
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VoiceConnectorStreamingStatusAtProvider
 {
     /// <summary>The retention period, in hours, for the Amazon Kinesis data.</summary>
@@ -695,6 +729,7 @@ public partial class V1beta1VoiceConnectorStreamingStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VoiceConnectorStreamingStatusConditions
 {
     /// <summary>
@@ -738,6 +773,7 @@ public partial class V1beta1VoiceConnectorStreamingStatusConditions
 /// <summary>VoiceConnectorStreamingStatus defines the observed state of VoiceConnectorStreaming.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1VoiceConnectorStreamingStatus
 {
     [JsonPropertyName("atProvider")]
@@ -756,9 +792,13 @@ public partial class V1beta1VoiceConnectorStreamingStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>VoiceConnectorStreaming is the Schema for the VoiceConnectorStreamings API. The streaming configuration associated with an Amazon Chime Voice Connector. Specifies whether media streaming is enabled for sending to Amazon Kinesis, and shows the retention period for the Amazon Kinesis data, in hours.</summary>
+/// <summary>
+/// VoiceConnectorStreaming is the Schema for the VoiceConnectorStreamings API. The streaming configuration associated with an Amazon Chime Voice Connector. Specifies whether media streaming is enabled for sending to Amazon Kinesis, and shows the retention period for the Amazon Kinesis data, in hours.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VoiceConnectorStreaming : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VoiceConnectorStreamingSpec>, IStatus<V1beta1VoiceConnectorStreamingStatus?>
 {

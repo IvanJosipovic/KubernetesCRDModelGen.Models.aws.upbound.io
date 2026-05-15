@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appmesh.aws.upbound.io;
-/// <summary>Route is the Schema for the Routes API. Provides an AWS App Mesh route resource.</summary>
+/// <summary>
+/// Route is the Schema for the Routes API. Provides an AWS App Mesh route resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RouteList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Route>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1RouteList : IKubernetesObject<V1ListMeta>, IItems<V1
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1RouteSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecForProviderMeshNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecForProviderMeshNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1RouteSpecForProviderMeshNameRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecForProviderMeshNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecForProviderMeshNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1RouteSpecForProviderMeshNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderMeshNameRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1RouteSpecForProviderMeshNameRefPolicy
 /// <summary>Reference to a Mesh in appmesh to populate meshName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderMeshNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1RouteSpecForProviderMeshNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecForProviderMeshNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecForProviderMeshNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1RouteSpecForProviderMeshNameSelectorPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecForProviderMeshNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecForProviderMeshNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1RouteSpecForProviderMeshNameSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderMeshNameSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1RouteSpecForProviderMeshNameSelectorPolicy
 /// <summary>Selector for a Mesh in appmesh to populate meshName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderMeshNameSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1RouteSpecForProviderMeshNameSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecGrpcRouteActionWeightedTarget
 {
     /// <summary>The port number to match from the request.</summary>
@@ -221,6 +235,7 @@ public partial class V1beta1RouteSpecForProviderSpecGrpcRouteActionWeightedTarge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecGrpcRouteAction
 {
     /// <summary>
@@ -233,6 +248,7 @@ public partial class V1beta1RouteSpecForProviderSpecGrpcRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecGrpcRouteMatchMetadataMatchRange
 {
     /// <summary>End of the range.</summary>
@@ -246,6 +262,7 @@ public partial class V1beta1RouteSpecForProviderSpecGrpcRouteMatchMetadataMatchR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecGrpcRouteMatchMetadataMatch
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -271,6 +288,7 @@ public partial class V1beta1RouteSpecForProviderSpecGrpcRouteMatchMetadataMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecGrpcRouteMatchMetadata
 {
     /// <summary>If true, the match is on the opposite of the match criteria. Default is false.</summary>
@@ -288,6 +306,7 @@ public partial class V1beta1RouteSpecForProviderSpecGrpcRouteMatchMetadata
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecGrpcRouteMatch
 {
     /// <summary>Data to match from the gRPC request.</summary>
@@ -313,6 +332,7 @@ public partial class V1beta1RouteSpecForProviderSpecGrpcRouteMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecGrpcRouteRetryPolicyPerRetryTimeout
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -326,6 +346,7 @@ public partial class V1beta1RouteSpecForProviderSpecGrpcRouteRetryPolicyPerRetry
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecGrpcRouteRetryPolicy
 {
     /// <summary>
@@ -357,6 +378,7 @@ public partial class V1beta1RouteSpecForProviderSpecGrpcRouteRetryPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecGrpcRouteTimeoutIdle
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -370,6 +392,7 @@ public partial class V1beta1RouteSpecForProviderSpecGrpcRouteTimeoutIdle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecGrpcRouteTimeoutPerRequest
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -383,6 +406,7 @@ public partial class V1beta1RouteSpecForProviderSpecGrpcRouteTimeoutPerRequest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecGrpcRouteTimeout
 {
     /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
@@ -396,6 +420,7 @@ public partial class V1beta1RouteSpecForProviderSpecGrpcRouteTimeout
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecGrpcRoute
 {
     /// <summary>Action to take if a match is determined.</summary>
@@ -417,6 +442,7 @@ public partial class V1beta1RouteSpecForProviderSpecGrpcRoute
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttp2RouteActionWeightedTarget
 {
     /// <summary>The port number to match from the request.</summary>
@@ -434,6 +460,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttp2RouteActionWeightedTarg
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttp2RouteAction
 {
     /// <summary>
@@ -446,6 +473,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttp2RouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttp2RouteMatchHeaderMatchRange
 {
     /// <summary>End of the range.</summary>
@@ -459,6 +487,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttp2RouteMatchHeaderMatchRa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttp2RouteMatchHeaderMatch
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -484,6 +513,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttp2RouteMatchHeaderMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttp2RouteMatchHeader
 {
     /// <summary>If true, the match is on the opposite of the match criteria. Default is false.</summary>
@@ -501,6 +531,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttp2RouteMatchHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttp2RouteMatchPath
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -514,6 +545,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttp2RouteMatchPath
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttp2RouteMatchQueryParameterMatch
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -523,6 +555,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttp2RouteMatchQueryParamete
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttp2RouteMatchQueryParameter
 {
     /// <summary>Criteria for determining an gRPC request match.</summary>
@@ -536,6 +569,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttp2RouteMatchQueryParamete
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttp2RouteMatch
 {
     /// <summary>Client request headers to match on.</summary>
@@ -569,6 +603,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttp2RouteMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttp2RouteRetryPolicyPerRetryTimeout
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -582,6 +617,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttp2RouteRetryPolicyPerRetr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttp2RouteRetryPolicy
 {
     /// <summary>
@@ -606,6 +642,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttp2RouteRetryPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttp2RouteTimeoutIdle
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -619,6 +656,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttp2RouteTimeoutIdle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttp2RouteTimeoutPerRequest
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -632,6 +670,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttp2RouteTimeoutPerRequest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttp2RouteTimeout
 {
     /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
@@ -645,6 +684,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttp2RouteTimeout
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttp2Route
 {
     /// <summary>Action to take if a match is determined.</summary>
@@ -672,6 +712,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttp2Route
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTargetVirtualNodeRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTargetVirtualNodeRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -688,6 +729,7 @@ public enum V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTargetVirtualN
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTargetVirtualNodeRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTargetVirtualNodeRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -699,6 +741,7 @@ public enum V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTargetVirtualN
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTargetVirtualNodeRefPolicy
 {
     /// <summary>
@@ -723,6 +766,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTarge
 /// <summary>Reference to a VirtualNode in appmesh to populate virtualNode.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTargetVirtualNodeRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -742,6 +786,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTarge
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTargetVirtualNodeSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTargetVirtualNodeSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -758,6 +803,7 @@ public enum V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTargetVirtualN
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTargetVirtualNodeSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTargetVirtualNodeSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -769,6 +815,7 @@ public enum V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTargetVirtualN
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTargetVirtualNodeSelectorPolicy
 {
     /// <summary>
@@ -793,6 +840,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTarge
 /// <summary>Selector for a VirtualNode in appmesh to populate virtualNode.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTargetVirtualNodeSelector
 {
     /// <summary>
@@ -813,6 +861,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTarge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTarget
 {
     /// <summary>The port number to match from the request.</summary>
@@ -838,6 +887,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttpRouteActionWeightedTarge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttpRouteAction
 {
     /// <summary>
@@ -850,6 +900,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttpRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttpRouteMatchHeaderMatchRange
 {
     /// <summary>End of the range.</summary>
@@ -863,6 +914,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttpRouteMatchHeaderMatchRan
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttpRouteMatchHeaderMatch
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -888,6 +940,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttpRouteMatchHeaderMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttpRouteMatchHeader
 {
     /// <summary>If true, the match is on the opposite of the match criteria. Default is false.</summary>
@@ -905,6 +958,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttpRouteMatchHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttpRouteMatchPath
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -918,6 +972,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttpRouteMatchPath
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttpRouteMatchQueryParameterMatch
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -927,6 +982,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttpRouteMatchQueryParameter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttpRouteMatchQueryParameter
 {
     /// <summary>Criteria for determining an gRPC request match.</summary>
@@ -940,6 +996,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttpRouteMatchQueryParameter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttpRouteMatch
 {
     /// <summary>Client request headers to match on.</summary>
@@ -973,6 +1030,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttpRouteMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttpRouteRetryPolicyPerRetryTimeout
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -986,6 +1044,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttpRouteRetryPolicyPerRetry
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttpRouteRetryPolicy
 {
     /// <summary>
@@ -1010,6 +1069,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttpRouteRetryPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttpRouteTimeoutIdle
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -1023,6 +1083,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttpRouteTimeoutIdle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttpRouteTimeoutPerRequest
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -1036,6 +1097,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttpRouteTimeoutPerRequest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttpRouteTimeout
 {
     /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
@@ -1049,6 +1111,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttpRouteTimeout
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecHttpRoute
 {
     /// <summary>Action to take if a match is determined.</summary>
@@ -1076,6 +1139,7 @@ public partial class V1beta1RouteSpecForProviderSpecHttpRoute
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTargetVirtualNodeRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTargetVirtualNodeRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1092,6 +1156,7 @@ public enum V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTargetVirtualNo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTargetVirtualNodeRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTargetVirtualNodeRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1103,6 +1168,7 @@ public enum V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTargetVirtualNo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTargetVirtualNodeRefPolicy
 {
     /// <summary>
@@ -1127,6 +1193,7 @@ public partial class V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTarget
 /// <summary>Reference to a VirtualNode in appmesh to populate virtualNode.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTargetVirtualNodeRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1146,6 +1213,7 @@ public partial class V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTarget
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTargetVirtualNodeSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTargetVirtualNodeSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1162,6 +1230,7 @@ public enum V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTargetVirtualNo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTargetVirtualNodeSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTargetVirtualNodeSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1173,6 +1242,7 @@ public enum V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTargetVirtualNo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTargetVirtualNodeSelectorPolicy
 {
     /// <summary>
@@ -1197,6 +1267,7 @@ public partial class V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTarget
 /// <summary>Selector for a VirtualNode in appmesh to populate virtualNode.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTargetVirtualNodeSelector
 {
     /// <summary>
@@ -1217,6 +1288,7 @@ public partial class V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTarget
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTarget
 {
     /// <summary>The port number to match from the request.</summary>
@@ -1242,6 +1314,7 @@ public partial class V1beta1RouteSpecForProviderSpecTcpRouteActionWeightedTarget
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecTcpRouteAction
 {
     /// <summary>
@@ -1254,6 +1327,7 @@ public partial class V1beta1RouteSpecForProviderSpecTcpRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecTcpRouteMatch
 {
     /// <summary>The port number to match from the request.</summary>
@@ -1263,6 +1337,7 @@ public partial class V1beta1RouteSpecForProviderSpecTcpRouteMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecTcpRouteTimeoutIdle
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -1276,6 +1351,7 @@ public partial class V1beta1RouteSpecForProviderSpecTcpRouteTimeoutIdle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecTcpRouteTimeout
 {
     /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
@@ -1285,6 +1361,7 @@ public partial class V1beta1RouteSpecForProviderSpecTcpRouteTimeout
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpecTcpRoute
 {
     /// <summary>Action to take if a match is determined.</summary>
@@ -1302,6 +1379,7 @@ public partial class V1beta1RouteSpecForProviderSpecTcpRoute
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderSpec
 {
     /// <summary>GRPC routing information for the route.</summary>
@@ -1336,6 +1414,7 @@ public partial class V1beta1RouteSpecForProviderSpec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecForProviderVirtualRouterNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecForProviderVirtualRouterNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1352,6 +1431,7 @@ public enum V1beta1RouteSpecForProviderVirtualRouterNameRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecForProviderVirtualRouterNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecForProviderVirtualRouterNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1363,6 +1443,7 @@ public enum V1beta1RouteSpecForProviderVirtualRouterNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderVirtualRouterNameRefPolicy
 {
     /// <summary>
@@ -1387,6 +1468,7 @@ public partial class V1beta1RouteSpecForProviderVirtualRouterNameRefPolicy
 /// <summary>Reference to a VirtualRouter in appmesh to populate virtualRouterName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderVirtualRouterNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1406,6 +1488,7 @@ public partial class V1beta1RouteSpecForProviderVirtualRouterNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecForProviderVirtualRouterNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecForProviderVirtualRouterNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1422,6 +1505,7 @@ public enum V1beta1RouteSpecForProviderVirtualRouterNameSelectorPolicyResolution
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecForProviderVirtualRouterNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecForProviderVirtualRouterNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1433,6 +1517,7 @@ public enum V1beta1RouteSpecForProviderVirtualRouterNameSelectorPolicyResolveEnu
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderVirtualRouterNameSelectorPolicy
 {
     /// <summary>
@@ -1457,6 +1542,7 @@ public partial class V1beta1RouteSpecForProviderVirtualRouterNameSelectorPolicy
 /// <summary>Selector for a VirtualRouter in appmesh to populate virtualRouterName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProviderVirtualRouterNameSelector
 {
     /// <summary>
@@ -1477,6 +1563,7 @@ public partial class V1beta1RouteSpecForProviderVirtualRouterNameSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecForProvider
 {
     /// <summary>Name of the service mesh in which to create the route. Must be between 1 and 255 characters in length.</summary>
@@ -1535,6 +1622,7 @@ public partial class V1beta1RouteSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecInitProviderMeshNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecInitProviderMeshNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1551,6 +1639,7 @@ public enum V1beta1RouteSpecInitProviderMeshNameRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecInitProviderMeshNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecInitProviderMeshNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1562,6 +1651,7 @@ public enum V1beta1RouteSpecInitProviderMeshNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderMeshNameRefPolicy
 {
     /// <summary>
@@ -1586,6 +1676,7 @@ public partial class V1beta1RouteSpecInitProviderMeshNameRefPolicy
 /// <summary>Reference to a Mesh in appmesh to populate meshName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderMeshNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1605,6 +1696,7 @@ public partial class V1beta1RouteSpecInitProviderMeshNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecInitProviderMeshNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecInitProviderMeshNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1621,6 +1713,7 @@ public enum V1beta1RouteSpecInitProviderMeshNameSelectorPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecInitProviderMeshNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecInitProviderMeshNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1632,6 +1725,7 @@ public enum V1beta1RouteSpecInitProviderMeshNameSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderMeshNameSelectorPolicy
 {
     /// <summary>
@@ -1656,6 +1750,7 @@ public partial class V1beta1RouteSpecInitProviderMeshNameSelectorPolicy
 /// <summary>Selector for a Mesh in appmesh to populate meshName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderMeshNameSelector
 {
     /// <summary>
@@ -1676,6 +1771,7 @@ public partial class V1beta1RouteSpecInitProviderMeshNameSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteActionWeightedTarget
 {
     /// <summary>The port number to match from the request.</summary>
@@ -1693,6 +1789,7 @@ public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteActionWeightedTarg
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteAction
 {
     /// <summary>
@@ -1705,6 +1802,7 @@ public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteMatchMetadataMatchRange
 {
     /// <summary>End of the range.</summary>
@@ -1718,6 +1816,7 @@ public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteMatchMetadataMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteMatchMetadataMatch
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -1743,6 +1842,7 @@ public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteMatchMetadataMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteMatchMetadata
 {
     /// <summary>If true, the match is on the opposite of the match criteria. Default is false.</summary>
@@ -1760,6 +1860,7 @@ public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteMatchMetadata
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteMatch
 {
     /// <summary>Data to match from the gRPC request.</summary>
@@ -1785,6 +1886,7 @@ public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteRetryPolicyPerRetryTimeout
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -1798,6 +1900,7 @@ public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteRetryPolicyPerRetr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteRetryPolicy
 {
     /// <summary>
@@ -1829,6 +1932,7 @@ public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteRetryPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteTimeoutIdle
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -1842,6 +1946,7 @@ public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteTimeoutIdle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteTimeoutPerRequest
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -1855,6 +1960,7 @@ public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteTimeoutPerRequest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteTimeout
 {
     /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
@@ -1868,6 +1974,7 @@ public partial class V1beta1RouteSpecInitProviderSpecGrpcRouteTimeout
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecGrpcRoute
 {
     /// <summary>Action to take if a match is determined.</summary>
@@ -1889,6 +1996,7 @@ public partial class V1beta1RouteSpecInitProviderSpecGrpcRoute
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteActionWeightedTarget
 {
     /// <summary>The port number to match from the request.</summary>
@@ -1906,6 +2014,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteActionWeightedTar
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteAction
 {
     /// <summary>
@@ -1918,6 +2027,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteMatchHeaderMatchRange
 {
     /// <summary>End of the range.</summary>
@@ -1931,6 +2041,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteMatchHeaderMatchR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteMatchHeaderMatch
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -1956,6 +2067,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteMatchHeaderMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteMatchHeader
 {
     /// <summary>If true, the match is on the opposite of the match criteria. Default is false.</summary>
@@ -1973,6 +2085,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteMatchHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteMatchPath
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -1986,6 +2099,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteMatchPath
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteMatchQueryParameterMatch
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -1995,6 +2109,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteMatchQueryParamet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteMatchQueryParameter
 {
     /// <summary>Criteria for determining an gRPC request match.</summary>
@@ -2008,6 +2123,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteMatchQueryParamet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteMatch
 {
     /// <summary>Client request headers to match on.</summary>
@@ -2041,6 +2157,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteRetryPolicyPerRetryTimeout
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -2054,6 +2171,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteRetryPolicyPerRet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteRetryPolicy
 {
     /// <summary>
@@ -2078,6 +2196,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteRetryPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteTimeoutIdle
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -2091,6 +2210,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteTimeoutIdle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteTimeoutPerRequest
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -2104,6 +2224,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteTimeoutPerRequest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteTimeout
 {
     /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
@@ -2117,6 +2238,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttp2RouteTimeout
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttp2Route
 {
     /// <summary>Action to take if a match is determined.</summary>
@@ -2144,6 +2266,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttp2Route
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTargetVirtualNodeRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTargetVirtualNodeRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2160,6 +2283,7 @@ public enum V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTargetVirtual
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTargetVirtualNodeRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTargetVirtualNodeRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2171,6 +2295,7 @@ public enum V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTargetVirtual
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTargetVirtualNodeRefPolicy
 {
     /// <summary>
@@ -2195,6 +2320,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTarg
 /// <summary>Reference to a VirtualNode in appmesh to populate virtualNode.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTargetVirtualNodeRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2214,6 +2340,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTarg
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTargetVirtualNodeSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTargetVirtualNodeSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2230,6 +2357,7 @@ public enum V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTargetVirtual
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTargetVirtualNodeSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTargetVirtualNodeSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2241,6 +2369,7 @@ public enum V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTargetVirtual
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTargetVirtualNodeSelectorPolicy
 {
     /// <summary>
@@ -2265,6 +2394,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTarg
 /// <summary>Selector for a VirtualNode in appmesh to populate virtualNode.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTargetVirtualNodeSelector
 {
     /// <summary>
@@ -2285,6 +2415,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTarg
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTarget
 {
     /// <summary>The port number to match from the request.</summary>
@@ -2310,6 +2441,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttpRouteActionWeightedTarg
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttpRouteAction
 {
     /// <summary>
@@ -2322,6 +2454,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttpRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttpRouteMatchHeaderMatchRange
 {
     /// <summary>End of the range.</summary>
@@ -2335,6 +2468,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttpRouteMatchHeaderMatchRa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttpRouteMatchHeaderMatch
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -2360,6 +2494,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttpRouteMatchHeaderMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttpRouteMatchHeader
 {
     /// <summary>If true, the match is on the opposite of the match criteria. Default is false.</summary>
@@ -2377,6 +2512,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttpRouteMatchHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttpRouteMatchPath
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -2390,6 +2526,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttpRouteMatchPath
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttpRouteMatchQueryParameterMatch
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -2399,6 +2536,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttpRouteMatchQueryParamete
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttpRouteMatchQueryParameter
 {
     /// <summary>Criteria for determining an gRPC request match.</summary>
@@ -2412,6 +2550,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttpRouteMatchQueryParamete
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttpRouteMatch
 {
     /// <summary>Client request headers to match on.</summary>
@@ -2445,6 +2584,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttpRouteMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttpRouteRetryPolicyPerRetryTimeout
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -2458,6 +2598,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttpRouteRetryPolicyPerRetr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttpRouteRetryPolicy
 {
     /// <summary>
@@ -2482,6 +2623,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttpRouteRetryPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttpRouteTimeoutIdle
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -2495,6 +2637,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttpRouteTimeoutIdle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttpRouteTimeoutPerRequest
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -2508,6 +2651,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttpRouteTimeoutPerRequest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttpRouteTimeout
 {
     /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
@@ -2521,6 +2665,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttpRouteTimeout
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecHttpRoute
 {
     /// <summary>Action to take if a match is determined.</summary>
@@ -2548,6 +2693,7 @@ public partial class V1beta1RouteSpecInitProviderSpecHttpRoute
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTargetVirtualNodeRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTargetVirtualNodeRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2564,6 +2710,7 @@ public enum V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTargetVirtualN
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTargetVirtualNodeRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTargetVirtualNodeRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2575,6 +2722,7 @@ public enum V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTargetVirtualN
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTargetVirtualNodeRefPolicy
 {
     /// <summary>
@@ -2599,6 +2747,7 @@ public partial class V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTarge
 /// <summary>Reference to a VirtualNode in appmesh to populate virtualNode.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTargetVirtualNodeRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2618,6 +2767,7 @@ public partial class V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTarge
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTargetVirtualNodeSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTargetVirtualNodeSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2634,6 +2784,7 @@ public enum V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTargetVirtualN
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTargetVirtualNodeSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTargetVirtualNodeSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2645,6 +2796,7 @@ public enum V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTargetVirtualN
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTargetVirtualNodeSelectorPolicy
 {
     /// <summary>
@@ -2669,6 +2821,7 @@ public partial class V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTarge
 /// <summary>Selector for a VirtualNode in appmesh to populate virtualNode.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTargetVirtualNodeSelector
 {
     /// <summary>
@@ -2689,6 +2842,7 @@ public partial class V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTarge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTarget
 {
     /// <summary>The port number to match from the request.</summary>
@@ -2714,6 +2868,7 @@ public partial class V1beta1RouteSpecInitProviderSpecTcpRouteActionWeightedTarge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecTcpRouteAction
 {
     /// <summary>
@@ -2726,6 +2881,7 @@ public partial class V1beta1RouteSpecInitProviderSpecTcpRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecTcpRouteMatch
 {
     /// <summary>The port number to match from the request.</summary>
@@ -2735,6 +2891,7 @@ public partial class V1beta1RouteSpecInitProviderSpecTcpRouteMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecTcpRouteTimeoutIdle
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -2748,6 +2905,7 @@ public partial class V1beta1RouteSpecInitProviderSpecTcpRouteTimeoutIdle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecTcpRouteTimeout
 {
     /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
@@ -2757,6 +2915,7 @@ public partial class V1beta1RouteSpecInitProviderSpecTcpRouteTimeout
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpecTcpRoute
 {
     /// <summary>Action to take if a match is determined.</summary>
@@ -2774,6 +2933,7 @@ public partial class V1beta1RouteSpecInitProviderSpecTcpRoute
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderSpec
 {
     /// <summary>GRPC routing information for the route.</summary>
@@ -2808,6 +2968,7 @@ public partial class V1beta1RouteSpecInitProviderSpec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecInitProviderVirtualRouterNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecInitProviderVirtualRouterNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2824,6 +2985,7 @@ public enum V1beta1RouteSpecInitProviderVirtualRouterNameRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecInitProviderVirtualRouterNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecInitProviderVirtualRouterNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2835,6 +2997,7 @@ public enum V1beta1RouteSpecInitProviderVirtualRouterNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderVirtualRouterNameRefPolicy
 {
     /// <summary>
@@ -2859,6 +3022,7 @@ public partial class V1beta1RouteSpecInitProviderVirtualRouterNameRefPolicy
 /// <summary>Reference to a VirtualRouter in appmesh to populate virtualRouterName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderVirtualRouterNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2878,6 +3042,7 @@ public partial class V1beta1RouteSpecInitProviderVirtualRouterNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecInitProviderVirtualRouterNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecInitProviderVirtualRouterNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2894,6 +3059,7 @@ public enum V1beta1RouteSpecInitProviderVirtualRouterNameSelectorPolicyResolutio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecInitProviderVirtualRouterNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecInitProviderVirtualRouterNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2905,6 +3071,7 @@ public enum V1beta1RouteSpecInitProviderVirtualRouterNameSelectorPolicyResolveEn
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderVirtualRouterNameSelectorPolicy
 {
     /// <summary>
@@ -2929,6 +3096,7 @@ public partial class V1beta1RouteSpecInitProviderVirtualRouterNameSelectorPolicy
 /// <summary>Selector for a VirtualRouter in appmesh to populate virtualRouterName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProviderVirtualRouterNameSelector
 {
     /// <summary>
@@ -2961,6 +3129,7 @@ public partial class V1beta1RouteSpecInitProviderVirtualRouterNameSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecInitProvider
 {
     /// <summary>Name of the service mesh in which to create the route. Must be between 1 and 255 characters in length.</summary>
@@ -3010,6 +3179,7 @@ public partial class V1beta1RouteSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -3034,6 +3204,7 @@ public enum V1beta1RouteSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3050,6 +3221,7 @@ public enum V1beta1RouteSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RouteSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RouteSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3061,6 +3233,7 @@ public enum V1beta1RouteSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -3089,6 +3262,7 @@ public partial class V1beta1RouteSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3108,6 +3282,7 @@ public partial class V1beta1RouteSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -3122,6 +3297,7 @@ public partial class V1beta1RouteSpecWriteConnectionSecretToRef
 /// <summary>RouteSpec defines the desired state of Route</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteSpec
 {
     /// <summary>
@@ -3189,6 +3365,7 @@ public partial class V1beta1RouteSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteActionWeightedTarget
 {
     /// <summary>The port number to match from the request.</summary>
@@ -3206,6 +3383,7 @@ public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteActionWeightedTarg
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteAction
 {
     /// <summary>
@@ -3218,6 +3396,7 @@ public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteMatchMetadataMatchRange
 {
     /// <summary>End of the range.</summary>
@@ -3231,6 +3410,7 @@ public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteMatchMetadataMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteMatchMetadataMatch
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -3256,6 +3436,7 @@ public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteMatchMetadataMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteMatchMetadata
 {
     /// <summary>If true, the match is on the opposite of the match criteria. Default is false.</summary>
@@ -3273,6 +3454,7 @@ public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteMatchMetadata
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteMatch
 {
     /// <summary>Data to match from the gRPC request.</summary>
@@ -3298,6 +3480,7 @@ public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteRetryPolicyPerRetryTimeout
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -3311,6 +3494,7 @@ public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteRetryPolicyPerRetr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteRetryPolicy
 {
     /// <summary>
@@ -3342,6 +3526,7 @@ public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteRetryPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteTimeoutIdle
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -3355,6 +3540,7 @@ public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteTimeoutIdle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteTimeoutPerRequest
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -3368,6 +3554,7 @@ public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteTimeoutPerRequest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteTimeout
 {
     /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
@@ -3381,6 +3568,7 @@ public partial class V1beta1RouteStatusAtProviderSpecGrpcRouteTimeout
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecGrpcRoute
 {
     /// <summary>Action to take if a match is determined.</summary>
@@ -3402,6 +3590,7 @@ public partial class V1beta1RouteStatusAtProviderSpecGrpcRoute
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteActionWeightedTarget
 {
     /// <summary>The port number to match from the request.</summary>
@@ -3419,6 +3608,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteActionWeightedTar
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteAction
 {
     /// <summary>
@@ -3431,6 +3621,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteMatchHeaderMatchRange
 {
     /// <summary>End of the range.</summary>
@@ -3444,6 +3635,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteMatchHeaderMatchR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteMatchHeaderMatch
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -3469,6 +3661,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteMatchHeaderMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteMatchHeader
 {
     /// <summary>If true, the match is on the opposite of the match criteria. Default is false.</summary>
@@ -3486,6 +3679,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteMatchHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteMatchPath
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -3499,6 +3693,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteMatchPath
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteMatchQueryParameterMatch
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -3508,6 +3703,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteMatchQueryParamet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteMatchQueryParameter
 {
     /// <summary>Criteria for determining an gRPC request match.</summary>
@@ -3521,6 +3717,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteMatchQueryParamet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteMatch
 {
     /// <summary>Client request headers to match on.</summary>
@@ -3554,6 +3751,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteRetryPolicyPerRetryTimeout
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -3567,6 +3765,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteRetryPolicyPerRet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteRetryPolicy
 {
     /// <summary>
@@ -3591,6 +3790,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteRetryPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteTimeoutIdle
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -3604,6 +3804,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteTimeoutIdle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteTimeoutPerRequest
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -3617,6 +3818,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteTimeoutPerRequest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteTimeout
 {
     /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
@@ -3630,6 +3832,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttp2RouteTimeout
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttp2Route
 {
     /// <summary>Action to take if a match is determined.</summary>
@@ -3651,6 +3854,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttp2Route
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttpRouteActionWeightedTarget
 {
     /// <summary>The port number to match from the request.</summary>
@@ -3668,6 +3872,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttpRouteActionWeightedTarg
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttpRouteAction
 {
     /// <summary>
@@ -3680,6 +3885,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttpRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttpRouteMatchHeaderMatchRange
 {
     /// <summary>End of the range.</summary>
@@ -3693,6 +3899,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttpRouteMatchHeaderMatchRa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttpRouteMatchHeaderMatch
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -3718,6 +3925,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttpRouteMatchHeaderMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttpRouteMatchHeader
 {
     /// <summary>If true, the match is on the opposite of the match criteria. Default is false.</summary>
@@ -3735,6 +3943,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttpRouteMatchHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttpRouteMatchPath
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -3748,6 +3957,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttpRouteMatchPath
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttpRouteMatchQueryParameterMatch
 {
     /// <summary>Value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.</summary>
@@ -3757,6 +3967,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttpRouteMatchQueryParamete
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttpRouteMatchQueryParameter
 {
     /// <summary>Criteria for determining an gRPC request match.</summary>
@@ -3770,6 +3981,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttpRouteMatchQueryParamete
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttpRouteMatch
 {
     /// <summary>Client request headers to match on.</summary>
@@ -3803,6 +4015,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttpRouteMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttpRouteRetryPolicyPerRetryTimeout
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -3816,6 +4029,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttpRouteRetryPolicyPerRetr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttpRouteRetryPolicy
 {
     /// <summary>
@@ -3840,6 +4054,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttpRouteRetryPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttpRouteTimeoutIdle
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -3853,6 +4068,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttpRouteTimeoutIdle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttpRouteTimeoutPerRequest
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -3866,6 +4082,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttpRouteTimeoutPerRequest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttpRouteTimeout
 {
     /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
@@ -3879,6 +4096,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttpRouteTimeout
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecHttpRoute
 {
     /// <summary>Action to take if a match is determined.</summary>
@@ -3900,6 +4118,7 @@ public partial class V1beta1RouteStatusAtProviderSpecHttpRoute
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecTcpRouteActionWeightedTarget
 {
     /// <summary>The port number to match from the request.</summary>
@@ -3917,6 +4136,7 @@ public partial class V1beta1RouteStatusAtProviderSpecTcpRouteActionWeightedTarge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecTcpRouteAction
 {
     /// <summary>
@@ -3929,6 +4149,7 @@ public partial class V1beta1RouteStatusAtProviderSpecTcpRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecTcpRouteMatch
 {
     /// <summary>The port number to match from the request.</summary>
@@ -3938,6 +4159,7 @@ public partial class V1beta1RouteStatusAtProviderSpecTcpRouteMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecTcpRouteTimeoutIdle
 {
     /// <summary>Unit of time. Valid values: ms, s.</summary>
@@ -3951,6 +4173,7 @@ public partial class V1beta1RouteStatusAtProviderSpecTcpRouteTimeoutIdle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecTcpRouteTimeout
 {
     /// <summary>Idle timeout. An idle timeout bounds the amount of time that a connection may be idle.</summary>
@@ -3960,6 +4183,7 @@ public partial class V1beta1RouteStatusAtProviderSpecTcpRouteTimeout
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpecTcpRoute
 {
     /// <summary>Action to take if a match is determined.</summary>
@@ -3977,6 +4201,7 @@ public partial class V1beta1RouteStatusAtProviderSpecTcpRoute
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProviderSpec
 {
     /// <summary>GRPC routing information for the route.</summary>
@@ -4005,6 +4230,7 @@ public partial class V1beta1RouteStatusAtProviderSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusAtProvider
 {
     /// <summary>ARN of the route.</summary>
@@ -4066,6 +4292,7 @@ public partial class V1beta1RouteStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatusConditions
 {
     /// <summary>
@@ -4109,6 +4336,7 @@ public partial class V1beta1RouteStatusConditions
 /// <summary>RouteStatus defines the observed state of Route.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RouteStatus
 {
     [JsonPropertyName("atProvider")]
@@ -4127,9 +4355,13 @@ public partial class V1beta1RouteStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Route is the Schema for the Routes API. Provides an AWS App Mesh route resource.</summary>
+/// <summary>
+/// Route is the Schema for the Routes API. Provides an AWS App Mesh route resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Route : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RouteSpec>, IStatus<V1beta1RouteStatus?>
 {

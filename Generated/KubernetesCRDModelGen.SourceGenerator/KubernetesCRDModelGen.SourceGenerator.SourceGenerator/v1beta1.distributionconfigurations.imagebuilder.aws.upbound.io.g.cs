@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.imagebuilder.aws.upbound.io;
-/// <summary>DistributionConfiguration is the Schema for the DistributionConfigurations API. Manage an Image Builder Distribution Configuration</summary>
+/// <summary>
+/// DistributionConfiguration is the Schema for the DistributionConfigurations API. Manage an Image Builder Distribution Configuration
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DistributionConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DistributionConfiguration>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1DistributionConfigurationList : IKubernetesObject<V1
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionConfigurationSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionConfigurationSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1DistributionConfigurationSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionAmiDistributionConfigurationLaunchPermission
 {
     /// <summary>Set of AWS Organization ARNs to assign.</summary>
@@ -78,6 +84,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionAmiDistributionConfiguration
 {
     /// <summary>Key-value map of tags to apply to the distributed AMI.</summary>
@@ -107,6 +114,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionContainerDistributionConfigurationTargetRepository
 {
     /// <summary>The name of the container repository where the output container image is stored. This name is prefixed by the repository location.</summary>
@@ -120,6 +128,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionContainerDistributionConfiguration
 {
     /// <summary>Set of tags that are attached to the container distribution configuration.</summary>
@@ -137,6 +146,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionFastLaunchConfigurationLaunchTemplate
 {
     /// <summary>The ID of the launch template to use for faster launching for a Windows AMI.</summary>
@@ -154,6 +164,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionFastLaunchConfigurationSnapshotConfiguration
 {
     /// <summary>The number of pre-provisioned snapshots to keep on hand for a fast-launch enabled Windows AMI.</summary>
@@ -163,6 +174,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionFastLaunchConfiguration
 {
     /// <summary>The owner account ID for the fast-launch enabled Windows AMI.</summary>
@@ -188,6 +200,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionLaunchTemplateConfiguration
 {
     /// <summary>The account ID that this configuration applies to.</summary>
@@ -205,6 +218,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionS3ExportConfiguration
 {
     /// <summary>The disk image format of the exported image (RAW, VHD, or VMDK)</summary>
@@ -226,6 +240,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistributionSsmParameterConfiguration
 {
     /// <summary>AWS account ID that will own the parameter in the given region. This account must be specified as a target account in the distribution settings.</summary>
@@ -243,6 +258,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 {
     /// <summary>Configuration block with Amazon Machine Image (AMI) distribution settings. Detailed below.</summary>
@@ -280,6 +296,7 @@ public partial class V1beta1DistributionConfigurationSpecForProviderDistribution
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecForProvider
 {
     /// <summary>Description of the distribution configuration.</summary>
@@ -308,6 +325,7 @@ public partial class V1beta1DistributionConfigurationSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionAmiDistributionConfigurationLaunchPermission
 {
     /// <summary>Set of AWS Organization ARNs to assign.</summary>
@@ -329,6 +347,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionAmiDistributionConfiguration
 {
     /// <summary>Key-value map of tags to apply to the distributed AMI.</summary>
@@ -358,6 +377,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionContainerDistributionConfigurationTargetRepository
 {
     /// <summary>The name of the container repository where the output container image is stored. This name is prefixed by the repository location.</summary>
@@ -371,6 +391,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionContainerDistributionConfiguration
 {
     /// <summary>Set of tags that are attached to the container distribution configuration.</summary>
@@ -388,6 +409,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionFastLaunchConfigurationLaunchTemplate
 {
     /// <summary>The ID of the launch template to use for faster launching for a Windows AMI.</summary>
@@ -405,6 +427,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionFastLaunchConfigurationSnapshotConfiguration
 {
     /// <summary>The number of pre-provisioned snapshots to keep on hand for a fast-launch enabled Windows AMI.</summary>
@@ -414,6 +437,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionFastLaunchConfiguration
 {
     /// <summary>The owner account ID for the fast-launch enabled Windows AMI.</summary>
@@ -439,6 +463,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionLaunchTemplateConfiguration
 {
     /// <summary>The account ID that this configuration applies to.</summary>
@@ -456,6 +481,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionS3ExportConfiguration
 {
     /// <summary>The disk image format of the exported image (RAW, VHD, or VMDK)</summary>
@@ -477,6 +503,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistributionSsmParameterConfiguration
 {
     /// <summary>AWS account ID that will own the parameter in the given region. This account must be specified as a target account in the distribution settings.</summary>
@@ -494,6 +521,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecInitProviderDistribution
 {
     /// <summary>Configuration block with Amazon Machine Image (AMI) distribution settings. Detailed below.</summary>
@@ -539,6 +567,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProviderDistributio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecInitProvider
 {
     /// <summary>Description of the distribution configuration.</summary>
@@ -564,6 +593,7 @@ public partial class V1beta1DistributionConfigurationSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionConfigurationSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionConfigurationSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -588,6 +618,7 @@ public enum V1beta1DistributionConfigurationSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionConfigurationSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionConfigurationSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -604,6 +635,7 @@ public enum V1beta1DistributionConfigurationSpecProviderConfigRefPolicyResolutio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DistributionConfigurationSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DistributionConfigurationSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -615,6 +647,7 @@ public enum V1beta1DistributionConfigurationSpecProviderConfigRefPolicyResolveEn
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -643,6 +676,7 @@ public partial class V1beta1DistributionConfigurationSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -662,6 +696,7 @@ public partial class V1beta1DistributionConfigurationSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -676,6 +711,7 @@ public partial class V1beta1DistributionConfigurationSpecWriteConnectionSecretTo
 /// <summary>DistributionConfigurationSpec defines the desired state of DistributionConfiguration</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationSpec
 {
     /// <summary>
@@ -743,6 +779,7 @@ public partial class V1beta1DistributionConfigurationSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionAmiDistributionConfigurationLaunchPermission
 {
     /// <summary>Set of AWS Organization ARNs to assign.</summary>
@@ -764,6 +801,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionAmiDistributionConfiguration
 {
     /// <summary>Key-value map of tags to apply to the distributed AMI.</summary>
@@ -793,6 +831,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionContainerDistributionConfigurationTargetRepository
 {
     /// <summary>The name of the container repository where the output container image is stored. This name is prefixed by the repository location.</summary>
@@ -806,6 +845,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionContainerDistributionConfiguration
 {
     /// <summary>Set of tags that are attached to the container distribution configuration.</summary>
@@ -823,6 +863,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionFastLaunchConfigurationLaunchTemplate
 {
     /// <summary>The ID of the launch template to use for faster launching for a Windows AMI.</summary>
@@ -840,6 +881,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionFastLaunchConfigurationSnapshotConfiguration
 {
     /// <summary>The number of pre-provisioned snapshots to keep on hand for a fast-launch enabled Windows AMI.</summary>
@@ -849,6 +891,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionFastLaunchConfiguration
 {
     /// <summary>The owner account ID for the fast-launch enabled Windows AMI.</summary>
@@ -874,6 +917,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionLaunchTemplateConfiguration
 {
     /// <summary>The account ID that this configuration applies to.</summary>
@@ -891,6 +935,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionS3ExportConfiguration
 {
     /// <summary>The disk image format of the exported image (RAW, VHD, or VMDK)</summary>
@@ -912,6 +957,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistributionSsmParameterConfiguration
 {
     /// <summary>AWS account ID that will own the parameter in the given region. This account must be specified as a target account in the distribution settings.</summary>
@@ -929,6 +975,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationStatusAtProviderDistribution
 {
     /// <summary>Configuration block with Amazon Machine Image (AMI) distribution settings. Detailed below.</summary>
@@ -966,6 +1013,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProviderDistributio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationStatusAtProvider
 {
     /// <summary>Amazon Resource Name (ARN) of the distribution configuration.</summary>
@@ -1015,6 +1063,7 @@ public partial class V1beta1DistributionConfigurationStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationStatusConditions
 {
     /// <summary>
@@ -1058,6 +1107,7 @@ public partial class V1beta1DistributionConfigurationStatusConditions
 /// <summary>DistributionConfigurationStatus defines the observed state of DistributionConfiguration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DistributionConfigurationStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1076,9 +1126,13 @@ public partial class V1beta1DistributionConfigurationStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>DistributionConfiguration is the Schema for the DistributionConfigurations API. Manage an Image Builder Distribution Configuration</summary>
+/// <summary>
+/// DistributionConfiguration is the Schema for the DistributionConfigurations API. Manage an Image Builder Distribution Configuration
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DistributionConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DistributionConfigurationSpec>, IStatus<V1beta1DistributionConfigurationStatus?>
 {

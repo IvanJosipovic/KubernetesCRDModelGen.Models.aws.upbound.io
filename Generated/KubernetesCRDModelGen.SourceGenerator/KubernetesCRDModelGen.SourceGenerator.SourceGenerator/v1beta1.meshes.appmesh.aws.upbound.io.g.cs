@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appmesh.aws.upbound.io;
-/// <summary>Mesh is the Schema for the Meshs API. Provides an AWS App Mesh service mesh resource.</summary>
+/// <summary>
+/// Mesh is the Schema for the Meshs API. Provides an AWS App Mesh service mesh resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MeshList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Mesh>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1MeshList : IKubernetesObject<V1ListMeta>, IItems<V1b
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MeshSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MeshSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1MeshSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MeshSpecForProviderSpecEgressFilter
 {
     /// <summary>Egress filter type. By default, the type is DROP_ALL. Valid values are ALLOW_ALL and DROP_ALL.</summary>
@@ -66,6 +72,7 @@ public partial class V1beta1MeshSpecForProviderSpecEgressFilter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MeshSpecForProviderSpecServiceDiscovery
 {
     /// <summary>The IP version to use to control traffic within the mesh. Valid values are IPv6_PREFERRED, IPv4_PREFERRED, IPv4_ONLY, and IPv6_ONLY.</summary>
@@ -75,6 +82,7 @@ public partial class V1beta1MeshSpecForProviderSpecServiceDiscovery
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MeshSpecForProviderSpec
 {
     /// <summary>Egress filter rules for the service mesh.</summary>
@@ -88,6 +96,7 @@ public partial class V1beta1MeshSpecForProviderSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MeshSpecForProvider
 {
     /// <summary>
@@ -108,6 +117,7 @@ public partial class V1beta1MeshSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MeshSpecInitProviderSpecEgressFilter
 {
     /// <summary>Egress filter type. By default, the type is DROP_ALL. Valid values are ALLOW_ALL and DROP_ALL.</summary>
@@ -117,6 +127,7 @@ public partial class V1beta1MeshSpecInitProviderSpecEgressFilter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MeshSpecInitProviderSpecServiceDiscovery
 {
     /// <summary>The IP version to use to control traffic within the mesh. Valid values are IPv6_PREFERRED, IPv4_PREFERRED, IPv4_ONLY, and IPv6_ONLY.</summary>
@@ -126,6 +137,7 @@ public partial class V1beta1MeshSpecInitProviderSpecServiceDiscovery
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MeshSpecInitProviderSpec
 {
     /// <summary>Egress filter rules for the service mesh.</summary>
@@ -151,6 +163,7 @@ public partial class V1beta1MeshSpecInitProviderSpec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MeshSpecInitProvider
 {
     /// <summary>Service mesh specification to apply.</summary>
@@ -168,6 +181,7 @@ public partial class V1beta1MeshSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MeshSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MeshSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -192,6 +206,7 @@ public enum V1beta1MeshSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MeshSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MeshSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -208,6 +223,7 @@ public enum V1beta1MeshSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MeshSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MeshSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -219,6 +235,7 @@ public enum V1beta1MeshSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MeshSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -247,6 +264,7 @@ public partial class V1beta1MeshSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MeshSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -266,6 +284,7 @@ public partial class V1beta1MeshSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MeshSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -280,6 +299,7 @@ public partial class V1beta1MeshSpecWriteConnectionSecretToRef
 /// <summary>MeshSpec defines the desired state of Mesh</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MeshSpec
 {
     /// <summary>
@@ -347,6 +367,7 @@ public partial class V1beta1MeshSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MeshStatusAtProviderSpecEgressFilter
 {
     /// <summary>Egress filter type. By default, the type is DROP_ALL. Valid values are ALLOW_ALL and DROP_ALL.</summary>
@@ -356,6 +377,7 @@ public partial class V1beta1MeshStatusAtProviderSpecEgressFilter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MeshStatusAtProviderSpecServiceDiscovery
 {
     /// <summary>The IP version to use to control traffic within the mesh. Valid values are IPv6_PREFERRED, IPv4_PREFERRED, IPv4_ONLY, and IPv6_ONLY.</summary>
@@ -365,6 +387,7 @@ public partial class V1beta1MeshStatusAtProviderSpecServiceDiscovery
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MeshStatusAtProviderSpec
 {
     /// <summary>Egress filter rules for the service mesh.</summary>
@@ -378,6 +401,7 @@ public partial class V1beta1MeshStatusAtProviderSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MeshStatusAtProvider
 {
     /// <summary>ARN of the service mesh.</summary>
@@ -427,6 +451,7 @@ public partial class V1beta1MeshStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MeshStatusConditions
 {
     /// <summary>
@@ -470,6 +495,7 @@ public partial class V1beta1MeshStatusConditions
 /// <summary>MeshStatus defines the observed state of Mesh.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MeshStatus
 {
     [JsonPropertyName("atProvider")]
@@ -488,9 +514,13 @@ public partial class V1beta1MeshStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Mesh is the Schema for the Meshs API. Provides an AWS App Mesh service mesh resource.</summary>
+/// <summary>
+/// Mesh is the Schema for the Meshs API. Provides an AWS App Mesh service mesh resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Mesh : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MeshSpec>, IStatus<V1beta1MeshStatus?>
 {

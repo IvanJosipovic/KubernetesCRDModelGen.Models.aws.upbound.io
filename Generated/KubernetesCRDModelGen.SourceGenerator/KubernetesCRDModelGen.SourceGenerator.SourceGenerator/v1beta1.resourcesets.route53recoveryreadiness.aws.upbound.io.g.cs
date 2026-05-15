@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.route53recoveryreadiness.aws.upbound.io;
-/// <summary>ResourceSet is the Schema for the ResourceSets API. Provides an AWS Route 53 Recovery Readiness Resource Set</summary>
+/// <summary>
+/// ResourceSet is the Schema for the ResourceSets API. Provides an AWS Route 53 Recovery Readiness Resource Set
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ResourceSetList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ResourceSet>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ResourceSetList : IKubernetesObject<V1ListMeta>, IIt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceSetSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceSetSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1ResourceSetSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecForProviderResourcesDnsTargetResourceTargetResourceNlbResource
 {
     /// <summary>NLB resource ARN.</summary>
@@ -66,6 +72,7 @@ public partial class V1beta1ResourceSetSpecForProviderResourcesDnsTargetResource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecForProviderResourcesDnsTargetResourceTargetResourceR53Resource
 {
     /// <summary>Domain name that is targeted.</summary>
@@ -79,6 +86,7 @@ public partial class V1beta1ResourceSetSpecForProviderResourcesDnsTargetResource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecForProviderResourcesDnsTargetResourceTargetResource
 {
     /// <summary>NLB resource a DNS Target Resource points to. Required if r53_resource is not set.</summary>
@@ -92,6 +100,7 @@ public partial class V1beta1ResourceSetSpecForProviderResourcesDnsTargetResource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecForProviderResourcesDnsTargetResource
 {
     /// <summary>DNS Name that acts as the ingress point to a portion of application.</summary>
@@ -123,6 +132,7 @@ public partial class V1beta1ResourceSetSpecForProviderResourcesDnsTargetResource
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceSetSpecForProviderResourcesResourceArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceSetSpecForProviderResourcesResourceArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -139,6 +149,7 @@ public enum V1beta1ResourceSetSpecForProviderResourcesResourceArnRefPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceSetSpecForProviderResourcesResourceArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceSetSpecForProviderResourcesResourceArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -150,6 +161,7 @@ public enum V1beta1ResourceSetSpecForProviderResourcesResourceArnRefPolicyResolv
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecForProviderResourcesResourceArnRefPolicy
 {
     /// <summary>
@@ -174,6 +186,7 @@ public partial class V1beta1ResourceSetSpecForProviderResourcesResourceArnRefPol
 /// <summary>Reference to a MetricAlarm in cloudwatch to populate resourceArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecForProviderResourcesResourceArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -193,6 +206,7 @@ public partial class V1beta1ResourceSetSpecForProviderResourcesResourceArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceSetSpecForProviderResourcesResourceArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceSetSpecForProviderResourcesResourceArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -209,6 +223,7 @@ public enum V1beta1ResourceSetSpecForProviderResourcesResourceArnSelectorPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceSetSpecForProviderResourcesResourceArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceSetSpecForProviderResourcesResourceArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -220,6 +235,7 @@ public enum V1beta1ResourceSetSpecForProviderResourcesResourceArnSelectorPolicyR
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecForProviderResourcesResourceArnSelectorPolicy
 {
     /// <summary>
@@ -244,6 +260,7 @@ public partial class V1beta1ResourceSetSpecForProviderResourcesResourceArnSelect
 /// <summary>Selector for a MetricAlarm in cloudwatch to populate resourceArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecForProviderResourcesResourceArnSelector
 {
     /// <summary>
@@ -264,6 +281,7 @@ public partial class V1beta1ResourceSetSpecForProviderResourcesResourceArnSelect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecForProviderResources
 {
     /// <summary>Component for DNS/Routing Control Readiness Checks.</summary>
@@ -289,6 +307,7 @@ public partial class V1beta1ResourceSetSpecForProviderResources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecForProvider
 {
     /// <summary>Type of the resources in the resource set.</summary>
@@ -306,6 +325,7 @@ public partial class V1beta1ResourceSetSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecInitProviderResourcesDnsTargetResourceTargetResourceNlbResource
 {
     /// <summary>NLB resource ARN.</summary>
@@ -315,6 +335,7 @@ public partial class V1beta1ResourceSetSpecInitProviderResourcesDnsTargetResourc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecInitProviderResourcesDnsTargetResourceTargetResourceR53Resource
 {
     /// <summary>Domain name that is targeted.</summary>
@@ -328,6 +349,7 @@ public partial class V1beta1ResourceSetSpecInitProviderResourcesDnsTargetResourc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecInitProviderResourcesDnsTargetResourceTargetResource
 {
     /// <summary>NLB resource a DNS Target Resource points to. Required if r53_resource is not set.</summary>
@@ -341,6 +363,7 @@ public partial class V1beta1ResourceSetSpecInitProviderResourcesDnsTargetResourc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecInitProviderResourcesDnsTargetResource
 {
     /// <summary>DNS Name that acts as the ingress point to a portion of application.</summary>
@@ -372,6 +395,7 @@ public partial class V1beta1ResourceSetSpecInitProviderResourcesDnsTargetResourc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceSetSpecInitProviderResourcesResourceArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceSetSpecInitProviderResourcesResourceArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -388,6 +412,7 @@ public enum V1beta1ResourceSetSpecInitProviderResourcesResourceArnRefPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceSetSpecInitProviderResourcesResourceArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceSetSpecInitProviderResourcesResourceArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -399,6 +424,7 @@ public enum V1beta1ResourceSetSpecInitProviderResourcesResourceArnRefPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecInitProviderResourcesResourceArnRefPolicy
 {
     /// <summary>
@@ -423,6 +449,7 @@ public partial class V1beta1ResourceSetSpecInitProviderResourcesResourceArnRefPo
 /// <summary>Reference to a MetricAlarm in cloudwatch to populate resourceArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecInitProviderResourcesResourceArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -442,6 +469,7 @@ public partial class V1beta1ResourceSetSpecInitProviderResourcesResourceArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceSetSpecInitProviderResourcesResourceArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceSetSpecInitProviderResourcesResourceArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -458,6 +486,7 @@ public enum V1beta1ResourceSetSpecInitProviderResourcesResourceArnSelectorPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceSetSpecInitProviderResourcesResourceArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceSetSpecInitProviderResourcesResourceArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -469,6 +498,7 @@ public enum V1beta1ResourceSetSpecInitProviderResourcesResourceArnSelectorPolicy
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecInitProviderResourcesResourceArnSelectorPolicy
 {
     /// <summary>
@@ -493,6 +523,7 @@ public partial class V1beta1ResourceSetSpecInitProviderResourcesResourceArnSelec
 /// <summary>Selector for a MetricAlarm in cloudwatch to populate resourceArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecInitProviderResourcesResourceArnSelector
 {
     /// <summary>
@@ -513,6 +544,7 @@ public partial class V1beta1ResourceSetSpecInitProviderResourcesResourceArnSelec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecInitProviderResources
 {
     /// <summary>Component for DNS/Routing Control Readiness Checks.</summary>
@@ -550,6 +582,7 @@ public partial class V1beta1ResourceSetSpecInitProviderResources
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecInitProvider
 {
     /// <summary>Type of the resources in the resource set.</summary>
@@ -571,6 +604,7 @@ public partial class V1beta1ResourceSetSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceSetSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceSetSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -595,6 +629,7 @@ public enum V1beta1ResourceSetSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceSetSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceSetSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -611,6 +646,7 @@ public enum V1beta1ResourceSetSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourceSetSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ResourceSetSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -622,6 +658,7 @@ public enum V1beta1ResourceSetSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -650,6 +687,7 @@ public partial class V1beta1ResourceSetSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -669,6 +707,7 @@ public partial class V1beta1ResourceSetSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -683,6 +722,7 @@ public partial class V1beta1ResourceSetSpecWriteConnectionSecretToRef
 /// <summary>ResourceSetSpec defines the desired state of ResourceSet</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetSpec
 {
     /// <summary>
@@ -750,6 +790,7 @@ public partial class V1beta1ResourceSetSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetStatusAtProviderResourcesDnsTargetResourceTargetResourceNlbResource
 {
     /// <summary>NLB resource ARN.</summary>
@@ -759,6 +800,7 @@ public partial class V1beta1ResourceSetStatusAtProviderResourcesDnsTargetResourc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetStatusAtProviderResourcesDnsTargetResourceTargetResourceR53Resource
 {
     /// <summary>Domain name that is targeted.</summary>
@@ -772,6 +814,7 @@ public partial class V1beta1ResourceSetStatusAtProviderResourcesDnsTargetResourc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetStatusAtProviderResourcesDnsTargetResourceTargetResource
 {
     /// <summary>NLB resource a DNS Target Resource points to. Required if r53_resource is not set.</summary>
@@ -785,6 +828,7 @@ public partial class V1beta1ResourceSetStatusAtProviderResourcesDnsTargetResourc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetStatusAtProviderResourcesDnsTargetResource
 {
     /// <summary>DNS Name that acts as the ingress point to a portion of application.</summary>
@@ -810,6 +854,7 @@ public partial class V1beta1ResourceSetStatusAtProviderResourcesDnsTargetResourc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetStatusAtProviderResources
 {
     /// <summary>Unique identified for DNS Target Resources, use for readiness checks.</summary>
@@ -831,6 +876,7 @@ public partial class V1beta1ResourceSetStatusAtProviderResources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetStatusAtProvider
 {
     /// <summary>ARN of the resource set</summary>
@@ -860,6 +906,7 @@ public partial class V1beta1ResourceSetStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetStatusConditions
 {
     /// <summary>
@@ -903,6 +950,7 @@ public partial class V1beta1ResourceSetStatusConditions
 /// <summary>ResourceSetStatus defines the observed state of ResourceSet.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ResourceSetStatus
 {
     [JsonPropertyName("atProvider")]
@@ -921,9 +969,13 @@ public partial class V1beta1ResourceSetStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>ResourceSet is the Schema for the ResourceSets API. Provides an AWS Route 53 Recovery Readiness Resource Set</summary>
+/// <summary>
+/// ResourceSet is the Schema for the ResourceSets API. Provides an AWS Route 53 Recovery Readiness Resource Set
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ResourceSet : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ResourceSetSpec>, IStatus<V1beta1ResourceSetStatus?>
 {

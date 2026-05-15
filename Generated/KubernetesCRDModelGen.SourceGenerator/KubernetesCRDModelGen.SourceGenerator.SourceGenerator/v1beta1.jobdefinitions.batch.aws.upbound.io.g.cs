@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.batch.aws.upbound.io;
-/// <summary>JobDefinition is the Schema for the JobDefinitions API. Provides a Batch Job Definition resource.</summary>
+/// <summary>
+/// JobDefinition is the Schema for the JobDefinitions API. Provides a Batch Job Definition resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1JobDefinitionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1JobDefinition>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1JobDefinitionList : IKubernetesObject<V1ListMeta>, I
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobDefinitionSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobDefinitionSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1JobDefinitionSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesContainersEnv
 {
     /// <summary>Name of the job definition.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesContainersResources
 {
     [JsonPropertyName("limits")]
@@ -81,6 +88,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesContainersSecurityContext
 {
     /// <summary>Whether or not a container or a Kubernetes pod is allowed to gain more privileges than its parent process. The default value is false.</summary>
@@ -109,6 +117,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesContainersVolumeMounts
 {
     /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
@@ -125,6 +134,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesContainers
 {
     /// <summary>Array of arguments to the entrypoint. If this isn&apos;t specified, the CMD of the container image is used. This corresponds to the args member in the Entrypoint portion of the Pod in Kubernetes. Environment variable references are expanded using the container&apos;s environment.</summary>
@@ -166,6 +176,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesImagePullSecret
 {
     /// <summary>Unique identifier.</summary>
@@ -175,6 +186,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesInitContainersEnv
 {
     /// <summary>Name of the job definition.</summary>
@@ -188,6 +200,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesInitContainersResources
 {
     [JsonPropertyName("limits")]
@@ -199,6 +212,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesInitContainersSecurityContext
 {
     /// <summary>Whether or not a container or a Kubernetes pod is allowed to gain more privileges than its parent process. The default value is false.</summary>
@@ -227,6 +241,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesInitContainersVolumeMounts
 {
     /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
@@ -243,6 +258,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesInitContainers
 {
     /// <summary>Array of arguments to the entrypoint. If this isn&apos;t specified, the CMD of the container image is used. This corresponds to the args member in the Entrypoint portion of the Pod in Kubernetes. Environment variable references are expanded using the container&apos;s environment.</summary>
@@ -284,6 +300,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesMetadata
 {
     /// <summary>Key-value pairs used to identify, sort, and organize kubernetes resources.</summary>
@@ -293,6 +310,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesVolumesEmptyDir
 {
     /// <summary>Medium to store the volume. The default value is an empty string, which uses the storage of the node.</summary>
@@ -306,6 +324,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesVolumesHostPath
 {
     /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
@@ -315,6 +334,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesVolumesSecret
 {
     /// <summary>Whether the secret or the secret&apos;s keys must be defined.</summary>
@@ -328,6 +348,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodPropertiesVolumes
 {
     [JsonPropertyName("emptyDir")]
@@ -347,6 +368,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperties
 {
     /// <summary>Properties of the container that&apos;s used on the Amazon EKS pod. See containers below.</summary>
@@ -388,6 +410,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksPropertiesPodProperti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderEksProperties
 {
     /// <summary>Properties for the Kubernetes pod resources of a job. See pod_properties below.</summary>
@@ -397,6 +420,7 @@ public partial class V1beta1JobDefinitionSpecForProviderEksProperties
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderRetryStrategyEvaluateOnExit
 {
     /// <summary>Action to take if all of the specified conditions are met. The values are not case sensitive. Valid values: retry, exit.</summary>
@@ -418,6 +442,7 @@ public partial class V1beta1JobDefinitionSpecForProviderRetryStrategyEvaluateOnE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderRetryStrategy
 {
     /// <summary>Number of times to move a job to the RUNNABLE status. You may specify between 1 and 10 attempts.</summary>
@@ -431,6 +456,7 @@ public partial class V1beta1JobDefinitionSpecForProviderRetryStrategy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProviderTimeout
 {
     /// <summary>Time duration in seconds after which AWS Batch terminates your jobs if they have not finished. The minimum value for the timeout is 60 seconds.</summary>
@@ -440,6 +466,7 @@ public partial class V1beta1JobDefinitionSpecForProviderTimeout
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecForProvider
 {
     /// <summary>Valid container properties provided as a single valid JSON document. This parameter is only valid if the type parameter is container.</summary>
@@ -508,6 +535,7 @@ public partial class V1beta1JobDefinitionSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesContainersEnv
 {
     /// <summary>Name of the job definition.</summary>
@@ -521,6 +549,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesContainersResources
 {
     [JsonPropertyName("limits")]
@@ -532,6 +561,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesContainersSecurityContext
 {
     /// <summary>Whether or not a container or a Kubernetes pod is allowed to gain more privileges than its parent process. The default value is false.</summary>
@@ -560,6 +590,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesContainersVolumeMounts
 {
     /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
@@ -576,6 +607,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesContainers
 {
     /// <summary>Array of arguments to the entrypoint. If this isn&apos;t specified, the CMD of the container image is used. This corresponds to the args member in the Entrypoint portion of the Pod in Kubernetes. Environment variable references are expanded using the container&apos;s environment.</summary>
@@ -617,6 +649,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesImagePullSecret
 {
     /// <summary>Unique identifier.</summary>
@@ -626,6 +659,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesInitContainersEnv
 {
     /// <summary>Name of the job definition.</summary>
@@ -639,6 +673,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesInitContainersResources
 {
     [JsonPropertyName("limits")]
@@ -650,6 +685,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesInitContainersSecurityContext
 {
     /// <summary>Whether or not a container or a Kubernetes pod is allowed to gain more privileges than its parent process. The default value is false.</summary>
@@ -678,6 +714,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesInitContainersVolumeMounts
 {
     /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
@@ -694,6 +731,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesInitContainers
 {
     /// <summary>Array of arguments to the entrypoint. If this isn&apos;t specified, the CMD of the container image is used. This corresponds to the args member in the Entrypoint portion of the Pod in Kubernetes. Environment variable references are expanded using the container&apos;s environment.</summary>
@@ -735,6 +773,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesMetadata
 {
     /// <summary>Key-value pairs used to identify, sort, and organize kubernetes resources.</summary>
@@ -744,6 +783,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesVolumesEmptyDir
 {
     /// <summary>Medium to store the volume. The default value is an empty string, which uses the storage of the node.</summary>
@@ -757,6 +797,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesVolumesHostPath
 {
     /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
@@ -766,6 +807,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesVolumesSecret
 {
     /// <summary>Whether the secret or the secret&apos;s keys must be defined.</summary>
@@ -779,6 +821,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropertiesVolumes
 {
     [JsonPropertyName("emptyDir")]
@@ -798,6 +841,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodProperties
 {
     /// <summary>Properties of the container that&apos;s used on the Amazon EKS pod. See containers below.</summary>
@@ -839,6 +883,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderEksProperties
 {
     /// <summary>Properties for the Kubernetes pod resources of a job. See pod_properties below.</summary>
@@ -848,6 +893,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderEksProperties
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderRetryStrategyEvaluateOnExit
 {
     /// <summary>Action to take if all of the specified conditions are met. The values are not case sensitive. Valid values: retry, exit.</summary>
@@ -869,6 +915,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderRetryStrategyEvaluateOn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderRetryStrategy
 {
     /// <summary>Number of times to move a job to the RUNNABLE status. You may specify between 1 and 10 attempts.</summary>
@@ -882,6 +929,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderRetryStrategy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProviderTimeout
 {
     /// <summary>Time duration in seconds after which AWS Batch terminates your jobs if they have not finished. The minimum value for the timeout is 60 seconds.</summary>
@@ -903,6 +951,7 @@ public partial class V1beta1JobDefinitionSpecInitProviderTimeout
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecInitProvider
 {
     /// <summary>Valid container properties provided as a single valid JSON document. This parameter is only valid if the type parameter is container.</summary>
@@ -968,6 +1017,7 @@ public partial class V1beta1JobDefinitionSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobDefinitionSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobDefinitionSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -992,6 +1042,7 @@ public enum V1beta1JobDefinitionSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobDefinitionSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobDefinitionSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1008,6 +1059,7 @@ public enum V1beta1JobDefinitionSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobDefinitionSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobDefinitionSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1019,6 +1071,7 @@ public enum V1beta1JobDefinitionSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1047,6 +1100,7 @@ public partial class V1beta1JobDefinitionSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1066,6 +1120,7 @@ public partial class V1beta1JobDefinitionSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1080,6 +1135,7 @@ public partial class V1beta1JobDefinitionSpecWriteConnectionSecretToRef
 /// <summary>JobDefinitionSpec defines the desired state of JobDefinition</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionSpec
 {
     /// <summary>
@@ -1147,6 +1203,7 @@ public partial class V1beta1JobDefinitionSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesContainersEnv
 {
     /// <summary>Name of the job definition.</summary>
@@ -1160,6 +1217,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesContainersResources
 {
     [JsonPropertyName("limits")]
@@ -1171,6 +1229,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesContainersSecurityContext
 {
     /// <summary>Whether or not a container or a Kubernetes pod is allowed to gain more privileges than its parent process. The default value is false.</summary>
@@ -1199,6 +1258,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesContainersVolumeMounts
 {
     /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
@@ -1215,6 +1275,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesContainers
 {
     /// <summary>Array of arguments to the entrypoint. If this isn&apos;t specified, the CMD of the container image is used. This corresponds to the args member in the Entrypoint portion of the Pod in Kubernetes. Environment variable references are expanded using the container&apos;s environment.</summary>
@@ -1256,6 +1317,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesImagePullSecret
 {
     /// <summary>Unique identifier.</summary>
@@ -1265,6 +1327,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesInitContainersEnv
 {
     /// <summary>Name of the job definition.</summary>
@@ -1278,6 +1341,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesInitContainersResources
 {
     [JsonPropertyName("limits")]
@@ -1289,6 +1353,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesInitContainersSecurityContext
 {
     /// <summary>Whether or not a container or a Kubernetes pod is allowed to gain more privileges than its parent process. The default value is false.</summary>
@@ -1317,6 +1382,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesInitContainersVolumeMounts
 {
     /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
@@ -1333,6 +1399,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesInitContainers
 {
     /// <summary>Array of arguments to the entrypoint. If this isn&apos;t specified, the CMD of the container image is used. This corresponds to the args member in the Entrypoint portion of the Pod in Kubernetes. Environment variable references are expanded using the container&apos;s environment.</summary>
@@ -1374,6 +1441,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesMetadata
 {
     /// <summary>Key-value pairs used to identify, sort, and organize kubernetes resources.</summary>
@@ -1383,6 +1451,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesVolumesEmptyDir
 {
     /// <summary>Medium to store the volume. The default value is an empty string, which uses the storage of the node.</summary>
@@ -1396,6 +1465,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesVolumesHostPath
 {
     /// <summary>Path of the file or directory on the host to mount into containers on the pod.</summary>
@@ -1405,6 +1475,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesVolumesSecret
 {
     /// <summary>Whether the secret or the secret&apos;s keys must be defined.</summary>
@@ -1418,6 +1489,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropertiesVolumes
 {
     [JsonPropertyName("emptyDir")]
@@ -1437,6 +1509,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodProperties
 {
     /// <summary>Properties of the container that&apos;s used on the Amazon EKS pod. See containers below.</summary>
@@ -1478,6 +1551,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksPropertiesPodPropert
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderEksProperties
 {
     /// <summary>Properties for the Kubernetes pod resources of a job. See pod_properties below.</summary>
@@ -1487,6 +1561,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderEksProperties
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderRetryStrategyEvaluateOnExit
 {
     /// <summary>Action to take if all of the specified conditions are met. The values are not case sensitive. Valid values: retry, exit.</summary>
@@ -1508,6 +1583,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderRetryStrategyEvaluateOn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderRetryStrategy
 {
     /// <summary>Number of times to move a job to the RUNNABLE status. You may specify between 1 and 10 attempts.</summary>
@@ -1521,6 +1597,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderRetryStrategy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProviderTimeout
 {
     /// <summary>Time duration in seconds after which AWS Batch terminates your jobs if they have not finished. The minimum value for the timeout is 60 seconds.</summary>
@@ -1530,6 +1607,7 @@ public partial class V1beta1JobDefinitionStatusAtProviderTimeout
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusAtProvider
 {
     /// <summary>ARN of the job definition, includes revision (:#).</summary>
@@ -1618,6 +1696,7 @@ public partial class V1beta1JobDefinitionStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatusConditions
 {
     /// <summary>
@@ -1661,6 +1740,7 @@ public partial class V1beta1JobDefinitionStatusConditions
 /// <summary>JobDefinitionStatus defines the observed state of JobDefinition.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobDefinitionStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1679,9 +1759,13 @@ public partial class V1beta1JobDefinitionStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>JobDefinition is the Schema for the JobDefinitions API. Provides a Batch Job Definition resource.</summary>
+/// <summary>
+/// JobDefinition is the Schema for the JobDefinitions API. Provides a Batch Job Definition resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1JobDefinition : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1JobDefinitionSpec>, IStatus<V1beta1JobDefinitionStatus?>
 {

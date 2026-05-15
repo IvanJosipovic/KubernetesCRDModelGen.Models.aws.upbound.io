@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.s3control.aws.upbound.io;
-/// <summary>MultiRegionAccessPoint is the Schema for the MultiRegionAccessPoints API. Provides a resource to manage an S3 Multi-Region Access Point associated with specified buckets.</summary>
+/// <summary>
+/// MultiRegionAccessPoint is the Schema for the MultiRegionAccessPoints API. Provides a resource to manage an S3 Multi-Region Access Point associated with specified buckets.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MultiRegionAccessPointList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MultiRegionAccessPoint>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1MultiRegionAccessPointList : IKubernetesObject<V1Lis
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MultiRegionAccessPointSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MultiRegionAccessPointSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1MultiRegionAccessPointSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointSpecForProviderDetailsPublicAccessBlock
 {
     /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect existing policies or ACLs. When set to true causes the following behavior:</summary>
@@ -84,6 +90,7 @@ public partial class V1beta1MultiRegionAccessPointSpecForProviderDetailsPublicAc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MultiRegionAccessPointSpecForProviderDetailsRegionBucketRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MultiRegionAccessPointSpecForProviderDetailsRegionBucketRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -100,6 +107,7 @@ public enum V1beta1MultiRegionAccessPointSpecForProviderDetailsRegionBucketRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MultiRegionAccessPointSpecForProviderDetailsRegionBucketRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MultiRegionAccessPointSpecForProviderDetailsRegionBucketRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -111,6 +119,7 @@ public enum V1beta1MultiRegionAccessPointSpecForProviderDetailsRegionBucketRefPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointSpecForProviderDetailsRegionBucketRefPolicy
 {
     /// <summary>
@@ -135,6 +144,7 @@ public partial class V1beta1MultiRegionAccessPointSpecForProviderDetailsRegionBu
 /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointSpecForProviderDetailsRegionBucketRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -154,6 +164,7 @@ public partial class V1beta1MultiRegionAccessPointSpecForProviderDetailsRegionBu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MultiRegionAccessPointSpecForProviderDetailsRegionBucketSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MultiRegionAccessPointSpecForProviderDetailsRegionBucketSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -170,6 +181,7 @@ public enum V1beta1MultiRegionAccessPointSpecForProviderDetailsRegionBucketSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MultiRegionAccessPointSpecForProviderDetailsRegionBucketSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MultiRegionAccessPointSpecForProviderDetailsRegionBucketSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -181,6 +193,7 @@ public enum V1beta1MultiRegionAccessPointSpecForProviderDetailsRegionBucketSelec
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointSpecForProviderDetailsRegionBucketSelectorPolicy
 {
     /// <summary>
@@ -205,6 +218,7 @@ public partial class V1beta1MultiRegionAccessPointSpecForProviderDetailsRegionBu
 /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointSpecForProviderDetailsRegionBucketSelector
 {
     /// <summary>
@@ -225,6 +239,7 @@ public partial class V1beta1MultiRegionAccessPointSpecForProviderDetailsRegionBu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointSpecForProviderDetailsRegion
 {
     /// <summary>The name of the associated bucket for the Region.</summary>
@@ -246,6 +261,7 @@ public partial class V1beta1MultiRegionAccessPointSpecForProviderDetailsRegion
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointSpecForProviderDetails
 {
     /// <summary>The name of the Multi-Region Access Point.</summary>
@@ -263,6 +279,7 @@ public partial class V1beta1MultiRegionAccessPointSpecForProviderDetails
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointSpecForProvider
 {
     /// <summary>The AWS account ID for the owner of the buckets for which you want to create a Multi-Region Access Point.</summary>
@@ -283,6 +300,7 @@ public partial class V1beta1MultiRegionAccessPointSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointSpecInitProviderDetailsPublicAccessBlock
 {
     /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect existing policies or ACLs. When set to true causes the following behavior:</summary>
@@ -304,6 +322,7 @@ public partial class V1beta1MultiRegionAccessPointSpecInitProviderDetailsPublicA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointSpecInitProviderDetails
 {
     /// <summary>The name of the Multi-Region Access Point.</summary>
@@ -329,6 +348,7 @@ public partial class V1beta1MultiRegionAccessPointSpecInitProviderDetails
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointSpecInitProvider
 {
     /// <summary>The AWS account ID for the owner of the buckets for which you want to create a Multi-Region Access Point.</summary>
@@ -346,6 +366,7 @@ public partial class V1beta1MultiRegionAccessPointSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MultiRegionAccessPointSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MultiRegionAccessPointSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -370,6 +391,7 @@ public enum V1beta1MultiRegionAccessPointSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MultiRegionAccessPointSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MultiRegionAccessPointSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -386,6 +408,7 @@ public enum V1beta1MultiRegionAccessPointSpecProviderConfigRefPolicyResolutionEn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MultiRegionAccessPointSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MultiRegionAccessPointSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -397,6 +420,7 @@ public enum V1beta1MultiRegionAccessPointSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -425,6 +449,7 @@ public partial class V1beta1MultiRegionAccessPointSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -444,6 +469,7 @@ public partial class V1beta1MultiRegionAccessPointSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -458,6 +484,7 @@ public partial class V1beta1MultiRegionAccessPointSpecWriteConnectionSecretToRef
 /// <summary>MultiRegionAccessPointSpec defines the desired state of MultiRegionAccessPoint</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointSpec
 {
     /// <summary>
@@ -525,6 +552,7 @@ public partial class V1beta1MultiRegionAccessPointSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointStatusAtProviderDetailsPublicAccessBlock
 {
     /// <summary>Whether Amazon S3 should block public ACLs for buckets in this account. Defaults to true. Enabling this setting does not affect existing policies or ACLs. When set to true causes the following behavior:</summary>
@@ -546,6 +574,7 @@ public partial class V1beta1MultiRegionAccessPointStatusAtProviderDetailsPublicA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointStatusAtProviderDetailsRegion
 {
     /// <summary>The name of the associated bucket for the Region.</summary>
@@ -563,6 +592,7 @@ public partial class V1beta1MultiRegionAccessPointStatusAtProviderDetailsRegion
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointStatusAtProviderDetails
 {
     /// <summary>The name of the Multi-Region Access Point.</summary>
@@ -580,6 +610,7 @@ public partial class V1beta1MultiRegionAccessPointStatusAtProviderDetails
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointStatusAtProvider
 {
     /// <summary>The AWS account ID for the owner of the buckets for which you want to create a Multi-Region Access Point.</summary>
@@ -621,6 +652,7 @@ public partial class V1beta1MultiRegionAccessPointStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointStatusConditions
 {
     /// <summary>
@@ -664,6 +696,7 @@ public partial class V1beta1MultiRegionAccessPointStatusConditions
 /// <summary>MultiRegionAccessPointStatus defines the observed state of MultiRegionAccessPoint.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MultiRegionAccessPointStatus
 {
     [JsonPropertyName("atProvider")]
@@ -682,9 +715,13 @@ public partial class V1beta1MultiRegionAccessPointStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>MultiRegionAccessPoint is the Schema for the MultiRegionAccessPoints API. Provides a resource to manage an S3 Multi-Region Access Point associated with specified buckets.</summary>
+/// <summary>
+/// MultiRegionAccessPoint is the Schema for the MultiRegionAccessPoints API. Provides a resource to manage an S3 Multi-Region Access Point associated with specified buckets.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MultiRegionAccessPoint : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MultiRegionAccessPointSpec>, IStatus<V1beta1MultiRegionAccessPointStatus?>
 {

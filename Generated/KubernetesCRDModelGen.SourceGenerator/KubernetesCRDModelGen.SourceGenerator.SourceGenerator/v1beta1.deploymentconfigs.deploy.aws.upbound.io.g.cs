@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.deploy.aws.upbound.io;
-/// <summary>DeploymentConfig is the Schema for the DeploymentConfigs API. Provides a CodeDeploy deployment config.</summary>
+/// <summary>
+/// DeploymentConfig is the Schema for the DeploymentConfigs API. Provides a CodeDeploy deployment config.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DeploymentConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DeploymentConfig>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1DeploymentConfigList : IKubernetesObject<V1ListMeta>
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeploymentConfigSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeploymentConfigSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1DeploymentConfigSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigSpecForProviderMinimumHealthyHosts
 {
     /// <summary>The type can either be FLEET_PERCENT or HOST_COUNT.</summary>
@@ -75,6 +81,7 @@ public partial class V1beta1DeploymentConfigSpecForProviderMinimumHealthyHosts
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigSpecForProviderTrafficRoutingConfigTimeBasedCanary
 {
     /// <summary>The number of minutes between the first and second traffic shifts of a TimeBasedCanary deployment.</summary>
@@ -88,6 +95,7 @@ public partial class V1beta1DeploymentConfigSpecForProviderTrafficRoutingConfigT
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigSpecForProviderTrafficRoutingConfigTimeBasedLinear
 {
     /// <summary>The number of minutes between the first and second traffic shifts of a TimeBasedCanary deployment.</summary>
@@ -101,6 +109,7 @@ public partial class V1beta1DeploymentConfigSpecForProviderTrafficRoutingConfigT
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigSpecForProviderTrafficRoutingConfig
 {
     /// <summary>The time based canary configuration information. If type is TimeBasedLinear, use time_based_linear instead.</summary>
@@ -118,6 +127,7 @@ public partial class V1beta1DeploymentConfigSpecForProviderTrafficRoutingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigSpecForProviderZonalConfigMinimumHealthyHostsPerZone
 {
     /// <summary>The type can either be FLEET_PERCENT or HOST_COUNT.</summary>
@@ -131,6 +141,7 @@ public partial class V1beta1DeploymentConfigSpecForProviderZonalConfigMinimumHea
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigSpecForProviderZonalConfig
 {
     /// <summary>The period of time, in seconds, that CodeDeploy must wait after completing a deployment to the first Availability Zone. CodeDeploy will wait this amount of time before starting a deployment to the second Availability Zone. If you don&apos;t specify a value for first_zone_monitor_duration_in_seconds, then CodeDeploy uses the monitor_duration_in_seconds value for the first Availability Zone.</summary>
@@ -148,6 +159,7 @@ public partial class V1beta1DeploymentConfigSpecForProviderZonalConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigSpecForProvider
 {
     /// <summary>The compute platform can be Server, Lambda, or ECS. Default is Server.</summary>
@@ -176,6 +188,7 @@ public partial class V1beta1DeploymentConfigSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigSpecInitProviderMinimumHealthyHosts
 {
     /// <summary>The type can either be FLEET_PERCENT or HOST_COUNT.</summary>
@@ -194,6 +207,7 @@ public partial class V1beta1DeploymentConfigSpecInitProviderMinimumHealthyHosts
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigSpecInitProviderTrafficRoutingConfigTimeBasedCanary
 {
     /// <summary>The number of minutes between the first and second traffic shifts of a TimeBasedCanary deployment.</summary>
@@ -207,6 +221,7 @@ public partial class V1beta1DeploymentConfigSpecInitProviderTrafficRoutingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigSpecInitProviderTrafficRoutingConfigTimeBasedLinear
 {
     /// <summary>The number of minutes between the first and second traffic shifts of a TimeBasedCanary deployment.</summary>
@@ -220,6 +235,7 @@ public partial class V1beta1DeploymentConfigSpecInitProviderTrafficRoutingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigSpecInitProviderTrafficRoutingConfig
 {
     /// <summary>The time based canary configuration information. If type is TimeBasedLinear, use time_based_linear instead.</summary>
@@ -237,6 +253,7 @@ public partial class V1beta1DeploymentConfigSpecInitProviderTrafficRoutingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigSpecInitProviderZonalConfigMinimumHealthyHostsPerZone
 {
     /// <summary>The type can either be FLEET_PERCENT or HOST_COUNT.</summary>
@@ -250,6 +267,7 @@ public partial class V1beta1DeploymentConfigSpecInitProviderZonalConfigMinimumHe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigSpecInitProviderZonalConfig
 {
     /// <summary>The period of time, in seconds, that CodeDeploy must wait after completing a deployment to the first Availability Zone. CodeDeploy will wait this amount of time before starting a deployment to the second Availability Zone. If you don&apos;t specify a value for first_zone_monitor_duration_in_seconds, then CodeDeploy uses the monitor_duration_in_seconds value for the first Availability Zone.</summary>
@@ -279,6 +297,7 @@ public partial class V1beta1DeploymentConfigSpecInitProviderZonalConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigSpecInitProvider
 {
     /// <summary>The compute platform can be Server, Lambda, or ECS. Default is Server.</summary>
@@ -304,6 +323,7 @@ public partial class V1beta1DeploymentConfigSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeploymentConfigSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeploymentConfigSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -328,6 +348,7 @@ public enum V1beta1DeploymentConfigSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeploymentConfigSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeploymentConfigSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -344,6 +365,7 @@ public enum V1beta1DeploymentConfigSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeploymentConfigSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DeploymentConfigSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -355,6 +377,7 @@ public enum V1beta1DeploymentConfigSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -383,6 +406,7 @@ public partial class V1beta1DeploymentConfigSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -402,6 +426,7 @@ public partial class V1beta1DeploymentConfigSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -416,6 +441,7 @@ public partial class V1beta1DeploymentConfigSpecWriteConnectionSecretToRef
 /// <summary>DeploymentConfigSpec defines the desired state of DeploymentConfig</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigSpec
 {
     /// <summary>
@@ -483,6 +509,7 @@ public partial class V1beta1DeploymentConfigSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigStatusAtProviderMinimumHealthyHosts
 {
     /// <summary>The type can either be FLEET_PERCENT or HOST_COUNT.</summary>
@@ -501,6 +528,7 @@ public partial class V1beta1DeploymentConfigStatusAtProviderMinimumHealthyHosts
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigStatusAtProviderTrafficRoutingConfigTimeBasedCanary
 {
     /// <summary>The number of minutes between the first and second traffic shifts of a TimeBasedCanary deployment.</summary>
@@ -514,6 +542,7 @@ public partial class V1beta1DeploymentConfigStatusAtProviderTrafficRoutingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigStatusAtProviderTrafficRoutingConfigTimeBasedLinear
 {
     /// <summary>The number of minutes between the first and second traffic shifts of a TimeBasedCanary deployment.</summary>
@@ -527,6 +556,7 @@ public partial class V1beta1DeploymentConfigStatusAtProviderTrafficRoutingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigStatusAtProviderTrafficRoutingConfig
 {
     /// <summary>The time based canary configuration information. If type is TimeBasedLinear, use time_based_linear instead.</summary>
@@ -544,6 +574,7 @@ public partial class V1beta1DeploymentConfigStatusAtProviderTrafficRoutingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigStatusAtProviderZonalConfigMinimumHealthyHostsPerZone
 {
     /// <summary>The type can either be FLEET_PERCENT or HOST_COUNT.</summary>
@@ -557,6 +588,7 @@ public partial class V1beta1DeploymentConfigStatusAtProviderZonalConfigMinimumHe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigStatusAtProviderZonalConfig
 {
     /// <summary>The period of time, in seconds, that CodeDeploy must wait after completing a deployment to the first Availability Zone. CodeDeploy will wait this amount of time before starting a deployment to the second Availability Zone. If you don&apos;t specify a value for first_zone_monitor_duration_in_seconds, then CodeDeploy uses the monitor_duration_in_seconds value for the first Availability Zone.</summary>
@@ -574,6 +606,7 @@ public partial class V1beta1DeploymentConfigStatusAtProviderZonalConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigStatusAtProvider
 {
     /// <summary>The ARN of the deployment config.</summary>
@@ -615,6 +648,7 @@ public partial class V1beta1DeploymentConfigStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigStatusConditions
 {
     /// <summary>
@@ -658,6 +692,7 @@ public partial class V1beta1DeploymentConfigStatusConditions
 /// <summary>DeploymentConfigStatus defines the observed state of DeploymentConfig.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DeploymentConfigStatus
 {
     [JsonPropertyName("atProvider")]
@@ -676,9 +711,13 @@ public partial class V1beta1DeploymentConfigStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>DeploymentConfig is the Schema for the DeploymentConfigs API. Provides a CodeDeploy deployment config.</summary>
+/// <summary>
+/// DeploymentConfig is the Schema for the DeploymentConfigs API. Provides a CodeDeploy deployment config.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DeploymentConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DeploymentConfigSpec>, IStatus<V1beta1DeploymentConfigStatus?>
 {

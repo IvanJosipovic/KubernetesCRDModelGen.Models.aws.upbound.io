@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.wafregional.aws.upbound.io;
-/// <summary>RegexMatchSet is the Schema for the RegexMatchSets API. Provides a AWS WAF Regional Regex Match Set resource.</summary>
+/// <summary>
+/// RegexMatchSet is the Schema for the RegexMatchSets API. Provides a AWS WAF Regional Regex Match Set resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RegexMatchSetList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RegexMatchSet>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1RegexMatchSetList : IKubernetesObject<V1ListMeta>, I
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegexMatchSetSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegexMatchSetSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1RegexMatchSetSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetSpecForProviderRegexMatchTupleFieldToMatch
 {
     /// <summary>
@@ -84,6 +90,7 @@ public partial class V1beta1RegexMatchSetSpecForProviderRegexMatchTupleFieldToMa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegexMatchSetSpecForProviderRegexMatchTupleRegexPatternSetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegexMatchSetSpecForProviderRegexMatchTupleRegexPatternSetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -100,6 +107,7 @@ public enum V1beta1RegexMatchSetSpecForProviderRegexMatchTupleRegexPatternSetIdR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegexMatchSetSpecForProviderRegexMatchTupleRegexPatternSetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegexMatchSetSpecForProviderRegexMatchTupleRegexPatternSetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -111,6 +119,7 @@ public enum V1beta1RegexMatchSetSpecForProviderRegexMatchTupleRegexPatternSetIdR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetSpecForProviderRegexMatchTupleRegexPatternSetIdRefPolicy
 {
     /// <summary>
@@ -135,6 +144,7 @@ public partial class V1beta1RegexMatchSetSpecForProviderRegexMatchTupleRegexPatt
 /// <summary>Reference to a RegexPatternSet in wafregional to populate regexPatternSetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetSpecForProviderRegexMatchTupleRegexPatternSetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -154,6 +164,7 @@ public partial class V1beta1RegexMatchSetSpecForProviderRegexMatchTupleRegexPatt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegexMatchSetSpecForProviderRegexMatchTupleRegexPatternSetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegexMatchSetSpecForProviderRegexMatchTupleRegexPatternSetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -170,6 +181,7 @@ public enum V1beta1RegexMatchSetSpecForProviderRegexMatchTupleRegexPatternSetIdS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegexMatchSetSpecForProviderRegexMatchTupleRegexPatternSetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegexMatchSetSpecForProviderRegexMatchTupleRegexPatternSetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -181,6 +193,7 @@ public enum V1beta1RegexMatchSetSpecForProviderRegexMatchTupleRegexPatternSetIdS
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetSpecForProviderRegexMatchTupleRegexPatternSetIdSelectorPolicy
 {
     /// <summary>
@@ -205,6 +218,7 @@ public partial class V1beta1RegexMatchSetSpecForProviderRegexMatchTupleRegexPatt
 /// <summary>Selector for a RegexPatternSet in wafregional to populate regexPatternSetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetSpecForProviderRegexMatchTupleRegexPatternSetIdSelector
 {
     /// <summary>
@@ -225,6 +239,7 @@ public partial class V1beta1RegexMatchSetSpecForProviderRegexMatchTupleRegexPatt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetSpecForProviderRegexMatchTuple
 {
     /// <summary>The part of a web request that you want to search, such as a specified header or a query string.</summary>
@@ -255,6 +270,7 @@ public partial class V1beta1RegexMatchSetSpecForProviderRegexMatchTuple
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetSpecForProvider
 {
     /// <summary>The name or description of the Regex Match Set.</summary>
@@ -275,6 +291,7 @@ public partial class V1beta1RegexMatchSetSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleFieldToMatch
 {
     /// <summary>
@@ -302,6 +319,7 @@ public partial class V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleFieldToM
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleRegexPatternSetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleRegexPatternSetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -318,6 +336,7 @@ public enum V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleRegexPatternSetId
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleRegexPatternSetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleRegexPatternSetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -329,6 +348,7 @@ public enum V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleRegexPatternSetId
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleRegexPatternSetIdRefPolicy
 {
     /// <summary>
@@ -353,6 +373,7 @@ public partial class V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleRegexPat
 /// <summary>Reference to a RegexPatternSet in wafregional to populate regexPatternSetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleRegexPatternSetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -372,6 +393,7 @@ public partial class V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleRegexPat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleRegexPatternSetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleRegexPatternSetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -388,6 +410,7 @@ public enum V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleRegexPatternSetId
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleRegexPatternSetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleRegexPatternSetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -399,6 +422,7 @@ public enum V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleRegexPatternSetId
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleRegexPatternSetIdSelectorPolicy
 {
     /// <summary>
@@ -423,6 +447,7 @@ public partial class V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleRegexPat
 /// <summary>Selector for a RegexPatternSet in wafregional to populate regexPatternSetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleRegexPatternSetIdSelector
 {
     /// <summary>
@@ -443,6 +468,7 @@ public partial class V1beta1RegexMatchSetSpecInitProviderRegexMatchTupleRegexPat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetSpecInitProviderRegexMatchTuple
 {
     /// <summary>The part of a web request that you want to search, such as a specified header or a query string.</summary>
@@ -485,6 +511,7 @@ public partial class V1beta1RegexMatchSetSpecInitProviderRegexMatchTuple
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetSpecInitProvider
 {
     /// <summary>The name or description of the Regex Match Set.</summary>
@@ -502,6 +529,7 @@ public partial class V1beta1RegexMatchSetSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegexMatchSetSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegexMatchSetSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -526,6 +554,7 @@ public enum V1beta1RegexMatchSetSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegexMatchSetSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegexMatchSetSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -542,6 +571,7 @@ public enum V1beta1RegexMatchSetSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegexMatchSetSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegexMatchSetSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -553,6 +583,7 @@ public enum V1beta1RegexMatchSetSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -581,6 +612,7 @@ public partial class V1beta1RegexMatchSetSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -600,6 +632,7 @@ public partial class V1beta1RegexMatchSetSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -614,6 +647,7 @@ public partial class V1beta1RegexMatchSetSpecWriteConnectionSecretToRef
 /// <summary>RegexMatchSetSpec defines the desired state of RegexMatchSet</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetSpec
 {
     /// <summary>
@@ -681,6 +715,7 @@ public partial class V1beta1RegexMatchSetSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetStatusAtProviderRegexMatchTupleFieldToMatch
 {
     /// <summary>
@@ -702,6 +737,7 @@ public partial class V1beta1RegexMatchSetStatusAtProviderRegexMatchTupleFieldToM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetStatusAtProviderRegexMatchTuple
 {
     /// <summary>The part of a web request that you want to search, such as a specified header or a query string.</summary>
@@ -724,6 +760,7 @@ public partial class V1beta1RegexMatchSetStatusAtProviderRegexMatchTuple
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetStatusAtProvider
 {
     /// <summary>The ID of the WAF Regional Regex Match Set.</summary>
@@ -749,6 +786,7 @@ public partial class V1beta1RegexMatchSetStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetStatusConditions
 {
     /// <summary>
@@ -792,6 +830,7 @@ public partial class V1beta1RegexMatchSetStatusConditions
 /// <summary>RegexMatchSetStatus defines the observed state of RegexMatchSet.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegexMatchSetStatus
 {
     [JsonPropertyName("atProvider")]
@@ -810,9 +849,13 @@ public partial class V1beta1RegexMatchSetStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>RegexMatchSet is the Schema for the RegexMatchSets API. Provides a AWS WAF Regional Regex Match Set resource.</summary>
+/// <summary>
+/// RegexMatchSet is the Schema for the RegexMatchSets API. Provides a AWS WAF Regional Regex Match Set resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RegexMatchSet : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RegexMatchSetSpec>, IStatus<V1beta1RegexMatchSetStatus?>
 {

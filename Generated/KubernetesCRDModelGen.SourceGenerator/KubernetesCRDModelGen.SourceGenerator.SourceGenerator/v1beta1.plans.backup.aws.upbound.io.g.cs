@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.backup.aws.upbound.io;
-/// <summary>Plan is the Schema for the Plans API. Provides an AWS Backup plan resource.</summary>
+/// <summary>
+/// Plan is the Schema for the Plans API. Provides an AWS Backup plan resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PlanList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Plan>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1PlanList : IKubernetesObject<V1ListMeta>, IItems<V1b
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlanSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PlanSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1PlanSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecForProviderAdvancedBackupSetting
 {
     /// <summary>Specifies the backup option for a selected resource. This option is only available for Windows VSS backup jobs. Set to { WindowsVSS = &quot;enabled&quot; } to enable Windows VSS backup option and create a VSS Windows backup.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1PlanSpecForProviderAdvancedBackupSetting
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecForProviderRuleCopyActionLifecycle
 {
     /// <summary>Specifies the number of days after creation that a recovery point is moved to cold storage.</summary>
@@ -87,6 +94,7 @@ public partial class V1beta1PlanSpecForProviderRuleCopyActionLifecycle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecForProviderRuleCopyAction
 {
     /// <summary>An Amazon Resource Name (ARN) that uniquely identifies the destination backup vault for the copied backup.</summary>
@@ -100,6 +108,7 @@ public partial class V1beta1PlanSpecForProviderRuleCopyAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecForProviderRuleLifecycle
 {
     /// <summary>Specifies the number of days after creation that a recovery point is moved to cold storage.</summary>
@@ -117,6 +126,7 @@ public partial class V1beta1PlanSpecForProviderRuleLifecycle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecForProviderRuleScanAction
 {
     /// <summary>Malware scanner to use for the scan action. Currently only GUARDDUTY is supported.</summary>
@@ -136,6 +146,7 @@ public partial class V1beta1PlanSpecForProviderRuleScanAction
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlanSpecForProviderRuleTargetVaultNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PlanSpecForProviderRuleTargetVaultNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -152,6 +163,7 @@ public enum V1beta1PlanSpecForProviderRuleTargetVaultNameRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlanSpecForProviderRuleTargetVaultNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PlanSpecForProviderRuleTargetVaultNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -163,6 +175,7 @@ public enum V1beta1PlanSpecForProviderRuleTargetVaultNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecForProviderRuleTargetVaultNameRefPolicy
 {
     /// <summary>
@@ -187,6 +200,7 @@ public partial class V1beta1PlanSpecForProviderRuleTargetVaultNameRefPolicy
 /// <summary>Reference to a Vault in backup to populate targetVaultName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecForProviderRuleTargetVaultNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -206,6 +220,7 @@ public partial class V1beta1PlanSpecForProviderRuleTargetVaultNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlanSpecForProviderRuleTargetVaultNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PlanSpecForProviderRuleTargetVaultNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -222,6 +237,7 @@ public enum V1beta1PlanSpecForProviderRuleTargetVaultNameSelectorPolicyResolutio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlanSpecForProviderRuleTargetVaultNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PlanSpecForProviderRuleTargetVaultNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -233,6 +249,7 @@ public enum V1beta1PlanSpecForProviderRuleTargetVaultNameSelectorPolicyResolveEn
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecForProviderRuleTargetVaultNameSelectorPolicy
 {
     /// <summary>
@@ -257,6 +274,7 @@ public partial class V1beta1PlanSpecForProviderRuleTargetVaultNameSelectorPolicy
 /// <summary>Selector for a Vault in backup to populate targetVaultName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecForProviderRuleTargetVaultNameSelector
 {
     /// <summary>
@@ -277,6 +295,7 @@ public partial class V1beta1PlanSpecForProviderRuleTargetVaultNameSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecForProviderRule
 {
     /// <summary>The amount of time in minutes AWS Backup attempts a backup before canceling the job and returning an error.</summary>
@@ -338,6 +357,7 @@ public partial class V1beta1PlanSpecForProviderRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecForProviderScanSetting
 {
     /// <summary>Malware scanner to use for the scan action. Currently only GUARDDUTY is supported.</summary>
@@ -355,6 +375,7 @@ public partial class V1beta1PlanSpecForProviderScanSetting
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecForProvider
 {
     /// <summary>An object that specifies backup options for each resource type.</summary>
@@ -387,6 +408,7 @@ public partial class V1beta1PlanSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecInitProviderAdvancedBackupSetting
 {
     /// <summary>Specifies the backup option for a selected resource. This option is only available for Windows VSS backup jobs. Set to { WindowsVSS = &quot;enabled&quot; } to enable Windows VSS backup option and create a VSS Windows backup.</summary>
@@ -400,6 +422,7 @@ public partial class V1beta1PlanSpecInitProviderAdvancedBackupSetting
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecInitProviderRuleCopyActionLifecycle
 {
     /// <summary>Specifies the number of days after creation that a recovery point is moved to cold storage.</summary>
@@ -417,6 +440,7 @@ public partial class V1beta1PlanSpecInitProviderRuleCopyActionLifecycle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecInitProviderRuleCopyAction
 {
     /// <summary>An Amazon Resource Name (ARN) that uniquely identifies the destination backup vault for the copied backup.</summary>
@@ -430,6 +454,7 @@ public partial class V1beta1PlanSpecInitProviderRuleCopyAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecInitProviderRuleLifecycle
 {
     /// <summary>Specifies the number of days after creation that a recovery point is moved to cold storage.</summary>
@@ -447,6 +472,7 @@ public partial class V1beta1PlanSpecInitProviderRuleLifecycle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecInitProviderRuleScanAction
 {
     /// <summary>Malware scanner to use for the scan action. Currently only GUARDDUTY is supported.</summary>
@@ -466,6 +492,7 @@ public partial class V1beta1PlanSpecInitProviderRuleScanAction
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlanSpecInitProviderRuleTargetVaultNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PlanSpecInitProviderRuleTargetVaultNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -482,6 +509,7 @@ public enum V1beta1PlanSpecInitProviderRuleTargetVaultNameRefPolicyResolutionEnu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlanSpecInitProviderRuleTargetVaultNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PlanSpecInitProviderRuleTargetVaultNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -493,6 +521,7 @@ public enum V1beta1PlanSpecInitProviderRuleTargetVaultNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecInitProviderRuleTargetVaultNameRefPolicy
 {
     /// <summary>
@@ -517,6 +546,7 @@ public partial class V1beta1PlanSpecInitProviderRuleTargetVaultNameRefPolicy
 /// <summary>Reference to a Vault in backup to populate targetVaultName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecInitProviderRuleTargetVaultNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -536,6 +566,7 @@ public partial class V1beta1PlanSpecInitProviderRuleTargetVaultNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlanSpecInitProviderRuleTargetVaultNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PlanSpecInitProviderRuleTargetVaultNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -552,6 +583,7 @@ public enum V1beta1PlanSpecInitProviderRuleTargetVaultNameSelectorPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlanSpecInitProviderRuleTargetVaultNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PlanSpecInitProviderRuleTargetVaultNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -563,6 +595,7 @@ public enum V1beta1PlanSpecInitProviderRuleTargetVaultNameSelectorPolicyResolveE
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecInitProviderRuleTargetVaultNameSelectorPolicy
 {
     /// <summary>
@@ -587,6 +620,7 @@ public partial class V1beta1PlanSpecInitProviderRuleTargetVaultNameSelectorPolic
 /// <summary>Selector for a Vault in backup to populate targetVaultName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecInitProviderRuleTargetVaultNameSelector
 {
     /// <summary>
@@ -607,6 +641,7 @@ public partial class V1beta1PlanSpecInitProviderRuleTargetVaultNameSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecInitProviderRule
 {
     /// <summary>The amount of time in minutes AWS Backup attempts a backup before canceling the job and returning an error.</summary>
@@ -668,6 +703,7 @@ public partial class V1beta1PlanSpecInitProviderRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecInitProviderScanSetting
 {
     /// <summary>Malware scanner to use for the scan action. Currently only GUARDDUTY is supported.</summary>
@@ -697,6 +733,7 @@ public partial class V1beta1PlanSpecInitProviderScanSetting
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecInitProvider
 {
     /// <summary>An object that specifies backup options for each resource type.</summary>
@@ -726,6 +763,7 @@ public partial class V1beta1PlanSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlanSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PlanSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -750,6 +788,7 @@ public enum V1beta1PlanSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlanSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PlanSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -766,6 +805,7 @@ public enum V1beta1PlanSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PlanSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PlanSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -777,6 +817,7 @@ public enum V1beta1PlanSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -805,6 +846,7 @@ public partial class V1beta1PlanSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -824,6 +866,7 @@ public partial class V1beta1PlanSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -838,6 +881,7 @@ public partial class V1beta1PlanSpecWriteConnectionSecretToRef
 /// <summary>PlanSpec defines the desired state of Plan</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanSpec
 {
     /// <summary>
@@ -905,6 +949,7 @@ public partial class V1beta1PlanSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanStatusAtProviderAdvancedBackupSetting
 {
     /// <summary>Specifies the backup option for a selected resource. This option is only available for Windows VSS backup jobs. Set to { WindowsVSS = &quot;enabled&quot; } to enable Windows VSS backup option and create a VSS Windows backup.</summary>
@@ -918,6 +963,7 @@ public partial class V1beta1PlanStatusAtProviderAdvancedBackupSetting
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanStatusAtProviderRuleCopyActionLifecycle
 {
     /// <summary>Specifies the number of days after creation that a recovery point is moved to cold storage.</summary>
@@ -935,6 +981,7 @@ public partial class V1beta1PlanStatusAtProviderRuleCopyActionLifecycle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanStatusAtProviderRuleCopyAction
 {
     /// <summary>An Amazon Resource Name (ARN) that uniquely identifies the destination backup vault for the copied backup.</summary>
@@ -948,6 +995,7 @@ public partial class V1beta1PlanStatusAtProviderRuleCopyAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanStatusAtProviderRuleLifecycle
 {
     /// <summary>Specifies the number of days after creation that a recovery point is moved to cold storage.</summary>
@@ -965,6 +1013,7 @@ public partial class V1beta1PlanStatusAtProviderRuleLifecycle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanStatusAtProviderRuleScanAction
 {
     /// <summary>Malware scanner to use for the scan action. Currently only GUARDDUTY is supported.</summary>
@@ -978,6 +1027,7 @@ public partial class V1beta1PlanStatusAtProviderRuleScanAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanStatusAtProviderRule
 {
     /// <summary>The amount of time in minutes AWS Backup attempts a backup before canceling the job and returning an error.</summary>
@@ -1031,6 +1081,7 @@ public partial class V1beta1PlanStatusAtProviderRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanStatusAtProviderScanSetting
 {
     /// <summary>Malware scanner to use for the scan action. Currently only GUARDDUTY is supported.</summary>
@@ -1048,6 +1099,7 @@ public partial class V1beta1PlanStatusAtProviderScanSetting
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanStatusAtProvider
 {
     /// <summary>An object that specifies backup options for each resource type.</summary>
@@ -1097,6 +1149,7 @@ public partial class V1beta1PlanStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanStatusConditions
 {
     /// <summary>
@@ -1140,6 +1193,7 @@ public partial class V1beta1PlanStatusConditions
 /// <summary>PlanStatus defines the observed state of Plan.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PlanStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1158,9 +1212,13 @@ public partial class V1beta1PlanStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Plan is the Schema for the Plans API. Provides an AWS Backup plan resource.</summary>
+/// <summary>
+/// Plan is the Schema for the Plans API. Provides an AWS Backup plan resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Plan : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PlanSpec>, IStatus<V1beta1PlanStatus?>
 {

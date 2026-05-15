@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ecr.aws.upbound.io;
-/// <summary>ReplicationConfiguration is the Schema for the ReplicationConfigurations API. Provides an Elastic Container Registry Replication Configuration.</summary>
+/// <summary>
+/// ReplicationConfiguration is the Schema for the ReplicationConfigurations API. Provides an Elastic Container Registry Replication Configuration.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ReplicationConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ReplicationConfiguration>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ReplicationConfigurationList : IKubernetesObject<V1L
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationConfigurationSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ReplicationConfigurationSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1ReplicationConfigurationSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationSpecForProviderReplicationConfigurationRuleDestination
 {
     /// <summary>Region where this resource will be managed. Defaults to the Region set in the provider configuration.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1ReplicationConfigurationSpecForProviderReplicationCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationSpecForProviderReplicationConfigurationRuleRepositoryFilter
 {
     /// <summary>The repository filter details.</summary>
@@ -83,6 +90,7 @@ public partial class V1beta1ReplicationConfigurationSpecForProviderReplicationCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationSpecForProviderReplicationConfigurationRule
 {
     /// <summary>the details of a replication destination. A maximum of 25 are allowed per rule. See Destination.</summary>
@@ -96,6 +104,7 @@ public partial class V1beta1ReplicationConfigurationSpecForProviderReplicationCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationSpecForProviderReplicationConfiguration
 {
     /// <summary>The replication rules for a replication configuration. A maximum of 10 are allowed per replication_configuration. See Rule</summary>
@@ -105,6 +114,7 @@ public partial class V1beta1ReplicationConfigurationSpecForProviderReplicationCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationSpecForProvider
 {
     /// <summary>
@@ -121,6 +131,7 @@ public partial class V1beta1ReplicationConfigurationSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationSpecInitProviderReplicationConfigurationRuleDestination
 {
     /// <summary>The account ID of the destination registry to replicate to.</summary>
@@ -130,6 +141,7 @@ public partial class V1beta1ReplicationConfigurationSpecInitProviderReplicationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationSpecInitProviderReplicationConfigurationRuleRepositoryFilter
 {
     /// <summary>The repository filter details.</summary>
@@ -143,6 +155,7 @@ public partial class V1beta1ReplicationConfigurationSpecInitProviderReplicationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationSpecInitProviderReplicationConfigurationRule
 {
     /// <summary>the details of a replication destination. A maximum of 25 are allowed per rule. See Destination.</summary>
@@ -156,6 +169,7 @@ public partial class V1beta1ReplicationConfigurationSpecInitProviderReplicationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationSpecInitProviderReplicationConfiguration
 {
     /// <summary>The replication rules for a replication configuration. A maximum of 10 are allowed per replication_configuration. See Rule</summary>
@@ -177,6 +191,7 @@ public partial class V1beta1ReplicationConfigurationSpecInitProviderReplicationC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationSpecInitProvider
 {
     /// <summary>Replication configuration for a registry. See Replication Configuration.</summary>
@@ -190,6 +205,7 @@ public partial class V1beta1ReplicationConfigurationSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationConfigurationSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ReplicationConfigurationSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -214,6 +230,7 @@ public enum V1beta1ReplicationConfigurationSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationConfigurationSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ReplicationConfigurationSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -230,6 +247,7 @@ public enum V1beta1ReplicationConfigurationSpecProviderConfigRefPolicyResolution
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicationConfigurationSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ReplicationConfigurationSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -241,6 +259,7 @@ public enum V1beta1ReplicationConfigurationSpecProviderConfigRefPolicyResolveEnu
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -269,6 +288,7 @@ public partial class V1beta1ReplicationConfigurationSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -288,6 +308,7 @@ public partial class V1beta1ReplicationConfigurationSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -302,6 +323,7 @@ public partial class V1beta1ReplicationConfigurationSpecWriteConnectionSecretToR
 /// <summary>ReplicationConfigurationSpec defines the desired state of ReplicationConfiguration</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationSpec
 {
     /// <summary>
@@ -369,6 +391,7 @@ public partial class V1beta1ReplicationConfigurationSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationStatusAtProviderReplicationConfigurationRuleDestination
 {
     /// <summary>Region where this resource will be managed. Defaults to the Region set in the provider configuration.</summary>
@@ -382,6 +405,7 @@ public partial class V1beta1ReplicationConfigurationStatusAtProviderReplicationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationStatusAtProviderReplicationConfigurationRuleRepositoryFilter
 {
     /// <summary>The repository filter details.</summary>
@@ -395,6 +419,7 @@ public partial class V1beta1ReplicationConfigurationStatusAtProviderReplicationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationStatusAtProviderReplicationConfigurationRule
 {
     /// <summary>the details of a replication destination. A maximum of 25 are allowed per rule. See Destination.</summary>
@@ -408,6 +433,7 @@ public partial class V1beta1ReplicationConfigurationStatusAtProviderReplicationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationStatusAtProviderReplicationConfiguration
 {
     /// <summary>The replication rules for a replication configuration. A maximum of 10 are allowed per replication_configuration. See Rule</summary>
@@ -417,6 +443,7 @@ public partial class V1beta1ReplicationConfigurationStatusAtProviderReplicationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationStatusAtProvider
 {
     [JsonPropertyName("id")]
@@ -441,6 +468,7 @@ public partial class V1beta1ReplicationConfigurationStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationStatusConditions
 {
     /// <summary>
@@ -484,6 +512,7 @@ public partial class V1beta1ReplicationConfigurationStatusConditions
 /// <summary>ReplicationConfigurationStatus defines the observed state of ReplicationConfiguration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ReplicationConfigurationStatus
 {
     [JsonPropertyName("atProvider")]
@@ -502,9 +531,13 @@ public partial class V1beta1ReplicationConfigurationStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>ReplicationConfiguration is the Schema for the ReplicationConfigurations API. Provides an Elastic Container Registry Replication Configuration.</summary>
+/// <summary>
+/// ReplicationConfiguration is the Schema for the ReplicationConfigurations API. Provides an Elastic Container Registry Replication Configuration.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ReplicationConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ReplicationConfigurationSpec>, IStatus<V1beta1ReplicationConfigurationStatus?>
 {

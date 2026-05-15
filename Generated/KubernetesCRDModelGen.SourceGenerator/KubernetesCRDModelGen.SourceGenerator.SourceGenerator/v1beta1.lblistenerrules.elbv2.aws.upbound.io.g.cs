@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.elbv2.aws.upbound.io;
-/// <summary>LBListenerRule is the Schema for the LBListenerRules API. Provides a Load Balancer Listener Rule resource.</summary>
+/// <summary>
+/// LBListenerRule is the Schema for the LBListenerRules API. Provides a Load Balancer Listener Rule resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LBListenerRuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta1LBListenerRule>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1LBListenerRuleList : IKubernetesObject<V1ListMeta>, 
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1LBListenerRuleSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCogni
 /// <summary>Reference to a UserPool in cognitoidp to populate userPoolArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCogni
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCogni
 /// <summary>Selector for a UserPool in cognitoidp to populate userPoolArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolArnSelector
 {
     /// <summary>
@@ -210,6 +223,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCogni
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -226,6 +240,7 @@ public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -237,6 +252,7 @@ public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdRefPolicy
 {
     /// <summary>
@@ -261,6 +277,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCogni
 /// <summary>Reference to a UserPoolClient in cognitoidp to populate userPoolClientId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -280,6 +297,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCogni
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -296,6 +314,7 @@ public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -307,6 +326,7 @@ public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdSelectorPolicy
 {
     /// <summary>
@@ -331,6 +351,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCogni
 /// <summary>Selector for a UserPoolClient in cognitoidp to populate userPoolClientId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolClientIdSelector
 {
     /// <summary>
@@ -357,6 +378,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCogni
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -373,6 +395,7 @@ public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -384,6 +407,7 @@ public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainRefPolicy
 {
     /// <summary>
@@ -408,6 +432,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCogni
 /// <summary>Reference to a UserPoolDomain in cognitoidp to populate userPoolDomain.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -427,6 +452,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCogni
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -443,6 +469,7 @@ public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -454,6 +481,7 @@ public enum V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainSelectorPolicy
 {
     /// <summary>
@@ -478,6 +506,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCogni
 /// <summary>Selector for a UserPoolDomain in cognitoidp to populate userPoolDomain.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognitoUserPoolDomainSelector
 {
     /// <summary>
@@ -498,6 +527,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCogni
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCognito
 {
     /// <summary>The query parameters to include in the redirect request to the authorization endpoint. Max: 10.</summary>
@@ -560,6 +590,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateCogni
 /// <summary>The OAuth 2.0 client secret.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateOidcClientSecretSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -577,6 +608,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateOidcC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateOidc
 {
     /// <summary>The query parameters to include in the redirect request to the authorization endpoint. Max: 10.</summary>
@@ -626,6 +658,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionAuthenticateOidc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionFixedResponse
 {
     /// <summary>The content type. Valid values are text/plain, text/css, text/html, application/javascript and application/json.</summary>
@@ -643,6 +676,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionFixedResponse
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionForwardStickiness
 {
     /// <summary>The time period, in seconds, during which requests from a client should be routed to the same target group. The range is 1-604800 seconds (7 days).</summary>
@@ -662,6 +696,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionForwardStickiness
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderActionForwardTargetGroupArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderActionForwardTargetGroupArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -678,6 +713,7 @@ public enum V1beta1LBListenerRuleSpecForProviderActionForwardTargetGroupArnRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderActionForwardTargetGroupArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderActionForwardTargetGroupArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -689,6 +725,7 @@ public enum V1beta1LBListenerRuleSpecForProviderActionForwardTargetGroupArnRefPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionForwardTargetGroupArnRefPolicy
 {
     /// <summary>
@@ -713,6 +750,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionForwardTargetGrou
 /// <summary>Reference to a LBTargetGroup in elbv2 to populate arn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionForwardTargetGroupArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -732,6 +770,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionForwardTargetGrou
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderActionForwardTargetGroupArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderActionForwardTargetGroupArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -748,6 +787,7 @@ public enum V1beta1LBListenerRuleSpecForProviderActionForwardTargetGroupArnSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderActionForwardTargetGroupArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderActionForwardTargetGroupArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -759,6 +799,7 @@ public enum V1beta1LBListenerRuleSpecForProviderActionForwardTargetGroupArnSelec
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionForwardTargetGroupArnSelectorPolicy
 {
     /// <summary>
@@ -783,6 +824,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionForwardTargetGrou
 /// <summary>Selector for a LBTargetGroup in elbv2 to populate arn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionForwardTargetGroupArnSelector
 {
     /// <summary>
@@ -803,6 +845,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionForwardTargetGrou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionForwardTargetGroup
 {
     /// <summary>The Amazon Resource Name (ARN) of the target group.</summary>
@@ -824,6 +867,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionForwardTargetGrou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionForward
 {
     /// <summary>The target group stickiness for the rule.</summary>
@@ -837,6 +881,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionForward
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionJwtValidationAdditionalClaim
 {
     /// <summary>Format of the claim value. Valid values are single-string, string-array and space-separated-values.</summary>
@@ -854,6 +899,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionJwtValidationAddi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionJwtValidation
 {
     /// <summary>Repeatable configuration block for additional claims to validate.</summary>
@@ -871,6 +917,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionJwtValidation
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionRedirect
 {
     /// <summary>The hostname. This component is not percent-encoded. The hostname can contain #{host}. Defaults to #{host}.</summary>
@@ -906,6 +953,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionRedirect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderActionTargetGroupArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderActionTargetGroupArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -922,6 +970,7 @@ public enum V1beta1LBListenerRuleSpecForProviderActionTargetGroupArnRefPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderActionTargetGroupArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderActionTargetGroupArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -933,6 +982,7 @@ public enum V1beta1LBListenerRuleSpecForProviderActionTargetGroupArnRefPolicyRes
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionTargetGroupArnRefPolicy
 {
     /// <summary>
@@ -957,6 +1007,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionTargetGroupArnRef
 /// <summary>Reference to a LBTargetGroup in elbv2 to populate targetGroupArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionTargetGroupArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -976,6 +1027,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionTargetGroupArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderActionTargetGroupArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderActionTargetGroupArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -992,6 +1044,7 @@ public enum V1beta1LBListenerRuleSpecForProviderActionTargetGroupArnSelectorPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderActionTargetGroupArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderActionTargetGroupArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1003,6 +1056,7 @@ public enum V1beta1LBListenerRuleSpecForProviderActionTargetGroupArnSelectorPoli
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionTargetGroupArnSelectorPolicy
 {
     /// <summary>
@@ -1027,6 +1081,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionTargetGroupArnSel
 /// <summary>Selector for a LBTargetGroup in elbv2 to populate targetGroupArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderActionTargetGroupArnSelector
 {
     /// <summary>
@@ -1047,6 +1102,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderActionTargetGroupArnSel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderAction
 {
     /// <summary>Information for creating an authenticate action using Cognito. Required if type is authenticate-cognito.</summary>
@@ -1110,6 +1166,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderConditionHostHeader
 {
     /// <summary>List of regular expressions to compare against the host header. The maximum length of each string is 128 characters. Conflicts with values.</summary>
@@ -1123,6 +1180,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderConditionHostHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderConditionHttpHeader
 {
     /// <summary>Name of HTTP header to search. The maximum size is 40 characters. Comparison is case-insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a host-header condition instead.</summary>
@@ -1140,6 +1198,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderConditionHttpHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderConditionHttpRequestMethod
 {
     /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
@@ -1149,6 +1208,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderConditionHttpRequestMet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderConditionPathPattern
 {
     /// <summary>List of regular expressions to compare against the request URL. The maximum length of each string is 128 characters. Conflicts with values.</summary>
@@ -1162,6 +1222,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderConditionPathPattern
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderConditionQueryString
 {
     /// <summary>Query string key pattern to match.</summary>
@@ -1175,6 +1236,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderConditionQueryString
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderConditionSourceIp
 {
     /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
@@ -1184,6 +1246,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderConditionSourceIp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderCondition
 {
     /// <summary>Host header patterns to match. Host Header block fields documented below.</summary>
@@ -1219,6 +1282,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderCondition
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderListenerArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderListenerArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1235,6 +1299,7 @@ public enum V1beta1LBListenerRuleSpecForProviderListenerArnRefPolicyResolutionEn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderListenerArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderListenerArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1246,6 +1311,7 @@ public enum V1beta1LBListenerRuleSpecForProviderListenerArnRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderListenerArnRefPolicy
 {
     /// <summary>
@@ -1270,6 +1336,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderListenerArnRefPolicy
 /// <summary>Reference to a LBListener in elbv2 to populate listenerArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderListenerArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1289,6 +1356,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderListenerArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderListenerArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderListenerArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1305,6 +1373,7 @@ public enum V1beta1LBListenerRuleSpecForProviderListenerArnSelectorPolicyResolut
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecForProviderListenerArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecForProviderListenerArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1316,6 +1385,7 @@ public enum V1beta1LBListenerRuleSpecForProviderListenerArnSelectorPolicyResolve
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderListenerArnSelectorPolicy
 {
     /// <summary>
@@ -1340,6 +1410,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderListenerArnSelectorPoli
 /// <summary>Selector for a LBListener in elbv2 to populate listenerArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderListenerArnSelector
 {
     /// <summary>
@@ -1360,6 +1431,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderListenerArnSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderTransformHostHeaderRewriteConfigRewrite
 {
     /// <summary>Regular expression to match in the input string. Length constraints: Between 1 and 1024 characters.</summary>
@@ -1373,6 +1445,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderTransformHostHeaderRewr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderTransformHostHeaderRewriteConfig
 {
     /// <summary>Block for host header rewrite configuration. Only one block is accepted. See Rewrite Blocks below.</summary>
@@ -1382,6 +1455,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderTransformHostHeaderRewr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderTransformUrlRewriteConfigRewrite
 {
     /// <summary>Regular expression to match in the input string. Length constraints: Between 1 and 1024 characters.</summary>
@@ -1395,6 +1469,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderTransformUrlRewriteConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderTransformUrlRewriteConfig
 {
     /// <summary>Block for URL rewrite configuration. Only one block is accepted. See Rewrite Blocks below.</summary>
@@ -1404,6 +1479,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderTransformUrlRewriteConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProviderTransform
 {
     /// <summary>Configuration block for host header rewrite. Required if type is host-header-rewrite. See Host Header Rewrite Config Blocks below.</summary>
@@ -1421,6 +1497,7 @@ public partial class V1beta1LBListenerRuleSpecForProviderTransform
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecForProvider
 {
     /// <summary>An Action block. Action blocks are documented below.</summary>
@@ -1471,6 +1548,7 @@ public partial class V1beta1LBListenerRuleSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1487,6 +1565,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1498,6 +1577,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnRefPolicy
 {
     /// <summary>
@@ -1522,6 +1602,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCogn
 /// <summary>Reference to a UserPool in cognitoidp to populate userPoolArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1541,6 +1622,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCogn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1557,6 +1639,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1568,6 +1651,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnSelectorPolicy
 {
     /// <summary>
@@ -1592,6 +1676,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCogn
 /// <summary>Selector for a UserPool in cognitoidp to populate userPoolArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolArnSelector
 {
     /// <summary>
@@ -1618,6 +1703,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCogn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1634,6 +1720,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1645,6 +1732,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdRefPolicy
 {
     /// <summary>
@@ -1669,6 +1757,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCogn
 /// <summary>Reference to a UserPoolClient in cognitoidp to populate userPoolClientId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1688,6 +1777,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCogn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1704,6 +1794,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1715,6 +1806,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdSelectorPolicy
 {
     /// <summary>
@@ -1739,6 +1831,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCogn
 /// <summary>Selector for a UserPoolClient in cognitoidp to populate userPoolClientId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolClientIdSelector
 {
     /// <summary>
@@ -1765,6 +1858,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCogn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1781,6 +1875,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1792,6 +1887,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainRefPolicy
 {
     /// <summary>
@@ -1816,6 +1912,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCogn
 /// <summary>Reference to a UserPoolDomain in cognitoidp to populate userPoolDomain.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1835,6 +1932,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCogn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1851,6 +1949,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1862,6 +1961,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainSelectorPolicy
 {
     /// <summary>
@@ -1886,6 +1986,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCogn
 /// <summary>Selector for a UserPoolDomain in cognitoidp to populate userPoolDomain.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognitoUserPoolDomainSelector
 {
     /// <summary>
@@ -1906,6 +2007,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCogn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCognito
 {
     /// <summary>The query parameters to include in the redirect request to the authorization endpoint. Max: 10.</summary>
@@ -1968,6 +2070,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateCogn
 /// <summary>The OAuth 2.0 client secret.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateOidcClientSecretSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1985,6 +2088,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateOidc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateOidc
 {
     /// <summary>The query parameters to include in the redirect request to the authorization endpoint. Max: 10.</summary>
@@ -2034,6 +2138,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionAuthenticateOidc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionFixedResponse
 {
     /// <summary>The content type. Valid values are text/plain, text/css, text/html, application/javascript and application/json.</summary>
@@ -2051,6 +2156,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionFixedResponse
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionForwardStickiness
 {
     /// <summary>The time period, in seconds, during which requests from a client should be routed to the same target group. The range is 1-604800 seconds (7 days).</summary>
@@ -2070,6 +2176,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionForwardStickines
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGroupArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGroupArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2086,6 +2193,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGroupArnRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGroupArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGroupArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2097,6 +2205,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGroupArnRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGroupArnRefPolicy
 {
     /// <summary>
@@ -2121,6 +2230,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGro
 /// <summary>Reference to a LBTargetGroup in elbv2 to populate arn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGroupArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2140,6 +2250,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGro
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGroupArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGroupArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2156,6 +2267,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGroupArnSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGroupArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGroupArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2167,6 +2279,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGroupArnSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGroupArnSelectorPolicy
 {
     /// <summary>
@@ -2191,6 +2304,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGro
 /// <summary>Selector for a LBTargetGroup in elbv2 to populate arn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGroupArnSelector
 {
     /// <summary>
@@ -2211,6 +2325,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGroup
 {
     /// <summary>The Amazon Resource Name (ARN) of the target group.</summary>
@@ -2232,6 +2347,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionForwardTargetGro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionForward
 {
     /// <summary>The target group stickiness for the rule.</summary>
@@ -2245,6 +2361,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionForward
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionJwtValidationAdditionalClaim
 {
     /// <summary>Format of the claim value. Valid values are single-string, string-array and space-separated-values.</summary>
@@ -2262,6 +2379,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionJwtValidationAdd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionJwtValidation
 {
     /// <summary>Repeatable configuration block for additional claims to validate.</summary>
@@ -2279,6 +2397,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionJwtValidation
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionRedirect
 {
     /// <summary>The hostname. This component is not percent-encoded. The hostname can contain #{host}. Defaults to #{host}.</summary>
@@ -2314,6 +2433,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionRedirect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderActionTargetGroupArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderActionTargetGroupArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2330,6 +2450,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderActionTargetGroupArnRefPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderActionTargetGroupArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderActionTargetGroupArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2341,6 +2462,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderActionTargetGroupArnRefPolicyRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionTargetGroupArnRefPolicy
 {
     /// <summary>
@@ -2365,6 +2487,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionTargetGroupArnRe
 /// <summary>Reference to a LBTargetGroup in elbv2 to populate targetGroupArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionTargetGroupArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2384,6 +2507,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionTargetGroupArnRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderActionTargetGroupArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderActionTargetGroupArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2400,6 +2524,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderActionTargetGroupArnSelectorPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderActionTargetGroupArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderActionTargetGroupArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2411,6 +2536,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderActionTargetGroupArnSelectorPol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionTargetGroupArnSelectorPolicy
 {
     /// <summary>
@@ -2435,6 +2561,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionTargetGroupArnSe
 /// <summary>Selector for a LBTargetGroup in elbv2 to populate targetGroupArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderActionTargetGroupArnSelector
 {
     /// <summary>
@@ -2455,6 +2582,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderActionTargetGroupArnSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderAction
 {
     /// <summary>Information for creating an authenticate action using Cognito. Required if type is authenticate-cognito.</summary>
@@ -2518,6 +2646,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderConditionHostHeader
 {
     /// <summary>List of regular expressions to compare against the host header. The maximum length of each string is 128 characters. Conflicts with values.</summary>
@@ -2531,6 +2660,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderConditionHostHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderConditionHttpHeader
 {
     /// <summary>Name of HTTP header to search. The maximum size is 40 characters. Comparison is case-insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a host-header condition instead.</summary>
@@ -2548,6 +2678,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderConditionHttpHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderConditionHttpRequestMethod
 {
     /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
@@ -2557,6 +2688,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderConditionHttpRequestMe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderConditionPathPattern
 {
     /// <summary>List of regular expressions to compare against the request URL. The maximum length of each string is 128 characters. Conflicts with values.</summary>
@@ -2570,6 +2702,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderConditionPathPattern
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderConditionQueryString
 {
     /// <summary>Query string key pattern to match.</summary>
@@ -2583,6 +2716,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderConditionQueryString
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderConditionSourceIp
 {
     /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
@@ -2592,6 +2726,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderConditionSourceIp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderCondition
 {
     /// <summary>Host header patterns to match. Host Header block fields documented below.</summary>
@@ -2627,6 +2762,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderCondition
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderListenerArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderListenerArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2643,6 +2779,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderListenerArnRefPolicyResolutionE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderListenerArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderListenerArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2654,6 +2791,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderListenerArnRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderListenerArnRefPolicy
 {
     /// <summary>
@@ -2678,6 +2816,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderListenerArnRefPolicy
 /// <summary>Reference to a LBListener in elbv2 to populate listenerArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderListenerArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2697,6 +2836,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderListenerArnRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderListenerArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderListenerArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2713,6 +2853,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderListenerArnSelectorPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecInitProviderListenerArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecInitProviderListenerArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2724,6 +2865,7 @@ public enum V1beta1LBListenerRuleSpecInitProviderListenerArnSelectorPolicyResolv
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderListenerArnSelectorPolicy
 {
     /// <summary>
@@ -2748,6 +2890,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderListenerArnSelectorPol
 /// <summary>Selector for a LBListener in elbv2 to populate listenerArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderListenerArnSelector
 {
     /// <summary>
@@ -2768,6 +2911,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderListenerArnSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderTransformHostHeaderRewriteConfigRewrite
 {
     /// <summary>Regular expression to match in the input string. Length constraints: Between 1 and 1024 characters.</summary>
@@ -2781,6 +2925,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderTransformHostHeaderRew
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderTransformHostHeaderRewriteConfig
 {
     /// <summary>Block for host header rewrite configuration. Only one block is accepted. See Rewrite Blocks below.</summary>
@@ -2790,6 +2935,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderTransformHostHeaderRew
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderTransformUrlRewriteConfigRewrite
 {
     /// <summary>Regular expression to match in the input string. Length constraints: Between 1 and 1024 characters.</summary>
@@ -2803,6 +2949,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderTransformUrlRewriteCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderTransformUrlRewriteConfig
 {
     /// <summary>Block for URL rewrite configuration. Only one block is accepted. See Rewrite Blocks below.</summary>
@@ -2812,6 +2959,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderTransformUrlRewriteCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProviderTransform
 {
     /// <summary>Configuration block for host header rewrite. Required if type is host-header-rewrite. See Host Header Rewrite Config Blocks below.</summary>
@@ -2841,6 +2989,7 @@ public partial class V1beta1LBListenerRuleSpecInitProviderTransform
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecInitProvider
 {
     /// <summary>An Action block. Action blocks are documented below.</summary>
@@ -2882,6 +3031,7 @@ public partial class V1beta1LBListenerRuleSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -2906,6 +3056,7 @@ public enum V1beta1LBListenerRuleSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2922,6 +3073,7 @@ public enum V1beta1LBListenerRuleSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBListenerRuleSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LBListenerRuleSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2933,6 +3085,7 @@ public enum V1beta1LBListenerRuleSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -2961,6 +3114,7 @@ public partial class V1beta1LBListenerRuleSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2980,6 +3134,7 @@ public partial class V1beta1LBListenerRuleSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -2994,6 +3149,7 @@ public partial class V1beta1LBListenerRuleSpecWriteConnectionSecretToRef
 /// <summary>LBListenerRuleSpec defines the desired state of LBListenerRule</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleSpec
 {
     /// <summary>
@@ -3061,6 +3217,7 @@ public partial class V1beta1LBListenerRuleSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderActionAuthenticateCognito
 {
     /// <summary>The query parameters to include in the redirect request to the authorization endpoint. Max: 10.</summary>
@@ -3098,6 +3255,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderActionAuthenticateCogn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderActionAuthenticateOidc
 {
     /// <summary>The query parameters to include in the redirect request to the authorization endpoint. Max: 10.</summary>
@@ -3143,6 +3301,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderActionAuthenticateOidc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderActionFixedResponse
 {
     /// <summary>The content type. Valid values are text/plain, text/css, text/html, application/javascript and application/json.</summary>
@@ -3160,6 +3319,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderActionFixedResponse
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderActionForwardStickiness
 {
     /// <summary>The time period, in seconds, during which requests from a client should be routed to the same target group. The range is 1-604800 seconds (7 days).</summary>
@@ -3173,6 +3333,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderActionForwardStickines
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderActionForwardTargetGroup
 {
     /// <summary>The Amazon Resource Name (ARN) of the target group.</summary>
@@ -3186,6 +3347,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderActionForwardTargetGro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderActionForward
 {
     /// <summary>The target group stickiness for the rule.</summary>
@@ -3199,6 +3361,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderActionForward
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderActionJwtValidationAdditionalClaim
 {
     /// <summary>Format of the claim value. Valid values are single-string, string-array and space-separated-values.</summary>
@@ -3216,6 +3379,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderActionJwtValidationAdd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderActionJwtValidation
 {
     /// <summary>Repeatable configuration block for additional claims to validate.</summary>
@@ -3233,6 +3397,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderActionJwtValidation
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderActionRedirect
 {
     /// <summary>The hostname. This component is not percent-encoded. The hostname can contain #{host}. Defaults to #{host}.</summary>
@@ -3262,6 +3427,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderActionRedirect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderAction
 {
     /// <summary>Information for creating an authenticate action using Cognito. Required if type is authenticate-cognito.</summary>
@@ -3317,6 +3483,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderConditionHostHeader
 {
     /// <summary>List of regular expressions to compare against the host header. The maximum length of each string is 128 characters. Conflicts with values.</summary>
@@ -3330,6 +3497,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderConditionHostHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderConditionHttpHeader
 {
     /// <summary>Name of HTTP header to search. The maximum size is 40 characters. Comparison is case-insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a host-header condition instead.</summary>
@@ -3347,6 +3515,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderConditionHttpHeader
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderConditionHttpRequestMethod
 {
     /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
@@ -3356,6 +3525,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderConditionHttpRequestMe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderConditionPathPattern
 {
     /// <summary>List of regular expressions to compare against the request URL. The maximum length of each string is 128 characters. Conflicts with values.</summary>
@@ -3369,6 +3539,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderConditionPathPattern
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderConditionQueryString
 {
     /// <summary>Query string key pattern to match.</summary>
@@ -3382,6 +3553,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderConditionQueryString
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderConditionSourceIp
 {
     /// <summary>Query string pairs or values to match. Query String Value blocks documented below. Multiple values blocks can be specified, see example above. Maximum size of each string is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). To search for a literal &apos;*&apos; or &apos;?&apos; character in a query string, escape the character with a backslash (\). Only one pair needs to match for the condition to be satisfied.</summary>
@@ -3391,6 +3563,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderConditionSourceIp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderCondition
 {
     /// <summary>Host header patterns to match. Host Header block fields documented below.</summary>
@@ -3420,6 +3593,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderCondition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderTransformHostHeaderRewriteConfigRewrite
 {
     /// <summary>Regular expression to match in the input string. Length constraints: Between 1 and 1024 characters.</summary>
@@ -3433,6 +3607,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderTransformHostHeaderRew
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderTransformHostHeaderRewriteConfig
 {
     /// <summary>Block for host header rewrite configuration. Only one block is accepted. See Rewrite Blocks below.</summary>
@@ -3442,6 +3617,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderTransformHostHeaderRew
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderTransformUrlRewriteConfigRewrite
 {
     /// <summary>Regular expression to match in the input string. Length constraints: Between 1 and 1024 characters.</summary>
@@ -3455,6 +3631,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderTransformUrlRewriteCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderTransformUrlRewriteConfig
 {
     /// <summary>Block for URL rewrite configuration. Only one block is accepted. See Rewrite Blocks below.</summary>
@@ -3464,6 +3641,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderTransformUrlRewriteCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProviderTransform
 {
     /// <summary>Configuration block for host header rewrite. Required if type is host-header-rewrite. See Host Header Rewrite Config Blocks below.</summary>
@@ -3481,6 +3659,7 @@ public partial class V1beta1LBListenerRuleStatusAtProviderTransform
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusAtProvider
 {
     /// <summary>An Action block. Action blocks are documented below.</summary>
@@ -3530,6 +3709,7 @@ public partial class V1beta1LBListenerRuleStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatusConditions
 {
     /// <summary>
@@ -3573,6 +3753,7 @@ public partial class V1beta1LBListenerRuleStatusConditions
 /// <summary>LBListenerRuleStatus defines the observed state of LBListenerRule.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LBListenerRuleStatus
 {
     [JsonPropertyName("atProvider")]
@@ -3591,9 +3772,13 @@ public partial class V1beta1LBListenerRuleStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>LBListenerRule is the Schema for the LBListenerRules API. Provides a Load Balancer Listener Rule resource.</summary>
+/// <summary>
+/// LBListenerRule is the Schema for the LBListenerRules API. Provides a Load Balancer Listener Rule resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LBListenerRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LBListenerRuleSpec>, IStatus<V1beta1LBListenerRuleStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.s3control.aws.upbound.io;
-/// <summary>StorageLensConfiguration is the Schema for the StorageLensConfigurations API. Provides a resource to manage an S3 Storage Lens configuration.</summary>
+/// <summary>
+/// StorageLensConfiguration is the Schema for the StorageLensConfigurations API. Provides a resource to manage an S3 Storage Lens configuration.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1StorageLensConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1StorageLensConfiguration>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1StorageLensConfigurationList : IKubernetesObject<V1L
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1StorageLensConfigurationSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1StorageLensConfigurationSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelActivityMetrics
 {
     /// <summary>Whether the activity metrics are enabled.</summary>
@@ -66,6 +72,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -75,6 +82,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -84,6 +92,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelActivityMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -93,6 +102,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -102,6 +112,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -111,6 +122,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -120,6 +132,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteria
 {
     /// <summary>The delimiter of the selection criteria being used.</summary>
@@ -137,6 +150,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -150,6 +164,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevel
 {
     /// <summary>level storage metrics for S3 Storage Lens. See Prefix Level Storage Metrics below for more details.</summary>
@@ -159,6 +174,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevel
 {
     /// <summary>S3 Storage Lens activity metrics. See Activity Metrics below for more details.</summary>
@@ -184,6 +200,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -193,6 +210,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevel
 {
     /// <summary>S3 Storage Lens activity metrics. See Activity Metrics below for more details.</summary>
@@ -218,6 +236,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAwsOrg
 {
     /// <summary>The Amazon Resource Name (ARN) of the bucket.</summary>
@@ -227,6 +246,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportCloudWatchMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -242,6 +262,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -258,6 +279,7 @@ public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -269,6 +291,7 @@ public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurati
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnRefPolicy
 {
     /// <summary>
@@ -293,6 +316,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 /// <summary>Reference to a Bucket in s3 to populate arn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -312,6 +336,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -328,6 +353,7 @@ public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -339,6 +365,7 @@ public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurati
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicy
 {
     /// <summary>
@@ -363,6 +390,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 /// <summary>Selector for a Bucket in s3 to populate arn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelector
 {
     /// <summary>
@@ -383,6 +411,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKms
 {
     /// <summary>KMS key ARN.</summary>
@@ -392,12 +421,14 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationEncryption
 {
     /// <summary>KMS encryption. See SSE KMS below for more details.</summary>
@@ -411,6 +442,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestination
 {
     /// <summary>The account ID of the owner of the S3 Storage Lens metrics export bucket.</summary>
@@ -448,6 +480,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExport
 {
     /// <summary>Amazon CloudWatch publishing for S3 Storage Lens metrics. See Cloud Watch Metrics below for more details.</summary>
@@ -467,6 +500,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -483,6 +517,7 @@ public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -494,6 +529,7 @@ public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurati
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsRefsPolicy
 {
     /// <summary>
@@ -518,6 +554,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -537,6 +574,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -553,6 +591,7 @@ public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -564,6 +603,7 @@ public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurati
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsSelectorPolicy
 {
     /// <summary>
@@ -588,6 +628,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 /// <summary>Selector for a list of Bucket in s3 to populate buckets.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsSelector
 {
     /// <summary>
@@ -608,6 +649,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExclude
 {
     /// <summary>List of S3 bucket ARNs.</summary>
@@ -629,6 +671,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationInclude
 {
     /// <summary>List of S3 bucket ARNs.</summary>
@@ -642,6 +685,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfiguration
 {
     /// <summary>level configurations of the S3 Storage Lens configuration. See Account Level below for more details.</summary>
@@ -671,6 +715,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecForProvider
 {
     /// <summary>The AWS account ID for the S3 Storage Lens configuration.</summary>
@@ -699,6 +744,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelActivityMetrics
 {
     /// <summary>Whether the activity metrics are enabled.</summary>
@@ -708,6 +754,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -717,6 +764,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -726,6 +774,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelActivityMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -735,6 +784,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -744,6 +794,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -753,6 +804,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -762,6 +814,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteria
 {
     /// <summary>The delimiter of the selection criteria being used.</summary>
@@ -779,6 +832,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -792,6 +846,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevel
 {
     /// <summary>level storage metrics for S3 Storage Lens. See Prefix Level Storage Metrics below for more details.</summary>
@@ -801,6 +856,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevel
 {
     /// <summary>S3 Storage Lens activity metrics. See Activity Metrics below for more details.</summary>
@@ -826,6 +882,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -835,6 +892,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevel
 {
     /// <summary>S3 Storage Lens activity metrics. See Activity Metrics below for more details.</summary>
@@ -860,6 +918,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAwsOrg
 {
     /// <summary>The Amazon Resource Name (ARN) of the bucket.</summary>
@@ -869,6 +928,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportCloudWatchMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -884,6 +944,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -900,6 +961,7 @@ public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -911,6 +973,7 @@ public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurat
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnRefPolicy
 {
     /// <summary>
@@ -935,6 +998,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 /// <summary>Reference to a Bucket in s3 to populate arn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -954,6 +1018,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -970,6 +1035,7 @@ public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -981,6 +1047,7 @@ public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurat
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicy
 {
     /// <summary>
@@ -1005,6 +1072,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 /// <summary>Selector for a Bucket in s3 to populate arn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelector
 {
     /// <summary>
@@ -1025,6 +1093,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKms
 {
     /// <summary>KMS key ARN.</summary>
@@ -1034,12 +1103,14 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationEncryption
 {
     /// <summary>KMS encryption. See SSE KMS below for more details.</summary>
@@ -1053,6 +1124,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestination
 {
     /// <summary>The account ID of the owner of the S3 Storage Lens metrics export bucket.</summary>
@@ -1090,6 +1162,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExport
 {
     /// <summary>Amazon CloudWatch publishing for S3 Storage Lens metrics. See Cloud Watch Metrics below for more details.</summary>
@@ -1109,6 +1182,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1125,6 +1199,7 @@ public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1136,6 +1211,7 @@ public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurat
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsRefsPolicy
 {
     /// <summary>
@@ -1160,6 +1236,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1179,6 +1256,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1195,6 +1273,7 @@ public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1206,6 +1285,7 @@ public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurat
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsSelectorPolicy
 {
     /// <summary>
@@ -1230,6 +1310,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 /// <summary>Selector for a list of Bucket in s3 to populate buckets.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsSelector
 {
     /// <summary>
@@ -1250,6 +1331,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExclude
 {
     /// <summary>List of S3 bucket ARNs.</summary>
@@ -1271,6 +1353,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationInclude
 {
     /// <summary>List of S3 bucket ARNs.</summary>
@@ -1284,6 +1367,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfiguration
 {
     /// <summary>level configurations of the S3 Storage Lens configuration. See Account Level below for more details.</summary>
@@ -1325,6 +1409,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecInitProvider
 {
     /// <summary>The AWS account ID for the S3 Storage Lens configuration.</summary>
@@ -1350,6 +1435,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1StorageLensConfigurationSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1374,6 +1460,7 @@ public enum V1beta1StorageLensConfigurationSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1StorageLensConfigurationSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1390,6 +1477,7 @@ public enum V1beta1StorageLensConfigurationSpecProviderConfigRefPolicyResolution
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1StorageLensConfigurationSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1401,6 +1489,7 @@ public enum V1beta1StorageLensConfigurationSpecProviderConfigRefPolicyResolveEnu
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1429,6 +1518,7 @@ public partial class V1beta1StorageLensConfigurationSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1448,6 +1538,7 @@ public partial class V1beta1StorageLensConfigurationSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1462,6 +1553,7 @@ public partial class V1beta1StorageLensConfigurationSpecWriteConnectionSecretToR
 /// <summary>StorageLensConfigurationSpec defines the desired state of StorageLensConfiguration</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationSpec
 {
     /// <summary>
@@ -1529,6 +1621,7 @@ public partial class V1beta1StorageLensConfigurationSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelActivityMetrics
 {
     /// <summary>Whether the activity metrics are enabled.</summary>
@@ -1538,6 +1631,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -1547,6 +1641,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -1556,6 +1651,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelActivityMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -1565,6 +1661,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -1574,6 +1671,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -1583,6 +1681,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -1592,6 +1691,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteria
 {
     /// <summary>The delimiter of the selection criteria being used.</summary>
@@ -1609,6 +1709,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -1622,6 +1723,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevel
 {
     /// <summary>level storage metrics for S3 Storage Lens. See Prefix Level Storage Metrics below for more details.</summary>
@@ -1631,6 +1733,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevel
 {
     /// <summary>S3 Storage Lens activity metrics. See Activity Metrics below for more details.</summary>
@@ -1656,6 +1759,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -1665,6 +1769,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevel
 {
     /// <summary>S3 Storage Lens activity metrics. See Activity Metrics below for more details.</summary>
@@ -1690,6 +1795,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAwsOrg
 {
     /// <summary>The Amazon Resource Name (ARN) of the bucket.</summary>
@@ -1699,6 +1805,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportCloudWatchMetrics
 {
     /// <summary>Whether the S3 Storage Lens configuration is enabled.</summary>
@@ -1708,6 +1815,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKms
 {
     /// <summary>KMS key ARN.</summary>
@@ -1717,12 +1825,14 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportS3BucketDestinationEncryption
 {
     /// <summary>KMS encryption. See SSE KMS below for more details.</summary>
@@ -1736,6 +1846,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportS3BucketDestination
 {
     /// <summary>The account ID of the owner of the S3 Storage Lens metrics export bucket.</summary>
@@ -1765,6 +1876,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExport
 {
     /// <summary>Amazon CloudWatch publishing for S3 Storage Lens metrics. See Cloud Watch Metrics below for more details.</summary>
@@ -1778,6 +1890,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExclude
 {
     /// <summary>List of S3 bucket ARNs.</summary>
@@ -1791,6 +1904,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationInclude
 {
     /// <summary>List of S3 bucket ARNs.</summary>
@@ -1804,6 +1918,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfiguration
 {
     /// <summary>level configurations of the S3 Storage Lens configuration. See Account Level below for more details.</summary>
@@ -1833,6 +1948,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusAtProvider
 {
     /// <summary>The AWS account ID for the S3 Storage Lens configuration.</summary>
@@ -1873,6 +1989,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatusConditions
 {
     /// <summary>
@@ -1916,6 +2033,7 @@ public partial class V1beta1StorageLensConfigurationStatusConditions
 /// <summary>StorageLensConfigurationStatus defines the observed state of StorageLensConfiguration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1StorageLensConfigurationStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1934,9 +2052,13 @@ public partial class V1beta1StorageLensConfigurationStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>StorageLensConfiguration is the Schema for the StorageLensConfigurations API. Provides a resource to manage an S3 Storage Lens configuration.</summary>
+/// <summary>
+/// StorageLensConfiguration is the Schema for the StorageLensConfigurations API. Provides a resource to manage an S3 Storage Lens configuration.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1StorageLensConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1StorageLensConfigurationSpec>, IStatus<V1beta1StorageLensConfigurationStatus?>
 {

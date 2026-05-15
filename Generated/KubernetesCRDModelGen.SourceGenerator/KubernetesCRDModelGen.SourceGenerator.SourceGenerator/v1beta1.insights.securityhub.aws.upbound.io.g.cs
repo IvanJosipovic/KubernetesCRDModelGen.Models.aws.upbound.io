@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.securityhub.aws.upbound.io;
-/// <summary>Insight is the Schema for the Insights API. Provides a Security Hub custom insight resource.</summary>
+/// <summary>
+/// Insight is the Schema for the Insights API. Provides a Security Hub custom insight resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1InsightList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Insight>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1InsightList : IKubernetesObject<V1ListMeta>, IItems<
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InsightSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InsightSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1InsightSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersAwsAccountId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1InsightSpecForProviderFiltersAwsAccountId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersCompanyName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -83,6 +90,7 @@ public partial class V1beta1InsightSpecForProviderFiltersCompanyName
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersComplianceStatus
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -96,6 +104,7 @@ public partial class V1beta1InsightSpecForProviderFiltersComplianceStatus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersConfidence
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -113,6 +122,7 @@ public partial class V1beta1InsightSpecForProviderFiltersConfidence
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersCreatedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -126,6 +136,7 @@ public partial class V1beta1InsightSpecForProviderFiltersCreatedAtDateRange
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersCreatedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -143,6 +154,7 @@ public partial class V1beta1InsightSpecForProviderFiltersCreatedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersCriticality
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -160,6 +172,7 @@ public partial class V1beta1InsightSpecForProviderFiltersCriticality
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersDescription
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -173,6 +186,7 @@ public partial class V1beta1InsightSpecForProviderFiltersDescription
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersFindingProviderFieldsConfidence
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -190,6 +204,7 @@ public partial class V1beta1InsightSpecForProviderFiltersFindingProviderFieldsCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersFindingProviderFieldsCriticality
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -207,6 +222,7 @@ public partial class V1beta1InsightSpecForProviderFiltersFindingProviderFieldsCr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersFindingProviderFieldsRelatedFindingsId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -220,6 +236,7 @@ public partial class V1beta1InsightSpecForProviderFiltersFindingProviderFieldsRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersFindingProviderFieldsRelatedFindingsProductArn
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -233,6 +250,7 @@ public partial class V1beta1InsightSpecForProviderFiltersFindingProviderFieldsRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersFindingProviderFieldsSeverityLabel
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -246,6 +264,7 @@ public partial class V1beta1InsightSpecForProviderFiltersFindingProviderFieldsSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersFindingProviderFieldsSeverityOriginal
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -259,6 +278,7 @@ public partial class V1beta1InsightSpecForProviderFiltersFindingProviderFieldsSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersFindingProviderFieldsTypes
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -272,6 +292,7 @@ public partial class V1beta1InsightSpecForProviderFiltersFindingProviderFieldsTy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersFirstObservedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -285,6 +306,7 @@ public partial class V1beta1InsightSpecForProviderFiltersFirstObservedAtDateRang
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersFirstObservedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -302,6 +324,7 @@ public partial class V1beta1InsightSpecForProviderFiltersFirstObservedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersGeneratorId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -315,6 +338,7 @@ public partial class V1beta1InsightSpecForProviderFiltersGeneratorId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -328,6 +352,7 @@ public partial class V1beta1InsightSpecForProviderFiltersId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersKeyword
 {
     /// <summary>A value for the keyword.</summary>
@@ -337,6 +362,7 @@ public partial class V1beta1InsightSpecForProviderFiltersKeyword
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersLastObservedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -350,6 +376,7 @@ public partial class V1beta1InsightSpecForProviderFiltersLastObservedAtDateRange
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersLastObservedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -367,6 +394,7 @@ public partial class V1beta1InsightSpecForProviderFiltersLastObservedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersMalwareName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -380,6 +408,7 @@ public partial class V1beta1InsightSpecForProviderFiltersMalwareName
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersMalwarePath
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -393,6 +422,7 @@ public partial class V1beta1InsightSpecForProviderFiltersMalwarePath
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersMalwareState
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -406,6 +436,7 @@ public partial class V1beta1InsightSpecForProviderFiltersMalwareState
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersMalwareType
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -419,6 +450,7 @@ public partial class V1beta1InsightSpecForProviderFiltersMalwareType
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersNetworkDestinationDomain
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -432,6 +464,7 @@ public partial class V1beta1InsightSpecForProviderFiltersNetworkDestinationDomai
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersNetworkDestinationIpv4
 {
     /// <summary>A finding&apos;s CIDR value.</summary>
@@ -441,6 +474,7 @@ public partial class V1beta1InsightSpecForProviderFiltersNetworkDestinationIpv4
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersNetworkDestinationIpv6
 {
     /// <summary>A finding&apos;s CIDR value.</summary>
@@ -450,6 +484,7 @@ public partial class V1beta1InsightSpecForProviderFiltersNetworkDestinationIpv6
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersNetworkDestinationPort
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -467,6 +502,7 @@ public partial class V1beta1InsightSpecForProviderFiltersNetworkDestinationPort
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersNetworkDirection
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -480,6 +516,7 @@ public partial class V1beta1InsightSpecForProviderFiltersNetworkDirection
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersNetworkProtocol
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -493,6 +530,7 @@ public partial class V1beta1InsightSpecForProviderFiltersNetworkProtocol
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersNetworkSourceDomain
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -506,6 +544,7 @@ public partial class V1beta1InsightSpecForProviderFiltersNetworkSourceDomain
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersNetworkSourceIpv4
 {
     /// <summary>A finding&apos;s CIDR value.</summary>
@@ -515,6 +554,7 @@ public partial class V1beta1InsightSpecForProviderFiltersNetworkSourceIpv4
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersNetworkSourceIpv6
 {
     /// <summary>A finding&apos;s CIDR value.</summary>
@@ -524,6 +564,7 @@ public partial class V1beta1InsightSpecForProviderFiltersNetworkSourceIpv6
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersNetworkSourceMac
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -537,6 +578,7 @@ public partial class V1beta1InsightSpecForProviderFiltersNetworkSourceMac
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersNetworkSourcePort
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -554,6 +596,7 @@ public partial class V1beta1InsightSpecForProviderFiltersNetworkSourcePort
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersNoteText
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -567,6 +610,7 @@ public partial class V1beta1InsightSpecForProviderFiltersNoteText
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersNoteUpdatedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -580,6 +624,7 @@ public partial class V1beta1InsightSpecForProviderFiltersNoteUpdatedAtDateRange
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersNoteUpdatedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -597,6 +642,7 @@ public partial class V1beta1InsightSpecForProviderFiltersNoteUpdatedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersNoteUpdatedBy
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -610,6 +656,7 @@ public partial class V1beta1InsightSpecForProviderFiltersNoteUpdatedBy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersProcessLaunchedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -623,6 +670,7 @@ public partial class V1beta1InsightSpecForProviderFiltersProcessLaunchedAtDateRa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersProcessLaunchedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -640,6 +688,7 @@ public partial class V1beta1InsightSpecForProviderFiltersProcessLaunchedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersProcessName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -653,6 +702,7 @@ public partial class V1beta1InsightSpecForProviderFiltersProcessName
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersProcessParentPid
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -670,6 +720,7 @@ public partial class V1beta1InsightSpecForProviderFiltersProcessParentPid
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersProcessPath
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -683,6 +734,7 @@ public partial class V1beta1InsightSpecForProviderFiltersProcessPath
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersProcessPid
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -700,6 +752,7 @@ public partial class V1beta1InsightSpecForProviderFiltersProcessPid
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersProcessTerminatedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -713,6 +766,7 @@ public partial class V1beta1InsightSpecForProviderFiltersProcessTerminatedAtDate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersProcessTerminatedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -730,6 +784,7 @@ public partial class V1beta1InsightSpecForProviderFiltersProcessTerminatedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersProductArn
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -743,6 +798,7 @@ public partial class V1beta1InsightSpecForProviderFiltersProductArn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersProductFields
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -760,6 +816,7 @@ public partial class V1beta1InsightSpecForProviderFiltersProductFields
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersProductName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -773,6 +830,7 @@ public partial class V1beta1InsightSpecForProviderFiltersProductName
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersRecommendationText
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -786,6 +844,7 @@ public partial class V1beta1InsightSpecForProviderFiltersRecommendationText
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersRecordState
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -799,6 +858,7 @@ public partial class V1beta1InsightSpecForProviderFiltersRecordState
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersRelatedFindingsId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -812,6 +872,7 @@ public partial class V1beta1InsightSpecForProviderFiltersRelatedFindingsId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersRelatedFindingsProductArn
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -825,6 +886,7 @@ public partial class V1beta1InsightSpecForProviderFiltersRelatedFindingsProductA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceIamInstanceProfileArn
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -838,6 +900,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceImageId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -851,6 +914,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceIpv4Addresses
 {
     /// <summary>A finding&apos;s CIDR value.</summary>
@@ -860,6 +924,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceIpv6Addresses
 {
     /// <summary>A finding&apos;s CIDR value.</summary>
@@ -869,6 +934,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceKeyName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -882,6 +948,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceK
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceLaunchedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -895,6 +962,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceL
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceLaunchedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -912,6 +980,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceL
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceSubnetId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -925,6 +994,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceType
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -938,6 +1008,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceT
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceVpcId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -951,6 +1022,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceAwsEc2InstanceV
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceAwsIamAccessKeyCreatedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -964,6 +1036,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceAwsIamAccessKey
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceAwsIamAccessKeyCreatedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -981,6 +1054,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceAwsIamAccessKey
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceAwsIamAccessKeyStatus
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -994,6 +1068,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceAwsIamAccessKey
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceAwsIamAccessKeyUserName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1007,6 +1082,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceAwsIamAccessKey
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceAwsS3BucketOwnerId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1020,6 +1096,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceAwsS3BucketOwne
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceAwsS3BucketOwnerName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1033,6 +1110,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceAwsS3BucketOwne
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceContainerImageId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1046,6 +1124,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceContainerImageI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceContainerImageName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1059,6 +1138,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceContainerImageN
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceContainerLaunchedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -1072,6 +1152,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceContainerLaunch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceContainerLaunchedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -1089,6 +1170,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceContainerLaunch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceContainerName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1102,6 +1184,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceContainerName
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceDetailsOther
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1119,6 +1202,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceDetailsOther
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1132,6 +1216,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourcePartition
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1145,6 +1230,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourcePartition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceRegion
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1158,6 +1244,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceRegion
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceTags
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1175,6 +1262,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceTags
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersResourceType
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1188,6 +1276,7 @@ public partial class V1beta1InsightSpecForProviderFiltersResourceType
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersSeverityLabel
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1201,6 +1290,7 @@ public partial class V1beta1InsightSpecForProviderFiltersSeverityLabel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersSourceUrl
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1214,6 +1304,7 @@ public partial class V1beta1InsightSpecForProviderFiltersSourceUrl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersThreatIntelIndicatorCategory
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1227,6 +1318,7 @@ public partial class V1beta1InsightSpecForProviderFiltersThreatIntelIndicatorCat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersThreatIntelIndicatorLastObservedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -1240,6 +1332,7 @@ public partial class V1beta1InsightSpecForProviderFiltersThreatIntelIndicatorLas
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersThreatIntelIndicatorLastObservedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -1257,6 +1350,7 @@ public partial class V1beta1InsightSpecForProviderFiltersThreatIntelIndicatorLas
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersThreatIntelIndicatorSource
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1270,6 +1364,7 @@ public partial class V1beta1InsightSpecForProviderFiltersThreatIntelIndicatorSou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersThreatIntelIndicatorSourceUrl
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1283,6 +1378,7 @@ public partial class V1beta1InsightSpecForProviderFiltersThreatIntelIndicatorSou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersThreatIntelIndicatorType
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1296,6 +1392,7 @@ public partial class V1beta1InsightSpecForProviderFiltersThreatIntelIndicatorTyp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersThreatIntelIndicatorValue
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1309,6 +1406,7 @@ public partial class V1beta1InsightSpecForProviderFiltersThreatIntelIndicatorVal
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersTitle
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1322,6 +1420,7 @@ public partial class V1beta1InsightSpecForProviderFiltersTitle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersType
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1335,6 +1434,7 @@ public partial class V1beta1InsightSpecForProviderFiltersType
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersUpdatedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -1348,6 +1448,7 @@ public partial class V1beta1InsightSpecForProviderFiltersUpdatedAtDateRange
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersUpdatedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -1365,6 +1466,7 @@ public partial class V1beta1InsightSpecForProviderFiltersUpdatedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersUserDefinedValues
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1382,6 +1484,7 @@ public partial class V1beta1InsightSpecForProviderFiltersUserDefinedValues
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersVerificationState
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1395,6 +1498,7 @@ public partial class V1beta1InsightSpecForProviderFiltersVerificationState
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFiltersWorkflowStatus
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1408,6 +1512,7 @@ public partial class V1beta1InsightSpecForProviderFiltersWorkflowStatus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProviderFilters
 {
     /// <summary>AWS account ID that a finding is generated in. See String_Filter below for more details.</summary>
@@ -1765,6 +1870,7 @@ public partial class V1beta1InsightSpecForProviderFilters
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecForProvider
 {
     /// <summary>A configuration block including one or more (up to 10 distinct) attributes used to filter the findings included in the insight. The insight only includes findings that match criteria defined in the filters. See filters below for more details.</summary>
@@ -1789,6 +1895,7 @@ public partial class V1beta1InsightSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersAwsAccountId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1802,6 +1909,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersAwsAccountId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersCompanyName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1815,6 +1923,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersCompanyName
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersComplianceStatus
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1828,6 +1937,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersComplianceStatus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersConfidence
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -1845,6 +1955,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersConfidence
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersCreatedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -1858,6 +1969,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersCreatedAtDateRange
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersCreatedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -1875,6 +1987,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersCreatedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersCriticality
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -1892,6 +2005,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersCriticality
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersDescription
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1905,6 +2019,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersDescription
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersFindingProviderFieldsConfidence
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -1922,6 +2037,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersFindingProviderFieldsC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersFindingProviderFieldsCriticality
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -1939,6 +2055,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersFindingProviderFieldsC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersFindingProviderFieldsRelatedFindingsId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1952,6 +2069,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersFindingProviderFieldsR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersFindingProviderFieldsRelatedFindingsProductArn
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1965,6 +2083,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersFindingProviderFieldsR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersFindingProviderFieldsSeverityLabel
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1978,6 +2097,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersFindingProviderFieldsS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersFindingProviderFieldsSeverityOriginal
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -1991,6 +2111,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersFindingProviderFieldsS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersFindingProviderFieldsTypes
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2004,6 +2125,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersFindingProviderFieldsT
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersFirstObservedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -2017,6 +2139,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersFirstObservedAtDateRan
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersFirstObservedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -2034,6 +2157,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersFirstObservedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersGeneratorId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2047,6 +2171,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersGeneratorId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2060,6 +2185,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersKeyword
 {
     /// <summary>A value for the keyword.</summary>
@@ -2069,6 +2195,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersKeyword
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersLastObservedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -2082,6 +2209,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersLastObservedAtDateRang
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersLastObservedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -2099,6 +2227,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersLastObservedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersMalwareName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2112,6 +2241,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersMalwareName
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersMalwarePath
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2125,6 +2255,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersMalwarePath
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersMalwareState
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2138,6 +2269,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersMalwareState
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersMalwareType
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2151,6 +2283,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersMalwareType
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersNetworkDestinationDomain
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2164,6 +2297,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersNetworkDestinationDoma
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersNetworkDestinationIpv4
 {
     /// <summary>A finding&apos;s CIDR value.</summary>
@@ -2173,6 +2307,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersNetworkDestinationIpv4
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersNetworkDestinationIpv6
 {
     /// <summary>A finding&apos;s CIDR value.</summary>
@@ -2182,6 +2317,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersNetworkDestinationIpv6
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersNetworkDestinationPort
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -2199,6 +2335,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersNetworkDestinationPort
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersNetworkDirection
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2212,6 +2349,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersNetworkDirection
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersNetworkProtocol
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2225,6 +2363,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersNetworkProtocol
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersNetworkSourceDomain
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2238,6 +2377,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersNetworkSourceDomain
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersNetworkSourceIpv4
 {
     /// <summary>A finding&apos;s CIDR value.</summary>
@@ -2247,6 +2387,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersNetworkSourceIpv4
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersNetworkSourceIpv6
 {
     /// <summary>A finding&apos;s CIDR value.</summary>
@@ -2256,6 +2397,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersNetworkSourceIpv6
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersNetworkSourceMac
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2269,6 +2411,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersNetworkSourceMac
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersNetworkSourcePort
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -2286,6 +2429,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersNetworkSourcePort
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersNoteText
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2299,6 +2443,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersNoteText
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersNoteUpdatedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -2312,6 +2457,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersNoteUpdatedAtDateRange
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersNoteUpdatedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -2329,6 +2475,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersNoteUpdatedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersNoteUpdatedBy
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2342,6 +2489,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersNoteUpdatedBy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersProcessLaunchedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -2355,6 +2503,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersProcessLaunchedAtDateR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersProcessLaunchedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -2372,6 +2521,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersProcessLaunchedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersProcessName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2385,6 +2535,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersProcessName
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersProcessParentPid
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -2402,6 +2553,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersProcessParentPid
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersProcessPath
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2415,6 +2567,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersProcessPath
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersProcessPid
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -2432,6 +2585,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersProcessPid
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersProcessTerminatedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -2445,6 +2599,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersProcessTerminatedAtDat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersProcessTerminatedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -2462,6 +2617,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersProcessTerminatedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersProductArn
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2475,6 +2631,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersProductArn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersProductFields
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2492,6 +2649,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersProductFields
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersProductName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2505,6 +2663,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersProductName
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersRecommendationText
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2518,6 +2677,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersRecommendationText
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersRecordState
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2531,6 +2691,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersRecordState
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersRelatedFindingsId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2544,6 +2705,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersRelatedFindingsId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersRelatedFindingsProductArn
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2557,6 +2719,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersRelatedFindingsProduct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsEc2InstanceIamInstanceProfileArn
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2570,6 +2733,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsEc2Instance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsEc2InstanceImageId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2583,6 +2747,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsEc2Instance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsEc2InstanceIpv4Addresses
 {
     /// <summary>A finding&apos;s CIDR value.</summary>
@@ -2592,6 +2757,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsEc2Instance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsEc2InstanceIpv6Addresses
 {
     /// <summary>A finding&apos;s CIDR value.</summary>
@@ -2601,6 +2767,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsEc2Instance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsEc2InstanceKeyName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2614,6 +2781,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsEc2Instance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsEc2InstanceLaunchedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -2627,6 +2795,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsEc2Instance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsEc2InstanceLaunchedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -2644,6 +2813,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsEc2Instance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsEc2InstanceSubnetId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2657,6 +2827,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsEc2Instance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsEc2InstanceType
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2670,6 +2841,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsEc2Instance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsEc2InstanceVpcId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2683,6 +2855,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsEc2Instance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsIamAccessKeyCreatedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -2696,6 +2869,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsIamAccessKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsIamAccessKeyCreatedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -2713,6 +2887,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsIamAccessKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsIamAccessKeyStatus
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2726,6 +2901,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsIamAccessKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsIamAccessKeyUserName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2739,6 +2915,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsIamAccessKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsS3BucketOwnerId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2752,6 +2929,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsS3BucketOwn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsS3BucketOwnerName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2765,6 +2943,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceAwsS3BucketOwn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceContainerImageId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2778,6 +2957,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceContainerImage
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceContainerImageName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2791,6 +2971,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceContainerImage
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceContainerLaunchedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -2804,6 +2985,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceContainerLaunc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceContainerLaunchedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -2821,6 +3003,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceContainerLaunc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceContainerName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2834,6 +3017,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceContainerName
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceDetailsOther
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2851,6 +3035,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceDetailsOther
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2864,6 +3049,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourcePartition
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2877,6 +3063,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourcePartition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceRegion
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2890,6 +3077,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceRegion
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceTags
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2907,6 +3095,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceTags
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersResourceType
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2920,6 +3109,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersResourceType
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersSeverityLabel
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2933,6 +3123,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersSeverityLabel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersSourceUrl
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2946,6 +3137,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersSourceUrl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersThreatIntelIndicatorCategory
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -2959,6 +3151,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersThreatIntelIndicatorCa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersThreatIntelIndicatorLastObservedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -2972,6 +3165,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersThreatIntelIndicatorLa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersThreatIntelIndicatorLastObservedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -2989,6 +3183,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersThreatIntelIndicatorLa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersThreatIntelIndicatorSource
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -3002,6 +3197,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersThreatIntelIndicatorSo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersThreatIntelIndicatorSourceUrl
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -3015,6 +3211,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersThreatIntelIndicatorSo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersThreatIntelIndicatorType
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -3028,6 +3225,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersThreatIntelIndicatorTy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersThreatIntelIndicatorValue
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -3041,6 +3239,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersThreatIntelIndicatorVa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersTitle
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -3054,6 +3253,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersTitle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersType
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -3067,6 +3267,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersType
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersUpdatedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -3080,6 +3281,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersUpdatedAtDateRange
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersUpdatedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -3097,6 +3299,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersUpdatedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersUserDefinedValues
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -3114,6 +3317,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersUserDefinedValues
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersVerificationState
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -3127,6 +3331,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersVerificationState
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFiltersWorkflowStatus
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -3140,6 +3345,7 @@ public partial class V1beta1InsightSpecInitProviderFiltersWorkflowStatus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProviderFilters
 {
     /// <summary>AWS account ID that a finding is generated in. See String_Filter below for more details.</summary>
@@ -3509,6 +3715,7 @@ public partial class V1beta1InsightSpecInitProviderFilters
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecInitProvider
 {
     /// <summary>A configuration block including one or more (up to 10 distinct) attributes used to filter the findings included in the insight. The insight only includes findings that match criteria defined in the filters. See filters below for more details.</summary>
@@ -3530,6 +3737,7 @@ public partial class V1beta1InsightSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InsightSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InsightSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -3554,6 +3762,7 @@ public enum V1beta1InsightSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InsightSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InsightSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3570,6 +3779,7 @@ public enum V1beta1InsightSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InsightSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InsightSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3581,6 +3791,7 @@ public enum V1beta1InsightSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -3609,6 +3820,7 @@ public partial class V1beta1InsightSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3628,6 +3840,7 @@ public partial class V1beta1InsightSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -3642,6 +3855,7 @@ public partial class V1beta1InsightSpecWriteConnectionSecretToRef
 /// <summary>InsightSpec defines the desired state of Insight</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightSpec
 {
     /// <summary>
@@ -3709,6 +3923,7 @@ public partial class V1beta1InsightSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersAwsAccountId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -3722,6 +3937,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersAwsAccountId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersCompanyName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -3735,6 +3951,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersCompanyName
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersComplianceStatus
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -3748,6 +3965,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersComplianceStatus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersConfidence
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -3765,6 +3983,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersConfidence
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersCreatedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -3778,6 +3997,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersCreatedAtDateRange
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersCreatedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -3795,6 +4015,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersCreatedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersCriticality
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -3812,6 +4033,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersCriticality
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersDescription
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -3825,6 +4047,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersDescription
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersFindingProviderFieldsConfidence
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -3842,6 +4065,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersFindingProviderFieldsC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersFindingProviderFieldsCriticality
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -3859,6 +4083,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersFindingProviderFieldsC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersFindingProviderFieldsRelatedFindingsId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -3872,6 +4097,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersFindingProviderFieldsR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersFindingProviderFieldsRelatedFindingsProductArn
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -3885,6 +4111,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersFindingProviderFieldsR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersFindingProviderFieldsSeverityLabel
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -3898,6 +4125,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersFindingProviderFieldsS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersFindingProviderFieldsSeverityOriginal
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -3911,6 +4139,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersFindingProviderFieldsS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersFindingProviderFieldsTypes
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -3924,6 +4153,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersFindingProviderFieldsT
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersFirstObservedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -3937,6 +4167,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersFirstObservedAtDateRan
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersFirstObservedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -3954,6 +4185,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersFirstObservedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersGeneratorId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -3967,6 +4199,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersGeneratorId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -3980,6 +4213,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersKeyword
 {
     /// <summary>A value for the keyword.</summary>
@@ -3989,6 +4223,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersKeyword
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersLastObservedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -4002,6 +4237,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersLastObservedAtDateRang
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersLastObservedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -4019,6 +4255,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersLastObservedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersMalwareName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4032,6 +4269,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersMalwareName
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersMalwarePath
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4045,6 +4283,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersMalwarePath
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersMalwareState
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4058,6 +4297,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersMalwareState
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersMalwareType
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4071,6 +4311,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersMalwareType
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersNetworkDestinationDomain
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4084,6 +4325,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersNetworkDestinationDoma
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersNetworkDestinationIpv4
 {
     /// <summary>A finding&apos;s CIDR value.</summary>
@@ -4093,6 +4335,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersNetworkDestinationIpv4
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersNetworkDestinationIpv6
 {
     /// <summary>A finding&apos;s CIDR value.</summary>
@@ -4102,6 +4345,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersNetworkDestinationIpv6
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersNetworkDestinationPort
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -4119,6 +4363,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersNetworkDestinationPort
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersNetworkDirection
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4132,6 +4377,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersNetworkDirection
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersNetworkProtocol
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4145,6 +4391,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersNetworkProtocol
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersNetworkSourceDomain
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4158,6 +4405,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersNetworkSourceDomain
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersNetworkSourceIpv4
 {
     /// <summary>A finding&apos;s CIDR value.</summary>
@@ -4167,6 +4415,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersNetworkSourceIpv4
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersNetworkSourceIpv6
 {
     /// <summary>A finding&apos;s CIDR value.</summary>
@@ -4176,6 +4425,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersNetworkSourceIpv6
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersNetworkSourceMac
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4189,6 +4439,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersNetworkSourceMac
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersNetworkSourcePort
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -4206,6 +4457,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersNetworkSourcePort
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersNoteText
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4219,6 +4471,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersNoteText
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersNoteUpdatedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -4232,6 +4485,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersNoteUpdatedAtDateRange
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersNoteUpdatedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -4249,6 +4503,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersNoteUpdatedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersNoteUpdatedBy
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4262,6 +4517,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersNoteUpdatedBy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersProcessLaunchedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -4275,6 +4531,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersProcessLaunchedAtDateR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersProcessLaunchedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -4292,6 +4549,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersProcessLaunchedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersProcessName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4305,6 +4563,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersProcessName
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersProcessParentPid
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -4322,6 +4581,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersProcessParentPid
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersProcessPath
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4335,6 +4595,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersProcessPath
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersProcessPid
 {
     /// <summary>The equal-to condition to be applied to a single field when querying for findings, provided as a String.</summary>
@@ -4352,6 +4613,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersProcessPid
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersProcessTerminatedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -4365,6 +4627,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersProcessTerminatedAtDat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersProcessTerminatedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -4382,6 +4645,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersProcessTerminatedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersProductArn
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4395,6 +4659,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersProductArn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersProductFields
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4412,6 +4677,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersProductFields
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersProductName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4425,6 +4691,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersProductName
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersRecommendationText
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4438,6 +4705,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersRecommendationText
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersRecordState
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4451,6 +4719,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersRecordState
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersRelatedFindingsId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4464,6 +4733,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersRelatedFindingsId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersRelatedFindingsProductArn
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4477,6 +4747,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersRelatedFindingsProduct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsEc2InstanceIamInstanceProfileArn
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4490,6 +4761,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsEc2Instance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsEc2InstanceImageId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4503,6 +4775,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsEc2Instance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsEc2InstanceIpv4Addresses
 {
     /// <summary>A finding&apos;s CIDR value.</summary>
@@ -4512,6 +4785,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsEc2Instance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsEc2InstanceIpv6Addresses
 {
     /// <summary>A finding&apos;s CIDR value.</summary>
@@ -4521,6 +4795,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsEc2Instance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsEc2InstanceKeyName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4534,6 +4809,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsEc2Instance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsEc2InstanceLaunchedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -4547,6 +4823,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsEc2Instance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsEc2InstanceLaunchedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -4564,6 +4841,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsEc2Instance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsEc2InstanceSubnetId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4577,6 +4855,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsEc2Instance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsEc2InstanceType
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4590,6 +4869,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsEc2Instance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsEc2InstanceVpcId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4603,6 +4883,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsEc2Instance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsIamAccessKeyCreatedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -4616,6 +4897,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsIamAccessKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsIamAccessKeyCreatedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -4633,6 +4915,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsIamAccessKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsIamAccessKeyStatus
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4646,6 +4929,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsIamAccessKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsIamAccessKeyUserName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4659,6 +4943,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsIamAccessKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsS3BucketOwnerId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4672,6 +4957,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsS3BucketOwn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsS3BucketOwnerName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4685,6 +4971,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceAwsS3BucketOwn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceContainerImageId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4698,6 +4985,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceContainerImage
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceContainerImageName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4711,6 +4999,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceContainerImage
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceContainerLaunchedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -4724,6 +5013,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceContainerLaunc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceContainerLaunchedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -4741,6 +5031,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceContainerLaunc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceContainerName
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4754,6 +5045,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceContainerName
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceDetailsOther
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4771,6 +5063,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceDetailsOther
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceId
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4784,6 +5077,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourcePartition
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4797,6 +5091,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourcePartition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceRegion
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4810,6 +5105,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceRegion
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceTags
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4827,6 +5123,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceTags
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersResourceType
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4840,6 +5137,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersResourceType
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersSeverityLabel
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4853,6 +5151,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersSeverityLabel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersSourceUrl
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4866,6 +5165,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersSourceUrl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersThreatIntelIndicatorCategory
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4879,6 +5179,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersThreatIntelIndicatorCa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersThreatIntelIndicatorLastObservedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -4892,6 +5193,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersThreatIntelIndicatorLa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersThreatIntelIndicatorLastObservedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -4909,6 +5211,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersThreatIntelIndicatorLa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersThreatIntelIndicatorSource
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4922,6 +5225,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersThreatIntelIndicatorSo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersThreatIntelIndicatorSourceUrl
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4935,6 +5239,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersThreatIntelIndicatorSo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersThreatIntelIndicatorType
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4948,6 +5253,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersThreatIntelIndicatorTy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersThreatIntelIndicatorValue
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4961,6 +5267,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersThreatIntelIndicatorVa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersTitle
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4974,6 +5281,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersTitle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersType
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -4987,6 +5295,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersType
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersUpdatedAtDateRange
 {
     /// <summary>A date range unit for the date filter. Valid values: DAYS.</summary>
@@ -5000,6 +5309,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersUpdatedAtDateRange
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersUpdatedAt
 {
     /// <summary>A configuration block of the date range for the date filter. See date_range below for more details.</summary>
@@ -5017,6 +5327,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersUpdatedAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersUserDefinedValues
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -5034,6 +5345,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersUserDefinedValues
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersVerificationState
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -5047,6 +5359,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersVerificationState
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFiltersWorkflowStatus
 {
     /// <summary>The condition to apply to a string value when querying for findings. Valid values include: EQUALS and NOT_EQUALS.</summary>
@@ -5060,6 +5373,7 @@ public partial class V1beta1InsightStatusAtProviderFiltersWorkflowStatus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProviderFilters
 {
     /// <summary>AWS account ID that a finding is generated in. See String_Filter below for more details.</summary>
@@ -5417,6 +5731,7 @@ public partial class V1beta1InsightStatusAtProviderFilters
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusAtProvider
 {
     /// <summary>ARN of the insight.</summary>
@@ -5450,6 +5765,7 @@ public partial class V1beta1InsightStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatusConditions
 {
     /// <summary>
@@ -5493,6 +5809,7 @@ public partial class V1beta1InsightStatusConditions
 /// <summary>InsightStatus defines the observed state of Insight.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InsightStatus
 {
     [JsonPropertyName("atProvider")]
@@ -5511,9 +5828,13 @@ public partial class V1beta1InsightStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Insight is the Schema for the Insights API. Provides a Security Hub custom insight resource.</summary>
+/// <summary>
+/// Insight is the Schema for the Insights API. Provides a Security Hub custom insight resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Insight : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1InsightSpec>, IStatus<V1beta1InsightStatus?>
 {

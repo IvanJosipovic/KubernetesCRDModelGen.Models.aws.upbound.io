@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.glue.aws.upbound.io;
-/// <summary>SecurityConfiguration is the Schema for the SecurityConfigurations API. Manages a Glue Security Configuration</summary>
+/// <summary>
+/// SecurityConfiguration is the Schema for the SecurityConfigurations API. Manages a Glue Security Configuration
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SecurityConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SecurityConfiguration>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1SecurityConfigurationList : IKubernetesObject<V1List
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1SecurityConfigurationSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationCl
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationCl
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfig
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationCl
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationCl
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfig
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryption
 {
     /// <summary>Encryption mode to use for CloudWatch data. Valid values: DISABLED, SSE-KMS. Default value: DISABLED.</summary>
@@ -231,6 +245,7 @@ public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -247,6 +262,7 @@ public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationJo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -258,6 +274,7 @@ public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationJo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRefPolicy
 {
     /// <summary>
@@ -282,6 +299,7 @@ public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfig
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -301,6 +319,7 @@ public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -317,6 +336,7 @@ public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationJo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -328,6 +348,7 @@ public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationJo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicy
 {
     /// <summary>
@@ -352,6 +373,7 @@ public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfig
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelector
 {
     /// <summary>
@@ -372,6 +394,7 @@ public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryption
 {
     /// <summary>Encryption mode to use for job bookmarks data. Valid values: CSE-KMS, DISABLED. Default value: DISABLED.</summary>
@@ -399,6 +422,7 @@ public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -415,6 +439,7 @@ public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationS3
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -426,6 +451,7 @@ public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationS3
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnRefPolicy
 {
     /// <summary>
@@ -450,6 +476,7 @@ public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfig
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -469,6 +496,7 @@ public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -485,6 +513,7 @@ public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationS3
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -496,6 +525,7 @@ public enum V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationS3
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicy
 {
     /// <summary>
@@ -520,6 +550,7 @@ public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfig
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelector
 {
     /// <summary>
@@ -540,6 +571,7 @@ public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfigurationS3Encryption
 {
     /// <summary>Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.</summary>
@@ -561,6 +593,7 @@ public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfiguration
 {
     [JsonPropertyName("cloudwatchEncryption")]
@@ -576,6 +609,7 @@ public partial class V1beta1SecurityConfigurationSpecForProviderEncryptionConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecForProvider
 {
     /// <summary>Configuration block containing encryption configuration. Detailed below.</summary>
@@ -598,6 +632,7 @@ public partial class V1beta1SecurityConfigurationSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -614,6 +649,7 @@ public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -625,6 +661,7 @@ public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationC
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRefPolicy
 {
     /// <summary>
@@ -649,6 +686,7 @@ public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfi
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -668,6 +706,7 @@ public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -684,6 +723,7 @@ public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -695,6 +735,7 @@ public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationC
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicy
 {
     /// <summary>
@@ -719,6 +760,7 @@ public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfi
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelector
 {
     /// <summary>
@@ -739,6 +781,7 @@ public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryption
 {
     /// <summary>Encryption mode to use for CloudWatch data. Valid values: DISABLED, SSE-KMS. Default value: DISABLED.</summary>
@@ -766,6 +809,7 @@ public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -782,6 +826,7 @@ public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationJ
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -793,6 +838,7 @@ public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationJ
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRefPolicy
 {
     /// <summary>
@@ -817,6 +863,7 @@ public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfi
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -836,6 +883,7 @@ public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -852,6 +900,7 @@ public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationJ
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -863,6 +912,7 @@ public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationJ
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicy
 {
     /// <summary>
@@ -887,6 +937,7 @@ public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfi
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelector
 {
     /// <summary>
@@ -907,6 +958,7 @@ public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryption
 {
     /// <summary>Encryption mode to use for job bookmarks data. Valid values: CSE-KMS, DISABLED. Default value: DISABLED.</summary>
@@ -934,6 +986,7 @@ public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -950,6 +1003,7 @@ public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -961,6 +1015,7 @@ public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationS
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnRefPolicy
 {
     /// <summary>
@@ -985,6 +1040,7 @@ public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfi
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1004,6 +1060,7 @@ public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1020,6 +1077,7 @@ public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1031,6 +1089,7 @@ public enum V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationS
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicy
 {
     /// <summary>
@@ -1055,6 +1114,7 @@ public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfi
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelector
 {
     /// <summary>
@@ -1075,6 +1135,7 @@ public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfigurationS3Encryption
 {
     /// <summary>Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.</summary>
@@ -1096,6 +1157,7 @@ public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfiguration
 {
     [JsonPropertyName("cloudwatchEncryption")]
@@ -1123,6 +1185,7 @@ public partial class V1beta1SecurityConfigurationSpecInitProviderEncryptionConfi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecInitProvider
 {
     /// <summary>Configuration block containing encryption configuration. Detailed below.</summary>
@@ -1136,6 +1199,7 @@ public partial class V1beta1SecurityConfigurationSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1160,6 +1224,7 @@ public enum V1beta1SecurityConfigurationSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1176,6 +1241,7 @@ public enum V1beta1SecurityConfigurationSpecProviderConfigRefPolicyResolutionEnu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityConfigurationSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityConfigurationSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1187,6 +1253,7 @@ public enum V1beta1SecurityConfigurationSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1215,6 +1282,7 @@ public partial class V1beta1SecurityConfigurationSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1234,6 +1302,7 @@ public partial class V1beta1SecurityConfigurationSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1248,6 +1317,7 @@ public partial class V1beta1SecurityConfigurationSpecWriteConnectionSecretToRef
 /// <summary>SecurityConfigurationSpec defines the desired state of SecurityConfiguration</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationSpec
 {
     /// <summary>
@@ -1315,6 +1385,7 @@ public partial class V1beta1SecurityConfigurationSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationStatusAtProviderEncryptionConfigurationCloudwatchEncryption
 {
     /// <summary>Encryption mode to use for CloudWatch data. Valid values: DISABLED, SSE-KMS. Default value: DISABLED.</summary>
@@ -1328,6 +1399,7 @@ public partial class V1beta1SecurityConfigurationStatusAtProviderEncryptionConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationStatusAtProviderEncryptionConfigurationJobBookmarksEncryption
 {
     /// <summary>Encryption mode to use for job bookmarks data. Valid values: CSE-KMS, DISABLED. Default value: DISABLED.</summary>
@@ -1341,6 +1413,7 @@ public partial class V1beta1SecurityConfigurationStatusAtProviderEncryptionConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationStatusAtProviderEncryptionConfigurationS3Encryption
 {
     /// <summary>Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.</summary>
@@ -1354,6 +1427,7 @@ public partial class V1beta1SecurityConfigurationStatusAtProviderEncryptionConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationStatusAtProviderEncryptionConfiguration
 {
     [JsonPropertyName("cloudwatchEncryption")]
@@ -1369,6 +1443,7 @@ public partial class V1beta1SecurityConfigurationStatusAtProviderEncryptionConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationStatusAtProvider
 {
     /// <summary>Configuration block containing encryption configuration. Detailed below.</summary>
@@ -1390,6 +1465,7 @@ public partial class V1beta1SecurityConfigurationStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationStatusConditions
 {
     /// <summary>
@@ -1433,6 +1509,7 @@ public partial class V1beta1SecurityConfigurationStatusConditions
 /// <summary>SecurityConfigurationStatus defines the observed state of SecurityConfiguration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityConfigurationStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1451,9 +1528,13 @@ public partial class V1beta1SecurityConfigurationStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>SecurityConfiguration is the Schema for the SecurityConfigurations API. Manages a Glue Security Configuration</summary>
+/// <summary>
+/// SecurityConfiguration is the Schema for the SecurityConfigurations API. Manages a Glue Security Configuration
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SecurityConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SecurityConfigurationSpec>, IStatus<V1beta1SecurityConfigurationStatus?>
 {

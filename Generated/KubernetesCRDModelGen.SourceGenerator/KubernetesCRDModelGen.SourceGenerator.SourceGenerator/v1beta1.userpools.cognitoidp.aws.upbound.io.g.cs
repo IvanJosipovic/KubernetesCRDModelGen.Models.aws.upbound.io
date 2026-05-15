@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cognitoidp.aws.upbound.io;
-/// <summary>UserPool is the Schema for the UserPools API. Provides a Cognito User Pool resource.</summary>
+/// <summary>
+/// UserPool is the Schema for the UserPools API. Provides a Cognito User Pool resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1UserPoolList : IKubernetesObject<V1ListMeta>, IItems<V1beta1UserPool>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1UserPoolList : IKubernetesObject<V1ListMeta>, IItems
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1UserPoolSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderAccountRecoverySettingRecoveryMechanism
 {
     /// <summary>Name of the user pool.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1UserPoolSpecForProviderAccountRecoverySettingRecover
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderAccountRecoverySetting
 {
     /// <summary>List of Account Recovery Options of the following structure:</summary>
@@ -79,6 +86,7 @@ public partial class V1beta1UserPoolSpecForProviderAccountRecoverySetting
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderAdminCreateUserConfigInviteMessageTemplate
 {
     /// <summary>Message template for email messages. Must contain {username} and {####} placeholders, for username and temporary password, respectively.</summary>
@@ -96,6 +104,7 @@ public partial class V1beta1UserPoolSpecForProviderAdminCreateUserConfigInviteMe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderAdminCreateUserConfig
 {
     /// <summary>Set to True if only the administrator is allowed to create user profiles. Set to False if users can sign themselves up via an app.</summary>
@@ -109,6 +118,7 @@ public partial class V1beta1UserPoolSpecForProviderAdminCreateUserConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderDeviceConfiguration
 {
     /// <summary>Whether a challenge is required on a new device. Only applicable to a new device.</summary>
@@ -122,6 +132,7 @@ public partial class V1beta1UserPoolSpecForProviderDeviceConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderEmailConfiguration
 {
     /// <summary>Email configuration set name from SES.</summary>
@@ -147,6 +158,7 @@ public partial class V1beta1UserPoolSpecForProviderEmailConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderEmailMfaConfiguration
 {
     /// <summary>The template for the email messages that your user pool sends to users with codes for MFA and sign-in with email OTPs. The message must contain the {####} placeholder. In the message, Amazon Cognito replaces this placeholder with the code. If you don&apos;t provide this parameter, Amazon Cognito sends messages in the default format.</summary>
@@ -166,6 +178,7 @@ public partial class V1beta1UserPoolSpecForProviderEmailMfaConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -182,6 +195,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -193,6 +207,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeRefPolicy
 {
     /// <summary>
@@ -217,6 +232,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallen
 /// <summary>Reference to a Function in lambda to populate createAuthChallenge.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -236,6 +252,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallen
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -252,6 +269,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -263,6 +281,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeSelectorPolicy
 {
     /// <summary>
@@ -287,6 +306,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallen
 /// <summary>Selector for a Function in lambda to populate createAuthChallenge.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeSelector
 {
     /// <summary>
@@ -313,6 +333,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallen
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -329,6 +350,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -340,6 +362,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArn
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnRefPolicy
 {
     /// <summary>
@@ -364,6 +387,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSender
 /// <summary>Reference to a Function in lambda to populate lambdaArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -383,6 +407,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSender
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -399,6 +424,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -410,6 +436,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArn
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnSelectorPolicy
 {
     /// <summary>
@@ -434,6 +461,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSender
 /// <summary>Selector for a Function in lambda to populate lambdaArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnSelector
 {
     /// <summary>
@@ -454,6 +482,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSender
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSender
 {
     /// <summary>The Lambda Amazon Resource Name of the Lambda function that Amazon Cognito triggers to send email notifications to users.</summary>
@@ -481,6 +510,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSender
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -497,6 +527,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageRefPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -508,6 +539,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageRefPolicyReso
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageRefPolicy
 {
     /// <summary>
@@ -532,6 +564,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageRefP
 /// <summary>Reference to a Function in lambda to populate customMessage.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -551,6 +584,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -567,6 +601,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageSelectorPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -578,6 +613,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageSelectorPolic
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageSelectorPolicy
 {
     /// <summary>
@@ -602,6 +638,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageSele
 /// <summary>Selector for a Function in lambda to populate customMessage.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageSelector
 {
     /// <summary>
@@ -628,6 +665,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -644,6 +682,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -655,6 +694,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnRefPolicy
 {
     /// <summary>
@@ -679,6 +719,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLa
 /// <summary>Reference to a Function in lambda to populate lambdaArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -698,6 +739,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -714,6 +756,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -725,6 +768,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnSe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnSelectorPolicy
 {
     /// <summary>
@@ -749,6 +793,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLa
 /// <summary>Selector for a Function in lambda to populate lambdaArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnSelector
 {
     /// <summary>
@@ -769,6 +814,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSender
 {
     /// <summary>The Lambda Amazon Resource Name of the Lambda function that Amazon Cognito triggers to send SMS notifications to users.</summary>
@@ -796,6 +842,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSender
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -812,6 +859,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -823,6 +871,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeRefPolicy
 {
     /// <summary>
@@ -847,6 +896,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallen
 /// <summary>Reference to a Function in lambda to populate defineAuthChallenge.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -866,6 +916,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallen
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -882,6 +933,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -893,6 +945,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeSelectorPolicy
 {
     /// <summary>
@@ -917,6 +970,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallen
 /// <summary>Selector for a Function in lambda to populate defineAuthChallenge.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeSelector
 {
     /// <summary>
@@ -943,6 +997,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallen
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -959,6 +1014,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdRefPolicyResolutio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -970,6 +1026,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdRefPolicyResolveEn
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdRefPolicy
 {
     /// <summary>
@@ -994,6 +1051,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdRefPolicy
 /// <summary>Reference to a Key in kms to populate kmsKeyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1013,6 +1071,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1029,6 +1088,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdSelectorPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1040,6 +1100,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdSelectorPolicyReso
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdSelectorPolicy
 {
     /// <summary>
@@ -1064,6 +1125,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdSelectorP
 /// <summary>Selector for a Key in kms to populate kmsKeyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdSelector
 {
     /// <summary>
@@ -1090,6 +1152,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1106,6 +1169,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationRefPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1117,6 +1181,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationRefPolic
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationRefPolicy
 {
     /// <summary>
@@ -1141,6 +1206,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticatio
 /// <summary>Reference to a Function in lambda to populate postAuthentication.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1160,6 +1226,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticatio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1176,6 +1243,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1187,6 +1255,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationSelector
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationSelectorPolicy
 {
     /// <summary>
@@ -1211,6 +1280,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticatio
 /// <summary>Selector for a Function in lambda to populate postAuthentication.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationSelector
 {
     /// <summary>
@@ -1237,6 +1307,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticatio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1253,6 +1324,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationRefPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1264,6 +1336,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationRefPolicyR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationRefPolicy
 {
     /// <summary>
@@ -1288,6 +1361,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationR
 /// <summary>Reference to a Function in lambda to populate postConfirmation.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1307,6 +1381,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1323,6 +1398,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationSelectorPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1334,6 +1410,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationSelectorPo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationSelectorPolicy
 {
     /// <summary>
@@ -1358,6 +1435,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationS
 /// <summary>Selector for a Function in lambda to populate postConfirmation.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationSelector
 {
     /// <summary>
@@ -1384,6 +1462,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1400,6 +1479,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1411,6 +1491,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationRefPolicy
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationRefPolicy
 {
     /// <summary>
@@ -1435,6 +1516,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreAuthentication
 /// <summary>Reference to a Function in lambda to populate preAuthentication.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1454,6 +1536,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreAuthentication
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1470,6 +1553,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationSelectorP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1481,6 +1565,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationSelectorP
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationSelectorPolicy
 {
     /// <summary>
@@ -1505,6 +1590,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreAuthentication
 /// <summary>Selector for a Function in lambda to populate preAuthentication.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationSelector
 {
     /// <summary>
@@ -1531,6 +1617,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreAuthentication
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1547,6 +1634,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpRefPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1558,6 +1646,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpRefPolicyResolveE
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpRefPolicy
 {
     /// <summary>
@@ -1582,6 +1671,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpRefPolic
 /// <summary>Reference to a Function in lambda to populate preSignUp.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1601,6 +1691,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1617,6 +1708,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelectorPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1628,6 +1720,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelectorPolicyRes
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelectorPolicy
 {
     /// <summary>
@@ -1652,6 +1745,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelector
 /// <summary>Selector for a Function in lambda to populate preSignUp.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelector
 {
     /// <summary>
@@ -1672,6 +1766,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationConfig
 {
     /// <summary>The Lambda Amazon Resource Name of the Lambda function that Amazon Cognito triggers to send SMS notifications to users.</summary>
@@ -1691,6 +1786,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGeneratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1707,6 +1803,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationRefPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1718,6 +1815,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationRefPolic
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationRefPolicy
 {
     /// <summary>
@@ -1742,6 +1840,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGeneratio
 /// <summary>Reference to a Function in lambda to populate preTokenGeneration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1761,6 +1860,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGeneratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1777,6 +1877,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1788,6 +1889,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationSelector
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationSelectorPolicy
 {
     /// <summary>
@@ -1812,6 +1914,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGeneratio
 /// <summary>Selector for a Function in lambda to populate preTokenGeneration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationSelector
 {
     /// <summary>
@@ -1838,6 +1941,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGeneratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1854,6 +1958,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationRefPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1865,6 +1970,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationRefPolicyReso
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationRefPolicy
 {
     /// <summary>
@@ -1889,6 +1995,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationRefP
 /// <summary>Reference to a Function in lambda to populate userMigration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1908,6 +2015,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1924,6 +2032,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationSelectorPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1935,6 +2044,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationSelectorPolic
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationSelectorPolicy
 {
     /// <summary>
@@ -1959,6 +2069,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationSele
 /// <summary>Selector for a Function in lambda to populate userMigration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationSelector
 {
     /// <summary>
@@ -1985,6 +2096,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2001,6 +2113,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeRespons
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2012,6 +2125,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeRespons
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseRefPolicy
 {
     /// <summary>
@@ -2036,6 +2150,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallen
 /// <summary>Reference to a Function in lambda to populate verifyAuthChallengeResponse.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2055,6 +2170,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallen
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2071,6 +2187,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeRespons
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2082,6 +2199,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeRespons
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseSelectorPolicy
 {
     /// <summary>
@@ -2106,6 +2224,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallen
 /// <summary>Selector for a Function in lambda to populate verifyAuthChallengeResponse.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseSelector
 {
     /// <summary>
@@ -2126,6 +2245,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallen
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfig
 {
     /// <summary>ARN of the lambda creating an authentication challenge.</summary>
@@ -2275,6 +2395,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderPasswordPolicy
 {
     /// <summary>Minimum length of the password policy that you have set.</summary>
@@ -2308,6 +2429,7 @@ public partial class V1beta1UserPoolSpecForProviderPasswordPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderSchemaNumberAttributeConstraints
 {
     /// <summary>Maximum value of an attribute that is of the number data type.</summary>
@@ -2321,6 +2443,7 @@ public partial class V1beta1UserPoolSpecForProviderSchemaNumberAttributeConstrai
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderSchemaStringAttributeConstraints
 {
     /// <summary>Maximum length of an attribute value of the string type.</summary>
@@ -2334,6 +2457,7 @@ public partial class V1beta1UserPoolSpecForProviderSchemaStringAttributeConstrai
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderSchema
 {
     /// <summary>Attribute data type. Must be one of Boolean, Number, String, DateTime.</summary>
@@ -2367,6 +2491,7 @@ public partial class V1beta1UserPoolSpecForProviderSchema
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderSignInPolicy
 {
     /// <summary>The sign in methods your user pool supports as the first factor. This is a list of strings, allowed values are PASSWORD, EMAIL_OTP, SMS_OTP, and WEB_AUTHN.</summary>
@@ -2382,6 +2507,7 @@ public partial class V1beta1UserPoolSpecForProviderSignInPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2398,6 +2524,7 @@ public enum V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnRefPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2409,6 +2536,7 @@ public enum V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnRefPolicyR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnRefPolicy
 {
     /// <summary>
@@ -2433,6 +2561,7 @@ public partial class V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnR
 /// <summary>Reference to a Role in iam to populate snsCallerArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2452,6 +2581,7 @@ public partial class V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2468,6 +2598,7 @@ public enum V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnSelectorPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2479,6 +2610,7 @@ public enum V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnSelectorPo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnSelectorPolicy
 {
     /// <summary>
@@ -2503,6 +2635,7 @@ public partial class V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnS
 /// <summary>Selector for a Role in iam to populate snsCallerArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnSelector
 {
     /// <summary>
@@ -2523,6 +2656,7 @@ public partial class V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderSmsConfiguration
 {
     /// <summary>External ID used in IAM role trust relationships. For more information about using external IDs, see How to Use an External ID When Granting Access to Your AWS Resources to a Third Party.</summary>
@@ -2548,6 +2682,7 @@ public partial class V1beta1UserPoolSpecForProviderSmsConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderSoftwareTokenMfaConfiguration
 {
     /// <summary>Boolean whether to enable software token Multi-Factor (MFA) tokens, such as Time-based One-Time Password (TOTP). To disable software token MFA When sms_configuration is not present, the mfa_configuration argument must be set to OFF and the software_token_mfa_configuration configuration block must be fully removed.</summary>
@@ -2557,6 +2692,7 @@ public partial class V1beta1UserPoolSpecForProviderSoftwareTokenMfaConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderUserAttributeUpdateSettings
 {
     /// <summary>A list of attributes requiring verification before update. If set, the provided value(s) must also be set in auto_verified_attributes. Valid values: email, phone_number.</summary>
@@ -2566,6 +2702,7 @@ public partial class V1beta1UserPoolSpecForProviderUserAttributeUpdateSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderUserPoolAddOnsAdvancedSecurityAdditionalFlows
 {
     /// <summary>Mode of threat protection operation in custom authentication. Valid values are AUDIT or ENFORCED. The default value is AUDIT.</summary>
@@ -2575,6 +2712,7 @@ public partial class V1beta1UserPoolSpecForProviderUserPoolAddOnsAdvancedSecurit
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderUserPoolAddOns
 {
     /// <summary>A block to specify the threat protection configuration options for additional authentication types in your user pool, including custom authentication. Detailed below.</summary>
@@ -2588,6 +2726,7 @@ public partial class V1beta1UserPoolSpecForProviderUserPoolAddOns
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderUsernameConfiguration
 {
     /// <summary>Whether username case sensitivity will be applied for all users in the user pool through Cognito APIs.</summary>
@@ -2597,6 +2736,7 @@ public partial class V1beta1UserPoolSpecForProviderUsernameConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderVerificationMessageTemplate
 {
     /// <summary>Default email option. Must be either CONFIRM_WITH_CODE or CONFIRM_WITH_LINK. Defaults to CONFIRM_WITH_CODE.</summary>
@@ -2626,6 +2766,7 @@ public partial class V1beta1UserPoolSpecForProviderVerificationMessageTemplate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProviderWebAuthnConfiguration
 {
     /// <summary>The authentication domain that passkeys providers use as a relying party.</summary>
@@ -2639,6 +2780,7 @@ public partial class V1beta1UserPoolSpecForProviderWebAuthnConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecForProvider
 {
     /// <summary>Configuration block to define which verified available method a user can use to recover their forgotten password. Detailed below.</summary>
@@ -2763,6 +2905,7 @@ public partial class V1beta1UserPoolSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderAccountRecoverySettingRecoveryMechanism
 {
     /// <summary>Name of the user pool.</summary>
@@ -2776,6 +2919,7 @@ public partial class V1beta1UserPoolSpecInitProviderAccountRecoverySettingRecove
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderAccountRecoverySetting
 {
     /// <summary>List of Account Recovery Options of the following structure:</summary>
@@ -2785,6 +2929,7 @@ public partial class V1beta1UserPoolSpecInitProviderAccountRecoverySetting
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderAdminCreateUserConfigInviteMessageTemplate
 {
     /// <summary>Message template for email messages. Must contain {username} and {####} placeholders, for username and temporary password, respectively.</summary>
@@ -2802,6 +2947,7 @@ public partial class V1beta1UserPoolSpecInitProviderAdminCreateUserConfigInviteM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderAdminCreateUserConfig
 {
     /// <summary>Set to True if only the administrator is allowed to create user profiles. Set to False if users can sign themselves up via an app.</summary>
@@ -2815,6 +2961,7 @@ public partial class V1beta1UserPoolSpecInitProviderAdminCreateUserConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderDeviceConfiguration
 {
     /// <summary>Whether a challenge is required on a new device. Only applicable to a new device.</summary>
@@ -2828,6 +2975,7 @@ public partial class V1beta1UserPoolSpecInitProviderDeviceConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderEmailConfiguration
 {
     /// <summary>Email configuration set name from SES.</summary>
@@ -2853,6 +3001,7 @@ public partial class V1beta1UserPoolSpecInitProviderEmailConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderEmailMfaConfiguration
 {
     /// <summary>The template for the email messages that your user pool sends to users with codes for MFA and sign-in with email OTPs. The message must contain the {####} placeholder. In the message, Amazon Cognito replaces this placeholder with the code. If you don&apos;t provide this parameter, Amazon Cognito sends messages in the default format.</summary>
@@ -2872,6 +3021,7 @@ public partial class V1beta1UserPoolSpecInitProviderEmailMfaConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2888,6 +3038,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2899,6 +3050,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeRefPolicy
 {
     /// <summary>
@@ -2923,6 +3075,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChalle
 /// <summary>Reference to a Function in lambda to populate createAuthChallenge.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2942,6 +3095,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChalle
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2958,6 +3112,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2969,6 +3124,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeSelectorPolicy
 {
     /// <summary>
@@ -2993,6 +3149,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChalle
 /// <summary>Selector for a Function in lambda to populate createAuthChallenge.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeSelector
 {
     /// <summary>
@@ -3019,6 +3176,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChalle
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3035,6 +3193,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaAr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3046,6 +3205,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaAr
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnRefPolicy
 {
     /// <summary>
@@ -3070,6 +3230,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSende
 /// <summary>Reference to a Function in lambda to populate lambdaArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3089,6 +3250,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSende
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3105,6 +3267,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaAr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3116,6 +3279,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaAr
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnSelectorPolicy
 {
     /// <summary>
@@ -3140,6 +3304,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSende
 /// <summary>Selector for a Function in lambda to populate lambdaArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnSelector
 {
     /// <summary>
@@ -3160,6 +3325,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSende
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSender
 {
     /// <summary>The Lambda Amazon Resource Name of the Lambda function that Amazon Cognito triggers to send email notifications to users.</summary>
@@ -3187,6 +3353,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSende
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3203,6 +3370,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageRefPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3214,6 +3382,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageRefPolicyRes
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageRefPolicy
 {
     /// <summary>
@@ -3238,6 +3407,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageRef
 /// <summary>Reference to a Function in lambda to populate customMessage.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3257,6 +3427,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3273,6 +3444,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageSelectorPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3284,6 +3456,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageSelectorPoli
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageSelectorPolicy
 {
     /// <summary>
@@ -3308,6 +3481,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageSel
 /// <summary>Selector for a Function in lambda to populate customMessage.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageSelector
 {
     /// <summary>
@@ -3334,6 +3508,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3350,6 +3525,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3361,6 +3537,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnRefPolicy
 {
     /// <summary>
@@ -3385,6 +3562,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderL
 /// <summary>Reference to a Function in lambda to populate lambdaArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3404,6 +3582,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderL
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3420,6 +3599,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3431,6 +3611,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnS
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnSelectorPolicy
 {
     /// <summary>
@@ -3455,6 +3636,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderL
 /// <summary>Selector for a Function in lambda to populate lambdaArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnSelector
 {
     /// <summary>
@@ -3475,6 +3657,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderL
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSender
 {
     /// <summary>The Lambda Amazon Resource Name of the Lambda function that Amazon Cognito triggers to send SMS notifications to users.</summary>
@@ -3502,6 +3685,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSender
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3518,6 +3702,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3529,6 +3714,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeRefPolicy
 {
     /// <summary>
@@ -3553,6 +3739,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChalle
 /// <summary>Reference to a Function in lambda to populate defineAuthChallenge.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3572,6 +3759,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChalle
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3588,6 +3776,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3599,6 +3788,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeSelectorPolicy
 {
     /// <summary>
@@ -3623,6 +3813,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChalle
 /// <summary>Selector for a Function in lambda to populate defineAuthChallenge.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeSelector
 {
     /// <summary>
@@ -3649,6 +3840,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChalle
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3665,6 +3857,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdRefPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3676,6 +3869,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdRefPolicyResolveE
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdRefPolicy
 {
     /// <summary>
@@ -3700,6 +3894,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdRefPolic
 /// <summary>Reference to a Key in kms to populate kmsKeyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3719,6 +3914,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3735,6 +3931,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdSelectorPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3746,6 +3943,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdSelectorPolicyRes
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdSelectorPolicy
 {
     /// <summary>
@@ -3770,6 +3968,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdSelector
 /// <summary>Selector for a Key in kms to populate kmsKeyId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdSelector
 {
     /// <summary>
@@ -3796,6 +3995,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3812,6 +4012,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3823,6 +4024,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationRefPolicy
 {
     /// <summary>
@@ -3847,6 +4049,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticati
 /// <summary>Reference to a Function in lambda to populate postAuthentication.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3866,6 +4069,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3882,6 +4086,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3893,6 +4098,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationSelectorPolicy
 {
     /// <summary>
@@ -3917,6 +4123,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticati
 /// <summary>Selector for a Function in lambda to populate postAuthentication.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationSelector
 {
     /// <summary>
@@ -3943,6 +4150,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3959,6 +4167,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3970,6 +4179,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationRefPolicy
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationRefPolicy
 {
     /// <summary>
@@ -3994,6 +4204,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmation
 /// <summary>Reference to a Function in lambda to populate postConfirmation.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -4013,6 +4224,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmation
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4029,6 +4241,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationSelectorP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4040,6 +4253,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationSelectorP
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationSelectorPolicy
 {
     /// <summary>
@@ -4064,6 +4278,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmation
 /// <summary>Selector for a Function in lambda to populate postConfirmation.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationSelector
 {
     /// <summary>
@@ -4090,6 +4305,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmation
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4106,6 +4322,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationRefPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4117,6 +4334,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationRefPolic
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationRefPolicy
 {
     /// <summary>
@@ -4141,6 +4359,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticatio
 /// <summary>Reference to a Function in lambda to populate preAuthentication.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -4160,6 +4379,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticatio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4176,6 +4396,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4187,6 +4408,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationSelector
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationSelectorPolicy
 {
     /// <summary>
@@ -4211,6 +4433,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticatio
 /// <summary>Selector for a Function in lambda to populate preAuthentication.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationSelector
 {
     /// <summary>
@@ -4237,6 +4460,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticatio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4253,6 +4477,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpRefPolicyResolut
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4264,6 +4489,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpRefPolicyResolve
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpRefPolicy
 {
     /// <summary>
@@ -4288,6 +4514,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpRefPoli
 /// <summary>Reference to a Function in lambda to populate preSignUp.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -4307,6 +4534,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4323,6 +4551,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelectorPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4334,6 +4563,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelectorPolicyRe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelectorPolicy
 {
     /// <summary>
@@ -4358,6 +4588,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelecto
 /// <summary>Selector for a Function in lambda to populate preSignUp.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelector
 {
     /// <summary>
@@ -4378,6 +4609,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelecto
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationConfig
 {
     /// <summary>The Lambda Amazon Resource Name of the Lambda function that Amazon Cognito triggers to send SMS notifications to users.</summary>
@@ -4397,6 +4629,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4413,6 +4646,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4424,6 +4658,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationRefPolicy
 {
     /// <summary>
@@ -4448,6 +4683,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerati
 /// <summary>Reference to a Function in lambda to populate preTokenGeneration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -4467,6 +4703,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4483,6 +4720,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4494,6 +4732,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationSelectorPolicy
 {
     /// <summary>
@@ -4518,6 +4757,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerati
 /// <summary>Selector for a Function in lambda to populate preTokenGeneration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationSelector
 {
     /// <summary>
@@ -4544,6 +4784,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4560,6 +4801,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationRefPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4571,6 +4813,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationRefPolicyRes
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationRefPolicy
 {
     /// <summary>
@@ -4595,6 +4838,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationRef
 /// <summary>Reference to a Function in lambda to populate userMigration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -4614,6 +4858,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4630,6 +4875,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationSelectorPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4641,6 +4887,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationSelectorPoli
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationSelectorPolicy
 {
     /// <summary>
@@ -4665,6 +4912,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationSel
 /// <summary>Selector for a Function in lambda to populate userMigration.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationSelector
 {
     /// <summary>
@@ -4691,6 +4939,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4707,6 +4956,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeRespon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4718,6 +4968,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeRespon
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseRefPolicy
 {
     /// <summary>
@@ -4742,6 +4993,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChalle
 /// <summary>Reference to a Function in lambda to populate verifyAuthChallengeResponse.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -4761,6 +5013,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChalle
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4777,6 +5030,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeRespon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4788,6 +5042,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeRespon
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseSelectorPolicy
 {
     /// <summary>
@@ -4812,6 +5067,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChalle
 /// <summary>Selector for a Function in lambda to populate verifyAuthChallengeResponse.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseSelector
 {
     /// <summary>
@@ -4832,6 +5088,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChalle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfig
 {
     /// <summary>ARN of the lambda creating an authentication challenge.</summary>
@@ -4981,6 +5238,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderPasswordPolicy
 {
     /// <summary>Minimum length of the password policy that you have set.</summary>
@@ -5014,6 +5272,7 @@ public partial class V1beta1UserPoolSpecInitProviderPasswordPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderSchemaNumberAttributeConstraints
 {
     /// <summary>Maximum value of an attribute that is of the number data type.</summary>
@@ -5027,6 +5286,7 @@ public partial class V1beta1UserPoolSpecInitProviderSchemaNumberAttributeConstra
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderSchemaStringAttributeConstraints
 {
     /// <summary>Maximum length of an attribute value of the string type.</summary>
@@ -5040,6 +5300,7 @@ public partial class V1beta1UserPoolSpecInitProviderSchemaStringAttributeConstra
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderSchema
 {
     /// <summary>Attribute data type. Must be one of Boolean, Number, String, DateTime.</summary>
@@ -5073,6 +5334,7 @@ public partial class V1beta1UserPoolSpecInitProviderSchema
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderSignInPolicy
 {
     /// <summary>The sign in methods your user pool supports as the first factor. This is a list of strings, allowed values are PASSWORD, EMAIL_OTP, SMS_OTP, and WEB_AUTHN.</summary>
@@ -5088,6 +5350,7 @@ public partial class V1beta1UserPoolSpecInitProviderSignInPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -5104,6 +5367,7 @@ public enum V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5115,6 +5379,7 @@ public enum V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnRefPolicy
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnRefPolicy
 {
     /// <summary>
@@ -5139,6 +5404,7 @@ public partial class V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArn
 /// <summary>Reference to a Role in iam to populate snsCallerArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -5158,6 +5424,7 @@ public partial class V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -5174,6 +5441,7 @@ public enum V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnSelectorP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5185,6 +5453,7 @@ public enum V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnSelectorP
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnSelectorPolicy
 {
     /// <summary>
@@ -5209,6 +5478,7 @@ public partial class V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArn
 /// <summary>Selector for a Role in iam to populate snsCallerArn.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnSelector
 {
     /// <summary>
@@ -5229,6 +5499,7 @@ public partial class V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderSmsConfiguration
 {
     /// <summary>External ID used in IAM role trust relationships. For more information about using external IDs, see How to Use an External ID When Granting Access to Your AWS Resources to a Third Party.</summary>
@@ -5254,6 +5525,7 @@ public partial class V1beta1UserPoolSpecInitProviderSmsConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderSoftwareTokenMfaConfiguration
 {
     /// <summary>Boolean whether to enable software token Multi-Factor (MFA) tokens, such as Time-based One-Time Password (TOTP). To disable software token MFA When sms_configuration is not present, the mfa_configuration argument must be set to OFF and the software_token_mfa_configuration configuration block must be fully removed.</summary>
@@ -5263,6 +5535,7 @@ public partial class V1beta1UserPoolSpecInitProviderSoftwareTokenMfaConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderUserAttributeUpdateSettings
 {
     /// <summary>A list of attributes requiring verification before update. If set, the provided value(s) must also be set in auto_verified_attributes. Valid values: email, phone_number.</summary>
@@ -5272,6 +5545,7 @@ public partial class V1beta1UserPoolSpecInitProviderUserAttributeUpdateSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderUserPoolAddOnsAdvancedSecurityAdditionalFlows
 {
     /// <summary>Mode of threat protection operation in custom authentication. Valid values are AUDIT or ENFORCED. The default value is AUDIT.</summary>
@@ -5281,6 +5555,7 @@ public partial class V1beta1UserPoolSpecInitProviderUserPoolAddOnsAdvancedSecuri
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderUserPoolAddOns
 {
     /// <summary>A block to specify the threat protection configuration options for additional authentication types in your user pool, including custom authentication. Detailed below.</summary>
@@ -5294,6 +5569,7 @@ public partial class V1beta1UserPoolSpecInitProviderUserPoolAddOns
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderUsernameConfiguration
 {
     /// <summary>Whether username case sensitivity will be applied for all users in the user pool through Cognito APIs.</summary>
@@ -5303,6 +5579,7 @@ public partial class V1beta1UserPoolSpecInitProviderUsernameConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderVerificationMessageTemplate
 {
     /// <summary>Default email option. Must be either CONFIRM_WITH_CODE or CONFIRM_WITH_LINK. Defaults to CONFIRM_WITH_CODE.</summary>
@@ -5332,6 +5609,7 @@ public partial class V1beta1UserPoolSpecInitProviderVerificationMessageTemplate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProviderWebAuthnConfiguration
 {
     /// <summary>The authentication domain that passkeys providers use as a relying party.</summary>
@@ -5357,6 +5635,7 @@ public partial class V1beta1UserPoolSpecInitProviderWebAuthnConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecInitProvider
 {
     /// <summary>Configuration block to define which verified available method a user can use to recover their forgotten password. Detailed below.</summary>
@@ -5478,6 +5757,7 @@ public partial class V1beta1UserPoolSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -5502,6 +5782,7 @@ public enum V1beta1UserPoolSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -5518,6 +5799,7 @@ public enum V1beta1UserPoolSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UserPoolSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5529,6 +5811,7 @@ public enum V1beta1UserPoolSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -5557,6 +5840,7 @@ public partial class V1beta1UserPoolSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -5576,6 +5860,7 @@ public partial class V1beta1UserPoolSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -5590,6 +5875,7 @@ public partial class V1beta1UserPoolSpecWriteConnectionSecretToRef
 /// <summary>UserPoolSpec defines the desired state of UserPool</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolSpec
 {
     /// <summary>
@@ -5657,6 +5943,7 @@ public partial class V1beta1UserPoolSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderAccountRecoverySettingRecoveryMechanism
 {
     /// <summary>Name of the user pool.</summary>
@@ -5670,6 +5957,7 @@ public partial class V1beta1UserPoolStatusAtProviderAccountRecoverySettingRecove
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderAccountRecoverySetting
 {
     /// <summary>List of Account Recovery Options of the following structure:</summary>
@@ -5679,6 +5967,7 @@ public partial class V1beta1UserPoolStatusAtProviderAccountRecoverySetting
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderAdminCreateUserConfigInviteMessageTemplate
 {
     /// <summary>Message template for email messages. Must contain {username} and {####} placeholders, for username and temporary password, respectively.</summary>
@@ -5696,6 +5985,7 @@ public partial class V1beta1UserPoolStatusAtProviderAdminCreateUserConfigInviteM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderAdminCreateUserConfig
 {
     /// <summary>Set to True if only the administrator is allowed to create user profiles. Set to False if users can sign themselves up via an app.</summary>
@@ -5709,6 +5999,7 @@ public partial class V1beta1UserPoolStatusAtProviderAdminCreateUserConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderDeviceConfiguration
 {
     /// <summary>Whether a challenge is required on a new device. Only applicable to a new device.</summary>
@@ -5722,6 +6013,7 @@ public partial class V1beta1UserPoolStatusAtProviderDeviceConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderEmailConfiguration
 {
     /// <summary>Email configuration set name from SES.</summary>
@@ -5747,6 +6039,7 @@ public partial class V1beta1UserPoolStatusAtProviderEmailConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderEmailMfaConfiguration
 {
     /// <summary>The template for the email messages that your user pool sends to users with codes for MFA and sign-in with email OTPs. The message must contain the {####} placeholder. In the message, Amazon Cognito replaces this placeholder with the code. If you don&apos;t provide this parameter, Amazon Cognito sends messages in the default format.</summary>
@@ -5760,6 +6053,7 @@ public partial class V1beta1UserPoolStatusAtProviderEmailMfaConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderLambdaConfigCustomEmailSender
 {
     /// <summary>The Lambda Amazon Resource Name of the Lambda function that Amazon Cognito triggers to send email notifications to users.</summary>
@@ -5773,6 +6067,7 @@ public partial class V1beta1UserPoolStatusAtProviderLambdaConfigCustomEmailSende
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderLambdaConfigCustomSmsSender
 {
     /// <summary>The Lambda Amazon Resource Name of the Lambda function that Amazon Cognito triggers to send SMS notifications to users.</summary>
@@ -5786,6 +6081,7 @@ public partial class V1beta1UserPoolStatusAtProviderLambdaConfigCustomSmsSender
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderLambdaConfigPreTokenGenerationConfig
 {
     /// <summary>The Lambda Amazon Resource Name of the Lambda function that Amazon Cognito triggers to send SMS notifications to users.</summary>
@@ -5799,6 +6095,7 @@ public partial class V1beta1UserPoolStatusAtProviderLambdaConfigPreTokenGenerati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderLambdaConfig
 {
     /// <summary>ARN of the lambda creating an authentication challenge.</summary>
@@ -5860,6 +6157,7 @@ public partial class V1beta1UserPoolStatusAtProviderLambdaConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderPasswordPolicy
 {
     /// <summary>Minimum length of the password policy that you have set.</summary>
@@ -5893,6 +6191,7 @@ public partial class V1beta1UserPoolStatusAtProviderPasswordPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderSchemaNumberAttributeConstraints
 {
     /// <summary>Maximum value of an attribute that is of the number data type.</summary>
@@ -5906,6 +6205,7 @@ public partial class V1beta1UserPoolStatusAtProviderSchemaNumberAttributeConstra
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderSchemaStringAttributeConstraints
 {
     /// <summary>Maximum length of an attribute value of the string type.</summary>
@@ -5919,6 +6219,7 @@ public partial class V1beta1UserPoolStatusAtProviderSchemaStringAttributeConstra
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderSchema
 {
     /// <summary>Attribute data type. Must be one of Boolean, Number, String, DateTime.</summary>
@@ -5952,6 +6253,7 @@ public partial class V1beta1UserPoolStatusAtProviderSchema
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderSignInPolicy
 {
     /// <summary>The sign in methods your user pool supports as the first factor. This is a list of strings, allowed values are PASSWORD, EMAIL_OTP, SMS_OTP, and WEB_AUTHN.</summary>
@@ -5961,6 +6263,7 @@ public partial class V1beta1UserPoolStatusAtProviderSignInPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderSmsConfiguration
 {
     /// <summary>External ID used in IAM role trust relationships. For more information about using external IDs, see How to Use an External ID When Granting Access to Your AWS Resources to a Third Party.</summary>
@@ -5978,6 +6281,7 @@ public partial class V1beta1UserPoolStatusAtProviderSmsConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderSoftwareTokenMfaConfiguration
 {
     /// <summary>Boolean whether to enable software token Multi-Factor (MFA) tokens, such as Time-based One-Time Password (TOTP). To disable software token MFA When sms_configuration is not present, the mfa_configuration argument must be set to OFF and the software_token_mfa_configuration configuration block must be fully removed.</summary>
@@ -5987,6 +6291,7 @@ public partial class V1beta1UserPoolStatusAtProviderSoftwareTokenMfaConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderUserAttributeUpdateSettings
 {
     /// <summary>A list of attributes requiring verification before update. If set, the provided value(s) must also be set in auto_verified_attributes. Valid values: email, phone_number.</summary>
@@ -5996,6 +6301,7 @@ public partial class V1beta1UserPoolStatusAtProviderUserAttributeUpdateSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderUserPoolAddOnsAdvancedSecurityAdditionalFlows
 {
     /// <summary>Mode of threat protection operation in custom authentication. Valid values are AUDIT or ENFORCED. The default value is AUDIT.</summary>
@@ -6005,6 +6311,7 @@ public partial class V1beta1UserPoolStatusAtProviderUserPoolAddOnsAdvancedSecuri
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderUserPoolAddOns
 {
     /// <summary>A block to specify the threat protection configuration options for additional authentication types in your user pool, including custom authentication. Detailed below.</summary>
@@ -6018,6 +6325,7 @@ public partial class V1beta1UserPoolStatusAtProviderUserPoolAddOns
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderUsernameConfiguration
 {
     /// <summary>Whether username case sensitivity will be applied for all users in the user pool through Cognito APIs.</summary>
@@ -6027,6 +6335,7 @@ public partial class V1beta1UserPoolStatusAtProviderUsernameConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderVerificationMessageTemplate
 {
     /// <summary>Default email option. Must be either CONFIRM_WITH_CODE or CONFIRM_WITH_LINK. Defaults to CONFIRM_WITH_CODE.</summary>
@@ -6056,6 +6365,7 @@ public partial class V1beta1UserPoolStatusAtProviderVerificationMessageTemplate
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProviderWebAuthnConfiguration
 {
     /// <summary>The authentication domain that passkeys providers use as a relying party.</summary>
@@ -6069,6 +6379,7 @@ public partial class V1beta1UserPoolStatusAtProviderWebAuthnConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusAtProvider
 {
     /// <summary>Configuration block to define which verified available method a user can use to recover their forgotten password. Detailed below.</summary>
@@ -6230,6 +6541,7 @@ public partial class V1beta1UserPoolStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatusConditions
 {
     /// <summary>
@@ -6273,6 +6585,7 @@ public partial class V1beta1UserPoolStatusConditions
 /// <summary>UserPoolStatus defines the observed state of UserPool.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UserPoolStatus
 {
     [JsonPropertyName("atProvider")]
@@ -6291,9 +6604,13 @@ public partial class V1beta1UserPoolStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>UserPool is the Schema for the UserPools API. Provides a Cognito User Pool resource.</summary>
+/// <summary>
+/// UserPool is the Schema for the UserPools API. Provides a Cognito User Pool resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1UserPool : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1UserPoolSpec>, IStatus<V1beta1UserPoolStatus?>
 {
